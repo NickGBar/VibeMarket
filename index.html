@@ -1,0 +1,2582 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<title>VibeMarket</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: стеклянная панель с каруселью категорий → «Сегодня» в Bento Grid → полки во всю ширину, каждая со своей горизонтальной прокруткой и снапом */
+:root {
+  --bg: #000000;
+  --surface: #1C1C1E;
+  --surface-2: #2C2C2E;
+  --surface-3: #3A3A3C;
+  --hover: #242426;
+  --canvas: #121214;
+  --fill: rgba(118, 118, 128, 0.24);
+  --separator: rgba(84, 84, 88, 0.6);
+  --fg: #FFFFFF;
+  --fg-2: #8E8E93;
+  --fg-3: #636366;
+  --accent: #0A84FF;
+  --accent-hover: #409CFF;
+  --accent-fill: rgba(10, 132, 255, 0.38);
+  --danger: #FF453A;
+  --warning: #FFD60A;
+  --success: #30D158;
+  --glass: rgba(0, 0, 0, 0.72);
+
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-round: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius: 20px;
+  --gap: 16px;
+  --gl: max(20px, env(safe-area-inset-left, 0px), calc((100% - 1200px) / 2));
+  --gr: max(20px, env(safe-area-inset-right, 0px), calc((100% - 1200px) / 2));
+  --n: 1.16;
+  --nc: 1.1;
+  --ns: 1.08;
+  --mock-0: #0E0E10;
+  --mock-1: #161618;
+  --header-h: 108px;
+
+  --squircle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M100.0 50.0 L100.0 64.3 L99.9 68.8 L99.8 72.1 L99.7 74.8 L99.5 77.1 L99.3 79.1 L99.1 80.9 L98.8 82.6 L98.4 84.0 L98.1 85.4 L97.7 86.7 L97.2 87.9 L96.7 89.0 L96.2 90.0 L95.6 91.0 L94.9 91.9 L94.3 92.7 L93.5 93.5 L92.7 94.3 L91.9 94.9 L91.0 95.6 L90.0 96.2 L89.0 96.7 L87.9 97.2 L86.7 97.7 L85.4 98.1 L84.0 98.4 L82.6 98.8 L80.9 99.1 L79.1 99.3 L77.1 99.5 L74.8 99.7 L72.1 99.8 L68.8 99.9 L64.3 100.0 L50.0 100.0 L35.7 100.0 L31.2 99.9 L27.9 99.8 L25.2 99.7 L22.9 99.5 L20.9 99.3 L19.1 99.1 L17.4 98.8 L16.0 98.4 L14.6 98.1 L13.3 97.7 L12.1 97.2 L11.0 96.7 L10.0 96.2 L9.0 95.6 L8.1 94.9 L7.3 94.3 L6.5 93.5 L5.7 92.7 L5.1 91.9 L4.4 91.0 L3.8 90.0 L3.3 89.0 L2.8 87.9 L2.3 86.7 L1.9 85.4 L1.6 84.0 L1.2 82.6 L0.9 80.9 L0.7 79.1 L0.5 77.1 L0.3 74.8 L0.2 72.1 L0.1 68.8 L0.0 64.3 L0.0 50.0 L0.0 35.7 L0.1 31.2 L0.2 27.9 L0.3 25.2 L0.5 22.9 L0.7 20.9 L0.9 19.1 L1.2 17.4 L1.6 16.0 L1.9 14.6 L2.3 13.3 L2.8 12.1 L3.3 11.0 L3.8 10.0 L4.4 9.0 L5.1 8.1 L5.7 7.3 L6.5 6.5 L7.3 5.7 L8.1 5.1 L9.0 4.4 L10.0 3.8 L11.0 3.3 L12.1 2.8 L13.3 2.3 L14.6 1.9 L16.0 1.6 L17.4 1.2 L19.1 0.9 L20.9 0.7 L22.9 0.5 L25.2 0.3 L27.9 0.2 L31.2 0.1 L35.7 0.0 L50.0 0.0 L64.3 0.0 L68.8 0.1 L72.1 0.2 L74.8 0.3 L77.1 0.5 L79.1 0.7 L80.9 0.9 L82.6 1.2 L84.0 1.6 L85.4 1.9 L86.7 2.3 L87.9 2.8 L89.0 3.3 L90.0 3.8 L91.0 4.4 L91.9 5.1 L92.7 5.7 L93.5 6.5 L94.3 7.3 L94.9 8.1 L95.6 9.0 L96.2 10.0 L96.7 11.0 L97.2 12.1 L97.7 13.3 L98.1 14.6 L98.4 16.0 L98.8 17.4 L99.1 19.1 L99.3 20.9 L99.5 22.9 L99.7 25.2 L99.8 27.9 L99.9 31.2 L100.0 35.7Z'/%3E%3C/svg%3E");
+  --star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 24'%3E%3Cpath d='M12 1.6l3.1 6.5 7.1.9-5.2 4.9 1.3 7.1L12 17.5l-6.3 3.5 1.3-7.1-5.2-4.9 7.1-.9z'/%3E%3C/svg%3E");
+
+  color-scheme: dark;
+}
+@media (min-width: 560px) { :root { --n: 2.15; } }
+@media (min-width: 720px) { :root { --nc: 2; --ns: 1.6; } }
+@media (min-width: 900px) { :root { --n: 3; } }
+@media (min-width: 1140px) { :root { --n: 4; --nc: 3; --ns: 2; } }
+
+html { background: var(--bg); }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 15px/1.4 var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[hidden] { display: none !important; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+/* ---------- Панель ---------- */
+.bar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  background: var(--glass);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.bar.is-scrolled { border-bottom-color: var(--separator); }
+.bar-row {
+  display: flex; align-items: center; gap: 16px;
+  padding-block: 10px 8px;
+  padding-left: var(--gl); padding-right: var(--gr);
+}
+.brand {
+  display: flex; align-items: center; gap: 9px; flex: none;
+  font: 700 20px/1 var(--font-display); letter-spacing: -0.01em;
+  border-radius: 8px;
+}
+.brand-mark {
+  width: 28px; height: 28px; display: grid; place-items: center;
+  background: linear-gradient(155deg, #4AA8FF, var(--accent) 55%, #0059C7);
+  -webkit-mask: var(--squircle) center / 100% 100% no-repeat;
+  mask: var(--squircle) center / 100% 100% no-repeat;
+}
+.brand-mark svg { width: 16px; height: 16px; }
+.search { position: relative; flex: 1; max-width: 340px; margin-left: auto; display: flex; align-items: center; }
+.search svg { position: absolute; left: 10px; width: 16px; height: 16px; color: var(--fg-2); pointer-events: none; }
+.search input {
+  width: 100%; height: 36px; border: 0; border-radius: 10px;
+  background: var(--fill); color: var(--fg);
+  font: 400 16px/36px var(--font);
+  padding: 0 10px 0 33px;
+  outline: none;
+  -webkit-appearance: none; appearance: none;
+}
+.search input::placeholder { color: var(--fg-2); }
+.search input:focus-visible { box-shadow: 0 0 0 2px var(--accent); }
+
+.chips {
+  display: flex; gap: 8px;
+  overflow-x: auto; overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding-block: 4px 10px;
+  padding-left: var(--gl); padding-right: var(--gr);
+  scroll-padding-inline: var(--gl) var(--gr);
+  position: relative;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; height: 32px; padding: 0 15px; border: 0; border-radius: 999px;
+  background: var(--surface); color: var(--fg);
+  font: 500 15px/32px var(--font); white-space: nowrap; cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.chip:hover { background: var(--surface-2); }
+.chip[aria-current="true"] { background: var(--fg); color: var(--bg); }
+
+/* ---------- Общая сетка страницы ---------- */
+main { padding-block: 18px 8px; }
+.col { display: flex; flex-direction: column; gap: 44px; }
+.intro { display: flex; flex-direction: column; gap: 16px; }
+.wrap { padding-left: var(--gl); padding-right: var(--gr); }
+section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
+
+.today { display: flex; flex-direction: column; gap: 2px; }
+.eyebrow {
+  font: 600 12px/16px var(--font); letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--fg-2);
+}
+.eyebrow.is-accent { color: var(--accent); }
+.large-title {
+  margin: 0; font: 700 34px/41px var(--font-display); letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+@media (min-width: 900px) { .large-title { font-size: 40px; line-height: 46px; } }
+
+/* ---------- Bento ---------- */
+.bento {
+  display: grid; gap: var(--gap);
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 700px) {
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .t-hero, .t-manifest { grid-column: span 2; }
+}
+@media (min-width: 1024px) {
+  .bento { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .t-hero { grid-column: span 2; grid-row: span 2; }
+}
+.tile {
+  position: relative; min-width: 0; overflow: hidden;
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 22px;
+  background: var(--surface); border-radius: var(--radius);
+}
+a.tile { transition: background-color 0.2s ease; }
+a.tile:hover { background: var(--hover); }
+a.tile:focus-visible { border-radius: var(--radius); }
+.tile-title {
+  margin: 0; font: 700 24px/29px var(--font-display); letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+.tile-text { margin: 0; color: var(--fg-2); max-width: 46ch; }
+
+.t-hero { padding: 0; gap: 0; }
+.hero-art {
+  flex: 1; min-height: 210px;
+  background-color: var(--canvas);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1.3px);
+  background-size: 18px 18px;
+  display: grid; place-items: center;
+  padding: 16px;
+}
+.hero-art svg { width: 100%; height: 100%; max-height: 300px; }
+.art path, .art ellipse { fill: none; stroke: var(--fg); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.art .ghost { stroke-width: 1.3; opacity: 0.45; }
+.art .hatched { fill: url(#hatch); }
+.art .hatch-line { stroke: var(--accent); stroke-width: 1.6; opacity: 0.8; }
+.art .sel { fill: none; stroke: var(--accent); stroke-width: 1.4; }
+.art .handle { fill: var(--canvas); stroke: var(--accent); stroke-width: 1.4; }
+.art .scribble { stroke: var(--fg-2); stroke-width: 2; }
+.hero-body { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 22px; }
+.hero-body .tile-title { font-size: 28px; line-height: 33px; }
+
+.lockup { position: relative; display: flex; align-items: center; gap: 12px; min-width: 0; }
+.lockup-text { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.lockup-name { font: 600 16px/21px var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lockup-sub { font-size: 13px; line-height: 18px; color: var(--fg-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hero-body .lockup { margin-top: 6px; padding-top: 14px; border-top: 1px solid var(--separator); }
+
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: auto; padding-top: 8px; }
+.stat { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.stat-num { font: 700 40px/1 var(--font-round); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.stat-label { font-size: 13px; line-height: 17px; color: var(--fg-2); }
+@media (max-width: 380px) { .stat-num { font-size: 32px; } }
+
+.big-num {
+  display: flex; align-items: baseline; gap: 8px;
+  font: 700 44px/1 var(--font-round); letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.big-num svg { width: 26px; height: 26px; color: var(--fg); align-self: center; flex: none; }
+.t-star .lockup, .t-collection .stack { margin-top: auto; }
+.stack { display: flex; padding-top: 6px; }
+.stack > * + * { margin-left: -12px; }
+.stack-item { position: relative; padding: 3px; background: var(--surface); -webkit-mask: var(--squircle) center / 100% 100% no-repeat; mask: var(--squircle) center / 100% 100% no-repeat; transition: background-color 0.2s ease; }
+a.tile:hover .stack-item { background: var(--hover); }
+
+/* ---------- Иконки ---------- */
+.icon {
+  --s: 64px;
+  position: relative; flex: none;
+  width: var(--s); height: var(--s);
+  display: grid; place-items: center;
+  color: var(--ink, #FFFFFF);
+  background: linear-gradient(155deg, var(--c1), var(--c2));
+  -webkit-mask: var(--squircle) center / 100% 100% no-repeat;
+  mask: var(--squircle) center / 100% 100% no-repeat;
+}
+.icon::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(120% 75% at 28% 0%, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0) 60%);
+  pointer-events: none;
+}
+.icon svg {
+  position: relative; z-index: 1; width: 54%; height: 54%;
+  fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.icon svg .f { fill: currentColor; }
+
+/* ---------- Кнопка GET ---------- */
+.get-wrap { display: inline-flex; flex: none; }
+.get {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 30px; min-width: 74px; padding: 0 16px;
+  border: 0; border-radius: 15px;
+  background: var(--accent); color: #FFFFFF;
+  font: 700 15px/30px var(--font); letter-spacing: 0.03em;
+  white-space: nowrap; cursor: pointer;
+  transition: background-color 0.2s ease, width 0.32s cubic-bezier(0.3, 0.7, 0.2, 1), transform 0.12s ease;
+}
+.get:hover { background: var(--accent-hover); }
+.get:active { transform: scale(0.95); }
+.get-fill {
+  position: absolute; inset: 0; z-index: -1;
+  background: var(--accent-fill);
+  transform: scaleX(0); transform-origin: left center;
+}
+.get.is-installing {
+  background: var(--surface-2); cursor: progress;
+  font-size: 13px; font-weight: 600; letter-spacing: 0;
+}
+.get.is-installing:active { transform: none; }
+.get.is-filling .get-fill { transform: scaleX(1); transition: transform var(--d, 2400ms) cubic-bezier(0.35, 0.1, 0.4, 1); }
+.get-open { background: var(--surface-2); color: var(--accent); }
+.get-open:hover { background: var(--surface-3); }
+
+/* ---------- Полки ---------- */
+.shelf { display: flex; flex-direction: column; gap: 14px; }
+.shelf-head { display: flex; align-items: flex-end; gap: 16px; }
+.shelf-heading { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.shelf-title { margin: 0; font: 700 22px/28px var(--font-display); letter-spacing: 0.005em; text-wrap: balance; }
+.shelf-sub { margin: 0; color: var(--fg-2); }
+.shelf-nav { display: none; gap: 8px; flex: none; }
+@media (hover: hover) and (pointer: fine) { .shelf-nav { display: flex; } }
+.nav-btn {
+  width: 32px; height: 32px; border-radius: 50%; border: 0;
+  display: grid; place-items: center;
+  background: var(--surface-2); color: var(--fg); cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+.nav-btn:hover:not(:disabled) { background: var(--surface-3); }
+.nav-btn:disabled { opacity: 0.3; cursor: default; }
+.nav-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+.track {
+  position: relative;
+  display: grid; grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (var(--n) - 1) * var(--gap)) / var(--n));
+  gap: var(--gap);
+  overflow-x: auto; overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gl) var(--gr);
+  padding-block: 4px 8px;
+  padding-left: var(--gl); padding-right: var(--gr);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.track::-webkit-scrollbar { display: none; }
+.track > * { scroll-snap-align: start; min-width: 0; }
+.track:focus-visible { outline-offset: -2px; border-radius: 0; }
+.track a, .track svg { -webkit-user-drag: none; }
+@media (hover: hover) and (pointer: fine) {
+  .track { cursor: grab; }
+  .track.is-dragging { cursor: grabbing; scroll-snap-type: none; user-select: none; }
+  .track.is-dragging * { pointer-events: none; }
+}
+.track.is-chart { grid-auto-columns: calc((100% - (var(--nc) - 1) * var(--gap)) / var(--nc)); }
+
+/* ---------- Карточка приложения ---------- */
+.app {
+  position: relative;
+  display: flex; flex-direction: column; gap: 14px;
+  padding: 18px;
+  background: var(--surface); border-radius: var(--radius);
+  transition: background-color 0.2s ease;
+}
+.app:hover { background: var(--hover); }
+.app-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.app-text { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.app-name { margin: 0; font: 700 17px/22px var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.app-desc {
+  margin: 0; color: var(--fg-2); font-size: 15px; line-height: 20px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  min-height: 40px;
+}
+.app-meta {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding-top: 12px; border-top: 1px solid var(--separator);
+}
+.rating {
+  display: inline-flex; align-items: center; gap: 7px; min-width: 0;
+  color: var(--fg-2); font-size: 13px; line-height: 18px;
+  font-variant-numeric: tabular-nums;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+}
+.rating:hover { color: var(--fg); }
+.stars {
+  --pct: 100%;
+  flex: none; width: 65px; height: 12px;
+  background: linear-gradient(90deg, var(--fg-2) var(--pct), var(--surface-3) var(--pct));
+  -webkit-mask: var(--star) 0 0 / 13px 12px repeat-x;
+  mask: var(--star) 0 0 / 13px 12px repeat-x;
+}
+.rating:hover .stars { background: linear-gradient(90deg, var(--fg) var(--pct), var(--surface-3) var(--pct)); }
+.license {
+  flex: none;
+  font: 500 11px/16px var(--font-mono); letter-spacing: 0.02em;
+  color: var(--fg-2);
+  padding: 1px 6px; border: 1px solid var(--separator); border-radius: 6px;
+}
+
+/* ---------- Топ-чарт ---------- */
+.chart-col { display: flex; flex-direction: column; }
+.chart-row {
+  position: relative;
+  display: grid; grid-template-columns: 22px auto minmax(0, 1fr); align-items: center; gap: 12px;
+}
+.chart-rank { font: 600 17px/1 var(--font-round); text-align: center; font-variant-numeric: tabular-nums; }
+.chart-body {
+  display: flex; align-items: center; gap: 12px; min-width: 0;
+  padding-block: 14px; border-bottom: 1px solid var(--separator);
+}
+.chart-row:last-child .chart-body { border-bottom-color: transparent; }
+.chart-row .icon { --s: 58px; }
+
+/* ---------- Поиск ---------- */
+.empty { margin: 0; color: var(--fg-2); max-width: 52ch; }
+
+/* ---------- Подвал ---------- */
+.foot {
+  margin-top: 28px;
+  display: flex; flex-direction: column; gap: 10px;
+  padding-block: 28px 56px;
+  border-top: 1px solid var(--separator);
+  color: var(--fg-2); font-size: 13px; line-height: 18px;
+}
+.foot-lead { margin: 0; color: var(--fg); font: 600 15px/20px var(--font); }
+.foot p { margin: 0; max-width: 68ch; }
+.foot-wrap { padding-left: var(--gl); padding-right: var(--gr); }
+
+/* ---------- Страница приложения ---------- */
+.detail { gap: 36px; }
+.d-nav { margin-bottom: -18px; }
+.back {
+  display: inline-flex; align-items: center; gap: 2px;
+  margin-left: -6px; padding: 4px 8px 4px 0;
+  border: 0; border-radius: 8px; background: none; cursor: pointer;
+  color: var(--accent); font: 400 17px/22px var(--font);
+  transition: color 0.2s ease;
+}
+.back:hover { color: var(--accent-hover); }
+.back svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.d-head { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 20px; }
+.d-head .icon { --s: 104px; }
+.d-title { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.d-name { margin: 0; font: 700 26px/31px var(--font-display); letter-spacing: -0.01em; text-wrap: balance; overflow-wrap: anywhere; }
+.d-name:focus { outline: none; }
+.d-sub { margin: 0; max-width: 52ch; color: var(--fg-2); font-size: 15px; line-height: 20px; }
+.d-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+@media (min-width: 720px) {
+  .d-head { gap: 28px; }
+  .d-head .icon { --s: 140px; }
+  .d-name { font-size: 34px; line-height: 41px; }
+  .d-sub { font-size: 17px; line-height: 22px; }
+}
+.pill-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  height: 30px; padding: 0 14px; border-radius: 15px;
+  background: var(--surface-2); color: var(--accent);
+  font: 600 14px/30px var(--font); white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+.pill-link:hover { background: var(--surface-3); }
+.pill-link svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+
+.facts {
+  display: flex; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
+  padding-left: var(--gl); padding-right: var(--gr);
+}
+.facts::-webkit-scrollbar { display: none; }
+.fact {
+  flex: 1 0 auto; min-width: 118px;
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding: 2px 18px; text-align: center;
+}
+.fact + .fact { border-left: 1px solid var(--separator); }
+.fact-label { font: 600 11px/14px var(--font); letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-2); white-space: nowrap; }
+.fact-value { font: 700 22px/28px var(--font-round); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fact-value.is-text { font: 600 17px/28px var(--font); }
+.fact-value.is-mono { font: 600 16px/28px var(--font-mono); }
+.fact-sub { font-size: 12px; line-height: 16px; color: var(--fg-2); white-space: nowrap; }
+.fact .stars { margin-block: 2px; }
+
+.d-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+@media (min-width: 900px) { .d-grid { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 56px; } }
+.d-block { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.d-text { margin: 0; max-width: 62ch; font-size: 17px; line-height: 25px; text-wrap: pretty; }
+.features { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.features li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 20px; }
+.features svg { width: 20px; height: 20px; flex: none; }
+.features circle { fill: var(--accent); }
+.features path { fill: none; stroke: var(--fg); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.info { margin: 0; display: flex; flex-direction: column; }
+.info-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 11px; border-bottom: 1px solid var(--separator); }
+.info dt { flex: none; color: var(--fg-2); }
+.info dd { margin: 0; min-width: 0; text-align: right; overflow-wrap: anywhere; }
+.info a { color: var(--accent); }
+.info a:hover { text-decoration: underline; }
+
+/* Ссылки-подложки: вся карточка открывает страницу приложения */
+.app-link::after, .chart-link::after, .lockup-link::after { content: ""; position: absolute; inset: 0; z-index: 0; }
+.app-link::after { border-radius: var(--radius); }
+.chart-link::after, .lockup-link::after { border-radius: 12px; }
+.app-link:focus-visible, .chart-link:focus-visible, .lockup-link:focus-visible { outline: none; }
+.app-link:focus-visible::after, .chart-link:focus-visible::after, .lockup-link:focus-visible::after { outline: 2px solid var(--accent); outline-offset: -2px; }
+.app .get-wrap, .app .rating, .app .license, .chart-row .get-wrap, .lockup .get-wrap { position: relative; z-index: 1; }
+.chart-row:hover .lockup-name, .lockup:hover .lockup-link { color: var(--accent-hover); }
+
+/* ---------- Скриншоты: иллюстрации интерфейса ---------- */
+.track.is-shots { grid-auto-columns: calc((100% - (var(--ns) - 1) * var(--gap)) / var(--ns)); }
+.shot {
+  container-type: inline-size;
+  position: relative; margin: 0; overflow: hidden;
+  aspect-ratio: 16 / 11; max-width: 100%;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--c1) 55%, transparent), transparent 60%),
+    linear-gradient(160deg, color-mix(in srgb, var(--c1) 35%, #000), color-mix(in srgb, var(--c2) 45%, #000));
+}
+.shot.is-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.shot-cap {
+  position: absolute; top: 5.5cqw; left: 6cqw; right: 6cqw; margin: 0;
+  font: 700 max(14px, 3.6cqw)/1.15 var(--font-display); letter-spacing: -0.01em;
+  color: #FFFFFF; text-wrap: balance;
+}
+.win {
+  position: absolute; left: 6cqw; right: 6cqw; top: 17cqw; bottom: 5cqw;
+  display: flex; flex-direction: column; overflow: hidden;
+  border-radius: 1.6cqw; background: var(--surface);
+  box-shadow: 0 2cqw 6cqw rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.win-bar { position: relative; flex: none; height: 3.4cqw; display: flex; align-items: center; gap: 0.8cqw; padding: 0 1.4cqw; background: var(--surface-2); }
+.win-bar i { width: 1cqw; height: 1cqw; border-radius: 50%; background: #FF5F57; }
+.win-bar i:nth-child(2) { background: #FEBC2E; }
+.win-bar i:nth-child(3) { background: #28C840; }
+.win-bar span { position: absolute; left: 0; right: 0; text-align: center; font: 600 max(7px, 1.3cqw)/1 var(--font); color: rgba(255, 255, 255, 0.55); }
+.win-body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+.win-body b, .win-body i { display: block; }
+
+.pane { display: flex; flex-direction: column; gap: 1.3cqw; padding: 2cqw; min-width: 0; min-height: 0; overflow: hidden; }
+.p0 { background: var(--mock-0); }
+.p1 { background: var(--mock-1); }
+.p2 { background: var(--surface); }
+.rel { position: relative; }
+.center { align-items: center; }
+.middle { justify-content: center; }
+.bl { border-left: 1px solid rgba(255, 255, 255, 0.06); }
+.bt { border-top: 1px solid rgba(255, 255, 255, 0.06); }
+.push { margin-left: auto; }
+.m-row { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.m-col { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.m-row > .m-col { flex: 1; }
+.m-col.tight { gap: 0.7cqw; }
+.selrow { background: color-mix(in srgb, var(--c1) 22%, transparent); border-radius: 0.7cqw; padding: 0.7cqw 0.9cqw; margin-inline: -0.9cqw; }
+.ln { flex: none; max-width: 100%; height: 1cqw; border-radius: 0.5cqw; background: rgba(255, 255, 255, 0.18); }
+.ln.dim { background: rgba(255, 255, 255, 0.09); }
+.ln.hi { background: rgba(255, 255, 255, 0.42); }
+.ln.t { height: 1.7cqw; background: rgba(255, 255, 255, 0.7); }
+.ln.big { height: 3cqw; }
+.ln.a { background: var(--c1); }
+.ln.b { background: color-mix(in srgb, var(--c2) 55%, #FFFFFF); }
+.ln.ink { background: color-mix(in srgb, var(--ink, #FFFFFF) 72%, transparent); }
+.sq { flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: 0.6cqw; background: rgba(255, 255, 255, 0.14); }
+.sq.xs { width: 1.5cqw; height: 1.5cqw; border-radius: 0.4cqw; }
+.sq.md { width: 3.4cqw; height: 3.4cqw; border-radius: 0.9cqw; }
+.sq.lg { width: 5.2cqw; height: 5.2cqw; border-radius: 1.3cqw; }
+.sq.a { background: var(--c1); }
+.sq.g, .dot.g { background: linear-gradient(135deg, var(--c1), var(--c2)); }
+.dot { flex: none; border-radius: 50%; }
+.dot.xs { width: 1.2cqw; height: 1.2cqw; background: var(--c1); }
+.dot.sm { width: 1.8cqw; height: 1.8cqw; }
+.dot.md { width: 3cqw; height: 3cqw; }
+.dot.a { background: var(--c1); }
+.dot.rec { background: #FF453A; }
+.pr { flex: none; font: 700 1.4cqw/1 var(--font-mono); color: var(--c1); }
+.searchbar { flex: none; display: flex; align-items: center; height: 2.6cqw; padding: 0 1cqw; border-radius: 0.7cqw; background: rgba(255, 255, 255, 0.07); }
+.btn { display: flex; padding: 0.7cqw 1.2cqw; border-radius: 0.7cqw; background: rgba(255, 255, 255, 0.08); }
+.btn.a { background: var(--c1); }
+.btn.big { padding: 1.1cqw 3cqw; border-radius: 2cqw; }
+.pbar { flex: 1; height: 0.8cqw; border-radius: 0.4cqw; overflow: hidden; background: rgba(255, 255, 255, 0.1); }
+.pbar b { height: 100%; border-radius: inherit; background: var(--c1); }
+.slider { position: relative; height: 0.6cqw; border-radius: 0.3cqw; background: rgba(255, 255, 255, 0.12); }
+.slider b { position: relative; height: 100%; border-radius: inherit; background: var(--c1); }
+.slider b::after { content: ""; position: absolute; right: -1cqw; top: 50%; width: 2cqw; height: 2cqw; margin-top: -1cqw; border-radius: 50%; background: #FFFFFF; }
+.field { flex: 1; display: flex; align-items: center; height: 2.2cqw; padding: 0 0.8cqw; border-radius: 0.5cqw; background: rgba(255, 255, 255, 0.07); }
+.rule { flex: none; height: 1px; margin-block: 0.4cqw; background: rgba(255, 255, 255, 0.08); }
+.tag { display: flex; padding: 0.45cqw 0.9cqw; border-radius: 1cqw; }
+.thumb { flex: none; width: 3.4cqw; height: 2.6cqw; border-radius: 0.4cqw; }
+.ov { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.ov path { fill: none; stroke: rgba(255, 255, 255, 0.7); stroke-width: 2; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.dots { background-color: var(--mock-0); background-image: radial-gradient(rgba(255, 255, 255, 0.1) 0.12cqw, transparent 0.16cqw); background-size: 2.4cqw 2.4cqw; }
+.toolbar { position: absolute; z-index: 1; top: 2cqw; left: 50%; transform: translateX(-50%); display: flex; gap: 0.8cqw; padding: 0.9cqw 1.2cqw; border-radius: 1.2cqw; background: var(--surface-2); }
+.toolbar.side { top: 50%; left: 1.6cqw; flex-direction: column; transform: translateY(-50%); }
+.tabs { gap: 0.6cqw; align-items: flex-end; height: 3.4cqw; margin: -2cqw -2cqw 0.4cqw; padding: 0 1cqw; background: var(--mock-1); }
+.tab { display: flex; align-items: center; height: 2.8cqw; padding: 0 1.4cqw; border-radius: 0.6cqw 0.6cqw 0 0; }
+.tab.on { background: var(--surface); }
+.box { display: flex; flex-direction: column; gap: 0.9cqw; padding: 1cqw 1.2cqw; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 0.6cqw; }
+.box.on { border-color: var(--c1); }
+.box.grow { flex: 1; min-height: 0; overflow: hidden; }
+.status { display: flex; align-items: center; gap: 1.2cqw; padding: 0.8cqw 1.4cqw; background: var(--surface); }
+.seg { display: flex; padding: 0.5cqw 1.2cqw; border-radius: 0.4cqw; background: var(--c1); }
+.shape { position: absolute; border: 0.3cqw solid rgba(255, 255, 255, 0.85); border-radius: 0.5cqw; }
+.shape.ellipse { border-radius: 50%; }
+.shape.diamond { transform: rotate(45deg); border-radius: 0.4cqw; }
+.shape.hatch { background: repeating-linear-gradient(-45deg, color-mix(in srgb, var(--c1) 75%, transparent) 0 0.25cqw, transparent 0.25cqw 1cqw); }
+.shape.solid { border-color: var(--c1); background: color-mix(in srgb, var(--c1) 35%, transparent); }
+.shape.sel { outline: 1px solid var(--c1); outline-offset: 0.8cqw; }
+.artboard { height: 86%; aspect-ratio: 4 / 3; max-width: 94%; border-radius: 0.4cqw; box-shadow: 0 1cqw 3cqw rgba(0, 0, 0, 0.5); }
+.floor {
+  position: absolute; left: -30%; right: -30%; bottom: -10%; height: 70%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 4cqw 4cqw; transform: perspective(30cqw) rotateX(58deg); transform-origin: bottom;
+}
+.cube { position: absolute; left: 50%; top: 50%; width: 20cqw; height: 20cqw; transform: translate(-50%, -55%); filter: drop-shadow(0 1cqw 2cqw rgba(0, 0, 0, 0.5)); }
+.gizmo { position: absolute; right: 2cqw; top: 2cqw; width: 6cqw; height: 6cqw; }
+.gizmo path { fill: none; stroke-width: 1.6; stroke-linecap: round; }
+.gx { stroke: #FF453A; }
+.gy { stroke: #30D158; }
+.gz { stroke: #0A84FF; }
+.node { position: absolute; display: flex; flex-direction: column; gap: 0.9cqw; padding-bottom: 1cqw; overflow: hidden; border-radius: 0.8cqw; background: var(--surface-2); box-shadow: 0 0.6cqw 1.6cqw rgba(0, 0, 0, 0.4); }
+.node-h { display: flex; padding: 0.8cqw 1cqw; }
+.node .m-row { padding: 0 1cqw; }
+.wires path { stroke: color-mix(in srgb, var(--c1) 80%, #FFFFFF); stroke-width: 1.6; opacity: 0.8; }
+.docpane { gap: 1.6cqw; padding: 3cqw 5cqw; }
+.cb { flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 0.5cqw; border: 0.25cqw solid rgba(255, 255, 255, 0.35); }
+.cb.on { border-color: var(--c1); background: var(--c1); }
+.imgblock { flex: none; height: 10cqw; border-radius: 0.8cqw; opacity: 0.85; }
+.table { display: flex; flex-direction: column; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 0.8cqw; }
+.trow { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr 1fr; }
+.trow + .trow { border-top: 1px solid rgba(255, 255, 255, 0.06); }
+.trow.th { background: rgba(255, 255, 255, 0.04); }
+.cell { display: flex; align-items: center; min-width: 0; padding: 1cqw 1.2cqw; }
+.kanban { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; gap: 1.6cqw; }
+.kcol { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.2cqw; border-radius: 1cqw; background: rgba(255, 255, 255, 0.03); }
+.kcard { display: flex; flex-direction: column; gap: 0.9cqw; padding: 1.2cqw; border-radius: 0.8cqw; background: var(--surface-2); }
+.scene-bg { position: absolute; inset: 0; }
+.controls { position: absolute; left: 2cqw; right: 2cqw; bottom: 2cqw; display: flex; align-items: center; gap: 1.4cqw; padding: 1cqw 1.6cqw; border-radius: 1.2cqw; background: rgba(20, 20, 22, 0.72); }
+.play { flex: none; width: 2cqw; height: 2cqw; fill: #FFFFFF; }
+.posters { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.4cqw; }
+.poster-wrap { display: flex; flex-direction: column; gap: 0.8cqw; }
+.poster { aspect-ratio: 2 / 3; border-radius: 0.6cqw; }
+.transport { gap: 1.2cqw; }
+.ruler { flex: none; height: 1.6cqw; margin-left: 15.2cqw; opacity: 0.6; background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px); background-size: 3cqw 100%; }
+.trk { flex: none; display: grid; grid-template-columns: 14cqw minmax(0, 1fr); gap: 1.2cqw; height: 8.5cqw; }
+.trk-h { display: flex; flex-direction: column; justify-content: center; gap: 0.9cqw; padding: 1cqw; border-radius: 0.6cqw; background: rgba(255, 255, 255, 0.04); }
+.wf { width: 100%; height: 100%; border-radius: 0.6cqw; background: rgba(255, 255, 255, 0.03); }
+.wf rect { fill: rgba(255, 255, 255, 0.45); }
+.wf.on { background: color-mix(in srgb, var(--c1) 12%, transparent); }
+.wf.on rect { fill: var(--c1); }
+.conv-h { padding-bottom: 1.2cqw; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+.msgs { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: flex-end; gap: 1.2cqw; overflow: hidden; }
+.bub { align-self: flex-start; display: flex; flex-direction: column; gap: 0.8cqw; padding: 1.1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--surface-2); }
+.bub.me { align-self: flex-end; background: var(--c1); }
+.composer { flex: none; display: flex; align-items: center; gap: 1cqw; height: 3.6cqw; padding: 0 0.5cqw 0 1.6cqw; border-radius: 1.8cqw; background: rgba(255, 255, 255, 0.07); }
+.composer .dot { margin-left: auto; }
+.mrow { display: flex; align-items: center; gap: 1.6cqw; padding-block: 1cqw; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+.okmark { flex: none; width: 2.4cqw; height: 2.4cqw; border-radius: 50%; border: 0.3cqw solid var(--c1); }
+.pw { display: flex; gap: 0.5cqw; }
+.pw b { width: 0.9cqw; height: 0.9cqw; border-radius: 50%; background: rgba(255, 255, 255, 0.6); }
+.totp { display: flex; padding: 0.6cqw 1cqw; border-radius: 0.6cqw; background: color-mix(in srgb, var(--c1) 25%, transparent); }
+.ring { flex: none; display: grid; place-items: center; width: 13cqw; height: 13cqw; border-radius: 50%; border: 0.5cqw solid var(--c1); background: radial-gradient(circle, color-mix(in srgb, var(--c1) 30%, transparent), transparent 70%); }
+.ring svg, .hub svg, .menu-art svg { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.ring svg { width: 55%; height: 55%; stroke: #FFFFFF; stroke-width: 1.6; }
+.ring svg .f { fill: #FFFFFF; }
+.scard { display: flex; flex-direction: column; gap: 1cqw; padding: 1.2cqw; border-radius: 0.8cqw; background: rgba(255, 255, 255, 0.05); }
+.rings { position: absolute; left: 50%; top: 50%; width: 40cqw; height: 40cqw; transform: translate(-50%, -50%); border-radius: 50%; background: repeating-radial-gradient(circle, transparent 0 4.6cqw, rgba(255, 255, 255, 0.07) 4.6cqw 4.8cqw); }
+.hub { position: absolute; left: 50%; top: 50%; display: grid; place-items: center; width: 8cqw; height: 8cqw; transform: translate(-50%, -50%); border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c2)); box-shadow: 0 0 0 1.4cqw color-mix(in srgb, var(--c1) 20%, transparent); }
+.hub svg { width: 55%; height: 55%; stroke: var(--ink, #FFFFFF); stroke-width: 1.8; }
+.hub svg .f { fill: var(--ink, #FFFFFF); }
+.dev { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 0.8cqw; transform: translate(-50%, -50%); }
+.sky { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 35%, #0B1630), color-mix(in srgb, var(--c1) 30%, #0B0B10)); }
+.sun { position: absolute; top: 12%; width: 5cqw; height: 5cqw; border-radius: 50%; background: rgba(255, 255, 255, 0.85); box-shadow: 0 0 4cqw rgba(255, 255, 255, 0.4); }
+.ground { position: absolute; inset: 0; display: flex; align-items: flex-end; }
+.gcol { flex: 1; background: linear-gradient(180deg, var(--c1) 0 1.4cqw, color-mix(in srgb, var(--c2) 65%, #000) 1.4cqw); box-shadow: inset -1px 0 rgba(0, 0, 0, 0.18); }
+.sprite { position: absolute; width: 2.4cqw; height: 3.6cqw; border-radius: 0.3cqw; background: #FFFFFF; box-shadow: inset 0 -1.2cqw var(--c2); }
+.hud-top { position: absolute; left: 2cqw; top: 2cqw; display: flex; gap: 0.6cqw; }
+.heart { width: 1.8cqw; height: 1.8cqw; border-radius: 0.3cqw; background: #FF453A; transform: rotate(45deg) scale(0.8); }
+.heart.off { background: rgba(255, 255, 255, 0.25); }
+.hotbar { position: absolute; left: 50%; bottom: 2cqw; display: flex; gap: 0.5cqw; padding: 0.5cqw; transform: translateX(-50%); border-radius: 0.6cqw; background: rgba(0, 0, 0, 0.45); }
+.slot { width: 3.4cqw; height: 3.4cqw; border-radius: 0.3cqw; border: 0.2cqw solid rgba(255, 255, 255, 0.25); background: radial-gradient(circle, var(--fill, transparent) 0 38%, transparent 40%); }
+.slot.on { border-color: #FFFFFF; }
+.tiles { position: absolute; inset: 0; display: grid; gap: 1px; background: rgba(0, 0, 0, 0.3); }
+.t0 { background: color-mix(in srgb, var(--c1) 30%, #0F1412); }
+.t1 { background: color-mix(in srgb, var(--c1) 55%, #0F1412); }
+.t2 { background: color-mix(in srgb, var(--c2) 50%, #14110E); }
+.t3 { background: color-mix(in srgb, var(--accent) 35%, #0A0F1A); }
+.road path { stroke: rgba(255, 255, 255, 0.6); stroke-width: 3; stroke-dasharray: 6 4; }
+.unit { position: absolute; width: 2cqw; height: 2cqw; border-radius: 0.4cqw; background: var(--c1); box-shadow: 0 0 0 0.3cqw rgba(255, 255, 255, 0.85); }
+.hud-bar { position: absolute; left: 0; right: 0; top: 0; display: flex; gap: 2.4cqw; padding: 1cqw 2cqw; background: rgba(0, 0, 0, 0.55); }
+.minimap { position: absolute; right: 2cqw; bottom: 2cqw; width: 14cqw; height: 9cqw; border-radius: 0.4cqw; border: 0.2cqw solid rgba(255, 255, 255, 0.45); background: linear-gradient(135deg, color-mix(in srgb, var(--c1) 45%, #111), color-mix(in srgb, var(--c2) 45%, #111)); }
+.mbtn { display: flex; padding: 1.3cqw 1.6cqw; border-radius: 0.9cqw; background: rgba(255, 255, 255, 0.07); }
+.mbtn.on { background: var(--c1); }
+.menu-art { display: grid; place-items: center; background: radial-gradient(circle at 50% 55%, color-mix(in srgb, var(--c1) 45%, transparent), transparent 65%), color-mix(in srgb, var(--c2) 25%, #000); }
+.menu-art svg { width: 22cqw; height: 22cqw; stroke: rgba(255, 255, 255, 0.9); stroke-width: 1.2; }
+.menu-art svg .f { fill: rgba(255, 255, 255, 0.9); }
+
+/* ---------- Аккаунт GitHub ---------- */
+.account { flex: none; display: flex; align-items: center; }
+.signin, .avatar-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  height: 32px; border: 0; border-radius: 16px;
+  background: var(--surface-2); color: var(--fg);
+  font: 600 14px/32px var(--font); white-space: nowrap; cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.signin { padding: 0 13px 0 10px; }
+.avatar-btn { padding: 0 12px 0 2px; }
+.signin:hover, .avatar-btn:hover { background: var(--surface-3); }
+.signin svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.avatar-btn img { display: block; width: 28px; height: 28px; border-radius: 50%; background: var(--surface-3); }
+@media (max-width: 639px) {
+  .bar-row { gap: 10px; }
+  .signin { width: 32px; padding: 0; justify-content: center; }
+  .avatar-btn { padding: 0 2px; }
+  .signin-text, .account-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+.icon-wrap { position: relative; flex: none; display: block; }
+.mine-badge {
+  position: absolute; right: -5px; bottom: -5px;
+  width: 24px; height: 24px; border-radius: 50%;
+  display: none; place-items: center;
+  background: var(--accent); box-shadow: 0 0 0 3px var(--surface);
+  transition: box-shadow 0.2s ease;
+}
+.app:hover .mine-badge { box-shadow: 0 0 0 3px var(--hover); }
+.app.is-starred .mine-badge { display: grid; }
+.mine-badge svg { width: 13px; height: 13px; fill: var(--fg); }
+button.pill-link { border: 0; cursor: pointer; }
+button.pill-link:disabled { opacity: 0.5; cursor: progress; }
+.pill-link.star-btn svg { width: 15px; height: 15px; stroke-width: 2; }
+.star-btn.is-on { background: var(--accent-fill); color: var(--fg); }
+.star-btn.is-on:hover { background: var(--accent-fill); }
+.star-btn.is-on svg { fill: currentColor; }
+.d-note { margin: 4px 0 0; color: var(--danger); font-size: 13px; line-height: 18px; }
+.link-btn { padding: 0; border: 0; border-radius: 4px; background: none; color: var(--accent); font: inherit; cursor: pointer; }
+.shelf-sub a { color: var(--accent); }
+.link-btn:hover, .shelf-sub a:hover { text-decoration: underline; }
+
+/* ---------- Песочница ---------- */
+.eyebrow.is-warning { color: var(--warning); }
+.sandbox-info { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap); }
+@media (min-width: 900px) { .sandbox-info { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); } }
+.notice {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-content: start; gap: 4px 14px;
+  padding: 18px 20px; border-radius: var(--radius);
+  background: color-mix(in srgb, var(--warning) 7%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--warning) 32%, transparent);
+}
+.notice svg { grid-row: span 2; width: 26px; height: 26px; margin-top: -1px; fill: none; stroke: var(--warning); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.notice-title, .rules-title { margin: 0; font: 600 17px/22px var(--font); }
+.notice-text { margin: 0; max-width: 64ch; color: var(--fg-2); }
+#detail .notice { max-width: 760px; }
+.rules { display: flex; flex-direction: column; gap: 10px; padding: 18px 20px; border-radius: var(--radius); background: var(--surface); }
+.rules-steps { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; color: var(--fg-2); }
+.rules-steps li::marker { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+.rules-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 4px; }
+.rules-actions .rules-cta { margin-top: 0; }
+.voting { display: flex; flex-direction: column; gap: 12px; }
+.voting-title { margin: 0; font: 600 17px/22px var(--font); }
+.published-title { margin: 0; }
+.vote-meta { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px solid var(--separator); }
+.vote-bar { display: block; height: 6px; overflow: hidden; border-radius: 3px; background: var(--surface-3); }
+.vote-bar b { display: block; height: 100%; border-radius: inherit; background: var(--warning); }
+.vote-count { color: var(--fg-2); font-size: 13px; line-height: 18px; font-variant-numeric: tabular-nums; }
+.app-slot {
+  display: flex; flex-direction: column; justify-content: center; gap: 8px;
+  padding: 18px; border-radius: var(--radius);
+  border: 1.5px dashed var(--surface-3); color: var(--fg-2);
+}
+.slot-icon { display: grid; place-items: center; width: 64px; height: 64px; margin-bottom: 4px; border-radius: 15px; border: 1.5px dashed var(--surface-3); }
+.slot-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--fg-2); stroke-width: 2; stroke-linecap: round; }
+.slot-title { margin: 0; font: 700 17px/22px var(--font); color: var(--fg); }
+.slot-text { margin: 0; font-size: 15px; line-height: 20px; }
+.meta-tags { flex: none; display: flex; align-items: center; gap: 6px; }
+.tp-badge { padding: 1px 6px; border-radius: 6px; background: color-mix(in srgb, var(--warning) 14%, transparent); color: var(--warning); font: 600 11px/16px var(--font); letter-spacing: 0.02em; }
+.icon img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- Заявка в песочницу ---------- */
+#submit { scroll-margin-top: calc(var(--header-h) + 8px); }
+.rules-cta {
+  align-self: flex-start; margin-top: 4px; height: 34px; padding: 0 16px;
+  border: 0; border-radius: 17px; background: var(--accent); color: #FFFFFF;
+  font: 600 15px/34px var(--font); cursor: pointer; transition: background-color 0.2s ease;
+}
+.rules-cta:hover { background: var(--accent-hover); }
+.slot-item { display: flex; }
+button.app-slot { flex: 1; width: 100%; background: none; font: inherit; text-align: left; cursor: pointer; transition: border-color 0.2s ease, background-color 0.2s ease; }
+button.app-slot:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.app-slot .slot-title, .app-slot .slot-text, .slot-cta { display: block; }
+.slot-cta { margin-top: 4px; color: var(--accent); font: 600 15px/20px var(--font); }
+.submit-card { display: flex; flex-direction: column; gap: 22px; padding: 22px; border-radius: var(--radius); background: var(--surface); }
+@media (min-width: 720px) { .submit-card { padding: 28px; } }
+.submit-head { display: flex; align-items: flex-start; gap: 16px; }
+.submit-heading { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.submit-title { margin: 0; font: 700 22px/28px var(--font-display); text-wrap: balance; }
+.submit-sub { margin: 0; max-width: 62ch; color: var(--fg-2); }
+.submit-done {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  padding: 18px 20px; border-radius: 16px;
+  background: color-mix(in srgb, var(--success) 9%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--success) 32%, transparent);
+}
+.submit-done:focus { outline: none; }
+.form-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+@media (min-width: 960px) {
+  .form-grid { grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; }
+  .form-preview { position: sticky; top: calc(var(--header-h) + 16px); align-self: start; }
+}
+.form-main { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.form-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.form-field > label, .form-field > legend { margin-bottom: 2px; padding: 0; color: var(--fg-2); font: 600 13px/18px var(--font); }
+.opt { font-weight: 400; }
+.field-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+@media (min-width: 640px) { .field-row { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); } }
+.input {
+  width: 100%; min-height: 44px; padding: 10px 12px;
+  border: 1px solid transparent; border-radius: 12px;
+  background: var(--fill); color: var(--fg);
+  font: 400 16px/22px var(--font); outline: none;
+  -webkit-appearance: none; appearance: none;
+}
+.input::placeholder { color: var(--fg-2); opacity: 0.7; }
+.input:focus-visible { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+.input[aria-invalid="true"] { border-color: var(--danger); }
+textarea.input { min-height: 108px; resize: vertical; }
+select.input { padding-right: 38px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; cursor: pointer; }
+select.input option { background: var(--surface); color: var(--fg); }
+.hint, .repo-status, .field-error { margin: 0; font-size: 13px; line-height: 18px; }
+.hint, .repo-status { color: var(--fg-2); }
+.repo-status:empty { display: none; }
+.repo-status.is-ok { color: var(--success); }
+.repo-status.is-warn { color: var(--warning); }
+.repo-status.is-bad, .field-error { color: var(--danger); }
+.checks, .swatch-pick { display: flex; flex-wrap: wrap; gap: 8px; }
+.swatch-pick { gap: 12px; }
+.glyph-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 8px; }
+.check-chip, .glyph-opt, .swatch-opt { position: relative; display: block; }
+.check-chip input, .glyph-opt input, .swatch-opt input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.check-chip span { display: block; height: 34px; padding: 0 14px; border-radius: 17px; background: var(--fill); font: 500 15px/34px var(--font); transition: background-color 0.2s ease; }
+.check-chip input:checked + span { background: var(--accent); }
+.glyph-box { display: grid; place-items: center; height: 44px; border-radius: 12px; background: var(--fill); transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+.glyph-box svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.glyph-opt input:checked + .glyph-box { background: var(--accent-fill); box-shadow: inset 0 0 0 2px var(--accent); }
+.swatch { display: block; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(155deg, var(--c1), var(--c2)); }
+.swatch-opt input:checked + .swatch { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--fg); }
+.check-chip input:focus-visible + span, .glyph-opt input:focus-visible + .glyph-box, .swatch-opt input:focus-visible + .swatch { outline: 2px solid var(--accent); outline-offset: 2px; }
+.form-error { margin: 0; padding: 12px 14px; border-radius: 12px; background: color-mix(in srgb, var(--danger) 12%, transparent); color: var(--fg); }
+.form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.submit-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 44px; padding: 0 22px; border: 0; border-radius: 22px;
+  background: var(--accent); color: #FFFFFF;
+  font: 600 16px/44px var(--font); white-space: nowrap; cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.submit-btn:hover { background: var(--accent-hover); }
+.submit-btn:disabled { background: var(--surface-3); color: var(--fg-2); cursor: not-allowed; }
+.form-preview { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.form-preview .app { max-width: 340px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .get, .chip, .app, .tile, .bar, .nav-btn, .back, .pill-link, .signin, .avatar-btn, .mine-badge { transition: none; }
+}
+</style>
+
+<header class="bar" id="bar">
+  <div class="bar-row">
+    <a class="brand" href="#today" data-target="today" aria-label="VibeMarket: в начало">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6l7 13 7-13"/></svg>
+      </span>
+      <span>VibeMarket</span>
+    </a>
+    <label class="search">
+      <span class="sr-only">Поиск по каталогу</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+      <input id="q" type="search" placeholder="Название, категория, лицензия" autocomplete="off" spellcheck="false" enterkeyhint="search">
+    </label>
+    <div class="account" id="account" hidden></div>
+  </div>
+  <nav class="chips" id="chips" aria-label="Категории">
+    <button class="chip" type="button" data-target="today" aria-current="true">Сегодня</button>
+    <button class="chip" type="button" data-target="top">Топ</button>
+  </nav>
+</header>
+
+<main id="main">
+  <div id="browse" class="col">
+    <div class="intro">
+    <section class="today wrap" id="today" aria-labelledby="today-title">
+      <p class="eyebrow" id="today-date">Среда, 21 октября</p>
+      <h1 class="large-title" id="today-title">Сегодня</h1>
+    </section>
+
+    <div class="bento wrap">
+      <article class="tile t-hero" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <svg class="art" viewBox="0 0 560 300" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-41)">
+                <path class="hatch-line" d="M0 0V7"/>
+              </pattern>
+            </defs>
+            <path class="hatched" d="M50 72C95 69 150 71 198 70C200 100 199 130 197 160C150 162 96 161 49 162C47 131 48 101 50 72Z"/>
+            <path class="ghost" d="M47 76C100 72 152 73 201 73M195 68C198 101 197 134 199 164"/>
+            <path d="M206 116C222 112 236 113 250 116"/>
+            <path d="M238 106 251 116 239 126"/>
+            <path d="M252 122C250 88 292 70 332 70C378 70 410 92 408 120C406 152 370 171 328 170C288 169 253 152 252 122Z"/>
+            <path class="ghost" d="M257 110C268 84 300 73 337 74C371 75 402 92 405 114"/>
+            <rect class="sel" x="240" y="60" width="180" height="122" rx="2"/>
+            <rect class="handle" x="235" y="55" width="10" height="10" rx="2.5"/>
+            <rect class="handle" x="415" y="55" width="10" height="10" rx="2.5"/>
+            <rect class="handle" x="235" y="177" width="10" height="10" rx="2.5"/>
+            <rect class="handle" x="415" y="177" width="10" height="10" rx="2.5"/>
+            <circle class="handle" cx="330" cy="40" r="5.5"/>
+            <path d="M398 160C424 172 448 178 466 194"/>
+            <path d="M452 190 467 195 460 181"/>
+            <path d="M470 196C487 210 503 222 520 236C503 250 487 262 470 276C453 262 437 250 420 236C437 222 453 210 470 196Z"/>
+            <path class="ghost" d="M467 199C485 212 502 226 523 238"/>
+            <path class="scribble" d="M58 204c9-9 17 8 26 0s17 8 26 0 17 8 26 0 17 8 26 0"/>
+            <path class="scribble" d="M58 230c9-9 17 8 26 0s17 8 26 0 17 8 26 0"/>
+          </svg>
+        </div>
+        <div class="hero-body">
+          <p class="eyebrow is-accent">Приложение дня</p>
+          <h2 class="tile-title" id="hero-title">Рисуйте схемы так, будто они сделаны от руки</h2>
+          <p class="tile-text">Excalidraw открывается в браузере, работает офлайн и хранит файлы у вас. Подходит для архитектуры, ретро и объяснений на созвоне.</p>
+          <div class="lockup" data-lockup="excalidraw"></div>
+        </div>
+      </article>
+
+      <article class="tile t-manifest" aria-labelledby="manifest-title">
+        <p class="eyebrow">Открытый маркет</p>
+        <h2 class="tile-title" id="manifest-title">Бесплатно, без рекламы и с открытым кодом. У каждого приложения.</h2>
+        <div class="stats">
+          <div class="stat"><span class="stat-num">0&nbsp;₽</span><span class="stat-label">стоит любое приложение</span></div>
+          <div class="stat"><span class="stat-num">0</span><span class="stat-label">баннеров, трекеров и поп-апов</span></div>
+          <div class="stat"><span class="stat-num" id="stat-count">42</span><span class="stat-label" id="stat-count-label">проекта с исходниками на GitHub</span></div>
+        </div>
+      </article>
+
+      <a class="tile t-star" id="star-tile" href="#app-ollama" data-open="ollama">
+        <p class="eyebrow">Больше всего звёзд</p>
+        <div class="big-num">
+          <span id="star-num">160 тыс.</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.6l3.1 6.5 7.1.9-5.2 4.9 1.3 7.1L12 17.5l-6.3 3.5 1.3-7.1-5.2-4.9 7.1-.9z"/></svg>
+        </div>
+        <p class="tile-text">звёзд на GitHub. Самый заметный проект каталога.</p>
+        <div class="lockup" id="star-lockup"></div>
+      </a>
+
+      <a class="tile t-collection" href="#ai" data-target="ai">
+        <p class="eyebrow">Подборка</p>
+        <h2 class="tile-title">ИИ на своём компьютере</h2>
+        <p class="tile-text">Модели работают локально. Запросы и файлы не уходят в чужое облако.</p>
+        <div class="stack" id="ai-stack" aria-hidden="true"></div>
+      </a>
+    </div>
+    </div>
+
+    <section class="shelf" id="top" aria-labelledby="top-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="top-title">Топ по звёздам GitHub</h2>
+          <p class="shelf-sub">Самые популярные проекты каталога</p>
+        </div>
+        <div class="shelf-nav" data-nav="top-track"></div>
+      </div>
+      <div class="track is-chart" id="top-track" role="list" tabindex="0" aria-label="Топ по звёздам GitHub"></div>
+    </section>
+
+    <section class="shelf" id="mine" aria-labelledby="mine-title" hidden>
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="mine-title">Ваши звёзды</h2>
+          <p class="shelf-sub" id="mine-sub"></p>
+        </div>
+        <div class="shelf-nav" data-nav="mine-track"></div>
+      </div>
+      <div class="track" id="mine-track" role="list" tabindex="0" aria-label="Ваши звёзды"></div>
+      <p class="empty wrap" id="mine-empty" hidden>Откройте страницу любого приложения и нажмите Star. Звезда появится у проекта на GitHub, а приложение окажется здесь.</p>
+    </section>
+
+    <div id="shelves" class="col"></div>
+
+    <section class="shelf" id="sandbox" aria-labelledby="sandbox-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <p class="eyebrow is-warning">Сторонние приложения</p>
+          <h2 class="shelf-title" id="sandbox-title">Песочница</h2>
+          <p class="shelf-sub">Бесплатные приложения от независимых авторов</p>
+        </div>
+        <div class="shelf-nav" data-nav="sandbox-track"></div>
+      </div>
+      <div class="sandbox-info wrap">
+        <div class="notice" role="note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 4.2 2.6 17.6a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5V14M12 17.2h.01"/></svg>
+          <p class="notice-title">Эти приложения сторонние</p>
+          <p class="notice-text">Их публикуют сами авторы, а не VibeMarket. Мы не проверяем приложения из песочницы и не несём ответственности за их работу, безопасность и содержание. Перед установкой посмотрите исходный код и автора. Устанавливайте на свой риск.</p>
+        </div>
+        <div class="rules">
+          <p class="rules-title">Как попасть в песочницу</p>
+          <ol class="rules-steps" id="rules-steps"></ol>
+          <div class="rules-actions">
+            <button class="rules-cta" type="button" data-submit-open aria-controls="submit" aria-expanded="false">Предложить приложение</button>
+            <a class="link-btn" href="https://github.com/NickGBar/VibeMarket/blob/main/rules.json" target="_blank" rel="noopener">Все правила</a>
+          </div>
+        </div>
+      </div>
+      <div class="voting" id="voting" hidden>
+        <div class="shelf-head wrap">
+          <div class="shelf-heading">
+            <h3 class="voting-title" id="voting-title">Идёт голосование</h3>
+            <p class="shelf-sub" id="voting-sub"></p>
+          </div>
+          <div class="shelf-nav" data-nav="voting-track"></div>
+        </div>
+        <div class="track" id="voting-track" role="list" tabindex="0" aria-labelledby="voting-title"></div>
+      </div>
+      <h3 class="voting-title published-title wrap" id="published-title" hidden>Опубликованные</h3>
+      <div class="track" id="sandbox-track" role="list" tabindex="0" aria-label="Песочница"></div>
+
+      <div class="submit wrap" id="submit" hidden>
+        <div class="submit-card" role="region" aria-labelledby="submit-title">
+          <div class="submit-head">
+            <div class="submit-heading">
+              <h3 class="submit-title" id="submit-title">Предложить приложение</h3>
+              <p class="submit-sub">Форма откроется на GitHub уже заполненной. Робот проверит заявку за несколько минут, а потом сообщество проголосует. <a class="link-btn" href="https://github.com/NickGBar/VibeMarket/issues?q=is%3Aissue%20author%3A%40me%20label%3Asubmission" target="_blank" rel="noopener">Мои заявки на GitHub</a></p>
+            </div>
+            <button class="link-btn" type="button" data-submit-close>Свернуть</button>
+          </div>
+
+          <div class="submit-done" id="submit-done" tabindex="-1" hidden>
+            <p class="notice-title">Форма заявки открыта на GitHub</p>
+            <p class="submit-sub">Проверьте поля, отметьте три подтверждения и нажмите «Submit new issue». Робот ответит в комментарии к заявке.</p>
+            <p class="submit-sub">Вкладка не открылась? <a class="link-btn" id="f-github-link" href="https://github.com/NickGBar/VibeMarket/issues/new?template=submit-app.yml" target="_blank" rel="noopener">Открыть форму на GitHub</a></p>
+            <button class="link-btn" type="button" data-submit-again>Заполнить ещё одну заявку</button>
+          </div>
+
+          <form class="submit-form" id="submit-form" novalidate>
+            <div class="form-grid">
+              <div class="form-main">
+                <div class="form-field">
+                  <label for="f-repo">Репозиторий на GitHub</label>
+                  <input class="input" id="f-repo" type="text" inputmode="url" placeholder="владелец/репозиторий" autocomplete="off" autocapitalize="off" spellcheck="false" required aria-describedby="f-repo-hint f-repo-status f-repo-error">
+                  <p class="hint" id="f-repo-hint">Например, octocat/my-app или ссылка на github.com. Репозиторий должен быть публичным.</p>
+                  <p class="repo-status" id="f-repo-status" aria-live="polite"></p>
+                  <p class="field-error" id="f-repo-error" hidden></p>
+                </div>
+                <div class="field-row">
+                  <div class="form-field">
+                    <label for="f-name">Название</label>
+                    <input class="input" id="f-name" type="text" maxlength="40" required aria-describedby="f-name-error">
+                    <p class="field-error" id="f-name-error" hidden></p>
+                  </div>
+                  <div class="form-field">
+                    <label for="f-cat">Категория</label>
+                    <select class="input" id="f-cat" required aria-describedby="f-cat-error"></select>
+                    <p class="field-error" id="f-cat-error" hidden></p>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="f-desc">Коротко о приложении</label>
+                  <input class="input" id="f-desc" type="text" maxlength="90" required aria-describedby="f-desc-count f-desc-error">
+                  <p class="hint" id="f-desc-count">0 из 90 символов. Этот текст будет на карточке.</p>
+                  <p class="field-error" id="f-desc-error" hidden></p>
+                </div>
+                <div class="form-field">
+                  <label for="f-about">Подробное описание <span class="opt">необязательно</span></label>
+                  <textarea class="input" id="f-about" rows="4" maxlength="600" aria-describedby="f-about-error"></textarea>
+                  <p class="field-error" id="f-about-error" hidden></p>
+                </div>
+                <fieldset class="form-field">
+                  <legend>Платформы <span class="opt">необязательно</span></legend>
+                  <div class="checks" id="f-os"></div>
+                </fieldset>
+                <fieldset class="form-field">
+                  <legend>Значок</legend>
+                  <div class="glyph-pick" id="f-glyph"></div>
+                </fieldset>
+                <fieldset class="form-field">
+                  <legend>Цвет значка</legend>
+                  <div class="swatch-pick" id="f-color"></div>
+                </fieldset>
+                <p class="form-error" id="f-error" role="alert" hidden></p>
+                <div class="form-actions">
+                  <button class="submit-btn" type="submit" id="f-submit">Продолжить на GitHub</button>
+                  <p class="hint" id="f-submit-hint">Откроется форма заявки на GitHub с заполненными полями. Понадобится аккаунт GitHub.</p>
+                </div>
+              </div>
+              <aside class="form-preview" aria-label="Предпросмотр карточки">
+                <p class="eyebrow">Так будет выглядеть карточка</p>
+                <div id="f-preview" inert></div>
+              </aside>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="shelf" id="results" aria-labelledby="results-title" hidden>
+    <div class="shelf-head wrap">
+      <div class="shelf-heading">
+        <h2 class="shelf-title" id="results-title">Результаты</h2>
+        <p class="shelf-sub" id="results-sub"></p>
+      </div>
+      <div class="shelf-nav" data-nav="results-track"></div>
+    </div>
+    <div class="track" id="results-track" role="list" tabindex="0" aria-label="Результаты поиска"></div>
+    <p class="empty wrap" id="results-empty" hidden></p>
+  </section>
+
+  <section class="col detail" id="detail" aria-labelledby="d-title" hidden></section>
+</main>
+
+<footer class="foot-wrap">
+  <div class="foot">
+    <p class="foot-lead">VibeMarket · OpenCraft Hub</p>
+    <p>В каталоге только проекты с открытым исходным кодом. Всё бесплатно: без рекламы, баннеров, поп-апов и трекеров. Эта страница не загружает ни одного внешнего скрипта, шрифта или пикселя.</p>
+    <p id="auth-note" hidden>Вход через GitHub необязателен. После входа звёзды обновляются через ваш аккаунт, а все запросы к GitHub идут через сервер VibeMarket, поэтому токен не попадает в браузер.</p>
+    <p>Приложения из раздела «Песочница» сторонние: их публикуют сами авторы. VibeMarket не проверяет их и не несёт ответственности за их работу, безопасность и содержание.</p>
+    <p>Звёзды взяты из GitHub API <span id="stars-date">21 октября 2026 г.</span> Рейтинг считается из них по логарифмической шкале: 1&nbsp;000 звёзд дают 1 балл, 200&nbsp;000 звёзд дают 5 баллов. Нажмите на рейтинг, чтобы открыть репозиторий.</p>
+  </div>
+</footer>
+
+<p class="sr-only" id="live" aria-live="polite"></p>
+
+<!-- vm:server -->
+<script>
+(() => {
+  const CATS = [
+    { id: 'dev',     name: 'Разработка',     sub: 'Редакторы, движки и инструменты для терминала' },
+    { id: 'design',  name: 'Дизайн и 3D',    sub: 'Графика, иллюстрация и моделирование без подписки' },
+    { id: 'work',    name: 'Продуктивность', sub: 'Заметки, документы и задачи, которые принадлежат вам' },
+    { id: 'media',   name: 'Медиа',          sub: 'Видео, звук и стриминг' },
+    { id: 'privacy', name: 'Приватность',    sub: 'Пароли, переписка и файлы без посредников' },
+    { id: 'ai',      name: 'ИИ',             sub: 'Модели, которые работают на вашем компьютере' },
+    { id: 'games',   name: 'Игры',           sub: 'Стратегии, гонки и песочницы с открытым кодом' }
+  ];
+
+  // stars: данные GitHub API на дату STARS_UPDATED. Обновить: node scripts/update-stars.mjs
+  const STARS_UPDATED = '2026-10-21';
+  const APPS = [
+    { id: 'vscodium', name: 'VSCodium', cat: 'dev', repo: 'VSCodium/vscodium', stars: 33743, lic: 'MIT', glyph: 'code', c: ['#3AA0FF', '#0B5FD6'], desc: 'Сборка VS Code без телеметрии. Те же расширения и отладчик.' },
+    { id: 'neovim', name: 'Neovim', cat: 'dev', repo: 'neovim/neovim', stars: 103099, lic: 'Apache-2.0', glyph: 'terminal', c: ['#6BD66B', '#1E8E4E'], desc: 'Vim с плагинами на Lua, встроенным LSP и асинхронным ядром.' },
+    { id: 'zed', name: 'Zed', cat: 'dev', repo: 'zed-industries/zed', stars: 92003, lic: 'GPL-3.0', glyph: 'bolt', c: ['#6E6BFF', '#2A2AA8'], desc: 'Быстрый редактор на Rust с совместным редактированием.' },
+    { id: 'godot', name: 'Godot', cat: 'dev', repo: 'godotengine/godot', stars: 118793, lic: 'MIT', glyph: 'gamepad', c: ['#62B6F0', '#2F6FB8'], desc: 'Игровой движок для 2D и 3D. Без роялти и регистрации.' },
+    { id: 'tauri', name: 'Tauri', cat: 'dev', repo: 'tauri-apps/tauri', stars: 112090, lic: 'MIT/Apache-2.0', glyph: 'window', c: ['#FFC857', '#F08A24'], desc: 'Лёгкие десктоп-приложения на веб-технологиях и Rust.' },
+    { id: 'lazygit', name: 'Lazygit', cat: 'dev', repo: 'jesseduffield/lazygit', stars: 83335, lic: 'MIT', glyph: 'branch', c: ['#FF7A59', '#D9363E'], desc: 'Git в терминале: коммиты, ребейз и конфликты одной клавишей.' },
+
+    { id: 'excalidraw', name: 'Excalidraw', cat: 'design', repo: 'excalidraw/excalidraw', stars: 134323, lic: 'MIT', glyph: 'shapes', c: ['#A99BFF', '#6A5ACD'], desc: 'Виртуальная доска для схем в стиле наброска от руки.' },
+    { id: 'penpot', name: 'Penpot', cat: 'design', repo: 'penpot/penpot', stars: 61454, lic: 'MPL-2.0', glyph: 'pen', c: ['#7AE0C8', '#1F8F80'], desc: 'Дизайн и прототипы в браузере на открытом стандарте SVG.' },
+    { id: 'blender', name: 'Blender', cat: 'design', repo: 'blender/blender', stars: 21119, lic: 'GPL-2.0+', glyph: 'cube', c: ['#FFA24D', '#E8590C'], desc: 'Моделирование, анимация, симуляции и монтаж в одном пакете.' },
+    { id: 'krita', name: 'Krita', cat: 'design', repo: 'KDE/krita', stars: 10602, lic: 'GPL-3.0', glyph: 'brush', c: ['#FF6FA8', '#B3165A'], desc: 'Цифровая живопись с живыми кистями, слоями и анимацией.' },
+    { id: 'inkscape', name: 'Inkscape', cat: 'design', repo: 'inkscape/inkscape', stars: 4043, lic: 'GPL', glyph: 'bezier', c: ['#5A5A60', '#1A1A1C'], desc: 'Векторные иллюстрации, логотипы и схемы в формате SVG.' },
+    { id: 'gimp', name: 'GIMP', cat: 'design', repo: 'GNOME/gimp', stars: 6539, lic: 'GPL-3.0', glyph: 'image', c: ['#C2A878', '#6E5A3E'], desc: 'Редактор фотографий: ретушь, маски, слои и плагины.' },
+
+    { id: 'joplin', name: 'Joplin', cat: 'work', repo: 'laurent22/joplin', stars: 56820, lic: 'AGPL-3.0', glyph: 'note', c: ['#4C8DFF', '#1D4ED8'], desc: 'Заметки в Markdown со сквозным шифрованием и синхронизацией.' },
+    { id: 'logseq', name: 'Logseq', cat: 'work', repo: 'logseq/logseq', stars: 45324, lic: 'AGPL-3.0', glyph: 'graph', c: ['#3FD1C4', '#0E7C86'], desc: 'База знаний из связанных заметок и ежедневных журналов.' },
+    { id: 'appflowy', name: 'AppFlowy', cat: 'work', repo: 'AppFlowy-IO/AppFlowy', stars: 77632, lic: 'AGPL-3.0', glyph: 'blocks', c: ['#C08CFF', '#7C3AED'], desc: 'Документы, базы данных и канбан. Данные хранятся у вас.' },
+    { id: 'libreoffice', name: 'LibreOffice', cat: 'work', repo: 'LibreOffice/core', stars: 4545, lic: 'MPL-2.0', glyph: 'doc', c: ['#38D39F', '#0F8A50'], desc: 'Тексты, таблицы и презентации. Открывает файлы Microsoft Office.' },
+    { id: 'superprod', name: 'Super Productivity', cat: 'work', repo: 'super-productivity/super-productivity', stars: 23034, lic: 'MIT', glyph: 'check', c: ['#FFD166', '#E98A15'], desc: 'Задачи, таймер Pomodoro и учёт времени без облака.' },
+    { id: 'anki', name: 'Anki', cat: 'work', repo: 'ankitects/anki', stars: 32185, lic: 'AGPL-3.0', glyph: 'cards', c: ['#86A8FF', '#3E5BD6'], desc: 'Карточки с интервальным повторением, чтобы запоминать надолго.' },
+
+    { id: 'obs', name: 'OBS Studio', cat: 'media', repo: 'obsproject/obs-studio', stars: 77878, lic: 'GPL-2.0', glyph: 'record', c: ['#4A4A50', '#141416'], desc: 'Запись экрана и прямые трансляции с микшером сцен.' },
+    { id: 'jellyfin', name: 'Jellyfin', cat: 'media', repo: 'jellyfin/jellyfin', stars: 58324, lic: 'GPL-2.0', glyph: 'tv', c: ['#B06CFF', '#2E7BFF'], desc: 'Личный медиасервер для фильмов, сериалов и музыки.' },
+    { id: 'vlc', name: 'VLC', cat: 'media', repo: 'videolan/vlc', stars: 20171, lic: 'GPL-2.0+', glyph: 'play', c: ['#FF9A3D', '#E85400'], desc: 'Плеер, который открывает почти любой формат видео и звука.' },
+    { id: 'audacity', name: 'Audacity', cat: 'media', repo: 'audacity/audacity', stars: 18805, lic: 'GPL-3.0', glyph: 'wave', c: ['#FF5C8A', '#3D5AFE'], desc: 'Запись и монтаж звука для подкастов и музыки.' },
+    { id: 'handbrake', name: 'HandBrake', cat: 'media', repo: 'HandBrake/HandBrake', stars: 24740, lic: 'GPL-2.0', glyph: 'film', c: ['#F5D04C', '#A87D00'], desc: 'Конвертер видео с пресетами для устройств и субтитрами.' },
+    { id: 'mpv', name: 'mpv', cat: 'media', repo: 'mpv-player/mpv', stars: 37504, lic: 'GPL-2.0+', glyph: 'playcircle', c: ['#8E7BFF', '#4B2C9E'], desc: 'Минималистичный плеер для клавиатуры и скриптов.' },
+
+    { id: 'keepassxc', name: 'KeePassXC', cat: 'privacy', repo: 'keepassxreboot/keepassxc', stars: 29351, lic: 'GPL-3.0', glyph: 'key', c: ['#63D471', '#178A3B'], desc: 'Менеджер паролей с локальной зашифрованной базой.' },
+    { id: 'bitwarden', name: 'Bitwarden', cat: 'privacy', repo: 'bitwarden/clients', stars: 14029, lic: 'GPL-3.0', glyph: 'shield', c: ['#3D7DFF', '#1A3FB8'], desc: 'Пароли и ключи доступа на всех устройствах. Можно поднять свой сервер.' },
+    { id: 'signal', name: 'Signal', cat: 'privacy', repo: 'signalapp/Signal-Desktop', stars: 16605, lic: 'AGPL-3.0', glyph: 'chat', c: ['#5A8CFF', '#2F5BE0'], desc: 'Мессенджер со сквозным шифрованием по умолчанию.' },
+    { id: 'syncthing', name: 'Syncthing', cat: 'privacy', repo: 'syncthing/syncthing', stars: 89591, lic: 'MPL-2.0', glyph: 'sync', c: ['#5ED0FA', '#0A7FC0'], desc: 'Синхронизация файлов между устройствами напрямую, без облака.' },
+    { id: 'localsend', name: 'LocalSend', cat: 'privacy', repo: 'localsend/localsend', stars: 95124, lic: 'Apache-2.0', glyph: 'send', c: ['#2FE0C0', '#0A8A8D'], desc: 'Передача файлов по локальной сети без интернета и аккаунта.' },
+    { id: 'mullvad', name: 'Mullvad VPN', cat: 'privacy', repo: 'mullvad/mullvadvpn-app', stars: 7695, lic: 'GPL-3.0', glyph: 'globe', c: ['#3C6E9E', '#152B47'], desc: 'Клиент VPN, которому не нужны e-mail и имя.' },
+
+    { id: 'ollama', name: 'Ollama', cat: 'ai', repo: 'ollama/ollama', stars: 184161, lic: 'MIT', glyph: 'sparkle', c: ['#FFFFFF', '#C7C7CC'], ink: '#1C1C1E', desc: 'Запуск Llama, Qwen, Gemma и других моделей одной командой.' },
+    { id: 'sdwebui', name: 'Stable Diffusion web UI', cat: 'ai', repo: 'AUTOMATIC1111/stable-diffusion-webui', stars: 165090, lic: 'AGPL-3.0', glyph: 'imgspark', c: ['#FF6EC7', '#7B2FF7'], desc: 'Генерация и дорисовка изображений с сотнями расширений.' },
+    { id: 'comfyui', name: 'ComfyUI', cat: 'ai', repo: 'Comfy-Org/ComfyUI', stars: 141295, lic: 'GPL-3.0', glyph: 'nodes', c: ['#FFD54F', '#F57F00'], desc: 'Генерация изображений и видео через граф из узлов.' },
+    { id: 'llamacpp', name: 'llama.cpp', cat: 'ai', repo: 'ggml-org/llama.cpp', stars: 131917, lic: 'MIT', glyph: 'chip', c: ['#FF8A65', '#B8350C'], desc: 'Инференс языковых моделей на C++. Быстро даже без видеокарты.' },
+    { id: 'gpt4all', name: 'GPT4All', cat: 'ai', repo: 'nomic-ai/gpt4all', stars: 77350, lic: 'MIT', glyph: 'chatspark', c: ['#7EE787', '#1F7A33'], desc: 'Чат с локальными моделями и вашими документами офлайн.' },
+    { id: 'whispercpp', name: 'whisper.cpp', cat: 'ai', repo: 'ggml-org/whisper.cpp', stars: 54539, lic: 'MIT', glyph: 'mic', c: ['#56CCF2', '#2F6FE0'], desc: 'Распознавание речи на процессоре. Расшифровка аудио офлайн.' },
+
+    { id: 'mindustry', name: 'Mindustry', cat: 'games', repo: 'Anuken/Mindustry', stars: 29426, lic: 'GPL-3.0', glyph: 'gear', c: ['#FFB74D', '#8D4E00'], desc: 'Стратегия про фабрики, конвейеры и оборону базы.' },
+    { id: 'luanti', name: 'Luanti', cat: 'games', repo: 'luanti-org/luanti', stars: 13753, lic: 'LGPL-2.1+', glyph: 'pickaxe', c: ['#8BC34A', '#3F6A14'], desc: 'Воксельная песочница и движок для своих игр (бывший Minetest).' },
+    { id: 'stk', name: 'SuperTuxKart', cat: 'games', repo: 'supertuxkart/stk-code', stars: 5442, lic: 'GPL-3.0', glyph: 'flag', c: ['#4FC3F7', '#0262A8'], desc: 'Аркадные гонки на картах с сюжетом и онлайн-заездами.' },
+    { id: 'openttd', name: 'OpenTTD', cat: 'games', repo: 'OpenTTD/OpenTTD', stars: 8404, lic: 'GPL-2.0', glyph: 'train', c: ['#E57373', '#8E1B1B'], desc: 'Транспортный магнат: поезда, корабли и логистика.' },
+    { id: 'shpd', name: 'Shattered Pixel Dungeon', cat: 'games', repo: '00-Evan/shattered-pixel-dungeon', stars: 6704, lic: 'GPL-3.0', glyph: 'sword', c: ['#9575CD', '#311B92'], desc: 'Пиксельный рогалик с тактическими боями и случайными подземельями.' },
+    { id: 'wesnoth', name: 'Battle for Wesnoth', cat: 'games', repo: 'wesnoth/wesnoth', stars: 6947, lic: 'GPL-2.0+', glyph: 'crown', c: ['#D7B46A', '#6E5014'], desc: 'Пошаговая фэнтези-стратегия на гексагональной карте.' }
+  ];
+
+  // Песочница: сторонние бесплатные приложения от независимых авторов. Поля те же, что в APPS,
+  // и порядок repo, stars, lic тот же: по нему их находят scripts/update-stars.mjs и server.mjs.
+  // Дополнительно: about (подробное описание), os ('mwlaib', как в DETAILS),
+  // icon (путь к картинке иконки) и shots: [{ src: 'screens/имя.png', caption: 'Подпись' }].
+  // Тексты экранируются при загрузке, а записи с ошибками пропускаются с предупреждением в консоли.
+  const SANDBOX = [];
+
+  // Страница приложения. os: m macOS, w Windows, l Linux, a Android, i iOS, b веб.
+  // shots: [макет, подпись]. Для настоящего снимка экрана укажите { src: 'screens/имя.png', caption: 'Подпись' }
+  const OS = { m: 'macOS', w: 'Windows', l: 'Linux', a: 'Android', i: 'iOS', b: 'веб' };
+  const DETAILS = {
+    vscodium: { os: 'mwl', about: 'VSCodium собирается из того же исходного кода, что и Visual Studio Code, но без телеметрии и фирменных компонентов Microsoft. Расширения ставятся из открытого реестра Open VSX, а настройки, темы и горячие клавиши остаются привычными.', shots: [['editor', 'Тот же редактор, только без телеметрии'], ['editor+ext', 'Расширения из открытого реестра Open VSX'], ['editor+term', 'Встроенный терминал и отладчик']] },
+    neovim: { os: 'mwl', about: 'Neovim развивает идеи Vim: асинхронное ядро, настройка и плагины на Lua, встроенный клиент LSP и Tree-sitter для точной подсветки. Работает в терминале и в графических оболочках.', shots: [['term+status', 'Модальное редактирование, знакомое по Vim'], ['term+split', 'Окна, вкладки и встроенный терминал'], ['term', 'Плагины и настройки на Lua']] },
+    zed: { os: 'mwl', about: 'Zed написан на Rust и рисует интерфейс на видеокарте, поэтому отвечает мгновенно даже на больших проектах. В нём есть совместное редактирование в реальном времени, встроенный терминал и поддержка языковых серверов.', shots: [['editor', 'Отклик без задержек на любом проекте'], ['editor+ext', 'Совместная работа над одним файлом'], ['editor+term', 'Терминал и задачи в том же окне']] },
+    godot: { os: 'mwlab', about: 'Godot — игровой движок со своим редактором, сценами из узлов и языком GDScript. Поддерживается C#, экспорт на компьютеры, телефоны и в браузер. Движок распространяется под MIT, без роялти и подписок.', shots: [['viewport3d', 'Редактор 2D- и 3D-сцен'], ['editor', 'Скрипты на GDScript и C#'], ['scene', 'Экспорт на компьютеры, телефоны и в веб']] },
+    tauri: { os: 'mwlai', about: 'Tauri собирает десктопные и мобильные приложения из веб-интерфейса и бэкенда на Rust. Вместо встроенного Chromium используется системный WebView, поэтому установщики получаются в разы меньше, чем у Electron.', shots: [['editor', 'Интерфейс на любом веб-фреймворке'], ['editor+term', 'Бэкенд на Rust и сборка одной командой'], ['term', 'Сборки для macOS, Windows, Linux, iOS и Android']] },
+    lazygit: { os: 'mwl', about: 'Lazygit — консольный интерфейс для Git. Индексация отдельных строк, интерактивный ребейз, работа с ветками и разрешение конфликтов делаются одной клавишей вместо длинных команд.', shots: [['term+split', 'Весь репозиторий на одном экране'], ['term+split', 'Индексация отдельных строк'], ['term', 'Интерактивный ребейз без страха']] },
+    excalidraw: { os: 'b', about: 'Excalidraw — доска для схем, которые выглядят как нарисованные от руки. Работает в браузере, поддерживает совместное рисование со сквозным шифрованием, экспорт в PNG и SVG и библиотеки готовых фигур.', shots: [['canvas', 'Схемы в стиле наброска'], ['canvas+panels', 'Совместное рисование со сквозным шифрованием'], ['canvas', 'Экспорт в PNG и SVG']] },
+    penpot: { os: 'b', about: 'Penpot — платформа для дизайна и прототипов, которая работает в браузере и хранит макеты в открытых форматах SVG, CSS и HTML. Её можно развернуть на своём сервере, а разработчики забирают код прямо из макета.', shots: [['canvas+panels', 'Макеты и компоненты в браузере'], ['canvas', 'Интерактивные прототипы'], ['editor', 'Код для разработчиков прямо из макета']] },
+    blender: { os: 'mwl', about: 'Blender закрывает весь 3D-конвейер: моделирование, скульптинг, риггинг, анимацию, симуляции, рендер в Cycles и EEVEE, композитинг и монтаж видео.', shots: [['viewport3d', 'Моделирование и скульптинг'], ['nodes', 'Материалы и композитинг на нодах'], ['paint', 'Рендер в Cycles и EEVEE']] },
+    krita: { os: 'mwla', about: 'Krita создана художниками для цифровой живописи и иллюстрации. Сотня с лишним кистей, стабилизатор линии, поддержка планшетов с нажимом, слои, маски и покадровая анимация.', shots: [['paint', 'Кисти, чувствительные к нажиму'], ['canvas+panels', 'Слои, маски и фильтры'], ['player', 'Покадровая анимация']] },
+    inkscape: { os: 'mwl', about: 'Inkscape — векторный редактор для иллюстраций, логотипов, схем и макетов для печати. Основной формат — SVG. Есть кривые Безье, булевы операции и экспорт в PDF, PNG и EPS.', shots: [['canvas+panels', 'Кривые Безье и точная геометрия'], ['canvas', 'Векторная графика в формате SVG'], ['paint', 'Экспорт в PDF, PNG и EPS']] },
+    gimp: { os: 'mwl', about: 'GIMP — растровый редактор для ретуши фотографий, коллажей и обработки изображений. В третьей версии появились неразрушающие фильтры, улучшенная работа с цветом и новый интерфейс на GTK3.', shots: [['paint', 'Ретушь, маски и слои'], ['canvas+panels', 'Неразрушающие фильтры'], ['paint', 'Плагины и скрипты для автоматизации']] },
+    joplin: { os: 'mwlai', about: 'Joplin хранит заметки и списки дел в Markdown и синхронизирует их через Nextcloud, WebDAV, Dropbox, OneDrive или собственный Joplin Server. Сквозное шифрование включается в настройках, а веб-клиппер сохраняет страницы из браузера.', shots: [['doc', 'Заметки в Markdown'], ['doc+check', 'Списки дел и напоминания'], ['status', 'Сквозное шифрование и синхронизация']] },
+    logseq: { os: 'mwlai', about: 'Logseq — база знаний из блоков: каждая мысль связывается с другими через ссылки и теги, а ежедневный журнал становится точкой входа. Файлы хранятся локально в Markdown или Org-mode.', shots: [['doc', 'Ежедневный журнал из блоков'], ['nodes', 'Граф связей между заметками'], ['doc+check', 'Задачи прямо внутри заметок']] },
+    appflowy: { os: 'mwlaib', about: 'AppFlowy объединяет документы, базы данных, канбан-доски и календарь. Работает офлайн или с собственным сервером синхронизации, а встроенный ИИ умеет работать с локальными моделями.', shots: [['kanban', 'Канбан-доски для проектов'], ['table', 'Базы данных с фильтрами и сортировкой'], ['doc', 'Документы со вложенными страницами']] },
+    libreoffice: { os: 'mwl', about: 'LibreOffice — полный офисный пакет: Writer для текстов, Calc для таблиц, Impress для презентаций, а также Draw, Base и Math. Основной формат — открытый ODF, а файлы Microsoft Office открываются и сохраняются без конвертеров.', shots: [['doc', 'Writer: документы любой сложности'], ['table', 'Calc: таблицы, формулы и диаграммы'], ['paint', 'Impress: презентации и экспорт в PDF']] },
+    superprod: { os: 'mwlab', about: 'Super Productivity сочетает список задач, таймер Pomodoro и учёт времени. Задачи подтягиваются из Jira, GitHub и GitLab, а данные хранятся локально или синхронизируются через WebDAV и Dropbox.', shots: [['doc+check', 'Задачи, подзадачи и оценки времени'], ['status', 'Таймер Pomodoro и перерывы'], ['kanban', 'Интеграции с Jira, GitHub и GitLab']] },
+    anki: { os: 'mwl', about: 'Anki показывает карточки по алгоритму интервального повторения: трудные чаще, выученные реже. Поддерживает изображения, звук, формулы LaTeX и тысячи общих колод, а планировщик FSRS сокращает число повторений.', shots: [['status', 'Повторения по алгоритму FSRS'], ['table', 'Колоды и статистика обучения'], ['doc', 'Карточки с картинками, звуком и формулами']] },
+    obs: { os: 'mwl', about: 'OBS Studio записывает экран и ведёт прямые трансляции на Twitch, YouTube и любые RTMP-сервисы. Сцены собираются из источников: окон, камер, захвата игр и изображений. Есть встроенный микшер и фильтры для голоса.', shots: [['player', 'Сцены из любых источников'], ['wave', 'Микшер звука и фильтры для голоса'], ['player', 'Трансляции на Twitch и YouTube']] },
+    jellyfin: { os: 'mwlaib', about: 'Jellyfin превращает компьютер или NAS в личный медиасервис: фильмы, сериалы, музыка и книги с обложками, описаниями и продолжением просмотра на любом устройстве. Без подписок, облачных аккаунтов и сбора данных.', shots: [['library', 'Ваша медиатека с обложками'], ['player', 'Продолжение просмотра на любом устройстве'], ['status', 'Сервер на компьютере или NAS']] },
+    vlc: { os: 'mwlai', about: 'VLC воспроизводит почти любые форматы видео и аудио без дополнительных кодеков, а также DVD, сетевые потоки и субтитры. Умеет конвертировать файлы и транслировать их по локальной сети.', shots: [['player', 'Любой формат без кодеков'], ['library', 'Медиатека и плейлисты'], ['player', 'Субтитры, потоки и DVD']] },
+    audacity: { os: 'mwl', about: 'Audacity записывает и редактирует звук: многодорожечный монтаж, шумоподавление, эквалайзер, нормализация громкости и эффекты. Подходит для подкастов, музыки и оцифровки старых записей.', shots: [['wave', 'Многодорожечный монтаж'], ['wave', 'Шумоподавление и эффекты'], ['wave', 'Экспорт в MP3, WAV, FLAC и OGG']] },
+    handbrake: { os: 'mwl', about: 'HandBrake перекодирует видео в H.264, H.265, AV1 и VP9. Готовые пресеты подбирают параметры под телефоны, консоли и стриминг, а очередь заданий обрабатывает десятки файлов за раз.', shots: [['player', 'Сжатие видео без заметных потерь'], ['table', 'Пресеты для устройств и стриминга'], ['doc+check', 'Очередь из десятков файлов']] },
+    mpv: { os: 'mwl', about: 'mpv — минималистичный плеер без лишнего интерфейса: всё управляется клавиатурой, конфигом и скриптами на Lua. Качественное масштабирование видео и аппаратное декодирование.', shots: [['player', 'Ничего лишнего, только видео'], ['term', 'Управление клавиатурой и скриптами'], ['player', 'Качественное масштабирование']] },
+    keepassxc: { os: 'mwl', about: 'KeePassXC хранит пароли в зашифрованном файле на вашем устройстве. Генератор паролей, автозаполнение в браузере через расширение, коды TOTP и ключи SSH. Облачный аккаунт не нужен.', shots: [['vault', 'Все пароли в одном зашифрованном файле'], ['status', 'Генератор надёжных паролей'], ['vault', 'Коды TOTP и ключи SSH']] },
+    bitwarden: { os: 'mwlaib', about: 'Bitwarden синхронизирует пароли, ключи доступа и заметки между всеми устройствами со сквозным шифрованием. Есть расширения для браузеров, общие хранилища для семьи и команды, а сервер можно развернуть у себя.', shots: [['vault', 'Пароли и ключи доступа везде'], ['status', 'Генератор паролей и автозаполнение'], ['vault', 'Общие хранилища для семьи и команды']] },
+    signal: { os: 'mwlai', about: 'Signal защищает сообщения, звонки и вложения сквозным шифрованием по открытому протоколу Signal. Исчезающие сообщения, группы, видеозвонки и минимум метаданных на серверах.', shots: [['chat', 'Сквозное шифрование по умолчанию'], ['chat', 'Группы и видеозвонки'], ['status', 'Исчезающие сообщения']] },
+    syncthing: { os: 'mwl', about: 'Syncthing синхронизирует папки между вашими устройствами напрямую, без центрального сервера. Соединения шифруются, а устройства находят друг друга в локальной сети и через интернет.', shots: [['devices', 'Синхронизация напрямую между устройствами'], ['status', 'Папки, версии и конфликты'], ['table', 'Подробная статистика по папкам']] },
+    localsend: { os: 'mwlai', about: 'LocalSend передаёт файлы и текст между устройствами в одной сети, как AirDrop, только между любыми системами. Интернет и аккаунт не нужны, передача шифруется.', shots: [['devices', 'Устройства в сети находятся сами'], ['status', 'Передача без интернета'], ['doc+check', 'Файлы, папки и текст']] },
+    mullvad: { os: 'mwlai', about: 'Клиент Mullvad VPN подключается к серверам Mullvad по протоколу WireGuard. Для регистрации не нужны e-mail и имя: аккаунт — это номер, а оплатить можно даже наличными.', shots: [['status', 'Защищённое соединение в один клик'], ['devices', 'Серверы по всему миру'], ['doc+check', 'Раздельное туннелирование и блокировка трекеров']] },
+    ollama: { os: 'mwl', about: 'Ollama скачивает и запускает языковые модели локально одной командой: Llama, Qwen, Gemma, DeepSeek, Mistral и другие. HTTP API совместимо с OpenAI, поэтому Ollama легко подключить к своим программам.', shots: [['term', 'Модель запускается одной командой'], ['chat', 'Чат с моделью прямо на компьютере'], ['models', 'Библиотека открытых моделей']] },
+    sdwebui: { os: 'mwl', about: 'Stable Diffusion web UI — браузерный интерфейс для генерации изображений: txt2img, img2img, дорисовка и апскейл. Каталог расширений добавляет ControlNet, LoRA и сотни других инструментов.', shots: [['paint', 'Изображения по текстовому описанию'], ['canvas+panels', 'Дорисовка и замена фрагментов'], ['models', 'Сотни расширений и моделей']] },
+    comfyui: { os: 'mwl', about: 'ComfyUI собирает генерацию изображений, видео и звука из узлов графа. Любой процесс можно сохранить, передать другим и повторить, а модели выполняются локально на вашей видеокарте.', shots: [['nodes', 'Конвейер из узлов вместо кнопок'], ['paint', 'Изображения и видео локально'], ['models', 'Готовые шаблоны процессов']] },
+    llamacpp: { os: 'mwl', about: 'llama.cpp выполняет языковые модели на C/C++ с квантованием до нескольких бит, поэтому большие модели помещаются в обычный ноутбук. В комплекте сервер с API в стиле OpenAI и простой веб-чат.', shots: [['term', 'Инференс на процессоре и видеокарте'], ['chat', 'Встроенный веб-чат'], ['models', 'Модели в формате GGUF']] },
+    gpt4all: { os: 'mwl', about: 'GPT4All — десктопное приложение для чата с локальными моделями. Функция LocalDocs отвечает по вашим файлам, не отправляя их в интернет, а модели скачиваются прямо из приложения.', shots: [['chat', 'Чат без интернета'], ['models', 'Модели скачиваются в один клик'], ['doc', 'LocalDocs: ответы по вашим файлам']] },
+    whispercpp: { os: 'mwl', about: 'whisper.cpp — реализация модели распознавания речи Whisper на C/C++. Расшифровывает аудио и видео на десятках языков без облака, в том числе в реальном времени с микрофона.', shots: [['term', 'Расшифровка аудио одной командой'], ['wave', 'Распознавание с микрофона в реальном времени'], ['doc', 'Субтитры в форматах SRT и VTT']] },
+    mindustry: { os: 'mwlai', about: 'Mindustry сочетает строительство фабрик и оборону башнями: добывайте ресурсы, стройте конвейеры и производственные цепочки, отбивайте волны врагов. Есть кампания, мультиплеер и редактор карт.', shots: [['map', 'Конвейеры и производственные цепочки'], ['scene', 'Оборона базы от волн врагов'], ['menu', 'Кампания, мультиплеер и редактор карт']] },
+    luanti: { os: 'mwla', about: 'Luanti, бывший Minetest, — воксельный движок и песочница. Тысячи игр и модов на Lua из встроенного каталога ContentDB, собственные серверы и полная свобода в правилах игры.', shots: [['scene', 'Воксельный мир без ограничений'], ['library', 'Тысячи игр и модов в ContentDB'], ['menu', 'Свой сервер для друзей']] },
+    stk: { os: 'mwla', about: 'SuperTuxKart — аркадные гонки на картах с героями из мира открытого ПО. Сюжетный режим, онлайн-заезды, битвы на аренах и футбол на машинах.', shots: [['scene', 'Аркадные гонки на картах'], ['map', 'Онлайн-заезды и битвы'], ['menu', 'Сюжетный режим и испытания']] },
+    openttd: { os: 'mwl', about: 'OpenTTD — транспортный симулятор по мотивам Transport Tycoon Deluxe. Стройте железные дороги, порты и автобусные маршруты, развозите грузы и пассажиров и развивайте компанию десятилетиями.', shots: [['map', 'Железные дороги, порты и аэропорты'], ['table', 'Финансы и графики компании'], ['menu', 'Мультиплеер и тысячи модификаций']] },
+    shpd: { os: 'mwlai', about: 'Shattered Pixel Dungeon — пошаговый рогалик: спускайтесь в случайно созданное подземелье, находите снаряжение и опознавайте зелья. Каждая партия уникальна, а гибель означает новый старт.', shots: [['map', 'Новое подземелье в каждой партии'], ['scene', 'Тактические пошаговые бои'], ['menu', 'Классы героев и подклассы']] },
+    wesnoth: { os: 'mwl', about: 'Battle for Wesnoth — пошаговая стратегия в фэнтезийном мире. Армии двигаются по гексагональным картам, где местность и время суток влияют на исход боя. Сюжетные кампании и онлайн-мультиплеер.', shots: [['map', 'Гексагональные карты и тактика'], ['scene', 'Время суток влияет на бой'], ['menu', 'Кампании и онлайн-мультиплеер']] }
+  };
+
+  const GLYPHS = {
+    code: '<path d="M8.5 7.5 4 12l4.5 4.5M15.5 7.5 20 12l-4.5 4.5M13.2 5.5l-2.4 13"/>',
+    terminal: '<path d="M5 7.5 9.5 12 5 16.5M12 17h7"/>',
+    bolt: '<path d="M13 3 5.5 13.5H12L11 21l7.5-10.5H12z"/>',
+    gamepad: '<path d="M7 8h10a4 4 0 0 1 3.9 4.9l-.9 3.8a2.3 2.3 0 0 1-3.9 1L14.5 16h-5l-1.6 1.7a2.3 2.3 0 0 1-3.9-1l-.9-3.8A4 4 0 0 1 7 8zM8 10.5v3.5M6.25 12.25h3.5M15.5 11.5h.01M17.5 13.5h.01"/>',
+    window: '<rect x="3.5" y="5" width="17" height="14" rx="3"/><path d="M3.5 9.5h17M6.5 7.25h.01M9 7.25h.01"/>',
+    branch: '<circle cx="7" cy="6" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="8" r="2"/><path d="M7 8v8M17 10c0 4-10 2-10 6"/>',
+    shapes: '<rect x="3.5" y="4" width="9.5" height="9.5" rx="1.5"/><circle cx="15.5" cy="15.5" r="4.5"/>',
+    pen: '<path d="M12 3 5 10.5 7.5 19h9l2.5-8.5zM12 3v7.5"/><circle cx="12" cy="12.5" r="1.8"/><path d="M7.5 21h9"/>',
+    cube: '<path d="M12 3 20 7.5v9L12 21l-8-4.5v-9zM12 12l8-4.5M12 12v9M12 12 4 7.5"/>',
+    brush: '<path d="M19.5 4.5 11 13M9.5 14.2c-2-.3-3.6 1-3.9 3.1-.2 1.3-1 2.1-2.1 2.5 3 .9 7 .3 7.9-2.5.4-1.3-.4-2.8-1.9-3.1z"/>',
+    bezier: '<path d="M5 18C6.5 10 17.5 14 19 6M5 18l7-11.5h7"/><rect x="2.5" y="15.5" width="5" height="5" rx="1.2"/><rect x="16.5" y="3.5" width="5" height="5" rx="1.2"/>',
+    image: '<rect x="3.5" y="4.5" width="17" height="15" rx="3"/><path d="m4 17 5-5.5 4 4 2.5-2.5L20 17"/><circle cx="15.5" cy="9" r="1.6"/>',
+    note: '<rect x="4.5" y="3.5" width="15" height="17" rx="3"/><path d="M8 8.5h8M8 12h8M8 15.5h5"/>',
+    graph: '<circle cx="6" cy="7" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="17.5" r="2.2"/><circle cx="19.5" cy="16" r="1.5"/><path d="m7 9 4 6.5M17 8l-4 7.5M14.2 17.2 18 16.3M8.2 6.8l7.6-.6"/>',
+    blocks: '<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><path d="M16.5 13.5v6M13.5 16.5h6"/>',
+    doc: '<path d="M6 3.5h8l4 4v13H6zM14 3.5v4h4M9 12h6M9 15h6M9 18h3.5"/>',
+    check: '<circle cx="12" cy="12" r="8.5"/><path d="m8.3 12.2 2.5 2.5 5-5.2"/>',
+    cards: '<path d="M8 3.5h9.5A2.5 2.5 0 0 1 20 6v11"/><rect x="4" y="6.5" width="12.5" height="14" rx="2.5"/><path d="m10.25 10.3.95 1.95 2.15.3-1.55 1.5.37 2.15-1.92-1-1.92 1 .37-2.15-1.55-1.5 2.15-.3z"/>',
+    record: '<circle cx="12" cy="12" r="8.5"/><circle class="f" cx="12" cy="12" r="3.6"/>',
+    tv: '<rect x="3.5" y="4.5" width="17" height="12.5" rx="2.5"/><path d="M9 20.5h6M10.5 8.6v4.8l4-2.4z"/>',
+    play: '<path d="M8 5.5v13l10.5-6.5z"/>',
+    wave: '<path d="M3.5 12h1M7 9v6M10.5 5.5v13M14 8.5v7M17.5 10.5v3M20.5 12h0"/>',
+    film: '<rect x="4" y="3.5" width="16" height="17" rx="2.5"/><path d="M8 3.5v17M16 3.5v17M4 8h4M4 12h4M4 16h4M16 8h4M16 12h4M16 16h4"/>',
+    playcircle: '<circle cx="12" cy="12" r="8.5"/><path d="M10.2 8.6v6.8l5.4-3.4z"/>',
+    key: '<circle cx="8" cy="15" r="4"/><path d="M11 12 19.5 3.5M16 7l2.5 2.5M13.8 9.2l2 2"/>',
+    shield: '<path d="M12 3 19 6v5.5c0 4.5-3 7.8-7 9.5-4-1.7-7-5-7-9.5V6zM12 6.5v11"/>',
+    chat: '<path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.2-1.1A8 8 0 1 0 12 4z"/>',
+    sync: '<path d="M19.5 9.5A8 8 0 0 0 5.6 7.2M4.5 14.5a8 8 0 0 0 13.9 2.3M19.8 4.5v5h-5M4.2 19.5v-5h5"/>',
+    send: '<path d="M20.5 3.5 10 14M20.5 3.5l-6.5 17-4-6.5-6.5-4z"/>',
+    globe: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.5 5.5 3.5 8.5s-1.1 5.9-3.5 8.5c-2.4-2.6-3.5-5.5-3.5-8.5s1.1-5.9 3.5-8.5z"/>',
+    sparkle: '<path d="M10.5 3.5c.6 4.3 2.2 5.9 6.5 6.5-4.3.6-5.9 2.2-6.5 6.5-.6-4.3-2.2-5.9-6.5-6.5 4.3-.6 5.9-2.2 6.5-6.5zM18 14.5c.3 1.9.9 2.5 2.6 2.8-1.7.3-2.3.9-2.6 2.8-.3-1.9-.9-2.5-2.6-2.8 1.7-.3 2.3-.9 2.6-2.8z"/>',
+    imgspark: '<rect x="3.5" y="6" width="14" height="14" rx="3"/><path d="m4 17.5 4-4 3 3 2-2 4 4"/><path d="M19 2.5c.3 1.6.8 2.1 2.5 2.5-1.7.4-2.2.9-2.5 2.5-.3-1.6-.8-2.1-2.5-2.5 1.7-.4 2.2-.9 2.5-2.5z"/>',
+    nodes: '<rect x="3.5" y="4.5" width="6" height="5" rx="1.5"/><rect x="14.5" y="9.5" width="6" height="5" rx="1.5"/><rect x="3.5" y="14.5" width="6" height="5" rx="1.5"/><path d="M9.5 7H11a2 2 0 0 1 2 2v1a2 2 0 0 0 1.5 2M9.5 17H11a2 2 0 0 0 2-2v-1a2 2 0 0 1 1.5-2"/>',
+    chip: '<rect x="6.5" y="6.5" width="11" height="11" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/>',
+    chatspark: '<path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.2-1.1A8 8 0 1 0 12 4z"/><path d="M12 8.6c.3 1.7.9 2.3 2.6 2.6-1.7.3-2.3.9-2.6 2.6-.3-1.7-.9-2.3-2.6-2.6 1.7-.3 2.3-.9 2.6-2.6z"/>',
+    mic: '<rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v2.5"/>',
+    gear: '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.2"/><path d="M12 3.5v2.3M12 18.2v2.3M3.5 12h2.3M18.2 12h2.3M6 6l1.6 1.6M16.4 16.4 18 18M6 18l1.6-1.6M16.4 7.6 18 6"/>',
+    pickaxe: '<path d="M4 20 15 9M8 4.5c4.5.5 9.5 3.5 11.5 11.5"/>',
+    flag: '<path d="M5.5 21V3.5M5.5 4.5h12l-2.5 4 2.5 4h-12"/>',
+    train: '<rect x="6" y="3.5" width="12" height="13" rx="3"/><path d="M6 10.5h12M9 13.5h.01M15 13.5h.01M8.5 20.5l1.5-4M15.5 20.5l-1.5-4"/>',
+    sword: '<path d="M20 4l-1 4.5-9.5 9.5L6 14.5 15.5 5zM4.8 12.6l6.6 6.6M7.2 17.8 4.5 20.5"/>',
+    crown: '<path d="M4 8l4 4 4-6.5 4 6.5 4-4-1.5 10h-13zM5.5 20.5h13"/>'
+  };
+
+  // Данные от server.mjs: кто вошёл через GitHub. Без сервера блока нет.
+  const SERVER = (() => {
+    try {
+      const data = JSON.parse(document.getElementById('vm-server')?.textContent || 'null');
+      return data && data.service === 'vibemarket' ? data : null;
+    } catch (e) {
+      return null;
+    }
+  })();
+
+  const esc = text => String(text).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
+
+  // Данные песочницы приходят от сторонних авторов, поэтому им не доверяем: проверяем и экранируем
+  const SAFE_IMAGE = /^(?!.*\.\.)[\w./-]+\.(png|jpe?g|webp|avif|gif)$/i;
+  const safeColor = (value, fallback) => /^#[0-9a-f]{3,8}$/i.test(value) ? value : fallback;
+  let seenIds = new Set();
+  const sanitizeSandbox = raw => {
+    const valid = raw && /^[a-z0-9-]+$/.test(raw.id) && !seenIds.has(raw.id)
+      && /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(raw.repo) && raw.name && raw.desc;
+    if (!valid) {
+      console.warn('VibeMarket: запись песочницы пропущена, проверьте id, repo, name и desc', raw);
+      return [];
+    }
+    seenIds.add(raw.id);
+    const colors = Array.isArray(raw.c) ? raw.c : [];
+    return [{
+      id: raw.id,
+      repo: raw.repo,
+      cat: CATS.some(c => c.id === raw.cat) ? raw.cat : 'dev',
+      name: esc(raw.name),
+      nameText: String(raw.name),
+      desc: esc(raw.desc),
+      about: raw.about ? esc(raw.about) : '',
+      lic: esc(raw.lic || 'нет'),
+      stars: Number.isFinite(raw.stars) ? raw.stars : 0,
+      glyph: GLYPHS[raw.glyph] ? raw.glyph : 'blocks',
+      c: [safeColor(colors[0], '#636366'), safeColor(colors[1], '#2C2C2E')],
+      icon: typeof raw.icon === 'string' && SAFE_IMAGE.test(raw.icon) ? raw.icon : '',
+      os: typeof raw.os === 'string' ? raw.os.replace(/[^mwlaib]/g, '') : '',
+      shots: (Array.isArray(raw.shots) ? raw.shots : [])
+        .filter(shot => shot && typeof shot.src === 'string' && SAFE_IMAGE.test(shot.src))
+        .slice(0, 8)
+        .map(shot => ({ src: shot.src, caption: esc(shot.caption || raw.name) })),
+      issue: Number.isInteger(raw.issue) ? raw.issue : 0,
+      votes: Number.isInteger(raw.votes) ? raw.votes : 0,
+      promoted: raw.promoted === true,
+      thirdParty: true,
+    }];
+  };
+  const buildSandbox = list => {
+    seenIds = new Set(APPS.map(a => a.id));
+    return list.flatMap(sanitizeSandbox);
+  };
+  let SANDBOX_APPS = buildSandbox(SANDBOX);
+  let ALL = [...APPS, ...SANDBOX_APPS];
+  let byId = Object.fromEntries(ALL.map(a => [a.id, a]));
+  // Приложения, скрытые роботом по жалобам
+  let hiddenRepos = new Set();
+  const visible = app => !hiddenRepos.has(app.repo.toLowerCase());
+  const plainName = app => app.nameText || app.name;
+  const catName = Object.fromEntries(CATS.map(c => [c.id, c.name]));
+  const catSub = Object.fromEntries(CATS.map(c => [c.id, c.sub]));
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+
+  /* ---------- Вход через GitHub: состояние ---------- */
+  // server.mjs вставляет в страницу блок vm-server. Без сервера (файл, артефакт) вход скрыт.
+  const auth = { configured: Boolean(SERVER?.configured), user: SERVER?.user || null, starred: new Set(), loaded: false, live: false };
+  const STAR_PATH = 'M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z';
+  const behavior = () => (reduceMotion.matches ? 'auto' : 'smooth');
+
+  const fmtCompact = new Intl.NumberFormat('ru-RU', { notation: 'compact', maximumFractionDigits: 1 });
+  const fmtRating = new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const fmtInt = new Intl.NumberFormat('ru-RU');
+  const plural = (n, forms) => {
+    const m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return forms[0];
+    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return forms[1];
+    return forms[2];
+  };
+
+  const starsText = n => `${fmtInt.format(n)} ${plural(n, ['звезда', 'звезды', 'звёзд'])} на GitHub`;
+
+  // 1 000 звёзд → 1, 200 000 звёзд → 5, логарифмическая шкала
+  const ratingOf = stars => Math.max(1, Math.min(5, 1 + 4 * Math.log(stars / 1000) / Math.log(200)));
+
+  /* ---------- Состояние установки ---------- */
+  const KEY = 'vibemarket:installed';
+  const state = new Map();
+  try {
+    JSON.parse(localStorage.getItem(KEY) || '[]').forEach(id => { if (byId[id]) state.set(id, 'done'); });
+  } catch (e) { /* хранилище недоступно, начинаем с чистого листа */ }
+  const persist = () => {
+    try {
+      localStorage.setItem(KEY, JSON.stringify([...state].filter(([, s]) => s === 'done').map(([id]) => id)));
+    } catch (e) { /* не критично */ }
+  };
+
+  /* ---------- Шаблоны ---------- */
+  const iconHTML = (app, size) => `<span class="icon" aria-hidden="true" style="--c1:${app.c[0]};--c2:${app.c[1]};${app.ink ? `--ink:${app.ink};` : ''}${size ? `--s:${size}px` : ''}">` +
+    (app.icon ? `<img src="${app.icon}" alt="" loading="lazy" draggable="false">` : `<svg viewBox="0 0 24 24">${GLYPHS[app.glyph] || GLYPHS.blocks}</svg>`) + `</span>`;
+
+  const getHTML = app => {
+    const s = state.get(app.id) || 'idle';
+    const installing = s === 'installing';
+    return `<span class="get-wrap" data-app="${app.id}">` +
+      `<button class="get${installing ? ' is-installing is-filling' : ''}" type="button"${s === 'done' ? ' hidden' : ''}${installing ? ' aria-disabled="true"' : ''}>` +
+        `<span class="get-fill" aria-hidden="true"></span><span class="get-label">${installing ? 'Installing…' : 'GET'}</span><span class="sr-only"> ${app.name}</span>` +
+      `</button>` +
+      `<a class="get get-open" href="https://github.com/${app.repo}/releases" target="_blank" rel="noopener"${s === 'done' ? '' : ' hidden'}>OPEN<span class="sr-only"> ${app.name}: релизы на GitHub</span></a>` +
+    `</span>`;
+  };
+
+  const ratingHTML = app => {
+    const r = ratingOf(app.stars);
+    const count = fmtCompact.format(app.stars);
+    return `<a class="rating" href="https://github.com/${app.repo}" target="_blank" rel="noopener" title="${starsText(app.stars)}">` +
+      `<span class="stars" style="--pct:${(r / 5 * 100).toFixed(1)}%" aria-hidden="true"></span>` +
+      `<span aria-hidden="true">${count}</span>` +
+      `<span class="sr-only">Рейтинг ${fmtRating.format(r)} из 5, ${starsText(app.stars)}. Открыть репозиторий</span>` +
+    `</a>`;
+  };
+
+  const cardLabel = app => auth.starred.has(app.repo) ? `${app.name}, в ваших звёздах` : app.name;
+  const cardHTML = app => `<article class="app${auth.starred.has(app.repo) ? ' is-starred' : ''}" role="listitem" data-app="${app.id}" aria-label="${cardLabel(app)}">` +
+      `<div class="app-top"><span class="icon-wrap">${iconHTML(app, 64)}<b class="mine-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${STAR_PATH}"/></svg></b></span>${getHTML(app)}</div>` +
+      `<div class="app-text"><h3 class="app-name"><a class="app-link" href="#app-${app.id}" data-open="${app.id}">${app.name}</a></h3><p class="app-desc">${app.desc}</p></div>` +
+      `<div class="app-meta">${ratingHTML(app)}<span class="meta-tags">${app.thirdParty ? '<span class="tp-badge" title="Стороннее приложение из песочницы">Стороннее</span>' : ''}<span class="license" title="Лицензия">${app.lic}</span></span></div>` +
+    `</article>`;
+
+  const lockupHTML = (app, size = 52, sub, link = false) => `${iconHTML(app, size)}` +
+    `<span class="lockup-text">${link ? `<a class="lockup-name lockup-link" href="#app-${app.id}" data-open="${app.id}">${app.name}</a>` : `<span class="lockup-name">${app.name}</span>`}<span class="lockup-sub">${sub || `${catName[app.cat]} · ${app.lic}`}</span></span>`;
+
+  const navHTML = `<button class="nav-btn" type="button" data-dir="-1" aria-label="Прокрутить назад"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>` +
+    `<button class="nav-btn" type="button" data-dir="1" aria-label="Прокрутить вперёд"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>`;
+
+  /* ---------- Иллюстрации экранов ---------- */
+  const list = (n, fn) => Array.from({ length: n }, (_, i) => fn(i)).join('');
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const L = (w, cls = '', u = '%') => `<b class="ln ${cls}" style="width:${w}${u}"></b>`;
+  const S = (cls = '') => `<b class="sq ${cls}"></b>`;
+  const hue = m => `hsl(${m.int(0, 359)} 60% 55%)`;
+  const grad = m => `linear-gradient(${m.int(0, 359)}deg, hsl(${m.int(0, 359)} 65% 60%), hsl(${m.int(0, 359)} 55% 35%))`;
+  const searchbar = () => `<div class="searchbar">${L(40, 'dim')}</div>`;
+
+  // Детерминированный генератор: у каждого экрана свой узор, одинаковый при каждом открытии
+  const mockCtx = (app, key) => {
+    let h = 2166136261;
+    for (let i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); }
+    const rnd = () => {
+      h = (h + 0x6D2B79F5) | 0;
+      let t = Math.imul(h ^ (h >>> 15), h | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+    return { app, rnd, int: (a, b) => Math.floor(a + rnd() * (b - a + 1)), pick: arr => arr[Math.floor(rnd() * arr.length)] };
+  };
+
+  const MOCKS = {
+    editor(m, opt) {
+      const side = `<div class="pane p1" style="grid-column:1;grid-row:1/-1">${list(11, i => `<div class="m-row" style="padding-left:${m.rnd() < 0.45 ? 2.2 : 0}cqw">${S('xs' + (i === 3 ? ' a' : ''))}${L(m.int(35, 80), i === 3 ? 'hi' : '')}</div>`)}</div>`;
+      let indent = 0;
+      const code = list(16, () => {
+        indent = clamp(indent + (m.rnd() < 0.3 ? 1 : m.rnd() < 0.35 ? -1 : 0), 0, 4);
+        return `<div class="m-row">${L(1.6, 'dim', 'cqw')}<span class="m-row" style="margin-left:${1 + indent * 2.2}cqw">${list(m.int(1, 4), () => L(m.int(3, 11), m.pick(['', 'a', 'b', 'hi']), 'cqw'))}</span></div>`;
+      });
+      const main = `<div class="pane p2" style="grid-column:2;grid-row:1"><div class="m-row tabs">${list(3, i => `<span class="tab${i ? '' : ' on'}">${L(m.int(5, 8), i ? 'dim' : 'hi', 'cqw')}</span>`)}</div>${code}</div>`;
+      const ext = opt === 'ext' ? `<div class="pane p1 bl" style="grid-column:3;grid-row:1/-1">${L(40, 'hi')}${list(5, () => `<div class="m-row">${S('md g')}<div class="m-col">${L(m.int(50, 85), 'hi')}${L(m.int(60, 95), 'dim')}</div></div>`)}</div>` : '';
+      const term = opt === 'term' ? `<div class="pane p0 bt" style="grid-column:2;grid-row:2">${list(4, i => `<div class="m-row">${i % 2 ? '' : '<b class="pr">❯</b>'}${L(m.int(20, 70), i % 2 ? 'dim' : '')}</div>`)}</div>` : '';
+      return [`grid-template-columns:17cqw minmax(0,1fr)${ext ? ' 22cqw' : ''};grid-template-rows:minmax(0,1fr)${term ? ' 12cqw' : ''}`, side + main + ext + term];
+    },
+
+    term(m, opt) {
+      if (opt === 'split') {
+        const box = (rows, on) => `<div class="box${on ? ' on' : ''}">${L(m.int(25, 40), on ? 'a' : 'hi')}${list(rows, () => `<div class="m-row">${L(m.int(1, 3) * 1.2, m.pick(['a', 'b', 'hi']), 'cqw')}${L(m.int(30, 85), 'dim')}</div>`)}</div>`;
+        const diff = list(13, () => `<div class="m-row">${L(1.2, m.pick(['a', 'b', 'dim']), 'cqw')}${L(m.int(20, 90), m.pick(['', '', 'dim', 'b']))}</div>`);
+        return ['grid-template-columns:38% minmax(0,1fr)', `<div class="pane p0">${box(2)}${box(4, true)}${box(3)}${box(2)}</div><div class="pane p0"><div class="box on grow">${L(30, 'a')}${diff}</div></div>`];
+      }
+      const lines = list(14, i => {
+        const cmd = i === 0 || m.rnd() < 0.22;
+        return `<div class="m-row">${cmd ? '<b class="pr">❯</b>' : ''}${L(cmd ? m.int(15, 45) : m.int(25, 92), cmd ? 'hi' : m.pick(['', 'dim', '', 'b']))}</div>`;
+      });
+      if (opt === 'status') return ['grid-template-rows:minmax(0,1fr) auto', `<div class="pane p0">${lines}</div><div class="status"><b class="seg">${L(5, 'ink', 'cqw')}</b>${L(18, 'dim')}<span class="m-row push">${L(6, 'dim', 'cqw')}${L(4, '', 'cqw')}</span></div>`];
+      return ['', `<div class="pane p0">${lines}</div>`];
+    },
+
+    canvas(m, opt) {
+      const kinds = ['rect', 'ellipse', 'diamond', 'rect', 'ellipse'];
+      const sel = m.int(0, 4);
+      const shapes = list(5, i => {
+        const k = kinds[i];
+        const w = k === 'diamond' ? 8 : m.int(9, 15);
+        const h = k === 'diamond' ? 8 : m.int(7, 11);
+        return `<b class="shape ${k} ${m.pick(['', 'hatch', 'solid'])}${i === sel ? ' sel' : ''}" style="left:${4 + i * 18 + m.int(0, 4)}%;top:${m.int(24, 56)}%;width:${w}cqw;height:${h}cqw"></b>`;
+      });
+      const curve = `<svg class="ov" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M${m.int(6, 20)} ${m.int(78, 92)} C ${m.int(25, 40)} ${m.int(60, 98)}, ${m.int(55, 70)} ${m.int(70, 98)}, ${m.int(82, 95)} ${m.int(70, 88)}"/></svg>`;
+      const toolbar = opt === 'panels' ? '' : `<div class="toolbar">${list(9, i => S('xs' + (i === 2 ? ' a' : '')))}</div>`;
+      const area = `<div class="pane dots rel">${toolbar}${shapes}${curve}</div>`;
+      if (opt !== 'panels') return ['', area];
+      const tools = `<div class="pane p1 center">${list(8, i => S('sm' + (i === 1 ? ' a' : '')))}</div>`;
+      const props = `<div class="pane p1 bl">${L(45, 'hi')}${list(3, () => `<div class="m-col">${L(m.int(25, 40), 'dim')}<div class="slider"><b style="width:${m.int(20, 85)}%"></b></div></div>`)}${L(35, 'dim')}<div class="m-row">${list(6, () => `<b class="dot sm" style="background:${hue(m)}"></b>`)}</div>${L(40, 'dim')}${list(3, i => `<div class="m-row${i === 0 ? ' selrow' : ''}">${S('sm g')}${L(m.int(40, 70))}</div>`)}</div>`;
+      return ['grid-template-columns:6cqw minmax(0,1fr) 21cqw', tools + area + props];
+    },
+
+    paint(m) {
+      const blobs = Array.from({ length: 5 }, () => `radial-gradient(circle at ${m.int(10, 90)}% ${m.int(10, 90)}%, ${m.pick(['var(--c1)', 'var(--c2)', 'rgba(255,255,255,.55)'])} 0, transparent ${m.int(25, 45)}%)`).join(',');
+      const art = `<div class="pane p0 center middle"><b class="artboard" style="background:${blobs},linear-gradient(${m.int(0, 180)}deg, color-mix(in srgb, var(--c2) 60%, #000), color-mix(in srgb, var(--c1) 40%, #000))"></b></div>`;
+      const tools = `<div class="pane p1 center">${list(9, i => S('sm' + (i === 4 ? ' a' : '')))}</div>`;
+      const layers = `<div class="pane p1 bl">${L(40, 'hi')}${list(5, i => `<div class="m-row${i === 1 ? ' selrow' : ''}"><b class="thumb" style="background:linear-gradient(${m.int(0, 359)}deg, var(--c1), var(--c2))"></b>${L(m.int(35, 70))}</div>`)}${L(30, 'dim')}<div class="m-row">${list(6, () => `<b class="dot sm" style="background:${hue(m)}"></b>`)}</div></div>`;
+      return ['grid-template-columns:6cqw minmax(0,1fr) 22cqw', tools + art + layers];
+    },
+
+    viewport3d(m) {
+      const vp = `<div class="pane p0 rel"><b class="floor"></b><svg class="cube" viewBox="0 0 100 100"><polygon points="50,14 84,32 50,50 16,32" style="fill:color-mix(in srgb, var(--c1) 65%, #fff)"/><polygon points="16,32 50,50 50,88 16,70" style="fill:var(--c1)"/><polygon points="50,50 84,32 84,70 50,88" style="fill:var(--c2)"/></svg><svg class="gizmo" viewBox="0 0 20 20"><path class="gx" d="M10 10 18 13"/><path class="gy" d="M10 10 2 13"/><path class="gz" d="M10 10V2"/></svg><div class="toolbar side">${list(6, i => S('xs' + (i === 1 ? ' a' : '')))}</div></div>`;
+      const outliner = `<div class="pane p1 bl">${L(45, 'hi')}${list(6, i => `<div class="m-row${i === 2 ? ' selrow' : ''}" style="padding-left:${i > 1 ? 2.2 : 0}cqw">${S('xs' + (i === 2 ? ' a' : ''))}${L(m.int(35, 70))}</div>`)}<b class="rule"></b>${list(4, () => `<div class="m-row">${L(m.int(25, 35), 'dim')}<span class="field">${L(m.int(30, 60))}</span></div>`)}</div>`;
+      return ['grid-template-columns:minmax(0,1fr) 23cqw', vp + outliner];
+    },
+
+    nodes(m) {
+      const nodes = [];
+      [4, 29, 54, 78].forEach((x, ci) => {
+        const count = ci === 1 || ci === 2 ? 2 : 1;
+        for (let k = 0; k < count; k++) nodes.push({ x, ci, w: 18, h: 30, y: count === 1 ? m.int(28, 40) : k === 0 ? m.int(6, 14) : m.int(52, 60) });
+      });
+      const wires = nodes.flatMap(a => nodes.filter(b => b.ci === a.ci + 1).map(b =>
+        `<path d="M${a.x + a.w} ${a.y + a.h * 0.55} C ${a.x + a.w + 8} ${a.y + a.h * 0.55}, ${b.x - 8} ${b.y + b.h * 0.4}, ${b.x} ${b.y + b.h * 0.4}"/>`)).join('');
+      const heads = ['var(--c1)', 'var(--c2)', 'var(--surface-3)', 'var(--c1)'];
+      const cards = nodes.map(n => `<div class="node" style="left:${n.x}%;top:${n.y}%;width:${n.w}%;height:${n.h}%"><div class="node-h" style="background:${heads[n.ci]}">${L(m.int(40, 70), 'ink')}</div>${list(3, () => `<div class="m-row"><b class="dot xs"></b>${L(m.int(30, 75), 'dim')}</div>`)}</div>`).join('');
+      return ['', `<div class="pane dots rel"><svg class="ov wires" viewBox="0 0 100 100" preserveAspectRatio="none">${wires}</svg>${cards}</div>`];
+    },
+
+    doc(m, opt) {
+      const side = `<div class="pane p1">${searchbar()}${list(7, i => `<div class="m-col tight${i === 1 ? ' selrow' : ''}">${L(m.int(45, 80), i === 1 ? 'hi' : '')}${L(m.int(55, 90), 'dim')}</div>`)}</div>`;
+      const para = () => { const n = m.int(3, 4); return `<div class="m-col">${list(n, i => L(i === n - 1 ? m.int(30, 60) : m.int(86, 98)))}</div>`; };
+      let body = L(m.int(40, 60), 't') + L(m.int(20, 30), 'dim');
+      if (opt === 'check') body += list(9, i => `<div class="m-row"><b class="cb${i < 3 ? ' on' : ''}"></b>${L(m.int(30, 80), i < 3 ? 'dim' : '')}</div>`);
+      else body += para() + (m.rnd() < 0.5 ? `<b class="imgblock" style="background:linear-gradient(${m.int(90, 180)}deg, var(--c1), var(--c2))"></b>` : para()) + L(m.int(30, 45), 'hi') + para();
+      return ['grid-template-columns:24cqw minmax(0,1fr)', `${side}<div class="pane p2 docpane">${body}</div>`];
+    },
+
+    table(m) {
+      const tags = ['var(--c1)', 'var(--c2)', 'var(--surface-3)'];
+      const head = `<div class="m-row">${L(m.int(20, 30), 't')}<span class="m-row push">${list(2, () => `<b class="btn">${L(4, '', 'cqw')}</b>`)}<b class="btn a">${L(5, 'ink', 'cqw')}</b></span></div>`;
+      const rows = list(9, r => `<div class="trow${r === 0 ? ' th' : ''}">${list(5, c => {
+        if (r && c === 2) return `<span class="cell"><b class="tag" style="background:${m.pick(tags)}">${L(m.int(3, 6), 'ink', 'cqw')}</b></span>`;
+        if (r && c === 3) return `<span class="cell"><span class="pbar"><b style="width:${m.int(10, 95)}%"></b></span></span>`;
+        return `<span class="cell">${L(r ? m.int(35, 85) : m.int(30, 55), r === 0 ? 'dim' : c === 0 ? 'hi' : '')}</span>`;
+      })}</div>`);
+      return ['', `<div class="pane p2">${head}<div class="table">${rows}</div></div>`];
+    },
+
+    kanban(m) {
+      const dots = ['var(--fg-2)', 'var(--c1)', 'var(--c2)', '#30D158'];
+      const tags = ['var(--c1)', 'var(--c2)', 'var(--surface-3)'];
+      const col = ci => `<div class="kcol"><div class="m-row"><b class="dot xs" style="background:${dots[ci]}"></b>${L(m.int(30, 50), 'hi')}</div>${list(m.int(2, 4), () => `<div class="kcard">${L(m.int(60, 95))}${L(m.int(40, 70), 'dim')}${m.rnd() < 0.6 ? `<b class="tag" style="align-self:flex-start;background:${m.pick(tags)}">${L(m.int(3, 6), 'ink', 'cqw')}</b>` : ''}</div>`)}</div>`;
+      return ['', `<div class="pane p2">${L(m.int(18, 26), 't')}<div class="kanban">${list(4, col)}</div></div>`];
+    },
+
+    player(m) {
+      const scene = `<b class="scene-bg" style="background:radial-gradient(circle at ${m.int(20, 80)}% ${m.int(25, 45)}%, rgba(255,255,255,.85) 0 3cqw, transparent 3.2cqw), radial-gradient(120% 60% at ${m.int(20, 50)}% 110%, color-mix(in srgb, var(--c2) 50%, #000) 0 50%, transparent 50.5%), radial-gradient(120% 70% at ${m.int(60, 90)}% 120%, color-mix(in srgb, var(--c2) 30%, #000) 0 50%, transparent 50.5%), linear-gradient(180deg, var(--c1), color-mix(in srgb, var(--c2) 70%, #000))"></b>`;
+      const controls = `<div class="controls"><svg class="play" viewBox="0 0 10 10"><path d="M2 1.5v7l6.5-3.5z"/></svg>${L(5, 'hi', 'cqw')}<span class="pbar"><b style="width:${m.int(20, 70)}%"></b></span>${L(5, 'hi', 'cqw')}${S('xs')}${S('xs')}</div>`;
+      const withList = m.rnd() < 0.5;
+      const playlist = withList ? `<div class="pane p1 bl">${L(40, 'hi')}${list(6, i => `<div class="m-row${i === 0 ? ' selrow' : ''}"><b class="thumb" style="background:linear-gradient(${m.int(0, 359)}deg, var(--c1), var(--c2))"></b><div class="m-col tight">${L(m.int(50, 90))}${L(m.int(30, 50), 'dim')}</div></div>`)}</div>` : '';
+      return [`grid-template-columns:minmax(0,1fr)${withList ? ' 24cqw' : ''}`, `<div class="pane p0 rel">${scene}${controls}</div>${playlist}`];
+    },
+
+    library(m) {
+      const posters = list(12, () => {
+        const h = m.int(0, 359);
+        return `<div class="poster-wrap"><b class="poster" style="background:linear-gradient(${m.int(120, 200)}deg, hsl(${h} 70% 60%), hsl(${(h + 40) % 360} 60% 25%))"></b>${L(m.int(50, 90), 'dim')}</div>`;
+      });
+      return ['grid-template-columns:17cqw minmax(0,1fr)', `<div class="pane p1">${list(8, i => `<div class="m-row${i === 1 ? ' selrow' : ''}">${S('xs' + (i === 1 ? ' a' : ''))}${L(m.int(40, 75))}</div>`)}</div><div class="pane p2">${L(m.int(20, 30), 't')}<div class="posters">${posters}</div></div>`];
+    },
+
+    wave(m) {
+      const waveform = on => {
+        let env = 0.4, bars = '';
+        for (let i = 0; i < 90; i++) {
+          env = clamp(env + (m.rnd() - 0.5) * 0.25, 0.1, 1);
+          const h = Math.max(0.06, env * (0.5 + m.rnd() * 0.5));
+          bars += `<rect x="${i * 2 + 0.3}" y="${(20 - h * 18).toFixed(1)}" width="1.3" height="${(h * 36).toFixed(1)}"/>`;
+        }
+        return `<svg class="wf${on ? ' on' : ''}" viewBox="0 0 180 40" preserveAspectRatio="none">${bars}</svg>`;
+      };
+      const transport = `<div class="m-row transport"><b class="dot sm rec"></b>${list(4, () => S('sm'))}<span class="pbar" style="max-width:20cqw;margin-left:2cqw"><b style="width:${m.int(30, 70)}%"></b></span></div>`;
+      const tracks = list(3, i => `<div class="trk"><div class="trk-h">${L(m.int(50, 80), i === 0 ? 'hi' : '')}<div class="m-row">${S('xs')}${S('xs')}</div><div class="slider"><b style="width:${m.int(30, 80)}%"></b></div></div>${waveform(i === 0)}</div>`);
+      return ['', `<div class="pane p2">${transport}<b class="ruler"></b>${tracks}</div>`];
+    },
+
+    chat(m) {
+      const side = `<div class="pane p1">${searchbar()}${list(7, i => `<div class="m-row${i === 0 ? ' selrow' : ''}"><b class="dot md" style="background:${grad(m)}"></b><div class="m-col tight">${L(m.int(40, 70), i === 0 ? 'hi' : '')}${L(m.int(50, 90), 'dim')}</div></div>`)}</div>`;
+      const msgs = list(6, i => {
+        const me = i % 2 === 1;
+        return `<div class="bub${me ? ' me' : ''}" style="width:${m.int(28, 55)}%">${list(m.int(1, 2), () => L(m.int(60, 100), me ? 'ink' : ''))}</div>`;
+      });
+      return ['grid-template-columns:24cqw minmax(0,1fr)', `${side}<div class="pane p2"><div class="m-row conv-h"><b class="dot md g"></b>${L(m.int(14, 22), 'hi')}</div><div class="msgs">${msgs}</div><div class="composer">${L(m.int(20, 35), 'dim')}<b class="dot md a"></b></div></div>`];
+    },
+
+    models(m) {
+      const rows = list(6, () => {
+        const kind = m.pick(['bar', 'btn', 'ok']);
+        const right = kind === 'bar' ? `<span class="pbar" style="flex:none;width:14cqw"><b style="width:${m.int(15, 85)}%"></b></span>`
+          : kind === 'btn' ? `<b class="btn a">${L(5, 'ink', 'cqw')}</b>` : '<b class="okmark"></b>';
+        return `<div class="mrow"><b class="sq md" style="background:${grad(m)}"></b><div class="m-col tight" style="flex:1">${L(m.int(25, 45), 'hi')}${L(m.int(40, 75), 'dim')}</div>${right}</div>`;
+      });
+      return ['', `<div class="pane p2"><div class="m-row">${L(m.int(18, 26), 't')}<span class="searchbar push" style="width:24cqw">${L(50, 'dim')}</span></div>${rows}</div>`];
+    },
+
+    vault(m) {
+      const groups = `<div class="pane p1">${list(7, i => `<div class="m-row${i === 1 ? ' selrow' : ''}">${S('xs' + (i === 1 ? ' a' : ''))}${L(m.int(40, 75))}</div>`)}</div>`;
+      const entries = `<div class="pane p2 bl">${searchbar()}${list(7, i => `<div class="m-row${i === 2 ? ' selrow' : ''}"><b class="sq md" style="background:${hue(m)}"></b><div class="m-col tight">${L(m.int(45, 80), i === 2 ? 'hi' : '')}${L(m.int(35, 65), 'dim')}</div></div>`)}</div>`;
+      const field = secret => `<div class="m-col tight">${L(m.int(18, 28), 'dim')}<div class="m-row">${secret ? `<span class="pw">${list(10, () => '<b></b>')}</span>` : L(m.int(35, 60))}<span class="m-row push">${S('xs')}</span></div></div>`;
+      const card = `<div class="pane p2 bl"><div class="m-row"><b class="sq lg g"></b><div class="m-col tight">${L(m.int(40, 60), 't')}${L(m.int(30, 45), 'dim')}</div></div>${field(false)}${field(true)}${field(false)}<div class="m-row"><b class="totp">${L(6, '', 'cqw')}</b><span class="pbar"><b style="width:${m.int(20, 90)}%"></b></span></div></div>`;
+      return ['grid-template-columns:17cqw 30cqw minmax(0,1fr)', groups + entries + card];
+    },
+
+    status(m) {
+      const cards = list(3, () => `<div class="scard">${L(m.int(40, 60), 'dim')}${L(m.int(5, 9), 't', 'cqw')}</div>`);
+      return ['grid-template-columns:minmax(0,1fr) 26cqw', `<div class="pane p2 center middle"><div class="ring"><svg viewBox="0 0 24 24">${GLYPHS[m.app.glyph]}</svg></div>${L(26, 't')}${L(38, 'dim')}<b class="btn a big">${L(10, 'ink', 'cqw')}</b></div><div class="pane p1 bl">${cards}${list(4, () => `<div class="m-row">${S('xs')}${L(m.int(40, 80))}</div>`)}</div>`];
+    },
+
+    devices(m) {
+      const around = list(5, i => {
+        const a = (-90 + i * 72 + m.int(-12, 12)) * Math.PI / 180;
+        return `<div class="dev" style="left:${(50 + Math.cos(a) * 42).toFixed(1)}%;top:${(50 + Math.sin(a) * 34).toFixed(1)}%"><b class="dot md" style="background:${hue(m)}"></b>${L(6, '', 'cqw')}</div>`;
+      });
+      return ['grid-template-columns:minmax(0,1fr) 26cqw', `<div class="pane p0 rel"><b class="rings"></b><div class="hub"><svg viewBox="0 0 24 24">${GLYPHS[m.app.glyph]}</svg></div>${around}</div><div class="pane p1 bl">${L(45, 'hi')}${list(5, () => `<div class="m-col tight"><div class="m-row">${S('xs')}${L(m.int(40, 70))}</div><span class="pbar"><b style="width:${m.int(10, 100)}%"></b></span></div>`)}</div>`];
+    },
+
+    scene(m) {
+      let level = m.int(4, 7);
+      const ground = list(28, () => { level = clamp(level + m.int(-1, 1), 3, 9); return `<b class="gcol" style="height:${level * 3.2}%"></b>`; });
+      const sprites = list(3, () => `<b class="sprite" style="left:${m.int(10, 85)}%;bottom:${m.int(32, 45)}%"></b>`);
+      const hud = `<div class="hud-top">${list(5, i => `<b class="heart${i < 4 ? '' : ' off'}"></b>`)}</div><div class="hotbar">${list(9, i => `<b class="slot${i === 2 ? ' on' : ''}"${m.rnd() < 0.7 ? ` style="--fill:${hue(m)}"` : ''}></b>`)}</div>`;
+      return ['', `<div class="pane p0 rel sky"><b class="sun" style="left:${m.int(15, 80)}%"></b><div class="ground">${ground}</div>${sprites}${hud}</div>`];
+    },
+
+    map(m) {
+      const W = 24, H = 13;
+      const seeds = Array.from({ length: 7 }, () => [m.rnd() * W, m.rnd() * H, m.int(0, 3)]);
+      let cells = '';
+      for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+        let t = 0, best = Infinity;
+        for (const [sx, sy, st] of seeds) {
+          const d = (sx - x) ** 2 + ((sy - y) * 1.4) ** 2;
+          if (d < best) { best = d; t = st; }
+        }
+        if (m.rnd() < 0.1) t = (t + 1) % 4;
+        cells += `<b class="t${t}"></b>`;
+      }
+      const y0 = m.int(30, 45), y1 = m.int(55, 75), x1 = m.int(35, 65);
+      const road = `<svg class="ov road" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 ${y0}H${x1}V${y1}H100"/></svg>`;
+      const units = list(4, () => `<b class="unit" style="left:${m.int(8, 88)}%;top:${m.int(18, 80)}%"></b>`);
+      const hud = `<div class="hud-bar">${list(4, () => `<span class="m-row">${S('xs a')}${L(4, 'hi', 'cqw')}</span>`)}</div>`;
+      return ['', `<div class="pane p0 rel"><div class="tiles" style="grid-template-columns:repeat(${W},1fr);grid-template-rows:repeat(${H},1fr)">${cells}</div>${road}${units}${hud}<b class="minimap"></b></div>`];
+    },
+
+    menu(m) {
+      return ['grid-template-columns:40% minmax(0,1fr)', `<div class="pane p2 middle">${L(70, 't big')}${L(45, 'dim')}<div class="m-col" style="gap:1.2cqw;margin-top:2cqw">${list(5, i => `<b class="mbtn${i === 0 ? ' on' : ''}">${L(m.int(35, 60), i === 0 ? 'ink' : '')}</b>`)}</div></div><div class="pane p0 menu-art"><svg viewBox="0 0 24 24">${GLYPHS[m.app.glyph]}</svg></div>`];
+    }
+  };
+
+  const appVars = app => `--c1:${app.c[0]};--c2:${app.c[1]}${app.ink ? `;--ink:${app.ink}` : ''}`;
+  const shotHTML = (app, shot, i) => {
+    if (shot.src) return `<figure class="shot is-image" role="listitem"><img src="${shot.src}" alt="${shot.caption}" loading="lazy" draggable="false"></figure>`;
+    const [layout, caption] = shot;
+    const [name, opt] = layout.split('+');
+    const [style, body] = MOCKS[name](mockCtx(app, `${app.id}:${i}`), opt);
+    return `<figure class="shot" role="listitem" style="${appVars(app)}"><figcaption class="shot-cap">${caption}</figcaption>` +
+      `<div class="win" aria-hidden="true"><div class="win-bar"><i></i><i></i><i></i><span>${app.name}</span></div><div class="win-body" style="${style}">${body}</div></div></figure>`;
+  };
+
+  /* ---------- Рендер ---------- */
+  const dateEl = document.getElementById('today-date');
+  const dateText = new Date().toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long' });
+  dateEl.textContent = dateText.charAt(0).toUpperCase() + dateText.slice(1);
+
+  document.getElementById('chips').insertAdjacentHTML('beforeend',
+    CATS.map(c => `<button class="chip" type="button" data-target="${c.id}">${c.name}</button>`).join('') +
+    '<button class="chip" type="button" data-target="sandbox">Песочница</button>');
+
+  document.getElementById('shelves').innerHTML = CATS.map(c => `
+    <section class="shelf" id="${c.id}" aria-labelledby="${c.id}-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="${c.id}-title">${c.name}</h2>
+          <p class="shelf-sub">${c.sub}</p>
+        </div>
+        <div class="shelf-nav" data-nav="${c.id}-track"></div>
+      </div>
+      <div class="track" id="${c.id}-track" role="list" tabindex="0" aria-label="${c.name}">
+        ${APPS.filter(a => a.cat === c.id).map(cardHTML).join('')}
+      </div>
+    </section>`).join('');
+
+  // Части каталога, которые зависят от числа звёзд: перерисовываются после входа через GitHub
+  const byStars = () => APPS.filter(visible).sort((a, b) => b.stars - a.stars);
+
+  const renderShelfTracks = () => CATS.forEach(c => {
+    // Приложения из песочницы, которые робот перенёс на главную, стоят рядом с каталогом
+    document.getElementById(`${c.id}-track`).innerHTML = [...APPS, ...SANDBOX_APPS.filter(a => a.promoted)]
+      .filter(a => a.cat === c.id && visible(a)).map(cardHTML).join('');
+  });
+
+  const slotHTML = count => `<div class="slot-item" role="listitem">` +
+    `<button class="app-slot" type="button" data-submit-open aria-controls="submit" aria-expanded="${document.getElementById('submit')?.hidden === false}">` +
+    `<span class="slot-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>` +
+    `<span class="slot-title">Здесь появится ваше приложение</span>` +
+    `<span class="slot-text">${count ? 'Расскажите о своём бесплатном приложении. Заявку проверит робот, а потом сообщество.' : 'Пока в песочнице пусто. Станьте первым: расскажите о своём бесплатном приложении.'}</span>` +
+    `<span class="slot-cta">Предложить приложение</span>` +
+    `</button></div>`;
+  const renderSandbox = () => {
+    const apps = SANDBOX_APPS.filter(a => !a.promoted && visible(a)).sort((a, b) => b.stars - a.stars);
+    document.getElementById('sandbox-track').innerHTML = apps.map(cardHTML).join('') + slotHTML(apps.length);
+  };
+  renderSandbox();
+
+  const renderTop = () => {
+    const top = byStars().slice(0, 12);
+    const cols = [];
+    for (let i = 0; i < top.length; i += 3) cols.push(top.slice(i, i + 3));
+    document.getElementById('top-track').innerHTML = cols.map((col, ci) =>
+      `<div class="chart-col" role="listitem">${col.map((app, ri) => `
+        <div class="chart-row">
+          <span class="chart-rank">${ci * 3 + ri + 1}</span>
+          ${iconHTML(app, 58)}
+          <div class="chart-body">
+            <span class="lockup-text"><a class="lockup-name chart-link" href="#app-${app.id}" data-open="${app.id}">${app.name}</a><span class="lockup-sub">${catName[app.cat]} · ${fmtCompact.format(app.stars)} ★</span></span>
+            ${getHTML(app)}
+          </div>
+        </div>`).join('')}</div>`).join('');
+  };
+  renderTop();
+
+  document.querySelector('[data-lockup="excalidraw"]').innerHTML = lockupHTML(byId.excalidraw, 52, '', true) + getHTML(byId.excalidraw);
+
+  const renderStarTile = () => {
+    const leader = byStars()[0];
+    const starTile = document.getElementById('star-tile');
+    starTile.href = `#app-${leader.id}`;
+    starTile.dataset.open = leader.id;
+    starTile.setAttribute('aria-label', `${leader.name}: больше всего звёзд в каталоге, ${starsText(leader.stars)}. Открыть страницу приложения`);
+    starTile.title = starsText(leader.stars);
+    document.getElementById('star-num').textContent = fmtCompact.format(leader.stars);
+    document.getElementById('star-lockup').innerHTML = lockupHTML(leader, 44);
+  };
+  renderStarTile();
+
+  document.getElementById('ai-stack').innerHTML = APPS.filter(a => a.cat === 'ai').slice(0, 5)
+    .map(a => `<span class="stack-item">${iconHTML(a, 44)}</span>`).join('');
+
+  document.getElementById('stars-date').textContent =
+    new Date(STARS_UPDATED + 'T00:00:00').toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  document.getElementById('stat-count').textContent = APPS.length;
+  document.getElementById('stat-count-label').textContent =
+    `${plural(APPS.length, ['проект', 'проекта', 'проектов'])} с исходниками на GitHub`;
+
+  /* ---------- GET → Installing… → OPEN ---------- */
+  const live = document.getElementById('live');
+  const announce = text => { live.textContent = ''; requestAnimationFrame(() => { live.textContent = text; }); };
+  const wrapsOf = id => document.querySelectorAll(`.get-wrap[data-app="${id}"]`);
+
+  const morphLabel = (btn, text, from) => {
+    btn.querySelector('.get-label').textContent = text;
+    if (!from || reduceMotion.matches) return;
+    btn.style.width = 'auto';
+    const to = btn.offsetWidth;
+    btn.style.width = from + 'px';
+    void btn.offsetWidth;
+    btn.style.width = to + 'px';
+    const done = e => {
+      if (e.propertyName !== 'width') return;
+      btn.style.width = '';
+      btn.removeEventListener('transitionend', done);
+    };
+    btn.addEventListener('transitionend', done);
+  };
+
+  const install = id => {
+    if ((state.get(id) || 'idle') !== 'idle') return;
+    const app = byId[id];
+    const duration = Math.round(1800 + Math.random() * 1600);
+    state.set(id, 'installing');
+    wrapsOf(id).forEach(wrap => {
+      const btn = wrap.querySelector('button.get');
+      const from = btn.offsetWidth;
+      btn.classList.add('is-installing');
+      btn.setAttribute('aria-disabled', 'true');
+      btn.style.setProperty('--d', duration + 'ms');
+      morphLabel(btn, 'Installing…', from);
+      requestAnimationFrame(() => requestAnimationFrame(() => btn.classList.add('is-filling')));
+    });
+    announce(`${plainName(app)}: установка началась`);
+    setTimeout(() => finish(id), duration + 150);
+  };
+
+  const finish = id => {
+    state.set(id, 'done');
+    persist();
+    wrapsOf(id).forEach(wrap => {
+      const btn = wrap.querySelector('button.get');
+      const open = wrap.querySelector('a.get-open');
+      const hadFocus = document.activeElement === btn;
+      btn.hidden = true;
+      btn.classList.remove('is-installing', 'is-filling');
+      btn.removeAttribute('aria-disabled');
+      btn.style.width = '';
+      btn.querySelector('.get-label').textContent = 'GET';
+      open.hidden = false;
+      if (hadFocus) open.focus({ preventScroll: true });
+    });
+    announce(`${plainName(byId[id])} установлено`);
+  };
+
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('button.get');
+    if (!btn) return;
+    install(btn.closest('.get-wrap').dataset.app);
+  });
+
+  /* ---------- Карусели ---------- */
+  const tracks = new Map();
+  const setupTrack = track => {
+    const nav = document.querySelector(`[data-nav="${track.id}"]`);
+    if (nav && !nav.childElementCount) nav.innerHTML = navHTML;
+    const [prev, next] = nav ? nav.querySelectorAll('.nav-btn') : [];
+
+    const update = () => {
+      if (!prev) return;
+      const max = track.scrollWidth - track.clientWidth;
+      nav.hidden = max <= 2;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max - 2;
+    };
+    let ticking = false;
+    track.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { ticking = false; update(); });
+    }, { passive: true });
+
+    nav && nav.addEventListener('click', e => {
+      const b = e.target.closest('.nav-btn');
+      if (!b || b.disabled) return;
+      const cs = getComputedStyle(track);
+      const page = track.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) + parseFloat(cs.columnGap || 0);
+      track.scrollBy({ left: Number(b.dataset.dir) * page, behavior: behavior() });
+    });
+
+    // перетаскивание мышью
+    let down = false, moved = false, startX = 0, startLeft = 0, lastX = 0, lastT = 0, v = 0, pid = null;
+    track.addEventListener('pointerdown', e => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      if (e.target.closest('button, input')) return;
+      down = true; moved = false; pid = e.pointerId;
+      startX = lastX = e.clientX; startLeft = track.scrollLeft; lastT = performance.now(); v = 0;
+    });
+    track.addEventListener('pointermove', e => {
+      if (!down) return;
+      const dx = e.clientX - startX;
+      if (!moved && Math.abs(dx) > 5) {
+        moved = true;
+        track.setPointerCapture(pid);
+        track.classList.add('is-dragging');
+      }
+      if (!moved) return;
+      const now = performance.now();
+      v = (e.clientX - lastX) / Math.max(1, now - lastT);
+      lastX = e.clientX; lastT = now;
+      track.scrollLeft = startLeft - dx;
+    });
+    const end = () => {
+      if (!down) return;
+      down = false;
+      if (!moved) return;
+      track.classList.remove('is-dragging');
+      const items = [...track.children];
+      if (!items.length) return;
+      const base = items[0].offsetLeft;
+      const aim = track.scrollLeft - v * 220;
+      let best = 0, bestD = Infinity;
+      items.forEach(it => {
+        const pos = it.offsetLeft - base;
+        const d = Math.abs(pos - aim);
+        if (d < bestD) { bestD = d; best = pos; }
+      });
+      track.scrollTo({ left: best, behavior: behavior() });
+      setTimeout(() => { moved = false; }, 0);
+    };
+    track.addEventListener('pointerup', end);
+    track.addEventListener('pointercancel', end);
+    track.addEventListener('lostpointercapture', end);
+    track.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
+    track.addEventListener('dragstart', e => e.preventDefault());
+
+    tracks.set(track, update);
+    update();
+  };
+  document.querySelectorAll('.track').forEach(setupTrack);
+  const updateAll = () => tracks.forEach(fn => fn());
+  addEventListener('resize', updateAll, { passive: true });
+
+  /* ---------- Панель, чипы и прокрутка к разделам ---------- */
+  const bar = document.getElementById('bar');
+  const chips = document.getElementById('chips');
+  const root = document.documentElement;
+  new ResizeObserver(() => root.style.setProperty('--header-h', bar.offsetHeight + 'px')).observe(bar);
+
+  const sectionIds = ['today', 'top', 'mine', ...CATS.map(c => c.id), 'sandbox'];
+  let lockUntil = 0;
+  const setActive = id => {
+    chips.querySelectorAll('.chip').forEach(ch => {
+      const on = ch.dataset.target === id;
+      if (on) {
+        ch.setAttribute('aria-current', 'true');
+        const left = ch.offsetLeft - (chips.clientWidth - ch.offsetWidth) / 2;
+        chips.scrollTo({ left: Math.max(0, left), behavior: behavior() });
+      } else {
+        ch.removeAttribute('aria-current');
+      }
+    });
+  };
+  let current = 'today';
+  const onScroll = () => {
+    bar.classList.toggle('is-scrolled', scrollY > 4);
+    if (Date.now() < lockUntil || browse.hidden) return;
+    const line = bar.offsetHeight + 80;
+    let id = 'today';
+    for (const sid of sectionIds) {
+      const el = document.getElementById(sid);
+      if (el && !el.hidden && el.getBoundingClientRect().top <= line) id = sid;
+    }
+    if (innerHeight + scrollY >= root.scrollHeight - 4) id = sectionIds[sectionIds.length - 1];
+    if (id !== current) { current = id; setActive(id); }
+  };
+  let scrollTick = false;
+  addEventListener('scroll', () => {
+    if (scrollTick) return;
+    scrollTick = true;
+    requestAnimationFrame(() => { scrollTick = false; onScroll(); });
+  }, { passive: true });
+
+  const goTo = id => {
+    if (openId) { closeApp({ restore: false }); pushEntry(null); }
+    if (!results.hidden) clearSearch();
+    current = id; setActive(id);
+    lockUntil = Date.now() + 900;
+    if (id === 'today') scrollTo({ top: 0, behavior: behavior() });
+    else document.getElementById(id).scrollIntoView({ behavior: behavior(), block: 'start' });
+  };
+  document.addEventListener('click', e => {
+    const t = e.target.closest('[data-target]');
+    if (!t) return;
+    e.preventDefault();
+    goTo(t.dataset.target);
+  });
+
+  /* ---------- Поиск ---------- */
+  const browse = document.getElementById('browse');
+  const results = document.getElementById('results');
+  const resultsTrack = document.getElementById('results-track');
+  const resultsSub = document.getElementById('results-sub');
+  const resultsEmpty = document.getElementById('results-empty');
+  const q = document.getElementById('q');
+  const norm = s => s.toLowerCase().replace(/ё/g, 'е');
+  let haystack = {};
+  const rebuildHaystack = () => {
+    haystack = Object.fromEntries(ALL.map(a => [a.id, norm([a.name, a.desc, catName[a.cat], a.lic, a.repo, a.thirdParty ? 'песочница стороннее' : ''].join(' '))]));
+  };
+  rebuildHaystack();
+
+  const runSearch = () => {
+    const query = q.value.trim();
+    const searching = query.length > 0;
+    const fromDetail = !!openId;
+    if (fromDetail) { openId = null; returnTo = null; trail = []; document.title = baseTitle; pushEntry(null); }
+    const wasSearching = !results.hidden;
+    showView(searching ? 'results' : 'browse');
+    if (fromDetail || searching !== wasSearching) scrollTo({ top: 0 });
+    chips.querySelectorAll('.chip').forEach(ch => ch.toggleAttribute('aria-current', false));
+    if (!searching) { current = ''; onScroll(); return; }
+    const terms = norm(query).split(/\s+/);
+    const found = ALL.filter(a => visible(a) && terms.every(t => haystack[a.id].includes(t)));
+    resultsSub.textContent = `${found.length} ${plural(found.length, ['приложение', 'приложения', 'приложений'])} по запросу «${query}»`;
+    resultsTrack.innerHTML = found.map(cardHTML).join('');
+    resultsTrack.hidden = !found.length;
+    resultsEmpty.hidden = !!found.length;
+    resultsEmpty.textContent = found.length ? '' : 'Ничего не нашлось. Попробуйте название приложения, категорию вроде «Игры» или лицензию, например MIT.';
+    resultsTrack.scrollLeft = 0;
+    tracks.get(resultsTrack)();
+  };
+  const clearSearch = () => { q.value = ''; runSearch(); };
+  q.addEventListener('input', runSearch);
+  q.addEventListener('keydown', e => { if (e.key === 'Escape') { clearSearch(); q.blur(); } });
+
+  /* ---------- Страница приложения ---------- */
+  const detail = document.getElementById('detail');
+  const baseTitle = document.title;
+  const starsDate = new Date(STARS_UPDATED + 'T00:00:00');
+  const arrowOut = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+  const checkIcon = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="m5.8 10.3 2.7 2.7 5.7-5.9"/></svg>';
+  const fact = (label, value, sub, cls = '') => `<div class="fact" role="listitem"><span class="fact-label">${label}</span><span class="fact-value ${cls}">${value}</span>${sub}</div>`;
+  const infoRow = (label, value) => `<div class="info-row"><dt>${label}</dt><dd>${value}</dd></div>`;
+  const outLink = (href, text) => `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
+
+  const warnIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 4.2 2.6 17.6a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5V14M12 17.2h.01"/></svg>';
+  const noticeHTML = (title, text) => `<div class="notice" role="note">${warnIcon}<p class="notice-title">${title}</p><p class="notice-text">${text}</p></div>`;
+
+  const renderDetail = (app, backLabel) => {
+    const third = Boolean(app.thirdParty);
+    const d = DETAILS[app.id] || { about: app.about || app.desc, os: app.os || '', shots: app.shots || [] };
+    const r = ratingOf(app.stars);
+    const owner = app.repo.split('/')[0];
+    const ranked = (third ? SANDBOX_APPS : APPS.filter(a => a.cat === app.cat)).filter(visible).sort((a, b) => b.stars - a.stars);
+    const related = ranked.filter(a => a !== app);
+    const captions = third ? [] : d.shots.map(s => s.caption || s[1]);
+    const platforms = [...(d.os || '')].map(c => OS[c]).join(', ') || 'Не указаны';
+    detail.querySelectorAll('.track').forEach(t => tracks.delete(t));
+    detail.innerHTML = `
+      <div class="d-nav wrap"><button class="back" type="button" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg><span>${backLabel}</span></button></div>
+      <header class="d-head wrap">
+        ${iconHTML(app)}
+        <div class="d-title">
+          <h1 class="d-name" id="d-title" tabindex="-1">${app.name}</h1>
+          <p class="d-sub">${app.desc}</p>
+          <div class="d-actions">${getHTML(app)}${starButtonHTML(app)}<a class="pill-link" href="https://github.com/${app.repo}" target="_blank" rel="noopener">Исходный код${arrowOut}</a></div>
+          <p class="d-note" id="d-note" role="status" hidden></p>
+        </div>
+      </header>
+      ${third ? `<div class="wrap">${noticeHTML('Стороннее приложение', 'Его опубликовал автор, а не VibeMarket. Мы не проверяли это приложение и не несём ответственности за его работу, безопасность и содержание. Перед установкой посмотрите исходный код. Устанавливайте на свой риск.')}</div>` : ''}
+      <div class="facts" role="list" aria-label="Коротко о приложении">
+        ${fact('Рейтинг', fmtRating.format(r), `<span class="stars" style="--pct:${(r / 5 * 100).toFixed(1)}%" aria-hidden="true"></span>`)}
+        ${fact('Звёзды GitHub', fmtCompact.format(app.stars), `<span class="fact-sub">${auth.live ? 'только что' : `на ${starsDate.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' })}`}</span>`)}
+        ${fact('Лицензия', app.lic, '<span class="fact-sub">открытый код</span>', 'is-mono')}
+        ${third
+          ? fact('Раздел', 'Песочница', '<span class="fact-sub">стороннее</span>', 'is-text')
+          : fact('Категория', `№${ranked.indexOf(app) + 1}`, `<span class="fact-sub">${catName[app.cat]}</span>`)}
+        ${fact('Разработчик', owner, '<span class="fact-sub">на GitHub</span>', 'is-text')}
+        ${fact('Цена', '0&nbsp;₽', `<span class="fact-sub">${third ? 'по правилам песочницы' : 'без рекламы'}</span>`)}
+      </div>
+      ${d.shots.length ? `
+      <section class="shelf" aria-labelledby="shots-title">
+        <div class="shelf-head wrap">
+          <div class="shelf-heading">
+            <h2 class="shelf-title" id="shots-title">Скриншоты</h2>
+            <p class="shelf-sub">${third ? 'Снимки экрана от автора' : `Иллюстрации интерфейса ${app.name}`}</p>
+          </div>
+          <div class="shelf-nav" data-nav="shots-track"></div>
+        </div>
+        <div class="track is-shots" id="shots-track" role="list" tabindex="0" aria-label="Скриншоты ${app.name}">${d.shots.map((s, i) => shotHTML(app, s, i)).join('')}</div>
+      </section>` : ''}
+      <div class="d-grid wrap">
+        <section class="d-block" aria-labelledby="about-title">
+          <h2 class="shelf-title" id="about-title">Описание</h2>
+          <p class="d-text">${d.about}</p>
+          ${captions.length ? `<ul class="features">${captions.map(c => `<li>${checkIcon}<span>${c}</span></li>`).join('')}</ul>` : ''}
+        </section>
+        <section class="d-block" aria-labelledby="info-title">
+          <h2 class="shelf-title" id="info-title">Информация</h2>
+          <dl class="info">
+            ${infoRow('Разработчик', outLink(`https://github.com/${owner}`, owner))}
+            ${infoRow('Репозиторий', outLink(`https://github.com/${app.repo}`, app.repo))}
+            ${third ? infoRow('Раздел', 'Песочница, стороннее приложение') : ''}
+            ${infoRow('Лицензия', `<span class="license">${app.lic}</span>`)}
+            ${infoRow('Звёзды GitHub', fmtInt.format(app.stars))}
+            ${infoRow('Платформы', platforms)}
+            ${infoRow('Цена', 'Бесплатно')}
+            ${infoRow('Реклама и трекеры', third ? 'Не проверялось' : 'Нет')}
+          </dl>
+        </section>
+      </div>
+      ${related.length ? `
+      <section class="shelf" aria-labelledby="related-title">
+        <div class="shelf-head wrap">
+          <div class="shelf-heading">
+            <h2 class="shelf-title" id="related-title">${third ? 'Ещё в песочнице' : `Ещё в категории «${catName[app.cat]}»`}</h2>
+            <p class="shelf-sub">${third ? 'Бесплатные приложения от независимых авторов' : catSub[app.cat]}</p>
+          </div>
+          <div class="shelf-nav" data-nav="related-track"></div>
+        </div>
+        <div class="track" id="related-track" role="list" tabindex="0" aria-label="${third ? 'Ещё в песочнице' : `Ещё в категории ${catName[app.cat]}`}">${related.map(cardHTML).join('')}</div>
+      </section>` : ''}`;
+    detail.querySelectorAll('.track').forEach(setupTrack);
+  };
+
+  // Навигация: история браузера, если она доступна, иначе переходы в памяти
+  let openId = null, returnTo = null, trail = [], detailBack = '';
+  const sectionLabel = id => ({ top: 'Топ', mine: 'Ваши звёзды', sandbox: 'Песочница' })[id] || catName[id] || 'Сегодня';
+  const showView = v => { browse.hidden = v !== 'browse'; results.hidden = v !== 'results'; detail.hidden = v !== 'detail'; };
+  const pushEntry = id => {
+    try { history.pushState({ vibemarket: true }, '', id ? `#app-${id}` : location.pathname + location.search); }
+    catch (e) { /* встроенное окно без истории: работаем без неё */ }
+  };
+
+  const openApp = (id, { push = true } = {}) => {
+    const app = byId[id];
+    if (!app || !visible(app)) return;
+    if (!openId) {
+      const fromResults = !results.hidden;
+      returnTo = { view: fromResults ? 'results' : 'browse', y: scrollY, label: fromResults ? 'Поиск' : sectionLabel(current), focus: document.activeElement };
+      trail = [];
+    } else if (push) trail.push(openId);
+    else if (trail[trail.length - 1] === id) trail.pop();
+    openId = id;
+    detailBack = trail.length ? byId[trail[trail.length - 1]].name : returnTo.label;
+    renderDetail(app, detailBack);
+    showView('detail');
+    document.title = `${plainName(app)} · VibeMarket`;
+    scrollTo({ top: 0 });
+    setActive(app.thirdParty ? 'sandbox' : app.cat);
+    current = '';
+    if (push) pushEntry(id);
+    document.getElementById('d-title').focus({ preventScroll: true });
+    announce(`Страница приложения ${plainName(app)}`);
+  };
+
+  const closeApp = ({ restore = true } = {}) => {
+    if (!openId) return;
+    const back = returnTo || { view: 'browse', y: 0 };
+    openId = null; returnTo = null; trail = [];
+    document.title = baseTitle;
+    showView(back.view === 'results' && q.value.trim() ? 'results' : 'browse');
+    if (restore) {
+      scrollTo({ top: back.y });
+      if (back.focus && back.focus !== document.body && document.contains(back.focus)) back.focus.focus({ preventScroll: true });
+    }
+    onScroll();
+  };
+
+  const goBack = () => {
+    if (history.state && history.state.vibemarket) { history.back(); return; }
+    if (trail.length) { openApp(trail[trail.length - 1], { push: false }); return; }
+    closeApp();
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* без истории */ }
+  };
+
+  const routeFromLocation = () => {
+    if (location.hash === '#submit') { closeApp({ restore: false }); openSubmit(); return; }
+    const match = /^#app-([a-z0-9-]+)$/i.exec(location.hash);
+    if (match && byId[match[1]]) { if (openId !== match[1]) openApp(match[1], { push: false }); }
+    else closeApp();
+  };
+  addEventListener('popstate', routeFromLocation);
+  addEventListener('hashchange', routeFromLocation);
+
+  document.addEventListener('click', e => {
+    const opener = e.target.closest('[data-open]');
+    if (opener) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      openApp(opener.dataset.open);
+      return;
+    }
+    if (e.target.closest('[data-back]')) goBack();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && openId && e.target !== q) goBack();
+  });
+
+  /* ---------- Вход через GitHub ---------- */
+  const account = document.getElementById('account');
+  const mine = document.getElementById('mine');
+  const mineTrack = document.getElementById('mine-track');
+  const mineSub = document.getElementById('mine-sub');
+  const mineEmpty = document.getElementById('mine-empty');
+  const personIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20c1.2-3.6 4.1-5.5 7.5-5.5s6.3 1.9 7.5 5.5"/></svg>';
+  const starIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${STAR_PATH}"/></svg>`;
+  const pendingStars = new Set();
+
+  const loginResult = new URLSearchParams(location.search).get('login');
+  const loginFailed = loginResult === 'failed';
+  if (loginResult) {
+    try { history.replaceState(history.state, '', location.pathname + location.hash); } catch (e) { /* без истории */ }
+  }
+
+  const signinHref = () => {
+    const back = openId ? `#app-${openId}` : document.getElementById('submit').hidden ? '' : '#submit';
+    return `/auth/login${back ? `?return=${encodeURIComponent(back)}` : ''}`;
+  };
+
+  const starButtonHTML = app => {
+    if (!auth.configured) return '';
+    if (!auth.user) {
+      return `<a class="pill-link star-btn" href="/auth/login?return=${encodeURIComponent(`#app-${app.id}`)}" data-signin>${starIcon}<span>Star</span><span class="sr-only"> ${app.name} на GitHub, нужен вход</span></a>`;
+    }
+    const on = auth.starred.has(app.repo);
+    return `<button class="pill-link star-btn${on ? ' is-on' : ''}" type="button" data-star="${app.id}" aria-pressed="${on}"${auth.loaded ? '' : ' disabled'}>${starIcon}<span class="star-label">${on ? 'Starred' : 'Star'}</span><span class="sr-only"> ${app.name} на GitHub</span></button>`;
+  };
+
+  const renderAccount = () => {
+    account.hidden = !auth.configured;
+    document.getElementById('auth-note').hidden = !auth.configured;
+    const mineChip = chips.querySelector('[data-target="mine"]');
+    if (auth.user && !mineChip) chips.querySelector('[data-target="top"]').insertAdjacentHTML('afterend', '<button class="chip" type="button" data-target="mine">Ваши звёзды</button>');
+    if (!auth.user && mineChip) mineChip.remove();
+    if (!auth.configured) return;
+    account.innerHTML = auth.user
+      ? `<button class="avatar-btn" type="button" data-target="mine" title="Ваши звёзды"><img src="${esc(auth.user.avatar)}" alt="" width="28" height="28"><span class="account-name">${esc(auth.user.login)}</span><span class="sr-only">: ваши звёзды</span></button>`
+      : `<a class="signin" href="/auth/login" data-signin${loginFailed ? ' title="Не удалось войти через GitHub"' : ''}>${personIcon}<span class="signin-text">${loginFailed ? 'Повторить вход' : 'Войти через GitHub'}</span></a>`;
+  };
+
+  const renderMine = () => {
+    mine.hidden = !auth.user;
+    if (!auth.user) return;
+    const apps = ALL.filter(a => visible(a) && auth.starred.has(a.repo)).sort((a, b) => b.stars - a.stars);
+    const count = !auth.loaded ? 'Загружаем звёзды из GitHub…'
+      : apps.length ? `${apps.length} ${plural(apps.length, ['приложение', 'приложения', 'приложений'])} из каталога`
+      : 'Пока ни одного приложения из каталога';
+    mineSub.innerHTML = `${count} · <a href="${esc(auth.user.url)}" target="_blank" rel="noopener">@${esc(auth.user.login)}</a> · <button class="link-btn" type="button" data-logout>Выйти</button>`;
+    mineTrack.innerHTML = apps.map(cardHTML).join('');
+    mineTrack.hidden = !apps.length;
+    mineEmpty.hidden = !auth.loaded || apps.length > 0;
+    tracks.get(mineTrack)?.();
+  };
+
+  const setStarred = (app, on) => {
+    if (on) auth.starred.add(app.repo); else auth.starred.delete(app.repo);
+    document.querySelectorAll(`.app[data-app="${app.id}"]`).forEach(card => {
+      card.classList.toggle('is-starred', on);
+      card.setAttribute('aria-label', cardLabel(app));
+    });
+    document.querySelectorAll(`[data-star="${app.id}"]`).forEach(btn => {
+      btn.classList.toggle('is-on', on);
+      btn.setAttribute('aria-pressed', String(on));
+      btn.querySelector('.star-label').textContent = on ? 'Starred' : 'Star';
+    });
+    renderMine();
+  };
+
+  const showDetailNote = text => {
+    const note = document.getElementById('d-note');
+    if (!note) return;
+    note.textContent = text;
+    note.hidden = !text;
+  };
+
+  const toggleStar = async app => {
+    if (pendingStars.has(app.id)) return;
+    const on = !auth.starred.has(app.repo);
+    pendingStars.add(app.id);
+    setStarred(app, on);
+    showDetailNote('');
+    try {
+      const res = await fetch(`/api/star/${app.repo}`, { method: on ? 'PUT' : 'DELETE', headers: { 'X-VibeMarket': '1' } });
+      if (res.status === 401) { location.href = signinHref(); return; }
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).message || `ошибка ${res.status}`);
+      announce(on ? `${plainName(app)}: звезда поставлена` : `${plainName(app)}: звезда снята`);
+    } catch (err) {
+      setStarred(app, !on);
+      const text = `Не удалось ${on ? 'поставить' : 'снять'} звезду: ${err.message}`;
+      showDetailNote(text);
+      announce(text);
+    } finally {
+      pendingStars.delete(app.id);
+    }
+  };
+
+  const refreshViews = () => {
+    renderTop();
+    renderShelfTracks();
+    renderSandbox();
+    renderStarTile();
+    renderMine();
+    if (!results.hidden) runSearch();
+    if (openId) renderDetail(byId[openId], detailBack);
+    updateAll();
+  };
+
+  // Живые звёзды и отметки пользователя: один запрос к своему серверу, тот делает один GraphQL-запрос к GitHub
+  const loadCatalog = async () => {
+    try {
+      const res = await fetch('/api/catalog', { headers: { Accept: 'application/json' } });
+      if (res.status === 401) {
+        auth.user = null;
+        renderAccount();
+      } else {
+        if (!res.ok) throw new Error((await res.json().catch(() => ({}))).message || `ошибка ${res.status}`);
+        const data = await res.json();
+        ALL.forEach(a => { if (Number.isFinite(data.stars[a.repo])) a.stars = data.stars[a.repo]; });
+        auth.liveAt = Date.now();
+        auth.starred = new Set(data.starred);
+        auth.live = true;
+        document.getElementById('stars-date').textContent = 'только что, через ваш аккаунт GitHub.';
+      }
+    } catch (err) {
+      console.warn('VibeMarket: не удалось получить звёзды из GitHub:', err.message);
+    }
+    auth.loaded = true;
+    refreshViews();
+  };
+
+  const logout = async () => {
+    try {
+      const res = await fetch('/auth/logout', { method: 'POST', headers: { 'X-VibeMarket': '1' } });
+      if (!res.ok) throw new Error(`ошибка ${res.status}`);
+      location.reload();
+    } catch (err) {
+      announce(`Не удалось выйти: ${err.message}`);
+    }
+  };
+
+  document.addEventListener('click', e => {
+    const signin = e.target.closest('[data-signin]');
+    if (signin) { signin.href = signinHref(); return; }
+    const starBtn = e.target.closest('[data-star]');
+    if (starBtn) { toggleStar(byId[starBtn.dataset.star]); return; }
+    if (e.target.closest('[data-logout]')) logout();
+  });
+
+  renderAccount();
+  renderMine();
+  if (loginFailed) announce('Не удалось войти через GitHub. Попробуйте ещё раз.');
+  if (auth.user) loadCatalog();
+
+  /* ---------- Каталог от робота ---------- */
+  // catalog.json ведёт робот в GitHub Actions: звёзды, песочница, голосование, скрытые по жалобам.
+  // Без него страница работает на встроенном снимке.
+  let HOME_REPO = 'NickGBar/VibeMarket';
+  const RULES = { votesNeeded: 10, voteDays: 7, downvoteWeight: 2, voterMinAgeDays: 90, topic: 'vibemarket' };
+  let candidates = [];
+
+  const renderRules = () => {
+    document.getElementById('rules-steps').innerHTML = [
+      `Приложение бесплатное, с открытой лицензией и хотя бы одним релизом на GitHub. Добавьте репозиторию тему «${esc(RULES.topic)}».`,
+      'Заполните форму: заявка откроется на GitHub, робот проверит её за несколько минут.',
+      `Сообщество голосует 👍 под заявкой ${RULES.voteDays} ${plural(RULES.voteDays, ['день', 'дня', 'дней'])}. Учитываются аккаунты GitHub старше ${RULES.voterMinAgeDays} ${plural(RULES.voterMinAgeDays, ['дня', 'дней', 'дней'])}.`,
+      `При ${RULES.votesNeeded} ${plural(RULES.votesNeeded, ['голосе', 'голосах', 'голосах'])} робот сам опубликует приложение здесь.`,
+    ].map(step => `<li>${step}</li>`).join('');
+  };
+
+  const sanitizeCandidate = raw => {
+    if (!raw || !Number.isInteger(raw.issue) || !/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(raw.repo || '') || !raw.name) return null;
+    const colors = Array.isArray(raw.c) ? raw.c : [];
+    const count = value => (Number.isInteger(value) && value >= 0 ? value : 0);
+    const closes = Date.parse(raw.closesAt);
+    return {
+      issue: raw.issue,
+      repo: raw.repo,
+      name: esc(raw.name),
+      desc: esc(raw.desc || ''),
+      glyph: GLYPHS[raw.glyph] ? raw.glyph : 'blocks',
+      c: [safeColor(colors[0], '#636366'), safeColor(colors[1], '#2C2C2E')],
+      up: count(raw.up),
+      down: count(raw.down),
+      closesAt: Number.isNaN(closes) ? Date.now() : closes,
+    };
+  };
+
+  const candidateHTML = c => {
+    const pct = Math.min(100, Math.round(c.up / Math.max(1, RULES.votesNeeded) * 100));
+    const days = Math.max(0, Math.ceil((c.closesAt - Date.now()) / 86400000));
+    const left = days ? `ещё ${days} ${plural(days, ['день', 'дня', 'дней'])}` : 'итоги сегодня';
+    return `<article class="app candidate" role="listitem" aria-label="${c.name}: ${c.up} из ${RULES.votesNeeded} голосов">` +
+      `<div class="app-top">${iconHTML(c, 64)}<a class="pill-link vote-link" href="https://github.com/${HOME_REPO}/issues/${c.issue}" target="_blank" rel="noopener">Голосовать${arrowOut}</a></div>` +
+      `<div class="app-text"><h4 class="app-name">${c.name}</h4><p class="app-desc">${c.desc}</p></div>` +
+      `<div class="vote-meta"><span class="vote-bar" aria-hidden="true"><b style="width:${pct}%"></b></span>` +
+      `<span class="vote-count">${c.up} из ${RULES.votesNeeded} 👍${c.down ? ` · ${c.down} 👎` : ''} · ${left}</span></div>` +
+      `</article>`;
+  };
+
+  const renderVoting = () => {
+    const any = candidates.length > 0;
+    document.getElementById('voting').hidden = !any;
+    document.getElementById('published-title').hidden = !any;
+    if (!any) return;
+    document.getElementById('voting-sub').textContent =
+      `Голосуйте 👍 под заявкой на GitHub. При ${RULES.votesNeeded} ${plural(RULES.votesNeeded, ['голосе', 'голосах', 'голосах'])} приложение появится в песочнице само.`;
+    const track = document.getElementById('voting-track');
+    track.innerHTML = candidates.map(candidateHTML).join('');
+    tracks.get(track)?.();
+  };
+
+  const applyRobotCatalog = data => {
+    if (!data || data.version !== 1) return;
+    if (/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(data.home || '')) HOME_REPO = data.home;
+    for (const key of Object.keys(RULES)) {
+      const value = data.rules?.[key];
+      if (key === 'topic' ? /^[a-z0-9-]{1,50}$/.test(value || '') : Number.isFinite(value) && value >= 0) RULES[key] = value;
+    }
+    // Если вошли через server.mjs, его звёзды свежее
+    if (data.stars && typeof data.stars === 'object' && !auth.liveAt) {
+      APPS.forEach(a => { if (Number.isFinite(data.stars[a.repo])) a.stars = data.stars[a.repo]; });
+    }
+    hiddenRepos = new Set((Array.isArray(data.hidden) ? data.hidden : []).map(h => String(h?.repo || '').toLowerCase()).filter(Boolean));
+    SANDBOX_APPS = buildSandbox([...SANDBOX, ...(Array.isArray(data.sandbox) ? data.sandbox : [])]);
+    ALL = [...APPS, ...SANDBOX_APPS];
+    byId = Object.fromEntries(ALL.map(a => [a.id, a]));
+    rebuildHaystack();
+    candidates = (Array.isArray(data.candidates) ? data.candidates : []).map(sanitizeCandidate).filter(Boolean);
+    const updated = Date.parse(data.updated);
+    if (!Number.isNaN(updated) && !auth.liveAt) {
+      document.getElementById('stars-date').textContent =
+        `${new Date(updated).toLocaleString('ru-RU', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })}: их обновляет робот VibeMarket.`;
+    }
+    if (openId && (!byId[openId] || !visible(byId[openId]))) closeApp({ restore: false });
+    renderRules();
+    renderVoting();
+    refreshViews();
+    if (!openId && /^#app-/.test(location.hash)) routeFromLocation();
+  };
+
+  const loadRobotCatalog = async () => {
+    try {
+      const res = await fetch('catalog.json', { cache: 'no-cache' });
+      if (res.ok) applyRobotCatalog(await res.json());
+    } catch (e) {
+      /* страница открыта без catalog.json: остаётся встроенный снимок */
+    }
+  };
+  renderRules();
+
+  /* ---------- Заявка в песочницу ---------- */
+  // Заявка подаётся на GitHub: форма собирает поля и открывает issue form уже заполненной.
+  // Дальше всё делает робот: проверка, голосование и публикация.
+  const submitPanel = document.getElementById('submit');
+  const form = document.getElementById('submit-form');
+  const submitDone = document.getElementById('submit-done');
+  const field = id => document.getElementById(id);
+  const PICK_GLYPHS = { code: 'Код', terminal: 'Терминал', window: 'Окно', blocks: 'Блоки', shapes: 'Фигуры', pen: 'Перо', brush: 'Кисть', image: 'Картинка', note: 'Заметка', check: 'Галочка', chat: 'Сообщение', play: 'Видео', wave: 'Звук', key: 'Ключ', shield: 'Щит', sparkle: 'Искры', gamepad: 'Геймпад', globe: 'Глобус' };
+  // Те же цвета, что PALETTE в scripts/robot.mjs
+  const PALETTE = [
+    ['Синий', '#4AA8FF', '#0A5BD6'], ['Фиолетовый', '#A99BFF', '#5E4BD8'], ['Розовый', '#FF6FA8', '#B3165A'], ['Оранжевый', '#FFA24D', '#E8590C'],
+    ['Жёлтый', '#FFD166', '#E98A15'], ['Зелёный', '#63D471', '#178A3B'], ['Бирюзовый', '#3FD1C4', '#0E7C86'], ['Графитовый', '#5A5A60', '#1A1A1C'],
+  ];
+  let repoCheck = { slug: '', info: null, error: '' };
+  let repoTimer = 0;
+
+  field('f-cat').innerHTML = '<option value="">Выберите</option>' + CATS.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+  field('f-os').innerHTML = Object.entries(OS).map(([key, label]) =>
+    `<label class="check-chip"><input type="checkbox" name="os" value="${key}" id="f-os-${key}"><span>${label === 'веб' ? 'Веб' : label}</span></label>`).join('');
+  field('f-glyph').innerHTML = Object.entries(PICK_GLYPHS).map(([key, label], i) =>
+    `<label class="glyph-opt" title="${label}"><input type="radio" name="glyph" value="${key}" id="f-glyph-${key}"${i ? '' : ' checked'}><span class="glyph-box"><svg viewBox="0 0 24 24" aria-hidden="true">${GLYPHS[key]}</svg><span class="sr-only">${label}</span></span></label>`).join('');
+  field('f-color').innerHTML = PALETTE.map(([label, c1, c2], i) =>
+    `<label class="swatch-opt" title="${label}"><input type="radio" name="color" value="${i}" id="f-color-${i}"${i ? '' : ' checked'}><span class="swatch" style="--c1:${c1};--c2:${c2}"></span><span class="sr-only">${label}</span></label>`).join('');
+
+  // Принимаем и «владелец/репозиторий», и ссылку на github.com
+  const parseRepo = value => {
+    const m = /^(?:https?:\/\/)?(?:www\.)?(?:github\.com\/)?([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+?)(?:\.git)?(?:[/?#].*)?$/.exec(value.trim());
+    return m && m[1].toLowerCase() !== 'github.com' ? `${m[1]}/${m[2]}` : '';
+  };
+  const starsWord = n => `${fmtInt.format(n)} ${plural(n, ['звезда', 'звезды', 'звёзд'])}`;
+  const setRepoStatus = (kind, text) => {
+    const el = field('f-repo-status');
+    el.className = `repo-status${kind ? ` is-${kind}` : ''}`;
+    el.textContent = text;
+  };
+  const setFieldError = (id, message) => {
+    const target = field(id);
+    const error = field(`${id}-error`);
+    if (target?.matches('input, select, textarea')) target.setAttribute('aria-invalid', message ? 'true' : 'false');
+    if (error) { error.textContent = message || ''; error.hidden = !message; }
+  };
+  const showFormError = text => {
+    field('f-error').textContent = text;
+    field('f-error').hidden = !text;
+  };
+
+  const draftApp = () => {
+    const [, c1, c2] = PALETTE[Number(form.elements.color.value) || 0];
+    return {
+      id: 'draft-preview',
+      thirdParty: true,
+      name: esc(field('f-name').value.trim() || 'Название приложения'),
+      desc: esc(field('f-desc').value.trim() || 'Здесь будет короткое описание приложения.'),
+      repo: repoCheck.info?.repo || parseRepo(field('f-repo').value) || 'owner/repo',
+      stars: repoCheck.info?.stars || 0,
+      lic: esc(repoCheck.info?.license || 'лицензия'),
+      glyph: form.elements.glyph.value || 'code',
+      c: [c1, c2],
+    };
+  };
+  const updatePreview = () => { field('f-preview').innerHTML = cardHTML(draftApp()); };
+  const updateCount = () => {
+    field('f-desc-count').textContent = `${field('f-desc').value.length} из 90 символов. Этот текст будет на карточке.`;
+  };
+
+  // Репозиторий проверяем прямо в GitHub API без токена: 60 запросов в час на посетителя.
+  // Если запрос не прошёл, не страшно: то же самое и даже больше проверит робот.
+  const checkRepo = async () => {
+    clearTimeout(repoTimer);
+    const raw = field('f-repo').value.trim();
+    const slug = parseRepo(raw);
+    if (!raw) { repoCheck = { slug: '', info: null, error: '' }; setRepoStatus('', ''); updatePreview(); return; }
+    if (!slug) {
+      repoCheck = { slug: '', info: null, error: 'format' };
+      setRepoStatus('bad', 'Укажите репозиторий как владелец/название или ссылкой на github.com.');
+      updatePreview();
+      return;
+    }
+    if (slug === repoCheck.slug && repoCheck.error !== 'network') return;
+    repoCheck = { slug, info: null, error: '' };
+    setFieldError('f-repo', '');
+    updatePreview();
+    const key = slug.toLowerCase();
+    if (ALL.some(a => a.repo.toLowerCase() === key) || candidates.some(c => c.repo.toLowerCase() === key)) {
+      repoCheck.error = 'duplicate';
+      setRepoStatus('bad', 'Это приложение уже есть в VibeMarket или на голосовании.');
+      return;
+    }
+    setRepoStatus('', 'Проверяем репозиторий на GitHub…');
+    try {
+      const res = await fetch(`https://api.github.com/repos/${slug}`, { headers: { Accept: 'application/vnd.github+json' } });
+      if (repoCheck.slug !== slug) return;
+      if (res.status === 404) {
+        repoCheck.error = 'missing';
+        setRepoStatus('bad', 'Репозиторий не найден. Проверьте адрес: он должен быть публичным.');
+        return;
+      }
+      if (!res.ok) throw new Error(`ошибка ${res.status}`);
+      const data = await res.json();
+      if (repoCheck.slug !== slug) return;
+      const spdx = data.license?.spdx_id;
+      const info = { repo: data.full_name, name: data.name, description: data.description || '', license: spdx && spdx !== 'NOASSERTION' ? spdx : '', stars: data.stargazers_count, topics: data.topics || [] };
+      if (data.archived) { repoCheck.error = 'archived'; setRepoStatus('bad', 'Репозиторий в архиве, робот его не примет.'); return; }
+      if (data.fork) { repoCheck.error = 'fork'; setRepoStatus('bad', 'Это форк. Пришлите исходный репозиторий.'); return; }
+      repoCheck.info = info;
+      const todo = [];
+      if (!info.license) todo.push('укажите в репозитории открытую лицензию');
+      if (!info.topics.includes(RULES.topic)) todo.push(`добавьте репозиторию тему «${RULES.topic}»`);
+      const facts = `Публичный репозиторий ${info.repo} · ${info.license ? `лицензия ${info.license}` : 'без лицензии'} · ${starsWord(info.stars)}.`;
+      setRepoStatus(todo.length ? 'warn' : 'ok', todo.length ? `${facts} Перед отправкой ${todo.join(' и ')}, иначе робот отклонит заявку.` : facts);
+      if (!field('f-name').value.trim()) field('f-name').value = info.name.slice(0, 40);
+      if (!field('f-desc').value.trim() && info.description) field('f-desc').value = info.description.slice(0, 90);
+      updateCount();
+      updatePreview();
+    } catch (err) {
+      if (repoCheck.slug !== slug) return;
+      repoCheck.error = 'network';
+      setRepoStatus('', `Репозиторий ${slug}. Подробно его проверит робот после отправки.`);
+    }
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (!parseRepo(field('f-repo').value)) errors['f-repo'] = 'Укажите публичный репозиторий на GitHub: владелец/название.';
+    else if (['format', 'duplicate', 'missing', 'archived', 'fork'].includes(repoCheck.error)) errors['f-repo'] = 'Этот репозиторий нельзя отправить, причина указана выше.';
+    if (field('f-name').value.trim().length < 2) errors['f-name'] = 'Название должно быть от 2 до 40 символов.';
+    if (!field('f-cat').value) errors['f-cat'] = 'Выберите категорию.';
+    if (field('f-desc').value.trim().length < 10) errors['f-desc'] = 'Опишите приложение хотя бы в 10 символах.';
+    ['f-repo', 'f-name', 'f-cat', 'f-desc', 'f-about'].forEach(id => setFieldError(id, errors[id]));
+    return Object.keys(errors);
+  };
+
+  // Поля передаются по id из .github/ISSUE_TEMPLATE/submit-app.yml
+  const issueURL = () => {
+    const [colorName] = PALETTE[Number(form.elements.color.value) || 0];
+    const params = new URLSearchParams({
+      template: 'submit-app.yml',
+      title: `Заявка: ${field('f-name').value.trim()}`,
+      repo: parseRepo(field('f-repo').value),
+      name: field('f-name').value.trim(),
+      category: field('f-cat').value,
+      desc: field('f-desc').value.trim(),
+      platforms: [...form.querySelectorAll('input[name="os"]:checked')].map(input => OS[input.value]).join(', '),
+      glyph: form.elements.glyph.value,
+      color: colorName,
+    });
+    const about = field('f-about').value.trim();
+    if (about) params.set('about', about);
+    return `https://github.com/${HOME_REPO}/issues/new?${params}`;
+  };
+
+  const submitForm = e => {
+    e.preventDefault();
+    showFormError('');
+    const invalid = validate();
+    if (invalid.length) { field(invalid[0]).focus(); return; }
+    const link = field('f-github-link');
+    link.href = issueURL();
+    form.hidden = true;
+    submitDone.hidden = false;
+    // Открываем из того же нажатия, чтобы браузер не принял вкладку за всплывающее окно
+    link.click();
+    submitDone.focus();
+    announce('Форма заявки открыта на GitHub');
+  };
+
+  const setSubmitExpanded = open => document.querySelectorAll('[data-submit-open]').forEach(b => b.setAttribute('aria-expanded', String(open)));
+  const openSubmit = () => {
+    if (openId) closeApp({ restore: false });
+    if (!results.hidden) clearSearch();
+    submitPanel.hidden = false;
+    setSubmitExpanded(true);
+    updatePreview();
+    submitPanel.scrollIntoView({ behavior: behavior(), block: 'start' });
+    (form.hidden ? submitDone : field('f-repo')).focus({ preventScroll: true });
+  };
+  const closeSubmit = () => {
+    submitPanel.hidden = true;
+    setSubmitExpanded(false);
+    document.querySelector('#sandbox .rules [data-submit-open]').focus({ preventScroll: true });
+  };
+
+  form.addEventListener('submit', submitForm);
+  field('f-repo').addEventListener('input', () => {
+    clearTimeout(repoTimer);
+    repoTimer = setTimeout(checkRepo, 700);
+  });
+  field('f-repo').addEventListener('change', checkRepo);
+  form.addEventListener('input', e => {
+    if (e.target.getAttribute('aria-invalid') === 'true') setFieldError(e.target.id, '');
+    if (e.target.id === 'f-desc') updateCount();
+    if (e.target.id !== 'f-repo') updatePreview();
+  });
+  form.addEventListener('change', updatePreview);
+  document.addEventListener('click', e => {
+    if (e.target.closest('[data-submit-open]')) { openSubmit(); return; }
+    if (e.target.closest('[data-submit-close]')) { closeSubmit(); return; }
+    if (e.target.closest('[data-submit-again]')) {
+      submitDone.hidden = true;
+      form.hidden = false;
+      field('f-repo').focus();
+    }
+  });
+  updateCount();
+
+  if (location.hash) routeFromLocation();
+
+  loadRobotCatalog();
+  onScroll();
+})();
+</script>
+
+</body>
+</html>

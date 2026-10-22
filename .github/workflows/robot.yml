@@ -1,0 +1,82 @@
+# Робот VibeMarket: проверяет заявки, считает голоса, обновляет catalog.json и публикует сайт на GitHub Pages.
+# Запускается раз в час, на каждое событие в Issues, на push в main и вручную.
+name: Робот VibeMarket
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled, closed]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Запуски идут строго по очереди, чтобы два робота не записали catalog.json одновременно
+concurrency:
+  group: vibemarket-robot
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  robot:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      # Текст заявок робот читает через API сам. В shell попадает только этот скрипт из main.
+      - name: Проход робота
+        run: node scripts/robot.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Сохранить каталог
+        id: save
+        run: |
+          if git diff --quiet -- catalog.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Робот: обновление каталога"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  # Коммиты робота не запускают новые workflow, поэтому сайт публикуется здесь же
+  deploy:
+    needs: robot
+    if: ${{ !cancelled() && needs.robot.result != 'failure' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || needs.robot.outputs.changed == 'true') }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Собрать сайт
+        run: |
+          mkdir _site
+          cp index.html catalog.json rules.json _site/
+          if [ -d screens ]; then cp -R screens _site/; fi
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

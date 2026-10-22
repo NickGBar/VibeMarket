@@ -1,0 +1,28 @@
+{
+  "repo": {
+    "minAgeDays": 30,
+    "requireRelease": true,
+    "requireTopic": "vibemarket",
+    "allowForks": false,
+    "licenses": [
+      "0BSD", "AGPL-3.0", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "BSL-1.0", "EPL-2.0",
+      "GPL-2.0", "GPL-3.0", "ISC", "LGPL-2.1", "LGPL-3.0", "MIT", "MPL-2.0", "Unlicense", "Zlib"
+    ]
+  },
+  "voting": {
+    "days": 7,
+    "votesNeeded": 10,
+    "downvoteWeight": 2,
+    "voterMinAgeDays": 90
+  },
+  "promotion": {
+    "minDays": 90,
+    "minStars": 500
+  },
+  "reports": {
+    "toHide": 3
+  },
+  "limits": {
+    "candidatesPerAuthor": 3
+  }
+}

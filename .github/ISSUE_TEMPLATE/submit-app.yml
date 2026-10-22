@@ -1,0 +1,75 @@
+name: Заявка в песочницу
+description: Предложить бесплатное приложение с открытым кодом. Робот проверит заявку, а сообщество проголосует.
+title: "Заявка: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Робот проверит заявку за несколько минут и ответит комментарием. Если всё в порядке, начнётся голосование: сообщество ставит 👍 под этой заявкой, и при нужном числе голосов приложение появится в песочнице само. Пороги записаны в [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json).
+
+        Перед отправкой добавьте своему репозиторию тему (topic) `vibemarket` и выпустите хотя бы один релиз.
+  - type: input
+    id: repo
+    attributes:
+      label: Репозиторий
+      description: Владелец и название, например octocat/my-app, или ссылка на github.com.
+      placeholder: octocat/my-app
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Название
+      description: От 2 до 40 символов.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Категория
+      description: "Одна из: dev (Разработка), design (Дизайн и 3D), work (Продуктивность), media (Медиа), privacy (Приватность), ai (ИИ), games (Игры)."
+      placeholder: dev
+    validations:
+      required: true
+  - type: input
+    id: desc
+    attributes:
+      label: Коротко о приложении
+      description: От 10 до 90 символов. Этот текст будет на карточке.
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: Подробное описание
+      description: До 600 символов.
+  - type: input
+    id: platforms
+    attributes:
+      label: Платформы
+      description: "Через запятую: macOS, Windows, Linux, Android, iOS, веб."
+      placeholder: macOS, Windows, Linux
+  - type: input
+    id: glyph
+    attributes:
+      label: Значок
+      description: "Одно из: code, terminal, window, blocks, shapes, pen, brush, image, note, check, chat, play, wave, key, shield, sparkle, gamepad, globe."
+      placeholder: code
+  - type: input
+    id: color
+    attributes:
+      label: Цвет значка
+      description: Синий, Фиолетовый, Розовый, Оранжевый, Жёлтый, Зелёный, Бирюзовый или Графитовый.
+      placeholder: Синий
+  - type: checkboxes
+    id: consents
+    attributes:
+      label: Подтверждения
+      options:
+        - label: Приложение бесплатно для всех, без платных функций и подписок.
+          required: true
+        - label: Я автор или сопровождаю проект и отвечаю за приложение, его работу и обновления.
+          required: true
+        - label: Я понимаю, что VibeMarket не проверяет приложения на безопасность, а приложение снимут, если оно нарушит правила.
+          required: true

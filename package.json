@@ -1,0 +1,15 @@
+{
+  "name": "vibemarket",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Автономный маркет бесплатных приложений с открытым кодом",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "stars": "node scripts/update-stars.mjs index.html",
+    "robot": "node scripts/robot.mjs --dry-run"
+  },
+  "engines": {
+    "node": ">=22.9"
+  }
+}

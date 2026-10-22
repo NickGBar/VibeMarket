@@ -1,0 +1,35 @@
+name: Жалоба на приложение
+description: Сообщить о вредоносном, платном, чужом или нарушающем правила приложении.
+title: "Жалоба: "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Если открытых жалоб на одно приложение наберётся столько, сколько указано в [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json), робот скроет его автоматически, пока мейнтейнер не разберётся. Учитываются жалобы от разных аккаунтов старше 90 дней.
+  - type: input
+    id: repo
+    attributes:
+      label: Репозиторий
+      description: Репозиторий приложения, например octocat/my-app.
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Причина
+      options:
+        - Вредоносный код или подозрительное поведение
+        - Приложение платное или с подпиской
+        - Заявку подал не автор
+        - Незаконное содержимое
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Подробности
+      description: Что именно не так. Ссылки на код или релизы помогут разобраться быстрее.
+    validations:
+      required: true
