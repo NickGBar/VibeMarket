@@ -1,5 +1,8 @@
 {
-  "meta": { "lang": "es", "name": "Español" },
+  "meta": {
+    "lang": "es",
+    "name": "Español"
+  },
   "ui": {
     "brand.home": "VibeMarket: inicio",
     "search.label": "Buscar en el catálogo",
@@ -22,7 +25,11 @@
     "manifest.title": "Gratis, sin anuncios y de código abierto. Todas las apps.",
     "manifest.priceLabel": "cuesta cualquier app",
     "manifest.adsLabel": "banners, rastreadores y ventanas emergentes",
-    "manifest.projects": { "one": "proyecto con código en GitHub", "many": "proyectos con código en GitHub", "other": "proyectos con código en GitHub" },
+    "manifest.projects": {
+      "one": "proyecto con código en GitHub",
+      "many": "proyectos con código en GitHub",
+      "other": "proyectos con código en GitHub"
+    },
     "price.zero": "0 €",
     "star.eyebrow": "Más estrellas",
     "star.text": "estrellas en GitHub. El proyecto más destacado del catálogo.",
@@ -35,7 +42,11 @@
     "mine.title": "Tus estrellas",
     "mine.empty": "Abre la página de cualquier app y pulsa Star. El proyecto recibirá una estrella en GitHub y la app aparecerá aquí.",
     "mine.loading": "Cargando tus estrellas desde GitHub…",
-    "mine.count": { "one": "{n} app del catálogo", "many": "{n} apps del catálogo", "other": "{n} apps del catálogo" },
+    "mine.count": {
+      "one": "{n} app del catálogo",
+      "many": "{n} apps del catálogo",
+      "other": "{n} apps del catálogo"
+    },
     "mine.none": "Todavía ninguna app del catálogo",
     "mine.logout": "Cerrar sesión",
     "sandbox.eyebrow": "Apps de terceros",
@@ -48,13 +59,29 @@
     "rules.step1": "La app es gratuita, tiene una licencia abierta y al menos una release en GitHub. Añade el tema «{topic}» al repositorio.",
     "rules.step2": "Rellena el formulario: la solicitud se abrirá en GitHub y el robot la revisará en pocos minutos.",
     "rules.step3": "La comunidad vota 👍 en la solicitud durante {days}. Solo cuentan las cuentas de GitHub {older}.",
-    "rules.step4": { "one": "Con {n} voto, el robot publicará la app aquí por sí solo.", "many": "Con {n} votos, el robot publicará la app aquí por sí solo.", "other": "Con {n} votos, el robot publicará la app aquí por sí solo." },
+    "rules.step4": {
+      "one": "Con {n} voto, el robot publicará la app aquí por sí solo.",
+      "many": "Con {n} votos, el robot publicará la app aquí por sí solo.",
+      "other": "Con {n} votos, el robot publicará la app aquí por sí solo."
+    },
     "rules.cta": "Proponer una app",
     "rules.all": "Todas las reglas",
-    "unit.days": { "one": "{n} día", "many": "{n} días", "other": "{n} días" },
-    "unit.olderThan": { "one": "con más de {n} día de antigüedad", "many": "con más de {n} días de antigüedad", "other": "con más de {n} días de antigüedad" },
+    "unit.days": {
+      "one": "{n} día",
+      "many": "{n} días",
+      "other": "{n} días"
+    },
+    "unit.olderThan": {
+      "one": "con más de {n} día de antigüedad",
+      "many": "con más de {n} días de antigüedad",
+      "other": "con más de {n} días de antigüedad"
+    },
     "voting.title": "Votación en curso",
-    "voting.sub": { "one": "Vota 👍 en la solicitud en GitHub. Con {n} voto, la app aparecerá sola en el sandbox.", "many": "Vota 👍 en la solicitud en GitHub. Con {n} votos, la app aparecerá sola en el sandbox.", "other": "Vota 👍 en la solicitud en GitHub. Con {n} votos, la app aparecerá sola en el sandbox." },
+    "voting.sub": {
+      "one": "Vota 👍 en la solicitud en GitHub. Con {n} voto, la app aparecerá sola en el sandbox.",
+      "many": "Vota 👍 en la solicitud en GitHub. Con {n} votos, la app aparecerá sola en el sandbox.",
+      "other": "Vota 👍 en la solicitud en GitHub. Con {n} votos, la app aparecerá sola en el sandbox."
+    },
     "voting.vote": "Votar",
     "voting.count": "{up} de {needed} 👍",
     "voting.left": "quedan {days}",
@@ -117,7 +144,11 @@
     "error.http": "error {status}",
     "results.title": "Resultados",
     "results.aria": "Resultados de la búsqueda",
-    "results.count": { "one": "{n} app para «{q}»", "many": "{n} apps para «{q}»", "other": "{n} apps para «{q}»" },
+    "results.count": {
+      "one": "{n} app para «{q}»",
+      "many": "{n} apps para «{q}»",
+      "other": "{n} apps para «{q}»"
+    },
     "results.empty": "No hay resultados. Prueba con el nombre de una app, una categoría como «{example}» o una licencia, por ejemplo MIT.",
     "foot.about": "El catálogo solo incluye proyectos de código abierto. Todo es gratis: sin anuncios, banners, ventanas emergentes ni rastreadores. Esta página no carga ni un solo script, fuente o píxel externo.",
     "foot.auth": "Iniciar sesión con GitHub es opcional. Al iniciarla, las estrellas se actualizan con tu cuenta y todas las peticiones a GitHub pasan por el servidor de VibeMarket, así que tu token nunca llega al navegador.",
@@ -126,8 +157,16 @@
     "foot.starsRobot": "El robot de VibeMarket actualiza las estrellas, última actualización: {date}.",
     "foot.starsLive": "Las estrellas se acaban de actualizar con tu cuenta de GitHub.",
     "foot.rating": "La valoración se calcula a partir de ellas en escala logarítmica: 1000 estrellas dan 1 punto y 200 000 estrellas dan 5 puntos. Pulsa una valoración para abrir el repositorio.",
-    "stars.onGithub": { "one": "{count} estrella en GitHub", "many": "{count} estrellas en GitHub", "other": "{count} estrellas en GitHub" },
-    "stars.count": { "one": "{count} estrella", "many": "{count} estrellas", "other": "{count} estrellas" },
+    "stars.onGithub": {
+      "one": "{count} estrella en GitHub",
+      "many": "{count} estrellas en GitHub",
+      "other": "{count} estrellas en GitHub"
+    },
+    "stars.count": {
+      "one": "{count} estrella",
+      "many": "{count} estrellas",
+      "other": "{count} estrellas"
+    },
     "card.starred": "{name}, en tus estrellas",
     "card.thirdParty": "De terceros",
     "card.thirdPartyTitle": "App de terceros del sandbox",
@@ -149,6 +188,8 @@
     "detail.info": "Información",
     "detail.moreSandbox": "Más en el sandbox",
     "detail.moreCat": "Más en «{cat}»",
+    "detail.report": "Denunciar esta app",
+    "detail.reportTitle": "Denuncia: {name}",
     "fact.rating": "Valoración",
     "fact.stars": "Estrellas en GitHub",
     "fact.starsNow": "ahora mismo",
@@ -223,224 +264,413 @@
     "color.7": "Grafito"
   },
   "cats": {
-    "dev": { "name": "Desarrollo", "sub": "Editores, motores y herramientas de terminal" },
-    "design": { "name": "Diseño y 3D", "sub": "Gráficos, ilustración y modelado sin suscripción" },
-    "work": { "name": "Productividad", "sub": "Notas, documentos y tareas que son tuyos" },
-    "media": { "name": "Multimedia", "sub": "Vídeo, audio y streaming" },
-    "privacy": { "name": "Privacidad", "sub": "Contraseñas, mensajes y archivos sin intermediarios" },
-    "ai": { "name": "IA", "sub": "Modelos que funcionan en tu ordenador" },
-    "games": { "name": "Juegos", "sub": "Estrategia, carreras y sandbox de código abierto" }
+    "dev": {
+      "name": "Desarrollo",
+      "sub": "Editores, motores y herramientas de terminal"
+    },
+    "design": {
+      "name": "Diseño y 3D",
+      "sub": "Gráficos, ilustración y modelado sin suscripción"
+    },
+    "work": {
+      "name": "Productividad",
+      "sub": "Notas, documentos y tareas que son tuyos"
+    },
+    "media": {
+      "name": "Multimedia",
+      "sub": "Vídeo, audio y streaming"
+    },
+    "privacy": {
+      "name": "Privacidad",
+      "sub": "Contraseñas, mensajes y archivos sin intermediarios"
+    },
+    "ai": {
+      "name": "IA",
+      "sub": "Modelos que funcionan en tu ordenador"
+    },
+    "games": {
+      "name": "Juegos",
+      "sub": "Estrategia, carreras y sandbox de código abierto"
+    }
   },
   "apps": {
     "vscodium": {
       "desc": "VS Code sin telemetría. Las mismas extensiones y el mismo depurador.",
       "about": "VSCodium se compila a partir del mismo código fuente que Visual Studio Code, pero sin la telemetría ni los componentes de marca de Microsoft. Las extensiones se instalan desde el registro abierto Open VSX, y la configuración, los temas y los atajos de teclado siguen siendo los de siempre.",
-      "shots": ["El mismo editor, sin telemetría", "Extensiones del registro abierto Open VSX", "Terminal y depurador integrados"]
+      "shots": [
+        "El mismo editor, sin telemetría",
+        "Extensiones del registro abierto Open VSX",
+        "Terminal y depurador integrados"
+      ]
     },
     "neovim": {
       "desc": "Vim con plugins en Lua, LSP integrado y un núcleo asíncrono.",
       "about": "Neovim desarrolla las ideas de Vim: núcleo asíncrono, configuración y plugins en Lua, cliente LSP integrado y Tree-sitter para un resaltado preciso. Funciona en la terminal y en interfaces gráficas.",
-      "shots": ["Edición modal como en Vim", "Ventanas, pestañas y terminal integrada", "Plugins y configuración en Lua"]
+      "shots": [
+        "Edición modal como en Vim",
+        "Ventanas, pestañas y terminal integrada",
+        "Plugins y configuración en Lua"
+      ]
     },
     "zed": {
       "desc": "Un editor rápido en Rust con edición colaborativa.",
       "about": "Zed está escrito en Rust y dibuja la interfaz con la GPU, así que responde al instante incluso en proyectos grandes. Incluye edición colaborativa en tiempo real, terminal integrada y soporte para servidores de lenguaje.",
-      "shots": ["Sin retrasos en ningún proyecto", "Colaboración sobre el mismo archivo", "Terminal y tareas en la misma ventana"]
+      "shots": [
+        "Sin retrasos en ningún proyecto",
+        "Colaboración sobre el mismo archivo",
+        "Terminal y tareas en la misma ventana"
+      ]
     },
     "godot": {
       "desc": "Motor de juegos para 2D y 3D. Sin regalías ni registro.",
       "about": "Godot es un motor de juegos con su propio editor, escenas basadas en nodos y el lenguaje GDScript. Admite C# y exporta a escritorio, móviles y navegador. El motor tiene licencia MIT, sin regalías ni suscripciones.",
-      "shots": ["Editor de escenas 2D y 3D", "Scripts en GDScript y C#", "Exportación a escritorio, móviles y web"]
+      "shots": [
+        "Editor de escenas 2D y 3D",
+        "Scripts en GDScript y C#",
+        "Exportación a escritorio, móviles y web"
+      ]
     },
     "tauri": {
       "desc": "Apps de escritorio ligeras con tecnologías web y Rust.",
       "about": "Tauri crea apps de escritorio y móviles a partir de una interfaz web y un backend en Rust. En lugar de incluir Chromium usa el WebView del sistema, por lo que los instaladores son muchas veces más pequeños que con Electron.",
-      "shots": ["Interfaz con cualquier framework web", "Backend en Rust y compilación con un solo comando", "Compilaciones para macOS, Windows, Linux, iOS y Android"]
+      "shots": [
+        "Interfaz con cualquier framework web",
+        "Backend en Rust y compilación con un solo comando",
+        "Compilaciones para macOS, Windows, Linux, iOS y Android"
+      ]
     },
     "lazygit": {
       "desc": "Git en la terminal: commits, rebase y conflictos con una tecla.",
       "about": "Lazygit es una interfaz de terminal para Git. Preparar líneas sueltas, hacer un rebase interactivo, trabajar con ramas y resolver conflictos se hace con una tecla en lugar de comandos largos.",
-      "shots": ["Todo el repositorio en una pantalla", "Preparar líneas sueltas", "Rebase interactivo sin miedo"]
+      "shots": [
+        "Todo el repositorio en una pantalla",
+        "Preparar líneas sueltas",
+        "Rebase interactivo sin miedo"
+      ]
     },
     "excalidraw": {
       "desc": "Pizarra virtual para diagramas con estilo de boceto a mano.",
       "about": "Excalidraw es una pizarra para diagramas que parecen dibujados a mano. Funciona en el navegador y permite dibujar en equipo con cifrado de extremo a extremo, exportar a PNG y SVG y usar bibliotecas de formas.",
-      "shots": ["Diagramas con estilo de boceto", "Dibujo en equipo con cifrado de extremo a extremo", "Exportación a PNG y SVG"]
+      "shots": [
+        "Diagramas con estilo de boceto",
+        "Dibujo en equipo con cifrado de extremo a extremo",
+        "Exportación a PNG y SVG"
+      ]
     },
     "penpot": {
       "desc": "Diseño y prototipos en el navegador sobre el estándar abierto SVG.",
       "about": "Penpot es una plataforma de diseño y prototipado que funciona en el navegador y guarda los diseños en formatos abiertos: SVG, CSS y HTML. Puedes alojarla en tu propio servidor, y los desarrolladores obtienen el código directamente del diseño.",
-      "shots": ["Diseños y componentes en el navegador", "Prototipos interactivos", "Código para desarrolladores directamente del diseño"]
+      "shots": [
+        "Diseños y componentes en el navegador",
+        "Prototipos interactivos",
+        "Código para desarrolladores directamente del diseño"
+      ]
     },
     "blender": {
       "desc": "Modelado, animación, simulaciones y edición en un solo paquete.",
       "about": "Blender cubre todo el proceso 3D: modelado, escultura, rigging, animación, simulaciones, render con Cycles y EEVEE, composición y edición de vídeo.",
-      "shots": ["Modelado y escultura", "Materiales y composición con nodos", "Render con Cycles y EEVEE"]
+      "shots": [
+        "Modelado y escultura",
+        "Materiales y composición con nodos",
+        "Render con Cycles y EEVEE"
+      ]
     },
     "krita": {
       "desc": "Pintura digital con pinceles vivos, capas y animación.",
       "about": "Krita está hecha por artistas para la pintura digital y la ilustración. Más de cien pinceles, estabilizador de trazo, soporte para tabletas con sensibilidad a la presión, capas, máscaras y animación fotograma a fotograma.",
-      "shots": ["Pinceles sensibles a la presión", "Capas, máscaras y filtros", "Animación fotograma a fotograma"]
+      "shots": [
+        "Pinceles sensibles a la presión",
+        "Capas, máscaras y filtros",
+        "Animación fotograma a fotograma"
+      ]
     },
     "inkscape": {
       "desc": "Ilustraciones vectoriales, logotipos y diagramas en SVG.",
       "about": "Inkscape es un editor vectorial para ilustraciones, logotipos, diagramas y maquetas de impresión. Su formato principal es SVG. Incluye curvas de Bézier, operaciones booleanas y exportación a PDF, PNG y EPS.",
-      "shots": ["Curvas de Bézier y geometría precisa", "Gráficos vectoriales en SVG", "Exportación a PDF, PNG y EPS"]
+      "shots": [
+        "Curvas de Bézier y geometría precisa",
+        "Gráficos vectoriales en SVG",
+        "Exportación a PDF, PNG y EPS"
+      ]
     },
     "gimp": {
       "desc": "Editor de fotos: retoque, máscaras, capas y plugins.",
       "about": "GIMP es un editor de imágenes rasterizadas para retocar fotos, hacer collages y procesar imágenes. La versión 3 trajo filtros no destructivos, mejor gestión del color y una nueva interfaz en GTK3.",
-      "shots": ["Retoque, máscaras y capas", "Filtros no destructivos", "Plugins y scripts para automatizar"]
+      "shots": [
+        "Retoque, máscaras y capas",
+        "Filtros no destructivos",
+        "Plugins y scripts para automatizar"
+      ]
     },
     "joplin": {
       "desc": "Notas en Markdown con cifrado de extremo a extremo y sincronización.",
       "about": "Joplin guarda notas y listas de tareas en Markdown y las sincroniza mediante Nextcloud, WebDAV, Dropbox, OneDrive o su propio Joplin Server. El cifrado de extremo a extremo se activa en los ajustes, y el web clipper guarda páginas desde el navegador.",
-      "shots": ["Notas en Markdown", "Listas de tareas y recordatorios", "Cifrado de extremo a extremo y sincronización"]
+      "shots": [
+        "Notas en Markdown",
+        "Listas de tareas y recordatorios",
+        "Cifrado de extremo a extremo y sincronización"
+      ]
     },
     "logseq": {
       "desc": "Base de conocimiento de notas enlazadas y diarios.",
       "about": "Logseq es una base de conocimiento hecha de bloques: cada idea se enlaza con otras mediante referencias y etiquetas, y el diario es el punto de entrada. Los archivos se guardan en local en Markdown u Org-mode.",
-      "shots": ["Un diario hecho de bloques", "Grafo de enlaces entre notas", "Tareas dentro de las notas"]
+      "shots": [
+        "Un diario hecho de bloques",
+        "Grafo de enlaces entre notas",
+        "Tareas dentro de las notas"
+      ]
     },
     "appflowy": {
       "desc": "Documentos, bases de datos y kanban. Los datos se quedan contigo.",
       "about": "AppFlowy reúne documentos, bases de datos, tableros kanban y calendario. Funciona sin conexión o con tu propio servidor de sincronización, y su IA integrada puede usar modelos locales.",
-      "shots": ["Tableros kanban para proyectos", "Bases de datos con filtros y ordenación", "Documentos con páginas anidadas"]
+      "shots": [
+        "Tableros kanban para proyectos",
+        "Bases de datos con filtros y ordenación",
+        "Documentos con páginas anidadas"
+      ]
     },
     "libreoffice": {
       "desc": "Textos, hojas de cálculo y presentaciones. Abre archivos de Microsoft Office.",
       "about": "LibreOffice es una suite ofimática completa: Writer para textos, Calc para hojas de cálculo, Impress para presentaciones, además de Draw, Base y Math. Su formato principal es el abierto ODF, y abre y guarda archivos de Microsoft Office sin conversores.",
-      "shots": ["Writer: documentos de cualquier complejidad", "Calc: hojas de cálculo, fórmulas y gráficos", "Impress: presentaciones y exportación a PDF"]
+      "shots": [
+        "Writer: documentos de cualquier complejidad",
+        "Calc: hojas de cálculo, fórmulas y gráficos",
+        "Impress: presentaciones y exportación a PDF"
+      ]
     },
     "superprod": {
       "desc": "Tareas, temporizador Pomodoro y control del tiempo sin nube.",
       "about": "Super Productivity combina lista de tareas, temporizador Pomodoro y control del tiempo. Las tareas se pueden traer de Jira, GitHub y GitLab, y los datos se guardan en local o se sincronizan con WebDAV y Dropbox.",
-      "shots": ["Tareas, subtareas y estimaciones de tiempo", "Temporizador Pomodoro y descansos", "Integración con Jira, GitHub y GitLab"]
+      "shots": [
+        "Tareas, subtareas y estimaciones de tiempo",
+        "Temporizador Pomodoro y descansos",
+        "Integración con Jira, GitHub y GitLab"
+      ]
     },
     "anki": {
       "desc": "Tarjetas con repetición espaciada para recordar a largo plazo.",
       "about": "Anki muestra tarjetas con repetición espaciada: las difíciles más a menudo, las aprendidas con menos frecuencia. Admite imágenes, audio, fórmulas LaTeX y miles de mazos compartidos, y el planificador FSRS reduce el número de repasos.",
-      "shots": ["Repasos con el algoritmo FSRS", "Mazos y estadísticas de estudio", "Tarjetas con imágenes, sonido y fórmulas"]
+      "shots": [
+        "Repasos con el algoritmo FSRS",
+        "Mazos y estadísticas de estudio",
+        "Tarjetas con imágenes, sonido y fórmulas"
+      ]
     },
     "obs": {
       "desc": "Grabación de pantalla y emisiones en directo con mezclador de escenas.",
       "about": "OBS Studio graba la pantalla y emite en directo en Twitch, YouTube y cualquier servicio RTMP. Las escenas se montan con fuentes: ventanas, cámaras, captura de juegos e imágenes. Incluye mezclador de audio y filtros de voz.",
-      "shots": ["Escenas con cualquier fuente", "Mezclador de audio y filtros de voz", "Emisiones en Twitch y YouTube"]
+      "shots": [
+        "Escenas con cualquier fuente",
+        "Mezclador de audio y filtros de voz",
+        "Emisiones en Twitch y YouTube"
+      ]
     },
     "jellyfin": {
       "desc": "Servidor multimedia personal para películas, series y música.",
       "about": "Jellyfin convierte un ordenador o NAS en tu propio servicio multimedia: películas, series, música y libros con carátulas, descripciones y reanudación en cualquier dispositivo. Sin suscripciones, cuentas en la nube ni recogida de datos.",
-      "shots": ["Tu mediateca con carátulas", "Sigue viendo en cualquier dispositivo", "Servidor en tu ordenador o NAS"]
+      "shots": [
+        "Tu mediateca con carátulas",
+        "Sigue viendo en cualquier dispositivo",
+        "Servidor en tu ordenador o NAS"
+      ]
     },
     "vlc": {
       "desc": "Un reproductor que abre casi cualquier formato de vídeo y audio.",
       "about": "VLC reproduce casi cualquier formato de vídeo y audio sin códecs adicionales, además de DVD, streams de red y subtítulos. También convierte archivos y los emite por la red local.",
-      "shots": ["Cualquier formato sin códecs", "Mediateca y listas de reproducción", "Subtítulos, streams y DVD"]
+      "shots": [
+        "Cualquier formato sin códecs",
+        "Mediateca y listas de reproducción",
+        "Subtítulos, streams y DVD"
+      ]
     },
     "audacity": {
       "desc": "Grabación y edición de audio para pódcasts y música.",
       "about": "Audacity graba y edita audio: edición multipista, reducción de ruido, ecualizador, normalización del volumen y efectos. Sirve para pódcasts, música y digitalizar grabaciones antiguas.",
-      "shots": ["Edición multipista", "Reducción de ruido y efectos", "Exportación a MP3, WAV, FLAC y OGG"]
+      "shots": [
+        "Edición multipista",
+        "Reducción de ruido y efectos",
+        "Exportación a MP3, WAV, FLAC y OGG"
+      ]
     },
     "handbrake": {
       "desc": "Conversor de vídeo con perfiles para dispositivos y subtítulos.",
       "about": "HandBrake recodifica vídeo a H.264, H.265, AV1 y VP9. Los perfiles predefinidos eligen los ajustes para móviles, consolas y streaming, y la cola de trabajos procesa decenas de archivos de una vez.",
-      "shots": ["Compresión de vídeo sin pérdidas visibles", "Perfiles para dispositivos y streaming", "Una cola de decenas de archivos"]
+      "shots": [
+        "Compresión de vídeo sin pérdidas visibles",
+        "Perfiles para dispositivos y streaming",
+        "Una cola de decenas de archivos"
+      ]
     },
     "mpv": {
       "desc": "Un reproductor minimalista para el teclado y los scripts.",
       "about": "mpv es un reproductor minimalista sin interfaz de sobra: todo se controla con el teclado, un archivo de configuración y scripts en Lua. Escalado de vídeo de alta calidad y decodificación por hardware.",
-      "shots": ["Nada más que el vídeo", "Control con teclado y scripts", "Escalado de alta calidad"]
+      "shots": [
+        "Nada más que el vídeo",
+        "Control con teclado y scripts",
+        "Escalado de alta calidad"
+      ]
     },
     "keepassxc": {
       "desc": "Gestor de contraseñas con una base de datos local cifrada.",
       "about": "KeePassXC guarda las contraseñas en un archivo cifrado en tu dispositivo. Generador de contraseñas, autocompletado en el navegador mediante una extensión, códigos TOTP y claves SSH. No necesita cuenta en la nube.",
-      "shots": ["Todas las contraseñas en un archivo cifrado", "Generador de contraseñas seguras", "Códigos TOTP y claves SSH"]
+      "shots": [
+        "Todas las contraseñas en un archivo cifrado",
+        "Generador de contraseñas seguras",
+        "Códigos TOTP y claves SSH"
+      ]
     },
     "bitwarden": {
       "desc": "Contraseñas y llaves de acceso en todos tus dispositivos. Puedes montar tu propio servidor.",
       "about": "Bitwarden sincroniza contraseñas, llaves de acceso y notas entre todos tus dispositivos con cifrado de extremo a extremo. Tiene extensiones para navegadores, cajas fuertes compartidas para familias y equipos, y el servidor se puede alojar por cuenta propia.",
-      "shots": ["Contraseñas y llaves de acceso en todas partes", "Generador de contraseñas y autocompletado", "Cajas fuertes compartidas para familias y equipos"]
+      "shots": [
+        "Contraseñas y llaves de acceso en todas partes",
+        "Generador de contraseñas y autocompletado",
+        "Cajas fuertes compartidas para familias y equipos"
+      ]
     },
     "signal": {
       "desc": "Mensajería con cifrado de extremo a extremo por defecto.",
       "about": "Signal protege mensajes, llamadas y adjuntos con cifrado de extremo a extremo mediante el protocolo abierto Signal. Mensajes temporales, grupos, videollamadas y un mínimo de metadatos en los servidores.",
-      "shots": ["Cifrado de extremo a extremo por defecto", "Grupos y videollamadas", "Mensajes temporales"]
+      "shots": [
+        "Cifrado de extremo a extremo por defecto",
+        "Grupos y videollamadas",
+        "Mensajes temporales"
+      ]
     },
     "syncthing": {
       "desc": "Sincroniza archivos directamente entre dispositivos, sin nube.",
       "about": "Syncthing sincroniza carpetas directamente entre tus dispositivos, sin servidor central. Las conexiones van cifradas y los dispositivos se encuentran entre sí en la red local y por internet.",
-      "shots": ["Sincronización directa entre dispositivos", "Carpetas, versiones y conflictos", "Estadísticas detalladas por carpeta"]
+      "shots": [
+        "Sincronización directa entre dispositivos",
+        "Carpetas, versiones y conflictos",
+        "Estadísticas detalladas por carpeta"
+      ]
     },
     "localsend": {
       "desc": "Envía archivos por la red local, sin internet ni cuenta.",
       "about": "LocalSend envía archivos y texto entre dispositivos de la misma red, como AirDrop pero entre cualquier sistema. No necesita internet ni cuenta, y la transferencia va cifrada.",
-      "shots": ["Los dispositivos de la red se encuentran solos", "Envío sin internet", "Archivos, carpetas y texto"]
+      "shots": [
+        "Los dispositivos de la red se encuentran solos",
+        "Envío sin internet",
+        "Archivos, carpetas y texto"
+      ]
     },
     "mullvad": {
       "desc": "Un cliente VPN que no pide correo ni nombre.",
       "about": "El cliente de Mullvad VPN se conecta a los servidores de Mullvad mediante WireGuard. Para registrarse no hace falta correo ni nombre: la cuenta es un número, y se puede pagar incluso en efectivo.",
-      "shots": ["Conexión segura con un clic", "Servidores en todo el mundo", "Túnel dividido y bloqueo de rastreadores"]
+      "shots": [
+        "Conexión segura con un clic",
+        "Servidores en todo el mundo",
+        "Túnel dividido y bloqueo de rastreadores"
+      ]
     },
     "ollama": {
       "desc": "Ejecuta Llama, Qwen, Gemma y otros modelos con un comando.",
       "about": "Ollama descarga y ejecuta modelos de lenguaje en local con un solo comando: Llama, Qwen, Gemma, DeepSeek, Mistral y otros. Su API HTTP es compatible con OpenAI, así que es fácil conectarla a tus programas.",
-      "shots": ["El modelo arranca con un comando", "Chat con el modelo en tu ordenador", "Biblioteca de modelos abiertos"]
+      "shots": [
+        "El modelo arranca con un comando",
+        "Chat con el modelo en tu ordenador",
+        "Biblioteca de modelos abiertos"
+      ]
     },
     "sdwebui": {
       "desc": "Generación y retoque de imágenes con cientos de extensiones.",
       "about": "Stable Diffusion web UI es una interfaz en el navegador para generar imágenes: txt2img, img2img, inpainting y escalado. El catálogo de extensiones añade ControlNet, LoRA y cientos de herramientas más.",
-      "shots": ["Imágenes a partir de una descripción", "Retoque y sustitución de fragmentos", "Cientos de extensiones y modelos"]
+      "shots": [
+        "Imágenes a partir de una descripción",
+        "Retoque y sustitución de fragmentos",
+        "Cientos de extensiones y modelos"
+      ]
     },
     "comfyui": {
       "desc": "Generación de imágenes y vídeo con un grafo de nodos.",
       "about": "ComfyUI construye la generación de imágenes, vídeo y audio con nodos de un grafo. Cualquier flujo se puede guardar, compartir y repetir, y los modelos se ejecutan en local en tu tarjeta gráfica.",
-      "shots": ["Un flujo de nodos en lugar de botones", "Imágenes y vídeo en local", "Plantillas de flujos listas"]
+      "shots": [
+        "Un flujo de nodos en lugar de botones",
+        "Imágenes y vídeo en local",
+        "Plantillas de flujos listas"
+      ]
     },
     "llamacpp": {
       "desc": "Inferencia de modelos de lenguaje en C++. Rápido incluso sin GPU.",
       "about": "llama.cpp ejecuta modelos de lenguaje en C/C++ con cuantización de pocos bits, así que los modelos grandes caben en un portátil normal. Incluye un servidor con API al estilo de OpenAI y un chat web sencillo.",
-      "shots": ["Inferencia en CPU y GPU", "Chat web integrado", "Modelos en formato GGUF"]
+      "shots": [
+        "Inferencia en CPU y GPU",
+        "Chat web integrado",
+        "Modelos en formato GGUF"
+      ]
     },
     "gpt4all": {
       "desc": "Chat con modelos locales y tus documentos, sin conexión.",
       "about": "GPT4All es una app de escritorio para chatear con modelos locales. LocalDocs responde sobre tus archivos sin enviarlos a internet, y los modelos se descargan desde la propia app.",
-      "shots": ["Chat sin internet", "Modelos que se descargan con un clic", "LocalDocs: respuestas sobre tus archivos"]
+      "shots": [
+        "Chat sin internet",
+        "Modelos que se descargan con un clic",
+        "LocalDocs: respuestas sobre tus archivos"
+      ]
     },
     "whispercpp": {
       "desc": "Reconocimiento de voz en el procesador. Transcripción de audio sin conexión.",
       "about": "whisper.cpp es una implementación en C/C++ del modelo de reconocimiento de voz Whisper. Transcribe audio y vídeo en decenas de idiomas sin nube, también en tiempo real desde el micrófono.",
-      "shots": ["Transcripción de audio con un comando", "Reconocimiento en tiempo real desde el micrófono", "Subtítulos en SRT y VTT"]
+      "shots": [
+        "Transcripción de audio con un comando",
+        "Reconocimiento en tiempo real desde el micrófono",
+        "Subtítulos en SRT y VTT"
+      ]
     },
     "mindustry": {
       "desc": "Estrategia de fábricas, cintas transportadoras y defensa de la base.",
       "about": "Mindustry combina construcción de fábricas y defensa con torres: extrae recursos, monta cintas transportadoras y cadenas de producción, y repele oleadas de enemigos. Tiene campaña, multijugador y editor de mapas.",
-      "shots": ["Cintas transportadoras y cadenas de producción", "Defensa de la base ante oleadas de enemigos", "Campaña, multijugador y editor de mapas"]
+      "shots": [
+        "Cintas transportadoras y cadenas de producción",
+        "Defensa de la base ante oleadas de enemigos",
+        "Campaña, multijugador y editor de mapas"
+      ]
     },
     "luanti": {
       "desc": "Sandbox de vóxeles y motor para tus propios juegos (antes Minetest).",
       "about": "Luanti, antes Minetest, es un motor y sandbox de vóxeles. Miles de juegos y mods en Lua desde el catálogo integrado ContentDB, servidores propios y total libertad sobre las reglas del juego.",
-      "shots": ["Un mundo de vóxeles sin límites", "Miles de juegos y mods en ContentDB", "Tu propio servidor para amigos"]
+      "shots": [
+        "Un mundo de vóxeles sin límites",
+        "Miles de juegos y mods en ContentDB",
+        "Tu propio servidor para amigos"
+      ]
     },
     "stk": {
       "desc": "Carreras arcade de karts con modo historia y carreras online.",
       "about": "SuperTuxKart son carreras arcade de karts protagonizadas por personajes del mundo del software libre. Modo historia, carreras online, batallas en arenas y fútbol con coches.",
-      "shots": ["Carreras arcade de karts", "Carreras y batallas online", "Modo historia y desafíos"]
+      "shots": [
+        "Carreras arcade de karts",
+        "Carreras y batallas online",
+        "Modo historia y desafíos"
+      ]
     },
     "openttd": {
       "desc": "Magnate del transporte: trenes, barcos y logística.",
       "about": "OpenTTD es un simulador de transporte basado en Transport Tycoon Deluxe. Construye vías férreas, puertos y rutas de autobús, transporta mercancías y pasajeros, y haz crecer tu empresa durante décadas.",
-      "shots": ["Vías férreas, puertos y aeropuertos", "Finanzas y gráficos de la empresa", "Multijugador y miles de mods"]
+      "shots": [
+        "Vías férreas, puertos y aeropuertos",
+        "Finanzas y gráficos de la empresa",
+        "Multijugador y miles de mods"
+      ]
     },
     "shpd": {
       "desc": "Roguelike pixelado con combates tácticos y mazmorras aleatorias.",
       "about": "Shattered Pixel Dungeon es un roguelike por turnos: baja a una mazmorra generada al azar, encuentra equipo e identifica pociones. Cada partida es única, y morir significa empezar de nuevo.",
-      "shots": ["Una mazmorra nueva en cada partida", "Combates tácticos por turnos", "Clases y subclases de héroes"]
+      "shots": [
+        "Una mazmorra nueva en cada partida",
+        "Combates tácticos por turnos",
+        "Clases y subclases de héroes"
+      ]
     },
     "wesnoth": {
       "desc": "Estrategia de fantasía por turnos en un mapa hexagonal.",
       "about": "Battle for Wesnoth es un juego de estrategia por turnos en un mundo de fantasía. Los ejércitos se mueven por mapas hexagonales donde el terreno y la hora del día influyen en el resultado del combate. Campañas con historia y multijugador online.",
-      "shots": ["Mapas hexagonales y táctica", "La hora del día influye en el combate", "Campañas y multijugador online"]
+      "shots": [
+        "Mapas hexagonales y táctica",
+        "La hora del día influye en el combate",
+        "Campañas y multijugador online"
+      ]
     }
   }
 }

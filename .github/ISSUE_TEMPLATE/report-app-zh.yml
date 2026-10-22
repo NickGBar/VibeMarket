@@ -1,0 +1,35 @@
+name: 举报应用 · 中文
+description: 举报恶意、收费、冒名提交或违反规则的应用。
+title: "举报："
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        当一款应用收到的未关闭举报达到 [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json) 中规定的数量时，机器人会自动将其隐藏，直到维护者处理。只统计来自不同、注册超过 90 天的账号的举报。
+  - type: input
+    id: repo
+    attributes:
+      label: 仓库
+      description: 应用的仓库，例如 octocat/my-app。
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: 原因
+      options:
+        - 恶意代码或可疑行为
+        - 应用收费或需要订阅
+        - 申请并非由作者提交
+        - 违法内容
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 详细说明
+      description: 具体有什么问题。附上代码或版本发布的链接能帮助更快处理。
+    validations:
+      required: true

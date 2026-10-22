@@ -1,0 +1,35 @@
+name: Denunciar una app · Español
+description: Informar de una app maliciosa, de pago, ajena o que incumple las reglas.
+title: "Denuncia: "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cuando una app acumula tantas denuncias abiertas como indica [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json), el robot la oculta automáticamente hasta que un mantenedor lo revise. Solo cuentan las denuncias de cuentas distintas con más de 90 días de antigüedad.
+  - type: input
+    id: repo
+    attributes:
+      label: Repositorio
+      description: El repositorio de la app, por ejemplo octocat/my-app.
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Motivo
+      options:
+        - Código malicioso o comportamiento sospechoso
+        - La app es de pago o requiere suscripción
+        - La solicitud no la envió el autor
+        - Contenido ilegal
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Detalles
+      description: Qué falla exactamente. Los enlaces al código o a las releases ayudan a resolverlo antes.
+    validations:
+      required: true

@@ -1,4 +1,4 @@
-name: Заявка в песочницу
+name: Заявка в песочницу · Русский
 description: Предложить бесплатное приложение с открытым кодом. Робот проверит заявку, а сообщество проголосует.
 title: "Заявка: "
 labels: ["submission"]
@@ -48,7 +48,7 @@ body:
     id: platforms
     attributes:
       label: Платформы
-      description: "Через запятую: macOS, Windows, Linux, Android, iOS, веб."
+      description: "Через запятую: macOS, Windows, Linux, Android, iOS, web."
       placeholder: macOS, Windows, Linux
   - type: input
     id: glyph
@@ -60,8 +60,8 @@ body:
     id: color
     attributes:
       label: Цвет значка
-      description: Синий, Фиолетовый, Розовый, Оранжевый, Жёлтый, Зелёный, Бирюзовый или Графитовый.
-      placeholder: Синий
+      description: "Один из: blue (синий), purple (фиолетовый), pink (розовый), orange (оранжевый), yellow (жёлтый), green (зелёный), teal (бирюзовый), graphite (графитовый)."
+      placeholder: blue
   - type: checkboxes
     id: consents
     attributes:

@@ -1,0 +1,75 @@
+name: Proponer una app · Español
+description: Propón una app gratuita de código abierto. El robot revisará la solicitud y después votará la comunidad.
+title: "Solicitud: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        El robot revisará la solicitud en pocos minutos y responderá con un comentario. Si todo está bien, empieza la votación: la comunidad pone 👍 en esta solicitud y, con los votos necesarios, la app aparece sola en el sandbox. Los umbrales están en [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json).
+
+        Antes de enviar, añade el tema `vibemarket` a tu repositorio y publica al menos una release.
+  - type: input
+    id: repo
+    attributes:
+      label: Repositorio
+      description: Propietario y nombre, por ejemplo octocat/my-app, o un enlace de github.com.
+      placeholder: octocat/my-app
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Nombre
+      description: Entre 2 y 40 caracteres.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Categoría
+      description: "Una de estas: dev (Desarrollo), design (Diseño y 3D), work (Productividad), media (Multimedia), privacy (Privacidad), ai (IA), games (Juegos)."
+      placeholder: dev
+    validations:
+      required: true
+  - type: input
+    id: desc
+    attributes:
+      label: Descripción breve
+      description: Entre 10 y 90 caracteres. Este texto irá en la tarjeta.
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: Descripción completa
+      description: Hasta 600 caracteres.
+  - type: input
+    id: platforms
+    attributes:
+      label: Plataformas
+      description: "Separadas por comas: macOS, Windows, Linux, Android, iOS, web."
+      placeholder: macOS, Windows, Linux
+  - type: input
+    id: glyph
+    attributes:
+      label: Icono
+      description: "Uno de estos: code, terminal, window, blocks, shapes, pen, brush, image, note, check, chat, play, wave, key, shield, sparkle, gamepad, globe."
+      placeholder: code
+  - type: input
+    id: color
+    attributes:
+      label: Color del icono
+      description: "Uno de estos: blue (azul), purple (morado), pink (rosa), orange (naranja), yellow (amarillo), green (verde), teal (turquesa), graphite (grafito)."
+      placeholder: blue
+  - type: checkboxes
+    id: consents
+    attributes:
+      label: Confirmaciones
+      options:
+        - label: La app es gratuita para todos, sin funciones de pago ni suscripciones.
+          required: true
+        - label: Soy el autor o mantengo el proyecto, y respondo de la app, su funcionamiento y sus actualizaciones.
+          required: true
+        - label: Entiendo que VibeMarket no revisa la seguridad de las apps y que la app se retirará si incumple las reglas.
+          required: true

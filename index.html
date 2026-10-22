@@ -459,6 +459,7 @@ a.tile:hover .stack-item { background: var(--hover); }
 .info dd { margin: 0; min-width: 0; text-align: right; overflow-wrap: anywhere; }
 .info a { color: var(--accent); }
 .info a:hover { text-decoration: underline; }
+.report-link { align-self: flex-start; margin-top: 6px; font-size: 15px; line-height: 20px; }
 
 /* Ссылки-подложки: вся карточка открывает страницу приложения */
 .app-link::after, .chart-link::after, .lockup-link::after { content: ""; position: absolute; inset: 0; z-index: 0; }
@@ -1308,6 +1309,8 @@ select.input option { background: var(--surface); color: var(--fg); }
  "detail.info": "Информация",
  "detail.moreSandbox": "Ещё в песочнице",
  "detail.moreCat": "Ещё в категории «{cat}»",
+ "detail.report": "Пожаловаться на приложение",
+ "detail.reportTitle": "Жалоба: {name}",
  "fact.rating": "Рейтинг",
  "fact.stars": "Звёзды GitHub",
  "fact.starsNow": "только что",
@@ -1456,7 +1459,8 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   // Страница приложения. os: m macOS, w Windows, l Linux, a Android, i iOS, b веб.
   // shots: [макет, подпись]. Для настоящего снимка экрана укажите { src: 'screens/имя.png', caption: 'Подпись' }
-  const OS = { m: 'macOS', w: 'Windows', l: 'Linux', a: 'Android', i: 'iOS', b: 'веб' };
+  // Значения уходят в заявку на GitHub, на странице платформы подписываются через словарь (os.*)
+  const OS = { m: 'macOS', w: 'Windows', l: 'Linux', a: 'Android', i: 'iOS', b: 'web' };
   const DETAILS = {
     vscodium: { os: 'mwl', about: 'VSCodium собирается из того же исходного кода, что и Visual Studio Code, но без телеметрии и фирменных компонентов Microsoft. Расширения ставятся из открытого реестра Open VSX, а настройки, темы и горячие клавиши остаются привычными.', shots: [['editor', 'Тот же редактор, только без телеметрии'], ['editor+ext', 'Расширения из открытого реестра Open VSX'], ['editor+term', 'Встроенный терминал и отладчик']] },
     neovim: { os: 'mwl', about: 'Neovim развивает идеи Vim: асинхронное ядро, настройка и плагины на Lua, встроенный клиент LSP и Tree-sitter для точной подсветки. Работает в терминале и в графических оболочках.', shots: [['term+status', 'Модальное редактирование, знакомое по Vim'], ['term+split', 'Окна, вкладки и встроенный терминал'], ['term', 'Плагины и настройки на Lua']] },
@@ -2379,6 +2383,7 @@ select.input option { background: var(--surface); color: var(--fg); }
             ${infoRow(t('info.price'), t('info.free'))}
             ${infoRow(t('info.ads'), t(third ? 'info.adsUnchecked' : 'info.adsNo'))}
           </dl>
+          <a class="link-btn report-link" href="${reportURL(app)}" target="_blank" rel="noopener">${t('detail.report')}</a>
         </section>
       </div>
       ${related.length ? `
@@ -2627,6 +2632,8 @@ select.input option { background: var(--surface); color: var(--fg); }
   // catalog.json ведёт робот в GitHub Actions: звёзды, песочница, голосование, скрытые по жалобам.
   // Без него страница работает на встроенном снимке.
   let HOME_REPO = 'NickGBar/VibeMarket';
+  const issueTemplate = base => `${base}${lang === 'ru' ? '' : `-${lang}`}.yml`;
+  const reportURL = app => `https://github.com/${HOME_REPO}/issues/new?${new URLSearchParams({ template: issueTemplate('report-app'), title: t('detail.reportTitle', { name: plainName(app) }), repo: app.repo })}`;
   const RULES = { votesNeeded: 10, voteDays: 7, downvoteWeight: 2, voterMinAgeDays: 90, topic: 'vibemarket' };
   let candidates = [];
 
@@ -2728,10 +2735,10 @@ select.input option { background: var(--surface); color: var(--fg); }
   const submitDone = document.getElementById('submit-done');
   const field = id => document.getElementById(id);
   const PICK_GLYPHS = ['code', 'terminal', 'window', 'blocks', 'shapes', 'pen', 'brush', 'image', 'note', 'check', 'chat', 'play', 'wave', 'key', 'shield', 'sparkle', 'gamepad', 'globe'];
-  // Те же цвета, что PALETTE в scripts/robot.mjs. Русское название уходит в заявку: его понимает робот.
+  // Те же id и цвета, что PALETTE в scripts/robot.mjs. В заявку уходит id: робот понимает его на любом языке.
   const PALETTE = [
-    ['Синий', '#4AA8FF', '#0A5BD6'], ['Фиолетовый', '#A99BFF', '#5E4BD8'], ['Розовый', '#FF6FA8', '#B3165A'], ['Оранжевый', '#FFA24D', '#E8590C'],
-    ['Жёлтый', '#FFD166', '#E98A15'], ['Зелёный', '#63D471', '#178A3B'], ['Бирюзовый', '#3FD1C4', '#0E7C86'], ['Графитовый', '#5A5A60', '#1A1A1C'],
+    ['blue', '#4AA8FF', '#0A5BD6'], ['purple', '#A99BFF', '#5E4BD8'], ['pink', '#FF6FA8', '#B3165A'], ['orange', '#FFA24D', '#E8590C'],
+    ['yellow', '#FFD166', '#E98A15'], ['green', '#63D471', '#178A3B'], ['teal', '#3FD1C4', '#0E7C86'], ['graphite', '#5A5A60', '#1A1A1C'],
   ];
   let repoCheck = { slug: '', info: null, error: '' };
   let repoTimer = 0;
@@ -2861,11 +2868,12 @@ select.input option { background: var(--surface); color: var(--fg); }
     return Object.keys(errors);
   };
 
-  // Поля передаются по id из .github/ISSUE_TEMPLATE/submit-app.yml
+  // У каждой формы на GitHub есть вариант на каждом языке сайта: submit-app.yml (русский), submit-app-en.yml и так далее.
+  // Поля передаются по id, они одинаковые во всех вариантах.
   const issueURL = () => {
-    const [colorName] = PALETTE[Number(form.elements.color.value) || 0];
+    const [colorId] = PALETTE[Number(form.elements.color.value) || 0];
     const params = new URLSearchParams({
-      template: 'submit-app.yml',
+      template: issueTemplate('submit-app'),
       title: t('submit.issueTitle', { name: field('f-name').value.trim() }),
       repo: parseRepo(field('f-repo').value),
       name: field('f-name').value.trim(),
@@ -2873,7 +2881,7 @@ select.input option { background: var(--surface); color: var(--fg); }
       desc: field('f-desc').value.trim(),
       platforms: [...form.querySelectorAll('input[name="os"]:checked')].map(input => OS[input.value]).join(', '),
       glyph: form.elements.glyph.value,
-      color: colorName,
+      color: colorId,
     });
     const about = field('f-about').value.trim();
     if (about) params.set('about', about);

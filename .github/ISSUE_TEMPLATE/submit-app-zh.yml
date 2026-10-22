@@ -1,0 +1,75 @@
+name: 提交应用 · 中文
+description: 推荐一款免费的开源应用。机器人检查申请后，由社区投票。
+title: "申请："
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        机器人会在几分钟内检查申请，并以评论回复。如果一切正常，投票就会开始：社区成员在这份申请下点 👍，票数足够后应用会自动出现在沙盒中。具体门槛见 [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json)。
+
+        提交前，请为你的仓库添加主题 `vibemarket`，并至少发布一个版本。
+  - type: input
+    id: repo
+    attributes:
+      label: 仓库
+      description: 所有者和名称，例如 octocat/my-app，或 github.com 链接。
+      placeholder: octocat/my-app
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: 名称
+      description: 2 到 40 个字符。
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: 分类
+      description: "以下之一：dev（开发）、design（设计与 3D）、work（效率）、media（影音）、privacy（隐私）、ai（AI）、games（游戏）。"
+      placeholder: dev
+    validations:
+      required: true
+  - type: input
+    id: desc
+    attributes:
+      label: 简短介绍
+      description: 10 到 90 个字符。这段文字会显示在卡片上。
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: 详细介绍
+      description: 最多 600 个字符。
+  - type: input
+    id: platforms
+    attributes:
+      label: 平台
+      description: "用逗号分隔：macOS, Windows, Linux, Android, iOS, web。"
+      placeholder: macOS, Windows, Linux
+  - type: input
+    id: glyph
+    attributes:
+      label: 图标
+      description: "以下之一：code, terminal, window, blocks, shapes, pen, brush, image, note, check, chat, play, wave, key, shield, sparkle, gamepad, globe。"
+      placeholder: code
+  - type: input
+    id: color
+    attributes:
+      label: 图标颜色
+      description: "以下之一：blue（蓝色）、purple（紫色）、pink（粉色）、orange（橙色）、yellow（黄色）、green（绿色）、teal（青绿色）、graphite（石墨色）。"
+      placeholder: blue
+  - type: checkboxes
+    id: consents
+    attributes:
+      label: 确认事项
+      options:
+        - label: 应用对所有人免费，没有付费功能和订阅。
+          required: true
+        - label: 我是项目的作者或维护者，并对应用、其运行和更新负责。
+          required: true
+        - label: 我了解 VibeMarket 不检查应用的安全性，如果应用违反规则将被下架。
+          required: true

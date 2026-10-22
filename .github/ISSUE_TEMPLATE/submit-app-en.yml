@@ -1,0 +1,75 @@
+name: Submit an app · English
+description: Suggest a free open-source app. The robot checks the submission, then the community votes.
+title: "Submission: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The robot checks the submission within a few minutes and replies with a comment. If everything is fine, voting starts: the community adds 👍 to this submission, and once it gets enough votes the app appears in the sandbox on its own. The thresholds are in [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json).
+
+        Before submitting, add the `vibemarket` topic to your repository and publish at least one release.
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Owner and name, for example octocat/my-app, or a github.com link.
+      placeholder: octocat/my-app
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: 2 to 40 characters.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: "One of: dev (Development), design (Design and 3D), work (Productivity), media (Media), privacy (Privacy), ai (AI), games (Games)."
+      placeholder: dev
+    validations:
+      required: true
+  - type: input
+    id: desc
+    attributes:
+      label: Short description
+      description: 10 to 90 characters. This text goes on the card.
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: Full description
+      description: Up to 600 characters.
+  - type: input
+    id: platforms
+    attributes:
+      label: Platforms
+      description: "Comma-separated: macOS, Windows, Linux, Android, iOS, web."
+      placeholder: macOS, Windows, Linux
+  - type: input
+    id: glyph
+    attributes:
+      label: Icon
+      description: "One of: code, terminal, window, blocks, shapes, pen, brush, image, note, check, chat, play, wave, key, shield, sparkle, gamepad, globe."
+      placeholder: code
+  - type: input
+    id: color
+    attributes:
+      label: Icon color
+      description: "One of: blue, purple, pink, orange, yellow, green, teal, graphite."
+      placeholder: blue
+  - type: checkboxes
+    id: consents
+    attributes:
+      label: Confirmations
+      options:
+        - label: The app is free for everyone, with no paid features or subscriptions.
+          required: true
+        - label: I am the author or a maintainer of the project and I am responsible for the app, how it works and its updates.
+          required: true
+        - label: I understand that VibeMarket does not check apps for security, and the app will be removed if it breaks the rules.
+          required: true

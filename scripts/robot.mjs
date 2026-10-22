@@ -8,11 +8,12 @@
 //
 // Нужны GITHUB_TOKEN и GITHUB_REPOSITORY, в Actions их задаёт GitHub. Правила лежат в rules.json.
 // Тексты заявок недоверенные: робот не исполняет их и не передаёт в shell, а собирает записи
-// каталога только из проверенных полей.
+// каталога только из проверенных полей. Отвечает робот на языке формы, тексты в robot-i18n.mjs.
 
 import { createHash } from 'node:crypto';
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { FORM_LABELS, formatDate, msg } from './robot-i18n.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const API = (process.env.GITHUB_API_URL || 'https://api.github.com').replace(/\/+$/, '');
@@ -34,20 +35,17 @@ const LABELS = {
   report: ['FF9F0A', 'Жалоба на приложение'],
 };
 
-// Заголовки полей из .github/ISSUE_TEMPLATE: issue form присылает их как «### Заголовок»
-const FIELDS = {
-  'Репозиторий': 'repo', 'Название': 'name', 'Категория': 'category', 'Коротко о приложении': 'desc',
-  'Подробное описание': 'about', 'Платформы': 'platforms', 'Значок': 'glyph', 'Цвет значка': 'color',
-  'Подтверждения': 'consents', 'Причина': 'reason', 'Подробности': 'details',
-};
+// Заголовок поля формы → поле и язык. Формы на всех языках присылают поля как «### Заголовок».
+const LABEL_INDEX = new Map(Object.entries(FORM_LABELS)
+  .flatMap(([lang, labels]) => Object.entries(labels).map(([field, label]) => [label, { field, lang }])));
 
-// Те же значения, что PALETTE и OS в index.html
-const PALETTE = {
-  'синий': ['#4AA8FF', '#0A5BD6'], 'фиолетовый': ['#A99BFF', '#5E4BD8'], 'розовый': ['#FF6FA8', '#B3165A'],
-  'оранжевый': ['#FFA24D', '#E8590C'], 'желтый': ['#FFD166', '#E98A15'], 'зеленый': ['#63D471', '#178A3B'],
-  'бирюзовый': ['#3FD1C4', '#0E7C86'], 'графитовый': ['#5A5A60', '#1A1A1C'],
-};
-const OS = { macos: 'm', windows: 'w', linux: 'l', android: 'a', ios: 'i', 'веб': 'b', web: 'b', 'браузер': 'b' };
+// Те же id и цвета, что PALETTE в index.html. Названия цветов, платформ и категорий на всех языках
+// робот берёт из словарей сайта, поэтому в заявке подойдёт и «green», и «Зелёный», и «绿色».
+const PALETTE = [
+  ['blue', '#4AA8FF', '#0A5BD6'], ['purple', '#A99BFF', '#5E4BD8'], ['pink', '#FF6FA8', '#B3165A'], ['orange', '#FFA24D', '#E8590C'],
+  ['yellow', '#FFD166', '#E98A15'], ['green', '#63D471', '#178A3B'], ['teal', '#3FD1C4', '#0E7C86'], ['graphite', '#5A5A60', '#1A1A1C'],
+];
+const OS_IDS = { m: 'macos', w: 'windows', l: 'linux', a: 'android', i: 'ios', b: 'web' };
 
 const rules = JSON.parse(await readFile(`${ROOT}rules.json`, 'utf8'));
 const age = date => (NOW - new Date(date)) / DAY;
@@ -57,11 +55,8 @@ const oneLine = (value, max) => String(value || '')
   .replace(/\s+/g, ' ')
   .trim()
   .slice(0, max);
-const plural = (n, forms) => {
-  const a = Math.abs(n) % 100, b = a % 10;
-  return forms[a > 10 && a < 20 ? 2 : b > 1 && b < 5 ? 1 : b === 1 ? 0 : 2];
-};
-const fmtDate = date => new Date(date).toLocaleString('ru-RU', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' }) + ' UTC';
+// Проблема заявки хранится как [ключ, переменные] и превращается в текст на языке заявки
+const render = (lang, problems) => problems.map(([key, vars]) => msg(lang, key, vars));
 
 /* ---------- GitHub ---------- */
 
@@ -153,10 +148,20 @@ async function writeComment(issue, comment, text, meta) {
 
 async function loadSite() {
   const html = await readFile(`${ROOT}index.html`, 'utf8');
+  const cats = Object.fromEntries([...html.matchAll(/\{ id: '([a-z]+)',\s+name: '([^']+)',\s+sub: '/g)].map(m => [m[1], m[2]]));
+  // Словари сайта: русский встроен в index.html, остальные языки в locales/*.json
+  const dictionaries = [{ ui: JSON.parse(html.match(/<script type="application\/json" id="i18n-ru">([\s\S]*?)<\/script>/)?.[1] || '{}') }];
+  for (const file of (await readdir(`${ROOT}locales`).catch(() => [])).filter(f => f.endsWith('.json'))) {
+    try { dictionaries.push(JSON.parse(await readFile(`${ROOT}locales/${file}`, 'utf8'))); } catch { /* битый перевод не мешает роботу */ }
+  }
+  const names = (entries) => new Map(entries.filter(([name]) => name).map(([name, value]) => [norm(name), value]));
   return {
     repos: [...new Set([...html.matchAll(/repo: '([^']+)', stars: \d+, lic:/g)].map(m => m[1]))],
     ids: new Set([...html.matchAll(/\{ id: '([a-z0-9-]+)', name:/g)].map(m => m[1])),
-    cats: Object.fromEntries([...html.matchAll(/\{ id: '([a-z]+)',\s+name: '([^']+)',\s+sub: '/g)].map(m => [m[1], m[2]])),
+    cats,
+    catNames: names(Object.entries(cats).flatMap(([id, label]) => [[id, id], [label, id], ...dictionaries.map(d => [d.cats?.[id]?.name, id])])),
+    colorNames: names(PALETTE.flatMap(([id], i) => [[id, i], ...dictionaries.map(d => [d.ui?.[`color.${i}`], i])])),
+    osNames: names([...Object.entries(OS_IDS).flatMap(([code, id]) => [[id, code], ...dictionaries.map(d => [d.ui?.[`os.${code}`], code])]), ['веб', 'b'], ['браузер', 'b'], ['browser', 'b']]),
   };
 }
 
@@ -170,13 +175,16 @@ async function loadCatalog() {
 
 function parseForm(body) {
   const form = {};
+  let lang = null;
   for (const part of String(body || '').replace(/\r\n/g, '\n').split(/^### /m).slice(1)) {
     const newline = part.indexOf('\n');
-    const key = FIELDS[part.slice(0, newline === -1 ? undefined : newline).trim()];
+    const hit = LABEL_INDEX.get(part.slice(0, newline === -1 ? undefined : newline).trim());
+    if (!hit) continue;
     const value = newline === -1 ? '' : part.slice(newline + 1).trim();
-    if (key) form[key] = value === '_No response_' ? '' : value;
+    form[hit.field] = value === '_No response_' ? '' : value;
+    lang ||= hit.lang;
   }
-  return form;
+  return { form, lang: lang || 'en' };
 }
 
 const parseRepo = value => {
@@ -213,25 +221,21 @@ async function repoFacts(slug) {
 
 // Базовые требования, которые проверяются и при подаче, и у опубликованных приложений
 function repoBreaks(f) {
-  if (f.missing) return ['Репозиторий не найден. Проверьте адрес: он должен быть публичным.'];
+  if (f.missing) return [['missing']];
   const out = [];
-  if (f.private) out.push('Репозиторий закрыт, нужен публичный.');
-  if (f.archived) out.push('Репозиторий в архиве.');
-  if (!rules.repo.licenses.includes(f.license)) {
-    out.push(f.license ? `Лицензия ${f.license} не входит в список открытых лицензий в rules.json.` : 'У репозитория не указана лицензия.');
-  }
+  if (f.private) out.push(['private']);
+  if (f.archived) out.push(['archived']);
+  if (!rules.repo.licenses.includes(f.license)) out.push(f.license ? ['license', { spdx: f.license }] : ['noLicense']);
   return out;
 }
 
 function repoProblems(f) {
   const out = repoBreaks(f);
   if (f.missing) return out;
-  if (f.fork && !rules.repo.allowForks) out.push('Форки не принимаются: пришлите исходный репозиторий.');
-  if (rules.repo.requireTopic && !f.topics.includes(rules.repo.requireTopic)) {
-    out.push(`Добавьте репозиторию тему (topic) «${rules.repo.requireTopic}». Так робот убедится, что заявку подал тот, кто управляет проектом.`);
-  }
-  if (age(f.createdAt) < rules.repo.minAgeDays) out.push(`Репозиторию должно быть не меньше ${rules.repo.minAgeDays} дней.`);
-  if (!f.release) out.push('В репозитории нет ни одного релиза. Кнопка OPEN в маркете ведёт на страницу релизов.');
+  if (f.fork && !rules.repo.allowForks) out.push(['fork']);
+  if (rules.repo.requireTopic && !f.topics.includes(rules.repo.requireTopic)) out.push(['topic', { topic: rules.repo.requireTopic }]);
+  if (age(f.createdAt) < rules.repo.minAgeDays) out.push(['age', { days: rules.repo.minAgeDays }]);
+  if (!f.release) out.push(['release']);
   return out;
 }
 
@@ -240,19 +244,20 @@ const fingerprint = issue => createHash('sha256').update(`${issue.title}\n${issu
 /* ---------- Заявки ---------- */
 
 async function checkSubmission(issue, ctx) {
-  const form = parseForm(issue.body);
+  const { form, lang } = parseForm(issue.body);
   const problems = [];
   const repo = parseRepo(form.repo);
   const name = oneLine(form.name, 60);
   const desc = oneLine(form.desc, 120);
   const about = oneLine(form.about, 800);
-  const category = Object.entries(ctx.site.cats).find(([id, label]) => norm(form.category) === id || norm(form.category) === norm(label))?.[0];
-  if (!repo) problems.push('Укажите репозиторий как владелец/название, например octocat/my-app.');
-  if (name.length < 2 || name.length > 40) problems.push('Название должно быть от 2 до 40 символов.');
-  if (desc.length < 10 || desc.length > 90) problems.push('Короткое описание должно быть от 10 до 90 символов.');
-  if (about.length > 600) problems.push('Подробное описание должно быть не длиннее 600 символов.');
-  if (!category) problems.push(`Категория должна быть одной из: ${Object.entries(ctx.site.cats).map(([id, label]) => `${id} (${label})`).join(', ')}.`);
-  if ((String(form.consents || '').match(/^- \[x\]/gim) || []).length < 3) problems.push('Отметьте все три подтверждения.');
+  // Подходит id категории, её название на любом языке сайта или «dev (Разработка)» целиком
+  const category = ctx.site.catNames.get(norm(form.category)) || ctx.site.catNames.get(norm(form.category).split(/[\s(]/)[0]);
+  if (!repo) problems.push(['repoFormat']);
+  if (name.length < 2 || name.length > 40) problems.push(['nameLength']);
+  if (desc.length < 10 || desc.length > 90) problems.push(['descLength']);
+  if (about.length > 600) problems.push(['aboutLength']);
+  if (!category) problems.push(['category', { list: Object.keys(ctx.site.cats).join(', ') }]);
+  if ((String(form.consents || '').match(/^- \[x\]/gim) || []).length < 3) problems.push(['consents']);
 
   let facts = null;
   if (repo) {
@@ -260,14 +265,14 @@ async function checkSubmission(issue, ctx) {
     problems.push(...repoProblems(facts));
     const key = (facts.repo || repo).toLowerCase();
     if (ctx.site.repos.some(r => r.toLowerCase() === key) || ctx.catalog.sandbox.some(a => a.repo.toLowerCase() === key && a.issue !== issue.number)) {
-      problems.push('Это приложение уже есть в VibeMarket.');
+      problems.push(['duplicate']);
     } else if (ctx.candidates.some(c => c.number !== issue.number && c.repo.toLowerCase() === key)) {
-      problems.push('По этому репозиторию уже идёт голосование в другой заявке.');
+      problems.push(['votingElsewhere']);
     }
   }
   const busy = ctx.candidates.filter(c => c.number !== issue.number && c.author === issue.user.login).length;
   if (busy >= rules.limits.candidatesPerAuthor) {
-    problems.push(`У вас уже ${busy} ${plural(busy, ['заявка', 'заявки', 'заявок'])} на голосовании. Дождитесь итогов.`);
+    problems.push(['busy', { n: busy }]);
   }
 
   const glyph = /^[a-z0-9]{1,20}$/.test(norm(form.glyph)) ? norm(form.glyph) : 'blocks';
@@ -278,44 +283,39 @@ async function checkSubmission(issue, ctx) {
     stars: facts?.stars || 0,
     lic: facts?.license || '',
     glyph,
-    c: PALETTE[norm(form.color)] || PALETTE['графитовый'],
+    c: PALETTE[ctx.site.colorNames.get(norm(form.color)) ?? 7].slice(1),
     desc,
     about,
-    os: [...new Set(String(form.platforms || '').split(/[,;\n]/).map(p => OS[norm(p)]).filter(Boolean))].join(''),
+    os: [...new Set(String(form.platforms || '').split(/[,;\n、，]/).map(p => ctx.site.osNames.get(norm(p))).filter(Boolean))].join(''),
   };
-  return { problems, app };
+  return { problems, app, lang };
 }
 
 function candidateText(meta) {
   const v = rules.voting;
-  return [
-    '✅ **Заявка прошла проверку.** Голосование открыто до ' + fmtDate(new Date(meta.since).getTime() + v.days * DAY) + '.',
-    '',
-    `Голосуйте реакцией 👍 под первым сообщением этой заявки, против — 👎. Учитываются аккаунты старше ${v.voterMinAgeDays} ${plural(v.voterMinAgeDays, ['дня', 'дней', 'дней'])}, автор заявки не голосует, а одновременные 👍 и 👎 от одного человека не считаются.`,
-    '',
-    `Робот опубликует приложение сам, если наберётся не меньше ${v.votesNeeded} 👍 и разница 👍 − ${v.downvoteWeight}×👎 будет не меньше ${v.votesNeeded}.`,
-    '',
-    'Если отредактировать заявку и сменить репозиторий, голосование начнётся заново.',
-  ].join('\n');
+  return msg(meta.lang, 'candidate', {
+    until: formatDate(meta.lang, new Date(meta.since).getTime() + v.days * DAY),
+    voterAge: v.voterMinAgeDays,
+    needed: v.votesNeeded,
+    weight: v.downvoteWeight,
+  });
 }
+
+const problemList = (lang, problems) => [msg(lang, 'invalid'), '', ...render(lang, problems).map(p => `- ${p}`)].join('\n');
 
 async function review(issue, ctx) {
   const { comment, meta } = await robotComment(issue);
   const print = fingerprint(issue);
   if (meta?.print === print) return meta;
-  const { problems, app } = await checkSubmission(issue, ctx);
+  const { problems, app, lang } = await checkSubmission(issue, ctx);
   if (problems.length) {
-    const next = { status: 'invalid', print };
+    const next = { status: 'invalid', print, lang };
     await setLabels(issue, ['invalid'], ['candidate']);
-    await writeComment(issue, comment, [
-      '❌ **Заявка не прошла проверку.** Исправьте заявку через «Edit», и робот проверит её снова:',
-      '',
-      ...problems.map(p => `- ${p}`),
-    ].join('\n'), next);
+    await writeComment(issue, comment, problemList(lang, problems), next);
     return next;
   }
   const keep = meta?.status === 'candidate' && meta.repo?.toLowerCase() === app.repo.toLowerCase();
-  const next = { status: 'candidate', print, repo: app.repo, since: keep ? meta.since : NOW.toISOString() };
+  const next = { status: 'candidate', print, lang, repo: app.repo, since: keep ? meta.since : NOW.toISOString() };
   await setLabels(issue, ['candidate'], ['invalid']);
   await writeComment(issue, comment, candidateText(next), next);
   return next;
@@ -355,25 +355,26 @@ function uniqueId(name, catalog, site) {
 async function finishVoting(issue, meta, votes, ctx) {
   const v = rules.voting;
   const score = votes.up - v.downvoteWeight * votes.down;
-  const tally = `Итог: ${votes.up} 👍, ${votes.down} 👎.`;
+  const lang = meta.lang || parseForm(issue.body).lang;
+  const tally = msg(lang, 'tally', votes);
   const { comment } = await robotComment(issue);
   if (votes.up >= v.votesNeeded && score >= v.votesNeeded) {
     repoCache.clear();
     const { problems, app } = await checkSubmission(issue, { ...ctx, candidates: [] });
-    const breaks = problems.filter(p => !p.startsWith('У вас уже'));
+    const breaks = problems.filter(([key]) => key !== 'busy');
     if (!breaks.length) {
-      const entry = { id: uniqueId(app.repo.split('/')[1], ctx.catalog, ctx.site), ...app, issue: issue.number, author: issue.user.login, votes: votes.up, addedAt: NOW.toISOString(), checkedAt: NOW.toISOString() };
+      const entry = { id: uniqueId(app.repo.split('/')[1], ctx.catalog, ctx.site), ...app, issue: issue.number, author: issue.user.login, lang, votes: votes.up, addedAt: NOW.toISOString(), checkedAt: NOW.toISOString() };
       ctx.catalog.sandbox.push(entry);
-      await writeComment(issue, comment, `🎉 **Опубликовано в песочнице.** ${tally} Спасибо всем, кто голосовал.`, { ...meta, status: 'accepted' });
+      await writeComment(issue, comment, msg(lang, 'accepted', { tally }), { ...meta, status: 'accepted' });
       await setLabels(issue, ['accepted'], ['candidate']);
       await closeIssue(issue, 'completed');
       return;
     }
-    await writeComment(issue, comment, [`⚠️ **Голоса набраны, но репозиторий больше не подходит.** ${tally}`, '', ...breaks.map(p => `- ${p}`), '', 'Исправьте и отредактируйте заявку, чтобы начать голосование заново.'].join('\n'), { ...meta, status: 'invalid', print: '' });
+    await writeComment(issue, comment, [msg(lang, 'broken', { tally }), '', ...render(lang, breaks).map(p => `- ${p}`), '', msg(lang, 'brokenHint')].join('\n'), { ...meta, status: 'invalid', print: '' });
     await setLabels(issue, ['invalid'], ['candidate']);
     return;
   }
-  await writeComment(issue, comment, `**Голосование завершено, приложение не прошло.** ${tally} Нужно не меньше ${v.votesNeeded} 👍 и 👍 − ${v.downvoteWeight}×👎 не меньше ${v.votesNeeded}. Можно открыть заявку снова, тогда голосование начнётся заново.`, { ...meta, status: 'rejected' });
+  await writeComment(issue, comment, msg(lang, 'rejected', { tally, needed: v.votesNeeded, weight: v.downvoteWeight }), { ...meta, status: 'rejected' });
   await setLabels(issue, ['rejected'], ['candidate']);
   await closeIssue(issue, 'not_planned');
 }
@@ -396,11 +397,11 @@ async function main() {
   const reports = [];
   for (const issue of open) {
     if (hasLabel(issue, 'blocked')) continue;
-    const body = issue.body || '';
-    if (hasLabel(issue, 'report') || body.includes('### Причина')) {
+    const { form } = parseForm(issue.body);
+    if (hasLabel(issue, 'report') || ('repo' in form && 'reason' in form)) {
       await setLabels(issue, ['report']);
       reports.push(issue);
-    } else if (hasLabel(issue, 'submission') || (body.includes('### Репозиторий') && body.includes('### Подтверждения'))) {
+    } else if (hasLabel(issue, 'submission') || ('repo' in form && 'consents' in form)) {
       await setLabels(issue, ['submission']);
       submissions.push(issue);
     }
@@ -452,9 +453,10 @@ async function main() {
     const facts = await repoFacts(app.repo);
     const breaks = repoBreaks(facts);
     if (breaks.length) {
-      console.log(`снято: ${app.repo}: ${breaks.join(' ')}`);
+      const reasons = render(app.lang || 'ru', breaks).join(' ');
+      console.log(`снято: ${app.repo}: ${render('ru', breaks).join(' ')}`);
       if (app.issue) {
-        await change(`#${app.issue}: сообщить о снятии`, () => gh(`/repos/${HOME}/issues/${app.issue}/comments`, { method: 'POST', body: { body: `Приложение снято с публикации: ${breaks.join(' ')}` } }));
+        await change(`#${app.issue}: сообщить о снятии`, () => gh(`/repos/${HOME}/issues/${app.issue}/comments`, { method: 'POST', body: { body: msg(app.lang || 'ru', 'removed', { reasons }) } }));
       }
       continue;
     }
@@ -465,7 +467,7 @@ async function main() {
   // 6. Жалобы: приложение скрывается, пока открыто достаточно жалоб от разных аккаунтов
   const reporters = new Map();
   for (const issue of reports) {
-    const repo = parseRepo(parseForm(issue.body).repo);
+    const repo = parseRepo(parseForm(issue.body).form.repo);
     if (!repo || !(await eligibleVoter(issue.user.login))) continue;
     const key = repo.toLowerCase();
     reporters.set(key, (reporters.get(key) || new Set()).add(issue.user.login));

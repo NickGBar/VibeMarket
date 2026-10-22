@@ -1,152 +1,170 @@
 # VibeMarket
 
-Автономный маркет бесплатных приложений с открытым исходным кодом. Без рекламы, баннеров и трекеров. Часть OpenCraft Hub.
+**English** · [Русский](README.ru.md)
 
-Маркет работает без сервера и без модераторов в ежедневной работе. Сайт лежит на GitHub Pages. Разработчики подают заявки через GitHub, сообщество голосует реакциями, а робот в GitHub Actions по правилам из `rules.json` публикует, переносит и снимает приложения.
+An autonomous market for free, open-source apps. No ads, banners or trackers. Part of OpenCraft Hub.
 
-## Из чего состоит
+Live site: https://nickgbar.github.io/VibeMarket/
 
-| Файл | Что это |
+The market runs without a server and without day-to-day moderators. The site is hosted on GitHub Pages. Developers submit apps through GitHub, the community votes with reactions, and a robot in GitHub Actions publishes, promotes and removes apps by the rules in `rules.json`.
+
+## What's inside
+
+| File | What it is |
 | --- | --- |
-| `index.html` | Вся страница маркета, без сборки и зависимостей. Русский язык встроен в неё |
-| `locales/` | Переводы на английский, испанский и китайский |
-| `catalog.json` | Данные от робота: звёзды, песочница, голосование, скрытые приложения |
-| `rules.json` | Правила, по которым работает робот |
-| `scripts/robot.mjs` | Робот |
-| `.github/workflows/robot.yml` | Запускает робота и публикует сайт |
-| `.github/ISSUE_TEMPLATE/` | Формы заявки и жалобы |
-| `server.mjs` | Необязательный сервер для входа через GitHub, см. ниже |
+| `index.html` | The whole market page, no build step and no dependencies. Russian is built into it |
+| `locales/` | Site translations into English, Spanish and Chinese |
+| `catalog.json` | Data from the robot: stars, sandbox, voting, hidden apps |
+| `rules.json` | The rules the robot follows |
+| `scripts/robot.mjs` | The robot |
+| `scripts/robot-i18n.mjs` | Robot replies and form field labels in every language |
+| `scripts/check-locales.mjs` | Checks translations against the Russian source |
+| `.github/workflows/robot.yml` | Runs the robot and publishes the site |
+| `.github/ISSUE_TEMPLATE/` | Submission and report forms in four languages |
+| `server.mjs` | Optional server for signing in with GitHub, see below |
 
-## Как приложение попадает в маркет
+## How an app gets into the market
 
-1. Автор добавляет своему репозиторию тему (topic) `vibemarket` и выпускает релиз. Тему может поставить только тот, у кого есть права на репозиторий, поэтому чужой проект подать не получится.
-2. В разделе «Песочница» автор нажимает «Предложить приложение» и заполняет форму. Форма открывает на GitHub уже заполненную заявку, автор отмечает три подтверждения и отправляет её.
-3. Робот проверяет заявку за несколько минут и отвечает комментарием. Если что-то не так, автор правит заявку, и робот проверяет её снова.
-4. Сообщество голосует 👍 или 👎 под заявкой. Голосование идёт 7 дней, и пока оно идёт, заявку видно на полке «Идёт голосование» на сайте.
-5. Если голосов хватило, робот добавляет приложение в песочницу, закрывает заявку и публикует сайт.
-6. Через 90 дней приложение с 500 звёздами и без жалоб робот переносит в обычную категорию на главной. Пометка «Стороннее» при этом остаётся.
+1. The author adds the `vibemarket` topic to their repository and publishes a release. Only people with rights to a repository can set its topics, so nobody can submit someone else's project.
+2. In the Sandbox section the author clicks «Submit an app» and fills in the form. It opens an already filled-in submission on GitHub in the site's language; the author ticks three confirmations and submits it.
+3. The robot checks the submission within a few minutes and replies with a comment in the language of the form. If something is wrong, the author edits the submission and the robot checks it again.
+4. The community votes 👍 or 👎 on the submission. Voting lasts 7 days, and while it's open the submission is shown on the site's «Voting now» shelf.
+5. If there are enough votes, the robot adds the app to the sandbox, closes the submission and republishes the site.
+6. After 90 days, an app with 500 stars and no reports is moved to its regular category on the main page. It keeps its «Third-party» badge.
 
-Все числа берутся из `rules.json`.
+All numbers come from `rules.json`.
 
-## Правила
+## Rules
 
-| Ключ | Что значит | Сейчас |
+| Key | Meaning | Current value |
 | --- | --- | --- |
-| `repo.minAgeDays` | Минимальный возраст репозитория, дней | 30 |
-| `repo.requireRelease` | Нужен хотя бы один релиз | да |
-| `repo.requireTopic` | Тема, которая доказывает права на репозиторий | `vibemarket` |
-| `repo.allowForks` | Принимать форки | нет |
-| `repo.licenses` | Разрешённые лицензии (SPDX) | MIT, Apache-2.0, GPL и другие открытые |
-| `voting.days` | Длительность голосования, дней | 7 |
-| `voting.votesNeeded` | Сколько нужно 👍. Разница 👍 − вес×👎 тоже должна быть не меньше этого числа | 10 |
-| `voting.downvoteWeight` | Вес одного 👎 | 2 |
-| `voting.voterMinAgeDays` | Минимальный возраст аккаунта голосующего, дней | 90 |
-| `promotion.minDays`, `promotion.minStars` | Когда переносить на главную | 90 дней, 500 звёзд |
-| `reports.toHide` | Сколько жалоб от разных аккаунтов скрывают приложение | 3 |
-| `limits.candidatesPerAuthor` | Сколько заявок одного автора может быть на голосовании одновременно | 3 |
+| `repo.minAgeDays` | Minimum repository age, days | 30 |
+| `repo.requireRelease` | At least one release is required | yes |
+| `repo.requireTopic` | Topic that proves rights to the repository | `vibemarket` |
+| `repo.allowForks` | Accept forks | no |
+| `repo.licenses` | Allowed licenses (SPDX) | MIT, Apache-2.0, GPL and other open licenses |
+| `voting.days` | Voting period, days | 7 |
+| `voting.votesNeeded` | 👍 needed. 👍 − weight×👎 must also be at least this number | 10 |
+| `voting.downvoteWeight` | Weight of one 👎 | 2 |
+| `voting.voterMinAgeDays` | Minimum voter account age, days | 90 |
+| `promotion.minDays`, `promotion.minStars` | When to move an app to the main page | 90 days, 500 stars |
+| `reports.toHide` | Reports from different accounts that hide an app | 3 |
+| `limits.candidatesPerAuthor` | Submissions one author can have in voting at the same time | 3 |
 
-Голос автора заявки, голоса аккаунтов младше порога, голоса, поставленные до начала голосования, и одновременные 👍 с 👎 от одного человека не считаются. Если автор меняет в заявке репозиторий, голосование начинается заново.
+Votes from the submission author, from accounts younger than the threshold, votes cast before voting started, and a 👍 together with a 👎 from the same person don't count. If the author changes the repository in the submission, voting starts over.
 
-## Жалобы и аварийная остановка
+## Reports and the emergency stop
 
-- **Жалобы.** Любой может подать жалобу через форму «Жалоба на приложение». Когда открытых жалоб от разных аккаунтов старше 90 дней набирается `reports.toHide`, робот скрывает приложение со всех полок, из поиска и со страниц. Как только мейнтейнер закроет жалобы, приложение вернётся само.
-- **Метка `blocked`.** Если поставить её на заявку приложения, робот снимет приложение при ближайшем запуске. Ставить метки могут только люди с правами на репозиторий маркета. Чтобы вернуть приложение, автор открывает заявку заново, и голосование проходит ещё раз.
-- **Ежедневная перепроверка.** Робот раз в сутки проверяет опубликованные приложения. Если репозиторий удалён, закрыт, отправлен в архив или сменил лицензию на неоткрытую, приложение снимается, а в заявке появляется комментарий с причиной.
+- **Reports.** Every app page has a «Report this app» link. It opens the report form in the site's language with the repository already filled in. Once an app collects `reports.toHide` open reports from different accounts older than 90 days, the robot hides it from all shelves, search and pages. As soon as a maintainer closes the reports, the app comes back on its own.
+- **The `blocked` label.** Put it on an app's submission and the robot removes the app on its next run. Only people with rights to the market repository can set labels. To bring the app back, the author reopens the submission and it goes through voting again.
+- **Daily re-check.** Once a day the robot re-checks published apps. If a repository is deleted, made private, archived or switches to a non-open license, the app is removed and the submission gets a comment explaining why.
 
-## Языки
+## Languages
 
-Сайт работает на русском, английском, испанском и китайском. Язык переключается в шапке, выбор запоминается в браузере. При первом визите язык берётся из настроек браузера, а если он не из этих четырёх, сайт открывается на английском.
+The site, the GitHub forms and the robot's replies are available in Russian, English, Spanish and Chinese.
 
-- Русский встроен в `index.html`: строки интерфейса лежат в блоке `<script type="application/json" id="i18n-ru">`, тексты каталога в данных `CATS`, `APPS` и `DETAILS`. Поэтому страница мгновенно открывается и работает даже как обычный файл.
-- Остальные языки лежат в `locales/en.json`, `locales/es.json` и `locales/zh.json`, и страница загружает их при выборе. В каждом файле есть раздел `ui` с теми же ключами, что в русском блоке, `cats` с категориями и `apps` с описаниями, подробными текстами и подписями к скриншотам всех приложений каталога.
-- Формы множественного числа задаются объектом с категориями `Intl.PluralRules`: для английского `one` и `other`, для испанского ещё `many`, для китайского достаточно `other`.
-- Переводы вставляются в страницу как есть, поэтому HTML в них запрещён.
+**The site.** The language switcher is in the header, and the choice is remembered in the browser. On the first visit the language comes from the browser settings; if it isn't one of these four, the site opens in English.
 
-Не переводятся: формы заявки и жалобы на GitHub, комментарии робота и тексты приложений из песочницы, которые пишут сами авторы.
+- Russian is built into `index.html`: interface strings are in the `<script type="application/json" id="i18n-ru">` block, catalog texts are in the `CATS`, `APPS` and `DETAILS` data. That's why the page opens instantly and works even as a plain file.
+- The other languages live in `locales/en.json`, `locales/es.json` and `locales/zh.json`, and the page loads them when selected. Each file has a `ui` section with the same keys as the Russian block, `cats` with categories, and `apps` with descriptions, full texts and screenshot captions for every app in the catalog.
+- Plural forms are objects keyed by `Intl.PluralRules` categories: `one` and `other` for English, plus `many` for Spanish, and just `other` for Chinese.
+- Translations are inserted into the page as is, so HTML is not allowed in them.
 
-Сверить переводы с русским исходником:
+**GitHub forms.** Each form has a version in every language: `submit-app.yml` (Russian), `submit-app-en.yml`, `submit-app-es.yml`, `submit-app-zh.yml`, and the same for `report-app*.yml`. The site opens the version in the visitor's language. Fields have the same ids in every version, and category, color and platforms are accepted both as ids (`work`, `green`, `web`) and as names in any of the four languages.
+
+**The robot** detects the submission's language from the field labels and replies in it. Its texts and the form labels are in `scripts/robot-i18n.mjs`.
+
+Only sandbox app texts are not translated: their authors write them.
+
+Check the site translations against the Russian source:
 
 ```bash
 npm run locales
 ```
 
-Скрипт показывает недостающие и лишние ключи, неверные переменные вида `{name}`, пропущенные формы множественного числа, тексты приложений и HTML в переводах. В GitHub Actions он запускается перед каждой публикацией и выводит предупреждения, но публикацию не останавливает.
+The script reports missing and extra keys, wrong `{name}`-style variables, missing plural forms, missing app texts and HTML in translations. In GitHub Actions it runs before every deployment and prints warnings without blocking the deployment.
 
-Чтобы добавить язык, скопируйте `locales/en.json` в `locales/<код>.json`, переведите и добавьте код в `LANGS` и в список `<select id="lang">` в `index.html`.
+To add a language:
 
-## Чего робот не умеет
+1. Copy `locales/en.json` to `locales/<code>.json` and translate it. Add the code to `LANGS` and to the `<select id="lang">` list in `index.html`.
+2. Add `submit-app-<code>.yml` and `report-app-<code>.yml` forms.
+3. Add the field labels to `FORM_LABELS` and the robot texts to `MESSAGES` in `scripts/robot-i18n.mjs`.
 
-- Проверять безопасность приложения: вредоносный код с хорошей лицензией пройдёт все правила. Поэтому на сайте стоит предупреждение, а для экстренных случаев есть метка `blocked`.
-- Проверять, что приложение действительно бесплатное: это подтверждает автор.
-- Полностью защитить голосование от фермы аккаунтов: порог возраста аккаунта затрудняет накрутку, но не исключает её.
+## What the robot can't do
 
-Юридически за содержимое маркета отвечает владелец репозитория. Автоматика этого не меняет.
+- Check an app's security: malicious code with a good license passes every rule. That's why the site shows a warning, and the `blocked` label exists for emergencies.
+- Check that an app is really free: the author confirms that.
+- Fully protect voting from account farms: the account age threshold makes manipulation harder but doesn't rule it out.
 
-## Запуск на GitHub
+Legally, the owner of the repository is responsible for the market's content. Automation doesn't change that.
 
-Нужно сделать один раз:
+## Running on GitHub
 
-1. Залить код в ветку `main` репозитория.
-2. В репозитории открыть **Settings → Pages** и в **Source** выбрать **GitHub Actions**.
-3. Открыть **Actions → Робот VibeMarket → Run workflow** или дождаться ближайшего запуска по расписанию.
+One-time setup:
 
-Сайт будет доступен по адресу https://nickgbar.github.io/VibeMarket/.
+1. Push the code to the repository's `main` branch.
+2. Open **Settings → Pages** in the repository and set **Source** to **GitHub Actions**.
+3. Open **Actions → Робот VibeMarket → Run workflow**, or wait for the next scheduled run.
 
-Робот запускается раз в час, на каждое событие в Issues, на каждый push в `main` и вручную. Запуски идут по очереди. Если какой-то запуск пропадёт из очереди, ближайший проход по расписанию всё наверстает: робот заново просматривает все открытые заявки.
+The robot runs every hour, on every Issues event, on every push to `main`, and manually. Runs are queued one at a time. If a run drops out of the queue, the next scheduled run catches up: the robot re-reads all open submissions every time.
 
-GitHub отключает расписание в публичном репозитории после 60 дней без активности. Робот коммитит `catalog.json`, когда меняются звёзды, поэтому в живом каталоге активность есть всегда.
+GitHub disables schedules in public repositories after 60 days without activity. The robot commits `catalog.json` whenever star counts change, so a live catalog always has activity.
 
-### Безопасность робота
+### Robot security
 
-- Тексты заявок робот читает через API и никогда не передаёт в shell. В shell выполняется только `scripts/robot.mjs` из ветки `main`.
-- Записи каталога робот собирает из проверенных полей, а не копирует файлы автора. Код из присланных репозиториев робот не запускает никогда.
-- Служебные данные голосования робот хранит в своём комментарии и доверяет только комментариям `github-actions[bot]`. Подделать дату начала голосования нельзя.
-- У workflow минимальные права, сторонние actions закреплены по хэшу коммита.
-- Страница экранирует все данные из `catalog.json`, как недоверенные.
+- The robot reads submission texts through the API and never passes them to a shell. The only thing the shell runs is `scripts/robot.mjs` from the `main` branch.
+- Catalog entries are built from validated fields, never copied from the author's files. The robot never runs code from submitted repositories.
+- Voting metadata is kept in the robot's own comment, and the robot only trusts comments by `github-actions[bot]`, so nobody can fake when voting started.
+- Workflows have minimal permissions, and third-party actions are pinned to commit hashes.
+- The page escapes all data from `catalog.json` as untrusted.
 
-## Локально
+## Local development
 
-- Открыть `index.html` в браузере: страница работает и без сервера, на встроенном снимке каталога.
-- `GH_TOKEN=$(gh auth token) npm run robot`: полный проход робота без записи в GitHub. Меняется только `catalog.json` на диске.
-- `npm run stars`: обновить встроенный в `index.html` снимок звёзд. Он нужен, если `catalog.json` недоступен.
-- `npm run locales`: сверить переводы с русским исходником.
+- Open `index.html` in a browser: the page works without a server, using the catalog snapshot built into it.
+- `GH_TOKEN=$(gh auth token) npm run robot`: a full robot run without writing to GitHub. Only `catalog.json` on disk changes.
+- `npm run stars`: update the star snapshot built into `index.html`. It's used when `catalog.json` is unavailable.
+- `npm run locales`: check translations against the Russian source.
 
-## Необязательный сервер: вход через GitHub
+## Optional server: signing in with GitHub
 
-Для маркета сервер не нужен. Но если запустить `server.mjs`, на сайте появятся:
+The market doesn't need a server. But if you run `server.mjs`, the site gets:
 
-- вход через GitHub, аватар и логин в шапке;
-- кнопка Star на странице приложения, которая ставит и снимает звезду прямо на GitHub;
-- полка «Ваши звёзды» и отметки на карточках;
-- число звёзд, обновлённое через GitHub API от имени пользователя.
+- signing in with GitHub, with an avatar and username in the header;
+- a Star button on app pages that stars and unstars the project right on GitHub;
+- a «Your stars» shelf and badges on cards;
+- star counts refreshed through the GitHub API on the user's behalf.
 
-Зависимостей нет, нужен Node.js 22.9 или новее.
+No dependencies, Node.js 22.9 or newer is required.
 
 ```bash
 npm start
 ```
 
-### Настройка
+### Setup
 
-1. Создайте GitHub App: https://github.com/settings/apps/new
+1. Create a GitHub App: https://github.com/settings/apps/new
    - **Homepage URL**: `http://localhost:3000`.
    - **Callback URL**: `http://localhost:3000/auth/callback`.
-   - **Webhook**: снимите галочку **Active**.
-   - **Permissions → Account permissions → Starring**: `Read and write`. Других прав не нужно.
-   - **Where can this GitHub App be installed?** `Only on this account` для проверки у себя, `Any account`, чтобы входить могли другие люди.
-2. Скопируйте **Client ID** и создайте **client secret**.
-3. Создайте `.env` по образцу и вставьте туда оба значения:
+   - **Webhook**: uncheck **Active**.
+   - **Permissions → Account permissions → Starring**: `Read and write`. No other permissions are needed.
+   - **Where can this GitHub App be installed?** `Only on this account` to try it yourself, `Any account` so other people can sign in.
+2. Copy the **Client ID** and generate a **client secret**.
+3. Create `.env` from the example and paste both values into it:
 
    ```bash
    cp .env.example .env
    ```
 
-GitHub App выбран вместо OAuth App, потому что OAuth App для звёзд запросил бы право на запись во все публичные репозитории пользователя (`public_repo`).
+A GitHub App is used instead of an OAuth App because an OAuth App would need write access to all of the user's public repositories (`public_repo`) just to star projects.
 
-Как устроен сервер:
+How the server works:
 
-- Токен GitHub хранится только в памяти сервера, браузер получает cookie сессии с флагами `HttpOnly` и `SameSite=Lax`. Вход защищён `state` и PKCE, при выходе токен отзывается.
-- Страница по-прежнему не обращается к сторонним сайтам, кроме GitHub API в форме заявки. Политика CSP разрешает выполнять только её собственный скрипт.
-- Звёзды можно ставить только приложениям из каталога и песочницы.
-- Сессии хранятся в памяти, поэтому после перезапуска нужно войти заново.
-- Для работы на своём домене нужен HTTPS. Укажите `BASE_URL=https://ваш-домен` и поменяйте адреса в настройках GitHub App.
+- The GitHub token lives only in server memory; the browser gets a session cookie with `HttpOnly` and `SameSite=Lax`. Sign-in is protected with `state` and PKCE, and the token is revoked on sign-out.
+- The page still doesn't contact third-party sites, except the GitHub API in the submission form. The CSP allows only the page's own script to run.
+- Only apps from the catalog and the sandbox can be starred.
+- Sessions are kept in memory, so you need to sign in again after a restart.
+- Your own domain needs HTTPS. Set `BASE_URL=https://your-domain` and update the URLs in the GitHub App settings.
+
+## License
+
+VibeMarket's code and texts are released under the [MIT License](LICENSE). Apps in the catalog and the sandbox belong to their authors and are distributed under their own licenses, which are shown on their cards.

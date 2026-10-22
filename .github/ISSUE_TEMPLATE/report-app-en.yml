@@ -1,0 +1,35 @@
+name: Report an app · English
+description: Report a malicious, paid, stolen or rule-breaking app.
+title: "Report: "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        When an app collects as many open reports as set in [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json), the robot hides it automatically until a maintainer looks into it. Only reports from different accounts older than 90 days count.
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: The app's repository, for example octocat/my-app.
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options:
+        - Malicious code or suspicious behavior
+        - The app is paid or requires a subscription
+        - Submitted by someone other than the author
+        - Illegal content
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What exactly is wrong. Links to the code or releases help sort it out faster.
+    validations:
+      required: true
