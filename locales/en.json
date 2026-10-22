@@ -19,8 +19,34 @@
     "nav.prev": "Scroll back",
     "nav.next": "Scroll forward",
     "hero.eyebrow": "App of the day",
-    "hero.title": "Draw diagrams that look hand-sketched",
-    "hero.text": "Excalidraw runs in the browser, works offline and keeps your files with you. Great for architecture sketches, retros and explaining things on a call.",
+    "daily.photocraft.title": "Photoshop habits, no subscription",
+    "daily.photocraft.text": "PhotoCraft opens layered PSD files, handles adjustment layers and layer styles, and works offline. The menus and shortcuts feel familiar, and the code is open.",
+    "daily.localsend.title": "AirDrop between any devices",
+    "daily.localsend.text": "LocalSend moves files and text over your local network, phone to laptop and back, on any system. No internet or account needed, and transfers are encrypted.",
+    "daily.whispercpp.title": "Speech to text, without the cloud",
+    "daily.whispercpp.text": "whisper.cpp turns audio and video into text in dozens of languages right on your computer. It can also listen to a microphone and transcribe in real time.",
+    "daily.godot.title": "Make your own game, royalty-free",
+    "daily.godot.text": "Godot is an engine with its own editor, node-based scenes and the GDScript language. Ship to desktop, mobile and the web, and the MIT license asks for nothing in return.",
+    "daily.shpd.title": "Just one more run",
+    "daily.shpd.text": "Shattered Pixel Dungeon is a turn-based roguelike in a randomly generated dungeon. The gear is different every time, and death means starting over.",
+    "daily.obs.title": "Record your screen and go live",
+    "daily.obs.text": "OBS Studio builds scenes from windows, cameras and game capture and streams to Twitch, YouTube or any RTMP service. A mixer and voice filters are built in.",
+    "daily.keepassxc.title": "Passwords in a file you own",
+    "daily.keepassxc.text": "KeePassXC keeps your passwords in an encrypted database on your own device. A generator, browser autofill and TOTP codes, with no cloud account.",
+    "daily.excalidraw.title": "Draw diagrams that look hand-sketched",
+    "daily.excalidraw.text": "Excalidraw runs in the browser, works offline and keeps your files with you. Great for architecture sketches, retros and explaining things on a call.",
+    "daily.zed.title": "An editor that never makes you wait",
+    "daily.zed.text": "Zed is written in Rust and renders its interface on the GPU, so it responds instantly even in large projects. You can edit code with a teammate in real time.",
+    "daily.anki.title": "Remember more, review less",
+    "daily.anki.text": "Anki shows hard cards more often and the ones you know less often. The FSRS scheduler cuts down on reviews, and thousands of shared decks help you get started.",
+    "daily.filmcraft.title": "Premiere Pro-style editing, in the open",
+    "daily.filmcraft.text": "FilmCraft is a non-linear video editor written in Rust with its own codecs. Three-point editing, color grading with scopes and over 90 video effects.",
+    "daily.syncthing.title": "Your files on every device, no cloud",
+    "daily.syncthing.text": "Syncthing keeps folders in sync directly between your own devices. There is no central server, and connections are encrypted.",
+    "daily.luanti.title": "A sandbox where you write the rules",
+    "daily.luanti.text": "Luanti, formerly Minetest, is a voxel engine with thousands of games and mods written in Lua. Run your own server and play with friends.",
+    "daily.logseq.title": "Notes where everything connects",
+    "daily.logseq.text": "In Logseq every thought is a block you can link to others with references and tags. Start from the daily journal, and your files stay with you as Markdown.",
     "manifest.eyebrow": "Open market",
     "manifest.title": "Free, ad-free and open source. Every single app.",
     "manifest.priceLabel": "is what any app costs",
@@ -38,6 +64,8 @@
     "collection.text": "Models run locally. Your prompts and files never go to someone else's cloud.",
     "top.title": "Top by GitHub stars",
     "top.sub": "The most popular projects in the catalog",
+    "adobe.title": "Instead of Adobe",
+    "adobe.sub": "Open alternatives to Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects from Brandon Thomas's ArtCraft. Young Rust projects, versions 0.x.",
     "mine.title": "Your stars",
     "mine.empty": "Open any app page and press Star. The project gets a star on GitHub, and the app shows up here.",
     "mine.loading": "Loading your stars from GitHub…",
@@ -145,6 +173,7 @@
     "results.empty": "Nothing found. Try an app name, a category like «{example}» or a license, for example MIT.",
     "foot.about": "The catalog only lists open-source projects. Everything is free: no ads, banners, pop-ups or trackers. This page doesn't load a single external script, font or pixel.",
     "foot.auth": "Signing in with GitHub is optional. Once signed in, stars update through your account, and all GitHub requests go through the VibeMarket server, so your token never reaches the browser.",
+    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects are trademarks of Adobe. The names are used for comparison only: VibeMarket and ArtCraft are not affiliated with Adobe.",
     "foot.sandbox": "Apps in the Sandbox section are third-party: their authors publish them. VibeMarket doesn't review them and isn't responsible for how they work, their security or their content.",
     "foot.starsSnapshot": "Stars come from the GitHub API as of {date}.",
     "foot.starsRobot": "Stars are updated by the VibeMarket robot, last update: {date}.",
@@ -661,6 +690,69 @@
         "Hex maps and tactics",
         "Time of day affects combat",
         "Campaigns and online multiplayer"
+      ]
+    },
+    "photocraft": {
+      "desc": "A Photoshop-style photo editor in Rust: layers, styles and PSD files.",
+      "about": "PhotoCraft is a photo editor written from scratch in Rust by the ArtCraft team. Its menus, panels and shortcuts will feel familiar to anyone who has used Photoshop. It opens and saves layered PSD files, supports adjustment layers and layer styles, works offline, and every action can be driven from the command line or over MCP.",
+      "shots": [
+        "Layers, masks and adjustment layers",
+        "Layer styles: shadows, glows and strokes",
+        "Opens and saves PSD files"
+      ]
+    },
+    "lightcraft": {
+      "desc": "Lightroom-style non-destructive RAW editing in 32-bit color.",
+      "about": "LightCraft is a non-destructive photo and RAW editor from ArtCraft. Edits never touch the original and are processed in 32-bit, wide-gamut color: exposure, curves, color wheels, dehaze and film grain. It runs on the desktop and in the browser.",
+      "shots": [
+        "Non-destructive RAW editing",
+        "Color grading for shadows, midtones and highlights",
+        "Before and after with one key"
+      ]
+    },
+    "vectorcraft": {
+      "desc": "Illustrator-style vector illustration, native and in the browser.",
+      "about": "VectorCraft is a vector illustration app from ArtCraft, written in Rust. It runs natively on macOS, Windows and Linux and in the browser via WebAssembly. Every feature is available through a command API, including for AI agents over MCP.",
+      "shots": [
+        "Vector illustrations and curves",
+        "Native and in the browser",
+        "Command API and MCP for agents"
+      ]
+    },
+    "designcraft": {
+      "desc": "InDesign-style layout for magazines and books: IDML, PDF/X and EPUB.",
+      "about": "DesignCraft is a page layout app from ArtCraft: spreads, parent pages, threaded text frames, styles and tables. It hyphenates and justifies with the Knuth–Plass algorithm, imports and exports IDML, opens INDD files, and exports PDF/X-4, PDF/A and EPUB. No subscription, license server or telemetry.",
+      "shots": [
+        "Spreads and parent pages",
+        "Paragraph, character and table styles",
+        "Export to PDF/X, PDF/A and EPUB"
+      ]
+    },
+    "pdfcraft": {
+      "desc": "Acrobat-style PDF reading and editing, with no account or cloud.",
+      "about": "PdfCraft is a PDF reader and editor from ArtCraft. It renders complex typography, vertical Japanese and color emoji faithfully, repairs damaged files, and saves changes without touching the original bytes. No account, telemetry or cloud.",
+      "shots": [
+        "Faithful rendering of any PDF",
+        "Comments and document editing",
+        "No account or cloud, works offline"
+      ]
+    },
+    "filmcraft": {
+      "desc": "Premiere Pro-style video editing: color, sound and effects.",
+      "about": "FilmCraft is a professional non-linear video editor from ArtCraft, written in Rust together with its own codecs. A familiar timeline with three-point editing, color grading with scopes, over 90 video effects, an audio mixer and EBU R128 loudness metering.",
+      "shots": [
+        "Editing on a familiar timeline",
+        "Color grading and scopes",
+        "Audio mixer and EBU R128 loudness"
+      ]
+    },
+    "effectcraft": {
+      "desc": "After Effects-style motion graphics and compositing, with Lottie.",
+      "about": "EffectCraft is a motion graphics and compositing app from ArtCraft. Layer-based compositions, keyframes with a graph editor, 306 effects, 3D cameras and lights, expressions and a render queue. Lottie import and export are built in, and projects are stored as readable JSON.",
+      "shots": [
+        "Compositions, layers and keyframes",
+        "306 effects and 3D cameras",
+        "JSON projects and Lottie import"
       ]
     }
   }

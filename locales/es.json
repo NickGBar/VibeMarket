@@ -19,8 +19,34 @@
     "nav.prev": "Desplazar atrás",
     "nav.next": "Desplazar adelante",
     "hero.eyebrow": "App del día",
-    "hero.title": "Dibuja diagramas que parecen hechos a mano",
-    "hero.text": "Excalidraw funciona en el navegador, también sin conexión, y guarda los archivos contigo. Ideal para bocetos de arquitectura, retrospectivas y explicaciones en una llamada.",
+    "daily.photocraft.title": "Lo de Photoshop, sin suscripción",
+    "daily.photocraft.text": "PhotoCraft abre archivos PSD con capas, maneja capas de ajuste y estilos de capa y funciona sin conexión. Los menús y atajos resultan familiares, y el código es abierto.",
+    "daily.localsend.title": "AirDrop entre cualquier dispositivo",
+    "daily.localsend.text": "LocalSend envía archivos y texto por la red local, del móvil al portátil y al revés, en cualquier sistema. Sin internet ni cuenta, y con cifrado.",
+    "daily.whispercpp.title": "De voz a texto, sin la nube",
+    "daily.whispercpp.text": "whisper.cpp convierte audio y vídeo en texto en decenas de idiomas en tu propio ordenador. También puede escuchar el micrófono y transcribir en tiempo real.",
+    "daily.godot.title": "Crea tu propio juego, sin regalías",
+    "daily.godot.text": "Godot es un motor con su propio editor, escenas de nodos y el lenguaje GDScript. Publica en escritorio, móvil y web, y la licencia MIT no pide nada a cambio.",
+    "daily.shpd.title": "Solo una partida más",
+    "daily.shpd.text": "Shattered Pixel Dungeon es un roguelike por turnos en una mazmorra generada al azar. El equipo cambia cada vez, y morir significa empezar de nuevo.",
+    "daily.obs.title": "Graba la pantalla y sal en directo",
+    "daily.obs.text": "OBS Studio arma escenas con ventanas, cámaras y captura de juegos y emite en Twitch, YouTube o cualquier servicio RTMP. Incluye mezclador y filtros de voz.",
+    "daily.keepassxc.title": "Contraseñas en un archivo que es tuyo",
+    "daily.keepassxc.text": "KeePassXC guarda tus contraseñas en una base cifrada en tu propio dispositivo. Generador, autocompletado en el navegador y códigos TOTP, sin cuenta en la nube.",
+    "daily.excalidraw.title": "Dibuja diagramas que parecen hechos a mano",
+    "daily.excalidraw.text": "Excalidraw funciona en el navegador, también sin conexión, y guarda los archivos contigo. Ideal para bocetos de arquitectura, retrospectivas y explicaciones en una llamada.",
+    "daily.zed.title": "Un editor que no te hace esperar",
+    "daily.zed.text": "Zed está escrito en Rust y dibuja la interfaz con la GPU, así que responde al instante incluso en proyectos grandes. Puedes editar código con un compañero en tiempo real.",
+    "daily.anki.title": "Recuerda más, repasa menos",
+    "daily.anki.text": "Anki muestra las tarjetas difíciles más a menudo y las que ya sabes, menos. El planificador FSRS reduce los repasos, y miles de mazos compartidos te ayudan a empezar.",
+    "daily.filmcraft.title": "Edición al estilo de Premiere Pro, en abierto",
+    "daily.filmcraft.text": "FilmCraft es un editor de vídeo no lineal escrito en Rust con sus propios códecs. Edición de tres puntos, corrección de color con scopes y más de 90 efectos de vídeo.",
+    "daily.syncthing.title": "Tus archivos en todos tus dispositivos, sin nube",
+    "daily.syncthing.text": "Syncthing sincroniza carpetas directamente entre tus dispositivos. No hay servidor central, y las conexiones van cifradas.",
+    "daily.luanti.title": "Un sandbox donde las reglas las pones tú",
+    "daily.luanti.text": "Luanti, antes Minetest, es un motor de vóxeles con miles de juegos y mods en Lua. Monta tu propio servidor y juega con amigos.",
+    "daily.logseq.title": "Notas donde todo se conecta",
+    "daily.logseq.text": "En Logseq cada idea es un bloque que puedes enlazar con otros mediante referencias y etiquetas. Empieza por el diario, y tus archivos se quedan contigo en Markdown.",
     "manifest.eyebrow": "Mercado abierto",
     "manifest.title": "Gratis, sin anuncios y de código abierto. Todas las apps.",
     "manifest.priceLabel": "cuesta cualquier app",
@@ -39,6 +65,8 @@
     "collection.text": "Los modelos funcionan en local. Tus consultas y archivos no van a la nube de nadie.",
     "top.title": "Top por estrellas de GitHub",
     "top.sub": "Los proyectos más populares del catálogo",
+    "adobe.title": "En lugar de Adobe",
+    "adobe.sub": "Alternativas abiertas a Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro y After Effects de ArtCraft, de Brandon Thomas. Proyectos jóvenes en Rust, versiones 0.x.",
     "mine.title": "Tus estrellas",
     "mine.empty": "Abre la página de cualquier app y pulsa Star. El proyecto recibirá una estrella en GitHub y la app aparecerá aquí.",
     "mine.loading": "Cargando tus estrellas desde GitHub…",
@@ -152,6 +180,7 @@
     "results.empty": "No hay resultados. Prueba con el nombre de una app, una categoría como «{example}» o una licencia, por ejemplo MIT.",
     "foot.about": "El catálogo solo incluye proyectos de código abierto. Todo es gratis: sin anuncios, banners, ventanas emergentes ni rastreadores. Esta página no carga ni un solo script, fuente o píxel externo.",
     "foot.auth": "Iniciar sesión con GitHub es opcional. Al iniciarla, las estrellas se actualizan con tu cuenta y todas las peticiones a GitHub pasan por el servidor de VibeMarket, así que tu token nunca llega al navegador.",
+    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro y After Effects son marcas comerciales de Adobe. Los nombres se usan solo como comparación: VibeMarket y ArtCraft no están afiliados a Adobe.",
     "foot.sandbox": "Las apps de la sección Sandbox son de terceros: las publican sus autores. VibeMarket no las revisa ni responde de su funcionamiento, su seguridad o su contenido.",
     "foot.starsSnapshot": "Las estrellas proceden de la API de GitHub a fecha de {date}.",
     "foot.starsRobot": "El robot de VibeMarket actualiza las estrellas, última actualización: {date}.",
@@ -670,6 +699,69 @@
         "Mapas hexagonales y táctica",
         "La hora del día influye en el combate",
         "Campañas y multijugador online"
+      ]
+    },
+    "photocraft": {
+      "desc": "Editor de fotos en Rust al estilo de Photoshop: capas, estilos y archivos PSD.",
+      "about": "PhotoCraft es un editor de fotos escrito desde cero en Rust por el equipo de ArtCraft. Sus menús, paneles y atajos resultarán familiares a quien haya usado Photoshop. Abre y guarda archivos PSD con capas, admite capas de ajuste y estilos de capa, funciona sin conexión, y cualquier acción se puede controlar desde la línea de comandos o por MCP.",
+      "shots": [
+        "Capas, máscaras y capas de ajuste",
+        "Estilos de capa: sombras, resplandor y trazo",
+        "Abre y guarda archivos PSD"
+      ]
+    },
+    "lightcraft": {
+      "desc": "Revelado RAW no destructivo al estilo de Lightroom, con color de 32 bits.",
+      "about": "LightCraft es un editor no destructivo de fotos y RAW de ArtCraft. Los ajustes nunca tocan el original y se procesan con color de 32 bits y gama amplia: exposición, curvas, ruedas de color, eliminación de neblina y grano de película. Funciona en el escritorio y en el navegador.",
+      "shots": [
+        "Revelado RAW no destructivo",
+        "Corrección de color de sombras, medios tonos y luces",
+        "Antes y después con una tecla"
+      ]
+    },
+    "vectorcraft": {
+      "desc": "Ilustración vectorial al estilo de Illustrator, nativa y en el navegador.",
+      "about": "VectorCraft es una app de ilustración vectorial de ArtCraft escrita en Rust. Funciona de forma nativa en macOS, Windows y Linux y en el navegador mediante WebAssembly. Todas sus funciones están disponibles a través de una API de comandos, también para agentes de IA por MCP.",
+      "shots": [
+        "Ilustraciones vectoriales y curvas",
+        "Nativa y en el navegador",
+        "API de comandos y MCP para agentes"
+      ]
+    },
+    "designcraft": {
+      "desc": "Maquetación de revistas y libros al estilo de InDesign: IDML, PDF/X y EPUB.",
+      "about": "DesignCraft es una app de maquetación de ArtCraft: pliegos, páginas maestras, marcos de texto enlazados, estilos y tablas. Divide palabras y justifica con el algoritmo de Knuth–Plass, importa y exporta IDML, abre archivos INDD y exporta a PDF/X-4, PDF/A y EPUB. Sin suscripción, servidor de licencias ni telemetría.",
+      "shots": [
+        "Pliegos y páginas maestras",
+        "Estilos de párrafo, carácter y tabla",
+        "Exportación a PDF/X, PDF/A y EPUB"
+      ]
+    },
+    "pdfcraft": {
+      "desc": "Lectura y edición de PDF al estilo de Acrobat, sin cuenta ni nube.",
+      "about": "PdfCraft es un lector y editor de PDF de ArtCraft. Muestra con fidelidad tipografía compleja, japonés vertical y emojis en color, repara archivos dañados y guarda los cambios sin tocar los bytes originales. Sin cuenta, telemetría ni nube.",
+      "shots": [
+        "Visualización fiel de cualquier PDF",
+        "Comentarios y edición de documentos",
+        "Sin cuenta ni nube, funciona sin conexión"
+      ]
+    },
+    "filmcraft": {
+      "desc": "Edición de vídeo al estilo de Premiere Pro: color, sonido y efectos.",
+      "about": "FilmCraft es un editor de vídeo no lineal profesional de ArtCraft, escrito en Rust junto con sus propios códecs. Una línea de tiempo conocida con edición de tres puntos, corrección de color con scopes, más de 90 efectos de vídeo, mezclador de audio y medición de sonoridad EBU R128.",
+      "shots": [
+        "Edición en una línea de tiempo conocida",
+        "Corrección de color y scopes",
+        "Mezclador de audio y sonoridad EBU R128"
+      ]
+    },
+    "effectcraft": {
+      "desc": "Motion graphics y composición al estilo de After Effects, con Lottie.",
+      "about": "EffectCraft es una app de motion graphics y composición de ArtCraft. Composiciones por capas, fotogramas clave con editor de gráficos, 306 efectos, cámaras y luces 3D, expresiones y cola de render. La importación y exportación de Lottie vienen integradas, y los proyectos se guardan en JSON legible.",
+      "shots": [
+        "Composiciones, capas y fotogramas clave",
+        "306 efectos y cámaras 3D",
+        "Proyectos en JSON e importación de Lottie"
       ]
     }
   }

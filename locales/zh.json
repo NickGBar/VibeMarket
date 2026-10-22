@@ -19,8 +19,34 @@
     "nav.prev": "向后滚动",
     "nav.next": "向前滚动",
     "hero.eyebrow": "今日应用",
-    "hero.title": "画出像手绘一样的示意图",
-    "hero.text": "Excalidraw 在浏览器中运行，支持离线使用，文件保存在你自己手里。适合画架构草图、做复盘，或在通话中讲解思路。",
+    "daily.photocraft.title": "熟悉的 Photoshop 操作，无需订阅",
+    "daily.photocraft.text": "PhotoCraft 能打开多图层 PSD 文件，支持调整图层和图层样式，可以离线使用。菜单和快捷键都很熟悉，代码完全开源。",
+    "daily.localsend.title": "任何设备之间的 AirDrop",
+    "daily.localsend.text": "LocalSend 通过局域网在手机和电脑之间互传文件和文字，支持任何系统。无需联网和账号，传输全程加密。",
+    "daily.whispercpp.title": "语音转文字，无需云端",
+    "daily.whispercpp.text": "whisper.cpp 直接在你的电脑上把音频和视频转成文字，支持几十种语言，还能实时转写麦克风输入。",
+    "daily.godot.title": "做自己的游戏，无需版税",
+    "daily.godot.text": "Godot 是自带编辑器的游戏引擎，用节点搭建场景，用 GDScript 编写逻辑。可以发布到电脑、手机和网页，MIT 许可证不收任何费用。",
+    "daily.shpd.title": "再来一局就睡",
+    "daily.shpd.text": "Shattered Pixel Dungeon 是一款回合制 Roguelike 游戏，地牢随机生成。每次的装备都不同，死亡就意味着从头再来。",
+    "daily.obs.title": "录制屏幕，开启直播",
+    "daily.obs.text": "OBS Studio 用窗口、摄像头和游戏画面搭建场景，推流到 Twitch、YouTube 或任何 RTMP 服务。内置混音器和人声滤镜。",
+    "daily.keepassxc.title": "密码保存在属于你的文件里",
+    "daily.keepassxc.text": "KeePassXC 把密码保存在你设备上的加密数据库中。密码生成器、浏览器自动填充和 TOTP 验证码一应俱全，无需云端账号。",
+    "daily.excalidraw.title": "画出像手绘一样的示意图",
+    "daily.excalidraw.text": "Excalidraw 在浏览器中运行，支持离线使用，文件保存在你自己手里。适合画架构草图、做复盘，或在通话中讲解思路。",
+    "daily.zed.title": "从不让你等待的编辑器",
+    "daily.zed.text": "Zed 用 Rust 编写，界面由显卡渲染，即使在大型项目中也能即时响应。还能和同事实时协作编辑代码。",
+    "daily.anki.title": "记得更牢，复习更少",
+    "daily.anki.text": "Anki 让难记的卡片更常出现，已掌握的则少出现。FSRS 调度算法减少了复习次数，成千上万的共享卡组帮你快速上手。",
+    "daily.filmcraft.title": "Premiere Pro 式剪辑，开源可得",
+    "daily.filmcraft.text": "FilmCraft 是用 Rust 编写的非线性视频编辑器，自带编解码器。支持三点编辑、带示波器的调色和 90 多种视频特效。",
+    "daily.syncthing.title": "文件同步到所有设备，无需云端",
+    "daily.syncthing.text": "Syncthing 在你的设备之间直接同步文件夹。没有中央服务器，连接全程加密。",
+    "daily.luanti.title": "由你制定规则的沙盒",
+    "daily.luanti.text": "Luanti（原名 Minetest）是一款体素引擎，拥有数千个用 Lua 编写的游戏和模组。可以架设自己的服务器，和朋友一起玩。",
+    "daily.logseq.title": "一切相互关联的笔记",
+    "daily.logseq.text": "在 Logseq 中，每个想法都是一个块，可以通过引用和标签与其他块相连。从每日日志开始记录，文件以 Markdown 格式保存在你自己手里。",
     "manifest.eyebrow": "开放市场",
     "manifest.title": "免费、无广告、开源。每一款应用都是。",
     "manifest.priceLabel": "任何应用的价格",
@@ -37,6 +63,8 @@
     "collection.text": "模型在本地运行，你的提问和文件不会进入别人的云端。",
     "top.title": "GitHub 星标排行",
     "top.sub": "目录中最受欢迎的项目",
+    "adobe.title": "替代 Adobe",
+    "adobe.sub": "Brandon Thomas 的 ArtCraft 出品的开源替代品，对标 Photoshop、Lightroom、Illustrator、InDesign、Acrobat、Premiere Pro 和 After Effects。用 Rust 编写的年轻项目，版本 0.x。",
     "mine.title": "我的星标",
     "mine.empty": "打开任意应用页面并点击 Star。项目会在 GitHub 上获得一颗星，应用也会出现在这里。",
     "mine.loading": "正在从 GitHub 加载你的星标…",
@@ -138,6 +166,7 @@
     "results.empty": "没有找到结果。试试应用名称、类似“{example}”的分类，或许可证，例如 MIT。",
     "foot.about": "目录只收录开源项目。一切免费：没有广告、横幅、弹窗和追踪器。此页面不加载任何外部脚本、字体或像素。",
     "foot.auth": "使用 GitHub 登录是可选的。登录后，星标会通过你的账号更新，所有 GitHub 请求都经过 VibeMarket 服务器，因此你的令牌不会进入浏览器。",
+    "foot.trademarks": "Adobe、Photoshop、Lightroom、Illustrator、InDesign、Acrobat、Premiere Pro 和 After Effects 是 Adobe 的商标。这些名称仅用于比较：VibeMarket 和 ArtCraft 与 Adobe 没有关联。",
     "foot.sandbox": "“沙盒”中的应用来自第三方，由作者自行发布。VibeMarket 不审查这些应用，也不对其运行、安全和内容负责。",
     "foot.starsSnapshot": "星标数据来自 GitHub API，截至 {date}。",
     "foot.starsRobot": "星标由 VibeMarket 机器人更新，最近一次更新：{date}。",
@@ -652,6 +681,69 @@
         "六边形地图与战术",
         "昼夜时间影响战斗",
         "战役和在线多人模式"
+      ]
+    },
+    "photocraft": {
+      "desc": "用 Rust 编写、类似 Photoshop 的照片编辑器：图层、样式和 PSD 文件。",
+      "about": "PhotoCraft 是 ArtCraft 团队用 Rust 从零编写的照片编辑器。用过 Photoshop 的人会觉得它的菜单、面板和快捷键很熟悉。它能打开和保存多图层的 PSD 文件，支持调整图层和图层样式，可以离线使用，每个操作都能通过命令行或 MCP 控制。",
+      "shots": [
+        "图层、蒙版和调整图层",
+        "图层样式：阴影、发光和描边",
+        "打开和保存 PSD 文件"
+      ]
+    },
+    "lightcraft": {
+      "desc": "类似 Lightroom 的非破坏性 RAW 处理，采用 32 位色彩。",
+      "about": "LightCraft 是 ArtCraft 出品的非破坏性照片和 RAW 编辑器。所有调整都不会改动原图，并在 32 位广色域色彩中计算：曝光、曲线、色轮、去雾和胶片颗粒。可在桌面和浏览器中运行。",
+      "shots": [
+        "非破坏性 RAW 处理",
+        "阴影、中间调和高光的调色",
+        "一键对比前后效果"
+      ]
+    },
+    "vectorcraft": {
+      "desc": "类似 Illustrator 的矢量插画工具，原生运行，也能在浏览器中使用。",
+      "about": "VectorCraft 是 ArtCraft 用 Rust 编写的矢量插画应用。它在 macOS、Windows 和 Linux 上原生运行，也能通过 WebAssembly 在浏览器中使用。所有功能都可以通过命令 API 调用，AI 智能体也可以通过 MCP 使用。",
+      "shots": [
+        "矢量插画与曲线",
+        "原生运行，也能在浏览器中使用",
+        "命令 API 和面向智能体的 MCP"
+      ]
+    },
+    "designcraft": {
+      "desc": "类似 InDesign 的杂志和书籍排版：IDML、PDF/X 和 EPUB。",
+      "about": "DesignCraft 是 ArtCraft 出品的排版应用：跨页、主页、串接文本框、样式和表格。它用 Knuth–Plass 算法处理断字和对齐，支持导入和导出 IDML、打开 INDD 文件，并可导出 PDF/X-4、PDF/A 和 EPUB。没有订阅、许可证服务器和遥测。",
+      "shots": [
+        "跨页和主页",
+        "段落、字符和表格样式",
+        "导出 PDF/X、PDF/A 和 EPUB"
+      ]
+    },
+    "pdfcraft": {
+      "desc": "类似 Acrobat 的 PDF 阅读和编辑，无需账号，无需云端。",
+      "about": "PdfCraft 是 ArtCraft 出品的 PDF 阅读和编辑器。它能准确呈现复杂排版、竖排日文和彩色表情符号，修复损坏的文件，保存修改时不改动原始字节。没有账号、遥测和云端。",
+      "shots": [
+        "准确呈现任何 PDF",
+        "批注与文档编辑",
+        "无需账号和云端，离线可用"
+      ]
+    },
+    "filmcraft": {
+      "desc": "类似 Premiere Pro 的视频剪辑：调色、声音和特效。",
+      "about": "FilmCraft 是 ArtCraft 出品的专业非线性视频编辑器，连同自己的编解码器一起用 Rust 编写。熟悉的时间线支持三点编辑，配有带示波器的调色、90 多种视频特效、混音器以及 EBU R128 响度测量。",
+      "shots": [
+        "在熟悉的时间线上剪辑",
+        "调色与示波器",
+        "混音器与 EBU R128 响度"
+      ]
+    },
+    "effectcraft": {
+      "desc": "类似 After Effects 的动态图形和合成，支持 Lottie。",
+      "about": "EffectCraft 是 ArtCraft 出品的动态图形和合成应用。基于图层的合成、带图表编辑器的关键帧、306 种特效、3D 摄像机和灯光、表达式以及渲染队列。内置 Lottie 导入和导出，项目以可读的 JSON 保存。",
+      "shots": [
+        "合成、图层和关键帧",
+        "306 种特效和 3D 摄像机",
+        "JSON 项目和 Lottie 导入"
       ]
     }
   }

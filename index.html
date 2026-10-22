@@ -191,6 +191,14 @@ a.tile:focus-visible { border-radius: var(--radius); }
   padding: 16px;
 }
 .hero-art svg { width: 100%; height: 100%; max-height: 300px; }
+/* Макет окна приложения поднимается из нижнего края, как на скриншотах */
+.hero-art.is-shot {
+  position: relative; container-type: inline-size; padding: 0;
+  background:
+    radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--c1) 55%, transparent), transparent 60%),
+    linear-gradient(160deg, color-mix(in srgb, var(--c1) 35%, #000), color-mix(in srgb, var(--c2) 45%, #000));
+}
+.hero-art.is-shot .win { top: 7cqw; bottom: auto; left: 8cqw; right: 8cqw; height: max(54cqw, calc(100% - 7cqw + 1px)); border-radius: 1.6cqw 1.6cqw 0 0; }
 .art path, .art ellipse { fill: none; stroke: var(--fg); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 .art .ghost { stroke-width: 1.3; opacity: 0.45; }
 .art .hatched { fill: url(#hatch); }
@@ -867,6 +875,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   <nav class="chips" id="chips" aria-label="Категории" data-i18n-attr="aria-label:nav.label">
     <button class="chip" type="button" data-target="today" aria-current="true">Сегодня</button>
     <button class="chip" type="button" data-target="top">Топ</button>
+    <button class="chip" type="button" data-target="adobe">Вместо Adobe</button>
   </nav>
 </header>
 
@@ -880,7 +889,7 @@ select.input option { background: var(--surface); color: var(--fg); }
 
     <div class="bento wrap">
       <article class="tile t-hero" aria-labelledby="hero-title">
-        <div class="hero-art" aria-hidden="true">
+        <div class="hero-art" id="hero-art" aria-hidden="true">
           <svg class="art" viewBox="0 0 560 300" preserveAspectRatio="xMidYMid meet">
             <defs>
               <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-41)">
@@ -909,9 +918,9 @@ select.input option { background: var(--surface); color: var(--fg); }
         </div>
         <div class="hero-body">
           <p class="eyebrow is-accent" data-i18n="hero.eyebrow">Приложение дня</p>
-          <h2 class="tile-title" id="hero-title" data-i18n="hero.title">Рисуйте схемы так, будто они сделаны от руки</h2>
-          <p class="tile-text" data-i18n="hero.text">Excalidraw открывается в браузере, работает офлайн и хранит файлы у вас. Подходит для архитектуры, ретро и объяснений на созвоне.</p>
-          <div class="lockup" data-lockup="excalidraw"></div>
+          <h2 class="tile-title" id="hero-title">Рисуйте схемы так, будто они сделаны от руки</h2>
+          <p class="tile-text" id="hero-text">Excalidraw открывается в браузере, работает офлайн и хранит файлы у вас. Подходит для архитектуры, ретро и объяснений на созвоне.</p>
+          <div class="lockup" id="hero-lockup"></div>
         </div>
       </article>
 
@@ -953,6 +962,17 @@ select.input option { background: var(--surface); color: var(--fg); }
         <div class="shelf-nav" data-nav="top-track"></div>
       </div>
       <div class="track is-chart" id="top-track" role="list" tabindex="0" aria-label="Топ по звёздам GitHub" data-i18n-attr="aria-label:top.title"></div>
+    </section>
+
+    <section class="shelf" id="adobe" aria-labelledby="adobe-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="adobe-title" data-i18n="adobe.title">Вместо Adobe</h2>
+          <p class="shelf-sub" data-i18n="adobe.sub">Открытые аналоги Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects от ArtCraft Брэндона Томаса. Молодые проекты на Rust, версии 0.x.</p>
+        </div>
+        <div class="shelf-nav" data-nav="adobe-track"></div>
+      </div>
+      <div class="track" id="adobe-track" role="list" tabindex="0" aria-label="Вместо Adobe" data-i18n-attr="aria-label:adobe.title"></div>
     </section>
 
     <section class="shelf" id="mine" aria-labelledby="mine-title" hidden>
@@ -1105,6 +1125,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     <p class="foot-lead">VibeMarket · OpenCraft Hub</p>
     <p data-i18n="foot.about">В каталоге только проекты с открытым исходным кодом. Всё бесплатно: без рекламы, баннеров, поп-апов и трекеров. Эта страница не загружает ни одного внешнего скрипта, шрифта или пикселя.</p>
     <p id="auth-note" data-i18n="foot.auth" hidden>Вход через GitHub необязателен. После входа звёзды обновляются через ваш аккаунт, а все запросы к GitHub идут через сервер VibeMarket, поэтому токен не попадает в браузер.</p>
+    <p data-i18n="foot.trademarks">Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects — товарные знаки Adobe. Их названия используются только для сравнения: VibeMarket и ArtCraft не связаны с Adobe.</p>
     <p data-i18n="foot.sandbox">Приложения из раздела «Песочница» сторонние: их публикуют сами авторы. VibeMarket не проверяет их и не несёт ответственности за их работу, безопасность и содержание.</p>
     <p><span id="stars-date">Звёзды взяты из GitHub API 21 октября 2026 г.</span> <span data-i18n="foot.rating">Рейтинг считается из них по логарифмической шкале: 1&nbsp;000 звёзд дают 1 балл, 200&nbsp;000 звёзд дают 5 баллов. Нажмите на рейтинг, чтобы открыть репозиторий.</span></p>
   </div>
@@ -1131,8 +1152,34 @@ select.input option { background: var(--surface); color: var(--fg); }
  "nav.prev": "Прокрутить назад",
  "nav.next": "Прокрутить вперёд",
  "hero.eyebrow": "Приложение дня",
- "hero.title": "Рисуйте схемы так, будто они сделаны от руки",
- "hero.text": "Excalidraw открывается в браузере, работает офлайн и хранит файлы у вас. Подходит для архитектуры, ретро и объяснений на созвоне.",
+ "daily.photocraft.title": "Привычки из Photoshop, но без подписки",
+ "daily.photocraft.text": "PhotoCraft открывает многослойные PSD, понимает корректирующие слои и стили и работает офлайн. Меню и сочетания клавиш знакомы, а код открыт.",
+ "daily.localsend.title": "AirDrop между любыми устройствами",
+ "daily.localsend.text": "LocalSend передаёт файлы и текст по локальной сети с телефона на ноутбук и обратно, на любых системах. Без интернета и аккаунта, с шифрованием.",
+ "daily.whispercpp.title": "Расшифровка речи без облака",
+ "daily.whispercpp.text": "whisper.cpp превращает аудио и видео в текст на десятках языков прямо на вашем компьютере. Умеет слушать микрофон и расшифровывать в реальном времени.",
+ "daily.godot.title": "Сделайте свою игру без роялти",
+ "daily.godot.text": "Godot — движок со своим редактором, сценами из узлов и языком GDScript. Игру можно выпустить на компьютеры, телефоны и в браузер, а лицензия MIT ничего не просит взамен.",
+ "daily.shpd.title": "Ещё одна партия — и спать",
+ "daily.shpd.text": "Shattered Pixel Dungeon — пошаговый рогалик в случайно созданном подземелье. Снаряжение каждый раз новое, а после гибели всё начинается заново.",
+ "daily.obs.title": "Записывайте экран и выходите в эфир",
+ "daily.obs.text": "OBS Studio собирает сцену из окон, камер и захвата игр и ведёт трансляцию на Twitch, YouTube или любой RTMP-сервис. Микшер и фильтры для голоса уже внутри.",
+ "daily.keepassxc.title": "Пароли в файле, который принадлежит вам",
+ "daily.keepassxc.text": "KeePassXC хранит пароли в зашифрованной базе на вашем устройстве. Генератор, автозаполнение в браузере и коды TOTP без облачного аккаунта.",
+ "daily.excalidraw.title": "Рисуйте схемы так, будто они сделаны от руки",
+ "daily.excalidraw.text": "Excalidraw открывается в браузере, работает офлайн и хранит файлы у вас. Подходит для архитектуры, ретро и объяснений на созвоне.",
+ "daily.zed.title": "Редактор, который не заставляет ждать",
+ "daily.zed.text": "Zed написан на Rust и рисует интерфейс на видеокарте, поэтому отвечает мгновенно даже в больших проектах. Код можно править вместе с коллегой в реальном времени.",
+ "daily.anki.title": "Запоминайте надолго, повторяя меньше",
+ "daily.anki.text": "Anki показывает трудные карточки чаще, а выученные реже. Планировщик FSRS сокращает число повторений, а тысячи готовых колод помогут начать.",
+ "daily.filmcraft.title": "Монтаж в духе Premiere Pro, но открытый",
+ "daily.filmcraft.text": "FilmCraft — нелинейный видеоредактор на Rust со своими кодеками. Трёхточечный монтаж, цветокоррекция со скопами и больше 90 видеоэффектов.",
+ "daily.syncthing.title": "Ваши файлы на всех устройствах, без облака",
+ "daily.syncthing.text": "Syncthing синхронизирует папки между вашими устройствами напрямую. Центрального сервера нет, а соединения шифруются.",
+ "daily.luanti.title": "Песочница, где правила пишете вы",
+ "daily.luanti.text": "Luanti, бывший Minetest, — воксельный движок с тысячами игр и модов на Lua. Можно поднять собственный сервер и играть с друзьями.",
+ "daily.logseq.title": "Заметки, где всё связано",
+ "daily.logseq.text": "В Logseq каждая мысль — отдельный блок, который связывается с другими через ссылки и теги. Начинайте с ежедневного журнала, а файлы останутся у вас в Markdown.",
  "manifest.eyebrow": "Открытый маркет",
  "manifest.title": "Бесплатно, без рекламы и с открытым кодом. У каждого приложения.",
  "manifest.priceLabel": "стоит любое приложение",
@@ -1152,6 +1199,8 @@ select.input option { background: var(--surface); color: var(--fg); }
  "collection.text": "Модели работают локально. Запросы и файлы не уходят в чужое облако.",
  "top.title": "Топ по звёздам GitHub",
  "top.sub": "Самые популярные проекты каталога",
+ "adobe.title": "Вместо Adobe",
+ "adobe.sub": "Открытые аналоги Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects от ArtCraft Брэндона Томаса. Молодые проекты на Rust, версии 0.x.",
  "mine.title": "Ваши звёзды",
  "mine.empty": "Откройте страницу любого приложения и нажмите Star. Звезда появится у проекта на GitHub, а приложение окажется здесь.",
  "mine.loading": "Загружаем звёзды из GitHub…",
@@ -1271,6 +1320,7 @@ select.input option { background: var(--surface); color: var(--fg); }
  "results.empty": "Ничего не нашлось. Попробуйте название приложения, категорию вроде «{example}» или лицензию, например MIT.",
  "foot.about": "В каталоге только проекты с открытым исходным кодом. Всё бесплатно: без рекламы, баннеров, поп-апов и трекеров. Эта страница не загружает ни одного внешнего скрипта, шрифта или пикселя.",
  "foot.auth": "Вход через GitHub необязателен. После входа звёзды обновляются через ваш аккаунт, а все запросы к GitHub идут через сервер VibeMarket, поэтому токен не попадает в браузер.",
+ "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects — товарные знаки Adobe. Их названия используются только для сравнения: VibeMarket и ArtCraft не связаны с Adobe.",
  "foot.sandbox": "Приложения из раздела «Песочница» сторонние: их публикуют сами авторы. VibeMarket не проверяет их и не несёт ответственности за их работу, безопасность и содержание.",
  "foot.starsSnapshot": "Звёзды взяты из GitHub API {date}.",
  "foot.starsRobot": "Звёзды обновляет робот VibeMarket, последнее обновление: {date}.",
@@ -1413,6 +1463,10 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'krita', name: 'Krita', cat: 'design', repo: 'KDE/krita', stars: 10602, lic: 'GPL-3.0', glyph: 'brush', c: ['#FF6FA8', '#B3165A'], desc: 'Цифровая живопись с живыми кистями, слоями и анимацией.' },
     { id: 'inkscape', name: 'Inkscape', cat: 'design', repo: 'inkscape/inkscape', stars: 4043, lic: 'GPL', glyph: 'bezier', c: ['#5A5A60', '#1A1A1C'], desc: 'Векторные иллюстрации, логотипы и схемы в формате SVG.' },
     { id: 'gimp', name: 'GIMP', cat: 'design', repo: 'GNOME/gimp', stars: 6539, lic: 'GPL-3.0', glyph: 'image', c: ['#C2A878', '#6E5A3E'], desc: 'Редактор фотографий: ретушь, маски, слои и плагины.' },
+    { id: 'photocraft', name: 'PhotoCraft', cat: 'design', repo: 'storytold/photocraft', stars: 70931, lic: 'Apache-2.0', glyph: 'layers', c: ['#5AC8FA', '#1E5BD8'], desc: 'Фоторедактор на Rust в духе Photoshop: слои, стили и файлы PSD.' },
+    { id: 'lightcraft', name: 'LightCraft', cat: 'design', repo: 'storytold/lightcraft', stars: 14255, lic: 'Apache-2.0', glyph: 'aperture', c: ['#FFD27A', '#C77712'], desc: 'Неразрушающая обработка RAW в духе Lightroom, в 32-битном цвете.' },
+    { id: 'vectorcraft', name: 'VectorCraft', cat: 'design', repo: 'storytold/vectorcraft', stars: 10375, lic: 'Apache-2.0', glyph: 'bezier', c: ['#FF9F45', '#C2410C'], desc: 'Векторная иллюстрация в духе Illustrator, нативно и в браузере.' },
+    { id: 'designcraft', name: 'DesignCraft', cat: 'design', repo: 'storytold/designcraft', stars: 4647, lic: 'Apache-2.0', glyph: 'layout', c: ['#FF6FA8', '#9D174D'], desc: 'Вёрстка журналов и книг в духе InDesign: IDML, PDF/X и EPUB.' },
 
     { id: 'joplin', name: 'Joplin', cat: 'work', repo: 'laurent22/joplin', stars: 56820, lic: 'AGPL-3.0', glyph: 'note', c: ['#4C8DFF', '#1D4ED8'], desc: 'Заметки в Markdown со сквозным шифрованием и синхронизацией.' },
     { id: 'logseq', name: 'Logseq', cat: 'work', repo: 'logseq/logseq', stars: 45324, lic: 'AGPL-3.0', glyph: 'graph', c: ['#3FD1C4', '#0E7C86'], desc: 'База знаний из связанных заметок и ежедневных журналов.' },
@@ -1420,6 +1474,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'libreoffice', name: 'LibreOffice', cat: 'work', repo: 'LibreOffice/core', stars: 4545, lic: 'MPL-2.0', glyph: 'doc', c: ['#38D39F', '#0F8A50'], desc: 'Тексты, таблицы и презентации. Открывает файлы Microsoft Office.' },
     { id: 'superprod', name: 'Super Productivity', cat: 'work', repo: 'super-productivity/super-productivity', stars: 23034, lic: 'MIT', glyph: 'check', c: ['#FFD166', '#E98A15'], desc: 'Задачи, таймер Pomodoro и учёт времени без облака.' },
     { id: 'anki', name: 'Anki', cat: 'work', repo: 'ankitects/anki', stars: 32185, lic: 'AGPL-3.0', glyph: 'cards', c: ['#86A8FF', '#3E5BD6'], desc: 'Карточки с интервальным повторением, чтобы запоминать надолго.' },
+    { id: 'pdfcraft', name: 'PdfCraft', cat: 'work', repo: 'storytold/pdfcraft', stars: 17085, lic: 'Apache-2.0', glyph: 'pdf', c: ['#FF6B6B', '#B91C1C'], desc: 'Чтение и правка PDF в духе Acrobat, без аккаунта и облака.' },
 
     { id: 'obs', name: 'OBS Studio', cat: 'media', repo: 'obsproject/obs-studio', stars: 77878, lic: 'GPL-2.0', glyph: 'record', c: ['#4A4A50', '#141416'], desc: 'Запись экрана и прямые трансляции с микшером сцен.' },
     { id: 'jellyfin', name: 'Jellyfin', cat: 'media', repo: 'jellyfin/jellyfin', stars: 58324, lic: 'GPL-2.0', glyph: 'tv', c: ['#B06CFF', '#2E7BFF'], desc: 'Личный медиасервер для фильмов, сериалов и музыки.' },
@@ -1427,6 +1482,8 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'audacity', name: 'Audacity', cat: 'media', repo: 'audacity/audacity', stars: 18805, lic: 'GPL-3.0', glyph: 'wave', c: ['#FF5C8A', '#3D5AFE'], desc: 'Запись и монтаж звука для подкастов и музыки.' },
     { id: 'handbrake', name: 'HandBrake', cat: 'media', repo: 'HandBrake/HandBrake', stars: 24740, lic: 'GPL-2.0', glyph: 'film', c: ['#F5D04C', '#A87D00'], desc: 'Конвертер видео с пресетами для устройств и субтитрами.' },
     { id: 'mpv', name: 'mpv', cat: 'media', repo: 'mpv-player/mpv', stars: 37504, lic: 'GPL-2.0+', glyph: 'playcircle', c: ['#8E7BFF', '#4B2C9E'], desc: 'Минималистичный плеер для клавиатуры и скриптов.' },
+    { id: 'filmcraft', name: 'FilmCraft', cat: 'media', repo: 'storytold/filmcraft', stars: 15643, lic: 'Apache-2.0', glyph: 'clapper', c: ['#9F8BFF', '#4C1D95'], desc: 'Видеомонтаж в духе Premiere Pro: цвет, звук и эффекты.' },
+    { id: 'effectcraft', name: 'EffectCraft', cat: 'media', repo: 'storytold/effectcraft', stars: 7655, lic: 'Apache-2.0', glyph: 'motion', c: ['#5EEAD4', '#0F766E'], desc: 'Моушн-дизайн и композитинг в духе After Effects, с Lottie.' },
 
     { id: 'keepassxc', name: 'KeePassXC', cat: 'privacy', repo: 'keepassxreboot/keepassxc', stars: 29351, lic: 'GPL-3.0', glyph: 'key', c: ['#63D471', '#178A3B'], desc: 'Менеджер паролей с локальной зашифрованной базой.' },
     { id: 'bitwarden', name: 'Bitwarden', cat: 'privacy', repo: 'bitwarden/clients', stars: 14029, lic: 'GPL-3.0', glyph: 'shield', c: ['#3D7DFF', '#1A3FB8'], desc: 'Пароли и ключи доступа на всех устройствах. Можно поднять свой сервер.' },
@@ -1503,7 +1560,14 @@ select.input option { background: var(--surface); color: var(--fg); }
     stk: { os: 'mwla', about: 'SuperTuxKart — аркадные гонки на картах с героями из мира открытого ПО. Сюжетный режим, онлайн-заезды, битвы на аренах и футбол на машинах.', shots: [['scene', 'Аркадные гонки на картах'], ['map', 'Онлайн-заезды и битвы'], ['menu', 'Сюжетный режим и испытания']] },
     openttd: { os: 'mwl', about: 'OpenTTD — транспортный симулятор по мотивам Transport Tycoon Deluxe. Стройте железные дороги, порты и автобусные маршруты, развозите грузы и пассажиров и развивайте компанию десятилетиями.', shots: [['map', 'Железные дороги, порты и аэропорты'], ['table', 'Финансы и графики компании'], ['menu', 'Мультиплеер и тысячи модификаций']] },
     shpd: { os: 'mwlai', about: 'Shattered Pixel Dungeon — пошаговый рогалик: спускайтесь в случайно созданное подземелье, находите снаряжение и опознавайте зелья. Каждая партия уникальна, а гибель означает новый старт.', shots: [['map', 'Новое подземелье в каждой партии'], ['scene', 'Тактические пошаговые бои'], ['menu', 'Классы героев и подклассы']] },
-    wesnoth: { os: 'mwl', about: 'Battle for Wesnoth — пошаговая стратегия в фэнтезийном мире. Армии двигаются по гексагональным картам, где местность и время суток влияют на исход боя. Сюжетные кампании и онлайн-мультиплеер.', shots: [['map', 'Гексагональные карты и тактика'], ['scene', 'Время суток влияет на бой'], ['menu', 'Кампании и онлайн-мультиплеер']] }
+    wesnoth: { os: 'mwl', about: 'Battle for Wesnoth — пошаговая стратегия в фэнтезийном мире. Армии двигаются по гексагональным картам, где местность и время суток влияют на исход боя. Сюжетные кампании и онлайн-мультиплеер.', shots: [['map', 'Гексагональные карты и тактика'], ['scene', 'Время суток влияет на бой'], ['menu', 'Кампании и онлайн-мультиплеер']] },
+    photocraft: { os: 'mwlb', about: 'PhotoCraft — фоторедактор, написанный с нуля на Rust командой ArtCraft. Меню, панели и сочетания клавиш привычны тем, кто работал в Photoshop. Он открывает и сохраняет многослойные PSD, поддерживает корректирующие слои и стили слоёв, работает офлайн, а любым действием можно управлять из командной строки или через MCP.', shots: [['paint', 'Слои, маски и корректирующие слои'], ['canvas+panels', 'Стили слоёв: тени, свечение, обводка'], ['paint', 'Открывает и сохраняет файлы PSD']] },
+    lightcraft: { os: 'mwlb', about: 'LightCraft — неразрушающий редактор фотографий и RAW от ArtCraft. Правки не трогают оригинал и считаются в 32-битном цвете с широким охватом: экспозиция, кривые, цветовые круги, удаление дымки и плёночное зерно. Работает на компьютере и в браузере.', shots: [['paint', 'Неразрушающая обработка RAW'], ['canvas+panels', 'Цветокоррекция теней, полутонов и светов'], ['paint', 'Сравнение до и после одной клавишей']] },
+    vectorcraft: { os: 'mwlb', about: 'VectorCraft — векторный редактор для иллюстраций от ArtCraft, написанный на Rust. Работает нативно на macOS, Windows и Linux и в браузере через WebAssembly. Всеми функциями можно управлять через командный API, в том числе из ИИ-агентов по протоколу MCP.', shots: [['canvas+panels', 'Векторные иллюстрации и кривые'], ['canvas', 'Нативно и в браузере'], ['editor', 'Командный API и MCP для агентов']] },
+    designcraft: { os: 'mwlb', about: 'DesignCraft — программа для вёрстки от ArtCraft: развороты, мастер-страницы, связанные текстовые блоки, стили и таблицы. Переносы и выключка строк по алгоритму Кнута — Пласса, импорт и экспорт IDML, открытие INDD, экспорт в PDF/X-4, PDF/A и EPUB. Без подписки, сервера лицензий и телеметрии.', shots: [['doc', 'Развороты и мастер-страницы'], ['table', 'Стили абзацев, символов и таблиц'], ['paint', 'Экспорт в PDF/X, PDF/A и EPUB']] },
+    pdfcraft: { os: 'mwlb', about: 'PdfCraft — программа для чтения и правки PDF от ArtCraft. Аккуратно отображает сложную типографику, вертикальный японский текст и цветные эмодзи, восстанавливает повреждённые файлы и сохраняет изменения, не трогая исходные байты. Без аккаунта, телеметрии и облака.', shots: [['doc', 'Аккуратное отображение любых PDF'], ['doc+check', 'Комментарии и правка документов'], ['doc', 'Без аккаунта и облака, работает офлайн']] },
+    filmcraft: { os: 'mwlb', about: 'FilmCraft — профессиональный нелинейный видеоредактор от ArtCraft, написанный на Rust вместе со своими кодеками. Привычная монтажная область с трёхточечным монтажом, цветокоррекция со скопами, больше 90 видеоэффектов, микшер звука и замер громкости по EBU R128.', shots: [['player', 'Монтаж на привычной монтажной области'], ['paint', 'Цветокоррекция и скопы'], ['wave', 'Микшер звука и громкость по EBU R128']] },
+    effectcraft: { os: 'mwlb', about: 'EffectCraft — программа для моушн-дизайна и композитинга от ArtCraft. Композиции из слоёв, ключевые кадры с редактором графиков, 306 эффектов, 3D-камеры и свет, выражения и очередь рендера. Импорт и экспорт Lottie встроены, а проекты хранятся в читаемом JSON.', shots: [['player', 'Композиции, слои и ключевые кадры'], ['canvas+panels', '306 эффектов и 3D-камеры'], ['editor', 'Проекты в JSON и импорт Lottie']] }
   };
 
   const GLYPHS = {
@@ -1548,7 +1612,13 @@ select.input option { background: var(--surface); color: var(--fg); }
     flag: '<path d="M5.5 21V3.5M5.5 4.5h12l-2.5 4 2.5 4h-12"/>',
     train: '<rect x="6" y="3.5" width="12" height="13" rx="3"/><path d="M6 10.5h12M9 13.5h.01M15 13.5h.01M8.5 20.5l1.5-4M15.5 20.5l-1.5-4"/>',
     sword: '<path d="M20 4l-1 4.5-9.5 9.5L6 14.5 15.5 5zM4.8 12.6l6.6 6.6M7.2 17.8 4.5 20.5"/>',
-    crown: '<path d="M4 8l4 4 4-6.5 4 6.5 4-4-1.5 10h-13zM5.5 20.5h13"/>'
+    crown: '<path d="M4 8l4 4 4-6.5 4 6.5 4-4-1.5 10h-13zM5.5 20.5h13"/>',
+    layers: '<path d="M12 3 21 8l-9 5-9-5z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/>',
+    aperture: '<circle cx="12" cy="12" r="8.5"/><path d="M14.3 3.8 9.6 12M20.1 9.5h-9.4M17.8 17.9l-4.7-8.2M9.7 20.2l4.7-8.2M3.9 14.5h9.4M6.2 6.1l4.7 8.2"/>',
+    layout: '<rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M7.5 7h9M7.5 10.5h4M7.5 14h4M7.5 17.5h9"/><rect x="13.5" y="9.5" width="3" height="5.5" rx=".5"/>',
+    pdf: '<path d="M6 3.5h8l4 4v6M14 3.5v4h4M6 3.5v17h6"/><path d="m14.5 20.5 5-5 1.5 1.5-5 5h-1.5z"/>',
+    clapper: '<path d="M3.5 9.5h17v10a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1zM3.5 9.5l1-4.5 16 3.5-.5 1"/><path d="m8.5 5.8 2 3.7M13.5 6.9l2 3.6"/>',
+    motion: '<circle cx="16" cy="12" r="4.5"/><path d="M3 12h6M4.5 8h5M4.5 16h5"/>'
   };
 
   // Данные от server.mjs: кто вошёл через GitHub. Без сервера блока нет.
@@ -1962,13 +2032,15 @@ select.input option { background: var(--surface); color: var(--fg); }
   };
 
   const appVars = app => `--c1:${app.c[0]};--c2:${app.c[1]}${app.ink ? `;--ink:${app.ink}` : ''}`;
+  const winHTML = (app, layout, key) => {
+    const [name, opt] = layout.split('+');
+    const [style, body] = MOCKS[name](mockCtx(app, key), opt);
+    return `<div class="win" aria-hidden="true"><div class="win-bar"><i></i><i></i><i></i><span>${app.name}</span></div><div class="win-body" style="${style}">${body}</div></div>`;
+  };
   const shotHTML = (app, shot, i) => {
     if (shot.src) return `<figure class="shot is-image" role="listitem"><img src="${shot.src}" alt="${shot.caption}" loading="lazy" draggable="false"></figure>`;
     const [layout, caption] = shot;
-    const [name, opt] = layout.split('+');
-    const [style, body] = MOCKS[name](mockCtx(app, `${app.id}:${i}`), opt);
-    return `<figure class="shot" role="listitem" style="${appVars(app)}"><figcaption class="shot-cap">${caption}</figcaption>` +
-      `<div class="win" aria-hidden="true"><div class="win-bar"><i></i><i></i><i></i><span>${app.name}</span></div><div class="win-body" style="${style}">${body}</div></div></figure>`;
+    return `<figure class="shot" role="listitem" style="${appVars(app)}"><figcaption class="shot-cap">${caption}</figcaption>${winHTML(app, layout, `${app.id}:${i}`)}</figure>`;
   };
 
   /* ---------- Рендер ---------- */
@@ -1999,11 +2071,19 @@ select.input option { background: var(--surface); color: var(--fg); }
   // Части каталога, которые зависят от числа звёзд: перерисовываются после входа через GitHub
   const byStars = () => APPS.filter(visible).sort((a, b) => b.stars - a.stars);
 
+  // Подборка: открытые аналоги программ Adobe от ArtCraft (github.com/storytold), в порядке знакомых названий
+  const ADOBE_PICKS = ['photocraft', 'lightcraft', 'vectorcraft', 'designcraft', 'pdfcraft', 'filmcraft', 'effectcraft'];
+  const renderPicks = () => {
+    document.getElementById('adobe-track').innerHTML = ADOBE_PICKS.map(id => byId[id]).filter(app => app && visible(app)).map(cardHTML).join('');
+  };
+
   const renderShelfTracks = () => CATS.forEach(c => {
     // Приложения из песочницы, которые робот перенёс на главную, стоят рядом с каталогом
     document.getElementById(`${c.id}-track`).innerHTML = [...APPS, ...SANDBOX_APPS.filter(a => a.promoted)]
       .filter(a => a.cat === c.id && visible(a)).map(cardHTML).join('');
   });
+
+  renderPicks();
 
   const slotHTML = count => `<div class="slot-item" role="listitem">` +
     `<button class="app-slot" type="button" data-submit-open aria-controls="submit" aria-expanded="${document.getElementById('submit')?.hidden === false}">` +
@@ -2035,10 +2115,52 @@ select.input option { background: var(--surface); color: var(--fg); }
   };
   renderTop();
 
-  const renderHeroLockup = () => {
-    document.querySelector('[data-lockup="excalidraw"]').innerHTML = lockupHTML(byId.excalidraw, 52, '', true) + getHTML(byId.excalidraw);
+  // Приложение дня: подборка по кругу, одно приложение на календарный день, отсчёт с 22 октября 2026.
+  // Заголовок и текст лежат в словаре (daily.<id>.title и .text), картинка — первый макет со страницы приложения.
+  // У Excalidraw вместо макета свой рисунок от руки.
+  const DAILY = ['photocraft', 'localsend', 'whispercpp', 'godot', 'shpd', 'obs', 'keepassxc', 'excalidraw', 'zed', 'anki', 'filmcraft', 'syncthing', 'luanti', 'logseq'];
+  const DAILY_START = Date.UTC(2026, 9, 22);
+  const heroArt = document.getElementById('hero-art');
+  const SKETCH = heroArt.innerHTML;
+  const dayNumber = () => {
+    const now = new Date();
+    return Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - DAILY_START) / 864e5);
   };
-  renderHeroLockup();
+  // Скрытое роботом приложение уступает день следующему в подборке
+  const dailyApp = () => {
+    const day = dayNumber();
+    for (let k = 0; k < DAILY.length; k++) {
+      const app = byId[DAILY[(((day + k) % DAILY.length) + DAILY.length) % DAILY.length]];
+      if (app && visible(app)) return app;
+    }
+    return byStars()[0];
+  };
+  let heroDay = dayNumber();
+  const renderHero = () => {
+    heroDay = dayNumber();
+    const app = dailyApp();
+    const own = DAILY.includes(app.id);
+    document.getElementById('hero-title').textContent = own ? t(`daily.${app.id}.title`) : plainName(app);
+    document.getElementById('hero-text').textContent = own ? t(`daily.${app.id}.text`) : app.desc;
+    document.getElementById('hero-lockup').innerHTML = lockupHTML(app, 52, '', true) + getHTML(app);
+    const shot = DETAILS[app.id]?.shots[0];
+    if (app.id === 'excalidraw' || !shot) {
+      heroArt.className = 'hero-art';
+      heroArt.removeAttribute('style');
+      heroArt.innerHTML = SKETCH;
+    } else {
+      heroArt.className = 'hero-art is-shot';
+      heroArt.setAttribute('style', appVars(app));
+      heroArt.innerHTML = winHTML(app, shot[0], `${app.id}:0`);
+    }
+  };
+  renderHero();
+  // Вкладка, открытая со вчерашнего дня, получает новое приложение, когда к ней возвращаются
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden || dayNumber() === heroDay) return;
+    renderDate();
+    renderHero();
+  });
 
   const renderStarTile = () => {
     const leader = byStars()[0];
@@ -2222,7 +2344,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const root = document.documentElement;
   new ResizeObserver(() => root.style.setProperty('--header-h', bar.offsetHeight + 'px')).observe(bar);
 
-  const sectionIds = ['today', 'top', 'mine', ...CATS.map(c => c.id), 'sandbox'];
+  const sectionIds = ['today', 'top', 'adobe', 'mine', ...CATS.map(c => c.id), 'sandbox'];
   let lockUntil = 0;
   const setActive = id => {
     chips.querySelectorAll('.chip').forEach(ch => {
@@ -2402,7 +2524,7 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   // Навигация: история браузера, если она доступна, иначе переходы в памяти
   let openId = null, returnTo = null, trail = [];
-  const sectionLabel = id => ({ top: t('nav.top'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
+  const sectionLabel = id => ({ top: t('nav.top'), adobe: t('adobe.title'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
   const currentBack = () => (trail.length ? byId[trail[trail.length - 1]]?.name : sectionLabel(returnTo?.section)) || t('nav.today');
   const showView = v => { browse.hidden = v !== 'browse'; results.hidden = v !== 'results'; detail.hidden = v !== 'detail'; };
   const pushEntry = id => {
@@ -2573,8 +2695,10 @@ select.input option { background: var(--surface); color: var(--fg); }
   const refreshViews = () => {
     renderTop();
     renderShelfTracks();
+    renderPicks();
     renderSandbox();
     renderStarTile();
+    renderHero();
     renderMine();
     if (!results.hidden) runSearch();
     if (openId) renderDetail(byId[openId], currentBack());
@@ -2975,7 +3099,6 @@ select.input option { background: var(--surface); color: var(--fg); }
       document.getElementById(`${c.id}-track`).setAttribute('aria-label', c.name);
     });
     document.querySelectorAll('.nav-btn').forEach(button => button.setAttribute('aria-label', t(button.dataset.dir === '-1' ? 'nav.prev' : 'nav.next')));
-    renderHeroLockup();
     renderStats();
     renderFooterStars();
     renderRules();
