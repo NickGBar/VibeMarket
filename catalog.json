@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-22T14:34:28.101Z",
+  "updated": "2026-10-22T15:49:48.289Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -14,54 +14,3118 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6706,
-    "ankitects/anki": 32209,
-    "Anuken/Mindustry": 29433,
-    "AppFlowy-IO/AppFlowy": 77647,
-    "audacity/audacity": 18813,
-    "AUTOMATIC1111/stable-diffusion-webui": 165096,
+    "ankitects/anki": 32211,
+    "Anuken/Mindustry": 29434,
+    "AppFlowy-IO/AppFlowy": 77651,
+    "audacity/audacity": 18812,
+    "AUTOMATIC1111/stable-diffusion-webui": 165095,
     "bitwarden/clients": 14035,
     "blender/blender": 21156,
-    "Comfy-Org/ComfyUI": 141915,
-    "excalidraw/excalidraw": 134380,
-    "ggml-org/llama.cpp": 132023,
+    "Comfy-Org/ComfyUI": 141941,
+    "excalidraw/excalidraw": 134385,
+    "ggml-org/llama.cpp": 132026,
     "ggml-org/whisper.cpp": 54561,
     "GNOME/gimp": 6541,
-    "godotengine/godot": 118863,
+    "godotengine/godot": 118869,
     "HandBrake/HandBrake": 24753,
     "inkscape/inkscape": 4049,
-    "jellyfin/jellyfin": 58374,
-    "jesseduffield/lazygit": 83360,
+    "jellyfin/jellyfin": 58378,
+    "jesseduffield/lazygit": 83362,
     "KDE/krita": 10607,
-    "keepassxreboot/keepassxc": 29372,
-    "laurent22/joplin": 56831,
+    "keepassxreboot/keepassxc": 29374,
+    "laurent22/joplin": 56833,
     "LibreOffice/core": 4551,
-    "localsend/localsend": 95228,
-    "logseq/logseq": 45330,
-    "luanti-org/luanti": 13758,
-    "mpv-player/mpv": 37520,
+    "localsend/localsend": 95233,
+    "logseq/logseq": 45332,
+    "luanti-org/luanti": 13757,
+    "mpv-player/mpv": 37519,
     "mullvad/mullvadvpn-app": 7699,
-    "neovim/neovim": 103113,
-    "nomic-ai/gpt4all": 77349,
-    "obsproject/obs-studio": 77934,
-    "ollama/ollama": 184287,
-    "OpenTTD/OpenTTD": 8410,
-    "penpot/penpot": 61486,
-    "signalapp/Signal-Desktop": 16609,
+    "neovim/neovim": 103115,
+    "nomic-ai/gpt4all": 77348,
+    "obsproject/obs-studio": 77935,
+    "ollama/ollama": 184298,
+    "OpenTTD/OpenTTD": 8409,
+    "penpot/penpot": 61489,
+    "signalapp/Signal-Desktop": 16608,
     "storytold/designcraft": 4653,
-    "storytold/effectcraft": 7672,
-    "storytold/filmcraft": 15676,
-    "storytold/lightcraft": 14275,
-    "storytold/pdfcraft": 17143,
-    "storytold/photocraft": 71090,
-    "storytold/vectorcraft": 10390,
-    "super-productivity/super-productivity": 23061,
+    "storytold/effectcraft": 7676,
+    "storytold/filmcraft": 15687,
+    "storytold/lightcraft": 14286,
+    "storytold/pdfcraft": 17156,
+    "storytold/photocraft": 71135,
+    "storytold/vectorcraft": 10397,
+    "super-productivity/super-productivity": 23063,
     "supertuxkart/stk-code": 5445,
     "syncthing/syncthing": 89618,
-    "tauri-apps/tauri": 112114,
-    "videolan/vlc": 20178,
-    "VSCodium/vscodium": 33756,
+    "tauri-apps/tauri": 112116,
+    "videolan/vlc": 20181,
+    "VSCodium/vscodium": 33757,
     "wesnoth/wesnoth": 6947,
-    "zed-industries/zed": 92044
+    "zed-industries/zed": 92048
+  },
+  "downloads": {
+    "00-Evan/shattered-pixel-dungeon": {
+      "mac": {
+        "tag": "v4.0.2",
+        "date": "2026-10-07T16:13:50Z",
+        "page": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/tag/v4.0.2",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "zip",
+            "name": "ShatteredPD-v4.0.2-macOS.zip",
+            "size": 109323622,
+            "url": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/download/v4.0.2/ShatteredPD-v4.0.2-macOS.zip",
+            "sha256": "c9da5cc10aa192eb08e60dde722a9b00adccdf31a43f34c2f83d10748224e4b9"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v4.0.2",
+        "date": "2026-10-07T16:13:50Z",
+        "page": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/tag/v4.0.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "ShatteredPD-v4.0.2-Windows.zip",
+            "size": 108216769,
+            "url": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/download/v4.0.2/ShatteredPD-v4.0.2-Windows.zip",
+            "sha256": "c2bff844ae2dc1e470985cd453555e7d4be9b05b67d4013c075a55923d75f3c3"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v4.0.2",
+        "date": "2026-10-07T16:13:50Z",
+        "page": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/tag/v4.0.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "ShatteredPD-v4.0.2-Linux.zip",
+            "size": 111990393,
+            "url": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/download/v4.0.2/ShatteredPD-v4.0.2-Linux.zip",
+            "sha256": "09d68d09fa0447c45202b0ed296ceacb30e2115959aad087a2d18cc7ae46273a"
+          }
+        ]
+      },
+      "android": {
+        "tag": "v4.0.2",
+        "date": "2026-10-07T16:13:50Z",
+        "page": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/tag/v4.0.2",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "ShatteredPD-v4.0.2-Android.apk",
+            "size": 30275058,
+            "url": "https://github.com/00-Evan/shattered-pixel-dungeon/releases/download/v4.0.2/ShatteredPD-v4.0.2-Android.apk",
+            "sha256": "ceef4cdd4beddcb3d85379ac004cb4ab5d918b89dc7366b4ce9c4a3585a5e78e"
+          }
+        ]
+      }
+    },
+    "ankitects/anki": {
+      "mac": {
+        "tag": "26.09.3",
+        "date": "2026-09-23T15:24:13Z",
+        "page": "https://github.com/ankitects/anki/releases/tag/26.09.3",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "anki-26.09.3-mac-intel.dmg",
+            "size": 246046869,
+            "url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-mac-intel.dmg",
+            "sha256": "7b123efecab1395d03fdf4e5df4df16efc72c9629c38b50ef8cad692d310bd77"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "anki-26.09.3-mac-apple.dmg",
+            "size": 226530103,
+            "url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-mac-apple.dmg",
+            "sha256": "b36fe8f6c015a602feaf3ef38f5967c27c8964ee30a5c74ca2532225cf602345"
+          }
+        ]
+      },
+      "win": {
+        "tag": "26.09.3",
+        "date": "2026-09-23T15:24:13Z",
+        "page": "https://github.com/ankitects/anki/releases/tag/26.09.3",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "anki-26.09.3-win-x64.msi",
+            "size": 201261056,
+            "url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-win-x64.msi",
+            "sha256": "8a45823d1c31017cebb7d3af4493d69b6ae3c185345fcb2390ede4af01e0a950"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "anki-26.09.3-win-arm64.msi",
+            "size": 167849984,
+            "url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-win-arm64.msi",
+            "sha256": "445d5973ec92e8ed4fb09d606aed084e2aaeeaba853b53b5608a6f6cae66ee2a"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "26.09.3",
+        "date": "2026-09-23T15:24:13Z",
+        "page": "https://github.com/ankitects/anki/releases/tag/26.09.3",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "anki-26.09.3-linux-x86_64.tar.zst",
+            "size": 191305871,
+            "url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-linux-x86_64.tar.zst",
+            "sha256": "d70e01971a7aa190b189927573ee643f2525ff840eafaecc7a8f8cde505650b3"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "anki-26.09.3-linux-aarch64.tar.zst",
+            "size": 185444207,
+            "url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-linux-aarch64.tar.zst",
+            "sha256": "0b586efdb0e3582bee3b9d08b9fa57df681fb97a8066d76a6743e1bc3fc331eb"
+          }
+        ]
+      }
+    },
+    "AppFlowy-IO/AppFlowy": {
+      "mac": {
+        "tag": "0.14.10",
+        "date": "2026-10-21T04:12:10Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "AppFlowy-0.14.10-macos-universal.dmg",
+            "size": 225191379,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-universal.dmg",
+            "sha256": "817548f9eab169db155fb0ea978f9d896d74e84d3f5805fb7fcea5444a371711"
+          },
+          {
+            "arch": "universal",
+            "kind": "zip",
+            "name": "AppFlowy-0.14.10-macos-universal.zip",
+            "size": 226900087,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-universal.zip",
+            "sha256": "f883664781aba131a3c3c22035e69829410275289f26c3c891c427d8a6871b3a"
+          }
+        ]
+      },
+      "win": {
+        "tag": "0.14.10",
+        "date": "2026-10-21T04:12:10Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "AppFlowy-0.14.10-windows-x86_64.exe",
+            "size": 91279944,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-windows-x86_64.exe",
+            "sha256": "b3c457eba83de5352c4bc75c2119eaefdb8727579190d29d29c1854792930607"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "AppFlowy-0.14.10-windows-x86_64.zip",
+            "size": 132070864,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-windows-x86_64.zip",
+            "sha256": "d2f96912ee735df2c840b5e1451acc95179fc97f884d6cdafdc2c4fdc27fcd2a"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "0.14.10",
+        "date": "2026-10-21T04:12:10Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "AppFlowy-0.14.10-linux-x86_64.AppImage",
+            "size": 181393912,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-linux-x86_64.AppImage",
+            "sha256": "77da61110ca8c0eb3f3cdb6e9f01bbba9fc9aae21d66d32bd109b29054739a9f"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "AppFlowy-0.14.10-linux-x86_64.deb",
+            "size": 142696288,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-linux-x86_64.deb",
+            "sha256": "96a4bf516277a69adb97ce2b3b232edce7074020d79c53dd7f93278a5a08ac1a"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "AppFlowy-0.14.10-linux-x86_64.rpm",
+            "size": 194477579,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-linux-x86_64.rpm",
+            "sha256": "2a4a099b711add0e3c7dead29bb1d87be026669b12f889384ee398be4b6ab5c9"
+          }
+        ]
+      },
+      "android": {
+        "tag": "0.14.10",
+        "date": "2026-10-21T04:12:10Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "AppFlowy-0.14.10-android.apk",
+            "size": 249134196,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-android.apk",
+            "sha256": "88ea34affe35db3b399b97efa147fee495de015c3a69650b9d9efbf45bfc9a6c"
+          }
+        ]
+      }
+    },
+    "audacity/audacity": {
+      "mac": {
+        "tag": "Audacity-4.0.1",
+        "date": "2026-09-30T11:59:48Z",
+        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "audacity-macOS-4.0.1-universal.dmg",
+            "size": 92003045,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-macOS-4.0.1-universal.dmg",
+            "sha256": "473db7ce0d846d2d45df97e8e83ff4c70fc835eff6bcc9e119d8eac34f979794"
+          },
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "audacity-macOS-4.0.1-x86_64.dmg",
+            "size": 54321871,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-macOS-4.0.1-x86_64.dmg",
+            "sha256": "9794b0b3a3a795bdc097b411a5776ba59dc451cb1524f58c9714c30cca2564be"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "audacity-macOS-4.0.1-arm64.dmg",
+            "size": 50034126,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-macOS-4.0.1-arm64.dmg",
+            "sha256": "278c8647b78c77af7f07dbd5e7d9bfc950bc14168047b65738716b61d12055ec"
+          }
+        ]
+      },
+      "win": {
+        "tag": "Audacity-4.0.1",
+        "date": "2026-09-30T11:59:48Z",
+        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "audacity-win-4.0.1-x86_64.msi",
+            "size": 49795072,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.msi",
+            "sha256": "efb652bf04168f5d4893f28b7cefaaf5ef385d9251544540ac774e3bf54793a3"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "audacity-win-4.0.1-arm64.msi",
+            "size": 38264832,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-arm64.msi",
+            "sha256": "b6606d9bcb1a49254f1966c7edc68d78f7eadd04eebe7d4676350f32ca675f49"
+          },
+          {
+            "arch": "x64",
+            "kind": "7z",
+            "name": "audacity-win-4.0.1-x86_64.7z",
+            "size": 44322940,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.7z",
+            "sha256": "9c5e0379626dee8a573af91ba5355311b9001dcf310294dd4dc9aa6887593d03"
+          },
+          {
+            "arch": "arm64",
+            "kind": "7z",
+            "name": "audacity-win-4.0.1-arm64.7z",
+            "size": 32798863,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-arm64.7z",
+            "sha256": "bafa562f9fc3960eae50ac64b656360b5bd2824af3396ed0809551a1f8eb716e"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "Audacity-4.0.1",
+        "date": "2026-09-30T11:59:48Z",
+        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "audacity-linux-4.0.1-x86_64.AppImage",
+            "size": 73755128,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-linux-4.0.1-x86_64.AppImage",
+            "sha256": "ca2f04f172124d1f18ac608749854c5d31f04ab266a758c348190c05d9b2087c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "audacity-linux-4.0.1-aarch64.AppImage",
+            "size": 70666760,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-linux-4.0.1-aarch64.AppImage",
+            "sha256": "3abc517f26f00197eaac9c4e56b35dc53d8e933764b41077950e8526cd4aa075"
+          }
+        ]
+      }
+    },
+    "bitwarden/clients": {
+      "mac": {
+        "tag": "desktop-v2026.10.0",
+        "date": "2026-10-15T18:56:38Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "Bitwarden-2026.10.0-universal.dmg",
+            "size": 288196057,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-universal.dmg",
+            "sha256": "24920c56d9464ad3de6e50eb78399641cf79eb006eb3f46885a49f85632cb96a"
+          },
+          {
+            "arch": "universal",
+            "kind": "zip",
+            "name": "Bitwarden-2026.10.0-universal-mac.zip",
+            "size": 277482775,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-universal-mac.zip",
+            "sha256": "a44011745891f7aefe6bc34e8dc0feb3e3e5002630b9c084fe15be8a26c0746c"
+          }
+        ]
+      },
+      "win": {
+        "tag": "desktop-v2026.10.0",
+        "date": "2026-10-15T18:56:38Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Bitwarden-Installer-2026.10.0.exe",
+            "size": 734240,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-Installer-2026.10.0.exe",
+            "sha256": "fe97e2af272b8b44e48f62aa89f9a32dee9eb5ea63cdb72e70c7d96240e3bca9"
+          },
+          {
+            "arch": "x64",
+            "kind": "msix",
+            "name": "Bitwarden-2026.10.0-x64.appx",
+            "size": 197888776,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-x64.appx",
+            "sha256": "490d2d86f28558fcd7d18c7d43acb342ea01dde0ae8aae323914cbe9702ae6c4"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msix",
+            "name": "Bitwarden-2026.10.0-arm64.appx",
+            "size": 196659114,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-arm64.appx",
+            "sha256": "e2e333848a371017365e4ee02b8e94e397c8d2e41e5aa8b83b6269747482f92e"
+          },
+          {
+            "arch": "x86",
+            "kind": "msix",
+            "name": "Bitwarden-2026.10.0-ia32.appx",
+            "size": 176264661,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-ia32.appx",
+            "sha256": "072a349907b5a9e9e392f6f6c9789ea254abd6e1bacb0bb416e8a8b5b7887b1a"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msix",
+            "name": "Bitwarden-2026.10.0-arm64-store.appx",
+            "size": 196575423,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-arm64-store.appx",
+            "sha256": "ff22b2df9364e2482ad1df80e4eb5030f5a6f7b78c70a7d67b633104f6fc00e7"
+          },
+          {
+            "arch": "x86",
+            "kind": "msix",
+            "name": "Bitwarden-2026.10.0-ia32-store.appx",
+            "size": 176181063,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-ia32-store.appx",
+            "sha256": "592488b60a52ce441a6c00502a58dd671612e03df5863c30fb15dc66893f4ae3"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "desktop-v2026.10.0",
+        "date": "2026-10-15T18:56:38Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "Bitwarden-2026.10.0-x86_64.AppImage",
+            "size": 157283682,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-x86_64.AppImage",
+            "sha256": "1b2d2a56399df0a5de8b51696ca0dcf8a8b26786ffe836bc28d85ddb3fff795f"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "Bitwarden-2026.10.0-amd64.deb",
+            "size": 122097388,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-amd64.deb",
+            "sha256": "fcabfc7da3c327e2625b105e951cee4e60703bb8e256f0aac9cc9bc83ec7063f"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "Bitwarden-2026.10.0-x86_64.rpm",
+            "size": 104434581,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-x86_64.rpm",
+            "sha256": "a19e3cbfc86f191999d74cb029cb824f9efccd25e303d5821feefe2eb92c2252"
+          }
+        ]
+      }
+    },
+    "godotengine/godot": {
+      "mac": {
+        "tag": "4.7.2-stable",
+        "date": "2026-08-18T16:12:28Z",
+        "page": "https://github.com/godotengine/godot/releases/tag/4.7.2-stable",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_macos.universal.zip",
+            "size": 170622178,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_macos.universal.zip",
+            "sha256": "c58a24e31d720be9d62f60cb5627c4e695fb72f21b0cfe1bc9ccaa9a3b3ba63e"
+          }
+        ]
+      },
+      "win": {
+        "tag": "4.7.2-stable",
+        "date": "2026-08-18T16:12:28Z",
+        "page": "https://github.com/godotengine/godot/releases/tag/4.7.2-stable",
+        "files": [
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_win32.exe.zip",
+            "size": 87837088,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win32.exe.zip",
+            "sha256": "187ff56a73e6fc4b82ed22a87d72915a63c74abc9defe8b2e29a0098b5f8eea2"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_win64.exe.zip",
+            "size": 86013866,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip",
+            "sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_windows_arm64.exe.zip",
+            "size": 84263370,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_windows_arm64.exe.zip",
+            "sha256": "2d206e0b1d2366eb3508971c670c52333dcd7218b818102d77ca7ceaa86892ba"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "4.7.2-stable",
+        "date": "2026-08-18T16:12:28Z",
+        "page": "https://github.com/godotengine/godot/releases/tag/4.7.2-stable",
+        "files": [
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_linux.x86_32.zip",
+            "size": 78111204,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_32.zip",
+            "sha256": "05d7b8ef72c1d1f15eee82a585867ec0e18ad31501a4b7ce0974c111720c36b9"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_linux.x86_64.zip",
+            "size": 77860424,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip",
+            "sha256": "cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "Godot_v4.7.2-stable_linux.arm64.zip",
+            "size": 77008699,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.arm64.zip",
+            "sha256": "5dd0d86405cf7e8adf79fb6377b38ba682a2846cb378ffe5364f38c01ad29b9d"
+          }
+        ]
+      },
+      "android": {
+        "tag": "4.7.2-stable",
+        "date": "2026-08-18T16:12:28Z",
+        "page": "https://github.com/godotengine/godot/releases/tag/4.7.2-stable",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "Godot_v4.7.2-stable_android_editor.apk",
+            "size": 688166381,
+            "url": "https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_android_editor.apk",
+            "sha256": "7a69ae5645f1a97ac020e6bed3b4e9ce2451b13127f5727f5fb37f6991bf8b3c"
+          }
+        ]
+      }
+    },
+    "HandBrake/HandBrake": {
+      "mac": {
+        "tag": "1.11.2",
+        "date": "2026-06-07T19:08:25Z",
+        "page": "https://github.com/HandBrake/HandBrake/releases/tag/1.11.2",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "dmg",
+            "name": "HandBrake-1.11.2.dmg",
+            "size": 47978117,
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2.dmg",
+            "sha256": "4afe27aaa77a7bbb0dcda1a335d96a5f53649f2649fb84de6982ffecc35de9d7"
+          }
+        ]
+      },
+      "win": {
+        "tag": "1.11.2",
+        "date": "2026-06-07T19:08:25Z",
+        "page": "https://github.com/HandBrake/HandBrake/releases/tag/1.11.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "HandBrake-1.11.2-x86_64-Win_GUI.exe",
+            "size": 25331264,
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe",
+            "sha256": "6becb8e5a041941d5f2fd6fe83c66fc15b2b16190e2e79f5ad47eb4cd18df8cd"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "HandBrake-1.11.2-arm64-Win_GUI.exe",
+            "size": 18595792,
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-arm64-Win_GUI.exe",
+            "sha256": "fb69bafceb4e0ec208e3a7ea08eb1d119c49eb42e9954ad665cc75aa94d020b8"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "HandBrake-1.11.2-x86_64-Win_GUI.zip",
+            "size": 34937681,
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.zip",
+            "sha256": "a8b9e38b085da2ed7309868bdf8b49a900453946d25d58612071957f21eebd27"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "HandBrake-1.11.2-arm64-Win_GUI.zip",
+            "size": 27418450,
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-arm64-Win_GUI.zip",
+            "sha256": "b5a9618de5c38b95a4e9161e8f5a20a06fbc1d1fefff6d65cc47438ba6d6a36a"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "1.11.2",
+        "date": "2026-06-07T19:08:25Z",
+        "page": "https://github.com/HandBrake/HandBrake/releases/tag/1.11.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "flatpak",
+            "name": "HandBrake-1.11.2-x86_64.flatpak",
+            "size": 29772536,
+            "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64.flatpak",
+            "sha256": "8383defa3a845b77e6589bebe9c346921747a5c33b4de7b90eddd2ba863a52e5"
+          }
+        ]
+      }
+    },
+    "jesseduffield/lazygit": {
+      "mac": {
+        "tag": "v0.66.2",
+        "date": "2026-10-16T09:33:06Z",
+        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "lazygit_0.66.2_darwin_x86_64.tar.gz",
+            "size": 7452605,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_darwin_x86_64.tar.gz",
+            "sha256": "de5d3771e4befa6fe17590e21445614998adc1ef34a71f4003df6764247517ab"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "lazygit_0.66.2_darwin_arm64.tar.gz",
+            "size": 6931517,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_darwin_arm64.tar.gz",
+            "sha256": "fadda59ae7665ba556fcbaa704c7eade6e40d016d3f3b25d6327dd1f3f906a0c"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.66.2",
+        "date": "2026-10-16T09:33:06Z",
+        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "lazygit_0.66.2_windows_x86_64.zip",
+            "size": 7574703,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_x86_64.zip",
+            "sha256": "8b1e2194c2d8ac660f0a132cb4384e9d2fe1405217a144e280df16383c18d45c"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "lazygit_0.66.2_windows_32-bit.zip",
+            "size": 7271224,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_32-bit.zip",
+            "sha256": "d144ebd3cb0dded98870eaa233304e917788f4710ec89d4af1924fb3c189cc43"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "lazygit_0.66.2_windows_arm64.zip",
+            "size": 6757250,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_arm64.zip",
+            "sha256": "1da981a35ed26231d01c6cd8cccc016f365b78d6235a3d7906334719f580e851"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.66.2",
+        "date": "2026-10-16T09:33:06Z",
+        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "lazygit_0.66.2_linux_x86_64.tar.gz",
+            "size": 7332397,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_x86_64.tar.gz",
+            "sha256": "158efc9ddfa1241fab5fb3526bb442c8dc6c4b1904d73213b9e4e93e03c52034"
+          },
+          {
+            "arch": "x86",
+            "kind": "tar",
+            "name": "lazygit_0.66.2_linux_32-bit.tar.gz",
+            "size": 6974536,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_32-bit.tar.gz",
+            "sha256": "33bc3dba49eb8d78fcdb9e53d29827a0e5183a01715d4582d9998d24d133cdf6"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "lazygit_0.66.2_linux_arm64.tar.gz",
+            "size": 6654577,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_arm64.tar.gz",
+            "sha256": "79a3161eeb642f0473e23db6341f7baabd4a5933e921a9c1167c5d5c765c41a4"
+          }
+        ]
+      }
+    },
+    "keepassxreboot/keepassxc": {
+      "mac": {
+        "tag": "2.8.0",
+        "date": "2026-10-21T21:57:23Z",
+        "page": "https://github.com/keepassxreboot/keepassxc/releases/tag/2.8.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "KeePassXC-2.8.0-x86_64.dmg",
+            "size": 49264037,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.dmg",
+            "sha256": "002b805ede4d9755b554987b9c482fb8bab79ec01d18d1f70dbf3114e2f9469a"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "KeePassXC-2.8.0-arm64.dmg",
+            "size": 47298038,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-arm64.dmg",
+            "sha256": "223d5c71ae6c11d48192c69fd582fd5f10047e91ebcebc014de33a42539b9519"
+          }
+        ]
+      },
+      "win": {
+        "tag": "2.8.0",
+        "date": "2026-10-21T21:57:23Z",
+        "page": "https://github.com/keepassxreboot/keepassxc/releases/tag/2.8.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "KeePassXC-2.8.0-x64.msi",
+            "size": 69419008,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x64.msi",
+            "sha256": "4f105af5ba780428718c8be5614cf95deceed5cb3b474a9bd624c5df81cec6e5"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "KeePassXC-2.8.0-ARM64.msi",
+            "size": 58859520,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-ARM64.msi",
+            "sha256": "85eb8f60a7780136b82d672b834822b7047e773d824459acce4f118c4bfde1c1"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "2.8.0",
+        "date": "2026-10-21T21:57:23Z",
+        "page": "https://github.com/keepassxreboot/keepassxc/releases/tag/2.8.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "KeePassXC-2.8.0-x86_64.AppImage",
+            "size": 52062712,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage",
+            "sha256": "b52889fd627ae7a1c609b91b2526ccd5d847ec6707ac6eb634553186dee4f705"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "KeePassXC-2.8.0-aarch64.AppImage",
+            "size": 51268104,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-aarch64.AppImage",
+            "sha256": "fec5bb7cd0a5da240018014e6377fc47b711d99e00efba310cec1d210c01c940"
+          }
+        ]
+      }
+    },
+    "laurent22/joplin": {
+      "mac": {
+        "tag": "v3.7.21",
+        "date": "2026-09-25T21:31:12Z",
+        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.21",
+        "files": [
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "Joplin-3.7.21-arm64.DMG",
+            "size": 208484343,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21-arm64.DMG",
+            "sha256": "7e58db4346240de4cc7b7794d603be06b1a10b981bc5c22e0792080f28e856b7"
+          },
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "Joplin-3.7.21.dmg",
+            "size": 206702267,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21.dmg",
+            "sha256": "bd4c0a610a6c884ff987b73cd0794c0144f3dfdbeaba7ebc5db8107ad7e40378"
+          },
+          {
+            "arch": "arm64",
+            "kind": "pkg",
+            "name": "Joplin-3.7.21-arm64.pkg",
+            "size": 208136863,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21-arm64.pkg",
+            "sha256": "3a82dd8c0983a6c87a7f427aba00ee6b818a0286c4948d0b5e8eac1726b97f0c"
+          },
+          {
+            "arch": "x64",
+            "kind": "pkg",
+            "name": "Joplin-3.7.21.pkg",
+            "size": 206477574,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21.pkg",
+            "sha256": "bf2b6e07a3fe94b5b26b70b32c77601c78f6c02be31476db70890064b3af3e18"
+          },
+          {
+            "arch": "any",
+            "kind": "zip",
+            "name": "Joplin-3.7.21-mac.zip",
+            "size": 198453324,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21-mac.zip",
+            "sha256": "107c6d167090a1e5a6bdbc23a524088f5788094e7e557d42cc4874e838f3bb10"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v3.7.21",
+        "date": "2026-09-25T21:31:12Z",
+        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.21",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Joplin-Setup-3.7.21.exe",
+            "size": 361008040,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-Setup-3.7.21.exe",
+            "sha256": "4222536c69360a30a566627b35c2e1cd8d38d0c79735ebde4e39edbcddd750cd"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "JoplinPortable.exe",
+            "size": 360779352,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/JoplinPortable.exe",
+            "sha256": "5cf5686d8a3e2c1195448d1a0324602a2ef9a0cf61a867b323571ca2f8dd7b33"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v3.7.21",
+        "date": "2026-09-25T21:31:12Z",
+        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.21",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "Joplin-3.7.21.AppImage",
+            "size": 201462481,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21.AppImage",
+            "sha256": "5d202dcaca31e14206826aa3f04125e7c218dbc3dc3d98479d811efbd6b856c1"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "Joplin-3.7.21.deb",
+            "size": 162700892,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-3.7.21.deb",
+            "sha256": "14de2d5524e45341de5f0b68a1e78191b796a6c9817949c49b80afe5cd6ab965"
+          }
+        ]
+      }
+    },
+    "localsend/localsend": {
+      "mac": {
+        "tag": "v1.18.2",
+        "date": "2026-08-21T14:02:01Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "dmg",
+            "name": "LocalSend-1.18.2.dmg",
+            "size": 52700247,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2.dmg",
+            "sha256": "126860d56f6f49b11845f601aac51de27a49b16d2b48102415da91e0e37e5155"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v1.18.2",
+        "date": "2026-08-21T14:02:01Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "LocalSend-1.18.2-windows-x86-64.exe",
+            "size": 19901144,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.exe",
+            "sha256": "122783e6abb4b0a1f1603d896f46a03aeda3004479ebd3175cab4ddac6b60919"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "LocalSend-1.18.2-windows-x86-64.zip",
+            "size": 26113764,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.zip",
+            "sha256": "737aab1829d901e1d798cddd1e5fdc06ba9dfcc9ea50cfe3805e047005d5e71a"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v1.18.2",
+        "date": "2026-08-21T14:02:01Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "LocalSend-1.18.2-linux-x86-64.AppImage",
+            "size": 66471104,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.AppImage",
+            "sha256": "19f21613d1834f6caa69517113670461a3f10b80a2a315f86548c0663d9c0aaf"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "LocalSend-1.18.2-linux-x86-64.deb",
+            "size": 24665458,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.deb",
+            "sha256": "cc42a4f3eacdcb25ec31f0016b1272acb003145ab30484db8965450e20c72cd2"
+          },
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "LocalSend-1.18.2-linux-x86-64.tar.gz",
+            "size": 32011656,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.tar.gz",
+            "sha256": "287690a9a8eb6da9c83cc97b3e3030ac67daf32a7331fcf307d0939300658d16"
+          }
+        ]
+      },
+      "android": {
+        "tag": "v1.18.2",
+        "date": "2026-08-21T14:02:01Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "apk",
+            "name": "LocalSend-1.18.2-android-x64.apk",
+            "size": 48939435,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-x64.apk",
+            "sha256": "93e30ddbf84121ad2048c5a61763f2b37738f593699a9f0cf39a8404177aa05b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "apk",
+            "name": "LocalSend-1.18.2-android-arm64v8.apk",
+            "size": 46558706,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-arm64v8.apk",
+            "sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3"
+          }
+        ]
+      }
+    },
+    "logseq/logseq": {
+      "mac": {
+        "tag": "2.0.2",
+        "date": "2026-10-07T14:18:57Z",
+        "page": "https://github.com/logseq/logseq/releases/tag/2.0.2",
+        "files": [
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "Logseq-darwin-arm64-2.0.2.dmg",
+            "size": 177591867,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-darwin-arm64-2.0.2.dmg",
+            "sha256": "b9a16b6ddef1659aa3c2301ce37a0336377644bbf1016051e3d19d1a66776314"
+          },
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "Logseq-darwin-x64-2.0.2.dmg",
+            "size": 170943355,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-darwin-x64-2.0.2.dmg",
+            "sha256": "7c3682b2e73ac69f531012e37f09633a4200abc3de54efca630fa6aafefc27a9"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "Logseq-darwin-arm64-2.0.2.zip",
+            "size": 171440323,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-darwin-arm64-2.0.2.zip",
+            "sha256": "ffd6e086ba6f68a4748f80eaa8b38244a9cf78b05c076343d75e0230fe9440b4"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "Logseq-darwin-x64-2.0.2.zip",
+            "size": 164988361,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-darwin-x64-2.0.2.zip",
+            "sha256": "5bb0e643ac81dd0bfb458f4fc70b5ad9b12e5d5b44f426679f56cf25cb66dc99"
+          }
+        ]
+      },
+      "win": {
+        "tag": "2.0.2",
+        "date": "2026-10-07T14:18:57Z",
+        "page": "https://github.com/logseq/logseq/releases/tag/2.0.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Logseq-win-x64-2.0.2-nsis.exe",
+            "size": 152653328,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-win-x64-2.0.2-nsis.exe",
+            "sha256": "5d7f52fa676a65cb91b88a688ff2705de629dd60a0530dc6c9119e97b463d853"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "Logseq-win-arm64-2.0.2-nsis.exe",
+            "size": 147426600,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-win-arm64-2.0.2-nsis.exe",
+            "sha256": "44f60959e0d2bb71f573a8fabd3f5dc7abb3ec6bb0457aeb680e643a775424b4"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "Logseq-win-x64-2.0.2.zip",
+            "size": 195883130,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-win-x64-2.0.2.zip",
+            "sha256": "3332383c730bf8c0bd6bda9d5c60b669399f3ce9a1bee688dda12bfaaa5457db"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "Logseq-win-arm64-2.0.2.zip",
+            "size": 194000295,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-win-arm64-2.0.2.zip",
+            "sha256": "786592461878ae5969d38369f0d62d59061c31673d3aa58141c0c598456e3e9e"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "2.0.2",
+        "date": "2026-10-07T14:18:57Z",
+        "page": "https://github.com/logseq/logseq/releases/tag/2.0.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "Logseq-linux-x86_64-2.0.2.AppImage",
+            "size": 175847888,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-linux-x86_64-2.0.2.AppImage",
+            "sha256": "1335725626f6cbfbf3b00b7743a60356d2d7dad123cf00bbf974a9beef556870"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "Logseq-linux-arm64-2.0.2.AppImage",
+            "size": 175568138,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-linux-arm64-2.0.2.AppImage",
+            "sha256": "371d1c9e66e6ade39e71bc60ab4d49458c83812f143b939ae26ba39663651634"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "Logseq-linux-arm64-2.0.2.zip",
+            "size": 179588196,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-linux-arm64-2.0.2.zip",
+            "sha256": "9f0404ea59f5af58874ed51c9291bde0ebd2b0ae65fe3259abfc42d3188904d5"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "Logseq-linux-x86_64-2.0.2.zip",
+            "size": 179015389,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-linux-x86_64-2.0.2.zip",
+            "sha256": "289eadd4dfcbdd2ab71aeb6cf02a53d0b5d7340865c528b1434bef8001900a9a"
+          }
+        ]
+      },
+      "android": {
+        "tag": "2.0.2",
+        "date": "2026-10-07T14:18:57Z",
+        "page": "https://github.com/logseq/logseq/releases/tag/2.0.2",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "Logseq-android-2.0.2.apk",
+            "size": 44178075,
+            "url": "https://github.com/logseq/logseq/releases/download/2.0.2/Logseq-android-2.0.2.apk",
+            "sha256": "e011983cdea2946711dd6ff35b00cff3321cd4f8937fee3f42e718f3aa6226e0"
+          }
+        ]
+      }
+    },
+    "luanti-org/luanti": {
+      "mac": {
+        "tag": "5.17.0",
+        "date": "2026-08-20T17:45:51Z",
+        "page": "https://github.com/luanti-org/luanti/releases/tag/5.17.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "luanti_5.17.0_macos12.3_x86_64.zip",
+            "size": 14265525,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti_5.17.0_macos12.3_x86_64.zip",
+            "sha256": "deb7c09b4425a95203ed6729949ca3c35e565e7771be896f6bd2b9ad52241de7"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "luanti_5.17.0_macos12.3_arm64.zip",
+            "size": 13619805,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti_5.17.0_macos12.3_arm64.zip",
+            "sha256": "0ba118b537d3cc6fd07cd2268fef25e515fc6d87c27ad69b476144a8e28dba3c"
+          }
+        ]
+      },
+      "win": {
+        "tag": "5.17.0",
+        "date": "2026-08-20T17:45:51Z",
+        "page": "https://github.com/luanti-org/luanti/releases/tag/5.17.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "luanti-5.17.0.exe",
+            "size": 12137492,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0.exe",
+            "sha256": "048c132b8b4e637741144d1b551ff64f6c562a286617d4d8ddbf17e974fb746a"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "luanti-5.17.0-win32.zip",
+            "size": 17861980,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-win32.zip",
+            "sha256": "dd27c83c0756d296e18946577620db5bb9188c7c9cf1b5fc7a28d6acc491530b"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "luanti-5.17.0-win64.zip",
+            "size": 17539019,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-win64.zip",
+            "sha256": "3ce20c77f5c206a988d7a6b883439e2759e3cf67428c9dbcf99ecd2936da631c"
+          }
+        ]
+      },
+      "android": {
+        "tag": "5.17.0",
+        "date": "2026-08-20T17:45:51Z",
+        "page": "https://github.com/luanti-org/luanti/releases/tag/5.17.0",
+        "files": [
+          {
+            "arch": "x86",
+            "kind": "apk",
+            "name": "luanti-5.17.0-x86.apk",
+            "size": 18281048,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-x86.apk",
+            "sha256": "16d9d156e17d5959eccaecab9e95d81f6881bfcd20805c36ceb3e56ec1c5294c"
+          },
+          {
+            "arch": "x64",
+            "kind": "apk",
+            "name": "luanti-5.17.0-x86_64.apk",
+            "size": 17936990,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-x86_64.apk",
+            "sha256": "d0e8bea52462d7e743d411e79c9eaa6b55f382f88ab1644d6ef727b320fae148"
+          },
+          {
+            "arch": "arm64",
+            "kind": "apk",
+            "name": "luanti-5.17.0-arm64-v8a.apk",
+            "size": 17515108,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-arm64-v8a.apk",
+            "sha256": "58d4b9090ca2c837625eafc5c62668224cf1051b35b943f994cad8d7705d1292"
+          }
+        ]
+      }
+    },
+    "mpv-player/mpv": {
+      "mac": {
+        "tag": "v0.41.0",
+        "date": "2025-12-21T19:17:10Z",
+        "page": "https://github.com/mpv-player/mpv/releases/tag/v0.41.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "mpv-v0.41.0-macos-15-intel.zip",
+            "size": 49288843,
+            "url": "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-macos-15-intel.zip",
+            "sha256": "41003617ab4f7784394b5ddea7ce51b3e0838e8cfc8166ad1a378b2eda3b583c"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.41.0",
+        "date": "2025-12-21T19:17:10Z",
+        "page": "https://github.com/mpv-player/mpv/releases/tag/v0.41.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "mpv-v0.41.0-x86_64-pc-windows-msvc.zip",
+            "size": 77205127,
+            "url": "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-x86_64-pc-windows-msvc.zip",
+            "sha256": "4e197f729f5071c6772f35fffd96e0f36e3e8a044bd9479b136bb09b7c6a80ff"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "mpv-v0.41.0-aarch64-pc-windows-msvc.zip",
+            "size": 71498137,
+            "url": "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-aarch64-pc-windows-msvc.zip",
+            "sha256": "a822abeffd0ac88951f4084f3425f949842aa17d616f880637ebe9041e482e97"
+          }
+        ]
+      }
+    },
+    "mullvad/mullvadvpn-app": {
+      "android": {
+        "tag": "android/2026.12",
+        "date": "2026-09-30T14:32:59Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/android/2026.12",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "MullvadVPN-2026.12.apk",
+            "size": 39008494,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/android/2026.12/MullvadVPN-2026.12.apk",
+            "sha256": "0ad70b89b2b48bb0b1ae29115eee57d75277ffeccf95a0d3db98945d740a6d9e"
+          }
+        ]
+      },
+      "mac": {
+        "tag": "2026.5",
+        "date": "2026-09-14T06:02:38Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.5",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.5.pkg",
+            "size": 254034014,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5.pkg",
+            "sha256": "7c68dd93ae01c1b56ce29c48b293a6ecb29ad61769ee90619887fa71a7dd867b"
+          },
+          {
+            "arch": "x64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.5_x86_64.pkg",
+            "size": 146734703,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_x86_64.pkg",
+            "sha256": "23a7eaad3083e0dde2284148d769830abd154a77e205168f4103b213ff5579d1"
+          },
+          {
+            "arch": "arm64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.5_arm64.pkg",
+            "size": 141951531,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_arm64.pkg",
+            "sha256": "afa1ee9ed5406b36b2ee77aaec41c0490cfb09fca6c719b5119f1322696d2d1d"
+          }
+        ]
+      },
+      "win": {
+        "tag": "2026.5",
+        "date": "2026-09-14T06:02:38Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.5",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.5.exe",
+            "size": 261937624,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5.exe",
+            "sha256": "6b462684336bc0b9b7964846b2635af1723fa9d5817211117e1532ef86a2adc0"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.5_x64.exe",
+            "size": 134620152,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_x64.exe",
+            "sha256": "2a3efc4de6a97a2ea1c034ea617c699c5c94b8006d24beece7508d3443b760d5"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.5_arm64.exe",
+            "size": 126764128,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_arm64.exe",
+            "sha256": "43d15a32dd7ce6feeb64aa573a4a76b41e818877e25533787e9be04c6b8a3f4a"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "2026.5",
+        "date": "2026-09-14T06:02:38Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.5",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "MullvadVPN-2026.5_amd64.deb",
+            "size": 115235148,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_amd64.deb",
+            "sha256": "aa6bd00452588597f50e8ca2f02bb91e9c295c4f01b0ae907354552e7428e7ab"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "MullvadVPN-2026.5_arm64.deb",
+            "size": 107305788,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_arm64.deb",
+            "sha256": "e62878f203ecd1037e45bf8158e6b40f5dc99547c714a426135c0be6f2379940"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "MullvadVPN-2026.5_x86_64.rpm",
+            "size": 98846345,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_x86_64.rpm",
+            "sha256": "6cd0de1c42527b67870e2991f9c0a0399ed6a565f866476536a4d240b289af74"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "MullvadVPN-2026.5_aarch64.rpm",
+            "size": 91773957,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_aarch64.rpm",
+            "sha256": "782abb4f64e31630d896c498de031c72abc4df56f9ecbd7951a407b9adbaf5bf"
+          }
+        ]
+      }
+    },
+    "neovim/neovim": {
+      "mac": {
+        "tag": "v0.12.6",
+        "date": "2026-10-09T15:43:25Z",
+        "page": "https://github.com/neovim/neovim/releases/tag/v0.12.6",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "nvim-macos-x86_64.tar.gz",
+            "size": 9844257,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-macos-x86_64.tar.gz",
+            "sha256": "481424f1dbc85f637d57e47d27d042aa9c883e5a4fe9ee64fc4ee9573b221998"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "nvim-macos-arm64.tar.gz",
+            "size": 9595887,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-macos-arm64.tar.gz",
+            "sha256": "1dbd148222b051ba6c307c4d17a318ed083df018a4f6a5a0ce46955ffc9ab87b"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.12.6",
+        "date": "2026-10-09T15:43:25Z",
+        "page": "https://github.com/neovim/neovim/releases/tag/v0.12.6",
+        "files": [
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "nvim-win-arm64.msi",
+            "size": 13017148,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-win-arm64.msi",
+            "sha256": "02cd0d617da680f76b503b5b636d36c75c38a3fbd05147ab0d2810f2dec13840"
+          },
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "nvim-win64.msi",
+            "size": 12460092,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-win64.msi",
+            "sha256": "72ec7df85655528952e086858ca6b3add8498f60977108ba8e7f3ede34a7cca5"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "nvim-win-arm64.zip",
+            "size": 13188877,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-win-arm64.zip",
+            "sha256": "2e58d259ffcc6145e5112ea02330126c6b57da09087bb9265fb2fa9aa10b485c"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "nvim-win64.zip",
+            "size": 12624741,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-win64.zip",
+            "sha256": "4e12b7103b601ffc8f25954b4da100f339faa73dccb69a5b135e897fa3d893ed"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.12.6",
+        "date": "2026-10-09T15:43:25Z",
+        "page": "https://github.com/neovim/neovim/releases/tag/v0.12.6",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "nvim-linux-x86_64.appimage",
+            "size": 11454968,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-x86_64.appimage",
+            "sha256": "b644d034746aed32f4e918be9fc6147408ce4ecd360fedd7130da543c35f29fb"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "nvim-linux-arm64.appimage",
+            "size": 11356680,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-arm64.appimage",
+            "sha256": "8efcec73cea1cebcd3a19da0bc782c0c6d95da7ae6006902a9d93b5ac9efe1c2"
+          },
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "nvim-linux-x86_64.tar.gz",
+            "size": 11404582,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-x86_64.tar.gz",
+            "sha256": "474430d53e6264f6d6dd18db42d6dc9df3a1b56ca9e88a325bbf860e1a811d87"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "nvim-linux-arm64.tar.gz",
+            "size": 11367117,
+            "url": "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-arm64.tar.gz",
+            "sha256": "8f1f64a0bdb97247034038c3823c6cbad5bdf9ecd5751b85494b71c3ee04c815"
+          }
+        ]
+      }
+    },
+    "nomic-ai/gpt4all": {
+      "mac": {
+        "tag": "v3.10.0",
+        "date": "2025-02-25T00:41:39Z",
+        "page": "https://github.com/nomic-ai/gpt4all/releases/tag/v3.10.0",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "dmg",
+            "name": "gpt4all-installer-macos-v3.10.0.dmg",
+            "size": 319600812,
+            "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-macos-v3.10.0.dmg"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v3.10.0",
+        "date": "2025-02-25T00:41:39Z",
+        "page": "https://github.com/nomic-ai/gpt4all/releases/tag/v3.10.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "gpt4all-installer-win64-v3.10.0.exe",
+            "size": 744456856,
+            "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-win64-v3.10.0.exe"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "gpt4all-installer-win64-arm-v3.10.0.exe",
+            "size": 318116056,
+            "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-win64-arm-v3.10.0.exe"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v3.10.0",
+        "date": "2025-02-25T00:41:39Z",
+        "page": "https://github.com/nomic-ai/gpt4all/releases/tag/v3.10.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "run",
+            "name": "gpt4all-installer-linux-v3.10.0.run",
+            "size": 732745048,
+            "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-linux-v3.10.0.run"
+          }
+        ]
+      }
+    },
+    "obsproject/obs-studio": {
+      "mac": {
+        "tag": "32.2.2",
+        "date": "2026-08-14T22:43:31Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/32.2.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "OBS-Studio-32.2.2-macOS-Intel.dmg",
+            "size": 198863134,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-macOS-Intel.dmg",
+            "sha256": "f8d8afe3dffdc86efa0698c02ff0c997866bac3e6208ddaf56d37108baacf197"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "OBS-Studio-32.2.2-macOS-Apple.dmg",
+            "size": 187703709,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-macOS-Apple.dmg",
+            "sha256": "920d6f26703d2df6e4085bd3c1cbed30488325084136c7a6e9e37021fbd6aaf7"
+          }
+        ]
+      },
+      "win": {
+        "tag": "32.2.2",
+        "date": "2026-08-14T22:43:31Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/32.2.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "OBS-Studio-32.2.2-Windows-x64-Installer.exe",
+            "size": 159809104,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-x64-Installer.exe",
+            "sha256": "c3a0b880adbe64dc4bcb68f93016916ab5b55ae43fd227115287bf80257d92dc"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "OBS-Studio-32.2.2-Windows-x64.zip",
+            "size": 187851583,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-x64.zip",
+            "sha256": "4d6e40e3ab155f56b30de517380566a206d74b63cdf5ad49aa596924768f97e1"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "OBS-Studio-32.2.2-Windows-arm64.zip",
+            "size": 167128219,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-arm64.zip",
+            "sha256": "b16b41c3cf89b8a919738359a46acb25d207ec1e488563139d7c276cfffb0906"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "32.2.2",
+        "date": "2026-08-14T22:43:31Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/32.2.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "OBS-Studio-32.2.2-Ubuntu-26.04-x86_64.deb",
+            "size": 134438766,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Ubuntu-26.04-x86_64.deb",
+            "sha256": "f256927aeba7b8d2ce64815402e723d1dd8332d1e6535939b03572f2adcc2849"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "OBS-Studio-32.2.2-Ubuntu-24.04-x86_64.deb",
+            "size": 134324516,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Ubuntu-24.04-x86_64.deb",
+            "sha256": "b6557ca2059287210332accc94c267094050489cffffc5c832e746e3a418dab0"
+          }
+        ]
+      }
+    },
+    "ollama/ollama": {
+      "mac": {
+        "tag": "v0.40.8",
+        "date": "2026-10-21T16:20:30Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "dmg",
+            "name": "Ollama.dmg",
+            "size": 214319422,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/Ollama.dmg",
+            "sha256": "795f49b6583e2304fe0b8baa386e3b63d8159e54c206bd9319022f755fd66420"
+          },
+          {
+            "arch": "any",
+            "kind": "zip",
+            "name": "Ollama-darwin.zip",
+            "size": 213598580,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/Ollama-darwin.zip",
+            "sha256": "fe930d0a8567fde70dc4a88b329b693efc15c8845795f5f6c2f7c4d3881b104d"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.40.8",
+        "date": "2026-10-21T16:20:30Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "OllamaSetup.exe",
+            "size": 1658535520,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/OllamaSetup.exe",
+            "sha256": "777f775abb9458ece249f8721db816ac38f7c457767843120ce4fb3d01380b56"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "ollama-windows-amd64.zip",
+            "size": 1582537058,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-windows-amd64.zip",
+            "sha256": "04d1d43ac62c2deb0393307bb49fed7caf6b192de41bdd497aaa9488089d5552"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "ollama-windows-arm64.zip",
+            "size": 210719486,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-windows-arm64.zip",
+            "sha256": "b3e5c85dd5cd6708df8f49d04706e979ba5164ad39567c1794a45afb2252d2a2"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.40.8",
+        "date": "2026-10-21T16:20:30Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+        "files": [
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "ollama-linux-arm64.tar.zst",
+            "size": 1561304422,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-linux-arm64.tar.zst",
+            "sha256": "f2e512f67f86ac5c53847e4e586ca8a9d3f359faf7a71cd69e37f12dcc63ded0"
+          },
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "ollama-linux-amd64.tar.zst",
+            "size": 1505219659,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-linux-amd64.tar.zst",
+            "sha256": "0bb17cc19e9c1339ddbe0cba55148bf068f8f19dec8ec5fd531461aaa207282a"
+          }
+        ]
+      }
+    },
+    "storytold/designcraft": {
+      "mac": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T18:26:30Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "designcraft-0.11.0-macos-universal.dmg",
+            "size": 90931280,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-macos-universal.dmg",
+            "sha256": "98b3a37c98be502488655d8e382dad1ea3cf81cdf3f78e1e69a6d1739457ae36"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T18:26:30Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "designcraft-0.11.0-windows-x64.msi",
+            "size": 63672320,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-windows-x64.msi",
+            "sha256": "1eb46f6d51df0f43130aee284a3d6fe4f66cc115d39d7c6ccb44ba81d6a98d75"
+          },
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "designcraft-0.11.0-windows-x86.msi",
+            "size": 62230528,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-windows-x86.msi",
+            "sha256": "0f4db37993af166e54d8f3cf8d15dcf184b38234bc9da1f05bfe5cf3fd4f7956"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "designcraft-0.11.0-windows-arm64.msi",
+            "size": 59576320,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-windows-arm64.msi",
+            "sha256": "fa36b759407edd71240af4f545368d42059d822df10c2695c6e96d89c1fb763f"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "designcraft-0.11.0-windows-x64-portable.zip",
+            "size": 81272427,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-windows-x64-portable.zip",
+            "sha256": "960666ce7bde2e1a9563e7460e0cfd8d96cf72f31de038036784a537ff2894ac"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "designcraft-0.11.0-windows-x86-portable.zip",
+            "size": 78150418,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-windows-x86-portable.zip",
+            "sha256": "c6edf145b2d6b5b32e3d6c5a5a8deb0eff9ec198e817875104668b6906dcde21"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "designcraft-0.11.0-windows-arm64-portable.zip",
+            "size": 77225279,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-windows-arm64-portable.zip",
+            "sha256": "8b75f31c3e072faf8e89cf66e5100e459eea4bba7524351a9665ec931aa7fa3b"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T18:26:30Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "designcraft-0.11.0-linux-x86_64.AppImage",
+            "size": 76708344,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-linux-x86_64.AppImage",
+            "sha256": "7e246a6f793719c9818e9d1497efec5e22308c91e42ff3b1fe5f3667ae3a6b8c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "designcraft-0.11.0-linux-aarch64.AppImage",
+            "size": 73099784,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-linux-aarch64.AppImage",
+            "sha256": "494cb3b69fbe0ef695673464781542baece8befe2c8d1df8ec500114931dc550"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "designcraft-0.11.0-linux-x86_64.deb",
+            "size": 82761828,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-linux-x86_64.deb",
+            "sha256": "40c43d25087bc36bdbbbbaf567eba9593ada5476e9f2daf58fc8374ba7f14260"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "designcraft-0.11.0-linux-aarch64.deb",
+            "size": 79795958,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-linux-aarch64.deb",
+            "sha256": "df19bc3c6f1273c72774f28811c4c36f341c20e686165412b9d1299e9adfb3aa"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "designcraft-0.11.0-linux-x86_64.rpm",
+            "size": 82361635,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-linux-x86_64.rpm",
+            "sha256": "a582eb1ef80839c9160f13b3a1ad3bab6356339fe87e3f5362bec9fa4f58abd5"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "designcraft-0.11.0-linux-aarch64.rpm",
+            "size": 79275227,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.11.0/designcraft-0.11.0-linux-aarch64.rpm",
+            "sha256": "881a8c4c8975636eee14e9f97167b6c6acb099920aefc792c7bae43f08e5a917"
+          }
+        ]
+      }
+    },
+    "storytold/effectcraft": {
+      "mac": {
+        "tag": "v0.14.0",
+        "date": "2026-10-21T19:04:46Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.14.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "effectcraft-0.14.0-macos-universal.dmg",
+            "size": 65896289,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-macos-universal.dmg",
+            "sha256": "5bb0841a65e763c4cd27dc0bcc38a29523eb2f1d51e8674d44846700a7f7f765"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.14.0",
+        "date": "2026-10-21T19:04:46Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.14.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "effectcraft-0.14.0-windows-x64.msi",
+            "size": 51154944,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-windows-x64.msi",
+            "sha256": "746bd8410e58ce104d737b1f39ae0d67c72ede2324f4855bfd455d9e458d5750"
+          },
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "effectcraft-0.14.0-windows-x86.msi",
+            "size": 49819648,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-windows-x86.msi",
+            "sha256": "880f418edaee59f3132bdc6b0642d821a00ea83c9ef0bb700f7d7937d4e86ee8"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "effectcraft-0.14.0-windows-arm64.msi",
+            "size": 45514752,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-windows-arm64.msi",
+            "sha256": "2803e4ae437731e7f1acfba63eb75edec60477f454770ef96a08aef6653571e9"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "effectcraft-0.14.0-windows-x64-portable.zip",
+            "size": 67507747,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-windows-x64-portable.zip",
+            "sha256": "63e96a7f53b743d8c3590ce9f5785b18035fd592bb076ade44cd0881ac20ab0e"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "effectcraft-0.14.0-windows-x86-portable.zip",
+            "size": 64108181,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-windows-x86-portable.zip",
+            "sha256": "297f403b1c381195a40aa647ee1bd52703d6bbac8ca90e2435d78484374fcb9a"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "effectcraft-0.14.0-windows-arm64-portable.zip",
+            "size": 62460555,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-windows-arm64-portable.zip",
+            "sha256": "b45978c0aff0a0eb70ed589b0db56a6f4f84769411c59b2b1918b76d58cf4fb8"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.14.0",
+        "date": "2026-10-21T19:04:46Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.14.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "effectcraft-0.14.0-linux-x86_64.AppImage",
+            "size": 59460088,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-linux-x86_64.AppImage",
+            "sha256": "061e00c17d3d57c23dd86c168b03eaa9e56ff3923c19e5acb3390699cf11edbc"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "effectcraft-0.14.0-linux-aarch64.AppImage",
+            "size": 55548424,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-linux-aarch64.AppImage",
+            "sha256": "166763333ecfa0667558b96b8da2605e6ad71d034f4dff9e86a85d424dfb6260"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "effectcraft-0.14.0-linux-x86_64.deb",
+            "size": 65748820,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-linux-x86_64.deb",
+            "sha256": "2ca284b77910ec66ecd1adf0ecc32ea83436f93719162dc0b566ad8765c6688c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "effectcraft-0.14.0-linux-aarch64.deb",
+            "size": 62785916,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-linux-aarch64.deb",
+            "sha256": "e0300e179548ee9d6094c84c4696b1fca6157384b1cd0e6977766a42122f6189"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "effectcraft-0.14.0-linux-x86_64.rpm",
+            "size": 65334127,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-linux-x86_64.rpm",
+            "sha256": "5f1acfb86a8f0278b0724d0b24577d930a69506f2ab4aef870c69e3457d98281"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "effectcraft-0.14.0-linux-aarch64.rpm",
+            "size": 62152261,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.14.0/effectcraft-0.14.0-linux-aarch64.rpm",
+            "sha256": "2fc36be65452aca309ec6b599b59758337fe28aec17eb76fa598007a9a583647"
+          }
+        ]
+      }
+    },
+    "storytold/filmcraft": {
+      "mac": {
+        "tag": "v0.10.0",
+        "date": "2026-10-21T07:46:20Z",
+        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.10.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "filmcraft-0.10.0-macos-universal.dmg",
+            "size": 73974060,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-macos-universal.dmg",
+            "sha256": "6da2e0e854bce43f0817247cc5bbaea8f09a3dcc12bc4a1b3f80dba2451e2702"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.10.0",
+        "date": "2026-10-21T07:46:20Z",
+        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.10.0",
+        "files": [
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "filmcraft-0.10.0-windows-x86.msi",
+            "size": 57405440,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-windows-x86.msi",
+            "sha256": "f9b648707c515124e9acf0354e593eda7c6b7db49f65279b440993d75bcde504"
+          },
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "filmcraft-0.10.0-windows-x64.msi",
+            "size": 57368576,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-windows-x64.msi",
+            "sha256": "824702d1bca7422016494316f3b35f0a2ad8ba2b6d4903480bdba390a458a42b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "filmcraft-0.10.0-windows-arm64.msi",
+            "size": 53800960,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-windows-arm64.msi",
+            "sha256": "13489006952689f18bb8678e5d2030d4ee61986499633ecdbfad430ab10c360b"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "filmcraft-0.10.0-windows-x64-portable.zip",
+            "size": 70809464,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-windows-x64-portable.zip",
+            "sha256": "8f5b52e0f8fd5540b5e0a4c5ae283f11371df1d983fd109f248a3d6c1ed5a263"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "filmcraft-0.10.0-windows-x86-portable.zip",
+            "size": 69807159,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-windows-x86-portable.zip",
+            "sha256": "8e99a238279eb2e2ac7b7d7c7a78edd555bbcfbb54c54b0e355956878fac5d05"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "filmcraft-0.10.0-windows-arm64-portable.zip",
+            "size": 67609047,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-windows-arm64-portable.zip",
+            "sha256": "719c6aba7f4ba7ba36c9dfc9037a3bda12a6db875f4a508ae8d820df2e1acd01"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.10.0",
+        "date": "2026-10-21T07:46:20Z",
+        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.10.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "filmcraft-0.10.0-linux-x86_64.AppImage",
+            "size": 66111992,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-linux-x86_64.AppImage",
+            "sha256": "7873182c5cba651305fc9f74013e53637f6ad2ea818f877e2d1a5c04add9e361"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "filmcraft-0.10.0-linux-aarch64.AppImage",
+            "size": 63494664,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-linux-aarch64.AppImage",
+            "sha256": "984ca742b73f6c6a3c7876b9a2e81207dfb71ee8ddbfd8490c2144af597512f0"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "filmcraft-0.10.0-linux-x86_64.deb",
+            "size": 70842714,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-linux-x86_64.deb",
+            "sha256": "f1694bd7f399817b5c55cee41d03b30ff9ac0687bc2790630205c72a19278de6"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "filmcraft-0.10.0-linux-aarch64.deb",
+            "size": 68838924,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-linux-aarch64.deb",
+            "sha256": "c0254b1c3a32056460032e07c4ee65f2883bffc869e095ae8d19bc2206a8343e"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "filmcraft-0.10.0-linux-x86_64.rpm",
+            "size": 70422492,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-linux-x86_64.rpm",
+            "sha256": "11181af5ca390570c2451f7bdd8625f1c381469ec82c61e1f5d8accb05d152db"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "filmcraft-0.10.0-linux-aarch64.rpm",
+            "size": 68271784,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.10.0/filmcraft-0.10.0-linux-aarch64.rpm",
+            "sha256": "7af8527515fdee84a6dfbf3af123933b9de1d8b31ad4c7e3be9bb43e9383e75c"
+          }
+        ]
+      }
+    },
+    "storytold/lightcraft": {
+      "mac": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T18:29:19Z",
+        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "lightcraft-0.11.0-macos-universal.dmg",
+            "size": 113612361,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-macos-universal.dmg",
+            "sha256": "09a0dd5a9d42e6b607ac57789d6a1b9cf8f58d9a670bb671df9ba7809f64e708"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T18:29:19Z",
+        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "lightcraft-0.11.0-windows-x64.msi",
+            "size": 90320896,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-x64.msi",
+            "sha256": "ef3d46d61284b9e723ed5d3cdb0a8941ba6b6ced34ec7a5c6d218aea3dacc955"
+          },
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "lightcraft-0.11.0-windows-x86.msi",
+            "size": 89169920,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-x86.msi",
+            "sha256": "7f856775f3a3eb197f918ee7a6b8554af4334c3319f38cfede7651df024e85a4"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "lightcraft-0.11.0-windows-arm64.msi",
+            "size": 86646784,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-arm64.msi",
+            "sha256": "39c74c0fd986a6b9325134d87bc50e9feb46d55046c26c340542cdfc92f27a6c"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "lightcraft-0.11.0-windows-x64-portable.zip",
+            "size": 110152323,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-x64-portable.zip",
+            "sha256": "3417542319d63cbfa772763a94128d7fef9a389f997bb4e78bfe6a192a17ffac"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "lightcraft-0.11.0-windows-x86-portable.zip",
+            "size": 106203331,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-x86-portable.zip",
+            "sha256": "66609b88909fb7ce88443a231a936f1d97a92a2d7848347ebe7bd1805e75dcfc"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "lightcraft-0.11.0-windows-arm64-portable.zip",
+            "size": 105673926,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-windows-arm64-portable.zip",
+            "sha256": "a5e65d91a3682669d9f2e5f093b4c1c7680c613f9d6608d72d83b0230119574d"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T18:29:19Z",
+        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "lightcraft-0.11.0-linux-x86_64.AppImage",
+            "size": 103832056,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-x86_64.AppImage",
+            "sha256": "3a1ea99e4a806a5bab7fad7ea6744d467275fa13fce2247161808a2b430e78aa"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "lightcraft-0.11.0-linux-aarch64.AppImage",
+            "size": 99539464,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-aarch64.AppImage",
+            "sha256": "26f776a50c6928429af74db2cf751d36673a19b7fad8baed324e1cb8be1812bd"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "lightcraft-0.11.0-linux-x86_64.deb",
+            "size": 111087076,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-x86_64.deb",
+            "sha256": "97e1c0db73ba932708791a1e2484fd7607502bbd07ecaedf53faf681b8f38fe1"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "lightcraft-0.11.0-linux-aarch64.deb",
+            "size": 107356816,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-aarch64.deb",
+            "sha256": "6811cdef8af9d15b5bca1e1a02b28c01ce6777509a57a409ea9c54fcc3c71881"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "lightcraft-0.11.0-linux-x86_64.rpm",
+            "size": 110446733,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-x86_64.rpm",
+            "sha256": "c9649536472bc3ebba60757adb0e566bc9e29ef4a6c3b9699b770995d91fc8ea"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "lightcraft-0.11.0-linux-aarch64.rpm",
+            "size": 106594187,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.11.0/lightcraft-0.11.0-linux-aarch64.rpm",
+            "sha256": "7a6f63abda50984d98edb792c4936f6f93746ffef5c2a94b345d488ecccd25b2"
+          }
+        ]
+      }
+    },
+    "storytold/pdfcraft": {
+      "mac": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T19:57:25Z",
+        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "pdfcraft-0.11.0-macos-universal.dmg",
+            "size": 95393471,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-macos-universal.dmg",
+            "sha256": "8774df32a4ddc356029b133d7d860ed4723c968b8b018e2062b39da0fb05e752"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T19:57:25Z",
+        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "pdfcraft-0.11.0-windows-x64.msi",
+            "size": 72130560,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-windows-x64.msi",
+            "sha256": "0df327731448e5985aae08b80740c155fd35a6748055878366ac9d1da4e75a3e"
+          },
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "pdfcraft-0.11.0-windows-x86.msi",
+            "size": 70111232,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-windows-x86.msi",
+            "sha256": "c300efabd87408166797f91b7c90c8f590c45f4e207455eaa08f84410f3255a8"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "pdfcraft-0.11.0-windows-arm64.msi",
+            "size": 67928064,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-windows-arm64.msi",
+            "sha256": "ce44e67d67feb2e6fcdd436777038438828a036b354b39b69a9707bbae62051b"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "pdfcraft-0.11.0-windows-x64-portable.zip",
+            "size": 86449611,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-windows-x64-portable.zip",
+            "sha256": "1655b326dc3d34e7fe1a5c211d06a603b12661765291ea995da2b7d9bcf2ff3c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "pdfcraft-0.11.0-windows-arm64-portable.zip",
+            "size": 82775245,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-windows-arm64-portable.zip",
+            "sha256": "50b490d250fb88e69330db42dca90ecb4e0cb0c6b79f105aeffc5709149c93c0"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "pdfcraft-0.11.0-windows-x86-portable.zip",
+            "size": 82659570,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-windows-x86-portable.zip",
+            "sha256": "f81a5c69ca10065308ad07c694e14730066ae72590158f8eb87e3c7405db90a2"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.11.0",
+        "date": "2026-10-21T19:57:25Z",
+        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.11.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "pdfcraft-0.11.0-linux-x86_64.AppImage",
+            "size": 81963512,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-linux-x86_64.AppImage",
+            "sha256": "d85810e236f095aa900af20e0276793b28435726cabdd4e21f34ad1049d3cc32"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "pdfcraft-0.11.0-linux-aarch64.AppImage",
+            "size": 78502408,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-linux-aarch64.AppImage",
+            "sha256": "988cffd850088b1b2b792bb8b52ca4adc453c3eb84d8ce7d2ffe13c12ac23813"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "pdfcraft-0.11.0-linux-x86_64.deb",
+            "size": 87087306,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-linux-x86_64.deb",
+            "sha256": "8eeb05f7cbece2bba4d941bca0ef6c9284012e6720ecee7294648c6ce9c6812e"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "pdfcraft-0.11.0-linux-aarch64.deb",
+            "size": 84225288,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-linux-aarch64.deb",
+            "sha256": "c4899a4cf030d5646c9d31434d060dabe70d0ab34867f8e9e705235750a95c98"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "pdfcraft-0.11.0-linux-x86_64.rpm",
+            "size": 86651440,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-linux-x86_64.rpm",
+            "sha256": "233f5e42a9708ac4bd4af1fd4f5903af707a69ea4b13475de921d570b4bbea76"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "pdfcraft-0.11.0-linux-aarch64.rpm",
+            "size": 83652631,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.11.0/pdfcraft-0.11.0-linux-aarch64.rpm",
+            "sha256": "cd328fa635776c64a99c0e3e673f2a3a3ecf3a2c406fd3d42583a0b41468f292"
+          }
+        ]
+      }
+    },
+    "storytold/photocraft": {
+      "mac": {
+        "tag": "v0.12.0",
+        "date": "2026-10-21T18:28:57Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.12.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "photocraft-0.12.0-macos-universal.dmg",
+            "size": 93952770,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-macos-universal.dmg",
+            "sha256": "5b439694603f11ccf93946ef474091afadc9fb1890ad8022723d160d4fccc08d"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.12.0",
+        "date": "2026-10-21T18:28:57Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.12.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "photocraft-0.12.0-windows-x64.msi",
+            "size": 71860224,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-windows-x64.msi",
+            "sha256": "79f937909ad32c6f66e31da828aa41f5795b58fd9c272f00f8cba6e3847ded0f"
+          },
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "photocraft-0.12.0-windows-x86.msi",
+            "size": 69398528,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-windows-x86.msi",
+            "sha256": "503910d31a9faa689d743ac40709865f9f04b886033f9281a35daffe8c51d53e"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "photocraft-0.12.0-windows-arm64.msi",
+            "size": 66752512,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-windows-arm64.msi",
+            "sha256": "c80420838137a8bd4f86f3f0fb5a00fccf7d31e9234204365371348ec56337cd"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "photocraft-0.12.0-windows-x64-portable.zip",
+            "size": 86293584,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-windows-x64-portable.zip",
+            "sha256": "fdc8da51cba975e52ddc4dfb4833b4001c10ea7e067423b1304569a67a41aaff"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "photocraft-0.12.0-windows-x86-portable.zip",
+            "size": 81933604,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-windows-x86-portable.zip",
+            "sha256": "93343784400db226a306b9f5ddc71363ad7b0a0492bfa746ac20abbdb4e332b7"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "photocraft-0.12.0-windows-arm64-portable.zip",
+            "size": 81452592,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-windows-arm64-portable.zip",
+            "sha256": "c187af98e40bc51ab3353159f0aad39ffa508f34d3b0ce7aabfa95ecc5320f02"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.12.0",
+        "date": "2026-10-21T18:28:57Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.12.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "photocraft-0.12.0-linux-x86_64.AppImage",
+            "size": 80026104,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-linux-x86_64.AppImage",
+            "sha256": "da821339afce93b72991c7900a28f589eb06a885e0ab59ea702ddec9a280ac66"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "photocraft-0.12.0-linux-aarch64.AppImage",
+            "size": 75958792,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-linux-aarch64.AppImage",
+            "sha256": "1552c5d4ed82d1a74d7669330ae4904925e2eee5c6546c05012ffe93259a8932"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "photocraft-0.12.0-linux-x86_64.deb",
+            "size": 85612850,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-linux-x86_64.deb",
+            "sha256": "09fb21740b6b78e2ba4b385e562f9f384ab194a314079b3fd7c3a4b222337680"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "photocraft-0.12.0-linux-aarch64.deb",
+            "size": 82164678,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-linux-aarch64.deb",
+            "sha256": "2e7a5d57e3df501fa97e4b0e93e9deed5a359ab29638e7b35de858549a8af0f7"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "photocraft-0.12.0-linux-x86_64.rpm",
+            "size": 85046772,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-linux-x86_64.rpm",
+            "sha256": "ad4881c0bf249bc46a0d584a2b307a32ffc62c7ce1f6223c653e994e16084cfb"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "photocraft-0.12.0-linux-aarch64.rpm",
+            "size": 81433441,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.12.0/photocraft-0.12.0-linux-aarch64.rpm",
+            "sha256": "e0cbf9729046371178dff1e51dacda454f9dd1c2c650d33283dc3ea499962d2c"
+          }
+        ]
+      }
+    },
+    "storytold/vectorcraft": {
+      "mac": {
+        "tag": "v0.14.0",
+        "date": "2026-10-21T07:46:25Z",
+        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.14.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "vectorcraft-0.14.0-macos-universal.dmg",
+            "size": 140813282,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-macos-universal.dmg",
+            "sha256": "29630c9c4dbc5be351b378f0775feed617a7cc599b93859cb98e3f7d379bcd7b"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.14.0",
+        "date": "2026-10-21T07:46:25Z",
+        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.14.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "vectorcraft-0.14.0-windows-x64.msi",
+            "size": 104124416,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-windows-x64.msi",
+            "sha256": "41d8bb251adb796220de1c1f5b8e72dd23304e0ee308d26a2bfa886c3944dedc"
+          },
+          {
+            "arch": "x86",
+            "kind": "msi",
+            "name": "vectorcraft-0.14.0-windows-x86.msi",
+            "size": 101253120,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-windows-x86.msi",
+            "sha256": "abc75980f3163a1e7383768e17a44f7214eff559cef78452f62325fa2b60fc6f"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "vectorcraft-0.14.0-windows-arm64.msi",
+            "size": 98201600,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-windows-arm64.msi",
+            "sha256": "c0ac009e999a382755558a11376500990b90106b4d6883db689fdd4e69cfa9e9"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "vectorcraft-0.14.0-windows-x64-portable.zip",
+            "size": 129075829,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-windows-x64-portable.zip",
+            "sha256": "4525707341aa298f648c32878f93da2af06742e53d0922b5de418b3dbd6b235e"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "vectorcraft-0.14.0-windows-x86-portable.zip",
+            "size": 123931502,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-windows-x86-portable.zip",
+            "sha256": "c07290e1d0b36d7770bf6c5c148c7ce933cb6d9dc8553aee1ac9e2febc3dee6f"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "vectorcraft-0.14.0-windows-arm64-portable.zip",
+            "size": 123083915,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-windows-arm64-portable.zip",
+            "sha256": "4b109ec0a3d0326461dee76352e49ade18e0b1aff115f3b6f41443ded8a29f61"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.14.0",
+        "date": "2026-10-21T07:46:25Z",
+        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.14.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "vectorcraft-0.14.0-linux-x86_64.AppImage",
+            "size": 119454200,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-linux-x86_64.AppImage",
+            "sha256": "89757a1e806164b95eae2cef9bdf98bf1a03ef10a9b2cc8a50bd05c54b74c792"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "vectorcraft-0.14.0-linux-aarch64.AppImage",
+            "size": 114678280,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-linux-aarch64.AppImage",
+            "sha256": "5aadfa7919085a543ab5261d77c4c38d64096493ca7a49e22da32880926fad94"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "vectorcraft-0.14.0-linux-x86_64.deb",
+            "size": 128254700,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-linux-x86_64.deb",
+            "sha256": "bc0a8305d84709913217e559eaa865c938c9269849fe6d5f1dd25b080c17f0a3"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "vectorcraft-0.14.0-linux-aarch64.deb",
+            "size": 124262622,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-linux-aarch64.deb",
+            "sha256": "22b1572df7002ac03debe0c710ce0dfb48040927774ad106d4850aee9ae7080e"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "vectorcraft-0.14.0-linux-x86_64.rpm",
+            "size": 127397127,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-linux-x86_64.rpm",
+            "sha256": "2bc8afad53119395b4062227b3f62dfbaa1375ccbf3867e833c503df4f8657f7"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "vectorcraft-0.14.0-linux-aarch64.rpm",
+            "size": 123197164,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.14.0/vectorcraft-0.14.0-linux-aarch64.rpm",
+            "sha256": "d11a6331fe031c0aee543da78e6b7a28445f6d714701537503cf8a4c06e99adf"
+          }
+        ]
+      }
+    },
+    "super-productivity/super-productivity": {
+      "mac": {
+        "tag": "v19.2.0",
+        "date": "2026-10-11T11:45:19Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.2.0",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "superProductivity-universal.dmg",
+            "size": 242083204,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-universal.dmg",
+            "sha256": "ecd373001b4404e781088a189d6646ec556d30cfe3c41f0d9b125c8a4f4c002a"
+          },
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "superProductivity-x64.dmg",
+            "size": 145957455,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-x64.dmg",
+            "sha256": "8228e2841beb5bc58fd136e59aec09f6785f1b0d54db077f5aedbfab4d1d5a4c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "superProductivity-arm64.dmg",
+            "size": 140302516,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-arm64.dmg",
+            "sha256": "ed1e5cfb0487654198d688df2079f030495ced1f998d23e594d2d0b7b826f683"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v19.2.0",
+        "date": "2026-10-11T11:45:19Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.2.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Super-Productivity-Setup.exe",
+            "size": 245226024,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/Super-Productivity-Setup.exe",
+            "sha256": "0acd52da7f75d4d65b81c5c850e1c92641f25238df33153d4c07847a14960a1b"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Super-Productivity-Setup-x64.exe",
+            "size": 245226024,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/Super-Productivity-Setup-x64.exe",
+            "sha256": "0acd52da7f75d4d65b81c5c850e1c92641f25238df33153d4c07847a14960a1b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "Super-Productivity-Setup-arm64.exe",
+            "size": 245226024,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/Super-Productivity-Setup-arm64.exe",
+            "sha256": "0acd52da7f75d4d65b81c5c850e1c92641f25238df33153d4c07847a14960a1b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "superProductivity-arm64.exe",
+            "size": 244987456,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-arm64.exe",
+            "sha256": "8f4349807948ac6ecf428712311542f818da54949fb5202e3030edb4c9e76d76"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v19.2.0",
+        "date": "2026-10-11T11:45:19Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.2.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "superProductivity-x86_64.AppImage",
+            "size": 145368035,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-x86_64.AppImage",
+            "sha256": "5154435a613369c32fda06a6116fceb70b706d2050aca102323525e6dfd62d26"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "superProductivity-amd64.deb",
+            "size": 114493852,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-amd64.deb",
+            "sha256": "aa48aa092d3ac456460277b04b8a93fb0fed009385729bf2898f56d893dd2443"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "superProductivity-x86_64.rpm",
+            "size": 100350453,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/superProductivity-x86_64.rpm",
+            "sha256": "b8c18b797b516f81e2ab12ea3c7d713a5f2436545f0b9dbaa50fc02bcfcafe6d"
+          }
+        ]
+      },
+      "android": {
+        "tag": "v19.2.0",
+        "date": "2026-10-11T11:45:19Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.2.0",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "app-play-release.apk",
+            "size": 22872841,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.2.0/app-play-release.apk",
+            "sha256": "8c876be35a3bb9464ecb35e234d96518590ec4b28414055d3957d8a72328c8d0"
+          }
+        ]
+      }
+    },
+    "supertuxkart/stk-code": {
+      "mac": {
+        "tag": "1.5",
+        "date": "2025-10-20T16:48:01Z",
+        "page": "https://github.com/supertuxkart/stk-code/releases/tag/1.5",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "zip",
+            "name": "SuperTuxKart-1.5-mac-signed.zip",
+            "size": 750212461,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-mac-signed.zip",
+            "sha256": "c266acdb8a63a3fe30f52652d9b749f5beba4abeb9e54382fbb934b00c53b303"
+          }
+        ]
+      },
+      "win": {
+        "tag": "1.5",
+        "date": "2025-10-20T16:48:01Z",
+        "page": "https://github.com/supertuxkart/stk-code/releases/tag/1.5",
+        "files": [
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "SuperTuxKart-1.5-installer-aarch64.exe",
+            "size": 752427840,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-installer-aarch64.exe",
+            "sha256": "a2b2e80ef5be7d40ee72a63829c0b40d0e096c0d8b686dd142d681123b46e875"
+          },
+          {
+            "arch": "x86",
+            "kind": "exe",
+            "name": "SuperTuxKart-1.5-installer-i686.exe",
+            "size": 723623185,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-installer-i686.exe",
+            "sha256": "9270bb5c5e8e798fdd436567ca3626f88949c54f20eacfd2dfde4daf81d9e899"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "SuperTuxKart-1.5-installer-x86_64.exe",
+            "size": 723247478,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-installer-x86_64.exe",
+            "sha256": "a1260ebb73dd9da13ec3e37f526f29e494b3b66c00c05fd70767b30a4497d95e"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "SuperTuxKart-1.5-win.zip",
+            "size": 922430727,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-win.zip",
+            "sha256": "9df7e2d67e8562127a3bb633030f1bd4ee77fa9e7f0ae110897473025af8acdc"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "1.5",
+        "date": "2025-10-20T16:48:01Z",
+        "page": "https://github.com/supertuxkart/stk-code/releases/tag/1.5",
+        "files": [
+          {
+            "arch": "x86",
+            "kind": "tar",
+            "name": "SuperTuxKart-1.5-linux-x86.tar.gz",
+            "size": 735512814,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-linux-x86.tar.gz",
+            "sha256": "b13e7b8e7455ed66b8a82f29d7f7ce4f05df7a533ae9f45c91d7d0bea32a38eb"
+          },
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "SuperTuxKart-1.5-linux-x86_64.tar.gz",
+            "size": 735211939,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-linux-x86_64.tar.gz",
+            "sha256": "57090b6c2163eb691f20104ae9712204acbb4e8341059dee0a5ff5315efc401b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "SuperTuxKart-1.5-linux-arm64.tar.gz",
+            "size": 734267951,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-linux-arm64.tar.gz",
+            "sha256": "961b4b691b44547cdcada7ba39dad1561a6e7e766c90b22ca2df1fa18aa2e477"
+          }
+        ]
+      },
+      "android": {
+        "tag": "1.5",
+        "date": "2025-10-20T16:48:01Z",
+        "page": "https://github.com/supertuxkart/stk-code/releases/tag/1.5",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "SuperTuxKart-1.5.apk",
+            "size": 183727403,
+            "url": "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5.apk",
+            "sha256": "e1f2f49152abfb8f3ed0ced47981e84096758bff9758563aa3b917111a2a3cbd"
+          }
+        ]
+      }
+    },
+    "syncthing/syncthing": {
+      "mac": {
+        "tag": "v2.1.7",
+        "date": "2026-10-21T06:09:14Z",
+        "page": "https://github.com/syncthing/syncthing/releases/tag/v2.1.7",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "zip",
+            "name": "syncthing-macos-universal-v2.1.7.zip",
+            "size": 28225573,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-universal-v2.1.7.zip",
+            "sha256": "a98fb709c79412e5586c81a1586bfb256b6e5a97b067ddf7447155bcdf6aac3f"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "syncthing-macos-amd64-v2.1.7.zip",
+            "size": 14889765,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-amd64-v2.1.7.zip",
+            "sha256": "b8be90176d0f24daebae7b5aaddac52ebfae395df6d99f5e0e54656db00868cb"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "syncthing-macos-arm64-v2.1.7.zip",
+            "size": 13372993,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-arm64-v2.1.7.zip",
+            "sha256": "2df075b463231a307c91da657157beaed06383a941ba7ea04d33d536e3c4af38"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v2.1.7",
+        "date": "2026-10-21T06:09:14Z",
+        "page": "https://github.com/syncthing/syncthing/releases/tag/v2.1.7",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "syncthing-windows-amd64-v2.1.7.zip",
+            "size": 14281765,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-amd64-v2.1.7.zip",
+            "sha256": "3ce7da770f546a8d02b65b2e7ee31f2a3b8b7c3f990ede045590cca4172ecfe1"
+          },
+          {
+            "arch": "x86",
+            "kind": "zip",
+            "name": "syncthing-windows-386-v2.1.7.zip",
+            "size": 13919162,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-386-v2.1.7.zip",
+            "sha256": "8b3ef0563cc21d923c9faa4282f07c94eea039dba658ef435ab5ac99020ed122"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "syncthing-windows-arm64-v2.1.7.zip",
+            "size": 12924843,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-arm64-v2.1.7.zip",
+            "sha256": "d535ffd611b3af223de64bc5dfc60c378881eb13d5c8ecb1431b7407094c15ff"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v2.1.7",
+        "date": "2026-10-21T06:09:14Z",
+        "page": "https://github.com/syncthing/syncthing/releases/tag/v2.1.7",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "syncthing_2.1.7_amd64.deb",
+            "size": 14054904,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing_2.1.7_amd64.deb",
+            "sha256": "01400d260bb6e47f1fe432bbb462cdb35ea6f78fc498198dfba6e292a3614837"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "syncthing_2.1.7_arm64.deb",
+            "size": 12901050,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing_2.1.7_arm64.deb",
+            "sha256": "1ce6836149febb1409ebe2a9876cb8cd5bba917d64029ed75afe72b780c691a9"
+          },
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "syncthing-linux-amd64-v2.1.7.tar.gz",
+            "size": 14046697,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz",
+            "sha256": "2edc416e7ed136b7c858ed5f3f02a3b8316589605e54c380228ceea7acbf0142"
+          },
+          {
+            "arch": "x86",
+            "kind": "tar",
+            "name": "syncthing-linux-386-v2.1.7.tar.gz",
+            "size": 13497205,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-386-v2.1.7.tar.gz",
+            "sha256": "3cbee24e509011d19859a2147f641b6cfff6e63e23ad3c30a410ea79f9322bac"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "syncthing-linux-arm64-v2.1.7.tar.gz",
+            "size": 12866755,
+            "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-arm64-v2.1.7.tar.gz",
+            "sha256": "48e456690cd2b97e7d26b02b5ac35f62a3b36172267b144cfeaf02c993ab955c"
+          }
+        ]
+      }
+    },
+    "VSCodium/vscodium": {
+      "mac": {
+        "tag": "1.140.06880",
+        "date": "2026-10-13T17:03:30Z",
+        "page": "https://github.com/VSCodium/vscodium/releases/tag/1.140.06880",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "VSCodium.x64.1.140.06880.dmg",
+            "size": 211609282,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodium.x64.1.140.06880.dmg",
+            "sha256": "821566b5191c92e1173f4b09de26147635da53a037ee58334c5023622bad2f67"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "VSCodium.arm64.1.140.06880.dmg",
+            "size": 204588412,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodium.arm64.1.140.06880.dmg",
+            "sha256": "e51413d752204db0dd64f9e6fa15398a674967687ab72b2ba95b9b2279ff6f6f"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "VSCodium-darwin-x64-1.140.06880.zip",
+            "size": 213449037,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodium-darwin-x64-1.140.06880.zip",
+            "sha256": "e828c20847f4c00f0d9396f168a6cd536d0df5e32903b880541ddc8022264a97"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "VSCodium-darwin-arm64-1.140.06880.zip",
+            "size": 206074452,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodium-darwin-arm64-1.140.06880.zip",
+            "sha256": "3a0ba1a13b6d743f79ffc20bebd7a2ef8bab2b40e54bcc80fae123da9ed552e0"
+          }
+        ]
+      },
+      "win": {
+        "tag": "1.140.06880",
+        "date": "2026-10-13T17:03:30Z",
+        "page": "https://github.com/VSCodium/vscodium/releases/tag/1.140.06880",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "VSCodiumUserSetup-x64-1.140.06880.exe",
+            "size": 162685448,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodiumUserSetup-x64-1.140.06880.exe",
+            "sha256": "cd5b65ed9447c1d5e3028c75ccb9b294814b7ecf3ca8703ecbd82c8896b7ca52"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "VSCodiumUserSetup-arm64-1.140.06880.exe",
+            "size": 153558072,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodiumUserSetup-arm64-1.140.06880.exe",
+            "sha256": "7c4a58b1b40cbf94c2a055d1c61f96909c8b3cdd4379c6bc088946df5d1e76ee"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "VSCodiumSetup-x64-1.140.06880.exe",
+            "size": 162685048,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodiumSetup-x64-1.140.06880.exe",
+            "sha256": "38cde2ca894767d797f00fa50806c0a1eb0a674e9784de1301e78ab3c6f520de"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "VSCodiumSetup-arm64-1.140.06880.exe",
+            "size": 153557704,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodiumSetup-arm64-1.140.06880.exe",
+            "sha256": "01514583a1fba256a3c896e303bf4b7d6ccfe0e720105ad79459b0d9c46cb1be"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "1.140.06880",
+        "date": "2026-10-13T17:03:30Z",
+        "page": "https://github.com/VSCodium/vscodium/releases/tag/1.140.06880",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "VSCodium-1.140.06880-anylinux-x86_64.AppImage",
+            "size": 193460378,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodium-1.140.06880-anylinux-x86_64.AppImage",
+            "sha256": "b08aa079b6b20339cb78324161cc8c9bcbcdd866767b950385b28c9f4275086c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "VSCodium-1.140.06880-anylinux-aarch64.AppImage",
+            "size": 186195740,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/VSCodium-1.140.06880-anylinux-aarch64.AppImage",
+            "sha256": "f79748725a1cb952f91416d1d72b818d19b434b9003b05346a0b8c1e3b710179"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "codium_1.140.06880_amd64.deb",
+            "size": 150645492,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/codium_1.140.06880_amd64.deb",
+            "sha256": "9521c5dbbef5b1f0b770910a48d6a60e9351cff08a70b5a4ce7868cebc2e2f21"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "codium_1.140.06880_arm64.deb",
+            "size": 141732544,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/codium_1.140.06880_arm64.deb",
+            "sha256": "8db4a758e44074d811f4b047abfa191742012fdb6ea0dbbc19a84816e501d69d"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "codium-1.140.06880-el8.x86_64.rpm",
+            "size": 213937630,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/codium-1.140.06880-el8.x86_64.rpm",
+            "sha256": "f138e6e3c43e23398c93d75c4264095f9296a5a8a9a7525de93fccb5542698a2"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "codium-1.140.06880-el8.aarch64.rpm",
+            "size": 210490651,
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.140.06880/codium-1.140.06880-el8.aarch64.rpm",
+            "sha256": "4ba2afb5430f1cc2ab8f302e28ede5b05cfb1ea7d2af6790d88f243a4e5c9692"
+          }
+        ]
+      }
+    },
+    "zed-industries/zed": {
+      "mac": {
+        "tag": "v1.25.2",
+        "date": "2026-10-21T20:54:49Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "Zed-x86_64.dmg",
+            "size": 96054085,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-x86_64.dmg",
+            "sha256": "03d82136a68e13edbe3e624433de28af0c25ca86b9e35dab276379bd521519cc"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "Zed-aarch64.dmg",
+            "size": 87116314,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-aarch64.dmg",
+            "sha256": "c427b19bb0d55f5bd99391b21e7bda0dcf892abd80dbc020ef645c9d86457940"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v1.25.2",
+        "date": "2026-10-21T20:54:49Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Zed-x86_64.exe",
+            "size": 64212392,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-x86_64.exe",
+            "sha256": "a610ed6f9246c68387b25bcf86c694d4a4a714c4c29f1b38de2240e44665ef25"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "Zed-aarch64.exe",
+            "size": 57342584,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-aarch64.exe",
+            "sha256": "efc7d152ed45e17112dfd0743868f6c15d9c852c67d08d9f53fb14e6c43852bd"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v1.25.2",
+        "date": "2026-10-21T20:54:49Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.2",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "zed-linux-x86_64.tar.gz",
+            "size": 89801314,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/zed-linux-x86_64.tar.gz",
+            "sha256": "b405ebea810c82ff84854631e7b2853ae1f22dd1b7e306cb57726471c6617508"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "zed-linux-aarch64.tar.gz",
+            "size": 84807190,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/zed-linux-aarch64.tar.gz",
+            "sha256": "5cc192ea154b273efd9a090b76ec5fe482647cbc9aea27a41fb9b42d8c95d63c"
+          }
+        ]
+      }
+    }
   },
   "sandbox": [],
   "candidates": [],

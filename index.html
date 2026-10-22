@@ -274,14 +274,15 @@ a.tile:hover .stack-item { background: var(--hover); }
   background: var(--accent-fill);
   transform: scaleX(0); transform-origin: left center;
 }
-.get.is-installing {
+.get.is-busy {
   background: var(--surface-2); cursor: progress;
   font-size: 13px; font-weight: 600; letter-spacing: 0;
 }
-.get.is-installing:active { transform: none; }
-.get.is-filling .get-fill { transform: scaleX(1); transition: transform var(--d, 2400ms) cubic-bezier(0.35, 0.1, 0.4, 1); }
-.get-open { background: var(--surface-2); color: var(--accent); }
-.get-open:hover { background: var(--surface-3); }
+.get.is-busy:active { transform: none; }
+.get.is-filling .get-fill { transform: scaleX(1); transition: transform var(--d, 1200ms) cubic-bezier(0.35, 0.1, 0.4, 1); }
+/* Ведёт на другой сайт: веб-версия, страница загрузки проекта или GitHub */
+.get.is-out { background: var(--surface-2); color: var(--accent); letter-spacing: 0.01em; }
+.get.is-out:hover { background: var(--surface-3); }
 
 /* ---------- Полки ---------- */
 .shelf { display: flex; flex-direction: column; gap: 14px; }
@@ -704,6 +705,33 @@ button.pill-link:disabled { opacity: 0.5; cursor: progress; }
 .star-btn.is-on:hover { background: var(--accent-fill); }
 .star-btn.is-on svg { fill: currentColor; }
 .d-note { margin: 4px 0 0; color: var(--danger); font-size: 13px; line-height: 18px; }
+.d-note.is-info { color: var(--fg-2); }
+/* Что скачает кнопка: система, сборка, размер, версия */
+.d-dl { margin: 6px 0 0; color: var(--fg-2); font-size: 13px; line-height: 18px; }
+.d-dl a { color: var(--accent); }
+.d-dl a:hover { text-decoration: underline; }
+
+/* ---------- Раздел «Загрузка» ---------- */
+.dl-groups { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
+@media (min-width: 900px) { .dl-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 56px; } }
+.dl-os { margin: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; padding-bottom: 6px; border-bottom: 1px solid var(--separator); font: 600 17px/22px var(--font); }
+.dl-ver { color: var(--fg-2); font-size: 13px; font-weight: 400; }
+.dl-list { list-style: none; margin: 0; padding: 0; }
+.dl-row { display: flex; align-items: center; gap: 12px; padding-block: 10px; border-bottom: 1px solid var(--separator); }
+.dl-main { display: flex; flex-direction: column; gap: 1px; min-width: 0; flex: 1; }
+.dl-badge { font: 600 11px/14px var(--font); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.dl-link { align-self: flex-start; color: var(--accent); font-weight: 600; }
+.dl-link:hover { text-decoration: underline; }
+.dl-name { font: 12px/16px var(--font-mono); color: var(--fg-2); overflow-wrap: anywhere; }
+.dl-side { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.dl-size { font-variant-numeric: tabular-nums; }
+.dl-sha { padding: 0; border: 0; border-radius: 4px; background: none; color: var(--fg-2); font: 11px/16px var(--font-mono); cursor: pointer; }
+.dl-sha:hover { color: var(--fg); }
+.dl-foot { margin: 2px 0 0; max-width: 72ch; color: var(--fg-2); font-size: 13px; line-height: 20px; }
+.dl-foot code { padding: 1px 5px; border-radius: 5px; background: var(--surface-2); color: var(--fg); font: 12px/18px var(--font-mono); white-space: nowrap; }
+.dl-foot a, .dl-block .d-text a { color: var(--accent); }
+.dl-foot a:hover, .dl-block .d-text a:hover { text-decoration: underline; }
+.dl-foot svg, .dl-block .d-text svg { width: 12px; height: 12px; margin-left: 2px; vertical-align: -1px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .link-btn { padding: 0; border: 0; border-radius: 4px; background: none; color: var(--accent); font: inherit; cursor: pointer; }
 .shelf-sub a { color: var(--accent); }
 .link-btn:hover, .shelf-sub a:hover { text-decoration: underline; }
@@ -1343,9 +1371,32 @@ select.input option { background: var(--surface); color: var(--fg); }
  "card.thirdPartyTitle": "Стороннее приложение из песочницы",
  "card.license": "Лицензия",
  "card.rating": "Рейтинг {rating} из 5, {stars}. Открыть репозиторий",
- "get.openSr": "{name}: релизы на GitHub",
- "get.started": "{name}: установка началась",
- "get.done": "{name} установлено",
+ "get.download": "Скачать",
+ "get.open": "Открыть",
+ "get.site": "Сайт",
+ "get.busy": "Загрузка…",
+ "get.started": "{name}: скачивается {file}",
+ "get.note": "Скачивается {file}, {size}. Когда загрузка закончится, откройте файл из папки «Загрузки».",
+ "get.webTitle": "Веб-версия на {host}",
+ "get.siteTitle": "Загрузка на сайте {host}",
+ "get.repoTitle": "Готовых файлов для вашей системы нет, инструкции на GitHub",
+ "dl.title": "Загрузка",
+ "dl.lead": "Файлы скачиваются напрямую из релизов {repo} на GitHub. Робот VibeMarket проверяет новые версии каждый час.",
+ "dl.version": "{tag}, {date}",
+ "dl.yours": "Для вашего компьютера",
+ "dl.copy": "Скопировать SHA-256",
+ "dl.copied": "Скопировано",
+ "dl.check": "Сверить скачанный файл: {mac} на macOS и Linux или {win} в Windows.",
+ "dl.all": "Все файлы и прошлые версии на GitHub",
+ "dl.web": "{name} работает в браузере, устанавливать ничего не нужно.",
+ "dl.site": "Готовые файлы проект раздаёт на своём сайте {host}.",
+ "dl.repo": "Готовых файлов в релизах на GitHub нет, способы установки описаны в репозитории.",
+ "dl.noOs": "Для {os} готовых файлов нет.",
+ "dl.yourSystem": "вашей системы",
+ "dl.alt": "Mac на Intel?",
+ "dl.altLink": "Скачать для Intel",
+ "dl.arch.universal": "Универсальная",
+ "dl.arch.x86": "32 бита",
  "detail.announce": "Страница приложения {name}",
  "detail.source": "Исходный код",
  "detail.thirdTitle": "Стороннее приложение",
@@ -1712,14 +1763,17 @@ select.input option { background: var(--surface); color: var(--fg); }
     return text.replace(/\{(\w+)\}/g, (match, name) => (name in vars ? vars[name] : match));
   };
 
-  let fmtCompact, fmtRating, fmtInt;
+  let fmtCompact, fmtRating, fmtInt, fmtMB, fmtGB;
   const setFormatters = () => {
     const tag = LANGS[lang].intl;
     fmtCompact = new Intl.NumberFormat(tag, { notation: 'compact', maximumFractionDigits: 1 });
     fmtRating = new Intl.NumberFormat(tag, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
     fmtInt = new Intl.NumberFormat(tag);
+    fmtMB = new Intl.NumberFormat(tag, { style: 'unit', unit: 'megabyte', maximumFractionDigits: 0 });
+    fmtGB = new Intl.NumberFormat(tag, { style: 'unit', unit: 'gigabyte', maximumFractionDigits: 1 });
     pluralRules = new Intl.PluralRules(tag);
   };
+  const fmtSize = bytes => (bytes >= 1024 ** 3 ? fmtGB.format(bytes / 1024 ** 3) : fmtMB.format(Math.max(1, Math.round(bytes / 1024 ** 2))));
   setFormatters();
   const formatDate = (date, options) => new Date(date).toLocaleDateString(LANGS[lang].intl, options);
 
@@ -1755,30 +1809,122 @@ select.input option { background: var(--surface); color: var(--fg); }
   // 1 000 звёзд → 1, 200 000 звёзд → 5, логарифмическая шкала
   const ratingOf = stars => Math.max(1, Math.min(5, 1 + 4 * Math.log(stars / 1000) / Math.log(200)));
 
-  /* ---------- Состояние установки ---------- */
-  const KEY = 'vibemarket:installed';
-  const state = new Map();
-  try {
-    JSON.parse(localStorage.getItem(KEY) || '[]').forEach(id => { if (byId[id]) state.set(id, 'done'); });
-  } catch (e) { /* хранилище недоступно, начинаем с чистого листа */ }
-  const persist = () => {
-    try {
-      localStorage.setItem(KEY, JSON.stringify([...state].filter(([, s]) => s === 'done').map(([id]) => id)));
-    } catch (e) { /* не критично */ }
+  /* ---------- Скачивание ---------- */
+  // Раньше кнопка только изображала установку и запоминала это. Старая отметка больше не нужна.
+  try { localStorage.removeItem('vibemarket:installed'); } catch (e) { /* хранилище недоступно */ }
+
+  // Куда ведёт кнопка, если в релизах на GitHub нет файла для вашей системы:
+  // веб-версия, страница загрузки на сайте проекта или нужное место на GitHub
+  const LINKS = {
+    excalidraw: { web: 'https://excalidraw.com' },
+    penpot: { web: 'https://design.penpot.app' },
+    blender: { site: 'https://www.blender.org/download/' },
+    krita: { site: 'https://krita.org/en/download/' },
+    inkscape: { site: 'https://inkscape.org/release/' },
+    gimp: { site: 'https://www.gimp.org/downloads/' },
+    libreoffice: { site: 'https://www.libreoffice.org/download/download-libreoffice/' },
+    vlc: { site: 'https://www.videolan.org/vlc/' },
+    jellyfin: { site: 'https://jellyfin.org/downloads/' },
+    mpv: { site: 'https://mpv.io/installation/' },
+    signal: { site: 'https://signal.org/download/' },
+    mullvad: { site: 'https://mullvad.net/download/' },
+    tauri: { site: 'https://tauri.app/start/' },
+    comfyui: { site: 'https://www.comfy.org/download' },
+    luanti: { site: 'https://www.luanti.org/downloads/' },
+    openttd: { site: 'https://www.openttd.org/downloads/openttd-releases/latest' },
+    wesnoth: { site: 'https://www.wesnoth.org/download/' },
+    sdwebui: { repo: 'https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running' },
+    llamacpp: { repo: 'https://github.com/ggml-org/llama.cpp#quick-start' },
+    whispercpp: { repo: 'https://github.com/ggml-org/whisper.cpp#quick-start' },
+    mindustry: { repo: 'https://github.com/Anuken/Mindustry/releases' },
   };
+
+  // Система и процессор посетителя. Узнаём в браузере и никуда не отправляем.
+  // Chrome и Edge сообщают процессор точно (ниже, getHighEntropyValues), Safari и Firefox — только систему.
+  const PLATFORM = (() => {
+    const ua = navigator.userAgent;
+    const os = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? 'ios'
+      : /Android/.test(ua) ? 'android'
+      : /Windows/.test(ua) ? 'win'
+      : /Macintosh|Mac OS X/.test(ua) ? 'mac'
+      : /CrOS/.test(ua) ? 'other'
+      : /Linux|X11/.test(ua) ? 'linux' : 'other';
+    const arch = os === 'linux' ? (/aarch64|arm64/.test(ua) ? 'arm64' : /x86_64|amd64/.test(ua) ? 'x64' : null) : null;
+    return { os, arch };
+  })();
+  // Какие сборки подходят. Уровни по очереди: внутри уровня сборки равны, и выигрывает лучший файл по мнению робота
+  // (установщик раньше архива). Неизвестный процессор на Mac: universal или Apple Silicon (так у всех Mac с 2020 года),
+  // рядом ссылка для Intel; сборка только для Intel запустится и на Apple Silicon через Rosetta.
+  // Windows без данных получает x64: его запускает и Windows на ARM.
+  const ARCH_TIERS = {
+    mac: { arm64: [['arm64', 'universal', 'any'], ['x64']], x64: [['x64', 'universal', 'any']], unknown: [['universal', 'any', 'arm64'], ['x64']] },
+    win: { arm64: [['arm64'], ['x64', 'any'], ['x86']], x64: [['x64', 'any'], ['x86']], x86: [['x86', 'any']], unknown: [['x64', 'any'], ['x86']] },
+    linux: { arm64: [['arm64', 'any']], x64: [['x64', 'any']], unknown: [['x64', 'any']] },
+    android: { unknown: [['universal', 'any', 'arm64']] },
+  };
+  const tiersFor = (os, arch) => ARCH_TIERS[os]?.[arch] || ARCH_TIERS[os]?.unknown || [];
+  const OS_CODE = { mac: 'm', win: 'w', linux: 'l', android: 'a', ios: 'i' };
+  const KIND_LABEL = { dmg: 'DMG', pkg: 'PKG', zip: 'ZIP', tar: 'TAR', exe: 'EXE', msi: 'MSI', msix: 'MSIX', '7z': '7Z', appimage: 'AppImage', deb: 'DEB', rpm: 'RPM', flatpak: 'Flatpak', run: 'RUN', apk: 'APK' };
+  const osLabel = os => t(`os.${OS_CODE[os]}`);
+  const archLabel = (os, arch) => ({ universal: t('dl.arch.universal'), x86: t('dl.arch.x86'), arm64: os === 'mac' ? 'Apple Silicon' : 'ARM64', x64: os === 'mac' ? 'Intel' : 'x64' })[arch] || '';
+  const fileLabel = (os, file) => [archLabel(os, file.arch), KIND_LABEL[file.kind]].filter(Boolean).join(' · ');
+  const hostOf = url => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return url; } };
+
+  // Файлы из catalog.json, ключ — репозиторий в нижнем регистре. Робот обновляет их раз в час.
+  let DOWNLOADS = new Map();
+  let downloadsReady = false;
+  const releasesOf = app => DOWNLOADS.get(app.repo.toLowerCase());
+  const pickFile = (rel, os, arch) => {
+    for (const tier of tiersFor(os, arch)) {
+      const file = rel?.files.find(f => tier.includes(f.arch));
+      if (file) return file;
+    }
+    return null;
+  };
+  // В списке файлов своей системы подходящие сборки идут первыми
+  const fileOrder = (os, files) => {
+    if (os !== PLATFORM.os) return files;
+    const tiers = tiersFor(os, PLATFORM.arch);
+    const level = f => { const i = tiers.findIndex(tier => tier.includes(f.arch)); return i < 0 ? tiers.length : i; };
+    return [...files].sort((a, b) => level(a) - level(b));
+  };
+  // Что делает кнопка: скачивает файл, открывает веб-версию, ведёт на сайт проекта или на GitHub
+  const getTarget = app => {
+    const links = LINKS[app.id] || {};
+    const all = releasesOf(app);
+    const rel = all?.[PLATFORM.os];
+    const file = pickFile(rel, PLATFORM.os, PLATFORM.arch);
+    if (file) {
+      const alt = PLATFORM.os === 'mac' && !PLATFORM.arch && file.arch === 'arm64' ? rel.files.find(f => f.arch === 'x64') : null;
+      return { kind: 'file', href: file.url, file, rel, alt };
+    }
+    if (links.web) return { kind: 'web', href: links.web };
+    if (links.site) return { kind: 'site', href: links.site };
+    // catalog.json ещё грузится: подпись уже «Скачать», а до его прихода ссылка ведёт на релизы
+    if (!downloadsReady && !links.repo) return { kind: 'pending', href: `https://github.com/${app.repo}/releases` };
+    // Робот не нашёл файлов в релизах — ведём к описанию установки; каталога нет вовсе — к релизам
+    return { kind: 'repo', href: links.repo || `https://github.com/${app.repo}${all || !DOWNLOADS.size ? '/releases' : '#readme'}` };
+  };
+  const targetTitle = (app, g) => g.kind === 'file' ? `${osLabel(PLATFORM.os)} · ${fileLabel(PLATFORM.os, g.file)} · ${fmtSize(g.file.size)} · ${g.rel.tag}`
+    : g.kind === 'web' ? t('get.webTitle', { host: hostOf(g.href) })
+    : g.kind === 'site' ? t('get.siteTitle', { host: hostOf(g.href) })
+    : g.kind === 'pending' ? '' : t('get.repoTitle');
 
   /* ---------- Шаблоны ---------- */
   const iconHTML = (app, size) => `<span class="icon" aria-hidden="true" style="--c1:${app.c[0]};--c2:${app.c[1]};${app.ink ? `--ink:${app.ink};` : ''}${size ? `--s:${size}px` : ''}">` +
     (app.icon ? `<img src="${app.icon}" alt="" loading="lazy" draggable="false">` : `<svg viewBox="0 0 24 24">${GLYPHS[app.glyph] || GLYPHS.blocks}</svg>`) + `</span>`;
 
+  // Кнопка у каждого приложения. Файл скачивается прямо с GitHub, остальное открывается в новой вкладке.
   const getHTML = app => {
-    const s = state.get(app.id) || 'idle';
-    const installing = s === 'installing';
+    const g = getTarget(app);
+    const label = { file: t('get.download'), pending: t('get.download'), web: t('get.open'), site: t('get.site'), repo: 'GitHub' }[g.kind];
+    const title = esc(targetTitle(app, g));
+    const attrs = g.kind === 'file' ? ` data-file="${app.id}"` : ' target="_blank" rel="noopener"';
+    const plain = g.kind === 'file' || g.kind === 'web' || g.kind === 'pending';
     return `<span class="get-wrap" data-app="${app.id}">` +
-      `<button class="get${installing ? ' is-installing is-filling' : ''}" type="button"${s === 'done' ? ' hidden' : ''}${installing ? ' aria-disabled="true"' : ''}>` +
-        `<span class="get-fill" aria-hidden="true"></span><span class="get-label">${installing ? 'Installing…' : 'GET'}</span><span class="sr-only"> ${app.name}</span>` +
-      `</button>` +
-      `<a class="get get-open" href="https://github.com/${app.repo}/releases" target="_blank" rel="noopener"${s === 'done' ? '' : ' hidden'}>OPEN<span class="sr-only"> ${t('get.openSr', { name: app.name })}</span></a>` +
+      `<a class="get${plain ? '' : ' is-out'}" href="${esc(g.href)}"${attrs}${title ? ` title="${title}"` : ''}>` +
+        `<span class="get-fill" aria-hidden="true"></span><span class="get-label">${label}</span><span class="sr-only"> ${plainName(app)}${title ? `: ${title}` : ''}</span>` +
+      `</a>` +
     `</span>`;
   };
 
@@ -2193,7 +2339,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   };
   renderStats();
 
-  /* ---------- GET → Installing… → OPEN ---------- */
+  /* ---------- Скачать → Загрузка… ---------- */
   const live = document.getElementById('live');
   const announce = text => { live.textContent = ''; requestAnimationFrame(() => { live.textContent = text; }); };
   const wrapsOf = id => document.querySelectorAll(`.get-wrap[data-app="${id}"]`);
@@ -2214,47 +2360,58 @@ select.input option { background: var(--surface); color: var(--fg); }
     btn.addEventListener('transitionend', done);
   };
 
-  const install = id => {
-    if ((state.get(id) || 'idle') !== 'idle') return;
+  // Браузер сам показывает ход загрузки, кнопка лишь подтверждает, что она началась
+  const busy = new Set();
+  const started = (id, file) => {
     const app = byId[id];
-    const duration = Math.round(1800 + Math.random() * 1600);
-    state.set(id, 'installing');
+    if (!app || busy.has(id)) return;
+    busy.add(id);
     wrapsOf(id).forEach(wrap => {
-      const btn = wrap.querySelector('button.get');
+      const btn = wrap.querySelector('.get');
       const from = btn.offsetWidth;
-      btn.classList.add('is-installing');
-      btn.setAttribute('aria-disabled', 'true');
-      btn.style.setProperty('--d', duration + 'ms');
-      morphLabel(btn, 'Installing…', from);
+      btn.classList.add('is-busy');
+      morphLabel(btn, t('get.busy'), from);
       requestAnimationFrame(() => requestAnimationFrame(() => btn.classList.add('is-filling')));
     });
-    announce(t('get.started', { name: plainName(app) }));
-    setTimeout(() => finish(id), duration + 150);
-  };
-
-  const finish = id => {
-    state.set(id, 'done');
-    persist();
-    wrapsOf(id).forEach(wrap => {
-      const btn = wrap.querySelector('button.get');
-      const open = wrap.querySelector('a.get-open');
-      const hadFocus = document.activeElement === btn;
-      btn.hidden = true;
-      btn.classList.remove('is-installing', 'is-filling');
-      btn.removeAttribute('aria-disabled');
-      btn.style.width = '';
-      btn.querySelector('.get-label').textContent = 'GET';
-      open.hidden = false;
-      if (hadFocus) open.focus({ preventScroll: true });
-    });
-    announce(t('get.done', { name: plainName(byId[id]) }));
+    announce(t('get.started', { name: plainName(app), file }));
+    setTimeout(() => {
+      busy.delete(id);
+      wrapsOf(id).forEach(wrap => {
+        const btn = wrap.querySelector('.get');
+        const from = btn.offsetWidth;
+        btn.classList.remove('is-busy', 'is-filling');
+        morphLabel(btn, t('get.download'), from);
+      });
+    }, 2600);
   };
 
   document.addEventListener('click', e => {
-    const btn = e.target.closest('button.get');
-    if (!btn) return;
-    install(btn.closest('.get-wrap').dataset.app);
+    const link = e.target.closest('a[data-file]');
+    if (link) {
+      const id = link.dataset.file;
+      const file = byId[id] && getTarget(byId[id]).file;
+      const name = link.dataset.name || file?.name || '';
+      started(id, name);
+      if (openId === id) showDownloadNote(t('get.note', { file: name, size: link.dataset.size || (file ? fmtSize(file.size) : '') }));
+      return;
+    }
+    const sha = e.target.closest('button.dl-sha');
+    if (sha) copySha(sha);
   });
+
+  const copySha = async btn => {
+    const hash = btn.dataset.sha;
+    const text = btn.textContent;
+    try {
+      await navigator.clipboard.writeText(hash);
+      btn.textContent = t('dl.copied');
+    } catch (e) {
+      // Буфер обмена недоступен (встроенное окно): показываем хеш целиком, его можно выделить
+      btn.textContent = hash;
+      return;
+    }
+    setTimeout(() => { btn.textContent = text; }, 1600);
+  };
 
   /* ---------- Карусели ---------- */
   const tracks = new Map();
@@ -2441,6 +2598,55 @@ select.input option { background: var(--surface); color: var(--fg); }
   const infoRow = (label, value) => `<div class="info-row"><dt>${label}</dt><dd>${value}</dd></div>`;
   const outLink = (href, text) => `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
 
+  // Строка под кнопкой: что именно скачается. Для Mac с неизвестным процессором — ссылка на сборку для Intel.
+  const fileLink = (app, file, text) => `<a href="${esc(file.url)}" data-file="${app.id}" data-name="${esc(file.name)}" data-size="${fmtSize(file.size)}">${text}</a>`;
+  const dlLineHTML = app => {
+    const g = getTarget(app);
+    if (g.kind === 'file') {
+      const line = esc(targetTitle(app, g));
+      return g.alt ? `${line}. ${t('dl.alt')} ${fileLink(app, g.alt, t('dl.altLink'))}` : line;
+    }
+    if (g.kind === 'pending') return '';
+    if (g.kind !== 'repo') return esc(targetTitle(app, g));
+    const os = OS_CODE[PLATFORM.os] ? osLabel(PLATFORM.os) : t('dl.yourSystem');
+    return esc(t('dl.noOs', { os }));
+  };
+
+  // Раздел «Загрузка»: все файлы релиза по системам, размер и SHA-256. Ваш файл отмечен.
+  const downloadsHTML = app => {
+    const all = releasesOf(app);
+    const g = getTarget(app);
+    const links = LINKS[app.id] || {};
+    let body;
+    if (all) {
+      const order = ['mac', 'win', 'linux', 'android'].filter(os => all[os]).sort((a, b) => (b === PLATFORM.os) - (a === PLATFORM.os));
+      body = `<p class="d-text">${t('dl.lead', { repo: esc(app.repo) })}</p>
+        <div class="dl-groups">${order.map(os => `
+          <div class="dl-group">
+            <h3 class="dl-os">${osLabel(os)}<span class="dl-ver">${esc(t('dl.version', { tag: all[os].tag, date: formatDate(all[os].date, { day: 'numeric', month: 'long', year: 'numeric' }) }))}</span></h3>
+            <ul class="dl-list">${fileOrder(os, all[os].files).map(f => `
+              <li class="dl-row">
+                <div class="dl-main">
+                  ${g.file === f ? `<span class="dl-badge">${t('dl.yours')}</span>` : ''}
+                  ${fileLink(app, f, fileLabel(os, f) || osLabel(os)).replace('<a ', '<a class="dl-link" ')}
+                  <span class="dl-name">${esc(f.name)}</span>
+                </div>
+                <div class="dl-side">
+                  <span class="dl-size">${fmtSize(f.size)}</span>
+                  ${f.sha256 ? `<button class="dl-sha" type="button" data-sha="${f.sha256}" title="SHA-256: ${f.sha256}" aria-label="${esc(t('dl.copy'))}: ${esc(f.name)}">SHA-256 ${f.sha256.slice(0, 8)}…</button>` : ''}
+                </div>
+              </li>`).join('')}
+            </ul>
+          </div>`).join('')}
+        </div>
+        <p class="dl-foot">${t('dl.check', { mac: '<code>shasum -a 256 file</code>', win: '<code>certutil -hashfile file SHA256</code>' })} ${outLink(`https://github.com/${app.repo}/releases`, t('dl.all') + arrowOut)}</p>`;
+    } else {
+      const text = links.web ? t('dl.web', { name: plainName(app) }) : links.site ? t('dl.site', { host: hostOf(links.site) }) : t('dl.repo');
+      body = `<p class="d-text">${esc(text)} ${outLink(esc(g.href), (g.kind === 'web' ? hostOf(g.href) : g.kind === 'site' ? t('get.site') : 'GitHub') + arrowOut)}</p>`;
+    }
+    return `<section class="d-block wrap dl-block" aria-labelledby="dl-title"><h2 class="shelf-title" id="dl-title">${t('dl.title')}</h2>${body}</section>`;
+  };
+
   const warnIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 4.2 2.6 17.6a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5V14M12 17.2h.01"/></svg>';
   const noticeHTML = (title, text) => `<div class="notice" role="note">${warnIcon}<p class="notice-title">${title}</p><p class="notice-text">${text}</p></div>`;
 
@@ -2462,6 +2668,8 @@ select.input option { background: var(--surface); color: var(--fg); }
           <h1 class="d-name" id="d-title" tabindex="-1">${app.name}</h1>
           <p class="d-sub">${app.desc}</p>
           <div class="d-actions">${getHTML(app)}${starButtonHTML(app)}<a class="pill-link" href="https://github.com/${app.repo}" target="_blank" rel="noopener">${t('detail.source')}${arrowOut}</a></div>
+          <p class="d-dl">${dlLineHTML(app)}</p>
+          <p class="d-note is-info" id="d-dlnote" role="status" hidden></p>
           <p class="d-note" id="d-note" role="status" hidden></p>
         </div>
       </header>
@@ -2508,6 +2716,7 @@ select.input option { background: var(--surface); color: var(--fg); }
           <a class="link-btn report-link" href="${reportURL(app)}" target="_blank" rel="noopener">${t('detail.report')}</a>
         </section>
       </div>
+      ${downloadsHTML(app)}
       ${related.length ? `
       <section class="shelf" aria-labelledby="related-title">
         <div class="shelf-head wrap">
@@ -2670,6 +2879,12 @@ select.input option { background: var(--surface); color: var(--fg); }
     note.textContent = text;
     note.hidden = !text;
   };
+  const showDownloadNote = text => {
+    const note = document.getElementById('d-dlnote');
+    if (!note) return;
+    note.textContent = text;
+    note.hidden = !text;
+  };
 
   const toggleStar = async app => {
     if (pendingStars.has(app.id)) return;
@@ -2811,6 +3026,29 @@ select.input option { background: var(--surface); color: var(--fg); }
     tracks.get(track)?.();
   };
 
+  // Файлы для скачивания. Ссылки принимаются только на релизы того же репозитория на github.com.
+  const ARCHES = ['arm64', 'x64', 'x86', 'universal', 'any'];
+  const sanitizeDownloads = raw => {
+    const out = new Map();
+    if (!raw || typeof raw !== 'object') return out;
+    for (const [repo, byOs] of Object.entries(raw)) {
+      if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo) || !byOs || typeof byOs !== 'object') continue;
+      const prefix = `https://github.com/${repo}/releases/download/`.toLowerCase();
+      const clean = {};
+      for (const os of Object.keys(ARCH_TIERS)) {
+        const rel = byOs[os];
+        if (!rel || !Array.isArray(rel.files)) continue;
+        const files = rel.files
+          .filter(f => f && typeof f.url === 'string' && f.url.toLowerCase().startsWith(prefix) && !/["'<>\s]/.test(f.url)
+            && typeof f.name === 'string' && Number.isFinite(f.size) && f.size > 0 && ARCHES.includes(f.arch) && KIND_LABEL[f.kind])
+          .map(f => ({ url: f.url, name: f.name.slice(0, 200), size: f.size, arch: f.arch, kind: f.kind, sha256: /^[0-9a-f]{64}$/.test(f.sha256 || '') ? f.sha256 : '' }));
+        if (files.length) clean[os] = { tag: String(rel.tag || '').slice(0, 80), date: Number.isNaN(Date.parse(rel.date)) ? Date.now() : rel.date, files };
+      }
+      if (Object.keys(clean).length) out.set(repo.toLowerCase(), clean);
+    }
+    return out;
+  };
+
   const applyRobotCatalog = data => {
     if (!data || data.version !== 1) return;
     if (/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(data.home || '')) HOME_REPO = data.home;
@@ -2823,6 +3061,8 @@ select.input option { background: var(--surface); color: var(--fg); }
       APPS.forEach(a => { if (Number.isFinite(data.stars[a.repo])) a.stars = data.stars[a.repo]; });
     }
     hiddenRepos = new Set((Array.isArray(data.hidden) ? data.hidden : []).map(h => String(h?.repo || '').toLowerCase()).filter(Boolean));
+    DOWNLOADS = sanitizeDownloads(data.downloads);
+    downloadsReady = true;
     SANDBOX_APPS = buildSandbox([...SANDBOX, ...(Array.isArray(data.sandbox) ? data.sandbox : [])]);
     ALL = [...APPS, ...SANDBOX_APPS];
     byId = Object.fromEntries(ALL.map(a => [a.id, a]));
@@ -2847,6 +3087,11 @@ select.input option { background: var(--surface); color: var(--fg); }
       if (res.ok) applyRobotCatalog(await res.json());
     } catch (e) {
       /* страница открыта без catalog.json: остаётся встроенный снимок */
+    }
+    // Без catalog.json файлов нет: кнопки ведут на сайты проектов и на GitHub
+    if (!downloadsReady) {
+      downloadsReady = true;
+      refreshViews();
     }
   };
   renderRules();
@@ -3154,6 +3399,14 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   loadRobotCatalog();
   onScroll();
+
+  // Chrome и Edge сообщают процессор: тогда на Mac с M1–M4 скачается сборка Apple Silicon, на Intel — Intel
+  navigator.userAgentData?.getHighEntropyValues?.(['architecture', 'bitness']).then(v => {
+    const arch = v.architecture === 'arm' ? (v.bitness === '32' ? null : 'arm64') : v.architecture === 'x86' ? (v.bitness === '32' ? 'x86' : 'x64') : null;
+    if (!arch || arch === PLATFORM.arch || PLATFORM.os === 'android' || PLATFORM.os === 'ios') return;
+    PLATFORM.arch = arch;
+    refreshViews();
+  }).catch(() => { /* браузер не сообщает процессор */ });
 })();
 </script>
 

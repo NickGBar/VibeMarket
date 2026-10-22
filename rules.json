@@ -24,5 +24,17 @@
   },
   "limits": {
     "candidatesPerAuthor": 3
+  },
+  "downloads": {
+    "releases": 10,
+    "skip": [
+      "tauri-apps/tauri",
+      "Comfy-Org/ComfyUI",
+      "ggml-org/llama.cpp",
+      "ggml-org/whisper.cpp"
+    ],
+    "tags": {
+      "bitwarden/clients": "^desktop-v"
+    }
   }
 }

@@ -14,10 +14,11 @@ The market runs without a server and without day-to-day moderators. The site is 
 | --- | --- |
 | `index.html` | The whole market page, no build step and no dependencies. Russian is built into it |
 | `locales/` | Site translations into English, Spanish and Chinese |
-| `catalog.json` | Data from the robot: stars, sandbox, voting, hidden apps |
+| `catalog.json` | Data from the robot: stars, download files, sandbox, voting, hidden apps |
 | `rules.json` | The rules the robot follows |
 | `scripts/robot.mjs` | The robot |
 | `scripts/robot-i18n.mjs` | Robot replies and form field labels in every language |
+| `scripts/downloads.mjs` | Sorts release files by system and processor for the Get button |
 | `scripts/check-locales.mjs` | Checks translations against the Russian source |
 | `.github/workflows/robot.yml` | Runs the robot and publishes the site |
 | `.github/ISSUE_TEMPLATE/` | Submission and report forms in four languages |
@@ -58,6 +59,16 @@ Votes from the submission author, from accounts younger than the threshold, vote
 - **Reports.** Every app page has a «Report this app» link. It opens the report form in the site's language with the repository already filled in. Once an app collects `reports.toHide` open reports from different accounts older than 90 days, the robot hides it from all shelves, search and pages. As soon as a maintainer closes the reports, the app comes back on its own.
 - **The `blocked` label.** Put it on an app's submission and the robot removes the app on its next run. Only people with rights to the market repository can set labels. To bring the app back, the author reopens the submission and it goes through voting again.
 - **Daily re-check.** Once a day the robot re-checks published apps. If a repository is deleted, made private, archived or switches to a non-open license, the app is removed and the submission gets a comment explaining why.
+
+## Downloads
+
+The Get button downloads the app with one click, straight from the project's GitHub releases.
+
+1. **The robot sorts the files.** Every hour it reads the latest releases of every app and sorts the files by name (`scripts/downloads.mjs`). The extension gives the system: `.dmg` is macOS, `.msi` and `.exe` are Windows, `.AppImage` and `.deb` are Linux, `.apk` is Android. Words in the name give the processor: `arm64` and `aarch64`, `x64` and `x86_64`, `universal`. Checksums, signatures, server and command-line builds are dropped. Installers come before archives. The result goes to `catalog.json` with the size and SHA-256 of every file.
+2. **The page picks a file.** The browser reports the system, and Chrome and Edge also report the processor. Safari and Firefox don't, so a Mac gets the universal or Apple Silicon build with an Intel link next to it, and Windows gets x64.
+3. **The button says what it will do.** «Get» downloads the file. «Open» opens the web version. «Website» and «GitHub» lead to the project's download page when its releases have no ready-made files. The app page lists every file by system with its size and SHA-256.
+
+`downloads.skip` in `rules.json` lists repositories whose release files aren't the app itself, such as a framework's command-line tool. `downloads.tags` keeps only matching releases when a repository publishes several products. Links to official download pages and web versions are in `LINKS` in `index.html`.
 
 ## Languages
 
@@ -116,7 +127,7 @@ GitHub disables schedules in public repositories after 60 days without activity.
 - Catalog entries are built from validated fields, never copied from the author's files. The robot never runs code from submitted repositories.
 - Voting metadata is kept in the robot's own comment, and the robot only trusts comments by `github-actions[bot]`, so nobody can fake when voting started.
 - Workflows have minimal permissions, and third-party actions are pinned to commit hashes.
-- The page escapes all data from `catalog.json` as untrusted.
+- The page escapes all data from `catalog.json` as untrusted, and accepts download links only to the releases of the same repository on github.com.
 
 ## Local development
 

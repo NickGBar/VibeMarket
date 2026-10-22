@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Робот VibeMarket. Работает в GitHub Actions и ведёт каталог без участия людей:
-// проверяет заявки, считает голоса, публикует и снимает приложения, скрывает их по жалобам
-// и обновляет звёзды. Результат записывается в catalog.json, его читает страница.
+// проверяет заявки, считает голоса, публикует и снимает приложения, скрывает их по жалобам,
+// обновляет звёзды и собирает файлы для кнопки «Скачать». Результат записывается в catalog.json, его читает страница.
 //
 //   node scripts/robot.mjs              полный проход
 //   node scripts/robot.mjs --dry-run    то же, но без записи в GitHub: меняется только catalog.json на диске
@@ -14,6 +14,7 @@ import { createHash } from 'node:crypto';
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { FORM_LABELS, formatDate, msg } from './robot-i18n.mjs';
+import { pickDownloads, releaseOrder } from './downloads.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const API = (process.env.GITHUB_API_URL || 'https://api.github.com').replace(/\/+$/, '');
@@ -498,7 +499,44 @@ async function main() {
   }
   for (const app of catalog.sandbox) if (Number.isFinite(stars[app.repo])) app.stars = stars[app.repo];
 
-  // 8. Перенос на главную: проверено временем и звёздами, без жалоб
+  // 8. Файлы для кнопки «Скачать»: свежие релизы, разобранные по системам и процессорам (scripts/downloads.mjs).
+  // Если GitHub не ответил про репозиторий, остаются прежние файлы.
+  const dlRules = rules.downloads || {};
+  const skipDl = new Set((dlRules.skip || []).map(slug => slug.toLowerCase()));
+  const downloads = Object.fromEntries(Object.entries(catalog.downloads || {}).filter(([slug]) => repos.includes(slug) && !skipDl.has(slug.toLowerCase())));
+  const dlRepos = repos.filter(slug => !skipDl.has(slug.toLowerCase()));
+  for (let i = 0; i < dlRepos.length; i += 10) {
+    const chunk = dlRepos.slice(i, i + 10);
+    const variables = {};
+    const fields = chunk.map((slug, j) => {
+      const [owner, name] = slug.split('/');
+      variables[`o${j}`] = owner;
+      variables[`n${j}`] = name;
+      return `r${j}: repository(owner: $o${j}, name: $n${j}) { releases(first: ${dlRules.releases || 10}, orderBy: { field: CREATED_AT, direction: DESC }) { nodes { databaseId tagName isDraft isPrerelease isLatest publishedAt url releaseAssets(first: 100) { totalCount nodes { name size downloadUrl digest } } } } }`;
+    });
+    const query = `query(${chunk.map((_, j) => `$o${j}: String!, $n${j}: String!`).join(', ')}) { ${fields.join(' ')} }`;
+    const { data } = await gh('/graphql', { method: 'POST', body: { query, variables }, allow: [401, 403, 502] });
+    for (const [j, slug] of chunk.entries()) {
+      const releases = data?.data?.[`r${j}`]?.releases?.nodes;
+      if (!Array.isArray(releases)) continue;
+      const tag = dlRules.tags?.[slug];
+      // У VSCodium в релизе под две сотни файлов: дочитываем главный релиз через REST
+      const main = releaseOrder(releases, { tag })[0];
+      if (main && main.releaseAssets.totalCount > main.releaseAssets.nodes.length) {
+        try {
+          const assets = await ghAll(`/repos/${slug}/releases/${main.databaseId}/assets`);
+          main.releaseAssets.nodes = assets.map(a => ({ name: a.name, size: a.size, downloadUrl: a.browser_download_url, digest: a.digest }));
+        } catch (e) {
+          console.log(`${slug}: не удалось дочитать файлы релиза: ${e.message}`);
+        }
+      }
+      const picked = pickDownloads(releases, { tag });
+      if (Object.keys(picked).length) downloads[slug] = picked;
+      else delete downloads[slug];
+    }
+  }
+
+  // 9. Перенос на главную: проверено временем и звёздами, без жалоб
   for (const app of catalog.sandbox) {
     app.promoted = age(app.addedAt) >= rules.promotion.minDays && app.stars >= rules.promotion.minStars && !hidden.has(app.repo.toLowerCase());
   }
@@ -518,6 +556,7 @@ async function main() {
       reportsToHide: rules.reports.toHide,
     },
     stars: Object.fromEntries(Object.entries(stars).sort(([a], [b]) => a.localeCompare(b))),
+    downloads: Object.fromEntries(Object.entries(downloads).sort(([a], [b]) => a.localeCompare(b))),
     sandbox: catalog.sandbox,
     candidates,
     hidden: catalog.hidden,
@@ -529,7 +568,7 @@ async function main() {
   } else {
     console.log('catalog.json без изменений');
   }
-  console.log(`Запросов к GitHub: ${calls}. В песочнице: ${next.sandbox.length}, на голосовании: ${candidates.length}, скрыто: ${next.hidden.length}.`);
+  console.log(`Запросов к GitHub: ${calls}. В песочнице: ${next.sandbox.length}, на голосовании: ${candidates.length}, скрыто: ${next.hidden.length}, с файлами для скачивания: ${Object.keys(downloads).length}.`);
 }
 
 await main();
