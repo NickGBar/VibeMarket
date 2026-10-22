@@ -193,7 +193,8 @@ a.tile:focus-visible { border-radius: var(--radius); }
 .hero-art svg { width: 100%; height: 100%; max-height: 300px; }
 /* Макет окна приложения поднимается из нижнего края, как на скриншотах */
 .hero-art.is-shot {
-  position: relative; container-type: inline-size; padding: 0;
+  /* Высота окна считается от ширины: на широкой плитке оно выше картинки и обрезается её нижним краем */
+  position: relative; container-type: inline-size; padding: 0; overflow: hidden;
   background:
     radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--c1) 55%, transparent), transparent 60%),
     linear-gradient(160deg, color-mix(in srgb, var(--c1) 35%, #000), color-mix(in srgb, var(--c2) 45%, #000));
