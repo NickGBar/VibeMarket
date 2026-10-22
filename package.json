@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node --env-file-if-exists=.env server.mjs",
     "stars": "node scripts/update-stars.mjs index.html",
-    "robot": "node scripts/robot.mjs --dry-run"
+    "robot": "node scripts/robot.mjs --dry-run",
+    "locales": "node scripts/check-locales.mjs"
   },
   "engines": {
     "node": ">=22.9"

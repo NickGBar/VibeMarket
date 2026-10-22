@@ -77,6 +77,12 @@ async function catalogRepos() {
   return [...new Set([...repos, ...sandbox.map(app => app?.repo).filter(repo => typeof repo === 'string')])];
 }
 
+async function sendLocale(res, code) {
+  const body = await readFile(join(ROOT, 'locales', `${code}.json`)).catch(() => { throw new HttpError(404, 'not_found'); });
+  res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-cache' });
+  res.end(body);
+}
+
 async function sendCatalog(res) {
   const body = await readFile(join(ROOT, 'catalog.json')).catch(() => { throw new HttpError(404, 'not_found'); });
   res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-cache' });
@@ -379,6 +385,8 @@ const server = createServer(async (req, res) => {
     const route = `${req.method} ${url.pathname}`;
     if (route === 'GET /' || route === 'GET /index.html') return await sendPage(req, res);
     if (route === 'GET /catalog.json') return await sendCatalog(res);
+    const locale = /^\/locales\/([a-z]{2})\.json$/.exec(url.pathname);
+    if (req.method === 'GET' && locale) return await sendLocale(res, locale[1]);
     if (route === 'GET /auth/login') return login(req, res, url);
     if (route === 'GET /auth/callback') return await callback(req, res, url);
     if (route === 'POST /auth/logout') return await logout(req, res);

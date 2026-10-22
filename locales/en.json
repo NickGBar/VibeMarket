@@ -1,0 +1,446 @@
+{
+  "meta": { "lang": "en", "name": "English" },
+  "ui": {
+    "brand.home": "VibeMarket: home",
+    "search.label": "Search the catalog",
+    "search.placeholder": "Name, category, license",
+    "search.sandboxTerms": "sandbox third-party",
+    "lang.label": "Language",
+    "lang.failed": "Couldn't load the translation. Try again.",
+    "nav.label": "Categories",
+    "nav.today": "Today",
+    "nav.top": "Top",
+    "nav.mine": "Your stars",
+    "nav.sandbox": "Sandbox",
+    "nav.search": "Search",
+    "nav.prev": "Scroll back",
+    "nav.next": "Scroll forward",
+    "hero.eyebrow": "App of the day",
+    "hero.title": "Draw diagrams that look hand-sketched",
+    "hero.text": "Excalidraw runs in the browser, works offline and keeps your files with you. Great for architecture sketches, retros and explaining things on a call.",
+    "manifest.eyebrow": "Open market",
+    "manifest.title": "Free, ad-free and open source. Every single app.",
+    "manifest.priceLabel": "is what any app costs",
+    "manifest.adsLabel": "banners, trackers and pop-ups",
+    "manifest.projects": { "one": "project with source on GitHub", "other": "projects with source on GitHub" },
+    "price.zero": "$0",
+    "star.eyebrow": "Most stars",
+    "star.text": "stars on GitHub. The most noticed project in the catalog.",
+    "star.aria": "{name}: most stars in the catalog, {stars}. Open the app page",
+    "collection.eyebrow": "Collection",
+    "collection.title": "AI on your own computer",
+    "collection.text": "Models run locally. Your prompts and files never go to someone else's cloud.",
+    "top.title": "Top by GitHub stars",
+    "top.sub": "The most popular projects in the catalog",
+    "mine.title": "Your stars",
+    "mine.empty": "Open any app page and press Star. The project gets a star on GitHub, and the app shows up here.",
+    "mine.loading": "Loading your stars from GitHub…",
+    "mine.count": { "one": "{n} app from the catalog", "other": "{n} apps from the catalog" },
+    "mine.none": "No apps from the catalog yet",
+    "mine.logout": "Sign out",
+    "sandbox.eyebrow": "Third-party apps",
+    "sandbox.title": "Sandbox",
+    "sandbox.sub": "Free apps from independent developers",
+    "sandbox.noticeTitle": "These apps are third-party",
+    "sandbox.noticeText": "Their authors publish them, not VibeMarket. We don't review sandbox apps and aren't responsible for how they work, their security or their content. Check the source code and the author before installing. Install at your own risk.",
+    "sandbox.published": "Published",
+    "rules.title": "How to get into the sandbox",
+    "rules.step1": "The app is free, has an open license and at least one release on GitHub. Add the «{topic}» topic to the repository.",
+    "rules.step2": "Fill in the form: the submission opens on GitHub, and the robot checks it within a few minutes.",
+    "rules.step3": "The community votes 👍 on the submission for {days}. Only GitHub accounts {older} count.",
+    "rules.step4": { "one": "With {n} vote, the robot publishes the app here on its own.", "other": "With {n} votes, the robot publishes the app here on its own." },
+    "rules.cta": "Submit an app",
+    "rules.all": "All rules",
+    "unit.days": { "one": "{n} day", "other": "{n} days" },
+    "unit.olderThan": { "one": "older than {n} day", "other": "older than {n} days" },
+    "voting.title": "Voting now",
+    "voting.sub": { "one": "Vote 👍 on the submission on GitHub. With {n} vote, the app appears in the sandbox on its own.", "other": "Vote 👍 on the submission on GitHub. With {n} votes, the app appears in the sandbox on its own." },
+    "voting.vote": "Vote",
+    "voting.count": "{up} of {needed} 👍",
+    "voting.left": "{days} left",
+    "voting.today": "results today",
+    "voting.aria": "{name}: {up} of {needed} votes",
+    "slot.title": "Your app could be here",
+    "slot.textSome": "Tell us about your free app. The robot checks the submission, then the community votes.",
+    "slot.textEmpty": "The sandbox is empty for now. Be the first: tell us about your free app.",
+    "slot.cta": "Submit an app",
+    "submit.title": "Submit an app",
+    "submit.sub": "The form opens on GitHub already filled in. The robot checks the submission within a few minutes, then the community votes.",
+    "submit.mine": "My submissions on GitHub",
+    "submit.collapse": "Collapse",
+    "submit.doneTitle": "The submission form is open on GitHub",
+    "submit.doneText": "Check the fields, tick the three confirmations and press «Submit new issue». The robot replies in a comment on the submission.",
+    "submit.notOpened": "The tab didn't open?",
+    "submit.openForm": "Open the form on GitHub",
+    "submit.again": "Fill in another submission",
+    "submit.issueTitle": "Submission: {name}",
+    "submit.opened": "The submission form is open on GitHub",
+    "form.repo": "GitHub repository",
+    "form.repoPlaceholder": "owner/repository",
+    "form.repoHint": "For example, octocat/my-app or a github.com link. The repository must be public.",
+    "form.name": "Name",
+    "form.cat": "Category",
+    "form.catChoose": "Choose",
+    "form.desc": "Short description",
+    "form.descCount": "{n} of 90 characters. This text goes on the card.",
+    "form.about": "Full description",
+    "form.optional": "optional",
+    "form.platforms": "Platforms",
+    "form.glyph": "Icon",
+    "form.color": "Icon color",
+    "form.submit": "Continue on GitHub",
+    "form.submitHint": "A submission form opens on GitHub with the fields filled in. You'll need a GitHub account.",
+    "form.previewLabel": "Card preview",
+    "form.previewEyebrow": "This is how the card will look",
+    "form.draftName": "App name",
+    "form.draftDesc": "A short description of the app goes here.",
+    "form.draftLicense": "license",
+    "repo.format": "Enter the repository as owner/name or as a github.com link.",
+    "repo.duplicate": "This app is already in VibeMarket or being voted on.",
+    "repo.checking": "Checking the repository on GitHub…",
+    "repo.missing": "Repository not found. Check the address: it must be public.",
+    "repo.archived": "The repository is archived, the robot won't accept it.",
+    "repo.fork": "This is a fork. Submit the original repository.",
+    "repo.facts": "Public repository {repo} · {license} · {stars}.",
+    "repo.license": "{spdx} license",
+    "repo.noLicense": "no license",
+    "repo.todoLicense": "add an open license to the repository",
+    "repo.todoTopic": "add the «{topic}» topic to the repository",
+    "repo.todo": "Before submitting, {items}, or the robot will reject the submission.",
+    "repo.and": " and ",
+    "repo.offline": "Repository {repo}. The robot will check it in detail after you submit.",
+    "err.repo": "Enter a public GitHub repository: owner/name.",
+    "err.repoBlocked": "This repository can't be submitted, the reason is shown above.",
+    "err.name": "The name must be 2 to 40 characters long.",
+    "err.cat": "Choose a category.",
+    "err.desc": "Describe the app in at least 10 characters.",
+    "error.http": "error {status}",
+    "results.title": "Results",
+    "results.aria": "Search results",
+    "results.count": { "one": "{n} app for «{q}»", "other": "{n} apps for «{q}»" },
+    "results.empty": "Nothing found. Try an app name, a category like «{example}» or a license, for example MIT.",
+    "foot.about": "The catalog only lists open-source projects. Everything is free: no ads, banners, pop-ups or trackers. This page doesn't load a single external script, font or pixel.",
+    "foot.auth": "Signing in with GitHub is optional. Once signed in, stars update through your account, and all GitHub requests go through the VibeMarket server, so your token never reaches the browser.",
+    "foot.sandbox": "Apps in the Sandbox section are third-party: their authors publish them. VibeMarket doesn't review them and isn't responsible for how they work, their security or their content.",
+    "foot.starsSnapshot": "Stars come from the GitHub API as of {date}.",
+    "foot.starsRobot": "Stars are updated by the VibeMarket robot, last update: {date}.",
+    "foot.starsLive": "Stars were just updated through your GitHub account.",
+    "foot.rating": "The rating is based on them on a logarithmic scale: 1,000 stars give 1 point, 200,000 stars give 5 points. Click a rating to open the repository.",
+    "stars.onGithub": { "one": "{count} star on GitHub", "other": "{count} stars on GitHub" },
+    "stars.count": { "one": "{count} star", "other": "{count} stars" },
+    "card.starred": "{name}, in your stars",
+    "card.thirdParty": "Third-party",
+    "card.thirdPartyTitle": "Third-party app from the sandbox",
+    "card.license": "License",
+    "card.rating": "Rated {rating} out of 5, {stars}. Open the repository",
+    "get.openSr": "{name}: releases on GitHub",
+    "get.started": "{name}: installation started",
+    "get.done": "{name} installed",
+    "detail.announce": "{name} app page",
+    "detail.source": "Source code",
+    "detail.thirdTitle": "Third-party app",
+    "detail.thirdText": "Its author published it, not VibeMarket. We haven't reviewed this app and aren't responsible for how it works, its security or its content. Check the source code before installing. Install at your own risk.",
+    "detail.facts": "App at a glance",
+    "detail.shots": "Screenshots",
+    "detail.shotsSub": "Illustrations of the {name} interface",
+    "detail.shotsSubThird": "Screenshots from the author",
+    "detail.shotsAria": "{name} screenshots",
+    "detail.about": "Description",
+    "detail.info": "Information",
+    "detail.moreSandbox": "More in the sandbox",
+    "detail.moreCat": "More in «{cat}»",
+    "fact.rating": "Rating",
+    "fact.stars": "GitHub stars",
+    "fact.starsNow": "just now",
+    "fact.starsAt": "as of {date}",
+    "fact.license": "License",
+    "fact.licenseSub": "open source",
+    "fact.section": "Section",
+    "fact.sandboxSub": "third-party",
+    "fact.category": "Category",
+    "fact.rank": "#{n}",
+    "fact.developer": "Developer",
+    "fact.developerSub": "on GitHub",
+    "fact.price": "Price",
+    "fact.priceSub": "no ads",
+    "fact.priceSubSandbox": "per sandbox rules",
+    "info.developer": "Developer",
+    "info.repo": "Repository",
+    "info.section": "Section",
+    "info.sectionValue": "Sandbox, third-party app",
+    "info.license": "License",
+    "info.stars": "GitHub stars",
+    "info.platforms": "Platforms",
+    "info.platformsNone": "Not specified",
+    "info.price": "Price",
+    "info.free": "Free",
+    "info.ads": "Ads and trackers",
+    "info.adsNo": "None",
+    "info.adsUnchecked": "Not checked",
+    "auth.signin": "Sign in with GitHub",
+    "auth.retry": "Try signing in again",
+    "auth.failedTitle": "Couldn't sign in with GitHub",
+    "auth.failed": "Couldn't sign in with GitHub. Try again.",
+    "auth.mineSr": ": your stars",
+    "auth.logoutFailed": "Couldn't sign out: {msg}",
+    "star.needLogin": "{name} on GitHub, sign-in required",
+    "star.target": "{name} on GitHub",
+    "star.added": "{name}: starred",
+    "star.removed": "{name}: star removed",
+    "star.addFailed": "Couldn't add the star: {msg}",
+    "star.removeFailed": "Couldn't remove the star: {msg}",
+    "os.m": "macOS",
+    "os.w": "Windows",
+    "os.l": "Linux",
+    "os.a": "Android",
+    "os.i": "iOS",
+    "os.b": "Web",
+    "glyph.code": "Code",
+    "glyph.terminal": "Terminal",
+    "glyph.window": "Window",
+    "glyph.blocks": "Blocks",
+    "glyph.shapes": "Shapes",
+    "glyph.pen": "Pen",
+    "glyph.brush": "Brush",
+    "glyph.image": "Image",
+    "glyph.note": "Note",
+    "glyph.check": "Check mark",
+    "glyph.chat": "Message",
+    "glyph.play": "Video",
+    "glyph.wave": "Sound",
+    "glyph.key": "Key",
+    "glyph.shield": "Shield",
+    "glyph.sparkle": "Sparkles",
+    "glyph.gamepad": "Gamepad",
+    "glyph.globe": "Globe",
+    "color.0": "Blue",
+    "color.1": "Purple",
+    "color.2": "Pink",
+    "color.3": "Orange",
+    "color.4": "Yellow",
+    "color.5": "Green",
+    "color.6": "Teal",
+    "color.7": "Graphite"
+  },
+  "cats": {
+    "dev": { "name": "Development", "sub": "Editors, engines and terminal tools" },
+    "design": { "name": "Design and 3D", "sub": "Graphics, illustration and modeling without a subscription" },
+    "work": { "name": "Productivity", "sub": "Notes, documents and tasks that belong to you" },
+    "media": { "name": "Media", "sub": "Video, audio and streaming" },
+    "privacy": { "name": "Privacy", "sub": "Passwords, messages and files without middlemen" },
+    "ai": { "name": "AI", "sub": "Models that run on your computer" },
+    "games": { "name": "Games", "sub": "Open-source strategy, racing and sandbox games" }
+  },
+  "apps": {
+    "vscodium": {
+      "desc": "VS Code without telemetry. The same extensions and debugger.",
+      "about": "VSCodium is built from the same source code as Visual Studio Code, but without Microsoft telemetry and branding. Extensions come from the open Open VSX registry, and your settings, themes and keyboard shortcuts stay the same.",
+      "shots": ["The same editor, minus the telemetry", "Extensions from the open Open VSX registry", "Built-in terminal and debugger"]
+    },
+    "neovim": {
+      "desc": "Vim with Lua plugins, built-in LSP and an asynchronous core.",
+      "about": "Neovim builds on the ideas of Vim: an asynchronous core, configuration and plugins in Lua, a built-in LSP client and Tree-sitter for precise highlighting. It runs in the terminal and in graphical front-ends.",
+      "shots": ["Modal editing you know from Vim", "Windows, tabs and a built-in terminal", "Plugins and settings in Lua"]
+    },
+    "zed": {
+      "desc": "A fast Rust editor with collaborative editing.",
+      "about": "Zed is written in Rust and renders its interface on the GPU, so it responds instantly even in large projects. It has real-time collaborative editing, a built-in terminal and language server support.",
+      "shots": ["No lag on any project", "Collaborate on the same file", "Terminal and tasks in the same window"]
+    },
+    "godot": {
+      "desc": "A game engine for 2D and 3D. No royalties, no sign-up.",
+      "about": "Godot is a game engine with its own editor, node-based scenes and the GDScript language. It supports C# and exports to desktop, mobile and the browser. The engine is MIT-licensed, with no royalties or subscriptions.",
+      "shots": ["2D and 3D scene editor", "Scripts in GDScript and C#", "Export to desktop, mobile and the web"]
+    },
+    "tauri": {
+      "desc": "Lightweight desktop apps built with web tech and Rust.",
+      "about": "Tauri builds desktop and mobile apps from a web interface and a Rust backend. Instead of bundling Chromium it uses the system WebView, so installers are many times smaller than with Electron.",
+      "shots": ["Interface in any web framework", "Rust backend and a one-command build", "Builds for macOS, Windows, Linux, iOS and Android"]
+    },
+    "lazygit": {
+      "desc": "Git in the terminal: commits, rebases and conflicts in one keystroke.",
+      "about": "Lazygit is a terminal UI for Git. Staging individual lines, interactive rebase, working with branches and resolving conflicts take a single keystroke instead of long commands.",
+      "shots": ["The whole repository on one screen", "Stage individual lines", "Interactive rebase without fear"]
+    },
+    "excalidraw": {
+      "desc": "A virtual whiteboard for hand-drawn style diagrams.",
+      "about": "Excalidraw is a whiteboard for diagrams that look hand-drawn. It runs in the browser and supports end-to-end encrypted collaboration, PNG and SVG export, and libraries of ready-made shapes.",
+      "shots": ["Sketch-style diagrams", "End-to-end encrypted collaboration", "Export to PNG and SVG"]
+    },
+    "penpot": {
+      "desc": "Design and prototyping in the browser on the open SVG standard.",
+      "about": "Penpot is a design and prototyping platform that runs in the browser and stores designs in open formats: SVG, CSS and HTML. You can host it on your own server, and developers get code straight from the design.",
+      "shots": ["Layouts and components in the browser", "Interactive prototypes", "Code for developers straight from the design"]
+    },
+    "blender": {
+      "desc": "Modeling, animation, simulation and editing in one package.",
+      "about": "Blender covers the whole 3D pipeline: modeling, sculpting, rigging, animation, simulation, rendering in Cycles and EEVEE, compositing and video editing.",
+      "shots": ["Modeling and sculpting", "Node-based materials and compositing", "Rendering in Cycles and EEVEE"]
+    },
+    "krita": {
+      "desc": "Digital painting with lively brushes, layers and animation.",
+      "about": "Krita is made by artists for digital painting and illustration. Over a hundred brushes, line stabilizers, pressure-sensitive tablet support, layers, masks and frame-by-frame animation.",
+      "shots": ["Pressure-sensitive brushes", "Layers, masks and filters", "Frame-by-frame animation"]
+    },
+    "inkscape": {
+      "desc": "Vector illustrations, logos and diagrams in SVG.",
+      "about": "Inkscape is a vector editor for illustrations, logos, diagrams and print layouts. Its native format is SVG. It has Bézier curves, boolean operations and export to PDF, PNG and EPS.",
+      "shots": ["Bézier curves and precise geometry", "Vector graphics in SVG", "Export to PDF, PNG and EPS"]
+    },
+    "gimp": {
+      "desc": "A photo editor: retouching, masks, layers and plugins.",
+      "about": "GIMP is a raster editor for photo retouching, collages and image processing. Version 3 brought non-destructive filters, better color management and a new GTK3 interface.",
+      "shots": ["Retouching, masks and layers", "Non-destructive filters", "Plugins and scripts for automation"]
+    },
+    "joplin": {
+      "desc": "Markdown notes with end-to-end encryption and sync.",
+      "about": "Joplin keeps notes and to-do lists in Markdown and syncs them through Nextcloud, WebDAV, Dropbox, OneDrive or its own Joplin Server. End-to-end encryption is a setting away, and the web clipper saves pages from your browser.",
+      "shots": ["Markdown notes", "To-do lists and reminders", "End-to-end encryption and sync"]
+    },
+    "logseq": {
+      "desc": "A knowledge base of linked notes and daily journals.",
+      "about": "Logseq is a knowledge base made of blocks: every thought links to others through references and tags, and the daily journal is your entry point. Files are stored locally in Markdown or Org-mode.",
+      "shots": ["A daily journal made of blocks", "A graph of links between notes", "Tasks right inside your notes"]
+    },
+    "appflowy": {
+      "desc": "Docs, databases and kanban. Your data stays with you.",
+      "about": "AppFlowy combines documents, databases, kanban boards and a calendar. It works offline or with your own sync server, and its built-in AI can use local models.",
+      "shots": ["Kanban boards for projects", "Databases with filters and sorting", "Documents with nested pages"]
+    },
+    "libreoffice": {
+      "desc": "Documents, spreadsheets and slides. Opens Microsoft Office files.",
+      "about": "LibreOffice is a full office suite: Writer for documents, Calc for spreadsheets, Impress for presentations, plus Draw, Base and Math. Its main format is the open ODF, and it opens and saves Microsoft Office files without converters.",
+      "shots": ["Writer: documents of any complexity", "Calc: spreadsheets, formulas and charts", "Impress: presentations and PDF export"]
+    },
+    "superprod": {
+      "desc": "Tasks, a Pomodoro timer and time tracking without the cloud.",
+      "about": "Super Productivity combines a to-do list, a Pomodoro timer and time tracking. Tasks can be pulled from Jira, GitHub and GitLab, and data is stored locally or synced through WebDAV and Dropbox.",
+      "shots": ["Tasks, subtasks and time estimates", "Pomodoro timer and breaks", "Jira, GitHub and GitLab integrations"]
+    },
+    "anki": {
+      "desc": "Spaced repetition flashcards to remember things for good.",
+      "about": "Anki shows flashcards using spaced repetition: hard ones more often, learned ones less often. It supports images, audio, LaTeX formulas and thousands of shared decks, and the FSRS scheduler cuts down the number of reviews.",
+      "shots": ["Reviews with the FSRS algorithm", "Decks and learning statistics", "Cards with images, audio and formulas"]
+    },
+    "obs": {
+      "desc": "Screen recording and live streaming with a scene mixer.",
+      "about": "OBS Studio records your screen and streams live to Twitch, YouTube and any RTMP service. Scenes are built from sources: windows, cameras, game capture and images. It has a built-in audio mixer and voice filters.",
+      "shots": ["Scenes from any source", "Audio mixer and voice filters", "Streaming to Twitch and YouTube"]
+    },
+    "jellyfin": {
+      "desc": "A personal media server for movies, shows and music.",
+      "about": "Jellyfin turns a computer or NAS into your own media service: movies, shows, music and books with artwork, descriptions and resume playback on any device. No subscriptions, no cloud accounts, no data collection.",
+      "shots": ["Your media library with artwork", "Resume watching on any device", "A server on your computer or NAS"]
+    },
+    "vlc": {
+      "desc": "A player that opens almost any video and audio format.",
+      "about": "VLC plays almost any video and audio format without extra codecs, plus DVDs, network streams and subtitles. It can also convert files and stream them over your local network.",
+      "shots": ["Any format, no codecs needed", "Media library and playlists", "Subtitles, streams and DVDs"]
+    },
+    "audacity": {
+      "desc": "Audio recording and editing for podcasts and music.",
+      "about": "Audacity records and edits audio: multitrack editing, noise reduction, an equalizer, loudness normalization and effects. Good for podcasts, music and digitizing old recordings.",
+      "shots": ["Multitrack editing", "Noise reduction and effects", "Export to MP3, WAV, FLAC and OGG"]
+    },
+    "handbrake": {
+      "desc": "A video converter with device presets and subtitles.",
+      "about": "HandBrake transcodes video to H.264, H.265, AV1 and VP9. Ready-made presets pick settings for phones, consoles and streaming, and the job queue processes dozens of files at once.",
+      "shots": ["Video compression without visible loss", "Presets for devices and streaming", "A queue of dozens of files"]
+    },
+    "mpv": {
+      "desc": "A minimalist player for the keyboard and scripts.",
+      "about": "mpv is a minimalist player with no extra interface: everything is controlled with the keyboard, a config file and Lua scripts. High-quality video scaling and hardware decoding.",
+      "shots": ["Nothing but the video", "Keyboard and script control", "High-quality scaling"]
+    },
+    "keepassxc": {
+      "desc": "A password manager with a local encrypted database.",
+      "about": "KeePassXC keeps your passwords in an encrypted file on your device. Password generator, browser autofill through an extension, TOTP codes and SSH keys. No cloud account needed.",
+      "shots": ["All passwords in one encrypted file", "Strong password generator", "TOTP codes and SSH keys"]
+    },
+    "bitwarden": {
+      "desc": "Passwords and passkeys on every device. You can run your own server.",
+      "about": "Bitwarden syncs passwords, passkeys and notes across all your devices with end-to-end encryption. There are browser extensions, shared vaults for families and teams, and you can host the server yourself.",
+      "shots": ["Passwords and passkeys everywhere", "Password generator and autofill", "Shared vaults for families and teams"]
+    },
+    "signal": {
+      "desc": "A messenger with end-to-end encryption by default.",
+      "about": "Signal protects messages, calls and attachments with end-to-end encryption using the open Signal protocol. Disappearing messages, groups, video calls and minimal metadata on the servers.",
+      "shots": ["End-to-end encryption by default", "Groups and video calls", "Disappearing messages"]
+    },
+    "syncthing": {
+      "desc": "Sync files directly between devices, without the cloud.",
+      "about": "Syncthing syncs folders directly between your devices, with no central server. Connections are encrypted, and devices find each other on the local network and over the internet.",
+      "shots": ["Direct sync between devices", "Folders, versions and conflicts", "Detailed per-folder statistics"]
+    },
+    "localsend": {
+      "desc": "Send files over the local network, no internet or account needed.",
+      "about": "LocalSend sends files and text between devices on the same network, like AirDrop but between any systems. No internet or account needed, and transfers are encrypted.",
+      "shots": ["Devices on the network are found automatically", "Transfers without internet", "Files, folders and text"]
+    },
+    "mullvad": {
+      "desc": "A VPN client that needs neither email nor name.",
+      "about": "The Mullvad VPN client connects to Mullvad servers over WireGuard. Signing up needs no email or name: your account is a number, and you can even pay in cash.",
+      "shots": ["A secure connection in one click", "Servers around the world", "Split tunneling and tracker blocking"]
+    },
+    "ollama": {
+      "desc": "Run Llama, Qwen, Gemma and other models with one command.",
+      "about": "Ollama downloads and runs language models locally with one command: Llama, Qwen, Gemma, DeepSeek, Mistral and more. Its HTTP API is OpenAI-compatible, so it's easy to plug into your own programs.",
+      "shots": ["A model starts with one command", "Chat with a model right on your computer", "A library of open models"]
+    },
+    "sdwebui": {
+      "desc": "Image generation and inpainting with hundreds of extensions.",
+      "about": "Stable Diffusion web UI is a browser interface for image generation: txt2img, img2img, inpainting and upscaling. The extension catalog adds ControlNet, LoRA and hundreds of other tools.",
+      "shots": ["Images from a text description", "Inpainting and replacing parts of an image", "Hundreds of extensions and models"]
+    },
+    "comfyui": {
+      "desc": "Image and video generation through a node graph.",
+      "about": "ComfyUI builds image, video and audio generation out of graph nodes. Any workflow can be saved, shared and repeated, and models run locally on your GPU.",
+      "shots": ["A node pipeline instead of buttons", "Images and video, locally", "Ready-made workflow templates"]
+    },
+    "llamacpp": {
+      "desc": "LLM inference in C++. Fast even without a GPU.",
+      "about": "llama.cpp runs language models in C/C++ with quantization down to a few bits, so large models fit on an ordinary laptop. It ships with an OpenAI-style API server and a simple web chat.",
+      "shots": ["Inference on CPU and GPU", "Built-in web chat", "Models in GGUF format"]
+    },
+    "gpt4all": {
+      "desc": "Chat with local models and your documents, offline.",
+      "about": "GPT4All is a desktop app for chatting with local models. LocalDocs answers questions about your files without sending them to the internet, and models download right inside the app.",
+      "shots": ["Chat without the internet", "Download models in one click", "LocalDocs: answers from your files"]
+    },
+    "whispercpp": {
+      "desc": "Speech recognition on the CPU. Offline audio transcription.",
+      "about": "whisper.cpp is a C/C++ implementation of the Whisper speech recognition model. It transcribes audio and video in dozens of languages without the cloud, including in real time from a microphone.",
+      "shots": ["Transcribe audio with one command", "Real-time recognition from a microphone", "Subtitles in SRT and VTT"]
+    },
+    "mindustry": {
+      "desc": "Strategy about factories, conveyors and base defense.",
+      "about": "Mindustry combines factory building and tower defense: mine resources, build conveyors and production chains, and fight off waves of enemies. It has a campaign, multiplayer and a map editor.",
+      "shots": ["Conveyors and production chains", "Defend the base from waves of enemies", "Campaign, multiplayer and map editor"]
+    },
+    "luanti": {
+      "desc": "A voxel sandbox and engine for your own games (formerly Minetest).",
+      "about": "Luanti, formerly Minetest, is a voxel engine and sandbox. Thousands of Lua games and mods from the built-in ContentDB catalog, your own servers and complete freedom over the game rules.",
+      "shots": ["A voxel world without limits", "Thousands of games and mods in ContentDB", "Your own server for friends"]
+    },
+    "stk": {
+      "desc": "Arcade kart racing with a story mode and online races.",
+      "about": "SuperTuxKart is arcade kart racing starring characters from the open-source world. Story mode, online races, arena battles and car soccer.",
+      "shots": ["Arcade kart racing", "Online races and battles", "Story mode and challenges"]
+    },
+    "openttd": {
+      "desc": "A transport tycoon: trains, ships and logistics.",
+      "about": "OpenTTD is a transport simulation based on Transport Tycoon Deluxe. Build railways, ports and bus routes, move cargo and passengers, and grow your company over decades.",
+      "shots": ["Railways, ports and airports", "Company finances and charts", "Multiplayer and thousands of mods"]
+    },
+    "shpd": {
+      "desc": "A pixel roguelike with tactical fights and random dungeons.",
+      "about": "Shattered Pixel Dungeon is a turn-based roguelike: descend into a randomly generated dungeon, find gear and identify potions. Every run is unique, and dying means a fresh start.",
+      "shots": ["A new dungeon every run", "Tactical turn-based combat", "Hero classes and subclasses"]
+    },
+    "wesnoth": {
+      "desc": "A turn-based fantasy strategy game on a hex map.",
+      "about": "Battle for Wesnoth is a turn-based strategy game in a fantasy world. Armies move across hex maps where terrain and time of day affect the outcome of battle. Story campaigns and online multiplayer.",
+      "shots": ["Hex maps and tactics", "Time of day affects combat", "Campaigns and online multiplayer"]
+    }
+  }
+}
