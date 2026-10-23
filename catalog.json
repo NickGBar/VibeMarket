@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-23T01:34:41.885Z",
+  "updated": "2026-10-23T07:37:38.920Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -14,54 +14,54 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6708,
-    "ankitects/anki": 32218,
-    "Anuken/Mindustry": 29442,
-    "AppFlowy-IO/AppFlowy": 77664,
-    "audacity/audacity": 18812,
-    "AUTOMATIC1111/stable-diffusion-webui": 165102,
-    "bitwarden/clients": 14040,
-    "blender/blender": 21171,
-    "Comfy-Org/ComfyUI": 142019,
-    "excalidraw/excalidraw": 134400,
-    "ggml-org/llama.cpp": 132055,
-    "ggml-org/whisper.cpp": 54570,
-    "GNOME/gimp": 6544,
-    "godotengine/godot": 118903,
-    "HandBrake/HandBrake": 24756,
-    "inkscape/inkscape": 4050,
-    "jellyfin/jellyfin": 58404,
-    "jesseduffield/lazygit": 83368,
-    "KDE/krita": 10608,
-    "keepassxreboot/keepassxc": 29382,
-    "laurent22/joplin": 56837,
-    "LibreOffice/core": 4552,
-    "localsend/localsend": 95261,
-    "logseq/logseq": 45335,
+    "ankitects/anki": 32228,
+    "Anuken/Mindustry": 29444,
+    "AppFlowy-IO/AppFlowy": 77669,
+    "audacity/audacity": 18810,
+    "AUTOMATIC1111/stable-diffusion-webui": 165111,
+    "bitwarden/clients": 14039,
+    "blender/blender": 21175,
+    "Comfy-Org/ComfyUI": 142121,
+    "excalidraw/excalidraw": 134414,
+    "ggml-org/llama.cpp": 132083,
+    "ggml-org/whisper.cpp": 54579,
+    "GNOME/gimp": 6545,
+    "godotengine/godot": 118928,
+    "HandBrake/HandBrake": 24760,
+    "inkscape/inkscape": 4054,
+    "jellyfin/jellyfin": 58419,
+    "jesseduffield/lazygit": 83373,
+    "KDE/krita": 10609,
+    "keepassxreboot/keepassxc": 29398,
+    "laurent22/joplin": 56840,
+    "LibreOffice/core": 4554,
+    "localsend/localsend": 95287,
+    "logseq/logseq": 45337,
     "luanti-org/luanti": 13760,
-    "mpv-player/mpv": 37529,
-    "mullvad/mullvadvpn-app": 7700,
-    "neovim/neovim": 103127,
-    "nomic-ai/gpt4all": 77351,
-    "obsproject/obs-studio": 77951,
-    "ollama/ollama": 184343,
-    "OpenTTD/OpenTTD": 8409,
-    "penpot/penpot": 61507,
-    "signalapp/Signal-Desktop": 16610,
-    "storytold/designcraft": 4673,
-    "storytold/effectcraft": 7703,
-    "storytold/filmcraft": 15753,
-    "storytold/lightcraft": 14335,
-    "storytold/pdfcraft": 17230,
-    "storytold/photocraft": 71389,
-    "storytold/vectorcraft": 10446,
-    "super-productivity/super-productivity": 23068,
+    "mpv-player/mpv": 37533,
+    "mullvad/mullvadvpn-app": 7701,
+    "neovim/neovim": 103129,
+    "nomic-ai/gpt4all": 77352,
+    "obsproject/obs-studio": 77963,
+    "ollama/ollama": 184386,
+    "OpenTTD/OpenTTD": 8411,
+    "penpot/penpot": 61522,
+    "signalapp/Signal-Desktop": 16608,
+    "storytold/designcraft": 4684,
+    "storytold/effectcraft": 7721,
+    "storytold/filmcraft": 15799,
+    "storytold/lightcraft": 14368,
+    "storytold/pdfcraft": 17290,
+    "storytold/photocraft": 71533,
+    "storytold/vectorcraft": 10468,
+    "super-productivity/super-productivity": 23073,
     "supertuxkart/stk-code": 5445,
-    "syncthing/syncthing": 89631,
-    "tauri-apps/tauri": 112128,
-    "videolan/vlc": 20182,
-    "VSCodium/vscodium": 33762,
+    "syncthing/syncthing": 89642,
+    "tauri-apps/tauri": 112130,
+    "videolan/vlc": 20187,
+    "VSCodium/vscodium": 33768,
     "wesnoth/wesnoth": 6948,
-    "zed-industries/zed": 92065
+    "zed-industries/zed": 92078
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -212,12 +212,36 @@
             "sha256": "817548f9eab169db155fb0ea978f9d896d74e84d3f5805fb7fcea5444a371711"
           },
           {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "AppFlowy-0.14.10-macos-x86_64.dmg",
+            "size": 124659825,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-x86_64.dmg",
+            "sha256": "7c3e6551489d4c83d93b747112098233633ae40bfa2710a5d8001a8d5bcabd65"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "AppFlowy-0.14.10-macos-arm64.dmg",
+            "size": 115906810,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-arm64.dmg",
+            "sha256": "21f98db612c735b84fcf315b8fb5f4cb6460c7558eca1b73fe407bfab638e286"
+          },
+          {
             "arch": "universal",
             "kind": "zip",
             "name": "AppFlowy-0.14.10-macos-universal.zip",
             "size": 226900087,
             "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-universal.zip",
             "sha256": "f883664781aba131a3c3c22035e69829410275289f26c3c891c427d8a6871b3a"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "AppFlowy-0.14.10-macos-arm64.zip",
+            "size": 117064014,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-arm64.zip",
+            "sha256": "be8d6037c04bf9e3da21e2107f9a4f856b6d1f71d57f2d9979b644f5459905a2"
           }
         ]
       },
@@ -1623,79 +1647,79 @@
     },
     "ollama/ollama": {
       "mac": {
-        "tag": "v0.40.8",
-        "date": "2026-10-21T16:20:30Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+        "tag": "v0.40.9",
+        "date": "2026-10-22T01:33:10Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
         "files": [
           {
             "arch": "any",
             "kind": "dmg",
             "name": "Ollama.dmg",
-            "size": 214319422,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/Ollama.dmg",
-            "sha256": "795f49b6583e2304fe0b8baa386e3b63d8159e54c206bd9319022f755fd66420"
+            "size": 221049980,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/Ollama.dmg",
+            "sha256": "be36ee1d7d73bbdc3fe2b421b8f543413535f6d3c9222647c1ee164be4975b78"
           },
           {
             "arch": "any",
             "kind": "zip",
             "name": "Ollama-darwin.zip",
-            "size": 213598580,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/Ollama-darwin.zip",
-            "sha256": "fe930d0a8567fde70dc4a88b329b693efc15c8845795f5f6c2f7c4d3881b104d"
+            "size": 220346207,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/Ollama-darwin.zip",
+            "sha256": "33e883981a06b846952e15c329a33e80ddd16386514d0f5b06798f94f9aba871"
           }
         ]
       },
       "win": {
-        "tag": "v0.40.8",
-        "date": "2026-10-21T16:20:30Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+        "tag": "v0.40.9",
+        "date": "2026-10-22T01:33:10Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "OllamaSetup.exe",
-            "size": 1658535520,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/OllamaSetup.exe",
-            "sha256": "777f775abb9458ece249f8721db816ac38f7c457767843120ce4fb3d01380b56"
+            "size": 1662271480,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/OllamaSetup.exe",
+            "sha256": "67f57180b35691eb5e017388c3125ea96e41b3b6a55b84387bb71fd65c5530f9"
           },
           {
             "arch": "x64",
             "kind": "zip",
             "name": "ollama-windows-amd64.zip",
-            "size": 1582537058,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-windows-amd64.zip",
-            "sha256": "04d1d43ac62c2deb0393307bb49fed7caf6b192de41bdd497aaa9488089d5552"
+            "size": 1586281618,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-windows-amd64.zip",
+            "sha256": "c35019c95679eae1cb28fda4732a7c97978b9fbcbd8adfb5cbcc8fe7c161ea0b"
           },
           {
             "arch": "arm64",
             "kind": "zip",
             "name": "ollama-windows-arm64.zip",
-            "size": 210719486,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-windows-arm64.zip",
-            "sha256": "b3e5c85dd5cd6708df8f49d04706e979ba5164ad39567c1794a45afb2252d2a2"
+            "size": 213230757,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-windows-arm64.zip",
+            "sha256": "0b003e97381a0cf809976d98bd30e956d09694618e216c0655674c2e986e1139"
           }
         ]
       },
       "linux": {
-        "tag": "v0.40.8",
-        "date": "2026-10-21T16:20:30Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+        "tag": "v0.40.9",
+        "date": "2026-10-22T01:33:10Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
         "files": [
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "ollama-linux-arm64.tar.zst",
-            "size": 1561304422,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-linux-arm64.tar.zst",
-            "sha256": "f2e512f67f86ac5c53847e4e586ca8a9d3f359faf7a71cd69e37f12dcc63ded0"
+            "size": 1564286128,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-linux-arm64.tar.zst",
+            "sha256": "2a328795709135fcf0c011b9e2634431ab6f2fcab57ca11264725446cf4894b0"
           },
           {
             "arch": "x64",
             "kind": "tar",
             "name": "ollama-linux-amd64.tar.zst",
-            "size": 1505219659,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.8/ollama-linux-amd64.tar.zst",
-            "sha256": "0bb17cc19e9c1339ddbe0cba55148bf068f8f19dec8ec5fd531461aaa207282a"
+            "size": 1509118576,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-linux-amd64.tar.zst",
+            "sha256": "01f0d0ae50cad3295a79a165033a65cf324f8ae5f7be64679464d29ecf28d67c"
           }
         ]
       }
