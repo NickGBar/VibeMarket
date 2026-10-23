@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-23T13:31:29.642Z",
+  "updated": "2026-10-23T18:25:27.482Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -13,55 +13,55 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6710,
-    "ankitects/anki": 32239,
-    "Anuken/Mindustry": 29446,
-    "AppFlowy-IO/AppFlowy": 77671,
-    "audacity/audacity": 18814,
-    "AUTOMATIC1111/stable-diffusion-webui": 165122,
-    "bitwarden/clients": 14040,
-    "blender/blender": 21173,
-    "Comfy-Org/ComfyUI": 142220,
-    "excalidraw/excalidraw": 134425,
-    "ggml-org/llama.cpp": 132119,
-    "ggml-org/whisper.cpp": 54587,
+    "00-Evan/shattered-pixel-dungeon": 6711,
+    "ankitects/anki": 32248,
+    "Anuken/Mindustry": 29447,
+    "AppFlowy-IO/AppFlowy": 77678,
+    "audacity/audacity": 18815,
+    "AUTOMATIC1111/stable-diffusion-webui": 165126,
+    "bitwarden/clients": 14043,
+    "blender/blender": 21178,
+    "Comfy-Org/ComfyUI": 142293,
+    "excalidraw/excalidraw": 134435,
+    "ggml-org/llama.cpp": 132143,
+    "ggml-org/whisper.cpp": 54596,
     "GNOME/gimp": 6547,
-    "godotengine/godot": 118945,
-    "HandBrake/HandBrake": 24763,
-    "inkscape/inkscape": 4055,
-    "jellyfin/jellyfin": 58439,
-    "jesseduffield/lazygit": 83380,
+    "godotengine/godot": 118959,
+    "HandBrake/HandBrake": 24766,
+    "inkscape/inkscape": 4054,
+    "jellyfin/jellyfin": 58456,
+    "jesseduffield/lazygit": 83386,
     "KDE/krita": 10612,
-    "keepassxreboot/keepassxc": 29413,
-    "laurent22/joplin": 56848,
+    "keepassxreboot/keepassxc": 29421,
+    "laurent22/joplin": 56849,
     "LibreOffice/core": 4552,
-    "localsend/localsend": 95315,
-    "logseq/logseq": 45345,
-    "luanti-org/luanti": 13763,
-    "mpv-player/mpv": 37536,
+    "localsend/localsend": 95338,
+    "logseq/logseq": 45347,
+    "luanti-org/luanti": 13765,
+    "mpv-player/mpv": 37537,
     "mullvad/mullvadvpn-app": 7702,
-    "neovim/neovim": 103126,
-    "nomic-ai/gpt4all": 77355,
-    "obsproject/obs-studio": 77973,
-    "ollama/ollama": 184434,
+    "neovim/neovim": 103132,
+    "nomic-ai/gpt4all": 77357,
+    "obsproject/obs-studio": 77984,
+    "ollama/ollama": 184463,
     "OpenTTD/OpenTTD": 8414,
-    "penpot/penpot": 61531,
-    "signalapp/Signal-Desktop": 16610,
-    "storytold/designcraft": 4700,
-    "storytold/effectcraft": 7738,
-    "storytold/filmcraft": 15847,
-    "storytold/lightcraft": 14401,
-    "storytold/pdfcraft": 17353,
-    "storytold/photocraft": 71693,
-    "storytold/vectorcraft": 10488,
-    "super-productivity/super-productivity": 23081,
+    "penpot/penpot": 61542,
+    "signalapp/Signal-Desktop": 16611,
+    "storytold/designcraft": 4706,
+    "storytold/effectcraft": 7763,
+    "storytold/filmcraft": 15887,
+    "storytold/lightcraft": 14434,
+    "storytold/pdfcraft": 17392,
+    "storytold/photocraft": 71830,
+    "storytold/vectorcraft": 10504,
+    "super-productivity/super-productivity": 23091,
     "supertuxkart/stk-code": 5446,
-    "syncthing/syncthing": 89653,
-    "tauri-apps/tauri": 112139,
-    "videolan/vlc": 20195,
-    "VSCodium/vscodium": 33774,
-    "wesnoth/wesnoth": 6950,
-    "zed-industries/zed": 92087
+    "syncthing/syncthing": 89664,
+    "tauri-apps/tauri": 112144,
+    "videolan/vlc": 20200,
+    "VSCodium/vscodium": 33777,
+    "wesnoth/wesnoth": 6951,
+    "zed-industries/zed": 92101
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -1647,79 +1647,79 @@
     },
     "ollama/ollama": {
       "mac": {
-        "tag": "v0.40.9",
-        "date": "2026-10-22T01:33:10Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+        "tag": "v0.40.10",
+        "date": "2026-10-23T15:03:59Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
         "files": [
           {
             "arch": "any",
             "kind": "dmg",
             "name": "Ollama.dmg",
-            "size": 221049980,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/Ollama.dmg",
-            "sha256": "be36ee1d7d73bbdc3fe2b421b8f543413535f6d3c9222647c1ee164be4975b78"
+            "size": 221053130,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/Ollama.dmg",
+            "sha256": "ccf4153f56a7795eebc7e3a93601e981160adf6803b87a59ed62435f5aba991c"
           },
           {
             "arch": "any",
             "kind": "zip",
             "name": "Ollama-darwin.zip",
-            "size": 220346207,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/Ollama-darwin.zip",
-            "sha256": "33e883981a06b846952e15c329a33e80ddd16386514d0f5b06798f94f9aba871"
+            "size": 220350228,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/Ollama-darwin.zip",
+            "sha256": "0c8ac7dc394a7b6171d8531bdaba60dd8dd2d8ed525ebc6c4526a91497a029ee"
           }
         ]
       },
       "win": {
-        "tag": "v0.40.9",
-        "date": "2026-10-22T01:33:10Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+        "tag": "v0.40.10",
+        "date": "2026-10-23T15:03:59Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "OllamaSetup.exe",
-            "size": 1662271480,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/OllamaSetup.exe",
-            "sha256": "67f57180b35691eb5e017388c3125ea96e41b3b6a55b84387bb71fd65c5530f9"
+            "size": 1661645848,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/OllamaSetup.exe",
+            "sha256": "051556bec8d51d65a5e81e46aa9c238fff4fff0d47ce164fb25203ae48ed1c99"
           },
           {
             "arch": "x64",
             "kind": "zip",
             "name": "ollama-windows-amd64.zip",
-            "size": 1586281618,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-windows-amd64.zip",
-            "sha256": "c35019c95679eae1cb28fda4732a7c97978b9fbcbd8adfb5cbcc8fe7c161ea0b"
+            "size": 1586229413,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/ollama-windows-amd64.zip",
+            "sha256": "d52aea2d323bdd324bf66a4b1226844aa5fb665cc5974fbcceceda1ce3d934eb"
           },
           {
             "arch": "arm64",
             "kind": "zip",
             "name": "ollama-windows-arm64.zip",
-            "size": 213230757,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-windows-arm64.zip",
-            "sha256": "0b003e97381a0cf809976d98bd30e956d09694618e216c0655674c2e986e1139"
+            "size": 213234136,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/ollama-windows-arm64.zip",
+            "sha256": "31f3d5b3ed9f291e99f3f2df2430e261da72deb522f7b14978933588936daf0f"
           }
         ]
       },
       "linux": {
-        "tag": "v0.40.9",
-        "date": "2026-10-22T01:33:10Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+        "tag": "v0.40.10",
+        "date": "2026-10-23T15:03:59Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
         "files": [
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "ollama-linux-arm64.tar.zst",
-            "size": 1564286128,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-linux-arm64.tar.zst",
-            "sha256": "2a328795709135fcf0c011b9e2634431ab6f2fcab57ca11264725446cf4894b0"
+            "size": 1564567595,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/ollama-linux-arm64.tar.zst",
+            "sha256": "57dca26f51efc050112b733a65dea6f6c8e68da7a2946afd7c1eb8834d9eeb92"
           },
           {
             "arch": "x64",
             "kind": "tar",
             "name": "ollama-linux-amd64.tar.zst",
-            "size": 1509118576,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.9/ollama-linux-amd64.tar.zst",
-            "sha256": "01f0d0ae50cad3295a79a165033a65cf324f8ae5f7be64679464d29ecf28d67c"
+            "size": 1509264197,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.10/ollama-linux-amd64.tar.zst",
+            "sha256": "1e8ad2d2a394efdd235bee74deec237badd95142ffba77588140ab2a9ecec227"
           }
         ]
       }
@@ -3081,71 +3081,71 @@
     },
     "zed-industries/zed": {
       "mac": {
-        "tag": "v1.25.2",
-        "date": "2026-10-21T20:54:49Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.2",
+        "tag": "v1.25.3",
+        "date": "2026-10-23T13:45:48Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.3",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
             "name": "Zed-x86_64.dmg",
-            "size": 96054085,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-x86_64.dmg",
-            "sha256": "03d82136a68e13edbe3e624433de28af0c25ca86b9e35dab276379bd521519cc"
+            "size": 95365047,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.3/Zed-x86_64.dmg",
+            "sha256": "3159fb77e143c155762510100e765e8399fb6f74419898e3a4812eb2edd17cee"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
             "name": "Zed-aarch64.dmg",
-            "size": 87116314,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-aarch64.dmg",
-            "sha256": "c427b19bb0d55f5bd99391b21e7bda0dcf892abd80dbc020ef645c9d86457940"
+            "size": 87132038,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.3/Zed-aarch64.dmg",
+            "sha256": "f33e0aa688452284fe6e05386a0408b09920e7d18125ab4d83353628b75f33da"
           }
         ]
       },
       "win": {
-        "tag": "v1.25.2",
-        "date": "2026-10-21T20:54:49Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.2",
+        "tag": "v1.25.3",
+        "date": "2026-10-23T13:45:48Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.3",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "Zed-x86_64.exe",
-            "size": 64212392,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-x86_64.exe",
-            "sha256": "a610ed6f9246c68387b25bcf86c694d4a4a714c4c29f1b38de2240e44665ef25"
+            "size": 64172384,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.3/Zed-x86_64.exe",
+            "sha256": "f0188d5e8144caf82f0e2c80914527c0b0f4c6d75121c2a6bacb332c65054704"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "Zed-aarch64.exe",
-            "size": 57342584,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/Zed-aarch64.exe",
-            "sha256": "efc7d152ed45e17112dfd0743868f6c15d9c852c67d08d9f53fb14e6c43852bd"
+            "size": 57316416,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.3/Zed-aarch64.exe",
+            "sha256": "af77756e8c484e019e030724ff31f6f5debd6fe6543135ec4e2b7c8e273da2a4"
           }
         ]
       },
       "linux": {
-        "tag": "v1.25.2",
-        "date": "2026-10-21T20:54:49Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.2",
+        "tag": "v1.25.3",
+        "date": "2026-10-23T13:45:48Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.25.3",
         "files": [
           {
             "arch": "x64",
             "kind": "tar",
             "name": "zed-linux-x86_64.tar.gz",
-            "size": 89801314,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/zed-linux-x86_64.tar.gz",
-            "sha256": "b405ebea810c82ff84854631e7b2853ae1f22dd1b7e306cb57726471c6617508"
+            "size": 89793425,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.3/zed-linux-x86_64.tar.gz",
+            "sha256": "35f9115acd8b4c3bea6ed20f7c9b6ec8f1d2c2dd5a1cc438d552167b5ed4b342"
           },
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "zed-linux-aarch64.tar.gz",
-            "size": 84807190,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.2/zed-linux-aarch64.tar.gz",
-            "sha256": "5cc192ea154b273efd9a090b76ec5fe482647cbc9aea27a41fb9b42d8c95d63c"
+            "size": 84813822,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.25.3/zed-linux-aarch64.tar.gz",
+            "sha256": "776b3a5e39f1218eacabe1e9fa3859b7a6dda2653522d8a3992a9ab0f2184058"
           }
         ]
       }
