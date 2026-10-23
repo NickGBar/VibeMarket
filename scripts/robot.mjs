@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Робот VibeMarket. Работает в GitHub Actions и ведёт каталог без участия людей:
 // проверяет заявки, считает голоса, публикует и снимает приложения, скрывает их по жалобам,
-// обновляет звёзды и собирает файлы для кнопки «Скачать». Результат записывается в catalog.json, его читает страница.
+// добавляет одобренные находки разведчика (scripts/scout.mjs), обновляет звёзды и собирает файлы
+// для кнопки «Скачать». Результат записывается в catalog.json, его читает страница.
 //
 //   node scripts/robot.mjs              полный проход
 //   node scripts/robot.mjs --dry-run    то же, но без записи в GitHub: меняется только catalog.json на диске
@@ -14,11 +15,10 @@ import { createHash } from 'node:crypto';
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { FORM_LABELS, formatDate, msg } from './robot-i18n.mjs';
-import { pickDownloads, releaseOrder } from './downloads.mjs';
+import { fetchReleases, pickDownloads } from './downloads.mjs';
+import { gh, ghAll, graphqlRepos, hasToken, requestCount } from './github.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
-const API = (process.env.GITHUB_API_URL || 'https://api.github.com').replace(/\/+$/, '');
-const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const HOME = process.env.GITHUB_REPOSITORY || 'NickGBar/VibeMarket';
 const BOT = process.env.ROBOT_LOGIN || 'github-actions[bot]';
 const DRY = process.argv.includes('--dry-run');
@@ -34,6 +34,8 @@ const LABELS = {
   rejected: ['8E8E93', 'Не набрала голосов'],
   blocked: ['1C1C1E', 'Снято мейнтейнером'],
   report: ['FF9F0A', 'Жалоба на приложение'],
+  scout: ['5E5CE6', 'Находка робота-разведчика'],
+  approved: ['64D2FF', 'Мейнтейнер одобрил находку: добавить в каталог'],
 };
 
 // Заголовок поля формы → поле и язык. Формы на всех языках присылают поля как «### Заголовок».
@@ -60,37 +62,7 @@ const oneLine = (value, max) => String(value || '')
 const render = (lang, problems) => problems.map(([key, vars]) => msg(lang, key, vars));
 
 /* ---------- GitHub ---------- */
-
-let calls = 0;
-async function gh(path, { method = 'GET', body, allow = [] } = {}) {
-  calls++;
-  const res = await fetch(`${API}${path}`, {
-    method,
-    headers: {
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'vibemarket-robot',
-      ...(TOKEN && { Authorization: `Bearer ${TOKEN}` }),
-      ...(body && { 'Content-Type': 'application/json' }),
-    },
-    body: body && JSON.stringify(body),
-  });
-  if (!res.ok && !allow.includes(res.status)) {
-    throw new Error(`${method} ${path}: HTTP ${res.status} ${(await res.text().catch(() => '')).slice(0, 200)}`);
-  }
-  if (res.status === 204 || !res.ok) return { status: res.status, data: null };
-  return { status: res.status, data: await res.json() };
-}
-
-async function ghAll(path) {
-  const items = [];
-  for (let page = 1; page <= 30; page++) {
-    const { data } = await gh(`${path}${path.includes('?') ? '&' : '?'}per_page=100&page=${page}`);
-    items.push(...data);
-    if (data.length < 100) break;
-  }
-  return items;
-}
+// gh, ghAll и graphqlRepos — в scripts/github.mjs
 
 // В режиме --dry-run всё, что меняет GitHub, только печатается
 async function change(description, action) {
@@ -265,7 +237,8 @@ async function checkSubmission(issue, ctx) {
     facts = await repoFacts(repo);
     problems.push(...repoProblems(facts));
     const key = (facts.repo || repo).toLowerCase();
-    if (ctx.site.repos.some(r => r.toLowerCase() === key) || ctx.catalog.sandbox.some(a => a.repo.toLowerCase() === key && a.issue !== issue.number)) {
+    if (ctx.site.repos.some(r => r.toLowerCase() === key) || ctx.catalog.picks.some(a => a.repo.toLowerCase() === key)
+      || ctx.catalog.sandbox.some(a => a.repo.toLowerCase() === key && a.issue !== issue.number)) {
       problems.push(['duplicate']);
     } else if (ctx.candidates.some(c => c.number !== issue.number && c.repo.toLowerCase() === key)) {
       problems.push(['votingElsewhere']);
@@ -349,7 +322,7 @@ async function countVotes(issue, since) {
 function uniqueId(name, catalog, site) {
   const base = `sb-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40) || 'app'}`;
   let id = base;
-  for (let n = 2; site.ids.has(id) || catalog.sandbox.some(a => a.id === id); n++) id = `${base}-${n}`;
+  for (let n = 2; site.ids.has(id) || catalog.sandbox.some(a => a.id === id) || catalog.picks.some(a => a.id === id); n++) id = `${base}-${n}`;
   return id;
 }
 
@@ -380,15 +353,89 @@ async function finishVoting(issue, meta, votes, ctx) {
   await closeIssue(issue, 'not_planned');
 }
 
+/* ---------- Находки разведчика ---------- */
+
+// Задачу с находкой заводит scripts/scout.mjs, мейнтейнер правит поля и ставит approved.
+// Метки ставят только люди с правами на репозиторий, поэтому approved — достаточное подтверждение.
+// Так же можно добавить приложение вручную: завести задачу с теми же полями и метками scout и approved.
+const siteURL = () => {
+  const [owner, name] = HOME.split('/');
+  return `https://${owner.toLowerCase()}.github.io/${name}/`;
+};
+
+function pickId(name, repo, ctx) {
+  const slug = text => String(text).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
+  const base = slug(name) || slug(repo.split('/')[1]) || 'app';
+  const taken = id => ctx.site.ids.has(id) || ctx.catalog.sandbox.some(a => a.id === id) || ctx.catalog.picks.some(a => a.id === id);
+  let id = base;
+  for (let n = 2; taken(id); n++) id = `${base}-${n}`;
+  return id;
+}
+
+async function approvePick(issue, ctx) {
+  const { form } = parseForm(issue.body);
+  const problems = [];
+  const repo = parseRepo(form.repo);
+  const name = oneLine(form.name, 60);
+  const desc = oneLine(form.desc, 120);
+  const about = oneLine(form.about, 800);
+  const category = ctx.site.catNames.get(norm(form.category)) || ctx.site.catNames.get(norm(form.category).split(/[\s(]/)[0]);
+  if (!repo) problems.push(['repoFormat']);
+  if (name.length < 2 || name.length > 40) problems.push(['nameLength']);
+  if (desc.length < 10 || desc.length > 90) problems.push(['descLength']);
+  if (about.length > 600) problems.push(['aboutLength']);
+  if (!category) problems.push(['category', { list: Object.keys(ctx.site.cats).join(', ') }]);
+  let facts = null;
+  if (repo) {
+    facts = await repoFacts(repo);
+    // Мейнтейнер выбрал приложение сам: тема vibemarket, возраст и релиз не обязательны, только открытость и лицензия
+    problems.push(...repoBreaks(facts));
+    const key = (facts.repo || repo).toLowerCase();
+    if (ctx.site.repos.some(r => r.toLowerCase() === key) || ctx.catalog.sandbox.some(a => a.repo.toLowerCase() === key)
+      || ctx.catalog.picks.some(a => a.repo.toLowerCase() === key)) problems.push(['duplicate']);
+  }
+  if (problems.length) {
+    await change(`#${issue.number}: находку не добавить`, () => gh(`/repos/${HOME}/issues/${issue.number}/comments`, {
+      method: 'POST', body: { body: [msg('ru', 'pickInvalid'), '', ...render('ru', problems).map(p => `- ${p}`)].join('\n') },
+    }));
+    await setLabels(issue, [], ['approved']);
+    return;
+  }
+  const glyph = /^[a-z0-9]{1,20}$/.test(norm(form.glyph)) ? norm(form.glyph) : 'blocks';
+  const entry = {
+    id: pickId(name, facts.repo, ctx),
+    name,
+    cat: category,
+    repo: facts.repo,
+    lic: facts.license,
+    stars: facts.stars,
+    glyph,
+    c: PALETTE[ctx.site.colorNames.get(norm(form.color)) ?? 0].slice(1),
+    desc,
+    about,
+    os: [...new Set(String(form.platforms || '').split(/[,;\n、，]/).map(p => ctx.site.osNames.get(norm(p))).filter(Boolean))].join(''),
+    issue: issue.number,
+    addedAt: NOW.toISOString(),
+    checkedAt: NOW.toISOString(),
+  };
+  ctx.catalog.picks.push(entry);
+  console.log(`находка добавлена: ${entry.repo} → ${entry.id}`);
+  await change(`#${issue.number}: находка добавлена`, () => gh(`/repos/${HOME}/issues/${issue.number}/comments`, {
+    method: 'POST', body: { body: msg('ru', 'picked', { url: `${siteURL()}ru/app/${entry.id}/` }) },
+  }));
+  await closeIssue(issue, 'completed');
+}
+
 /* ---------- Основной проход ---------- */
 
 const issueFields = (issue, extra) => ({ number: issue.number, author: issue.user.login, ...extra });
 
 async function main() {
-  if (!TOKEN) console.warn('Нет GITHUB_TOKEN: GitHub ограничит запросы, а проверка голосов и звёзд может не пройти.');
+  if (!hasToken) console.warn('Нет GITHUB_TOKEN: GitHub ограничит запросы, а проверка голосов и звёзд может не пройти.');
   const site = await loadSite();
   const catalog = await loadCatalog();
   catalog.sandbox ||= [];
+  catalog.picks ||= [];
   const before = JSON.stringify({ ...catalog, updated: null });
   await ensureLabels();
 
@@ -396,8 +443,11 @@ async function main() {
   const open = (await ghAll(`/repos/${HOME}/issues?state=open`)).filter(i => !i.pull_request);
   const submissions = [];
   const reports = [];
+  const scouted = [];
   for (const issue of open) {
     if (hasLabel(issue, 'blocked')) continue;
+    // Находки разведчика похожи на заявку по полям, но заявками не являются
+    if (hasLabel(issue, 'scout')) { scouted.push(issue); continue; }
     const { form } = parseForm(issue.body);
     if (hasLabel(issue, 'report') || ('repo' in form && 'reason' in form)) {
       await setLabels(issue, ['report']);
@@ -438,32 +488,43 @@ async function main() {
     candidates.push({ issue: issue.number, name: app.name, desc: app.desc, repo: app.repo, cat: app.cat, glyph: app.glyph, c: app.c, lic: app.lic, stars: app.stars, up: votes.up, down: votes.down, closesAt: closesAt.toISOString() });
   }
 
+  // 3а. Находки разведчика, которые мейнтейнер одобрил меткой approved
+  for (const issue of scouted) {
+    if (hasLabel(issue, 'approved')) await approvePick(issue, ctx);
+  }
+
   // 4. Мейнтейнер поставил метку blocked: приложение снимается сразу
   const blocked = await ghAll(`/repos/${HOME}/issues?state=all&labels=blocked`);
   const blockedIssues = new Set(blocked.map(i => i.number));
-  catalog.sandbox = catalog.sandbox.filter(app => {
+  const unblocked = list => list.filter(app => {
     if (!blockedIssues.has(app.issue)) return true;
     console.log(`снято мейнтейнером: ${app.repo}`);
     return false;
   });
+  catalog.sandbox = unblocked(catalog.sandbox);
+  catalog.picks = unblocked(catalog.picks);
 
   // 5. Раз в сутки перепроверяем опубликованные: удалён, закрыт, в архиве, сменил лицензию
-  const kept = [];
-  for (const app of catalog.sandbox) {
-    if (app.checkedAt && age(app.checkedAt) < 1) { kept.push(app); continue; }
-    const facts = await repoFacts(app.repo);
-    const breaks = repoBreaks(facts);
-    if (breaks.length) {
-      const reasons = render(app.lang || 'ru', breaks).join(' ');
-      console.log(`снято: ${app.repo}: ${render('ru', breaks).join(' ')}`);
-      if (app.issue) {
-        await change(`#${app.issue}: сообщить о снятии`, () => gh(`/repos/${HOME}/issues/${app.issue}/comments`, { method: 'POST', body: { body: msg(app.lang || 'ru', 'removed', { reasons }) } }));
+  const recheck = async list => {
+    const kept = [];
+    for (const app of list) {
+      if (app.checkedAt && age(app.checkedAt) < 1) { kept.push(app); continue; }
+      const facts = await repoFacts(app.repo);
+      const breaks = repoBreaks(facts);
+      if (breaks.length) {
+        const reasons = render(app.lang || 'ru', breaks).join(' ');
+        console.log(`снято: ${app.repo}: ${render('ru', breaks).join(' ')}`);
+        if (app.issue) {
+          await change(`#${app.issue}: сообщить о снятии`, () => gh(`/repos/${HOME}/issues/${app.issue}/comments`, { method: 'POST', body: { body: msg(app.lang || 'ru', 'removed', { reasons }) } }));
+        }
+        continue;
       }
-      continue;
+      kept.push({ ...app, repo: facts.repo, lic: facts.license, checkedAt: NOW.toISOString() });
     }
-    kept.push({ ...app, repo: facts.repo, lic: facts.license, checkedAt: NOW.toISOString() });
-  }
-  catalog.sandbox = kept;
+    return kept;
+  };
+  catalog.sandbox = await recheck(catalog.sandbox);
+  catalog.picks = await recheck(catalog.picks);
 
   // 6. Жалобы: приложение скрывается, пока открыто достаточно жалоб от разных аккаунтов
   const reporters = new Map();
@@ -479,25 +540,12 @@ async function main() {
   const hidden = new Set(catalog.hidden.map(h => h.repo));
 
   // 7. Звёзды одним GraphQL-запросом на сотню репозиториев
-  const repos = [...new Set([...site.repos, ...catalog.sandbox.map(a => a.repo)])];
+  const repos = [...new Set([...site.repos, ...catalog.sandbox.map(a => a.repo), ...catalog.picks.map(a => a.repo)])];
   const stars = { ...(catalog.stars || {}) };
-  for (let i = 0; i < repos.length; i += 100) {
-    const chunk = repos.slice(i, i + 100);
-    const variables = {};
-    const fields = chunk.map((slug, j) => {
-      const [owner, name] = slug.split('/');
-      variables[`o${j}`] = owner;
-      variables[`n${j}`] = name;
-      return `r${j}: repository(owner: $o${j}, name: $n${j}) { stargazerCount }`;
-    });
-    const query = `query(${chunk.map((_, j) => `$o${j}: String!, $n${j}: String!`).join(', ')}) { ${fields.join(' ')} }`;
-    const { data } = await gh('/graphql', { method: 'POST', body: { query, variables }, allow: [401, 403, 502] });
-    chunk.forEach((slug, j) => {
-      const count = data?.data?.[`r${j}`]?.stargazerCount;
-      if (Number.isFinite(count)) stars[slug] = count;
-    });
+  for (const [slug, repo] of await graphqlRepos(repos, 'stargazerCount', { chunk: 100 })) {
+    if (Number.isFinite(repo?.stargazerCount)) stars[slug] = repo.stargazerCount;
   }
-  for (const app of catalog.sandbox) if (Number.isFinite(stars[app.repo])) app.stars = stars[app.repo];
+  for (const app of [...catalog.sandbox, ...catalog.picks]) if (Number.isFinite(stars[app.repo])) app.stars = stars[app.repo];
 
   // 8. Файлы для кнопки «Скачать»: свежие релизы, разобранные по системам и процессорам (scripts/downloads.mjs).
   // Если GitHub не ответил про репозиторий, остаются прежние файлы.
@@ -505,35 +553,10 @@ async function main() {
   const skipDl = new Set((dlRules.skip || []).map(slug => slug.toLowerCase()));
   const downloads = Object.fromEntries(Object.entries(catalog.downloads || {}).filter(([slug]) => repos.includes(slug) && !skipDl.has(slug.toLowerCase())));
   const dlRepos = repos.filter(slug => !skipDl.has(slug.toLowerCase()));
-  for (let i = 0; i < dlRepos.length; i += 10) {
-    const chunk = dlRepos.slice(i, i + 10);
-    const variables = {};
-    const fields = chunk.map((slug, j) => {
-      const [owner, name] = slug.split('/');
-      variables[`o${j}`] = owner;
-      variables[`n${j}`] = name;
-      return `r${j}: repository(owner: $o${j}, name: $n${j}) { releases(first: ${dlRules.releases || 10}, orderBy: { field: CREATED_AT, direction: DESC }) { nodes { databaseId tagName isDraft isPrerelease isLatest publishedAt url releaseAssets(first: 100) { totalCount nodes { name size downloadUrl digest } } } } }`;
-    });
-    const query = `query(${chunk.map((_, j) => `$o${j}: String!, $n${j}: String!`).join(', ')}) { ${fields.join(' ')} }`;
-    const { data } = await gh('/graphql', { method: 'POST', body: { query, variables }, allow: [401, 403, 502] });
-    for (const [j, slug] of chunk.entries()) {
-      const releases = data?.data?.[`r${j}`]?.releases?.nodes;
-      if (!Array.isArray(releases)) continue;
-      const tag = dlRules.tags?.[slug];
-      // У VSCodium в релизе под две сотни файлов: дочитываем главный релиз через REST
-      const main = releaseOrder(releases, { tag })[0];
-      if (main && main.releaseAssets.totalCount > main.releaseAssets.nodes.length) {
-        try {
-          const assets = await ghAll(`/repos/${slug}/releases/${main.databaseId}/assets`);
-          main.releaseAssets.nodes = assets.map(a => ({ name: a.name, size: a.size, downloadUrl: a.browser_download_url, digest: a.digest }));
-        } catch (e) {
-          console.log(`${slug}: не удалось дочитать файлы релиза: ${e.message}`);
-        }
-      }
-      const picked = pickDownloads(releases, { tag });
-      if (Object.keys(picked).length) downloads[slug] = picked;
-      else delete downloads[slug];
-    }
+  for (const [slug, releases] of await fetchReleases(dlRepos, { count: dlRules.releases || 10, tags: dlRules.tags || {} })) {
+    const picked = pickDownloads(releases, { tag: dlRules.tags?.[slug] });
+    if (Object.keys(picked).length) downloads[slug] = picked;
+    else delete downloads[slug];
   }
 
   // 9. Перенос на главную: проверено временем и звёздами, без жалоб
@@ -558,6 +581,7 @@ async function main() {
     stars: Object.fromEntries(Object.entries(stars).sort(([a], [b]) => a.localeCompare(b))),
     downloads: Object.fromEntries(Object.entries(downloads).sort(([a], [b]) => a.localeCompare(b))),
     sandbox: catalog.sandbox,
+    picks: catalog.picks,
     candidates,
     hidden: catalog.hidden,
   };
@@ -568,7 +592,7 @@ async function main() {
   } else {
     console.log('catalog.json без изменений');
   }
-  console.log(`Запросов к GitHub: ${calls}. В песочнице: ${next.sandbox.length}, на голосовании: ${candidates.length}, скрыто: ${next.hidden.length}, с файлами для скачивания: ${Object.keys(downloads).length}.`);
+  console.log(`Запросов к GitHub: ${requestCount()}. В песочнице: ${next.sandbox.length}, находок в каталоге: ${next.picks.length}, на голосовании: ${candidates.length}, скрыто: ${next.hidden.length}, с файлами для скачивания: ${Object.keys(downloads).length}.`);
 }
 
 await main();

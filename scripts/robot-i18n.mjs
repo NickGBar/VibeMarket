@@ -52,6 +52,8 @@ const MESSAGES = {
     brokenHint: () => 'Исправьте и отредактируйте заявку, чтобы начать голосование заново.',
     rejected: ({ tally, needed, weight }) => `**Голосование завершено, приложение не прошло.** ${tally} Нужно не меньше ${needed} 👍 и 👍 − ${weight}×👎 не меньше ${needed}. Можно открыть заявку снова, тогда голосование начнётся заново.`,
     removed: ({ reasons }) => `Приложение снято с публикации: ${reasons}`,
+    picked: ({ url }) => `✅ **Добавлено в каталог.** Страница приложения: ${url}\n\nЧтобы снять его, поставьте на эту задачу метку \`blocked\`.`,
+    pickInvalid: () => '**Не получилось добавить.** Поправьте поля в описании задачи и поставьте метку `approved` ещё раз:',
   },
   en: {
     repoFormat: () => 'Enter the repository as owner/name, for example octocat/my-app.',
@@ -88,6 +90,8 @@ const MESSAGES = {
     brokenHint: () => 'Fix the issues and edit the submission to start voting again.',
     rejected: ({ tally, needed, weight }) => `**Voting is over, the app did not pass.** ${tally} It needs at least ${needed} 👍 and 👍 − ${weight}×👎 of at least ${needed}. You can reopen the submission to start a new vote.`,
     removed: ({ reasons }) => `The app was unpublished: ${reasons}`,
+    picked: ({ url }) => `✅ **Added to the catalog.** App page: ${url}\n\nTo remove it, add the \`blocked\` label to this issue.`,
+    pickInvalid: () => '**Could not add the app.** Fix the fields in the issue description and add the `approved` label again:',
   },
   es: {
     repoFormat: () => 'Indica el repositorio como propietario/nombre, por ejemplo octocat/my-app.',

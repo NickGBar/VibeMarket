@@ -1,0 +1,32 @@
+# Разведчик VibeMarket: раз в неделю ищет на GitHub новые бесплатные приложения с открытым кодом
+# и заводит на каждое задачу с меткой scout. Добавляет приложение в каталог робот, когда мейнтейнер
+# ставит на задачу метку approved. Правила поиска — в rules.json → scout.
+name: Разведчик VibeMarket
+
+on:
+  schedule:
+    - cron: "41 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      # Описания репозиториев с GitHub — недоверенный текст: разведчик кладёт его в задачу через API,
+      # в shell попадает только этот скрипт из main
+      - name: Поиск
+        run: node scripts/scout.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

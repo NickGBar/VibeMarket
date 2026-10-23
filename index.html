@@ -902,9 +902,9 @@ select.input option { background: var(--surface); color: var(--fg); }
     <div class="account" id="account" hidden></div>
   </div>
   <nav class="chips" id="chips" aria-label="Категории" data-i18n-attr="aria-label:nav.label">
-    <button class="chip" type="button" data-target="today" aria-current="true">Сегодня</button>
-    <button class="chip" type="button" data-target="top">Топ</button>
-    <button class="chip" type="button" data-target="adobe">Вместо Adobe</button>
+    <button class="chip" type="button" data-target="today" aria-current="true" data-i18n="nav.today">Сегодня</button>
+    <button class="chip" type="button" data-target="top" data-i18n="nav.top">Топ</button>
+    <button class="chip" type="button" data-target="adobe" data-i18n="adobe.title">Вместо Adobe</button>
   </nav>
 </header>
 
@@ -1209,6 +1209,10 @@ select.input option { background: var(--surface); color: var(--fg); }
  "daily.luanti.text": "Luanti, бывший Minetest, — воксельный движок с тысячами игр и модов на Lua. Можно поднять собственный сервер и играть с друзьями.",
  "daily.logseq.title": "Заметки, где всё связано",
  "daily.logseq.text": "В Logseq каждая мысль — отдельный блок, который связывается с другими через ссылки и теги. Начинайте с ежедневного журнала, а файлы останутся у вас в Markdown.",
+ "seo.homeTitle": "VibeMarket — бесплатные приложения с открытым кодом",
+ "seo.homeDesc": "Витрина бесплатных программ с открытым кодом для macOS, Windows, Linux и Android. Без рекламы и трекеров, скачивание одной кнопкой прямо из релизов на GitHub.",
+ "seo.appTitle": "{name}: скачать бесплатно, открытый код · VibeMarket",
+ "seo.appDesc": "{desc} Бесплатно, без рекламы, лицензия {lic}.",
  "manifest.eyebrow": "Открытый маркет",
  "manifest.title": "Бесплатно, без рекламы и с открытым кодом. У каждого приложения.",
  "manifest.priceLabel": "стоит любое приложение",
@@ -1718,8 +1722,10 @@ select.input option { background: var(--surface); color: var(--fg); }
         .map(shot => ({ src: shot.src, caption: esc(shot.caption || raw.name) })),
       issue: Number.isInteger(raw.issue) ? raw.issue : 0,
       votes: Number.isInteger(raw.votes) ? raw.votes : 0,
-      promoted: raw.promoted === true,
-      thirdParty: true,
+      // Находки разведчика одобряет мейнтейнер: они сразу в основном каталоге и без пометки «Стороннее»
+      picked: raw.picked === true,
+      promoted: raw.promoted === true || raw.picked === true,
+      thirdParty: raw.picked !== true,
     }];
   };
   const buildSandbox = list => {
@@ -1728,6 +1734,8 @@ select.input option { background: var(--surface); color: var(--fg); }
   };
   let SANDBOX_APPS = buildSandbox(SANDBOX);
   let ALL = [...APPS, ...SANDBOX_APPS];
+  // Основной каталог: приложения из index.html и одобренные находки разведчика из catalog.json
+  const mainApps = () => [...APPS, ...SANDBOX_APPS.filter(a => a.picked)];
   let byId = Object.fromEntries(ALL.map(a => [a.id, a]));
   // Приложения, скрытые роботом по жалобам
   let hiddenRepos = new Set();
@@ -1754,6 +1762,23 @@ select.input option { background: var(--surface); color: var(--fg); }
   };
   let lang = 'ru';
   let LOCALE = {};
+
+  // Адреса. На GitHub Pages у каждого приложения своя страница на каждом языке: ru/app/zed/, en/app/zed/.
+  // Их собирает scripts/build-site.mjs и помечает метками vibemarket:*. Без собранных страниц
+  // (server.mjs, превью, файл с диска) приложения открываются по #app-zed, как раньше.
+  const metaContent = name => document.querySelector(`meta[name="vibemarket:${name}"]`)?.content || '';
+  const PAGES = metaContent('pages') === '1';
+  const ROOT_URL = new URL(metaContent('root') || './', location.href);
+  const PAGE_LANG = metaContent('lang');
+  const siteURL = file => new URL(file, ROOT_URL).href;
+  const homeHref = () => (PAGES ? new URL(`${lang}/`, ROOT_URL).pathname : location.pathname + location.search);
+  const appHref = id => (PAGES ? new URL(`${lang}/app/${id}/`, ROOT_URL).pathname : `#app-${id}`);
+  const pathRoute = () => {
+    if (!PAGES) return null;
+    const rest = decodeURIComponent(location.pathname).slice(ROOT_URL.pathname.length);
+    const m = /^(ru|en|es|zh)\/(?:app\/([a-z0-9-]+)\/?)?$/.exec(rest);
+    return m ? { lang: m[1], id: m[2] || '' } : null;
+  };
   let pluralRules = new Intl.PluralRules('ru-RU');
 
   // Строка интерфейса: перевод, иначе русский. Множественное число по правилам языка (Intl.PluralRules).
@@ -1942,12 +1967,12 @@ select.input option { background: var(--surface); color: var(--fg); }
   const cardLabel = app => auth.starred.has(app.repo) ? t('card.starred', { name: app.name }) : app.name;
   const cardHTML = app => `<article class="app${auth.starred.has(app.repo) ? ' is-starred' : ''}" role="listitem" data-app="${app.id}" aria-label="${cardLabel(app)}">` +
       `<div class="app-top"><span class="icon-wrap">${iconHTML(app, 64)}<b class="mine-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${STAR_PATH}"/></svg></b></span>${getHTML(app)}</div>` +
-      `<div class="app-text"><h3 class="app-name"><a class="app-link" href="#app-${app.id}" data-open="${app.id}">${app.name}</a></h3><p class="app-desc">${app.desc}</p></div>` +
+      `<div class="app-text"><h3 class="app-name"><a class="app-link" href="${appHref(app.id)}" data-open="${app.id}">${app.name}</a></h3><p class="app-desc">${app.desc}</p></div>` +
       `<div class="app-meta">${ratingHTML(app)}<span class="meta-tags">${app.thirdParty ? `<span class="tp-badge" title="${t('card.thirdPartyTitle')}">${t('card.thirdParty')}</span>` : ''}<span class="license" title="${t('card.license')}">${app.lic}</span></span></div>` +
     `</article>`;
 
   const lockupHTML = (app, size = 52, sub, link = false) => `${iconHTML(app, size)}` +
-    `<span class="lockup-text">${link ? `<a class="lockup-name lockup-link" href="#app-${app.id}" data-open="${app.id}">${app.name}</a>` : `<span class="lockup-name">${app.name}</span>`}<span class="lockup-sub">${sub || `${catName[app.cat]} · ${app.lic}`}</span></span>`;
+    `<span class="lockup-text">${link ? `<a class="lockup-name lockup-link" href="${appHref(app.id)}" data-open="${app.id}">${app.name}</a>` : `<span class="lockup-name">${app.name}</span>`}<span class="lockup-sub">${sub || `${catName[app.cat]} · ${app.lic}`}</span></span>`;
 
   const navHTML = () => `<button class="nav-btn" type="button" data-dir="-1" aria-label="${t('nav.prev')}"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>` +
     `<button class="nav-btn" type="button" data-dir="1" aria-label="${t('nav.next')}"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>`;
@@ -2216,7 +2241,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     </section>`).join('');
 
   // Части каталога, которые зависят от числа звёзд: перерисовываются после входа через GitHub
-  const byStars = () => APPS.filter(visible).sort((a, b) => b.stars - a.stars);
+  const byStars = () => mainApps().filter(visible).sort((a, b) => b.stars - a.stars);
 
   // Подборка: открытые аналоги программ Adobe от ArtCraft (github.com/storytold), в порядке знакомых названий
   const ADOBE_PICKS = ['photocraft', 'lightcraft', 'vectorcraft', 'designcraft', 'pdfcraft', 'filmcraft', 'effectcraft'];
@@ -2255,7 +2280,7 @@ select.input option { background: var(--surface); color: var(--fg); }
           <span class="chart-rank">${ci * 3 + ri + 1}</span>
           ${iconHTML(app, 58)}
           <div class="chart-body">
-            <span class="lockup-text"><a class="lockup-name chart-link" href="#app-${app.id}" data-open="${app.id}">${app.name}</a><span class="lockup-sub">${catName[app.cat]} · ${fmtCompact.format(app.stars)} ★</span></span>
+            <span class="lockup-text"><a class="lockup-name chart-link" href="${appHref(app.id)}" data-open="${app.id}">${app.name}</a><span class="lockup-sub">${catName[app.cat]} · ${fmtCompact.format(app.stars)} ★</span></span>
             ${getHTML(app)}
           </div>
         </div>`).join('')}</div>`).join('');
@@ -2312,7 +2337,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const renderStarTile = () => {
     const leader = byStars()[0];
     const starTile = document.getElementById('star-tile');
-    starTile.href = `#app-${leader.id}`;
+    starTile.href = appHref(leader.id);
     starTile.dataset.open = leader.id;
     starTile.setAttribute('aria-label', t('star.aria', { name: plainName(leader), stars: starsText(leader.stars) }));
     starTile.title = starsText(leader.stars);
@@ -2335,8 +2360,9 @@ select.input option { background: var(--surface); color: var(--fg); }
   renderFooterStars();
 
   const renderStats = () => {
-    document.getElementById('stat-count').textContent = fmtInt.format(APPS.length);
-    document.getElementById('stat-count-label').textContent = t('manifest.projects', { n: APPS.length });
+    const count = mainApps().filter(visible).length;
+    document.getElementById('stat-count').textContent = fmtInt.format(count);
+    document.getElementById('stat-count-label').textContent = t('manifest.projects', { n: count });
   };
   renderStats();
 
@@ -2569,7 +2595,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     const query = q.value.trim();
     const searching = query.length > 0;
     const fromDetail = !!openId;
-    if (fromDetail) { openId = null; returnTo = null; trail = []; document.title = baseTitle; pushEntry(null); }
+    if (fromDetail) { openId = null; returnTo = null; trail = []; document.title = homeTitle(); pushEntry(null); }
     const wasSearching = !results.hidden;
     showView(searching ? 'results' : 'browse');
     if (fromDetail || searching !== wasSearching) scrollTo({ top: 0 });
@@ -2592,6 +2618,9 @@ select.input option { background: var(--surface); color: var(--fg); }
   /* ---------- Страница приложения ---------- */
   const detail = document.getElementById('detail');
   const baseTitle = document.title;
+  // На собранных страницах заголовок главной свой на каждом языке, его же видят поисковики
+  const homeTitle = () => (PAGES ? t('seo.homeTitle') : baseTitle);
+  const appTitle = app => (PAGES ? t('seo.appTitle', { name: plainName(app) }) : `${plainName(app)} · VibeMarket`);
   const starsDate = new Date(STARS_UPDATED + 'T00:00:00');
   const arrowOut = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
   const checkIcon = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10"/><path d="m5.8 10.3 2.7 2.7 5.7-5.9"/></svg>';
@@ -2656,7 +2685,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     const d = DETAILS[app.id] || { about: app.about || app.desc, os: app.os || '', shots: app.shots || [] };
     const r = ratingOf(app.stars);
     const owner = app.repo.split('/')[0];
-    const ranked = (third ? SANDBOX_APPS : APPS.filter(a => a.cat === app.cat)).filter(visible).sort((a, b) => b.stars - a.stars);
+    const ranked = (third ? SANDBOX_APPS.filter(a => a.thirdParty) : mainApps().filter(a => a.cat === app.cat)).filter(visible).sort((a, b) => b.stars - a.stars);
     const related = ranked.filter(a => a !== app);
     const captions = third ? [] : d.shots.map(s => s.caption || s[1]);
     const platforms = [...(d.os || '')].map(c => t(`os.${c}`)).join(', ') || t('info.platformsNone');
@@ -2738,7 +2767,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const currentBack = () => (trail.length ? byId[trail[trail.length - 1]]?.name : sectionLabel(returnTo?.section)) || t('nav.today');
   const showView = v => { browse.hidden = v !== 'browse'; results.hidden = v !== 'results'; detail.hidden = v !== 'detail'; };
   const pushEntry = id => {
-    try { history.pushState({ vibemarket: true }, '', id ? `#app-${id}` : location.pathname + location.search); }
+    try { history.pushState({ vibemarket: true }, '', id ? appHref(id) : homeHref()); }
     catch (e) { /* встроенное окно без истории: работаем без неё */ }
   };
 
@@ -2754,7 +2783,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     openId = id;
     renderDetail(app, currentBack());
     showView('detail');
-    document.title = `${plainName(app)} · VibeMarket`;
+    document.title = appTitle(app);
     scrollTo({ top: 0 });
     setActive(app.thirdParty ? 'sandbox' : app.cat);
     current = '';
@@ -2767,7 +2796,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     if (!openId) return;
     const back = returnTo || { view: 'browse', y: 0 };
     openId = null; returnTo = null; trail = [];
-    document.title = baseTitle;
+    document.title = homeTitle();
     showView(back.view === 'results' && q.value.trim() ? 'results' : 'browse');
     if (restore) {
       scrollTo({ top: back.y });
@@ -2780,14 +2809,22 @@ select.input option { background: var(--surface); color: var(--fg); }
     if (history.state && history.state.vibemarket) { history.back(); return; }
     if (trail.length) { openApp(trail[trail.length - 1], { push: false }); return; }
     closeApp();
-    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* без истории */ }
+    try { history.replaceState(null, '', homeHref()); } catch (e) { /* без истории */ }
   };
 
   const routeFromLocation = () => {
     if (location.hash === '#submit') { closeApp({ restore: false }); openSubmit(); return; }
-    const match = /^#app-([a-z0-9-]+)$/i.exec(location.hash);
-    if (match && byId[match[1]]) { if (openId !== match[1]) openApp(match[1], { push: false }); }
-    else closeApp();
+    const hash = /^#app-([a-z0-9-]+)$/i.exec(location.hash)?.[1];
+    const id = hash || pathRoute()?.id;
+    if (id && byId[id]) {
+      if (openId !== id) openApp(id, { push: false });
+      // Старая ссылка вида #app-zed на собранном сайте получает настоящий адрес
+      if (PAGES && hash) try { history.replaceState(history.state, '', appHref(id)); } catch (e) { /* без истории */ }
+      return;
+    }
+    if (openId) closeApp();
+    // Страница приложения, которого уже нет в каталоге: показываем витрину, когда catalog.json загружен
+    else if (!detail.hidden && catalogLoaded) showView('browse');
   };
   addEventListener('popstate', routeFromLocation);
   addEventListener('hashchange', routeFromLocation);
@@ -2915,6 +2952,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     renderSandbox();
     renderStarTile();
     renderHero();
+    renderStats();
     renderMine();
     if (!results.hidden) runSearch();
     if (openId) renderDetail(byId[openId], currentBack());
@@ -3064,7 +3102,8 @@ select.input option { background: var(--surface); color: var(--fg); }
     hiddenRepos = new Set((Array.isArray(data.hidden) ? data.hidden : []).map(h => String(h?.repo || '').toLowerCase()).filter(Boolean));
     DOWNLOADS = sanitizeDownloads(data.downloads);
     downloadsReady = true;
-    SANDBOX_APPS = buildSandbox([...SANDBOX, ...(Array.isArray(data.sandbox) ? data.sandbox : [])]);
+    const picks = (Array.isArray(data.picks) ? data.picks : []).map(p => ({ ...p, picked: true }));
+    SANDBOX_APPS = buildSandbox([...SANDBOX, ...(Array.isArray(data.sandbox) ? data.sandbox : []), ...picks]);
     ALL = [...APPS, ...SANDBOX_APPS];
     byId = Object.fromEntries(ALL.map(a => [a.id, a]));
     rebuildHaystack();
@@ -3079,12 +3118,13 @@ select.input option { background: var(--surface); color: var(--fg); }
     renderRules();
     renderVoting();
     refreshViews();
-    if (!openId && /^#app-/.test(location.hash)) routeFromLocation();
+    if (!openId && (/^#app-/.test(location.hash) || pathRoute()?.id)) routeFromLocation();
   };
 
+  let catalogLoaded = false;
   const loadRobotCatalog = async () => {
     try {
-      const res = await fetch('catalog.json', { cache: 'no-cache' });
+      const res = await fetch(siteURL('catalog.json'), { cache: 'no-cache' });
       if (res.ok) applyRobotCatalog(await res.json());
     } catch (e) {
       /* страница открыта без catalog.json: остаётся встроенный снимок */
@@ -3094,6 +3134,8 @@ select.input option { background: var(--surface); color: var(--fg); }
       downloadsReady = true;
       refreshViews();
     }
+    catalogLoaded = true;
+    if (!openId && pathRoute()?.id) routeFromLocation();
   };
   renderRules();
 
@@ -3312,7 +3354,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   });
   updateCount();
 
-  if (location.hash) routeFromLocation();
+  if (location.hash || pathRoute()?.id) routeFromLocation();
 
 
   /* ---------- Переключение языка ---------- */
@@ -3354,15 +3396,19 @@ select.input option { background: var(--surface); color: var(--fg); }
     updateCount();
     updatePreview();
     refreshViews();
-    if (openId) document.title = `${plainName(byId[openId])} · VibeMarket`;
+    if (openId) document.title = appTitle(byId[openId]);
   };
 
   const setLanguage = async (next, { save = true } = {}) => {
     if (!LANGS[next]) next = 'ru';
     let data = {};
-    if (next !== 'ru') {
+    // Собранная страница несёт свой перевод внутри: язык включается сразу, без запроса
+    const embedded = document.getElementById('i18n-page');
+    if (next !== 'ru' && embedded && PAGE_LANG === next) {
+      data = JSON.parse(embedded.textContent);
+    } else if (next !== 'ru') {
       try {
-        const res = await fetch(`locales/${next}.json`, { cache: 'no-cache' });
+        const res = await fetch(siteURL(`locales/${next}.json`), { cache: 'no-cache' });
         if (!res.ok) throw new Error(t('error.http', { status: res.status }));
         data = await res.json();
       } catch (err) {
@@ -3377,10 +3423,18 @@ select.input option { background: var(--surface); color: var(--fg); }
       try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* выбор просто не запомнится */ }
     }
     renderLocale();
+    // Адрес следует за языком: en/app/zed/ → es/app/zed/
+    if (PAGES) {
+      // Приложение из catalog.json ещё не загружено, но адрес уже его: сохраняем адрес, страница откроется следом
+      const id = openId || pathRoute()?.id;
+      try { history.replaceState(history.state, '', id ? appHref(id) : homeHref()); } catch (e) { /* без истории */ }
+      if (!id) document.title = homeTitle();
+    }
   };
 
-  // Сохранённый выбор, иначе язык браузера, иначе английский
+  // Язык из адреса страницы, иначе сохранённый выбор, иначе язык браузера, иначе английский
   const detectLanguage = () => {
+    if (LANGS[PAGE_LANG]) return PAGE_LANG;
     try {
       const saved = localStorage.getItem(LANG_KEY);
       if (LANGS[saved]) return saved;
@@ -3395,7 +3449,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   langSelect.addEventListener('change', () => setLanguage(langSelect.value));
   applyStatic();
   const startLang = detectLanguage();
-  if (startLang === 'ru') langSelect.value = 'ru';
+  if (startLang === 'ru' && !PAGES) langSelect.value = 'ru';
   else setLanguage(startLang, { save: false });
 
   loadRobotCatalog();

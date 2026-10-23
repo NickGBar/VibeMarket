@@ -36,5 +36,24 @@
     "tags": {
       "bitwarden/clients": "^desktop-v"
     }
+  },
+  "scout": {
+    "perRun": 5,
+    "minStars": 1000,
+    "releaseWithinDays": 365,
+    "checkLimit": 40,
+    "topics": [
+      "desktop-app",
+      "electron-app",
+      "tauri-app",
+      "gui",
+      "macos-app",
+      "windows-app",
+      "linux-app",
+      "android-app",
+      "flutter-app",
+      "cross-platform"
+    ],
+    "skip": []
   }
 }

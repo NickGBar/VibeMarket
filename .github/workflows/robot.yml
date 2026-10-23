@@ -71,13 +71,16 @@ jobs:
           ref: main
       - name: Сверить переводы
         run: node scripts/check-locales.mjs
+      - id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      # Страницы приложений на четырёх языках, sitemap.xml и 404.html. Метки подтверждения сайта
+      # для Google и Яндекса берутся из переменных репозитория, если они заданы.
       - name: Собрать сайт
-        run: |
-          mkdir _site
-          cp index.html catalog.json rules.json _site/
-          cp -R locales _site/
-          if [ -d screens ]; then cp -R screens _site/; fi
-      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+        run: node scripts/build-site.mjs _site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+          YANDEX_VERIFICATION: ${{ vars.YANDEX_VERIFICATION }}
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site

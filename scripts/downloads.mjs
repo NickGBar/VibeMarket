@@ -6,6 +6,8 @@
 // arm64 и aarch64 → arm64, x64, x86_64 и amd64 → x64, universal → любой Mac.
 // Контрольные суммы, подписи, серверные и консольные сборки, исходники отбрасываются.
 
+import { ghAll, graphqlRepos } from './github.mjs';
+
 const EXT = /\.(dmg|pkg|exe|msi|msix|msixbundle|appx|appimage|deb|rpm|flatpak|run|apk|zip|7z|tar\.gz|tgz|tar\.xz|txz|tar\.bz2|tar\.zst)$/;
 const KIND = { tgz: 'tar', 'tar.gz': 'tar', 'tar.xz': 'tar', txz: 'tar', 'tar.bz2': 'tar', 'tar.zst': 'tar', msixbundle: 'msix', appx: 'msix' };
 const OWN_OS = { dmg: 'mac', pkg: 'mac', exe: 'win', msi: 'win', msix: 'win', appimage: 'linux', deb: 'linux', rpm: 'linux', flatpak: 'linux', run: 'linux', apk: 'android' };
@@ -94,6 +96,29 @@ export function pickDownloads(releases, { tag, perArch = 2, perArchLinux = 3 } =
         files: kept.map(({ rank, niche, os: _os, ...f }) => f),
       };
     }
+  }
+  return out;
+}
+
+// Свежие релизы репозиториев вместе с файлами, одним GraphQL-запросом на 10 репозиториев.
+// GraphQL отдаёт не больше сотни файлов на релиз: у VSCodium их под две сотни, поэтому главный релиз
+// дочитывается через REST. Репозитории, про которые GitHub не ответил, в результат не попадают.
+export async function fetchReleases(slugs, { count = 10, tags = {} } = {}) {
+  const fields = `releases(first: ${count}, orderBy: { field: CREATED_AT, direction: DESC }) { nodes { databaseId tagName isDraft isPrerelease isLatest publishedAt url releaseAssets(first: 100) { totalCount nodes { name size downloadUrl digest } } } }`;
+  const out = new Map();
+  for (const [slug, repo] of await graphqlRepos(slugs, fields)) {
+    const releases = repo?.releases?.nodes;
+    if (!Array.isArray(releases)) continue;
+    const main = releaseOrder(releases, { tag: tags[slug] })[0];
+    if (main && main.releaseAssets.totalCount > main.releaseAssets.nodes.length) {
+      try {
+        const assets = await ghAll(`/repos/${slug}/releases/${main.databaseId}/assets`);
+        main.releaseAssets.nodes = assets.map(a => ({ name: a.name, size: a.size, downloadUrl: a.browser_download_url, digest: a.digest }));
+      } catch (e) {
+        console.log(`${slug}: не удалось дочитать файлы релиза: ${e.message}`);
+      }
+    }
+    out.set(slug, releases);
   }
   return out;
 }

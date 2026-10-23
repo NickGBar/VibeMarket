@@ -14,7 +14,10 @@
     "start": "node --env-file-if-exists=.env server.mjs",
     "stars": "node scripts/update-stars.mjs index.html",
     "robot": "node scripts/robot.mjs --dry-run",
-    "locales": "node scripts/check-locales.mjs"
+    "locales": "node scripts/check-locales.mjs",
+    "scout": "node scripts/scout.mjs --dry-run",
+    "site": "node scripts/build-site.mjs _site",
+    "test": "node test/robot/run.mjs"
   },
   "engines": {
     "node": ">=22.9"

@@ -19,8 +19,13 @@ The market runs without a server and without day-to-day moderators. The site is 
 | `scripts/robot.mjs` | The robot |
 | `scripts/robot-i18n.mjs` | Robot replies and form field labels in every language |
 | `scripts/downloads.mjs` | Sorts release files by system and processor for the Get button |
+| `scripts/scout.mjs` | The scout: finds new open-source apps on GitHub every week |
+| `scripts/build-site.mjs` | Builds the site for GitHub Pages: a page for every app in four languages and `sitemap.xml` |
+| `scripts/github.mjs` | GitHub API requests shared by the robot and the scout |
 | `scripts/check-locales.mjs` | Checks translations against the Russian source |
 | `.github/workflows/robot.yml` | Runs the robot and publishes the site |
+| `.github/workflows/scout.yml` | Runs the scout once a week |
+| `test/robot/` | Robot and scout tests against a fake GitHub API |
 | `.github/ISSUE_TEMPLATE/` | Submission and report forms in four languages |
 | `server.mjs` | Optional server for signing in with GitHub, see below |
 
@@ -51,6 +56,11 @@ All numbers come from `rules.json`.
 | `promotion.minDays`, `promotion.minStars` | When to move an app to the main page | 90 days, 500 stars |
 | `reports.toHide` | Reports from different accounts that hide an app | 3 |
 | `limits.candidatesPerAuthor` | Submissions one author can have in voting at the same time | 3 |
+| `scout.topics` | GitHub topics the scout searches | `desktop-app`, `electron-app`, `tauri-app` and others |
+| `scout.minStars` | Minimum stars for a find | 1000 |
+| `scout.releaseWithinDays` | The latest release must be no older than this, days | 365 |
+| `scout.perRun` | Finds per run | 5 |
+| `scout.skip` | Repositories the scout never suggests | none |
 
 Votes from the submission author, from accounts younger than the threshold, votes cast before voting started, and a 👍 together with a 👎 from the same person don't count. If the author changes the repository in the submission, voting starts over.
 
@@ -69,6 +79,30 @@ The Get button downloads the app with one click, straight from the project's Git
 3. **The button says what it will do.** «Get» downloads the file. «Open» opens the web version. «Website» and «GitHub» lead to the project's download page when its releases have no ready-made files. The app page lists every file by system with its size and SHA-256.
 
 `downloads.skip` in `rules.json` lists repositories whose release files aren't the app itself, such as a framework's command-line tool. `downloads.tags` keeps only matching releases when a repository publishes several products. Links to official download pages and web versions are in `LINKS` in `index.html`.
+
+## Scout: new apps for the catalog
+
+Once a week the scout (`scripts/scout.mjs`) searches GitHub for free open-source apps that aren't in the catalog yet. A find must:
+- have one of the topics from `scout.topics` and at least `scout.minStars` stars;
+- have an open license from `repo.licenses`;
+- have a release no older than `scout.releaseWithinDays` days;
+- have ready-made files for the Get button, found by the same release sorting the button uses.
+
+For every find the scout opens an issue labeled `scout` with the card fields already filled in. It builds the name from the repository name and guesses the category from its topics and description.
+
+1. **Check the fields.** Edit them right in the issue description if needed.
+2. **Add the `approved` label.** On its next run the robot adds the app to its category on the main page, comments with a link to its page and closes the issue. Approved finds have no «Third-party» badge: the maintainer picked them.
+3. **Or close the issue** if the app doesn't fit. The scout won't suggest it again.
+
+An approved find is removed with the `blocked` label, and the daily re-check applies to it just like to sandbox apps. You can also add an app by hand: open an issue with the same fields and add the `scout` and `approved` labels.
+
+## Pages for search engines
+
+The site is one page, but on GitHub Pages every app also gets its own address in every language, such as `en/app/zed/` or `ru/app/zed/`. `scripts/build-site.mjs` builds them on every deploy. Each page has its own title and description, `hreflang` links to the other languages, schema.org markup and the app's text, so a search engine sees it even without JavaScript. The script on the page then turns it into the regular interface. Links inside the site lead to these addresses. The root address picks the visitor's language. Old links like `#app-zed` still work.
+
+`index.html` in the repository stays a single file. Without the build (local file, `server.mjs`, previews) apps open at `#app-zed` as before.
+
+To get the site indexed faster, add it to Google Search Console and Yandex Webmaster and submit `sitemap.xml`. For verification by meta tag, put the codes into the repository variables `GOOGLE_SITE_VERIFICATION` and `YANDEX_VERIFICATION` (**Settings → Secrets and variables → Actions → Variables**). The build adds them to the home page. Search engines only read `robots.txt` at the root of the domain, so a project site doesn't have one: submit the sitemap by hand.
 
 ## Languages
 
@@ -121,6 +155,8 @@ The robot runs every hour, on every Issues event, on every push to `main`, and m
 
 GitHub disables schedules in public repositories after 60 days without activity. The robot commits `catalog.json` whenever star counts change, so a live catalog always has activity.
 
+The scout runs on Mondays and manually: **Actions → Разведчик VibeMarket → Run workflow**.
+
 ### Robot security
 
 - The robot reads submission texts through the API and never passes them to a shell. The only thing the shell runs is `scripts/robot.mjs` from the `main` branch.
@@ -128,6 +164,7 @@ GitHub disables schedules in public repositories after 60 days without activity.
 - Voting metadata is kept in the robot's own comment, and the robot only trusts comments by `github-actions[bot]`, so nobody can fake when voting started.
 - Workflows have minimal permissions, and third-party actions are pinned to commit hashes.
 - The page escapes all data from `catalog.json` as untrusted, and accepts download links only to the releases of the same repository on github.com.
+- Repository descriptions the scout puts into issues are untrusted too. They go in as a single line, without HTML comments and without @mentions, so nobody can slip in extra form fields or fake the scout's marker.
 
 ## Local development
 
@@ -135,6 +172,9 @@ GitHub disables schedules in public repositories after 60 days without activity.
 - `GH_TOKEN=$(gh auth token) npm run robot`: a full robot run without writing to GitHub. Only `catalog.json` on disk changes.
 - `npm run stars`: update the star snapshot built into `index.html`. It's used when `catalog.json` is unavailable.
 - `npm run locales`: check translations against the Russian source.
+- `npm test`: robot and scout tests against a fake GitHub API, no network needed.
+- `GH_TOKEN=$(gh auth token) npm run scout`: show what the scout would find right now, without opening issues.
+- `npm run site`: build the site into `_site/` the way GitHub Pages gets it.
 
 ## Optional server: signing in with GitHub
 
