@@ -10,11 +10,12 @@
 //   node scripts/build-site.mjs _site
 //   SITE_URL=https://nickgbar.github.io/VibeMarket/ node scripts/build-site.mjs _site
 //
-// GOOGLE_SITE_VERIFICATION и YANDEX_VERIFICATION, если заданы, добавляют на главную метки для подтверждения сайта
-// в Google Search Console и Яндекс Вебмастере.
+// Подтвердить сайт в Google Search Console и Яндекс Вебмастере можно двумя способами: положить их HTML-файл
+// (google….html, yandex_….html) в корень репозитория — он попадёт в корень сайта, — или задать GOOGLE_SITE_VERIFICATION
+// и YANDEX_VERIFICATION, тогда метатеги появятся на главной.
 
 import { createHash } from 'node:crypto';
-import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
@@ -211,6 +212,9 @@ await mkdir(OUT, { recursive: true });
 for (const file of ['catalog.json', 'rules.json']) if (existsSync(`${ROOT}${file}`)) await cp(`${ROOT}${file}`, `${OUT}${file}`);
 for (const dir of ['locales', 'screens']) if (existsSync(`${ROOT}${dir}`)) await cp(`${ROOT}${dir}`, `${OUT}${dir}`, { recursive: true });
 for (const asset of Object.values(ASSETS)) await write(asset.file, asset.body);
+for (const file of await readdir(ROOT)) {
+  if (/^(google[0-9a-f]{16}|yandex_[0-9a-f]{16})\.html$/.test(file)) await cp(`${ROOT}${file}`, `${OUT}${file}`);
+}
 
 const home = lang => ({
   title: t(lang, 'seo.homeTitle'),

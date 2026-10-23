@@ -102,7 +102,7 @@ The site is one page, but on GitHub Pages every app also gets its own address in
 
 `index.html` in the repository stays a single file. Without the build (local file, `server.mjs`, previews) apps open at `#app-zed` as before.
 
-To get the site indexed faster, add it to Google Search Console and Yandex Webmaster and submit `sitemap.xml`. For verification by meta tag, put the codes into the repository variables `GOOGLE_SITE_VERIFICATION` and `YANDEX_VERIFICATION` (**Settings → Secrets and variables → Actions → Variables**). The build adds them to the home page. Search engines only read `robots.txt` at the root of the domain, so a project site doesn't have one: submit the sitemap by hand.
+To get the site indexed faster, add it to Google Search Console and Yandex Webmaster and submit `sitemap.xml`. To verify the site, put the verification HTML file (`google….html`, `yandex_….html`) in the root of the repository and the build copies it to the root of the site. Or put the meta tag codes into the repository variables `GOOGLE_SITE_VERIFICATION` and `YANDEX_VERIFICATION` (**Settings → Secrets and variables → Actions → Variables**), and the build adds them to the home page. Search engines only read `robots.txt` at the root of the domain, so a project site doesn't have one: submit the sitemap by hand.
 
 ## Languages
 
