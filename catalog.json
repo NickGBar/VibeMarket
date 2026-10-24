@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-23T22:15:55.679Z",
+  "updated": "2026-10-24T00:49:56.887Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -14,54 +14,54 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6711,
-    "ankitects/anki": 32251,
+    "ankitects/anki": 32250,
     "Anuken/Mindustry": 29449,
-    "AppFlowy-IO/AppFlowy": 77683,
-    "audacity/audacity": 18818,
-    "AUTOMATIC1111/stable-diffusion-webui": 165127,
+    "AppFlowy-IO/AppFlowy": 77685,
+    "audacity/audacity": 18817,
+    "AUTOMATIC1111/stable-diffusion-webui": 165124,
     "bitwarden/clients": 14043,
     "blender/blender": 21186,
-    "Comfy-Org/ComfyUI": 142330,
-    "excalidraw/excalidraw": 134436,
-    "ggml-org/llama.cpp": 132158,
-    "ggml-org/whisper.cpp": 54600,
+    "Comfy-Org/ComfyUI": 142348,
+    "excalidraw/excalidraw": 134439,
+    "ggml-org/llama.cpp": 132167,
+    "ggml-org/whisper.cpp": 54604,
     "GNOME/gimp": 6547,
-    "godotengine/godot": 118969,
-    "HandBrake/HandBrake": 24768,
-    "inkscape/inkscape": 4054,
-    "jellyfin/jellyfin": 58465,
-    "jesseduffield/lazygit": 83392,
+    "godotengine/godot": 118973,
+    "HandBrake/HandBrake": 24767,
+    "inkscape/inkscape": 4055,
+    "jellyfin/jellyfin": 58467,
+    "jesseduffield/lazygit": 83394,
     "KDE/krita": 10615,
-    "keepassxreboot/keepassxc": 29422,
-    "laurent22/joplin": 56850,
+    "keepassxreboot/keepassxc": 29421,
+    "laurent22/joplin": 56849,
     "LibreOffice/core": 4553,
-    "localsend/localsend": 95345,
-    "logseq/logseq": 45349,
+    "localsend/localsend": 95347,
+    "logseq/logseq": 45348,
     "luanti-org/luanti": 13764,
     "mpv-player/mpv": 37538,
     "mullvad/mullvadvpn-app": 7702,
-    "neovim/neovim": 103140,
-    "nomic-ai/gpt4all": 77358,
-    "obsproject/obs-studio": 77986,
-    "ollama/ollama": 184481,
-    "OpenTTD/OpenTTD": 8414,
-    "penpot/penpot": 61547,
+    "neovim/neovim": 103142,
+    "nomic-ai/gpt4all": 77354,
+    "obsproject/obs-studio": 77988,
+    "ollama/ollama": 184489,
+    "OpenTTD/OpenTTD": 8415,
+    "penpot/penpot": 61550,
     "signalapp/Signal-Desktop": 16611,
-    "storytold/designcraft": 4710,
-    "storytold/effectcraft": 7779,
-    "storytold/filmcraft": 15906,
-    "storytold/lightcraft": 14450,
-    "storytold/pdfcraft": 17421,
-    "storytold/photocraft": 71916,
-    "storytold/vectorcraft": 10517,
-    "super-productivity/super-productivity": 23094,
+    "storytold/designcraft": 4712,
+    "storytold/effectcraft": 7782,
+    "storytold/filmcraft": 15915,
+    "storytold/lightcraft": 14455,
+    "storytold/pdfcraft": 17443,
+    "storytold/photocraft": 71961,
+    "storytold/vectorcraft": 10526,
+    "super-productivity/super-productivity": 23097,
     "supertuxkart/stk-code": 5446,
-    "syncthing/syncthing": 89667,
-    "tauri-apps/tauri": 112148,
-    "videolan/vlc": 20201,
-    "VSCodium/vscodium": 33777,
+    "syncthing/syncthing": 89666,
+    "tauri-apps/tauri": 112149,
+    "videolan/vlc": 20199,
+    "VSCodium/vscodium": 33780,
     "wesnoth/wesnoth": 6951,
-    "zed-industries/zed": 92102
+    "zed-industries/zed": 92106
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -782,10 +782,26 @@
           {
             "arch": "x64",
             "kind": "dmg",
+            "name": "KeePassXC-2.8.0-1-x86_64.dmg",
+            "size": 49791713,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.dmg",
+            "sha256": "28492c5535570020179150b2871b3c54abd032cbb8cdee2f1b3fa7c46cdba43e"
+          },
+          {
+            "arch": "x64",
+            "kind": "dmg",
             "name": "KeePassXC-2.8.0-x86_64.dmg",
             "size": 49264037,
             "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.dmg",
             "sha256": "002b805ede4d9755b554987b9c482fb8bab79ec01d18d1f70dbf3114e2f9469a"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "KeePassXC-2.8.0-1-arm64.dmg",
+            "size": 47786914,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-arm64.dmg",
+            "sha256": "85f0e75e258ef513f0fc7f5bf470cad0943b7d7e8191b2171f9898ad32e62b9c"
           },
           {
             "arch": "arm64",
@@ -832,6 +848,22 @@
             "size": 52062712,
             "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage",
             "sha256": "b52889fd627ae7a1c609b91b2526ccd5d847ec6707ac6eb634553186dee4f705"
+          },
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "KeePassXC-2.8.0-1-x86_64.AppImage",
+            "size": 52062712,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage",
+            "sha256": "3ab1bfbb422272334b48057e6bfc984c839375d9a1cd9350c4ea62ca0b55ca5f"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "KeePassXC-2.8.0-1-aarch64.AppImage",
+            "size": 51272200,
+            "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-aarch64.AppImage",
+            "sha256": "ead773e5b2903e23695157c0c955fe294761b1bd00b78c697b67727fd13e61cc"
           },
           {
             "arch": "arm64",
@@ -1568,79 +1600,71 @@
     },
     "obsproject/obs-studio": {
       "mac": {
-        "tag": "32.2.2",
-        "date": "2026-08-14T22:43:31Z",
-        "page": "https://github.com/obsproject/obs-studio/releases/tag/32.2.2",
+        "tag": "33.0.0",
+        "date": "2026-10-23T22:20:29Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "OBS-Studio-32.2.2-macOS-Intel.dmg",
-            "size": 198863134,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-macOS-Intel.dmg",
-            "sha256": "f8d8afe3dffdc86efa0698c02ff0c997866bac3e6208ddaf56d37108baacf197"
+            "name": "OBS-Studio-33.0.0-macOS-Intel.dmg",
+            "size": 221916804,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-macOS-Intel.dmg",
+            "sha256": "8524ff428f038573f8905a206841081d3da9ec607063906f7bbfe38d55810c1c"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "OBS-Studio-32.2.2-macOS-Apple.dmg",
-            "size": 187703709,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-macOS-Apple.dmg",
-            "sha256": "920d6f26703d2df6e4085bd3c1cbed30488325084136c7a6e9e37021fbd6aaf7"
+            "name": "OBS-Studio-33.0.0-macOS-Apple.dmg",
+            "size": 209628283,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-macOS-Apple.dmg",
+            "sha256": "b36f4e9da5f2f17c733ba711c8fe0656d6b0cd573cfe96eeb3e68325cffef739"
           }
         ]
       },
       "win": {
-        "tag": "32.2.2",
-        "date": "2026-08-14T22:43:31Z",
-        "page": "https://github.com/obsproject/obs-studio/releases/tag/32.2.2",
+        "tag": "33.0.0",
+        "date": "2026-10-23T22:20:29Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "OBS-Studio-32.2.2-Windows-x64-Installer.exe",
-            "size": 159809104,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-x64-Installer.exe",
-            "sha256": "c3a0b880adbe64dc4bcb68f93016916ab5b55ae43fd227115287bf80257d92dc"
+            "name": "OBS-Studio-33.0.0-Windows-x64-Installer.exe",
+            "size": 186671888,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-Windows-x64-Installer.exe",
+            "sha256": "3bf55dae6d9db651505828090de74540296c742ed2a94a28cf055cb6ddc6bed3"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "OBS-Studio-32.2.2-Windows-x64.zip",
-            "size": 187851583,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-x64.zip",
-            "sha256": "4d6e40e3ab155f56b30de517380566a206d74b63cdf5ad49aa596924768f97e1"
+            "name": "OBS-Studio-33.0.0-Windows-x64.zip",
+            "size": 223737114,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-Windows-x64.zip",
+            "sha256": "3369a3ecd67b5669a8a08d77357f87cc786d1fba42fbbd1054d841a69f6271a7"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "OBS-Studio-32.2.2-Windows-arm64.zip",
-            "size": 167128219,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-arm64.zip",
-            "sha256": "b16b41c3cf89b8a919738359a46acb25d207ec1e488563139d7c276cfffb0906"
+            "name": "OBS-Studio-33.0.0-Windows-arm64.zip",
+            "size": 200180302,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-Windows-arm64.zip",
+            "sha256": "02c53d7bff3f9c159401da79fc375d7b75b00c9ca62d2b4ec5fc05a575d2fa1f"
           }
         ]
       },
       "linux": {
-        "tag": "32.2.2",
-        "date": "2026-08-14T22:43:31Z",
-        "page": "https://github.com/obsproject/obs-studio/releases/tag/32.2.2",
+        "tag": "33.0.0",
+        "date": "2026-10-23T22:20:29Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
         "files": [
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "OBS-Studio-32.2.2-Ubuntu-26.04-x86_64.deb",
-            "size": 134438766,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Ubuntu-26.04-x86_64.deb",
-            "sha256": "f256927aeba7b8d2ce64815402e723d1dd8332d1e6535939b03572f2adcc2849"
-          },
-          {
-            "arch": "x64",
-            "kind": "deb",
-            "name": "OBS-Studio-32.2.2-Ubuntu-24.04-x86_64.deb",
-            "size": 134324516,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Ubuntu-24.04-x86_64.deb",
-            "sha256": "b6557ca2059287210332accc94c267094050489cffffc5c832e746e3a418dab0"
+            "name": "OBS-Studio-33.0.0-Ubuntu-26.04-x86_64.deb",
+            "size": 159353242,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-Ubuntu-26.04-x86_64.deb",
+            "sha256": "f5844914eadd560314f3a9db020afa7a8afbefb67a26c488f2956dc339704918"
           }
         ]
       }
@@ -2361,127 +2385,127 @@
     },
     "storytold/photocraft": {
       "mac": {
-        "tag": "v0.14.0",
-        "date": "2026-10-23T00:43:42Z",
-        "page": "https://github.com/storytold/photocraft/releases/tag/v0.14.0",
+        "tag": "v0.15.1",
+        "date": "2026-10-23T22:44:33Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.15.1",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "photocraft-0.14.0-macos-universal.dmg",
-            "size": 95578705,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-macos-universal.dmg",
-            "sha256": "b1b81f1d4b433578e6b9d2b9800e18d8e5fb60ebbc38977918d3529d1bdb140a"
+            "name": "photocraft-0.15.1-macos-universal.dmg",
+            "size": 95834266,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-macos-universal.dmg",
+            "sha256": "a1c07b7c52d8f60e772e3fb2017fff7fbafccf81fa30f51d8e2c36bfad361461"
           }
         ]
       },
       "win": {
-        "tag": "v0.14.0",
-        "date": "2026-10-23T00:43:42Z",
-        "page": "https://github.com/storytold/photocraft/releases/tag/v0.14.0",
+        "tag": "v0.15.1",
+        "date": "2026-10-23T22:44:33Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.15.1",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "photocraft-0.14.0-windows-x64.msi",
-            "size": 72843264,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-x64.msi",
-            "sha256": "a25a2a15c85dd0563f817e206da125ef594a7c8020f34301c1ff67767b2b8d6f"
+            "name": "photocraft-0.15.1-windows-x64.msi",
+            "size": 73039872,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-x64.msi",
+            "sha256": "2c4ec56914981135531fedfc28ce793bdb2e23caaa66ce174f7900dd766362f5"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "photocraft-0.14.0-windows-x86.msi",
-            "size": 70328320,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-x86.msi",
-            "sha256": "d7db4c7c1bf677880743092b665c46d165c0b718ed60feb14093e298c10af508"
+            "name": "photocraft-0.15.1-windows-x86.msi",
+            "size": 70492160,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-x86.msi",
+            "sha256": "758b5a67f308cfc617d14cca371f0421754abc31dc10e62527de49b54d750d7d"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "photocraft-0.14.0-windows-arm64.msi",
-            "size": 67645440,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-arm64.msi",
-            "sha256": "c429b8f12c4b980dc3f93f3d36b1c1177ff7899225b0417107b9dd96c7510349"
+            "name": "photocraft-0.15.1-windows-arm64.msi",
+            "size": 67805184,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-arm64.msi",
+            "sha256": "dede26ccef5c94194055189ca3f0183b77b17df8fbbc978d068e5d8f81a17961"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "photocraft-0.14.0-windows-x64-portable.zip",
-            "size": 87615748,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-x64-portable.zip",
-            "sha256": "5b814c15034ddc68d35da837aef0cec18c90e9325f7682f516dfc331d64e9ab0"
+            "name": "photocraft-0.15.1-windows-x64-portable.zip",
+            "size": 87862329,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-x64-portable.zip",
+            "sha256": "f41bc0fc1c6d40377251bfc4a2ecd60014d1d9aca07e5101608e5e90f5ac1fd2"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "photocraft-0.14.0-windows-x86-portable.zip",
-            "size": 83150106,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-x86-portable.zip",
-            "sha256": "0d757e413349d7ba605a1a128bcbf847842fb95a812869305699bc4fde198366"
+            "name": "photocraft-0.15.1-windows-x86-portable.zip",
+            "size": 83349380,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-x86-portable.zip",
+            "sha256": "e10cc2200b2b6cd5e873ba067697704a52d23a597c434203a73ad725264d5cc1"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "photocraft-0.14.0-windows-arm64-portable.zip",
-            "size": 82679435,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-arm64-portable.zip",
-            "sha256": "9bf9780c07931577643e0dc4d64ed6732fba14ad4e6cfc4c278b9029c906f118"
+            "name": "photocraft-0.15.1-windows-arm64-portable.zip",
+            "size": 82894018,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-arm64-portable.zip",
+            "sha256": "f1833876bb5298477aee486be371167e4752d2d3063ff094ad7c9364a59d9de8"
           }
         ]
       },
       "linux": {
-        "tag": "v0.14.0",
-        "date": "2026-10-23T00:43:42Z",
-        "page": "https://github.com/storytold/photocraft/releases/tag/v0.14.0",
+        "tag": "v0.15.1",
+        "date": "2026-10-23T22:44:33Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.15.1",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "photocraft-0.14.0-linux-x86_64.AppImage",
-            "size": 81168888,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-linux-x86_64.AppImage",
-            "sha256": "62d319592159f8e6909e252151196d23d9b7a243fc9f9095e5adf8ecbac9f03c"
+            "name": "photocraft-0.15.1-linux-x86_64.AppImage",
+            "size": 81381880,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-linux-x86_64.AppImage",
+            "sha256": "7d96f3d0da1921d634620b0d4cda37cbf3353a767f920b906ce1c6667380ffed"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "photocraft-0.14.0-linux-aarch64.AppImage",
-            "size": 76986888,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-linux-aarch64.AppImage",
-            "sha256": "e862fbcb8877b5635d35796a315edbf9b8bd90a1ceb524357c0800c58cde8f1a"
+            "name": "photocraft-0.15.1-linux-aarch64.AppImage",
+            "size": 77191688,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-linux-aarch64.AppImage",
+            "sha256": "1a56a7c8afe789fde7e062a81eac6ad8d391acb297d744d35401b79a26d6b931"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "photocraft-0.14.0-linux-x86_64.deb",
-            "size": 86828466,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-linux-x86_64.deb",
-            "sha256": "5717da29ed89ddd8790816b084aae83176cd4ec72e2330553c5390af46740524"
+            "name": "photocraft-0.15.1-linux-x86_64.deb",
+            "size": 87087774,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-linux-x86_64.deb",
+            "sha256": "28eb2b4133240374a96184f983e51b9759656f6ba467cbef528e999b701fd8f3"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "photocraft-0.14.0-linux-aarch64.deb",
-            "size": 83321080,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-linux-aarch64.deb",
-            "sha256": "fb4afb551fb283c6277ffa213c2a49731c641c654cf17557092d21fbd68c2b1a"
+            "name": "photocraft-0.15.1-linux-aarch64.deb",
+            "size": 83545978,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-linux-aarch64.deb",
+            "sha256": "f8c9c185ed0fd61b82026fa65abd991256b65ed65cb2c889ba3a86f0abbd25e2"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "photocraft-0.14.0-linux-x86_64.rpm",
-            "size": 86255403,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-linux-x86_64.rpm",
-            "sha256": "6fb0f45a749c5be9899f518d834bf7ef9c60cef3fb4ab9b76f796b13fcff1751"
+            "name": "photocraft-0.15.1-linux-x86_64.rpm",
+            "size": 86509189,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-linux-x86_64.rpm",
+            "sha256": "c6cdd8b6032288426d8cbc63df6ac56eda1e17a6cdb1b63b028ee3b573b9d9bc"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "photocraft-0.14.0-linux-aarch64.rpm",
-            "size": 82579290,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-linux-aarch64.rpm",
-            "sha256": "57498ae48d2f9a3ac7f8aa2a04004de47beedf7ba616ae1a8ec5ae0a1d4ac42e"
+            "name": "photocraft-0.15.1-linux-aarch64.rpm",
+            "size": 82792412,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-linux-aarch64.rpm",
+            "sha256": "37319770ddb81755109db7c604657f0a7d62badd38f6f0d21e93136a5a09ee86"
           }
         ]
       }
