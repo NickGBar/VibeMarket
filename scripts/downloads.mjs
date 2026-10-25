@@ -20,7 +20,7 @@ const SKIP = new RegExp([
 ].join('|'));
 // Переносная версия и сборки для магазинов уступают установщику, но остаются в списке
 const RARE = /portable|unsigned|nouserlib|(^|[-_. ])(store|play|fdroid)([-_. ]|$)/;
-// Сборки для особого железа и особых случаев: показываем, только если обычной для этого процессора нет
+// Сборки для особого железа и особых случаев: показываем, только если обычной для этой системы нет
 const NICHE = /commercial|perfetto|(^|[-_. ])(mono|cuda\d*|cu\d+|rocm|mlx|jetpack\d*|vulkan|opencl|sycl|hip|openvino|kompute|horizonos|picoos|legacy|nogpu|noavx|avx512|gplay|google)([-_. ]|$)/;
 const RANK = {
   mac: ['dmg', 'pkg', 'zip', 'tar'],
@@ -57,11 +57,20 @@ export function classify(asset) {
 
 // Файл без процессора в имени: если рядом лежит такой же для arm64, этот для x64, иначе подходит любому.
 // APK без процессора в имени — универсальный (app-release.apk рядом с app-arm64-v8a-release.apk у Immich).
+// Установщик Windows без процессора рядом с явным x64 различаем по размеру: тот же размер или в полтора раза больше —
+// общий установщик для всех процессоров (Super Productivity, Mullvad), иначе отдельная 32-битная сборка (Notepad++).
 function settleArch(files) {
+  // Сравниваем только с файлами, где процессор указан в имени, а не назначен этим же правилом
+  const named = files.filter(f => f.arch);
   for (const f of files) {
     if (f.arch) continue;
     if (f.os === 'android') { f.arch = 'any'; continue; }
-    const twin = files.some(g => g !== f && g.os === f.os && g.kind === f.kind && (g.arch === 'arm64' || g.arch === 'universal'));
+    const x64 = f.os === 'win' ? named.filter(g => g.os === 'win' && g.kind === f.kind && g.arch === 'x64') : [];
+    if (x64.length) {
+      f.arch = x64.some(g => g.size === f.size) || f.size >= Math.max(...x64.map(g => g.size)) * 1.5 ? 'any' : 'x86';
+      continue;
+    }
+    const twin = named.some(g => g.os === f.os && g.kind === f.kind && (g.arch === 'arm64' || g.arch === 'universal'));
     f.arch = twin || f.os === 'win' || f.os === 'linux' ? 'x64' : 'any';
   }
   return files;
@@ -85,7 +94,7 @@ export function pickDownloads(releases, { tag, prerelease, perArch = 2, perArchL
     const files = settleArch((release.releaseAssets?.nodes || []).map(classify).filter(Boolean));
     for (const os of Object.keys(RANK)) {
       if (out[os]) continue;
-      const mine = files.filter(f => f.os === os && !(f.niche && files.some(g => g.os === os && g.arch === f.arch && !g.niche)))
+      const mine = files.filter(f => f.os === os && !(f.niche && files.some(g => g.os === os && !g.niche)))
         .sort((a, b) => a.rank - b.rank || b.size - a.size);
       if (!mine.length) continue;
       const kept = [];

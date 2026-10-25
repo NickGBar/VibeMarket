@@ -79,6 +79,8 @@ const state = {
     // А Tauri не разрешает: бета пропускается
     'zed-industries/zed': [{ ...rel(43, 'v9-pre', true, ['Zed-aarch64.dmg']), isPrerelease: true }],
     'immich-app/immich': [rel(42, 'v3', true, ['app-arm64-v8a-release.apk', 'app-release.apk', 'app-x86_64-release.apk', 'app-armeabi-v7a-release.apk'])],
+    // Размеры по порядку: 1, 2, 3 МБ. 32-битный установщик меньше x64, общий для всех процессоров — того же размера
+    'notepad-plus-plus/notepad-plus-plus': [rel(44, 'v8', true, ['npp.8.Installer.exe', 'npp.8.Installer.x64.exe', 'npp.8.Installer.arm64.exe'])],
     'neo/notes': [rel(31, 'v2', true, ['Notes-2.dmg', 'Notes-Setup-2.exe', 'notes-2.AppImage', 'checksums.txt'])],
     'old/editor': [rel(32, 'v1', true, ['Editor-1.dmg'], ago(800))],
     'src/only': [rel(33, 'v3', true, [])],

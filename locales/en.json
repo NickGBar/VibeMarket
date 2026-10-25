@@ -68,10 +68,15 @@
     "collection.text": "Models run locally. Your prompts and files never go to someone else's cloud.",
     "top.title": "Top by GitHub stars",
     "top.sub": "The most popular projects in the catalog",
+    "fresh.title": "Fresh updates",
+    "fresh.chip": "Updates",
+    "fresh.sub": "Apps that released a new version in the last two weeks.",
     "adobe.title": "Instead of Adobe",
     "adobe.sub": "Open alternatives to Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects from Brandon Thomas's ArtCraft. Young Rust projects, versions 0.x.",
     "google.title": "Instead of Google",
     "google.sub": "Open replacements for Google services: browser, video, photos, maps, mail, documents and 2FA codes. No ads, and your data doesn’t go to Google.",
+    "microsoft.title": "Instead of Microsoft",
+    "microsoft.sub": "Open replacements for Office, Outlook, Teams, OneNote, OneDrive, Visio, Paint, Notepad and Copilot. Free, with no subscription and no ads.",
     "mine.title": "Your stars",
     "mine.empty": "Open any app page and press Star. The project gets a star on GitHub, and the app shows up here.",
     "mine.loading": "Loading your stars from GitHub…",
@@ -179,7 +184,7 @@
     "results.empty": "Nothing found. Try an app name, a category like «{example}» or a license, for example MIT.",
     "foot.about": "The catalog only lists open-source projects. Everything is free: no ads, banners, pop-ups or trackers. This page doesn't load a single external script, font or pixel.",
     "foot.auth": "Signing in with GitHub is optional. Once signed in, stars update through your account, and all GitHub requests go through the VibeMarket server, so your token never reaches the browser.",
-    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects are trademarks of Adobe; Google, Chrome, YouTube, Gmail and Google Play are trademarks of Google LLC. The names are used for comparison only: VibeMarket and the projects in these collections are not affiliated with Adobe or Google.",
+    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects are trademarks of Adobe; Google, Chrome, YouTube, Gmail and Google Play are trademarks of Google LLC; Microsoft, Office, Outlook, Teams, OneNote, OneDrive, Visio and Copilot are trademarks of Microsoft. The names are used for comparison only: VibeMarket and the projects in these collections are not affiliated with Adobe, Google or Microsoft.",
     "foot.sandbox": "Apps in the Sandbox section are third-party: their authors publish them. VibeMarket doesn't review them and isn't responsible for how they work, their security or their content.",
     "foot.starsSnapshot": "Stars come from the GitHub API as of {date}.",
     "foot.starsRobot": "Stars are updated by the VibeMarket robot, last update: {date}.",
@@ -863,6 +868,60 @@
         "Several email accounts in one app",
         "Unified Inbox",
         "Based on K-9 Mail"
+      ]
+    },
+    "notepadpp": {
+      "desc": "A text and code editor for Windows, instead of Notepad.",
+      "about": "Notepad++ is a free source code editor and a Notepad replacement for Windows. It supports many programming languages, highlights syntax and can be extended with plugins. Releases are signed with a GPG key, and the code is distributed under the GPL.",
+      "shots": [
+        "Syntax highlighting",
+        "Plugins",
+        "A Notepad replacement"
+      ]
+    },
+    "drawio": {
+      "desc": "Diagrams and flowcharts on your computer, free.",
+      "about": "draw.io Desktop is the official desktop app of draw.io: flowcharts, network diagrams and other diagrams. It wraps the draw.io editor in Electron, and your files stay on your disk. The app is free under the GPL v3 license, with builds for macOS, Windows, including ARM, and Linux.",
+      "shots": [
+        "Flowcharts and diagrams",
+        "Shape libraries",
+        "Files stay on your disk"
+      ]
+    },
+    "pinta": {
+      "desc": "A simple image editor in the style of Paint.NET.",
+      "about": "Pinta is a simple image editor, a clone of Paint.NET 3.0. Layers, drawing tools, effects and color adjustments, easy to pick up from the first launch. It runs on Linux, Windows and macOS, and the code is open under the MIT license.",
+      "shots": [
+        "Drawing and editing images",
+        "Layers and effects",
+        "Tools like in Paint.NET"
+      ]
+    },
+    "jitsi": {
+      "desc": "Video meetings with screen sharing, including on your own server.",
+      "about": "Jitsi Meet is a desktop app for video meetings. It works with any Jitsi Meet deployment, including your own, and supports screen sharing, remote control and an always-on-top window. End-to-end encryption is in beta. The app updates itself.",
+      "shots": [
+        "Meetings on any Jitsi server",
+        "Screen sharing",
+        "End-to-end encryption in beta"
+      ]
+    },
+    "shotcut": {
+      "desc": "A free video editor for Windows, macOS and Linux.",
+      "about": "Shotcut is a free, open-source, cross-platform video editor. It is built on the MLT multimedia framework and FFmpeg, so it opens many formats. Timeline editing, filters, audio work and export to popular formats.",
+      "shots": [
+        "Timeline editing",
+        "Audio tracks",
+        "Filters and color correction"
+      ]
+    },
+    "jan": {
+      "desc": "A ChatGPT replacement that runs on your computer.",
+      "about": "Jan downloads and runs language models such as Llama, Gemma and Qwen right on your computer. You can connect cloud models if you want, but everything can run locally. It has custom assistants, MCP support and a local server with an OpenAI-compatible API.",
+      "shots": [
+        "Chat with a model on your computer",
+        "Llama, Gemma, Qwen and more",
+        "Local OpenAI-compatible API"
       ]
     }
   }

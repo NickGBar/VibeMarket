@@ -79,6 +79,7 @@ check('Tauri пропущен по rules.json', !dl['tauri-apps/tauri'], JSON.st
 check('Bitwarden: только релизы desktop-v', names('bitwarden/clients', 'mac') === 'Bitwarden-1-universal.dmg' && dl['bitwarden/clients'].mac.tag === 'desktop-v1', JSON.stringify(dl['bitwarden/clients']));
 check('бета-релизы берутся только у разрешённых в rules.json', names('FreeTubeApp/FreeTube', 'mac') === 'freetube-1-beta-mac-arm64.dmg' && !dl['zed-industries/zed'], JSON.stringify(dl['FreeTubeApp/FreeTube']) + JSON.stringify(dl['zed-industries/zed']));
 check('APK без процессора в имени считается универсальным', (dl['immich-app/immich']?.android?.files || []).some(f => f.name === 'app-release.apk' && f.arch === 'any') && !names('immich-app/immich', 'android').includes('armeabi'), JSON.stringify(dl['immich-app/immich']));
+check('установщик Windows без процессора рядом с x64 считается 32-битным', (dl['notepad-plus-plus/notepad-plus-plus']?.win?.files || []).find(f => f.name === 'npp.8.Installer.exe')?.arch === 'x86', JSON.stringify(dl['notepad-plus-plus/notepad-plus-plus']));
 check('Mullvad: Android и компьютеры из разных релизов, бета пропущена', dl['mullvad/mullvadvpn-app']?.android?.tag === 'android/2' && dl['mullvad/mullvadvpn-app']?.mac?.tag === '2026.1', JSON.stringify(dl['mullvad/mullvadvpn-app']));
 
 console.log('== Голоса');

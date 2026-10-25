@@ -69,10 +69,15 @@
     "collection.text": "Los modelos funcionan en local. Tus consultas y archivos no van a la nube de nadie.",
     "top.title": "Top por estrellas de GitHub",
     "top.sub": "Los proyectos más populares del catálogo",
+    "fresh.title": "Actualizaciones recientes",
+    "fresh.chip": "Novedades",
+    "fresh.sub": "Apps que publicaron una versión nueva en las últimas dos semanas.",
     "adobe.title": "En lugar de Adobe",
     "adobe.sub": "Alternativas abiertas a Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro y After Effects de ArtCraft, de Brandon Thomas. Proyectos jóvenes en Rust, versiones 0.x.",
     "google.title": "En lugar de Google",
     "google.sub": "Alternativas abiertas a los servicios de Google: navegador, vídeo, fotos, mapas, correo, documentos y códigos 2FA. Sin anuncios, y tus datos no van a Google.",
+    "microsoft.title": "En lugar de Microsoft",
+    "microsoft.sub": "Alternativas abiertas a Office, Outlook, Teams, OneNote, OneDrive, Visio, Paint, el Bloc de notas y Copilot. Gratis, sin suscripción ni anuncios.",
     "mine.title": "Tus estrellas",
     "mine.empty": "Abre la página de cualquier app y pulsa Star. El proyecto recibirá una estrella en GitHub y la app aparecerá aquí.",
     "mine.loading": "Cargando tus estrellas desde GitHub…",
@@ -186,7 +191,7 @@
     "results.empty": "No hay resultados. Prueba con el nombre de una app, una categoría como «{example}» o una licencia, por ejemplo MIT.",
     "foot.about": "El catálogo solo incluye proyectos de código abierto. Todo es gratis: sin anuncios, banners, ventanas emergentes ni rastreadores. Esta página no carga ni un solo script, fuente o píxel externo.",
     "foot.auth": "Iniciar sesión con GitHub es opcional. Al iniciarla, las estrellas se actualizan con tu cuenta y todas las peticiones a GitHub pasan por el servidor de VibeMarket, así que tu token nunca llega al navegador.",
-    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro y After Effects son marcas comerciales de Adobe; Google, Chrome, YouTube, Gmail y Google Play son marcas comerciales de Google LLC. Los nombres se usan solo como comparación: VibeMarket y los proyectos de estas colecciones no están afiliados a Adobe ni a Google.",
+    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro y After Effects son marcas comerciales de Adobe; Google, Chrome, YouTube, Gmail y Google Play son marcas comerciales de Google LLC; Microsoft, Office, Outlook, Teams, OneNote, OneDrive, Visio y Copilot son marcas comerciales de Microsoft. Los nombres se usan solo como comparación: VibeMarket y los proyectos de estas colecciones no están afiliados a Adobe, Google ni Microsoft.",
     "foot.sandbox": "Las apps de la sección Sandbox son de terceros: las publican sus autores. VibeMarket no las revisa ni responde de su funcionamiento, su seguridad o su contenido.",
     "foot.starsSnapshot": "Las estrellas proceden de la API de GitHub a fecha de {date}.",
     "foot.starsRobot": "El robot de VibeMarket actualiza las estrellas, última actualización: {date}.",
@@ -872,6 +877,60 @@
         "Varias cuentas de correo en una app",
         "Bandeja de entrada unificada",
         "Basada en K-9 Mail"
+      ]
+    },
+    "notepadpp": {
+      "desc": "Un editor de texto y código para Windows en lugar del Bloc de notas.",
+      "about": "Notepad++ es un editor de código fuente gratuito que sustituye al Bloc de notas de Windows. Admite muchos lenguajes de programación, resalta la sintaxis y se amplía con plugins. Las versiones están firmadas con una clave GPG, y el código se distribuye bajo la GPL.",
+      "shots": [
+        "Resaltado de sintaxis",
+        "Plugins",
+        "Sustituto del Bloc de notas"
+      ]
+    },
+    "drawio": {
+      "desc": "Diagramas y diagramas de flujo en tu ordenador, gratis.",
+      "about": "draw.io Desktop es la app oficial de escritorio de draw.io: diagramas de flujo, de red y de todo tipo. Envuelve el editor de draw.io en Electron, y tus archivos se quedan en tu disco. Es gratis bajo la licencia GPL v3, con versiones para macOS, Windows, también ARM, y Linux.",
+      "shots": [
+        "Diagramas de flujo y de todo tipo",
+        "Bibliotecas de formas",
+        "Los archivos se quedan en tu disco"
+      ]
+    },
+    "pinta": {
+      "desc": "Un editor de imágenes sencillo al estilo de Paint.NET.",
+      "about": "Pinta es un editor de imágenes sencillo, un clon de Paint.NET 3.0. Capas, herramientas de dibujo, efectos y ajustes de color, fácil de usar desde el primer momento. Funciona en Linux, Windows y macOS, y el código es abierto bajo la licencia MIT.",
+      "shots": [
+        "Dibujo y edición de imágenes",
+        "Capas y efectos",
+        "Herramientas como en Paint.NET"
+      ]
+    },
+    "jitsi": {
+      "desc": "Videollamadas con pantalla compartida, también en tu propio servidor.",
+      "about": "Jitsi Meet es una app de escritorio para videollamadas. Funciona con cualquier instalación de Jitsi Meet, incluida la tuya, y permite compartir pantalla, control remoto y una ventana siempre visible. El cifrado de extremo a extremo está en beta. La app se actualiza sola.",
+      "shots": [
+        "Reuniones en cualquier servidor Jitsi",
+        "Pantalla compartida",
+        "Cifrado de extremo a extremo en beta"
+      ]
+    },
+    "shotcut": {
+      "desc": "Un editor de vídeo gratuito para Windows, macOS y Linux.",
+      "about": "Shotcut es un editor de vídeo gratuito, de código abierto y multiplataforma. Se basa en el framework multimedia MLT y en FFmpeg, así que abre muchos formatos. Edición en línea de tiempo, filtros, trabajo con audio y exportación a formatos populares.",
+      "shots": [
+        "Edición en línea de tiempo",
+        "Pistas de audio",
+        "Filtros y corrección de color"
+      ]
+    },
+    "jan": {
+      "desc": "Un sustituto de ChatGPT que funciona en tu ordenador.",
+      "about": "Jan descarga y ejecuta modelos de lenguaje como Llama, Gemma y Qwen directamente en tu ordenador. Si quieres, puedes conectar modelos en la nube, pero todo puede funcionar en local. Tiene asistentes propios, soporte de MCP y un servidor local con una API compatible con OpenAI.",
+      "shots": [
+        "Chat con un modelo en tu ordenador",
+        "Llama, Gemma, Qwen y más",
+        "API local compatible con OpenAI"
       ]
     }
   }
