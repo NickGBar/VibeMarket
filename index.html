@@ -2360,6 +2360,22 @@ select.input option { background: var(--surface); color: var(--fg); }
   // Подборка: бесплатные замены сервисам по подписке — Notion, Figma, Miro, Zoom, Slack, 1Password, Dropbox, Evernote,
   // Todoist, Microsoft 365, Creative Cloud, Acrobat Pro и ChatGPT Plus
   const SUBS_PICKS = ['appflowy', 'penpot', 'excalidraw', 'jitsi', 'mattermost', 'bitwarden', 'syncthing', 'joplin', 'superprod', 'libreoffice', 'photocraft', 'pdfcraft', 'jan'];
+  // Что приложение заменяет. Страница это пока не показывает: список уходит в apps.json, и по нему
+  // MCP-сервер (scripts/mcp.mjs) отвечает на вопросы вроде «чем заменить Notion»
+  const REPLACES = {
+    photocraft: ['Adobe Photoshop'], lightcraft: ['Adobe Lightroom'], vectorcraft: ['Adobe Illustrator'], designcraft: ['Adobe InDesign'],
+    pdfcraft: ['Adobe Acrobat'], filmcraft: ['Adobe Premiere Pro'], effectcraft: ['Adobe After Effects'],
+    gimp: ['Adobe Photoshop'], krita: ['Adobe Photoshop'], inkscape: ['Adobe Illustrator'], audacity: ['Adobe Audition'],
+    ungoogled: ['Google Chrome'], freetube: ['YouTube'], newpipe: ['YouTube'], immich: ['Google Photos', 'iCloud Photos'],
+    organicmaps: ['Google Maps'], thunderbird: ['Gmail', 'Microsoft Outlook'], enteauth: ['Google Authenticator', 'Microsoft Authenticator'],
+    obtainium: ['Google Play'], heliboard: ['Gboard'],
+    libreoffice: ['Microsoft Office', 'Microsoft 365', 'Google Docs'], jitsi: ['Zoom', 'Microsoft Teams', 'Google Meet'],
+    mattermost: ['Slack', 'Microsoft Teams'], joplin: ['Evernote', 'Microsoft OneNote', 'Google Keep'],
+    syncthing: ['Dropbox', 'Microsoft OneDrive', 'Google Drive'], drawio: ['Microsoft Visio', 'Lucidchart'], pinta: ['Microsoft Paint'],
+    notepadpp: ['Notepad'], shotcut: ['Clipchamp'], vscodium: ['Visual Studio Code'], superprod: ['Todoist', 'Microsoft To Do'],
+    jan: ['ChatGPT', 'Microsoft Copilot'], appflowy: ['Notion'], penpot: ['Figma'], excalidraw: ['Miro'],
+    bitwarden: ['1Password', 'LastPass'], keepassxc: ['1Password', 'LastPass'],
+  };
   const renderPicks = () => {
     const shelf = (id, list) => {
       document.getElementById(id).innerHTML = list.map(app => byId[app]).filter(app => app && visible(app)).map(cardHTML).join('');

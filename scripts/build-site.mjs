@@ -2,6 +2,9 @@
 // (ru/app/zed/, en/app/zed/, ...), а ещё sitemap.xml и 404.html, чтобы поисковики видели приложения
 // по отдельным адресам.
 //
+// Рядом лежит apps.json: весь каталог в машиночитаемом виде, с текстами на четырёх языках, подборками и файлами
+// для скачивания. Его читает MCP-сервер (scripts/mcp.mjs), им может пользоваться кто угодно.
+//
 // Исходный index.html остаётся одним файлом. Страницы — его копии с заголовком и описанием на языке страницы,
 // разметкой schema.org, переводом интерфейса и текстом о приложении. Скрипт страницы потом заменяет этот текст
 // живым интерфейсом, а поисковик без JavaScript видит его как есть. Общие стили и скрипт выносятся
@@ -56,6 +59,10 @@ const literal = name => {
 const CATS = literal('CATS');
 const APPS = literal('APPS');
 const DETAILS = literal('DETAILS');
+const LINKS = literal('LINKS');
+const REPLACES = literal('REPLACES');
+// Подборки «Вместо …»: const ADOBE_PICKS = ['photocraft', …]
+const COLLECTIONS = [...html.matchAll(/const ([A-Z]+)_PICKS = (\[[^\]]*\]);/g)].map(m => ({ id: m[1].toLowerCase(), apps: vm.runInNewContext(m[2]) }));
 const RU = JSON.parse(/<script type="application\/json" id="i18n-ru">([\s\S]*?)<\/script>/.exec(html)[1]);
 const LOCALES = { ru: {} };
 for (const code of LANGS.slice(1)) LOCALES[code] = JSON.parse(await readFile(`${ROOT}locales/${code}.json`, 'utf8'));
@@ -259,6 +266,38 @@ for (const lang of LANGS) {
     urls.push({ loc: url, alt: alternates(app.id) });
   }
 }
+
+// Каталог для программ и ИИ-агентов
+const OS_KEY = { m: 'macOS', w: 'Windows', l: 'Linux', a: 'Android', i: 'iOS', b: 'Web' };
+const perLang = fn => Object.fromEntries(LANGS.map(lang => [lang, fn(lang)]));
+await write('apps.json', `${JSON.stringify({
+  version: 1,
+  updated: catalog.updated || null,
+  site: SITE.href,
+  languages: LANGS,
+  categories: CATS.map(c => ({ id: c.id, name: perLang(lang => catName(lang, c.id)) })),
+  collections: COLLECTIONS.map(c => ({
+    id: c.id,
+    title: perLang(lang => t(lang, `${c.id}.title`)),
+    apps: c.apps.filter(id => apps.some(a => a.id === id)),
+  })),
+  apps: apps.map(app => ({
+    id: app.id,
+    name: app.name,
+    category: app.cat,
+    repo: app.repo,
+    license: app.lic,
+    stars: app.stars,
+    platforms: appText('ru', app).os.map(c => OS_KEY[c]),
+    replaces: REPLACES[app.id] || [],
+    thirdParty: sandboxIds.has(app.id),
+    page: perLang(lang => pageURL(lang, app.id)),
+    description: perLang(lang => appText(lang, app).desc),
+    about: perLang(lang => appText(lang, app).about),
+    links: { repo: `https://github.com/${app.repo}`, ...(LINKS[app.id] || {}) },
+    downloads: catalog.downloads?.[app.repo] || {},
+  })),
+}, null, 1)}\n`);
 
 const lastmod = (catalog.updated || new Date().toISOString()).slice(0, 10);
 await write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>

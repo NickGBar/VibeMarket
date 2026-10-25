@@ -22,10 +22,12 @@ The market runs without a server and without day-to-day moderators. The site is 
 | `scripts/scout.mjs` | The scout: finds new open-source apps on GitHub every week |
 | `scripts/build-site.mjs` | Builds the site for GitHub Pages: a page for every app in four languages and `sitemap.xml` |
 | `scripts/github.mjs` | GitHub API requests shared by the robot and the scout |
+| `scripts/mcp.mjs` | MCP server for AI agents, see below |
 | `scripts/check-locales.mjs` | Checks translations against the Russian source |
 | `.github/workflows/robot.yml` | Runs the robot and publishes the site |
 | `.github/workflows/scout.yml` | Runs the scout once a week |
 | `test/robot/` | Robot and scout tests against a fake GitHub API |
+| `test/mcp/` | MCP server tests |
 | `.github/ISSUE_TEMPLATE/` | Submission and report forms in four languages |
 | `server.mjs` | Optional server for signing in with GitHub, see below |
 
@@ -104,6 +106,33 @@ The site is one page, but on GitHub Pages every app also gets its own address in
 
 To get the site indexed faster, add it to Google Search Console and Yandex Webmaster and submit `sitemap.xml`. To verify the site, put the verification HTML file (`google….html`, `yandex_….html`) in the root of the repository and the build copies it to the root of the site. Or put the meta tag codes into the repository variables `GOOGLE_SITE_VERIFICATION` and `YANDEX_VERIFICATION` (**Settings → Secrets and variables → Actions → Variables**), and the build adds them to the home page. Search engines only read `robots.txt` at the root of the domain, so a project site doesn't have one: submit the sitemap by hand.
 
+## For AI agents (MCP)
+
+VibeMarket has its own MCP server, `scripts/mcp.mjs`. An AI agent such as Claude Code, Claude Desktop or Cursor can use it to search the catalog, find free replacements for paid products and download the right installer for the computer it runs on.
+
+Claude Code:
+
+```
+claude mcp add vibemarket -- npx -y github:NickGBar/VibeMarket
+```
+
+Claude Desktop, Cursor and other clients, in the `mcpServers` section of their settings:
+
+```json
+{ "mcpServers": { "vibemarket": { "command": "npx", "args": ["-y", "github:NickGBar/VibeMarket"] } } }
+```
+
+| Tool | What it does |
+|---|---|
+| `find_alternative` | Free replacements for a product: «Notion», «Photoshop», «Slack» |
+| `search_apps` | Search by keywords, category, platform or collection |
+| `get_app` | Description, platforms, license, links, and files with sizes and SHA-256 |
+| `recent_updates` | Apps with new releases |
+| `list_collections` | The «Instead of …» collections and the categories |
+| `download_app` | Downloads the installer for this computer from the app's GitHub release and checks its SHA-256 |
+
+The server runs on your computer, has no dependencies and needs Node.js 22.9 or newer. It reads `apps.json` from the site: the whole catalog in machine-readable form, which anyone can use. `download_app` saves files to the Downloads folder, never overwrites existing files, only accepts links to the app's own GitHub releases and never runs installers: the user installs the app.
+
 ## Languages
 
 The site, the GitHub forms and the robot's replies are available in Russian, English, Spanish and Chinese.
@@ -172,7 +201,8 @@ The scout runs on Mondays and manually: **Actions → Разведчик VibeMar
 - `GH_TOKEN=$(gh auth token) npm run robot`: a full robot run without writing to GitHub. Only `catalog.json` on disk changes.
 - `npm run stars`: update the star snapshot built into `index.html`. It's used when `catalog.json` is unavailable.
 - `npm run locales`: check translations against the Russian source.
-- `npm test`: robot and scout tests against a fake GitHub API, no network needed.
+- `npm test`: robot, scout and MCP server tests against a fake GitHub API, no network needed.
+- `npm run mcp`: start the MCP server from the repository, for example to connect a local copy to an agent.
 - `GH_TOKEN=$(gh auth token) npm run scout`: show what the scout would find right now, without opening issues.
 - `npm run site`: build the site into `_site/` the way GitHub Pages gets it.
 

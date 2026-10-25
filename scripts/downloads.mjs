@@ -136,3 +136,21 @@ export async function fetchReleases(slugs, { count = 10, tags = {}, prerelease =
   }
   return out;
 }
+
+// Какой файл подходит компьютеру: те же уровни, что на странице (ARCH_TIERS в index.html).
+// Внутри уровня сборки равны и выигрывает лучший файл по порядку робота: установщик раньше архива.
+export const ARCH_TIERS = {
+  mac: { arm64: [['arm64', 'universal', 'any'], ['x64']], x64: [['x64', 'universal', 'any']], unknown: [['universal', 'any', 'arm64'], ['x64']] },
+  win: { arm64: [['arm64'], ['x64', 'any'], ['x86']], x64: [['x64', 'any'], ['x86']], x86: [['x86', 'any']], unknown: [['x64', 'any'], ['x86']] },
+  linux: { arm64: [['arm64', 'any']], x64: [['x64', 'any']], unknown: [['x64', 'any']] },
+  android: { unknown: [['universal', 'any', 'arm64']] },
+};
+
+export function pickFile(release, os, arch) {
+  const tiers = ARCH_TIERS[os]?.[arch] || ARCH_TIERS[os]?.unknown || [];
+  for (const tier of tiers) {
+    const file = release?.files?.find(f => tier.includes(f.arch));
+    if (file) return file;
+  }
+  return null;
+}
