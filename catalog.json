@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-25T04:50:14.905Z",
+  "updated": "2026-10-25T09:52:13.817Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -14,54 +14,63 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6712,
-    "ankitects/anki": 32275,
+    "ankitects/anki": 32278,
     "Anuken/Mindustry": 29459,
-    "AppFlowy-IO/AppFlowy": 77730,
-    "audacity/audacity": 18824,
-    "AUTOMATIC1111/stable-diffusion-webui": 165132,
-    "bitwarden/clients": 14054,
-    "blender/blender": 21227,
-    "Comfy-Org/ComfyUI": 142677,
-    "excalidraw/excalidraw": 134508,
-    "ggml-org/llama.cpp": 132261,
-    "ggml-org/whisper.cpp": 54642,
+    "AppFlowy-IO/AppFlowy": 77738,
+    "audacity/audacity": 18827,
+    "AUTOMATIC1111/stable-diffusion-webui": 165139,
+    "bitwarden/clients": 14055,
+    "blender/blender": 21234,
+    "Comfy-Org/ComfyUI": 142759,
+    "ente/ente": 29576,
+    "excalidraw/excalidraw": 134511,
+    "FreeTubeApp/FreeTube": 22138,
+    "ggml-org/llama.cpp": 132288,
+    "ggml-org/whisper.cpp": 54645,
     "GNOME/gimp": 6547,
-    "godotengine/godot": 119026,
-    "HandBrake/HandBrake": 24780,
-    "inkscape/inkscape": 4057,
-    "jellyfin/jellyfin": 58542,
-    "jesseduffield/lazygit": 83404,
-    "KDE/krita": 10628,
-    "keepassxreboot/keepassxc": 29462,
-    "laurent22/joplin": 56863,
-    "LibreOffice/core": 4557,
-    "localsend/localsend": 95474,
-    "logseq/logseq": 45364,
+    "godotengine/godot": 119032,
+    "HandBrake/HandBrake": 24783,
+    "HeliBorg/HeliBoard": 6415,
+    "immich-app/immich": 117159,
+    "ImranR98/Obtainium": 20844,
+    "inkscape/inkscape": 4058,
+    "jellyfin/jellyfin": 58552,
+    "jesseduffield/lazygit": 83407,
+    "KDE/krita": 10631,
+    "keepassxreboot/keepassxc": 29466,
+    "laurent22/joplin": 56865,
+    "LibreOffice/core": 4558,
+    "localsend/localsend": 95503,
+    "logseq/logseq": 45367,
     "luanti-org/luanti": 13770,
-    "mpv-player/mpv": 37551,
-    "mullvad/mullvadvpn-app": 7702,
-    "neovim/neovim": 103152,
-    "nomic-ai/gpt4all": 77358,
-    "obsproject/obs-studio": 78166,
-    "ollama/ollama": 184673,
+    "mpv-player/mpv": 37555,
+    "mullvad/mullvadvpn-app": 7700,
+    "neovim/neovim": 103154,
+    "nomic-ai/gpt4all": 77357,
+    "obsproject/obs-studio": 78179,
+    "ollama/ollama": 184694,
     "OpenTTD/OpenTTD": 8421,
-    "penpot/penpot": 61626,
-    "signalapp/Signal-Desktop": 16616,
-    "storytold/designcraft": 4749,
-    "storytold/effectcraft": 7852,
-    "storytold/filmcraft": 16119,
-    "storytold/lightcraft": 14565,
-    "storytold/pdfcraft": 17655,
-    "storytold/photocraft": 72468,
-    "storytold/vectorcraft": 10615,
-    "super-productivity/super-productivity": 23123,
-    "supertuxkart/stk-code": 5449,
-    "syncthing/syncthing": 89712,
-    "tauri-apps/tauri": 112168,
-    "videolan/vlc": 20215,
-    "VSCodium/vscodium": 33792,
+    "organicmaps/organicmaps": 15763,
+    "penpot/penpot": 61638,
+    "signalapp/Signal-Desktop": 16617,
+    "storytold/designcraft": 4762,
+    "storytold/effectcraft": 7862,
+    "storytold/filmcraft": 16163,
+    "storytold/lightcraft": 14585,
+    "storytold/pdfcraft": 17694,
+    "storytold/photocraft": 72554,
+    "storytold/vectorcraft": 10633,
+    "super-productivity/super-productivity": 23127,
+    "supertuxkart/stk-code": 5450,
+    "syncthing/syncthing": 89716,
+    "tauri-apps/tauri": 112174,
+    "TeamNewPipe/NewPipe": 40284,
+    "thunderbird/thunderbird-android": 14139,
+    "ungoogled-software/ungoogled-chromium": 28091,
+    "videolan/vlc": 20216,
+    "VSCodium/vscodium": 33794,
     "wesnoth/wesnoth": 6953,
-    "zed-industries/zed": 92147
+    "zed-industries/zed": 92153
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -521,6 +530,227 @@
         ]
       }
     },
+    "ente/ente": {
+      "mac": {
+        "tag": "auth-v4.4.26",
+        "date": "2026-10-19T06:27:29Z",
+        "page": "https://github.com/ente/ente/releases/tag/auth-v4.4.26",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "dmg",
+            "name": "ente-auth-v4.4.26.dmg",
+            "size": 46193389,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26.dmg",
+            "sha256": "f063d87dc247feed7dba0ecdae208ffc22f9b5b2de0c58506394a2cae0610ada"
+          }
+        ]
+      },
+      "win": {
+        "tag": "auth-v4.4.26",
+        "date": "2026-10-19T06:27:29Z",
+        "page": "https://github.com/ente/ente/releases/tag/auth-v4.4.26",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "ente-auth-v4.4.26-installer.exe",
+            "size": 28977976,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26-installer.exe",
+            "sha256": "be1424198e9940723caf8ae765cee4d4754b4af8cca8b6cb23390448d6b731b8"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "ente-auth-v4.4.26-windows.zip",
+            "size": 29103071,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26-windows.zip",
+            "sha256": "f62c5a4bb98a0d993b8a08519f4d29f5ef4055240d6433987f057d75057829fe"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "auth-v4.4.26",
+        "date": "2026-10-19T06:27:29Z",
+        "page": "https://github.com/ente/ente/releases/tag/auth-v4.4.26",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "ente-auth-v4.4.26-x86_64.AppImage",
+            "size": 36211192,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26-x86_64.AppImage",
+            "sha256": "fbe9e0f2449de3cab777671b00cabe0c49a261746c8d0b4c419f159aef68f908"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "ente-auth-v4.4.26-x86_64.deb",
+            "size": 19696228,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26-x86_64.deb",
+            "sha256": "9952ad4c7d9d4774b52df0de53eda4959e4a4662d63ab9eb64aa168013bc3369"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "ente-auth-v4.4.26-x86_64.rpm",
+            "size": 25180402,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26-x86_64.rpm",
+            "sha256": "e754afcfb73adb545a2b1945dcf23e048861f154b0960dde40d13d5ea3444905"
+          }
+        ]
+      },
+      "android": {
+        "tag": "auth-v4.4.26",
+        "date": "2026-10-19T06:27:29Z",
+        "page": "https://github.com/ente/ente/releases/tag/auth-v4.4.26",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "ente-auth-v4.4.26.apk",
+            "size": 64944008,
+            "url": "https://github.com/ente/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26.apk",
+            "sha256": "dff86bc359adbbcb9e2dffc24d366da14361caebbc3a4acfaebf4998eb8bc630"
+          }
+        ]
+      }
+    },
+    "FreeTubeApp/FreeTube": {
+      "mac": {
+        "tag": "v0.25.3-beta",
+        "date": "2026-08-28T07:10:01Z",
+        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "freetube-0.25.3-beta-mac-x64.dmg",
+            "size": 123725139,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-x64.dmg",
+            "sha256": "40fb6c671ec75905e035968ec0c14bfe717643730af80536e625d191455f49bf"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "freetube-0.25.3-beta-mac-arm64.dmg",
+            "size": 118871768,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-arm64.dmg",
+            "sha256": "2b445d64f5e56a873debea50c785cd41400bdabc387f0d67fc7be745b2b9146e"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "freetube-0.25.3-beta-mac-x64.zip",
+            "size": 119632886,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-x64.zip",
+            "sha256": "68fae2a7e7007561bcc78f7c1b875cb700e767cda6a8b11c5574fdf396dd858b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "freetube-0.25.3-beta-mac-arm64.zip",
+            "size": 114760361,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-arm64.zip",
+            "sha256": "302a0993e49797f538f377b228edfcc4b4dba536ab6260d91c78cd45f0f73188"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v0.25.3-beta",
+        "date": "2026-08-28T07:10:01Z",
+        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "freetube-0.25.3-beta-setup-x64.exe",
+            "size": 112567913,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-setup-x64.exe",
+            "sha256": "38226aeace71e065bd1914e0fb486aad781d67e1e134d3ed6c21e8d67e104f3a"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "freetube-0.25.3-beta-setup-arm64.exe",
+            "size": 106116291,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-setup-arm64.exe",
+            "sha256": "e98b4e0131f2b84934595bad6fd0e88d1a8c250f2fd3e5688409935efd1e3a98"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "freetube-0.25.3-beta-win-x64-portable.exe",
+            "size": 112274225,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-win-x64-portable.exe",
+            "sha256": "cb1ed0b27f91b91ddbb1b665d93f6ef12842b143789677d66d88727ff5913f05"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "freetube-0.25.3-beta-win-arm64-portable.exe",
+            "size": 105823149,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-win-arm64-portable.exe",
+            "sha256": "edd88364fa39e2120be6fbff8d547f9d9878202fe32a9d198d863c7190b02274"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v0.25.3-beta",
+        "date": "2026-08-28T07:10:01Z",
+        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "freetube-0.25.3-beta-amd64.AppImage",
+            "size": 119178803,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-amd64.AppImage",
+            "sha256": "745d46bddb5a45e704fe2a75c31fb8fc23a71b5564a9fc3eb7acf9f8ddb85a30"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "freetube-0.25.3-beta-arm64.AppImage",
+            "size": 116911186,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-arm64.AppImage",
+            "sha256": "607a4c1cb656087249e6650456e4d2b5f2917475640aa7ff7afd4c05a95a596e"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "freetube_0.25.3_beta_amd64.deb",
+            "size": 99748088,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube_0.25.3_beta_amd64.deb",
+            "sha256": "3a75dc4ef65edf184222c3389855be4699d04cce321e9695bb2989a50db2ba5d"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "freetube_0.25.3_beta_arm64.deb",
+            "size": 93087744,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube_0.25.3_beta_arm64.deb",
+            "sha256": "59a39a54055f414c2ea9666c373c3a4970266d8d366d52a839278d20f5ee8bc8"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "freetube-0.25.3-beta.amd64.rpm",
+            "size": 87997241,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta.amd64.rpm",
+            "sha256": "3b3ca085573ff21bfb6c58f73004232028b41d87f22e35ad5bd17c19344269fd"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "freetube-0.25.3-beta.arm64.rpm",
+            "size": 81613993,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta.arm64.rpm",
+            "sha256": "7d9b9588a1e479ac6a2850377d7a42fab61505cd1628bb7f22d3cb1f6b26e28e"
+          }
+        ]
+      }
+    },
     "godotengine/godot": {
       "mac": {
         "tag": "4.7.2-stable",
@@ -682,6 +912,121 @@
             "size": 29772536,
             "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64.flatpak",
             "sha256": "8383defa3a845b77e6589bebe9c346921747a5c33b4de7b90eddd2ba863a52e5"
+          }
+        ]
+      }
+    },
+    "HeliBorg/HeliBoard": {
+      "android": {
+        "tag": "v4.2",
+        "date": "2026-10-12T17:32:37Z",
+        "page": "https://github.com/HeliBorg/HeliBoard/releases/tag/v4.2",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "HeliBoard_4.2-release.apk",
+            "size": 22431797,
+            "url": "https://github.com/HeliBorg/HeliBoard/releases/download/v4.2/HeliBoard_4.2-release.apk",
+            "sha256": "69b2b2fb349934371b1ed2d3569541cc0bda987f8aaf5eb5f5b157961f76de86"
+          },
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "HeliBoard_4.2-nouserlib.apk",
+            "size": 22431811,
+            "url": "https://github.com/HeliBorg/HeliBoard/releases/download/v4.2/HeliBoard_4.2-nouserlib.apk",
+            "sha256": "0697b897907466a58510e98bc02fbad7487d17a88816535387e2a4d303df9624"
+          }
+        ]
+      }
+    },
+    "immich-app/immich": {
+      "android": {
+        "tag": "v3.3.5",
+        "date": "2026-10-21T18:12:57Z",
+        "page": "https://github.com/immich-app/immich/releases/tag/v3.3.5",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "app-release.apk",
+            "size": 179772021,
+            "url": "https://github.com/immich-app/immich/releases/download/v3.3.5/app-release.apk",
+            "sha256": "e12e4d40959f9731078f03cb880ed288256a3214f56f93ae667c1b4e43b10a28"
+          },
+          {
+            "arch": "x64",
+            "kind": "apk",
+            "name": "app-x86_64-release.apk",
+            "size": 71980079,
+            "url": "https://github.com/immich-app/immich/releases/download/v3.3.5/app-x86_64-release.apk",
+            "sha256": "c00a63bc850b1b41755679b13db18072525456acac41e71f3d5c552c2de72677"
+          },
+          {
+            "arch": "arm64",
+            "kind": "apk",
+            "name": "app-arm64-v8a-release.apk",
+            "size": 69260133,
+            "url": "https://github.com/immich-app/immich/releases/download/v3.3.5/app-arm64-v8a-release.apk",
+            "sha256": "efea3a47ba3393a78882d07fa11b9ff0051fc6b7d9e0c92505f2912aafdc6695"
+          }
+        ]
+      }
+    },
+    "ImranR98/Obtainium": {
+      "android": {
+        "tag": "v1.7.3",
+        "date": "2026-10-25T02:16:13Z",
+        "page": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.3",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "app-release.apk",
+            "size": 93924789,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-release.apk",
+            "sha256": "aa2c58d559d244a1c409c5624fc3703ef7f7fa44a83f5957ea1d7b4a1a691dcf"
+          },
+          {
+            "arch": "x64",
+            "kind": "apk",
+            "name": "app-x86_64-release.apk",
+            "size": 36858527,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-x86_64-release.apk",
+            "sha256": "678bb84c6019775e1b318cdef18e5e13764379b431e45f25fa2ffde5650e5f8e"
+          },
+          {
+            "arch": "arm64",
+            "kind": "apk",
+            "name": "app-arm64-v8a-release.apk",
+            "size": 34532014,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-arm64-v8a-release.apk",
+            "sha256": "3a3caf4611b32fa665cd5d19a4b593c6b8678a3ceb69981a0e5c2253b3dc8f30"
+          },
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "app-fdroid-release.apk",
+            "size": 93924789,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-fdroid-release.apk",
+            "sha256": "c6984c55b04be0d14132bc94c9354c644d2f4b7338afffc5c8792bbf97edf196"
+          },
+          {
+            "arch": "x64",
+            "kind": "apk",
+            "name": "app-x86_64-fdroid-release.apk",
+            "size": 36858527,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-x86_64-fdroid-release.apk",
+            "sha256": "95e3894a345a4f9abaa7cec47e5df0f88e5f0c81e6027f8f2c6b4c92ccb39060"
+          },
+          {
+            "arch": "arm64",
+            "kind": "apk",
+            "name": "app-arm64-v8a-fdroid-release.apk",
+            "size": 34532014,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-arm64-v8a-fdroid-release.apk",
+            "sha256": "afd28d1ecf7a5fa462517d22007f4b2a3be062bd80193dadfc1f93d2d8824b14"
           }
         ]
       }
@@ -1061,6 +1406,14 @@
             "size": 46558706,
             "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-arm64v8.apk",
             "sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3"
+          },
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "LocalSend-1.18.2-android-google-play.apk",
+            "size": 128293112,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-google-play.apk",
+            "sha256": "ca08306fbedad33790efa02240bc530c3f248e69a1a1ea780fa553f68202f436"
           }
         ]
       }
@@ -1299,6 +1652,22 @@
             "size": 49288843,
             "url": "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-macos-15-intel.zip",
             "sha256": "41003617ab4f7784394b5ddea7ce51b3e0838e8cfc8166ad1a378b2eda3b583c"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "mpv-v0.41.0-macos-15-arm.zip",
+            "size": 43957643,
+            "url": "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-macos-15-arm.zip",
+            "sha256": "489cf6a54f57c54f86ad8d7cedaf5bb26848770d58dc059021214e2f689ee799"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "mpv-v0.41.0-macos-26-arm.zip",
+            "size": 43704958,
+            "url": "https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-macos-26-arm.zip",
+            "sha256": "09820c0d84f6687446b84eb9df81fcf6a26ebe869cee58ea1857d7948cfb7c71"
           }
         ]
       },
@@ -1744,6 +2113,23 @@
             "size": 1508659610,
             "url": "https://github.com/ollama/ollama/releases/download/v0.40.11/ollama-linux-amd64.tar.zst",
             "sha256": "7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d"
+          }
+        ]
+      }
+    },
+    "organicmaps/organicmaps": {
+      "android": {
+        "tag": "2026.09.29-32-android",
+        "date": "2026-09-29T21:16:46Z",
+        "page": "https://github.com/organicmaps/organicmaps/releases/tag/2026.09.29-32-android",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "OrganicMaps-26092932-web-release.apk",
+            "size": 63888223,
+            "url": "https://github.com/organicmaps/organicmaps/releases/download/2026.09.29-32-android/OrganicMaps-26092932-web-release.apk",
+            "sha256": "d7dbdfc3cbfdbcce6d437f11147f2cd15384c03052d2b4594fd8c1c7777dd497"
           }
         ]
       }
@@ -2964,6 +3350,40 @@
             "size": 12866755,
             "url": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-arm64-v2.1.7.tar.gz",
             "sha256": "48e456690cd2b97e7d26b02b5ac35f62a3b36172267b144cfeaf02c993ab955c"
+          }
+        ]
+      }
+    },
+    "TeamNewPipe/NewPipe": {
+      "android": {
+        "tag": "v0.29.1",
+        "date": "2026-08-15T22:05:38Z",
+        "page": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "NewPipe_v0.29.1.apk",
+            "size": 11507122,
+            "url": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
+            "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79"
+          }
+        ]
+      }
+    },
+    "thunderbird/thunderbird-android": {
+      "android": {
+        "tag": "THUNDERBIRD_24_0",
+        "date": "2026-10-05T23:38:09Z",
+        "page": "https://github.com/thunderbird/thunderbird-android/releases/tag/THUNDERBIRD_24_0",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "apk",
+            "name": "thunderbird-24.0.apk",
+            "size": 10965795,
+            "url": "https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_24_0/thunderbird-24.0.apk",
+            "sha256": "473b33da5963d0a4261a834c845aaf8e3878309565e9f40e61f6e5def21565e5"
           }
         ]
       }
