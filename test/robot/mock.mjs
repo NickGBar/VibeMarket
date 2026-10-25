@@ -74,6 +74,11 @@ const state = {
       rel(9, 'cli-v2', false, ['bw-macos-2.zip', 'bw-windows-2.zip'], ago(1)),
       rel(8, 'desktop-v1', true, ['Bitwarden-1-universal.dmg', 'Bitwarden-Installer-1.exe'], ago(3)),
     ],
+    // FreeTube выпускает все версии как бету: rules.json разрешает ему предварительные релизы
+    'FreeTubeApp/FreeTube': [{ ...rel(41, 'v1-beta', true, ['freetube-1-beta-mac-arm64.dmg', 'freetube-1-beta-setup-x64.exe']), isPrerelease: true }],
+    // А Tauri не разрешает: бета пропускается
+    'zed-industries/zed': [{ ...rel(43, 'v9-pre', true, ['Zed-aarch64.dmg']), isPrerelease: true }],
+    'immich-app/immich': [rel(42, 'v3', true, ['app-arm64-v8a-release.apk', 'app-release.apk', 'app-x86_64-release.apk', 'app-armeabi-v7a-release.apk'])],
     'neo/notes': [rel(31, 'v2', true, ['Notes-2.dmg', 'Notes-Setup-2.exe', 'notes-2.AppImage', 'checksums.txt'])],
     'old/editor': [rel(32, 'v1', true, ['Editor-1.dmg'], ago(800))],
     'src/only': [rel(33, 'v3', true, [])],

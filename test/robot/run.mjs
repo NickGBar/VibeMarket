@@ -77,6 +77,8 @@ check('у файлов есть ссылка, размер и SHA-256', (() => {
 check('VSCodium: файлы сверх лимита GraphQL дочитаны через REST', names('VSCodium/vscodium', 'win') === 'VSCodiumUserSetup-x64-1.0.exe' && names('VSCodium/vscodium', 'mac').includes('VSCodium.arm64.1.0.dmg'), JSON.stringify(dl['VSCodium/vscodium']));
 check('Tauri пропущен по rules.json', !dl['tauri-apps/tauri'], JSON.stringify(dl['tauri-apps/tauri']));
 check('Bitwarden: только релизы desktop-v', names('bitwarden/clients', 'mac') === 'Bitwarden-1-universal.dmg' && dl['bitwarden/clients'].mac.tag === 'desktop-v1', JSON.stringify(dl['bitwarden/clients']));
+check('бета-релизы берутся только у разрешённых в rules.json', names('FreeTubeApp/FreeTube', 'mac') === 'freetube-1-beta-mac-arm64.dmg' && !dl['zed-industries/zed'], JSON.stringify(dl['FreeTubeApp/FreeTube']) + JSON.stringify(dl['zed-industries/zed']));
+check('APK без процессора в имени считается универсальным', (dl['immich-app/immich']?.android?.files || []).some(f => f.name === 'app-release.apk' && f.arch === 'any') && !names('immich-app/immich', 'android').includes('armeabi'), JSON.stringify(dl['immich-app/immich']));
 check('Mullvad: Android и компьютеры из разных релизов, бета пропущена', dl['mullvad/mullvadvpn-app']?.android?.tag === 'android/2' && dl['mullvad/mullvadvpn-app']?.mac?.tag === '2026.1', JSON.stringify(dl['mullvad/mullvadvpn-app']));
 
 console.log('== Голоса');

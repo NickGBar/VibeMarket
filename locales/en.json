@@ -70,6 +70,8 @@
     "top.sub": "The most popular projects in the catalog",
     "adobe.title": "Instead of Adobe",
     "adobe.sub": "Open alternatives to Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects from Brandon Thomas's ArtCraft. Young Rust projects, versions 0.x.",
+    "google.title": "Instead of Google",
+    "google.sub": "Open replacements for Google services: browser, video, photos, maps, mail, documents and 2FA codes. No ads, and your data doesn’t go to Google.",
     "mine.title": "Your stars",
     "mine.empty": "Open any app page and press Star. The project gets a star on GitHub, and the app shows up here.",
     "mine.loading": "Loading your stars from GitHub…",
@@ -177,7 +179,7 @@
     "results.empty": "Nothing found. Try an app name, a category like «{example}» or a license, for example MIT.",
     "foot.about": "The catalog only lists open-source projects. Everything is free: no ads, banners, pop-ups or trackers. This page doesn't load a single external script, font or pixel.",
     "foot.auth": "Signing in with GitHub is optional. Once signed in, stars update through your account, and all GitHub requests go through the VibeMarket server, so your token never reaches the browser.",
-    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects are trademarks of Adobe. The names are used for comparison only: VibeMarket and ArtCraft are not affiliated with Adobe.",
+    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro and After Effects are trademarks of Adobe; Google, Chrome, YouTube, Gmail and Google Play are trademarks of Google LLC. The names are used for comparison only: VibeMarket and the projects in these collections are not affiliated with Adobe or Google.",
     "foot.sandbox": "Apps in the Sandbox section are third-party: their authors publish them. VibeMarket doesn't review them and isn't responsible for how they work, their security or their content.",
     "foot.starsSnapshot": "Stars come from the GitHub API as of {date}.",
     "foot.starsRobot": "Stars are updated by the VibeMarket robot, last update: {date}.",
@@ -780,6 +782,87 @@
         "Compositions, layers and keyframes",
         "306 effects and 3D cameras",
         "JSON projects and Lottie import"
+      ]
+    },
+    "ungoogled": {
+      "desc": "Chromium without Google services or background requests to them.",
+      "about": "Ungoogled Chromium is regular Chromium with its dependency on Google web services removed. The browser makes no background requests to Google, and pre-built binaries are stripped from the source code. Google Safe Browsing is disabled as well. The interface stays familiar, and extra privacy settings are turned on with flags. Builds for macOS, Windows and Linux are made by the community.",
+      "shots": [
+        "Familiar Chromium without a Google account",
+        "No background requests to Google",
+        "Privacy settings are turned on with flags"
+      ]
+    },
+    "enteauth": {
+      "desc": "Two-factor authentication codes with end-to-end encryption.",
+      "about": "Ente Auth stores your two-factor authentication codes. Cloud backups are end-to-end encrypted, the app works offline, and you can skip the cloud and sign-up altogether. There are versions for Android, iOS, macOS, Windows and Linux, and you can view your codes in the browser too.",
+      "shots": [
+        "All your 2FA codes in one place",
+        "End-to-end encryption and sync",
+        "Works offline and without an account"
+      ]
+    },
+    "obtainium": {
+      "desc": "Android app updates straight from their releases.",
+      "about": "Obtainium installs and updates Android apps straight from their release pages and notifies you about new versions. Sources include GitHub, GitLab, Codeberg, F-Droid and more. It lets you get open-source apps without Google Play and without middlemen.",
+      "shots": [
+        "Updates straight from releases",
+        "New version notifications",
+        "GitHub, GitLab, Codeberg and F-Droid"
+      ]
+    },
+    "heliboard": {
+      "desc": "An Android keyboard that works without internet access.",
+      "about": "HeliBoard is a customizable Android keyboard based on AOSP and OpenBoard. It has no internet permission, so what you type never leaves the device. Dictionaries for suggestions, themes, custom layouts, emoji search and multilingual typing.",
+      "shots": [
+        "Multilingual typing",
+        "No internet access",
+        "Dictionaries, themes and layouts"
+      ]
+    },
+    "freetube": {
+      "desc": "YouTube without ads or tracking, with subscriptions kept on your side.",
+      "about": "FreeTube is a desktop YouTube app built with privacy in mind. Videos play without ads, and Google can’t track you with cookies and JavaScript. Subscriptions, playlists and history stay on your computer, and you can subscribe to channels without an account. It has SponsorBlock, a mini player and subscription export. The project is still in beta.",
+      "shots": [
+        "Videos without ads",
+        "Subscriptions without a Google account",
+        "Mini player and SponsorBlock"
+      ]
+    },
+    "newpipe": {
+      "desc": "A lightweight YouTube client for Android without Google services.",
+      "about": "NewPipe is a lightweight Android app for watching YouTube, PeerTube, SoundCloud and Bandcamp. It uses no Google Play Services or proprietary libraries, so it also works on phones without them. Videos up to 4K, background listening, a popup player and local playlists. The app is in beta.",
+      "shots": [
+        "Videos up to 4K",
+        "Background listening",
+        "YouTube, PeerTube, SoundCloud and Bandcamp"
+      ]
+    },
+    "immich": {
+      "desc": "Photos and videos on your own server instead of someone else’s cloud.",
+      "about": "Immich keeps your photos and videos on your own server. The phone app backs up your shots automatically, and you can browse them on your phone or in the browser. It has shared albums, face recognition, search by objects and a map of your photos. You set up the server yourself, but your photos never go to someone else’s cloud. The developers remind you to keep backups following the 3-2-1 rule.",
+      "shots": [
+        "Photo and video timeline",
+        "Backup from your phone",
+        "Shared albums and face search"
+      ]
+    },
+    "organicmaps": {
+      "desc": "Offline maps and navigation with no ads and no tracking.",
+      "about": "Organic Maps is an offline maps and navigation app for walking, cycling and driving, built on OpenStreetMap data. It has no ads, no tracking and no data collection, and needs no registration. Voice guidance, contour lines, subway maps, fast offline search, and track import and export in KML, GPX and GeoJSON. For Android and iOS.",
+      "shots": [
+        "Detailed offline maps",
+        "Walking, cycling and driving routes",
+        "No ads, tracking or registration"
+      ]
+    },
+    "thunderbird": {
+      "desc": "Privacy-focused email, the successor to K-9 Mail on Android.",
+      "about": "Thunderbird for Android is a privacy-focused email app based on K-9 Mail. Several email accounts in one app, with a Unified Inbox. This repository has the Android version; Thunderbird for desktop is downloaded from thunderbird.net.",
+      "shots": [
+        "Several email accounts in one app",
+        "Unified Inbox",
+        "Based on K-9 Mail"
       ]
     }
   }

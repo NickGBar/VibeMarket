@@ -19,7 +19,7 @@ const SKIP = new RegExp([
   String.raw`freebsd|openbsd|netbsd|solaris|illumos|haiku`,
 ].join('|'));
 // Переносная версия и сборки для магазинов уступают установщику, но остаются в списке
-const RARE = /portable|unsigned|(^|[-_. ])(store|play)([-_. ]|$)/;
+const RARE = /portable|unsigned|nouserlib|(^|[-_. ])(store|play|fdroid)([-_. ]|$)/;
 // Сборки для особого железа и особых случаев: показываем, только если обычной для этого процессора нет
 const NICHE = /commercial|perfetto|(^|[-_. ])(mono|cuda\d*|cu\d+|rocm|mlx|jetpack\d*|vulkan|opencl|sycl|hip|openvino|kompute|horizonos|picoos|legacy|nogpu|noavx|avx512|gplay|google)([-_. ]|$)/;
 const RANK = {
@@ -46,17 +46,21 @@ export function classify(asset) {
   const os = OWN_OS[kind]
     || (/mac|osx|darwin|apple/.test(name) ? 'mac' : /win/.test(name) ? 'win' : /android/.test(name) ? 'android' : /linux|ubuntu|debian|fedora/.test(name) ? 'linux' : null);
   if (!os || !RANK[os].includes(kind)) return null;
-  const arch = archOf(name);
+  let arch = archOf(name);
+  // Mac на ARM бывает только 64-битным: ONLYOFFICE-arm.dmg — сборка для Apple Silicon
+  if (arch === 'other' && os === 'mac' && /(^|[-_. ])arm([-_. ]|$)/.test(name)) arch = 'arm64';
   if (arch === 'other') return null;
   const niche = NICHE.test(name);
   const rank = RANK[os].indexOf(kind) + (RARE.test(name) ? 10 : 0) + (niche ? 20 : 0) - (/usersetup|user-setup/.test(name) ? 0.5 : 0);
   return { os, arch, kind, rank, niche, name: asset.name, size: asset.size, url: asset.downloadUrl, sha256: (asset.digest || '').replace(/^sha256:/, '') || undefined };
 }
 
-// Файл без процессора в имени: если рядом лежит такой же для arm64, этот для x64, иначе подходит любому
+// Файл без процессора в имени: если рядом лежит такой же для arm64, этот для x64, иначе подходит любому.
+// APK без процессора в имени — универсальный (app-release.apk рядом с app-arm64-v8a-release.apk у Immich).
 function settleArch(files) {
   for (const f of files) {
     if (f.arch) continue;
+    if (f.os === 'android') { f.arch = 'any'; continue; }
     const twin = files.some(g => g !== f && g.os === f.os && g.kind === f.kind && (g.arch === 'arm64' || g.arch === 'universal'));
     f.arch = twin || f.os === 'win' || f.os === 'linux' ? 'x64' : 'any';
   }
@@ -65,18 +69,19 @@ function settleArch(files) {
 
 // Готовые релизы в порядке просмотра: отмеченный latest первым, дальше по дате.
 // У Godot самый свежий по дате релиз бывает из старой ветки 3.x, поэтому одной даты мало.
-export function releaseOrder(releases, { tag } = {}) {
+// prerelease: принимать и предварительные релизы — FreeTube выпускает все версии как бету.
+export function releaseOrder(releases, { tag, prerelease = false } = {}) {
   const tagRe = tag ? new RegExp(tag) : null;
   return (releases || [])
-    .filter(r => !r.isDraft && !r.isPrerelease && (!tagRe || tagRe.test(r.tagName)))
+    .filter(r => !r.isDraft && (prerelease || !r.isPrerelease) && (!tagRe || tagRe.test(r.tagName)))
     .sort((a, b) => (b.isLatest ? 1 : 0) - (a.isLatest ? 1 : 0) || String(b.publishedAt).localeCompare(String(a.publishedAt)));
 }
 
 // Для каждой системы берём первый релиз, где есть файлы для неё. Так у Mullvad приложение для Android
 // и версии для компьютеров приходят из разных релизов. На каждый процессор остаётся не больше perArch файлов.
-export function pickDownloads(releases, { tag, perArch = 2, perArchLinux = 3 } = {}) {
+export function pickDownloads(releases, { tag, prerelease, perArch = 2, perArchLinux = 3 } = {}) {
   const out = {};
-  for (const release of releaseOrder(releases, { tag })) {
+  for (const release of releaseOrder(releases, { tag, prerelease })) {
     const files = settleArch((release.releaseAssets?.nodes || []).map(classify).filter(Boolean));
     for (const os of Object.keys(RANK)) {
       if (out[os]) continue;
@@ -103,13 +108,13 @@ export function pickDownloads(releases, { tag, perArch = 2, perArchLinux = 3 } =
 // Свежие релизы репозиториев вместе с файлами, одним GraphQL-запросом на 10 репозиториев.
 // GraphQL отдаёт не больше сотни файлов на релиз: у VSCodium их под две сотни, поэтому главный релиз
 // дочитывается через REST. Репозитории, про которые GitHub не ответил, в результат не попадают.
-export async function fetchReleases(slugs, { count = 10, tags = {} } = {}) {
+export async function fetchReleases(slugs, { count = 10, tags = {}, prerelease = new Set() } = {}) {
   const fields = `releases(first: ${count}, orderBy: { field: CREATED_AT, direction: DESC }) { nodes { databaseId tagName isDraft isPrerelease isLatest publishedAt url releaseAssets(first: 100) { totalCount nodes { name size downloadUrl digest } } } }`;
   const out = new Map();
   for (const [slug, repo] of await graphqlRepos(slugs, fields)) {
     const releases = repo?.releases?.nodes;
     if (!Array.isArray(releases)) continue;
-    const main = releaseOrder(releases, { tag: tags[slug] })[0];
+    const main = releaseOrder(releases, { tag: tags[slug], prerelease: prerelease.has(slug) })[0];
     if (main && main.releaseAssets.totalCount > main.releaseAssets.nodes.length) {
       try {
         const assets = await ghAll(`/repos/${slug}/releases/${main.databaseId}/assets`);

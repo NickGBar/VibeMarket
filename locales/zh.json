@@ -69,6 +69,8 @@
     "top.sub": "目录中最受欢迎的项目",
     "adobe.title": "替代 Adobe",
     "adobe.sub": "Brandon Thomas 的 ArtCraft 出品的开源替代品，对标 Photoshop、Lightroom、Illustrator、InDesign、Acrobat、Premiere Pro 和 After Effects。用 Rust 编写的年轻项目，版本 0.x。",
+    "google.title": "替代 Google",
+    "google.sub": "Google 服务的开源替代品：浏览器、视频、照片、地图、邮件、文档和两步验证码。没有广告，你的数据也不会流向 Google。",
     "mine.title": "我的星标",
     "mine.empty": "打开任意应用页面并点击 Star。项目会在 GitHub 上获得一颗星，应用也会出现在这里。",
     "mine.loading": "正在从 GitHub 加载你的星标…",
@@ -170,7 +172,7 @@
     "results.empty": "没有找到结果。试试应用名称、类似“{example}”的分类，或许可证，例如 MIT。",
     "foot.about": "目录只收录开源项目。一切免费：没有广告、横幅、弹窗和追踪器。此页面不加载任何外部脚本、字体或像素。",
     "foot.auth": "使用 GitHub 登录是可选的。登录后，星标会通过你的账号更新，所有 GitHub 请求都经过 VibeMarket 服务器，因此你的令牌不会进入浏览器。",
-    "foot.trademarks": "Adobe、Photoshop、Lightroom、Illustrator、InDesign、Acrobat、Premiere Pro 和 After Effects 是 Adobe 的商标。这些名称仅用于比较：VibeMarket 和 ArtCraft 与 Adobe 没有关联。",
+    "foot.trademarks": "Adobe、Photoshop、Lightroom、Illustrator、InDesign、Acrobat、Premiere Pro 和 After Effects 是 Adobe 的商标；Google、Chrome、YouTube、Gmail 和 Google Play 是 Google LLC 的商标。这些名称仅用于比较：VibeMarket 和这些合集中的项目与 Adobe 和 Google 没有关联。",
     "foot.sandbox": "“沙盒”中的应用来自第三方，由作者自行发布。VibeMarket 不审查这些应用，也不对其运行、安全和内容负责。",
     "foot.starsSnapshot": "星标数据来自 GitHub API，截至 {date}。",
     "foot.starsRobot": "星标由 VibeMarket 机器人更新，最近一次更新：{date}。",
@@ -771,6 +773,87 @@
         "合成、图层和关键帧",
         "306 种特效和 3D 摄像机",
         "JSON 项目和 Lottie 导入"
+      ]
+    },
+    "ungoogled": {
+      "desc": "去掉 Google 服务及其后台请求的 Chromium。",
+      "about": "Ungoogled Chromium 就是常见的 Chromium，只是去掉了对 Google 网络服务的依赖。浏览器不会在后台向 Google 发送请求，预编译的二进制文件也从源代码中移除了。Google 安全浏览同样被关闭。界面保持熟悉的样子，额外的隐私设置通过 flags 开启。macOS、Windows 和 Linux 版本由社区构建。",
+      "shots": [
+        "熟悉的 Chromium，无需 Google 账号",
+        "不向 Google 发送后台请求",
+        "隐私设置通过 flags 开启"
+      ]
+    },
+    "enteauth": {
+      "desc": "端到端加密的两步验证码应用。",
+      "about": "Ente Auth 用来保存两步验证码。云端备份采用端到端加密，应用可以离线使用，也可以完全不用云端、无需注册。提供 Android、iOS、macOS、Windows 和 Linux 版本，也可以在浏览器中查看验证码。",
+      "shots": [
+        "所有两步验证码集中管理",
+        "端到端加密与同步",
+        "离线可用，无需账号"
+      ]
+    },
+    "obtainium": {
+      "desc": "直接从发布页获取 Android 应用更新。",
+      "about": "Obtainium 直接从应用的发布页安装和更新 Android 应用，并在有新版本时通知你。支持的来源包括 GitHub、GitLab、Codeberg、F-Droid 等。这样无需 Google Play 和中间商，就能获取开源应用。",
+      "shots": [
+        "直接从发布页更新",
+        "新版本通知",
+        "GitHub、GitLab、Codeberg 和 F-Droid"
+      ]
+    },
+    "heliboard": {
+      "desc": "无需联网即可使用的 Android 键盘。",
+      "about": "HeliBoard 是一款可自定义的 Android 键盘，基于 AOSP 和 OpenBoard。它没有联网权限，你输入的内容不会离开设备。支持建议词典、主题、自定义布局、表情搜索和多语言输入。",
+      "shots": [
+        "多语言输入",
+        "没有联网权限",
+        "词典、主题和布局"
+      ]
+    },
+    "freetube": {
+      "desc": "没有广告和追踪的 YouTube，订阅保存在你自己手里。",
+      "about": "FreeTube 是一款注重隐私的桌面版 YouTube 应用。播放视频没有广告，Google 也无法通过 cookie 和 JavaScript 追踪你。订阅、播放列表和历史记录只保存在你的电脑上，无需账号即可订阅频道。支持 SponsorBlock、迷你播放器和订阅导出。项目目前仍处于测试阶段。",
+      "shots": [
+        "没有广告的视频",
+        "无需 Google 账号即可订阅",
+        "迷你播放器和 SponsorBlock"
+      ]
+    },
+    "newpipe": {
+      "desc": "不依赖 Google 服务的轻量级 Android YouTube 客户端。",
+      "about": "NewPipe 是一款轻量级 Android 应用，可以观看 YouTube、PeerTube、SoundCloud 和 Bandcamp。它不使用 Google Play 服务和专有库，因此在没有这些服务的手机上也能运行。支持最高 4K 视频、后台播放、悬浮播放器和本地播放列表。应用目前处于测试阶段。",
+      "shots": [
+        "最高 4K 视频",
+        "后台播放",
+        "YouTube、PeerTube、SoundCloud 和 Bandcamp"
+      ]
+    },
+    "immich": {
+      "desc": "照片和视频存在你自己的服务器上，而不是别人的云端。",
+      "about": "Immich 把你的照片和视频保存在你自己的服务器上。手机应用会自动备份照片，你可以在手机或浏览器中浏览。支持共享相册、人脸识别、按物体搜索和照片地图。服务器需要自己搭建，但照片永远不会进入别人的云端。开发者提醒：请按照 3-2-1 原则做好备份。",
+      "shots": [
+        "照片和视频时间线",
+        "从手机备份",
+        "共享相册和人脸搜索"
+      ]
+    },
+    "organicmaps": {
+      "desc": "没有广告和追踪的离线地图与导航。",
+      "about": "Organic Maps 是基于 OpenStreetMap 数据的离线地图和导航应用，适合步行、骑行和驾车。没有广告、追踪和数据收集，也无需注册。支持语音导航、等高线、地铁线路图、快速离线搜索，以及 KML、GPX 和 GeoJSON 轨迹的导入导出。适用于 Android 和 iOS。",
+      "shots": [
+        "详细的离线地图",
+        "步行、骑行和驾车路线",
+        "没有广告、追踪和注册"
+      ]
+    },
+    "thunderbird": {
+      "desc": "注重隐私的邮件应用，Android 上 K-9 Mail 的继任者。",
+      "about": "Thunderbird for Android 是一款注重隐私的邮件应用，基于 K-9 Mail。一个应用管理多个邮箱账户，支持统一收件箱。这里是 Android 版本，桌面版 Thunderbird 请从 thunderbird.net 下载。",
+      "shots": [
+        "一个应用管理多个邮箱",
+        "统一收件箱",
+        "基于 K-9 Mail"
       ]
     }
   }

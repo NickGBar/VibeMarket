@@ -905,6 +905,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     <button class="chip" type="button" data-target="today" aria-current="true" data-i18n="nav.today">Сегодня</button>
     <button class="chip" type="button" data-target="top" data-i18n="nav.top">Топ</button>
     <button class="chip" type="button" data-target="adobe" data-i18n="adobe.title">Вместо Adobe</button>
+    <button class="chip" type="button" data-target="google" data-i18n="google.title">Вместо Google</button>
   </nav>
 </header>
 
@@ -1002,6 +1003,17 @@ select.input option { background: var(--surface); color: var(--fg); }
         <div class="shelf-nav" data-nav="adobe-track"></div>
       </div>
       <div class="track" id="adobe-track" role="list" tabindex="0" aria-label="Вместо Adobe" data-i18n-attr="aria-label:adobe.title"></div>
+    </section>
+
+    <section class="shelf" id="google" aria-labelledby="google-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="google-title" data-i18n="google.title">Вместо Google</h2>
+          <p class="shelf-sub" data-i18n="google.sub">Открытые замены сервисам Google: браузер, видео, фото, карты, почта, документы и коды 2FA. Без рекламы, а ваши данные не уходят в Google.</p>
+        </div>
+        <div class="shelf-nav" data-nav="google-track"></div>
+      </div>
+      <div class="track" id="google-track" role="list" tabindex="0" aria-label="Вместо Google" data-i18n-attr="aria-label:google.title"></div>
     </section>
 
     <section class="shelf" id="mine" aria-labelledby="mine-title" hidden>
@@ -1234,6 +1246,8 @@ select.input option { background: var(--surface); color: var(--fg); }
  "top.sub": "Самые популярные проекты каталога",
  "adobe.title": "Вместо Adobe",
  "adobe.sub": "Открытые аналоги Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects от ArtCraft Брэндона Томаса. Молодые проекты на Rust, версии 0.x.",
+ "google.title": "Вместо Google",
+ "google.sub": "Открытые замены сервисам Google: браузер, видео, фото, карты, почта, документы и коды 2FA. Без рекламы, а ваши данные не уходят в Google.",
  "mine.title": "Ваши звёзды",
  "mine.empty": "Откройте страницу любого приложения и нажмите Star. Звезда появится у проекта на GitHub, а приложение окажется здесь.",
  "mine.loading": "Загружаем звёзды из GitHub…",
@@ -1353,7 +1367,7 @@ select.input option { background: var(--surface); color: var(--fg); }
  "results.empty": "Ничего не нашлось. Попробуйте название приложения, категорию вроде «{example}» или лицензию, например MIT.",
  "foot.about": "В каталоге только проекты с открытым исходным кодом. Всё бесплатно: без рекламы, баннеров, поп-апов и трекеров. Эта страница не загружает ни одного внешнего скрипта, шрифта или пикселя.",
  "foot.auth": "Вход через GitHub необязателен. После входа звёзды обновляются через ваш аккаунт, а все запросы к GitHub идут через сервер VibeMarket, поэтому токен не попадает в браузер.",
- "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects — товарные знаки Adobe. Их названия используются только для сравнения: VibeMarket и ArtCraft не связаны с Adobe.",
+ "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects — товарные знаки Adobe, а Google, Chrome, YouTube, Gmail и Google Play — товарные знаки Google LLC. Названия используются только для сравнения: VibeMarket и проекты из подборок не связаны с Adobe и Google.",
  "foot.sandbox": "Приложения из раздела «Песочница» сторонние: их публикуют сами авторы. VibeMarket не проверяет их и не несёт ответственности за их работу, безопасность и содержание.",
  "foot.starsSnapshot": "Звёзды взяты из GitHub API {date}.",
  "foot.starsRobot": "Звёзды обновляет робот VibeMarket, последнее обновление: {date}.",
@@ -1531,6 +1545,8 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'superprod', name: 'Super Productivity', cat: 'work', repo: 'super-productivity/super-productivity', stars: 23034, lic: 'MIT', glyph: 'check', c: ['#FFD166', '#E98A15'], desc: 'Задачи, таймер Pomodoro и учёт времени без облака.' },
     { id: 'anki', name: 'Anki', cat: 'work', repo: 'ankitects/anki', stars: 32185, lic: 'AGPL-3.0', glyph: 'cards', c: ['#86A8FF', '#3E5BD6'], desc: 'Карточки с интервальным повторением, чтобы запоминать надолго.' },
     { id: 'pdfcraft', name: 'PdfCraft', cat: 'work', repo: 'storytold/pdfcraft', stars: 17085, lic: 'Apache-2.0', glyph: 'pdf', c: ['#FF6B6B', '#B91C1C'], desc: 'Чтение и правка PDF в духе Acrobat, без аккаунта и облака.' },
+    { id: 'organicmaps', name: 'Organic Maps', cat: 'work', repo: 'organicmaps/organicmaps', stars: 15756, lic: 'Apache-2.0', glyph: 'flag', c: ['#7EE08A', '#1B7F3B'], desc: 'Офлайн-карты и навигация без рекламы и слежки.' },
+    { id: 'thunderbird', name: 'Thunderbird', cat: 'work', repo: 'thunderbird/thunderbird-android', stars: 14135, lic: 'Apache-2.0', glyph: 'send', c: ['#8AB4FF', '#1F4FBF'], desc: 'Почта с заботой о приватности, преемник K-9 Mail на Android.' },
 
     { id: 'obs', name: 'OBS Studio', cat: 'media', repo: 'obsproject/obs-studio', stars: 77878, lic: 'GPL-2.0', glyph: 'record', c: ['#4A4A50', '#141416'], desc: 'Запись экрана и прямые трансляции с микшером сцен.' },
     { id: 'jellyfin', name: 'Jellyfin', cat: 'media', repo: 'jellyfin/jellyfin', stars: 58324, lic: 'GPL-2.0', glyph: 'tv', c: ['#B06CFF', '#2E7BFF'], desc: 'Личный медиасервер для фильмов, сериалов и музыки.' },
@@ -1540,6 +1556,9 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'mpv', name: 'mpv', cat: 'media', repo: 'mpv-player/mpv', stars: 37504, lic: 'GPL-2.0+', glyph: 'playcircle', c: ['#8E7BFF', '#4B2C9E'], desc: 'Минималистичный плеер для клавиатуры и скриптов.' },
     { id: 'filmcraft', name: 'FilmCraft', cat: 'media', repo: 'storytold/filmcraft', stars: 15643, lic: 'Apache-2.0', glyph: 'clapper', c: ['#9F8BFF', '#4C1D95'], desc: 'Видеомонтаж в духе Premiere Pro: цвет, звук и эффекты.' },
     { id: 'effectcraft', name: 'EffectCraft', cat: 'media', repo: 'storytold/effectcraft', stars: 7655, lic: 'Apache-2.0', glyph: 'motion', c: ['#5EEAD4', '#0F766E'], desc: 'Моушн-дизайн и композитинг в духе After Effects, с Lottie.' },
+    { id: 'freetube', name: 'FreeTube', cat: 'media', repo: 'FreeTubeApp/FreeTube', stars: 22126, lic: 'AGPL-3.0', glyph: 'playcircle', c: ['#FF8A80', '#C62828'], desc: 'YouTube без рекламы и слежки: подписки хранятся у вас.' },
+    { id: 'newpipe', name: 'NewPipe', cat: 'media', repo: 'TeamNewPipe/NewPipe', stars: 40271, lic: 'GPL-3.0', glyph: 'play', c: ['#FF9E80', '#B71C1C'], desc: 'Лёгкий клиент YouTube для Android без сервисов Google.' },
+    { id: 'immich', name: 'Immich', cat: 'media', repo: 'immich-app/immich', stars: 117091, lic: 'AGPL-3.0', glyph: 'image', c: ['#7FD3FF', '#3949AB'], desc: 'Фото и видео на своём сервере вместо чужого облака.' },
 
     { id: 'keepassxc', name: 'KeePassXC', cat: 'privacy', repo: 'keepassxreboot/keepassxc', stars: 29351, lic: 'GPL-3.0', glyph: 'key', c: ['#63D471', '#178A3B'], desc: 'Менеджер паролей с локальной зашифрованной базой.' },
     { id: 'bitwarden', name: 'Bitwarden', cat: 'privacy', repo: 'bitwarden/clients', stars: 14029, lic: 'GPL-3.0', glyph: 'shield', c: ['#3D7DFF', '#1A3FB8'], desc: 'Пароли и ключи доступа на всех устройствах. Можно поднять свой сервер.' },
@@ -1547,6 +1566,10 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'syncthing', name: 'Syncthing', cat: 'privacy', repo: 'syncthing/syncthing', stars: 89591, lic: 'MPL-2.0', glyph: 'sync', c: ['#5ED0FA', '#0A7FC0'], desc: 'Синхронизация файлов между устройствами напрямую, без облака.' },
     { id: 'localsend', name: 'LocalSend', cat: 'privacy', repo: 'localsend/localsend', stars: 95124, lic: 'Apache-2.0', glyph: 'send', c: ['#2FE0C0', '#0A8A8D'], desc: 'Передача файлов по локальной сети без интернета и аккаунта.' },
     { id: 'mullvad', name: 'Mullvad VPN', cat: 'privacy', repo: 'mullvad/mullvadvpn-app', stars: 7695, lic: 'GPL-3.0', glyph: 'globe', c: ['#3C6E9E', '#152B47'], desc: 'Клиент VPN, которому не нужны e-mail и имя.' },
+    { id: 'ungoogled', name: 'Ungoogled Chromium', cat: 'privacy', repo: 'ungoogled-software/ungoogled-chromium', stars: 28088, lic: 'BSD-3-Clause', glyph: 'globe', c: ['#7FB2FF', '#2453A6'], desc: 'Chromium без сервисов Google и фоновых запросов к ним.' },
+    { id: 'enteauth', name: 'Ente Auth', cat: 'privacy', repo: 'ente/ente', stars: 29568, lic: 'AGPL-3.0', glyph: 'key', c: ['#9CF0B4', '#11865A'], desc: 'Коды двухфакторной защиты со сквозным шифрованием.' },
+    { id: 'obtainium', name: 'Obtainium', cat: 'privacy', repo: 'ImranR98/Obtainium', stars: 20813, lic: 'GPL-3.0', glyph: 'sync', c: ['#B39DFF', '#5B3FD6'], desc: 'Обновления Android-приложений прямо из их релизов.' },
+    { id: 'heliboard', name: 'HeliBoard', cat: 'privacy', repo: 'HeliBorg/HeliBoard', stars: 6408, lic: 'GPL-3.0', glyph: 'chat', c: ['#FFD27A', '#D97706'], desc: 'Клавиатура для Android, которая работает без интернета.' },
 
     { id: 'ollama', name: 'Ollama', cat: 'ai', repo: 'ollama/ollama', stars: 184161, lic: 'MIT', glyph: 'sparkle', c: ['#FFFFFF', '#C7C7CC'], ink: '#1C1C1E', desc: 'Запуск Llama, Qwen, Gemma и других моделей одной командой.' },
     { id: 'sdwebui', name: 'Stable Diffusion web UI', cat: 'ai', repo: 'AUTOMATIC1111/stable-diffusion-webui', stars: 165090, lic: 'AGPL-3.0', glyph: 'imgspark', c: ['#FF6EC7', '#7B2FF7'], desc: 'Генерация и дорисовка изображений с сотнями расширений.' },
@@ -1623,7 +1646,16 @@ select.input option { background: var(--surface); color: var(--fg); }
     designcraft: { os: 'mwlb', about: 'DesignCraft — программа для вёрстки от ArtCraft: развороты, мастер-страницы, связанные текстовые блоки, стили и таблицы. Переносы и выключка строк по алгоритму Кнута — Пласса, импорт и экспорт IDML, открытие INDD, экспорт в PDF/X-4, PDF/A и EPUB. Без подписки, сервера лицензий и телеметрии.', shots: [['doc', 'Развороты и мастер-страницы'], ['table', 'Стили абзацев, символов и таблиц'], ['paint', 'Экспорт в PDF/X, PDF/A и EPUB']] },
     pdfcraft: { os: 'mwlb', about: 'PdfCraft — программа для чтения и правки PDF от ArtCraft. Аккуратно отображает сложную типографику, вертикальный японский текст и цветные эмодзи, восстанавливает повреждённые файлы и сохраняет изменения, не трогая исходные байты. Без аккаунта, телеметрии и облака.', shots: [['doc', 'Аккуратное отображение любых PDF'], ['doc+check', 'Комментарии и правка документов'], ['doc', 'Без аккаунта и облака, работает офлайн']] },
     filmcraft: { os: 'mwlb', about: 'FilmCraft — профессиональный нелинейный видеоредактор от ArtCraft, написанный на Rust вместе со своими кодеками. Привычная монтажная область с трёхточечным монтажом, цветокоррекция со скопами, больше 90 видеоэффектов, микшер звука и замер громкости по EBU R128.', shots: [['player', 'Монтаж на привычной монтажной области'], ['paint', 'Цветокоррекция и скопы'], ['wave', 'Микшер звука и громкость по EBU R128']] },
-    effectcraft: { os: 'mwlb', about: 'EffectCraft — программа для моушн-дизайна и композитинга от ArtCraft. Композиции из слоёв, ключевые кадры с редактором графиков, 306 эффектов, 3D-камеры и свет, выражения и очередь рендера. Импорт и экспорт Lottie встроены, а проекты хранятся в читаемом JSON.', shots: [['player', 'Композиции, слои и ключевые кадры'], ['canvas+panels', '306 эффектов и 3D-камеры'], ['editor', 'Проекты в JSON и импорт Lottie']] }
+    effectcraft: { os: 'mwlb', about: 'EffectCraft — программа для моушн-дизайна и композитинга от ArtCraft. Композиции из слоёв, ключевые кадры с редактором графиков, 306 эффектов, 3D-камеры и свет, выражения и очередь рендера. Импорт и экспорт Lottie встроены, а проекты хранятся в читаемом JSON.', shots: [['player', 'Композиции, слои и ключевые кадры'], ['canvas+panels', '306 эффектов и 3D-камеры'], ['editor', 'Проекты в JSON и импорт Lottie']] },
+    ungoogled: { os: 'mwl', about: 'Ungoogled Chromium — обычный Chromium, из которого убрана зависимость от веб-сервисов Google. Браузер не делает фоновых запросов к Google, а готовые бинарные файлы убраны из исходников. Безопасный просмотр Google тоже отключён. Интерфейс остаётся привычным, а дополнительные настройки приватности включаются флагами. Сборки для macOS, Windows и Linux выпускает сообщество.', shots: [['doc', 'Привычный Chromium без аккаунта Google'], ['status', 'Никаких фоновых запросов к Google'], ['models', 'Настройки приватности включаются флагами']] },
+    enteauth: { os: 'mwlaib', about: 'Ente Auth хранит коды двухфакторной аутентификации. Резервные копии в облаке защищены сквозным шифрованием, приложение работает офлайн, а без облака и регистрации можно обойтись вовсе. Есть версии для Android, iOS, macOS, Windows и Linux, а посмотреть коды можно и в браузере.', shots: [['vault', 'Все коды 2FA в одном месте'], ['devices', 'Сквозное шифрование и синхронизация'], ['status', 'Работает офлайн и без аккаунта']] },
+    obtainium: { os: 'a', about: 'Obtainium устанавливает и обновляет Android-приложения прямо со страниц их релизов и сообщает о новых версиях. Источники — GitHub, GitLab, Codeberg, F-Droid и другие. Так открытые приложения можно получать без Google Play и без посредников.', shots: [['models', 'Обновления прямо из релизов'], ['status', 'Уведомления о новых версиях'], ['devices', 'GitHub, GitLab, Codeberg и F-Droid']] },
+    heliboard: { os: 'a', about: 'HeliBoard — настраиваемая клавиатура для Android на основе AOSP и OpenBoard. У неё нет доступа к интернету, поэтому набранный текст никуда не уходит. Словари для подсказок, темы оформления, свои раскладки, поиск эмодзи и набор на нескольких языках.', shots: [['chat', 'Набор на нескольких языках'], ['status', 'Без доступа к интернету'], ['models', 'Словари, темы и раскладки']] },
+    freetube: { os: 'mwl', about: 'FreeTube — приложение для YouTube на компьютере, сделанное с заботой о приватности. Видео идут без рекламы, а Google не следит за вами через cookie и JavaScript. Подписки, плейлисты и история хранятся только на вашем компьютере, подписаться на канал можно без аккаунта. Есть SponsorBlock, мини-плеер и экспорт подписок. Проект пока в бете.', shots: [['player', 'Видео без рекламы'], ['library', 'Подписки без аккаунта Google'], ['player', 'Мини-плеер и SponsorBlock']] },
+    newpipe: { os: 'a', about: 'NewPipe — лёгкое приложение для Android, через которое можно смотреть YouTube, PeerTube, SoundCloud и Bandcamp. Оно не использует сервисы Google Play и закрытые библиотеки, поэтому работает и на телефонах без них. Видео до 4K, фоновое прослушивание, всплывающий плеер и локальные плейлисты. Приложение в бете.', shots: [['player', 'Видео до 4K'], ['wave', 'Фоновое прослушивание'], ['library', 'YouTube, PeerTube, SoundCloud и Bandcamp']] },
+    immich: { os: 'aib', about: 'Immich хранит фото и видео на вашем собственном сервере. Приложение для телефона само делает резервную копию снимков, а смотреть их можно с телефона и в браузере. Есть общие альбомы, распознавание лиц, поиск по объектам и карта снимков. Сервер нужно поднять самому, зато фото не уходят в чужое облако. Разработчики напоминают: держите резервные копии по правилу 3-2-1.', shots: [['library', 'Лента фото и видео'], ['devices', 'Резервная копия с телефона'], ['library', 'Общие альбомы и поиск по лицам']] },
+    organicmaps: { os: 'ai', about: 'Organic Maps — офлайн-карты и навигатор для пеших, велосипедных и автомобильных маршрутов на данных OpenStreetMap. В приложении нет рекламы, слежки и сбора данных, а регистрация не нужна. Есть голосовые подсказки, линии рельефа, схемы метро, быстрый офлайн-поиск, импорт и экспорт треков в KML, GPX и GeoJSON. Приложение для Android и iOS.', shots: [['map', 'Подробные офлайн-карты'], ['map', 'Маршруты пешком, на велосипеде и машине'], ['status', 'Без рекламы, слежки и регистрации']] },
+    thunderbird: { os: 'mwla', about: 'Thunderbird для Android — почтовое приложение с заботой о приватности, основанное на K-9 Mail. Несколько почтовых ящиков в одном приложении и общая папка «Входящие». Здесь лежит версия для Android, а Thunderbird для компьютера скачивается с сайта thunderbird.net.', shots: [['chat', 'Несколько почтовых ящиков в одном приложении'], ['doc', 'Общая папка «Входящие»'], ['status', 'Основан на K-9 Mail']] },
   };
 
   const GLYPHS = {
@@ -1863,6 +1895,14 @@ select.input option { background: var(--surface); color: var(--fg); }
     llamacpp: { repo: 'https://github.com/ggml-org/llama.cpp#quick-start' },
     whispercpp: { repo: 'https://github.com/ggml-org/whisper.cpp#quick-start' },
     mindustry: { repo: 'https://github.com/Anuken/Mindustry/releases' },
+    ungoogled: { site: 'https://ungoogled-software.github.io/ungoogled-chromium-binaries/' },
+    enteauth: { site: 'https://ente.com/auth' },
+    obtainium: { site: 'https://obtainium.imranr.dev/' },
+    freetube: { site: 'https://freetubeapp.io/' },
+    newpipe: { site: 'https://newpipe.net/' },
+    immich: { site: 'https://immich.app/' },
+    organicmaps: { site: 'https://organicmaps.app/' },
+    thunderbird: { site: 'https://www.thunderbird.net/' },
   };
 
   // Система и процессор посетителя. Узнаём в браузере и никуда не отправляем.
@@ -2245,8 +2285,15 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   // Подборка: открытые аналоги программ Adobe от ArtCraft (github.com/storytold), в порядке знакомых названий
   const ADOBE_PICKS = ['photocraft', 'lightcraft', 'vectorcraft', 'designcraft', 'pdfcraft', 'filmcraft', 'effectcraft'];
+  // Подборка: открытые замены сервисам Google в порядке самих сервисов — Chrome, YouTube, Фото, Карты, Gmail,
+  // Документы, Диск, Keep, Authenticator, менеджер паролей, Google Play и Gboard
+  const GOOGLE_PICKS = ['ungoogled', 'freetube', 'newpipe', 'immich', 'organicmaps', 'thunderbird', 'libreoffice', 'syncthing', 'joplin', 'enteauth', 'bitwarden', 'obtainium', 'heliboard'];
   const renderPicks = () => {
-    document.getElementById('adobe-track').innerHTML = ADOBE_PICKS.map(id => byId[id]).filter(app => app && visible(app)).map(cardHTML).join('');
+    const shelf = (id, list) => {
+      document.getElementById(id).innerHTML = list.map(app => byId[app]).filter(app => app && visible(app)).map(cardHTML).join('');
+    };
+    shelf('adobe-track', ADOBE_PICKS);
+    shelf('google-track', GOOGLE_PICKS);
   };
 
   const renderShelfTracks = () => CATS.forEach(c => {
@@ -2528,7 +2575,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const root = document.documentElement;
   new ResizeObserver(() => root.style.setProperty('--header-h', bar.offsetHeight + 'px')).observe(bar);
 
-  const sectionIds = ['today', 'top', 'adobe', 'mine', ...CATS.map(c => c.id), 'sandbox'];
+  const sectionIds = ['today', 'top', 'adobe', 'google', 'mine', ...CATS.map(c => c.id), 'sandbox'];
   let lockUntil = 0;
   const setActive = id => {
     chips.querySelectorAll('.chip').forEach(ch => {
@@ -2763,7 +2810,7 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   // Навигация: история браузера, если она доступна, иначе переходы в памяти
   let openId = null, returnTo = null, trail = [];
-  const sectionLabel = id => ({ top: t('nav.top'), adobe: t('adobe.title'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
+  const sectionLabel = id => ({ top: t('nav.top'), adobe: t('adobe.title'), google: t('google.title'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
   const currentBack = () => (trail.length ? byId[trail[trail.length - 1]]?.name : sectionLabel(returnTo?.section)) || t('nav.today');
   const showView = v => { browse.hidden = v !== 'browse'; results.hidden = v !== 'results'; detail.hidden = v !== 'detail'; };
   const pushEntry = id => {

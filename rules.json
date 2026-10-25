@@ -34,7 +34,15 @@
       "ggml-org/whisper.cpp"
     ],
     "tags": {
-      "bitwarden/clients": "^desktop-v"
+      "bitwarden/clients": "^desktop-v",
+      "ente/ente": "^auth-v",
+      "thunderbird/thunderbird-android": "^THUNDERBIRD_\\d+_\\d+$"
+    },
+    "prerelease": [
+      "FreeTubeApp/FreeTube"
+    ],
+    "releasesFor": {
+      "ente/ente": 30
     }
   },
   "scout": {

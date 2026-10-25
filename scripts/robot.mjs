@@ -553,10 +553,19 @@ async function main() {
   const skipDl = new Set((dlRules.skip || []).map(slug => slug.toLowerCase()));
   const downloads = Object.fromEntries(Object.entries(catalog.downloads || {}).filter(([slug]) => repos.includes(slug) && !skipDl.has(slug.toLowerCase())));
   const dlRepos = repos.filter(slug => !skipDl.has(slug.toLowerCase()));
-  for (const [slug, releases] of await fetchReleases(dlRepos, { count: dlRules.releases || 10, tags: dlRules.tags || {} })) {
-    const picked = pickDownloads(releases, { tag: dlRules.tags?.[slug] });
-    if (Object.keys(picked).length) downloads[slug] = picked;
-    else delete downloads[slug];
+  // Монорепозиториям вроде Ente нужно смотреть глубже: нужный продукт выходит реже остальных
+  const prerelease = new Set(dlRules.prerelease || []);
+  const byCount = new Map();
+  for (const slug of dlRepos) {
+    const count = dlRules.releasesFor?.[slug] || dlRules.releases || 10;
+    byCount.set(count, [...(byCount.get(count) || []), slug]);
+  }
+  for (const [count, group] of byCount) {
+    for (const [slug, releases] of await fetchReleases(group, { count, tags: dlRules.tags || {}, prerelease })) {
+      const picked = pickDownloads(releases, { tag: dlRules.tags?.[slug], prerelease: prerelease.has(slug) });
+      if (Object.keys(picked).length) downloads[slug] = picked;
+      else delete downloads[slug];
+    }
   }
 
   // 9. Перенос на главную: проверено временем и звёздами, без жалоб
