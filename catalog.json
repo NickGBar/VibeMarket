@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-25T14:25:46.683Z",
+  "updated": "2026-10-25T18:26:16.213Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -13,70 +13,71 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6712,
-    "ankitects/anki": 32284,
-    "Anuken/Mindustry": 29462,
-    "AppFlowy-IO/AppFlowy": 77752,
-    "audacity/audacity": 18829,
+    "00-Evan/shattered-pixel-dungeon": 6714,
+    "ankitects/anki": 32285,
+    "Anuken/Mindustry": 29465,
+    "AppFlowy-IO/AppFlowy": 77757,
+    "audacity/audacity": 18830,
     "AUTOMATIC1111/stable-diffusion-webui": 165142,
-    "bitwarden/clients": 14055,
-    "blender/blender": 21238,
-    "Comfy-Org/ComfyUI": 142819,
-    "ente/ente": 29583,
-    "excalidraw/excalidraw": 134524,
-    "FreeTubeApp/FreeTube": 22140,
-    "ggml-org/llama.cpp": 132310,
-    "ggml-org/whisper.cpp": 54650,
+    "bitwarden/clients": 14057,
+    "blender/blender": 21245,
+    "Comfy-Org/ComfyUI": 142879,
+    "ente/ente": 29589,
+    "excalidraw/excalidraw": 134536,
+    "FreeTubeApp/FreeTube": 22141,
+    "ggml-org/llama.cpp": 132333,
+    "ggml-org/whisper.cpp": 54660,
     "GNOME/gimp": 6546,
-    "godotengine/godot": 119043,
-    "HandBrake/HandBrake": 24784,
-    "HeliBorg/HeliBoard": 6417,
-    "immich-app/immich": 117182,
-    "ImranR98/Obtainium": 20855,
+    "godotengine/godot": 119053,
+    "HandBrake/HandBrake": 24786,
+    "HeliBorg/HeliBoard": 6418,
+    "immich-app/immich": 117207,
+    "ImranR98/Obtainium": 20869,
     "inkscape/inkscape": 4058,
-    "janhq/jan": 45071,
-    "jellyfin/jellyfin": 58569,
-    "jesseduffield/lazygit": 83410,
-    "jgraph/drawio-desktop": 63644,
+    "janhq/jan": 45079,
+    "jellyfin/jellyfin": 58581,
+    "jesseduffield/lazygit": 83413,
+    "jgraph/drawio-desktop": 63650,
     "jitsi/jitsi-meet-electron": 1635,
     "KDE/krita": 10632,
-    "keepassxreboot/keepassxc": 29471,
-    "laurent22/joplin": 56868,
-    "LibreOffice/core": 4558,
-    "localsend/localsend": 95536,
-    "logseq/logseq": 45369,
+    "keepassxreboot/keepassxc": 29479,
+    "laurent22/joplin": 56872,
+    "LibreOffice/core": 4557,
+    "localsend/localsend": 95563,
+    "logseq/logseq": 45373,
     "luanti-org/luanti": 13772,
-    "mltframework/shotcut": 15495,
+    "mattermost/desktop": 2274,
+    "mltframework/shotcut": 15498,
     "mpv-player/mpv": 37558,
-    "mullvad/mullvadvpn-app": 7700,
-    "neovim/neovim": 103155,
+    "mullvad/mullvadvpn-app": 7699,
+    "neovim/neovim": 103154,
     "nomic-ai/gpt4all": 77358,
-    "notepad-plus-plus/notepad-plus-plus": 29680,
-    "obsproject/obs-studio": 78193,
-    "ollama/ollama": 184722,
-    "OpenTTD/OpenTTD": 8423,
-    "organicmaps/organicmaps": 15766,
-    "penpot/penpot": 61650,
+    "notepad-plus-plus/notepad-plus-plus": 29681,
+    "obsproject/obs-studio": 78206,
+    "ollama/ollama": 184746,
+    "OpenTTD/OpenTTD": 8425,
+    "organicmaps/organicmaps": 15768,
+    "penpot/penpot": 61659,
     "PintaProject/Pinta": 4111,
     "signalapp/Signal-Desktop": 16619,
-    "storytold/designcraft": 4770,
-    "storytold/effectcraft": 7873,
-    "storytold/filmcraft": 16210,
-    "storytold/lightcraft": 14612,
-    "storytold/pdfcraft": 17750,
-    "storytold/photocraft": 72652,
-    "storytold/vectorcraft": 10648,
-    "super-productivity/super-productivity": 23133,
+    "storytold/designcraft": 4772,
+    "storytold/effectcraft": 7884,
+    "storytold/filmcraft": 16249,
+    "storytold/lightcraft": 14636,
+    "storytold/pdfcraft": 17792,
+    "storytold/photocraft": 72745,
+    "storytold/vectorcraft": 10659,
+    "super-productivity/super-productivity": 23138,
     "supertuxkart/stk-code": 5450,
-    "syncthing/syncthing": 89723,
-    "tauri-apps/tauri": 112178,
-    "TeamNewPipe/NewPipe": 40286,
+    "syncthing/syncthing": 89732,
+    "tauri-apps/tauri": 112183,
+    "TeamNewPipe/NewPipe": 40290,
     "thunderbird/thunderbird-android": 14139,
-    "ungoogled-software/ungoogled-chromium": 28093,
+    "ungoogled-software/ungoogled-chromium": 28096,
     "videolan/vlc": 20222,
-    "VSCodium/vscodium": 33796,
+    "VSCodium/vscodium": 33799,
     "wesnoth/wesnoth": 6954,
-    "zed-industries/zed": 92161
+    "zed-industries/zed": 92169
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -1906,6 +1907,157 @@
         ]
       }
     },
+    "mattermost/desktop": {
+      "mac": {
+        "tag": "v6.3.1",
+        "date": "2026-10-15T06:39:50Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.1",
+        "files": [
+          {
+            "arch": "universal",
+            "kind": "dmg",
+            "name": "mattermost-desktop-6.3.1-mac-universal.dmg",
+            "size": 226685876,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-universal.dmg",
+            "sha256": "5a0c2f202f56ef7d3a1d5a013aafce2f8728af42b08f62c5bd8ab080a94b1ab4"
+          },
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "mattermost-desktop-6.3.1-mac-x64.dmg",
+            "size": 131397642,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-x64.dmg",
+            "sha256": "f917447231bbee72508ab43192c77548ddd5ba2e20f850089211fc2585e07587"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "mattermost-desktop-6.3.1-mac-arm64.dmg",
+            "size": 127776601,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-arm64.dmg",
+            "sha256": "ae03f4bc7875a42705b1e7b797cb605ea4204d49c65f12f0b3b8821177852bf1"
+          },
+          {
+            "arch": "universal",
+            "kind": "zip",
+            "name": "mattermost-desktop-6.3.1-mac-universal.zip",
+            "size": 218660890,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-universal.zip",
+            "sha256": "2287cbfb4778d666caa3b3e591b1f80fa17f8112b0973eedc53db335f7922fd3"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "mattermost-desktop-6.3.1-mac-x64.zip",
+            "size": 126405966,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-x64.zip",
+            "sha256": "6cb2c8c79894755ac2331572c520bcb37b574ad9ad8c7e0bcf9df80e57fd70ef"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "mattermost-desktop-6.3.1-mac-arm64.zip",
+            "size": 122727717,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-arm64.zip",
+            "sha256": "fcce75e6d28fc569689065d9739b7905119a4009b35e2586b01eea88ad7382f2"
+          }
+        ]
+      },
+      "win": {
+        "tag": "v6.3.1",
+        "date": "2026-10-15T06:39:50Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.1",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "msi",
+            "name": "mattermost-desktop-6.3.1-win-x64.msi",
+            "size": 124289024,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-x64.msi",
+            "sha256": "5f47b75874680f944539f4c33be60de83a4572180fe0a40848669932db88d2b8"
+          },
+          {
+            "arch": "arm64",
+            "kind": "msi",
+            "name": "mattermost-desktop-6.3.1-win-arm64.msi",
+            "size": 118026240,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-arm64.msi",
+            "sha256": "d771ad11cbf9d1814465f2459a49962651e3ea5e88ed1b0619de08cb94119084"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "mattermost-desktop-6.3.1-win-x64.zip",
+            "size": 151414592,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-x64.zip",
+            "sha256": "6fff38bd3981c7a9c65bec6e266b8d4209aef7abe35c691c901133a577557294"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "mattermost-desktop-6.3.1-win-arm64.zip",
+            "size": 148212871,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-arm64.zip",
+            "sha256": "d4a9fabcd46d5d59600e9949a8f96dc86f75f49c2350229bb88153d93a25bf2c"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "v6.3.1",
+        "date": "2026-10-15T06:39:50Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.1",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "mattermost-desktop-6.3.1-linux-x86_64.AppImage",
+            "size": 135170322,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-x86_64.AppImage",
+            "sha256": "3699630073712b4fb65522d05d00e1493c2727af2fae08607846c24942a826e1"
+          },
+          {
+            "arch": "arm64",
+            "kind": "appimage",
+            "name": "mattermost-desktop-6.3.1-linux-arm64.AppImage",
+            "size": 134269081,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-arm64.AppImage",
+            "sha256": "acc1c60395d44e4f38c46672f25cfe8982cb2edbd565d71ee3f64e9143ad0d17"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "mattermost-desktop_6.3.1-1_amd64.deb",
+            "size": 106262180,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop_6.3.1-1_amd64.deb",
+            "sha256": "62ad18cf1b85023ce8992d83b207a74f17ac0d58281cf479db5b0aba4e088a3b"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "mattermost-desktop_6.3.1-1_arm64.deb",
+            "size": 99813368,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop_6.3.1-1_arm64.deb",
+            "sha256": "11716e990a627afc210df217e8ece7fd6a83ce04493c0fd780e0e8956f4160d1"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "mattermost-desktop-6.3.1-linux-x86_64.rpm",
+            "size": 92490557,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-x86_64.rpm",
+            "sha256": "f41f05f2cb59d8ce7d680e06992ecd63126d5395667bb6015ae266bdc53b6da1"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "mattermost-desktop-6.3.1-linux-aarch64.rpm",
+            "size": 86444337,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-aarch64.rpm",
+            "sha256": "9b6bdbf9630fd42f9c22f685db2df4f1de0a26734705e8e3b55667b0dfa59f76"
+          }
+        ]
+      }
+    },
     "mltframework/shotcut": {
       "mac": {
         "tag": "v26.9.27",
@@ -3460,134 +3612,126 @@
     },
     "super-productivity/super-productivity": {
       "mac": {
-        "tag": "v19.3.0",
-        "date": "2026-10-23T20:09:46Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.0",
+        "tag": "v19.3.1",
+        "date": "2026-10-25T14:42:30Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.1",
         "files": [
-          {
-            "arch": "universal",
-            "kind": "dmg",
-            "name": "superProductivity-universal.dmg",
-            "size": 249383778,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-universal.dmg",
-            "sha256": "d3a6d7edb0da130dcdfe8e66b9eb2317d0bd2a0039a9bc081e522604c72113bb"
-          },
           {
             "arch": "x64",
             "kind": "dmg",
             "name": "superProductivity-x64.dmg",
-            "size": 153439345,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-x64.dmg",
-            "sha256": "11c481321432c5f4456716c142018f6272f21b8ef593972d489645b2fd6c5333"
+            "size": 153432136,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-x64.dmg",
+            "sha256": "251c11e2bc1879da7b830a411593969b5a3250b9f976f9d90bd746d39dddb41a"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
             "name": "superProductivity-arm64.dmg",
-            "size": 147820301,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-arm64.dmg",
-            "sha256": "d01cec455fe078f39dccfc66d650afa3eceba3fab2f3598b445e5e94f7cceb90"
+            "size": 147832257,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-arm64.dmg",
+            "sha256": "ccbddcf82dabd677a0daa8d2fee73d7a004d01057e3eb585229de93842924707"
           }
         ]
       },
       "win": {
-        "tag": "v19.3.0",
-        "date": "2026-10-23T20:09:46Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.0",
+        "tag": "v19.3.1",
+        "date": "2026-10-25T14:42:30Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.1",
         "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "Super-Productivity-Setup-x64.exe",
+            "size": 260957192,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/Super-Productivity-Setup-x64.exe",
+            "sha256": "9f44405f4e5cbddcedd5554114d47831909e6f565b50c08a8585f4ad7d202500"
+          },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "Super-Productivity-Setup-arm64.exe",
-            "size": 260898968,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/Super-Productivity-Setup-arm64.exe",
-            "sha256": "af5112574a6359594acd5a8cc2bf281a6601b4f307779d7fdc20f97128f12b25"
+            "size": 260957192,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/Super-Productivity-Setup-arm64.exe",
+            "sha256": "9f44405f4e5cbddcedd5554114d47831909e6f565b50c08a8585f4ad7d202500"
           },
           {
             "arch": "any",
             "kind": "exe",
             "name": "Super-Productivity-Setup.exe",
-            "size": 260898968,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/Super-Productivity-Setup.exe",
-            "sha256": "af5112574a6359594acd5a8cc2bf281a6601b4f307779d7fdc20f97128f12b25"
-          },
-          {
-            "arch": "x64",
-            "kind": "exe",
-            "name": "Super-Productivity-Setup-x64.exe",
-            "size": 260898968,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/Super-Productivity-Setup-x64.exe",
-            "sha256": "af5112574a6359594acd5a8cc2bf281a6601b4f307779d7fdc20f97128f12b25"
-          },
-          {
-            "arch": "x64",
-            "kind": "exe",
-            "name": "superProductivity-x64.exe",
-            "size": 260660328,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-x64.exe",
-            "sha256": "2cf845b04e6377a7b1a9003e35f9fc53f6d449e6b7ffebc0ed00b3c544ac9604"
-          },
-          {
-            "arch": "any",
-            "kind": "exe",
-            "name": "superProductivity.exe",
-            "size": 260660328,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity.exe",
-            "sha256": "2cf845b04e6377a7b1a9003e35f9fc53f6d449e6b7ffebc0ed00b3c544ac9604"
+            "size": 260957192,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/Super-Productivity-Setup.exe",
+            "sha256": "9f44405f4e5cbddcedd5554114d47831909e6f565b50c08a8585f4ad7d202500"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "superProductivity-arm64.exe",
-            "size": 260660328,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-arm64.exe",
-            "sha256": "2cf845b04e6377a7b1a9003e35f9fc53f6d449e6b7ffebc0ed00b3c544ac9604"
+            "size": 260718616,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-arm64.exe",
+            "sha256": "7e4431295cc6e0bdac8ba081e486640088f78456fcb1165e01c89743ec734e4c"
+          },
+          {
+            "arch": "any",
+            "kind": "exe",
+            "name": "superProductivity.exe",
+            "size": 260718616,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity.exe",
+            "sha256": "7e4431295cc6e0bdac8ba081e486640088f78456fcb1165e01c89743ec734e4c"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "superProductivity-x64.exe",
+            "size": 260718616,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-x64.exe",
+            "sha256": "7e4431295cc6e0bdac8ba081e486640088f78456fcb1165e01c89743ec734e4c"
           }
         ]
       },
       "linux": {
-        "tag": "v19.3.0",
-        "date": "2026-10-23T20:09:46Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.0",
+        "tag": "v19.3.1",
+        "date": "2026-10-25T14:42:30Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.1",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
             "name": "superProductivity-x86_64.AppImage",
-            "size": 142104260,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-x86_64.AppImage",
-            "sha256": "3e058c1a0ebdaf946c3bdf304fddb34e3870528d5cac29b62df064508b28176c"
+            "size": 142108325,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-x86_64.AppImage",
+            "sha256": "d8e04120818898aa519fb49f63c75940e81da126b8a918199ac690ac8edf950f"
           },
           {
             "arch": "x64",
             "kind": "deb",
             "name": "superProductivity-amd64.deb",
-            "size": 113479436,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-amd64.deb",
-            "sha256": "9f6d738e0c00f662dccb13908485dcb4d4695c40862a54fe74dc78811d270435"
+            "size": 114052172,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-amd64.deb",
+            "sha256": "3cc84bb864f7b13d4963d30750aa1067a55a825b2565c7bec329e51f9715598f"
           },
           {
             "arch": "x64",
             "kind": "rpm",
             "name": "superProductivity-x86_64.rpm",
-            "size": 100621441,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/superProductivity-x86_64.rpm",
-            "sha256": "00cc98ad18e83a66c1cd690685e64b0f42ec39bb3edd3fb90346fafad055d50d"
+            "size": 100637968,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/superProductivity-x86_64.rpm",
+            "sha256": "c02a9dd3e1095cbeb9d18b90b429682ee1f7deaf2a869e56b0653cd35f486547"
           }
         ]
       },
       "android": {
-        "tag": "v19.3.0",
-        "date": "2026-10-23T20:09:46Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.0",
+        "tag": "v19.3.1",
+        "date": "2026-10-25T14:42:30Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v19.3.1",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
             "name": "app-play-release.apk",
-            "size": 23460247,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.0/app-play-release.apk",
-            "sha256": "5917024db8b28997055a2790884448e0e4401e4023008c0584555a967d0da2c2"
+            "size": 23469397,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v19.3.1/app-play-release.apk",
+            "sha256": "c11f6d433a94201b6e3211b99a04fab359e20dc46806042d8e90ca170993f69a"
           }
         ]
       }
