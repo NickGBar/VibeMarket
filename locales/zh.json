@@ -76,6 +76,8 @@
     "google.sub": "Google 服务的开源替代品：浏览器、视频、照片、地图、邮件、文档和两步验证码。没有广告，你的数据也不会流向 Google。",
     "microsoft.title": "替代 Microsoft",
     "microsoft.sub": "Office、Outlook、Teams、OneNote、OneDrive、Visio、画图、记事本和 Copilot 的开源替代品。免费，无需订阅，没有广告。",
+    "subs.title": "替代订阅服务",
+    "subs.sub": "Notion、Figma、Miro、Zoom、Slack、1Password、Dropbox、Evernote、Todoist、Microsoft 365、Creative Cloud 和 ChatGPT Plus 的免费替代品。无需按月付费。",
     "mine.title": "我的星标",
     "mine.empty": "打开任意应用页面并点击 Star。项目会在 GitHub 上获得一颗星，应用也会出现在这里。",
     "mine.loading": "正在从 GitHub 加载你的星标…",
@@ -177,7 +179,7 @@
     "results.empty": "没有找到结果。试试应用名称、类似“{example}”的分类，或许可证，例如 MIT。",
     "foot.about": "目录只收录开源项目。一切免费：没有广告、横幅、弹窗和追踪器。此页面不加载任何外部脚本、字体或像素。",
     "foot.auth": "使用 GitHub 登录是可选的。登录后，星标会通过你的账号更新，所有 GitHub 请求都经过 VibeMarket 服务器，因此你的令牌不会进入浏览器。",
-    "foot.trademarks": "Adobe、Photoshop、Lightroom、Illustrator、InDesign、Acrobat、Premiere Pro 和 After Effects 是 Adobe 的商标；Google、Chrome、YouTube、Gmail 和 Google Play 是 Google LLC 的商标；Microsoft、Office、Outlook、Teams、OneNote、OneDrive、Visio 和 Copilot 是 Microsoft 的商标。这些名称仅用于比较：VibeMarket 和这些合集中的项目与 Adobe、Google 和 Microsoft 没有关联。",
+    "foot.trademarks": "Adobe、Google、Microsoft 以及合集中的其他产品和服务名称均为其各自所有者的商标。这些名称仅用于比较：VibeMarket 和合集中的项目与这些公司没有关联。",
     "foot.sandbox": "“沙盒”中的应用来自第三方，由作者自行发布。VibeMarket 不审查这些应用，也不对其运行、安全和内容负责。",
     "foot.starsSnapshot": "星标数据来自 GitHub API，截至 {date}。",
     "foot.starsRobot": "星标由 VibeMarket 机器人更新，最近一次更新：{date}。",
@@ -913,6 +915,15 @@
         "在你的电脑上与模型对话",
         "Llama、Gemma、Qwen 等模型",
         "兼容 OpenAI 的本地 API"
+      ]
+    },
+    "mattermost": {
+      "desc": "替代 Slack 的团队聊天，运行在你自己的 Mattermost 服务器上。",
+      "about": "Mattermost 是一个开源协作平台，这是它的桌面应用。频道、看板和 Playbooks 各有独立标签页，支持桌面通知、未读标记，一个窗口可以连接多个服务器。首次启动时需要填写 Mattermost 服务器地址：你自己的或公司的。",
+      "shots": [
+        "频道和消息",
+        "看板和 Playbooks",
+        "通知和未读标记"
       ]
     }
   }

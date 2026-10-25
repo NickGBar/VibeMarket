@@ -909,6 +909,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     <button class="chip" type="button" data-target="adobe" data-i18n="adobe.title">Вместо Adobe</button>
     <button class="chip" type="button" data-target="google" data-i18n="google.title">Вместо Google</button>
     <button class="chip" type="button" data-target="microsoft" data-i18n="microsoft.title">Вместо Microsoft</button>
+    <button class="chip" type="button" data-target="subs" data-i18n="subs.title">Вместо подписок</button>
   </nav>
 </header>
 
@@ -1039,6 +1040,17 @@ select.input option { background: var(--surface); color: var(--fg); }
         <div class="shelf-nav" data-nav="microsoft-track"></div>
       </div>
       <div class="track" id="microsoft-track" role="list" tabindex="0" aria-label="Вместо Microsoft" data-i18n-attr="aria-label:microsoft.title"></div>
+    </section>
+
+    <section class="shelf" id="subs" aria-labelledby="subs-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="subs-title" data-i18n="subs.title">Вместо подписок</h2>
+          <p class="shelf-sub" data-i18n="subs.sub">Бесплатные замены Notion, Figma, Miro, Zoom, Slack, 1Password, Dropbox, Evernote, Todoist, Microsoft 365, Creative Cloud и ChatGPT Plus. Платить каждый месяц не нужно.</p>
+        </div>
+        <div class="shelf-nav" data-nav="subs-track"></div>
+      </div>
+      <div class="track" id="subs-track" role="list" tabindex="0" aria-label="Вместо подписок" data-i18n-attr="aria-label:subs.title"></div>
     </section>
 
     <section class="shelf" id="mine" aria-labelledby="mine-title" hidden>
@@ -1278,6 +1290,8 @@ select.input option { background: var(--surface); color: var(--fg); }
  "google.sub": "Открытые замены сервисам Google: браузер, видео, фото, карты, почта, документы и коды 2FA. Без рекламы, а ваши данные не уходят в Google.",
  "microsoft.title": "Вместо Microsoft",
  "microsoft.sub": "Открытые замены Office, Outlook, Teams, OneNote, OneDrive, Visio, Paint, Блокноту и Copilot. Бесплатно, без подписки и рекламы.",
+ "subs.title": "Вместо подписок",
+ "subs.sub": "Бесплатные замены Notion, Figma, Miro, Zoom, Slack, 1Password, Dropbox, Evernote, Todoist, Microsoft 365, Creative Cloud и ChatGPT Plus. Платить каждый месяц не нужно.",
  "mine.title": "Ваши звёзды",
  "mine.empty": "Откройте страницу любого приложения и нажмите Star. Звезда появится у проекта на GitHub, а приложение окажется здесь.",
  "mine.loading": "Загружаем звёзды из GitHub…",
@@ -1397,7 +1411,7 @@ select.input option { background: var(--surface); color: var(--fg); }
  "results.empty": "Ничего не нашлось. Попробуйте название приложения, категорию вроде «{example}» или лицензию, например MIT.",
  "foot.about": "В каталоге только проекты с открытым исходным кодом. Всё бесплатно: без рекламы, баннеров, поп-апов и трекеров. Эта страница не загружает ни одного внешнего скрипта, шрифта или пикселя.",
  "foot.auth": "Вход через GitHub необязателен. После входа звёзды обновляются через ваш аккаунт, а все запросы к GitHub идут через сервер VibeMarket, поэтому токен не попадает в браузер.",
- "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro и After Effects — товарные знаки Adobe; Google, Chrome, YouTube, Gmail и Google Play — товарные знаки Google LLC; Microsoft, Office, Outlook, Teams, OneNote, OneDrive, Visio и Copilot — товарные знаки Microsoft. Названия используются только для сравнения: VibeMarket и проекты из подборок не связаны с Adobe, Google и Microsoft.",
+ "foot.trademarks": "Adobe, Google, Microsoft и другие названия продуктов и сервисов в подборках — товарные знаки их владельцев. Названия используются только для сравнения: VibeMarket и проекты из подборок с этими компаниями не связаны.",
  "foot.sandbox": "Приложения из раздела «Песочница» сторонние: их публикуют сами авторы. VibeMarket не проверяет их и не несёт ответственности за их работу, безопасность и содержание.",
  "foot.starsSnapshot": "Звёзды взяты из GitHub API {date}.",
  "foot.starsRobot": "Звёзды обновляет робот VibeMarket, последнее обновление: {date}.",
@@ -1581,6 +1595,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     { id: 'organicmaps', name: 'Organic Maps', cat: 'work', repo: 'organicmaps/organicmaps', stars: 15756, lic: 'Apache-2.0', glyph: 'flag', c: ['#7EE08A', '#1B7F3B'], desc: 'Офлайн-карты и навигация без рекламы и слежки.' },
     { id: 'thunderbird', name: 'Thunderbird', cat: 'work', repo: 'thunderbird/thunderbird-android', stars: 14135, lic: 'Apache-2.0', glyph: 'send', c: ['#8AB4FF', '#1F4FBF'], desc: 'Почта с заботой о приватности, преемник K-9 Mail на Android.' },
     { id: 'jitsi', name: 'Jitsi Meet', cat: 'work', repo: 'jitsi/jitsi-meet-electron', stars: 1635, lic: 'Apache-2.0', glyph: 'mic', c: ['#7CC4FF', '#1565C0'], desc: 'Видеовстречи с демонстрацией экрана, в том числе на своём сервере.' },
+    { id: 'mattermost', name: 'Mattermost', cat: 'work', repo: 'mattermost/desktop', stars: 2274, lic: 'Apache-2.0', glyph: 'chat', c: ['#7FA7FF', '#1E3A8A'], desc: 'Командный чат вместо Slack на своём сервере Mattermost.' },
 
     { id: 'obs', name: 'OBS Studio', cat: 'media', repo: 'obsproject/obs-studio', stars: 77878, lic: 'GPL-2.0', glyph: 'record', c: ['#4A4A50', '#141416'], desc: 'Запись экрана и прямые трансляции с микшером сцен.' },
     { id: 'jellyfin', name: 'Jellyfin', cat: 'media', repo: 'jellyfin/jellyfin', stars: 58324, lic: 'GPL-2.0', glyph: 'tv', c: ['#B06CFF', '#2E7BFF'], desc: 'Личный медиасервер для фильмов, сериалов и музыки.' },
@@ -1698,6 +1713,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     jitsi: { os: 'mwl', about: 'Jitsi Meet — приложение для видеовстреч на компьютере. Оно работает с любым сервером Jitsi Meet, в том числе с вашим собственным, и умеет показывать экран, давать удалённое управление и держать окно поверх остальных. Сквозное шифрование пока в бете. Приложение обновляется само.', shots: [['chat', 'Видеовстречи на любом сервере Jitsi'], ['player', 'Демонстрация экрана'], ['status', 'Сквозное шифрование в бете']] },
     shotcut: { os: 'mwl', about: 'Shotcut — бесплатный кроссплатформенный видеоредактор с открытым кодом. Он построен на мультимедийном фреймворке MLT и FFmpeg, поэтому открывает множество форматов. Монтаж на таймлайне, фильтры, работа со звуком и экспорт в популярные форматы.', shots: [['player', 'Монтаж на таймлайне'], ['wave', 'Звуковые дорожки'], ['paint', 'Фильтры и цветокоррекция']] },
     jan: { os: 'mwl', about: 'Jan скачивает и запускает языковые модели — Llama, Gemma, Qwen и другие — прямо на вашем компьютере. При желании можно подключить облачные модели, но всё может работать локально. Есть свои ассистенты, поддержка MCP и локальный сервер с API, совместимым с OpenAI.', shots: [['chat', 'Чат с моделью на вашем компьютере'], ['models', 'Llama, Gemma, Qwen и другие модели'], ['term', 'Локальный API, совместимый с OpenAI']] },
+    mattermost: { os: 'mwl', about: 'Mattermost — открытая платформа для командной работы, а это её приложение для компьютера. Каналы, доски и плейбуки в отдельных вкладках, уведомления, значки непрочитанного и несколько серверов в одном окне. При первом запуске указывается адрес сервера Mattermost: своего или вашей компании.', shots: [['chat', 'Каналы и сообщения'], ['kanban', 'Доски и плейбуки'], ['status', 'Уведомления о непрочитанном']] },
   };
 
   const GLYPHS = {
@@ -1952,6 +1968,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     jitsi: { site: 'https://jitsi.org/downloads/' },
     shotcut: { site: 'https://www.shotcut.org/download/' },
     jan: { site: 'https://jan.ai/' },
+    mattermost: { site: 'https://mattermost.com/download/' },
   };
 
   // Система и процессор посетителя. Узнаём в браузере и никуда не отправляем.
@@ -2340,6 +2357,9 @@ select.input option { background: var(--surface); color: var(--fg); }
   // Подборка: открытые замены программам Microsoft — Office, Outlook, Teams, OneNote, OneDrive, Visio, Paint,
   // Блокнот, Clipchamp, VS Code, To Do, Authenticator и Copilot
   const MICROSOFT_PICKS = ['libreoffice', 'thunderbird', 'jitsi', 'joplin', 'syncthing', 'drawio', 'pinta', 'notepadpp', 'shotcut', 'vscodium', 'superprod', 'enteauth', 'jan'];
+  // Подборка: бесплатные замены сервисам по подписке — Notion, Figma, Miro, Zoom, Slack, 1Password, Dropbox, Evernote,
+  // Todoist, Microsoft 365, Creative Cloud, Acrobat Pro и ChatGPT Plus
+  const SUBS_PICKS = ['appflowy', 'penpot', 'excalidraw', 'jitsi', 'mattermost', 'bitwarden', 'syncthing', 'joplin', 'superprod', 'libreoffice', 'photocraft', 'pdfcraft', 'jan'];
   const renderPicks = () => {
     const shelf = (id, list) => {
       document.getElementById(id).innerHTML = list.map(app => byId[app]).filter(app => app && visible(app)).map(cardHTML).join('');
@@ -2347,6 +2367,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     shelf('adobe-track', ADOBE_PICKS);
     shelf('google-track', GOOGLE_PICKS);
     shelf('microsoft-track', MICROSOFT_PICKS);
+    shelf('subs-track', SUBS_PICKS);
   };
 
   const renderShelfTracks = () => CATS.forEach(c => {
@@ -2656,7 +2677,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const root = document.documentElement;
   new ResizeObserver(() => root.style.setProperty('--header-h', bar.offsetHeight + 'px')).observe(bar);
 
-  const sectionIds = ['today', 'top', 'fresh', 'adobe', 'google', 'microsoft', 'mine', ...CATS.map(c => c.id), 'sandbox'];
+  const sectionIds = ['today', 'top', 'fresh', 'adobe', 'google', 'microsoft', 'subs', 'mine', ...CATS.map(c => c.id), 'sandbox'];
   let lockUntil = 0;
   const setActive = id => {
     chips.querySelectorAll('.chip').forEach(ch => {
@@ -2891,7 +2912,7 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   // Навигация: история браузера, если она доступна, иначе переходы в памяти
   let openId = null, returnTo = null, trail = [];
-  const sectionLabel = id => ({ top: t('nav.top'), fresh: t('fresh.chip'), adobe: t('adobe.title'), google: t('google.title'), microsoft: t('microsoft.title'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
+  const sectionLabel = id => ({ top: t('nav.top'), fresh: t('fresh.chip'), adobe: t('adobe.title'), google: t('google.title'), microsoft: t('microsoft.title'), subs: t('subs.title'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
   const currentBack = () => (trail.length ? byId[trail[trail.length - 1]]?.name : sectionLabel(returnTo?.section)) || t('nav.today');
   const showView = v => { browse.hidden = v !== 'browse'; results.hidden = v !== 'results'; detail.hidden = v !== 'detail'; };
   const pushEntry = id => {

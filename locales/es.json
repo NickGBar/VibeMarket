@@ -78,6 +78,8 @@
     "google.sub": "Alternativas abiertas a los servicios de Google: navegador, vídeo, fotos, mapas, correo, documentos y códigos 2FA. Sin anuncios, y tus datos no van a Google.",
     "microsoft.title": "En lugar de Microsoft",
     "microsoft.sub": "Alternativas abiertas a Office, Outlook, Teams, OneNote, OneDrive, Visio, Paint, el Bloc de notas y Copilot. Gratis, sin suscripción ni anuncios.",
+    "subs.title": "En lugar de suscripciones",
+    "subs.sub": "Alternativas gratuitas a Notion, Figma, Miro, Zoom, Slack, 1Password, Dropbox, Evernote, Todoist, Microsoft 365, Creative Cloud y ChatGPT Plus. Sin cuotas mensuales.",
     "mine.title": "Tus estrellas",
     "mine.empty": "Abre la página de cualquier app y pulsa Star. El proyecto recibirá una estrella en GitHub y la app aparecerá aquí.",
     "mine.loading": "Cargando tus estrellas desde GitHub…",
@@ -191,7 +193,7 @@
     "results.empty": "No hay resultados. Prueba con el nombre de una app, una categoría como «{example}» o una licencia, por ejemplo MIT.",
     "foot.about": "El catálogo solo incluye proyectos de código abierto. Todo es gratis: sin anuncios, banners, ventanas emergentes ni rastreadores. Esta página no carga ni un solo script, fuente o píxel externo.",
     "foot.auth": "Iniciar sesión con GitHub es opcional. Al iniciarla, las estrellas se actualizan con tu cuenta y todas las peticiones a GitHub pasan por el servidor de VibeMarket, así que tu token nunca llega al navegador.",
-    "foot.trademarks": "Adobe, Photoshop, Lightroom, Illustrator, InDesign, Acrobat, Premiere Pro y After Effects son marcas comerciales de Adobe; Google, Chrome, YouTube, Gmail y Google Play son marcas comerciales de Google LLC; Microsoft, Office, Outlook, Teams, OneNote, OneDrive, Visio y Copilot son marcas comerciales de Microsoft. Los nombres se usan solo como comparación: VibeMarket y los proyectos de estas colecciones no están afiliados a Adobe, Google ni Microsoft.",
+    "foot.trademarks": "Adobe, Google, Microsoft y los demás nombres de productos y servicios de estas colecciones son marcas comerciales de sus propietarios. Los nombres se usan solo como comparación: VibeMarket y los proyectos de las colecciones no están afiliados a estas empresas.",
     "foot.sandbox": "Las apps de la sección Sandbox son de terceros: las publican sus autores. VibeMarket no las revisa ni responde de su funcionamiento, su seguridad o su contenido.",
     "foot.starsSnapshot": "Las estrellas proceden de la API de GitHub a fecha de {date}.",
     "foot.starsRobot": "El robot de VibeMarket actualiza las estrellas, última actualización: {date}.",
@@ -931,6 +933,15 @@
         "Chat con un modelo en tu ordenador",
         "Llama, Gemma, Qwen y más",
         "API local compatible con OpenAI"
+      ]
+    },
+    "mattermost": {
+      "desc": "Chat de equipo en lugar de Slack, en tu propio servidor de Mattermost.",
+      "about": "Mattermost es una plataforma abierta de colaboración, y esta es su app de escritorio. Canales, Boards y Playbooks en pestañas propias, notificaciones, contadores de no leídos y varios servidores en una sola ventana. Al abrirla por primera vez se indica la dirección de un servidor de Mattermost: el tuyo o el de tu empresa.",
+      "shots": [
+        "Canales y mensajes",
+        "Boards y Playbooks",
+        "Notificaciones y no leídos"
       ]
     }
   }
