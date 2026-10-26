@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-26T00:26:19.227Z",
+  "updated": "2026-10-26T06:20:26.393Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -13,71 +13,71 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6714,
-    "ankitects/anki": 32290,
-    "Anuken/Mindustry": 29465,
-    "AppFlowy-IO/AppFlowy": 77765,
-    "audacity/audacity": 18831,
-    "AUTOMATIC1111/stable-diffusion-webui": 165144,
+    "00-Evan/shattered-pixel-dungeon": 6715,
+    "ankitects/anki": 32291,
+    "Anuken/Mindustry": 29466,
+    "AppFlowy-IO/AppFlowy": 77775,
+    "audacity/audacity": 18834,
+    "AUTOMATIC1111/stable-diffusion-webui": 165146,
     "bitwarden/clients": 14059,
-    "blender/blender": 21258,
-    "Comfy-Org/ComfyUI": 142931,
-    "ente/ente": 29593,
-    "excalidraw/excalidraw": 134545,
-    "FreeTubeApp/FreeTube": 22142,
-    "ggml-org/llama.cpp": 132352,
-    "ggml-org/whisper.cpp": 54667,
-    "GNOME/gimp": 6545,
-    "godotengine/godot": 119075,
+    "blender/blender": 21266,
+    "Comfy-Org/ComfyUI": 143023,
+    "ente/ente": 29596,
+    "excalidraw/excalidraw": 134557,
+    "FreeTubeApp/FreeTube": 22144,
+    "ggml-org/llama.cpp": 132379,
+    "ggml-org/whisper.cpp": 54674,
+    "GNOME/gimp": 6546,
+    "godotengine/godot": 119085,
     "HandBrake/HandBrake": 24786,
-    "HeliBorg/HeliBoard": 6420,
-    "immich-app/immich": 117230,
-    "ImranR98/Obtainium": 20875,
-    "inkscape/inkscape": 4057,
-    "janhq/jan": 45086,
-    "jellyfin/jellyfin": 58594,
-    "jesseduffield/lazygit": 83415,
+    "HeliBorg/HeliBoard": 6421,
+    "immich-app/immich": 117258,
+    "ImranR98/Obtainium": 20879,
+    "inkscape/inkscape": 4058,
+    "janhq/jan": 45087,
+    "jellyfin/jellyfin": 58605,
+    "jesseduffield/lazygit": 83422,
     "jgraph/drawio-desktop": 63651,
     "jitsi/jitsi-meet-electron": 1635,
-    "KDE/krita": 10632,
-    "keepassxreboot/keepassxc": 29487,
-    "laurent22/joplin": 56877,
+    "KDE/krita": 10634,
+    "keepassxreboot/keepassxc": 29494,
+    "laurent22/joplin": 56876,
     "LibreOffice/core": 4558,
-    "localsend/localsend": 95583,
-    "logseq/logseq": 45375,
-    "luanti-org/luanti": 13773,
+    "localsend/localsend": 95637,
+    "logseq/logseq": 45380,
+    "luanti-org/luanti": 13775,
     "mattermost/desktop": 2274,
-    "mltframework/shotcut": 15499,
-    "mpv-player/mpv": 37563,
+    "mltframework/shotcut": 15504,
+    "mpv-player/mpv": 37569,
     "mullvad/mullvadvpn-app": 7701,
-    "neovim/neovim": 103166,
-    "nomic-ai/gpt4all": 77357,
-    "notepad-plus-plus/notepad-plus-plus": 29682,
-    "obsproject/obs-studio": 78210,
-    "ollama/ollama": 184755,
+    "neovim/neovim": 103171,
+    "nomic-ai/gpt4all": 77358,
+    "notepad-plus-plus/notepad-plus-plus": 29683,
+    "obsproject/obs-studio": 78230,
+    "ollama/ollama": 184788,
     "OpenTTD/OpenTTD": 8428,
-    "organicmaps/organicmaps": 15769,
-    "penpot/penpot": 61664,
-    "PintaProject/Pinta": 4111,
+    "organicmaps/organicmaps": 15774,
+    "penpot/penpot": 61673,
+    "PintaProject/Pinta": 4112,
     "signalapp/Signal-Desktop": 16619,
-    "storytold/designcraft": 4780,
-    "storytold/effectcraft": 7893,
-    "storytold/filmcraft": 16280,
-    "storytold/lightcraft": 14649,
-    "storytold/pdfcraft": 17842,
-    "storytold/photocraft": 72823,
-    "storytold/vectorcraft": 10681,
-    "super-productivity/super-productivity": 23144,
-    "supertuxkart/stk-code": 5451,
-    "syncthing/syncthing": 89744,
-    "tauri-apps/tauri": 112190,
-    "TeamNewPipe/NewPipe": 40292,
+    "storytold/designcraft": 4792,
+    "storytold/effectcraft": 7911,
+    "storytold/filmcraft": 16314,
+    "storytold/lightcraft": 14674,
+    "storytold/pdfcraft": 17887,
+    "storytold/photocraft": 72966,
+    "storytold/vectorcraft": 10695,
+    "super-productivity/super-productivity": 23153,
+    "supertuxkart/stk-code": 5452,
+    "syncthing/syncthing": 89755,
+    "tauri-apps/tauri": 112194,
+    "TeamNewPipe/NewPipe": 40294,
     "thunderbird/thunderbird-android": 14138,
-    "ungoogled-software/ungoogled-chromium": 28097,
-    "videolan/vlc": 20226,
-    "VSCodium/vscodium": 33802,
+    "ungoogled-software/ungoogled-chromium": 28099,
+    "videolan/vlc": 20232,
+    "VSCodium/vscodium": 33808,
     "wesnoth/wesnoth": 6954,
-    "zed-industries/zed": 92182
+    "zed-industries/zed": 92199
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -215,118 +215,118 @@
     },
     "AppFlowy-IO/AppFlowy": {
       "mac": {
-        "tag": "0.14.10",
-        "date": "2026-10-21T04:12:10Z",
-        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "tag": "0.14.11",
+        "date": "2026-10-26T00:59:22Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.11",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "AppFlowy-0.14.10-macos-universal.dmg",
-            "size": 225191379,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-universal.dmg",
-            "sha256": "817548f9eab169db155fb0ea978f9d896d74e84d3f5805fb7fcea5444a371711"
+            "name": "AppFlowy-0.14.11-macos-universal.dmg",
+            "size": 225569716,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-macos-universal.dmg",
+            "sha256": "50da706a87bdbd44a128001ab4cc1bba96fa6e105ff299cdf9fd248869fb9774"
           },
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "AppFlowy-0.14.10-macos-x86_64.dmg",
-            "size": 124659825,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-x86_64.dmg",
-            "sha256": "7c3e6551489d4c83d93b747112098233633ae40bfa2710a5d8001a8d5bcabd65"
+            "name": "AppFlowy-0.14.11-macos-x86_64.dmg",
+            "size": 124749919,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-macos-x86_64.dmg",
+            "sha256": "a52e2d2180c545bfa903de2b325923aa4c2471f2e8b01d34cd7ccc64dfe9d99d"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "AppFlowy-0.14.10-macos-arm64.dmg",
-            "size": 115906810,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-arm64.dmg",
-            "sha256": "21f98db612c735b84fcf315b8fb5f4cb6460c7558eca1b73fe407bfab638e286"
+            "name": "AppFlowy-0.14.11-macos-arm64.dmg",
+            "size": 116110311,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-macos-arm64.dmg",
+            "sha256": "968d6859adba1ea8720edd57b1cff7cd705d691ba1c265d1f6599f2b15514ea5"
           },
           {
             "arch": "universal",
             "kind": "zip",
-            "name": "AppFlowy-0.14.10-macos-universal.zip",
-            "size": 226900087,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-universal.zip",
-            "sha256": "f883664781aba131a3c3c22035e69829410275289f26c3c891c427d8a6871b3a"
+            "name": "AppFlowy-0.14.11-macos-universal.zip",
+            "size": 227260722,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-macos-universal.zip",
+            "sha256": "1d6162b9e658c70b3aba85eb2876d978c8bd51781c168d190456a2c50aa5930c"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "AppFlowy-0.14.10-macos-arm64.zip",
-            "size": 117064014,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-macos-arm64.zip",
-            "sha256": "be8d6037c04bf9e3da21e2107f9a4f856b6d1f71d57f2d9979b644f5459905a2"
+            "name": "AppFlowy-0.14.11-macos-arm64.zip",
+            "size": 117265562,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-macos-arm64.zip",
+            "sha256": "564c054f09c7cc461697afd8e91683e4b93b10efbe0cf184abf98b9b0dd97b0e"
           }
         ]
       },
       "win": {
-        "tag": "0.14.10",
-        "date": "2026-10-21T04:12:10Z",
-        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "tag": "0.14.11",
+        "date": "2026-10-26T00:59:22Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.11",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "AppFlowy-0.14.10-windows-x86_64.exe",
-            "size": 91279944,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-windows-x86_64.exe",
-            "sha256": "b3c457eba83de5352c4bc75c2119eaefdb8727579190d29d29c1854792930607"
+            "name": "AppFlowy-0.14.11-windows-x86_64.exe",
+            "size": 91465792,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-windows-x86_64.exe",
+            "sha256": "ed68d452bd35d030968f9e00ba99ddecd78d286c93596089761011552c07aa15"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "AppFlowy-0.14.10-windows-x86_64.zip",
-            "size": 132070864,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-windows-x86_64.zip",
-            "sha256": "d2f96912ee735df2c840b5e1451acc95179fc97f884d6cdafdc2c4fdc27fcd2a"
+            "name": "AppFlowy-0.14.11-windows-x86_64.zip",
+            "size": 132282011,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-windows-x86_64.zip",
+            "sha256": "bdd765213358d0c4fc609b3dca490f05c0105e76fff6dbf7a359459e5b352d9e"
           }
         ]
       },
       "linux": {
-        "tag": "0.14.10",
-        "date": "2026-10-21T04:12:10Z",
-        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "tag": "0.14.11",
+        "date": "2026-10-26T00:59:22Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.11",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "AppFlowy-0.14.10-linux-x86_64.AppImage",
-            "size": 181393912,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-linux-x86_64.AppImage",
-            "sha256": "77da61110ca8c0eb3f3cdb6e9f01bbba9fc9aae21d66d32bd109b29054739a9f"
+            "name": "AppFlowy-0.14.11-linux-x86_64.AppImage",
+            "size": 181549560,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-linux-x86_64.AppImage",
+            "sha256": "e8e0df81778469733b49ad757fb981376fd89ad79347b0c8c8dac182dfe1bb42"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "AppFlowy-0.14.10-linux-x86_64.deb",
-            "size": 142696288,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-linux-x86_64.deb",
-            "sha256": "96a4bf516277a69adb97ce2b3b232edce7074020d79c53dd7f93278a5a08ac1a"
+            "name": "AppFlowy-0.14.11-linux-x86_64.deb",
+            "size": 142863328,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-linux-x86_64.deb",
+            "sha256": "e29b034afe547146ed1a42a83a3dedf18f9fde310ef4621d9718d6d12fe35360"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "AppFlowy-0.14.10-linux-x86_64.rpm",
-            "size": 194477579,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-linux-x86_64.rpm",
-            "sha256": "2a4a099b711add0e3c7dead29bb1d87be026669b12f889384ee398be4b6ab5c9"
+            "name": "AppFlowy-0.14.11-linux-x86_64.rpm",
+            "size": 194622562,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-linux-x86_64.rpm",
+            "sha256": "9de50e579657620cc7e72d7fc8105789184971befd4c65a97ff879b0caad6418"
           }
         ]
       },
       "android": {
-        "tag": "0.14.10",
-        "date": "2026-10-21T04:12:10Z",
-        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+        "tag": "0.14.11",
+        "date": "2026-10-26T00:59:22Z",
+        "page": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.11",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
-            "name": "AppFlowy-0.14.10-android.apk",
-            "size": 249134196,
-            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.10/AppFlowy-0.14.10-android.apk",
-            "sha256": "88ea34affe35db3b399b97efa147fee495de015c3a69650b9d9efbf45bfc9a6c"
+            "name": "AppFlowy-0.14.11-android.apk",
+            "size": 249349280,
+            "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.14.11/AppFlowy-0.14.11-android.apk",
+            "sha256": "1785506d7ac3fc1f81db96006b4e05ec25e65949af30e3df333e0486a447a3b1"
           }
         ]
       }
