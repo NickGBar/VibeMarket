@@ -210,7 +210,7 @@ const TOOLS = [
   {
     name: 'search_apps',
     title: 'Search VibeMarket',
-    description: 'Search the VibeMarket catalog of free, open-source apps with no ads or trackers by keywords, category, platform or collection. Categories: dev, design, work, media, privacy, ai, games. Collections: adobe, google, microsoft, subs. Set agent to true for apps that ship their own MCP server, so an agent can work inside them.',
+    description: 'Search the VibeMarket catalog of free, open-source apps with no ads or trackers by keywords, category, platform or collection. Categories: dev, design, work, media, privacy, ai, games. Collections: adobe, google, microsoft, subs, agents. Set agent to true for apps that ship their own MCP server, so an agent can work inside them.',
     inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Keywords, e.g. "photo editor" or "password manager".' }, category: { type: 'string' }, platform: platformProp, collection: { type: 'string' }, agent: { type: 'boolean', description: 'Only apps with their own MCP server from the authors.' }, lang: langProp, limit: limitProp } },
     annotations: readOnly,
     async run(args) {
@@ -293,7 +293,7 @@ const TOOLS = [
   {
     name: 'list_collections',
     title: 'Collections and categories',
-    description: 'The curated collections (Instead of Adobe, Google, Microsoft, subscriptions) and categories of the catalog, with the apps in each collection.',
+    description: 'The curated collections (Instead of Adobe, Google, Microsoft, subscriptions; Works with AI agents) and categories of the catalog, with the apps in each collection.',
     inputSchema: { type: 'object', properties: { lang: langProp } },
     annotations: readOnly,
     async run(args) {

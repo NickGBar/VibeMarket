@@ -64,6 +64,8 @@ const REPLACES = literal('REPLACES');
 const AGENT = literal('AGENT');
 // Подборки «Вместо …»: const ADOBE_PICKS = ['photocraft', …]
 const COLLECTIONS = [...html.matchAll(/const ([A-Z]+)_PICKS = (\[[^\]]*\]);/g)].map(m => ({ id: m[1].toLowerCase(), apps: vm.runInNewContext(m[2]) }));
+// Полка «Работают с ИИ-агентом» собирается из списка AGENT
+COLLECTIONS.push({ id: 'agents', apps: Object.keys(AGENT) });
 const RU = JSON.parse(/<script type="application\/json" id="i18n-ru">([\s\S]*?)<\/script>/.exec(html)[1]);
 const LOCALES = { ru: {} };
 for (const code of LANGS.slice(1)) LOCALES[code] = JSON.parse(await readFile(`${ROOT}locales/${code}.json`, 'utf8'));

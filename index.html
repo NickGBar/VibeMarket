@@ -775,14 +775,26 @@ button.pill-link:disabled { opacity: 0.5; cursor: progress; }
 .slot-text { margin: 0; font-size: 15px; line-height: 20px; }
 .meta-tags { flex: none; display: flex; align-items: center; gap: 6px; }
 .agent-tag { padding: 1px 6px; border-radius: 6px; background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); font: 600 11px/16px var(--font); letter-spacing: 0.02em; white-space: nowrap; }
-.agent-block .cmd { display: flex; align-items: center; gap: 12px; max-width: 72ch; padding: 10px 14px; border-radius: 12px; background: var(--surface); }
-.agent-block .cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font: 13px/20px var(--font-mono); scrollbar-width: none; }
-.agent-block .copy-btn { flex: none; font-size: 13px; font-weight: 600; }
+.cmd { display: flex; align-items: center; gap: 12px; max-width: 72ch; padding: 10px 14px; border-radius: 12px; background: var(--surface); }
+.cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font: 13px/20px var(--font-mono); scrollbar-width: none; }
+.cmd .copy-btn { flex: none; font-size: 13px; font-weight: 600; }
 .agent-note { margin: 0; max-width: 72ch; color: var(--fg-2); font-size: 13px; line-height: 20px; }
 .agent-note a, .agent-block .d-text a { color: var(--accent); }
 .agent-note a:hover, .agent-block .d-text a:hover { text-decoration: underline; }
 .agent-note svg, .agent-block .d-text svg { width: 12px; height: 12px; margin-left: 2px; vertical-align: -1px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .agent-warn { margin: 0; max-width: 72ch; color: var(--warning); font-size: 15px; line-height: 21px; font-weight: 600; }
+.t-agent { grid-column: 1 / -1; }
+.t-agent-how { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.t-agent .cmd { background: var(--surface-2); max-width: none; }
+/* В плитке команду видно целиком: переносится, а не прячется за прокруткой */
+.t-agent .cmd code { white-space: normal; overflow-wrap: anywhere; }
+.t-agent-links { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; line-height: 20px; }
+.t-agent-links a { color: var(--accent); font-weight: 600; }
+.t-agent-links a:hover { text-decoration: underline; }
+@media (min-width: 900px) {
+  .t-agent { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; gap: 32px; }
+  .t-agent-text { display: flex; flex-direction: column; gap: 12px; }
+}
 .tp-badge { padding: 1px 6px; border-radius: 6px; background: color-mix(in srgb, var(--warning) 14%, transparent); color: var(--warning); font: 600 11px/16px var(--font); letter-spacing: 0.02em; }
 .icon img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
@@ -919,6 +931,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     <button class="chip" type="button" data-target="google" data-i18n="google.title">Вместо Google</button>
     <button class="chip" type="button" data-target="microsoft" data-i18n="microsoft.title">Вместо Microsoft</button>
     <button class="chip" type="button" data-target="subs" data-i18n="subs.title">Вместо подписок</button>
+    <button class="chip" type="button" data-target="agents" data-i18n="agents.chip">ИИ-агенты</button>
   </nav>
 </header>
 
@@ -993,6 +1006,19 @@ select.input option { background: var(--surface); color: var(--fg); }
         <p class="tile-text" data-i18n="collection.text">Модели работают локально. Запросы и файлы не уходят в чужое облако.</p>
         <div class="stack" id="ai-stack" aria-hidden="true"></div>
       </a>
+
+      <article class="tile t-agent" aria-labelledby="mcp-title">
+        <div class="t-agent-text">
+          <p class="eyebrow is-accent" data-i18n="mcp.eyebrow">Для ИИ-агентов</p>
+          <h2 class="tile-title" id="mcp-title" data-i18n="mcp.title">Подключите VibeMarket к Claude Code</h2>
+          <p class="tile-text" data-i18n="mcp.text">Агент найдёт бесплатную замену платной программе, скачает установщик под ваш компьютер и сверит SHA-256. Устанавливаете вы сами.</p>
+        </div>
+        <div class="t-agent-how">
+          <div class="cmd"><code id="mcp-cmd">claude mcp add vibemarket -- npx -y github:NickGBar/VibeMarket</code><button class="link-btn copy-btn" type="button" id="mcp-copy" data-copy="claude mcp add vibemarket -- npx -y github:NickGBar/VibeMarket" data-i18n="agent.copy">Скопировать</button></div>
+          <p class="agent-note" data-i18n="mcp.other">В Claude Desktop, Cursor и других клиентах — та же команда npx в настройках MCP.</p>
+          <p class="t-agent-links"><a id="mcp-more" href="https://github.com/NickGBar/VibeMarket#for-ai-agents-mcp" target="_blank" rel="noopener" data-i18n="mcp.more">Как это работает</a><a href="#agents" data-target="agents" data-i18n="mcp.apps">Приложения, с которыми работает агент</a></p>
+        </div>
+      </article>
     </div>
     </div>
 
@@ -1060,6 +1086,17 @@ select.input option { background: var(--surface); color: var(--fg); }
         <div class="shelf-nav" data-nav="subs-track"></div>
       </div>
       <div class="track" id="subs-track" role="list" tabindex="0" aria-label="Вместо подписок" data-i18n-attr="aria-label:subs.title"></div>
+    </section>
+
+    <section class="shelf" id="agents" aria-labelledby="agents-title">
+      <div class="shelf-head wrap">
+        <div class="shelf-heading">
+          <h2 class="shelf-title" id="agents-title" data-i18n="agents.title">Работают с ИИ-агентом</h2>
+          <p class="shelf-sub" data-i18n="agents.sub">У этих приложений есть свой MCP-сервер от авторов, и ИИ-агент вроде Claude Code может работать прямо в них. Как подключить — на странице приложения.</p>
+        </div>
+        <div class="shelf-nav" data-nav="agents-track"></div>
+      </div>
+      <div class="track" id="agents-track" role="list" tabindex="0" aria-label="Работают с ИИ-агентом" data-i18n-attr="aria-label:agents.title"></div>
     </section>
 
     <section class="shelf" id="mine" aria-labelledby="mine-title" hidden>
@@ -1301,6 +1338,15 @@ select.input option { background: var(--surface); color: var(--fg); }
  "microsoft.sub": "Открытые замены Office, Outlook, Teams, OneNote, OneDrive, Visio, Paint, Блокноту и Copilot. Бесплатно, без подписки и рекламы.",
  "subs.title": "Вместо подписок",
  "subs.sub": "Бесплатные замены Notion, Figma, Miro, Zoom, Slack, 1Password, Dropbox, Evernote, Todoist, Microsoft 365, Creative Cloud и ChatGPT Plus. Платить каждый месяц не нужно.",
+ "agents.title": "Работают с ИИ-агентом",
+ "agents.chip": "ИИ-агенты",
+ "agents.sub": "У этих приложений есть свой MCP-сервер от авторов, и ИИ-агент вроде Claude Code может работать прямо в них. Как подключить — на странице приложения.",
+ "mcp.eyebrow": "Для ИИ-агентов",
+ "mcp.title": "Подключите VibeMarket к Claude Code",
+ "mcp.text": "Агент найдёт бесплатную замену платной программе, скачает установщик под ваш компьютер и сверит SHA-256. Устанавливаете вы сами.",
+ "mcp.other": "В Claude Desktop, Cursor и других клиентах — та же команда npx в настройках MCP.",
+ "mcp.more": "Как это работает",
+ "mcp.apps": "Приложения, с которыми работает агент",
  "mine.title": "Ваши звёзды",
  "mine.empty": "Откройте страницу любого приложения и нажмите Star. Звезда появится у проекта на GitHub, а приложение окажется здесь.",
  "mine.loading": "Загружаем звёзды из GitHub…",
@@ -2424,6 +2470,8 @@ select.input option { background: var(--surface); color: var(--fg); }
     shelf('google-track', GOOGLE_PICKS);
     shelf('microsoft-track', MICROSOFT_PICKS);
     shelf('subs-track', SUBS_PICKS);
+    // Все приложения с пометкой «ИИ-агент», в порядке списка AGENT
+    shelf('agents-track', Object.keys(AGENT));
   };
 
   const renderShelfTracks = () => CATS.forEach(c => {
@@ -2747,7 +2795,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const root = document.documentElement;
   new ResizeObserver(() => root.style.setProperty('--header-h', bar.offsetHeight + 'px')).observe(bar);
 
-  const sectionIds = ['today', 'top', 'fresh', 'adobe', 'google', 'microsoft', 'subs', 'mine', ...CATS.map(c => c.id), 'sandbox'];
+  const sectionIds = ['today', 'top', 'fresh', 'adobe', 'google', 'microsoft', 'subs', 'agents', 'mine', ...CATS.map(c => c.id), 'sandbox'];
   let lockUntil = 0;
   const setActive = id => {
     chips.querySelectorAll('.chip').forEach(ch => {
@@ -3004,7 +3052,7 @@ select.input option { background: var(--surface); color: var(--fg); }
 
   // Навигация: история браузера, если она доступна, иначе переходы в памяти
   let openId = null, returnTo = null, trail = [];
-  const sectionLabel = id => ({ top: t('nav.top'), fresh: t('fresh.chip'), adobe: t('adobe.title'), google: t('google.title'), microsoft: t('microsoft.title'), subs: t('subs.title'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
+  const sectionLabel = id => ({ top: t('nav.top'), fresh: t('fresh.chip'), adobe: t('adobe.title'), google: t('google.title'), microsoft: t('microsoft.title'), subs: t('subs.title'), agents: t('agents.chip'), mine: t('nav.mine'), sandbox: t('nav.sandbox'), search: t('nav.search') })[id] || catName[id] || t('nav.today');
   const currentBack = () => (trail.length ? byId[trail[trail.length - 1]]?.name : sectionLabel(returnTo?.section)) || t('nav.today');
   const showView = v => { browse.hidden = v !== 'browse'; results.hidden = v !== 'results'; detail.hidden = v !== 'detail'; };
   const pushEntry = id => {
@@ -3195,6 +3243,7 @@ select.input option { background: var(--surface); color: var(--fg); }
     renderHero();
     renderStats();
     renderFresh();
+    renderMcpTile();
     renderMine();
     if (!results.hidden) runSearch();
     if (openId) renderDetail(byId[openId], currentBack());
@@ -3252,6 +3301,14 @@ select.input option { background: var(--surface); color: var(--fg); }
   // catalog.json ведёт робот в GitHub Actions: звёзды, песочница, голосование, скрытые по жалобам.
   // Без него страница работает на встроенном снимке.
   let HOME_REPO = 'NickGBar/VibeMarket';
+  // Плитка «Для ИИ-агентов»: команда подключения нашего MCP-сервера и README на языке страницы
+  const renderMcpTile = () => {
+    const command = `claude mcp add vibemarket -- npx -y github:${HOME_REPO}`;
+    document.getElementById('mcp-cmd').textContent = command;
+    document.getElementById('mcp-copy').dataset.copy = command;
+    document.getElementById('mcp-more').href = `https://github.com/${HOME_REPO}/blob/main/${lang === 'ru' ? 'README.ru.md#для-ии-агентов-mcp' : 'README.md#for-ai-agents-mcp'}`;
+  };
+  renderMcpTile();
   const issueTemplate = base => `${base}${lang === 'ru' ? '' : `-${lang}`}.yml`;
   const reportURL = app => `https://github.com/${HOME_REPO}/issues/new?${new URLSearchParams({ template: issueTemplate('report-app'), title: t('detail.reportTitle', { name: plainName(app) }), repo: app.repo })}`;
   const RULES = { votesNeeded: 10, voteDays: 7, downvoteWeight: 2, voterMinAgeDays: 90, topic: 'vibemarket' };
