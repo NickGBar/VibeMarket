@@ -774,6 +774,15 @@ button.pill-link:disabled { opacity: 0.5; cursor: progress; }
 .slot-title { margin: 0; font: 700 17px/22px var(--font); color: var(--fg); }
 .slot-text { margin: 0; font-size: 15px; line-height: 20px; }
 .meta-tags { flex: none; display: flex; align-items: center; gap: 6px; }
+.agent-tag { padding: 1px 6px; border-radius: 6px; background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); font: 600 11px/16px var(--font); letter-spacing: 0.02em; white-space: nowrap; }
+.agent-block .cmd { display: flex; align-items: center; gap: 12px; max-width: 72ch; padding: 10px 14px; border-radius: 12px; background: var(--surface); }
+.agent-block .cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font: 13px/20px var(--font-mono); scrollbar-width: none; }
+.agent-block .copy-btn { flex: none; font-size: 13px; font-weight: 600; }
+.agent-note { margin: 0; max-width: 72ch; color: var(--fg-2); font-size: 13px; line-height: 20px; }
+.agent-note a, .agent-block .d-text a { color: var(--accent); }
+.agent-note a:hover, .agent-block .d-text a:hover { text-decoration: underline; }
+.agent-note svg, .agent-block .d-text svg { width: 12px; height: 12px; margin-left: 2px; vertical-align: -1px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.agent-warn { margin: 0; max-width: 72ch; color: var(--warning); font-size: 15px; line-height: 21px; font-weight: 600; }
 .tp-badge { padding: 1px 6px; border-radius: 6px; background: color-mix(in srgb, var(--warning) 14%, transparent); color: var(--warning); font: 600 11px/16px var(--font); letter-spacing: 0.02em; }
 .icon img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
@@ -1460,6 +1469,20 @@ select.input option { background: var(--surface); color: var(--fg); }
  "dl.altLink": "Скачать для Intel",
  "dl.arch.universal": "Универсальная",
  "dl.arch.x86": "32 бита",
+ "agent.tag": "ИИ-агент",
+ "agent.tagTitle": "Работает с ИИ-агентом: у приложения есть MCP-сервер от авторов",
+ "agent.title": "Работает с ИИ-агентом",
+ "agent.lead": "{name} поддерживает MCP: у приложения есть свой сервер от авторов, и ИИ-агент вроде Claude Code может работать с ним напрямую.",
+ "agent.cli": "Нужна консольная утилита {tool} из релиза приложения на GitHub, затем подключите её к Claude Code командой ниже.",
+ "agent.cliFor": "Готовые сборки утилиты есть для {os}.",
+ "agent.install": "Установите сервер, затем подключите его к Claude Code:",
+ "agent.url": "Сервер работает в интернете, устанавливать ничего не нужно. В Claude Code:",
+ "agent.urlApps": "В Claude Desktop и на claude.ai добавьте адрес {url} как свой коннектор.",
+ "agent.guide": "Подключение в несколько шагов: запустите сервер командой ниже и дальше следуйте инструкции авторов.",
+ "agent.warn": "Осторожно: агент получит доступ к вашему хранилищу паролей.",
+ "agent.safety": "MCP-сервер работает с вашими правами: подключайте агентов только к тому, чему доверяете.",
+ "agent.docs": "Инструкция авторов",
+ "agent.copy": "Скопировать",
  "detail.announce": "Страница приложения {name}",
  "detail.source": "Исходный код",
  "detail.thirdTitle": "Стороннее приложение",
@@ -1971,6 +1994,23 @@ select.input option { background: var(--surface); color: var(--fg); }
     mattermost: { site: 'https://mattermost.com/download/' },
   };
 
+  // Работает с ИИ-агентом: у приложения есть свой MCP-сервер от авторов. Сторонние обёртки не в счёт: их код
+  // авторы приложения не проверяли. cli — команда сервера из консольной утилиты (cliFor: для каких систем она
+  // собрана в релизах), url — сервер в интернете, guide — подключение в несколько шагов по инструкции авторов.
+  const AGENT = {
+    photocraft: { cli: 'photocraft-cli mcp', cliFor: ['mac'] }, lightcraft: { cli: 'lightcraft-cli mcp', cliFor: ['mac'] },
+    vectorcraft: { cli: 'vectorcraft-cli mcp', cliFor: ['mac'] },
+    designcraft: { cli: 'designcraft-cli mcp', cliFor: ['mac'], docs: 'https://github.com/storytold/designcraft/blob/main/docs/mcp.md' },
+    pdfcraft: { cli: 'pdfcraft-cli mcp', cliFor: ['mac', 'linux'] }, filmcraft: { cli: 'filmcraft-cli mcp', cliFor: ['mac'] },
+    effectcraft: { cli: 'effectcraft-cli mcp', cliFor: ['mac'] },
+    drawio: { url: 'https://mcp.draw.io/mcp', docs: 'https://www.drawio.com/mcp/' },
+    excalidraw: { url: 'https://mcp.excalidraw.com', docs: 'https://github.com/excalidraw/excalidraw-mcp' },
+    comfyui: { cli: 'comfy-mcp', install: 'pip install comfy-mcp "comfy-cli>=1.14.0"', docs: 'https://github.com/Comfy-Org/comfy-mcp' },
+    penpot: { guide: 'npx -y @penpot/mcp@latest', docs: 'https://github.com/penpot/penpot/tree/develop/mcp' },
+    bitwarden: { guide: 'npx -y @bitwarden/mcp-server', docs: 'https://github.com/bitwarden/mcp-server', warn: true },
+  };
+  const agentCommand = (id, a) => (a.url ? `claude mcp add --transport http ${id} ${a.url}` : a.cli ? `claude mcp add ${id} -- ${a.cli}` : '');
+
   // Система и процессор посетителя. Узнаём в браузере и никуда не отправляем.
   // Chrome и Edge сообщают процессор точно (ниже, getHighEntropyValues), Safari и Firefox — только систему.
   const PLATFORM = (() => {
@@ -2074,7 +2114,7 @@ select.input option { background: var(--surface); color: var(--fg); }
   const cardHTML = app => `<article class="app${auth.starred.has(app.repo) ? ' is-starred' : ''}" role="listitem" data-app="${app.id}" aria-label="${cardLabel(app)}">` +
       `<div class="app-top"><span class="icon-wrap">${iconHTML(app, 64)}<b class="mine-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${STAR_PATH}"/></svg></b></span>${getHTML(app)}</div>` +
       `<div class="app-text"><h3 class="app-name"><a class="app-link" href="${appHref(app.id)}" data-open="${app.id}">${app.name}</a></h3><p class="app-desc">${app.desc}</p></div>` +
-      `<div class="app-meta">${ratingHTML(app)}<span class="meta-tags">${app.thirdParty ? `<span class="tp-badge" title="${t('card.thirdPartyTitle')}">${t('card.thirdParty')}</span>` : ''}<span class="license" title="${t('card.license')}">${app.lic}</span></span></div>` +
+      `<div class="app-meta">${ratingHTML(app)}<span class="meta-tags">${app.thirdParty ? `<span class="tp-badge" title="${t('card.thirdPartyTitle')}">${t('card.thirdParty')}</span>` : ''}${AGENT[app.id] ? `<span class="agent-tag" title="${t('agent.tagTitle')}">${t('agent.tag')}</span>` : ''}<span class="license" title="${t('card.license')}">${app.lic}</span></span></div>` +
     `</article>`;
 
   const lockupHTML = (app, size = 52, sub, link = false) => `${iconHTML(app, size)}` +
@@ -2589,7 +2629,21 @@ select.input option { background: var(--surface); color: var(--fg); }
     }
     const sha = e.target.closest('button.dl-sha');
     if (sha) copySha(sha);
+    const command = e.target.closest('button[data-copy]');
+    if (command) copyText(command);
   });
+
+  const copyText = async btn => {
+    try {
+      await navigator.clipboard.writeText(btn.dataset.copy);
+    } catch (e) {
+      // Буфер обмена недоступен: выделяем команду, её можно скопировать вручную
+      getSelection()?.selectAllChildren(btn.previousElementSibling);
+      return;
+    }
+    btn.textContent = t('dl.copied');
+    setTimeout(() => { btn.textContent = t('agent.copy'); }, 1600);
+  };
 
   const copySha = async btn => {
     const hash = btn.dataset.sha;
@@ -2807,6 +2861,27 @@ select.input option { background: var(--surface); color: var(--fg); }
     return esc(t('dl.noOs', { os }));
   };
 
+  // «Работает с ИИ-агентом»: как подключить MCP-сервер приложения к Claude Code и другим клиентам
+  const cmdHTML = text => `<div class="cmd"><code>${esc(text)}</code><button class="link-btn copy-btn" type="button" data-copy="${esc(text)}">${t('agent.copy')}</button></div>`;
+  const agentHTML = app => {
+    const a = AGENT[app.id];
+    if (!a) return '';
+    const tool = a.cli?.split(' ')[0];
+    const builds = a.cliFor ? ` ${esc(t('agent.cliFor', { os: a.cliFor.map(osLabel).join(', ') }))}` : '';
+    const steps = a.url
+      ? `<p class="d-text">${t('agent.url')}</p>${cmdHTML(agentCommand(app.id, a))}<p class="agent-note">${esc(t('agent.urlApps', { url: a.url }))}</p>`
+      : a.install ? `<p class="d-text">${t('agent.install')}</p>${cmdHTML(a.install)}${cmdHTML(agentCommand(app.id, a))}`
+      : a.cli ? `<p class="d-text">${esc(t('agent.cli', { tool }))}${builds} ${outLink(`https://github.com/${app.repo}/releases`, 'GitHub' + arrowOut)}</p>${cmdHTML(agentCommand(app.id, a))}`
+      : `<p class="d-text">${t('agent.guide')}</p>${cmdHTML(a.guide)}`;
+    return `<section class="d-block wrap agent-block" aria-labelledby="agent-title">
+        <h2 class="shelf-title" id="agent-title">${t('agent.title')}</h2>
+        <p class="d-text">${esc(t('agent.lead', { name: plainName(app) }))}</p>
+        ${a.warn ? `<p class="agent-warn">${t('agent.warn')}</p>` : ''}
+        ${steps}
+        <p class="agent-note">${t('agent.safety')}${a.docs ? ` ${outLink(esc(a.docs), t('agent.docs') + arrowOut)}` : ''}</p>
+      </section>`;
+  };
+
   // Раздел «Загрузка»: все файлы релиза по системам, размер и SHA-256. Ваш файл отмечен.
   const downloadsHTML = app => {
     const all = releasesOf(app);
@@ -2912,6 +2987,7 @@ select.input option { background: var(--surface); color: var(--fg); }
         </section>
       </div>
       ${downloadsHTML(app)}
+      ${agentHTML(app)}
       ${related.length ? `
       <section class="shelf" aria-labelledby="related-title">
         <div class="shelf-head wrap">

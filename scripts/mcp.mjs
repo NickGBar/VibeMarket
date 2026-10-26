@@ -93,11 +93,12 @@ const brief = (app, lang, data) => ({
   replaces: app.replaces,
   page: app.page[lang],
   downloadForThisComputer: downloadableHere(app),
+  worksWithAgents: Boolean(app.agent),
   thirdParty: app.thirdParty,
 });
 const line = b => `- **${b.name}** (id: ${b.id}): ${b.description} ${b.category} · ${b.license} · ★ ${b.stars.toLocaleString('en-US')} · ${b.platforms.join(', ') || 'see page'}`
   + `${b.replaces.length ? ` · replaces ${b.replaces.join(', ')}` : ''}${b.thirdParty ? ' · third-party sandbox app, not vetted' : ''}`
-  + `${b.downloadForThisComputer ? ' · one-click download for this computer' : ''}\n  ${b.page}`;
+  + `${b.worksWithAgents ? ' · works with AI agents: has its own MCP server' : ''}${b.downloadForThisComputer ? ' · one-click download for this computer' : ''}\n  ${b.page}`;
 const reply = (text, structured) => ({ content: [{ type: 'text', text }], ...(structured && { structuredContent: structured }) });
 const failure = text => ({ content: [{ type: 'text', text }], isError: true });
 const list = (title, apps, lang, data) => {
@@ -182,6 +183,22 @@ async function download(args) {
   ].join('\n'), result);
 }
 
+// Как подключить MCP-сервер самого приложения: пусть агент предложит это человеку
+function agentLines(app) {
+  const a = app.agent;
+  if (!a) return [];
+  return [
+    'Works with AI agents: the app has its own MCP server from its authors.',
+    a.warn ? 'Warning: this gives the agent access to the user\'s password vault. Only connect it if the user explicitly wants that.' : '',
+    a.install ? `Install the server: ${a.install}` : '',
+    a.cliFor ? `Needs the ${a.cli.split(' ')[0]} command-line tool from the app's GitHub release (builds exist for ${a.cliFor.map(os => OS_NAMES[os] || os).join(', ')}).` : '',
+    a.claudeCode ? `Connect in Claude Code: ${a.claudeCode}` : a.guide ? `Setup takes a few steps; it starts with: ${a.guide}` : '',
+    a.url ? `Remote server URL: ${a.url}` : '',
+    a.docs ? `Authors' guide: ${a.docs}` : '',
+    'Adding an MCP server changes the user\'s agent configuration: ask before doing it.',
+  ].filter(Boolean);
+}
+
 /* ---------- Инструменты ---------- */
 
 const langProp = { type: 'string', enum: LANGS, description: 'Language of app descriptions: ru, en, es or zh. Default en.' };
@@ -193,15 +210,15 @@ const TOOLS = [
   {
     name: 'search_apps',
     title: 'Search VibeMarket',
-    description: 'Search the VibeMarket catalog of free, open-source apps with no ads or trackers by keywords, category, platform or collection. Categories: dev, design, work, media, privacy, ai, games. Collections: adobe, google, microsoft, subs.',
-    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Keywords, e.g. "photo editor" or "password manager".' }, category: { type: 'string' }, platform: platformProp, collection: { type: 'string' }, lang: langProp, limit: limitProp } },
+    description: 'Search the VibeMarket catalog of free, open-source apps with no ads or trackers by keywords, category, platform or collection. Categories: dev, design, work, media, privacy, ai, games. Collections: adobe, google, microsoft, subs. Set agent to true for apps that ship their own MCP server, so an agent can work inside them.',
+    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Keywords, e.g. "photo editor" or "password manager".' }, category: { type: 'string' }, platform: platformProp, collection: { type: 'string' }, agent: { type: 'boolean', description: 'Only apps with their own MCP server from the authors.' }, lang: langProp, limit: limitProp } },
     annotations: readOnly,
     async run(args) {
       const data = await catalog();
       const lang = langOf(args.lang);
       const terms = termsOf(args.query || '');
       const collection = args.collection && data.collections.find(c => c.id === norm(args.collection));
-      let apps = data.apps.filter(a => (!args.category || a.category === args.category) && onPlatform(a, args.platform) && (!collection || collection.apps.includes(a.id)));
+      let apps = data.apps.filter(a => (!args.category || a.category === args.category) && onPlatform(a, args.platform) && (!collection || collection.apps.includes(a.id)) && (!args.agent || a.agent));
       apps = terms.length
         ? apps.map(a => [a, score(a, terms, data)]).filter(([, s]) => s > 0).sort((x, y) => y[1] - x[1] || y[0].stars - x[0].stars).map(([a]) => a)
         : apps.sort((x, y) => y.stars - x.stars);
@@ -249,6 +266,7 @@ const TOOLS = [
         `Page: ${app.page[lang]}`, `Repository: ${app.links.repo}`, app.links.web ? `Web version: ${app.links.web}` : '', app.links.site ? `Website: ${app.links.site}` : '',
         files.length ? `Files:\n${files.map(f => `- ${f}`).join('\n')}` : 'No ready-made files in GitHub releases.',
         b.downloadForThisComputer ? 'download_app can fetch the right file for this computer.' : '',
+        ...agentLines(app),
       ].filter(Boolean).join('\n');
       return reply(text, { ...b, about: app.about[lang], links: app.links, downloads: app.downloads });
     },

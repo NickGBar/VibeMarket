@@ -133,6 +133,10 @@ Claude Desktop, Cursor and other clients, in the `mcpServers` section of their s
 
 The server runs on your computer, has no dependencies and needs Node.js 22.9 or newer. It reads `apps.json` from the site: the whole catalog in machine-readable form, which anyone can use. `download_app` saves files to the Downloads folder, never overwrites existing files, only accepts links to the app's own GitHub releases and never runs installers: the user installs the app.
 
+### Apps that work with AI agents
+
+Some apps ship their own MCP server from their authors, so an agent can work inside them: the seven ArtCraft apps, draw.io, Excalidraw, Penpot, ComfyUI and Bitwarden. Their cards carry an «AI agent» mark, and the app page shows how to connect the server to Claude Code, with a copy button. Third-party MCP wrappers don't count: their code isn't reviewed by the app's authors. The list lives in `AGENT` in `index.html`, goes to `apps.json`, and `search_apps` with `agent: true` finds these apps.
+
 ## Languages
 
 The site, the GitHub forms and the robot's replies are available in Russian, English, Spanish and Chinese.

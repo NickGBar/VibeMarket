@@ -61,6 +61,7 @@ const APPS = literal('APPS');
 const DETAILS = literal('DETAILS');
 const LINKS = literal('LINKS');
 const REPLACES = literal('REPLACES');
+const AGENT = literal('AGENT');
 // Подборки «Вместо …»: const ADOBE_PICKS = ['photocraft', …]
 const COLLECTIONS = [...html.matchAll(/const ([A-Z]+)_PICKS = (\[[^\]]*\]);/g)].map(m => ({ id: m[1].toLowerCase(), apps: vm.runInNewContext(m[2]) }));
 const RU = JSON.parse(/<script type="application\/json" id="i18n-ru">([\s\S]*?)<\/script>/.exec(html)[1]);
@@ -295,6 +296,11 @@ await write('apps.json', `${JSON.stringify({
     description: perLang(lang => appText(lang, app).desc),
     about: perLang(lang => appText(lang, app).about),
     links: { repo: `https://github.com/${app.repo}`, ...(LINKS[app.id] || {}) },
+    // MCP-сервер самого приложения: команда для Claude Code, адрес или инструкция
+    agent: AGENT[app.id] ? {
+      ...AGENT[app.id],
+      claudeCode: AGENT[app.id].url ? `claude mcp add --transport http ${app.id} ${AGENT[app.id].url}` : AGENT[app.id].cli ? `claude mcp add ${app.id} -- ${AGENT[app.id].cli}` : undefined,
+    } : null,
     downloads: catalog.downloads?.[app.repo] || {},
   })),
 }, null, 1)}\n`);
