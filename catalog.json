@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-26T14:20:50.948Z",
+  "updated": "2026-10-26T15:15:07.055Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -14,70 +14,71 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6718,
-    "ankitects/anki": 32303,
+    "ankitects/anki": 32304,
     "Anuken/Mindustry": 29474,
-    "AppFlowy-IO/AppFlowy": 77787,
+    "AppFlowy-IO/AppFlowy": 77784,
     "audacity/audacity": 18840,
-    "AUTOMATIC1111/stable-diffusion-webui": 165151,
+    "AUTOMATIC1111/stable-diffusion-webui": 165152,
     "bitwarden/clients": 14065,
-    "blender/blender": 21283,
-    "Comfy-Org/ComfyUI": 143151,
-    "ente/ente": 29611,
-    "excalidraw/excalidraw": 134589,
+    "blender/blender": 21285,
+    "Comfy-Org/ComfyUI": 143168,
+    "dbeaver/dbeaver": 52214,
+    "ente/ente": 29613,
+    "excalidraw/excalidraw": 134592,
     "FreeTubeApp/FreeTube": 22149,
-    "ggml-org/llama.cpp": 132418,
+    "ggml-org/llama.cpp": 132422,
     "ggml-org/whisper.cpp": 54685,
-    "GNOME/gimp": 6546,
-    "godotengine/godot": 119107,
+    "GNOME/gimp": 6545,
+    "godotengine/godot": 119106,
     "HandBrake/HandBrake": 24786,
-    "HeliBorg/HeliBoard": 6426,
-    "immich-app/immich": 117287,
-    "ImranR98/Obtainium": 20900,
+    "HeliBorg/HeliBoard": 6429,
+    "immich-app/immich": 117291,
+    "ImranR98/Obtainium": 20901,
     "inkscape/inkscape": 4059,
-    "janhq/jan": 45092,
-    "jellyfin/jellyfin": 58620,
-    "jesseduffield/lazygit": 83427,
+    "janhq/jan": 45093,
+    "jellyfin/jellyfin": 58624,
+    "jesseduffield/lazygit": 83426,
     "jgraph/drawio-desktop": 63660,
     "jitsi/jitsi-meet-electron": 1635,
     "KDE/krita": 10635,
-    "keepassxreboot/keepassxc": 29511,
-    "laurent22/joplin": 56880,
+    "keepassxreboot/keepassxc": 29512,
+    "laurent22/joplin": 56879,
     "LibreOffice/core": 4560,
-    "localsend/localsend": 95726,
+    "localsend/localsend": 95738,
     "logseq/logseq": 45386,
     "luanti-org/luanti": 13775,
     "mattermost/desktop": 2275,
-    "mltframework/shotcut": 15503,
-    "mpv-player/mpv": 37574,
+    "mltframework/shotcut": 15502,
+    "mpv-player/mpv": 37575,
     "mullvad/mullvadvpn-app": 7704,
-    "neovim/neovim": 103174,
+    "neovim/neovim": 103177,
     "nomic-ai/gpt4all": 77356,
-    "notepad-plus-plus/notepad-plus-plus": 29687,
+    "notepad-plus-plus/notepad-plus-plus": 29686,
     "obsproject/obs-studio": 78260,
-    "ollama/ollama": 184848,
+    "ollama/ollama": 184850,
     "OpenTTD/OpenTTD": 8428,
-    "organicmaps/organicmaps": 15779,
-    "penpot/penpot": 61697,
+    "organicmaps/organicmaps": 15780,
+    "penpot/penpot": 61699,
     "PintaProject/Pinta": 4112,
-    "signalapp/Signal-Desktop": 16621,
-    "storytold/designcraft": 4803,
-    "storytold/effectcraft": 7935,
-    "storytold/filmcraft": 16357,
-    "storytold/lightcraft": 14708,
-    "storytold/pdfcraft": 17953,
-    "storytold/photocraft": 73173,
-    "storytold/vectorcraft": 10732,
+    "signalapp/Signal-Desktop": 16622,
+    "storytold/designcraft": 4807,
+    "storytold/effectcraft": 7939,
+    "storytold/filmcraft": 16364,
+    "storytold/lightcraft": 14716,
+    "storytold/pdfcraft": 17959,
+    "storytold/photocraft": 73197,
+    "storytold/vectorcraft": 10735,
     "super-productivity/super-productivity": 23162,
     "supertuxkart/stk-code": 5453,
     "syncthing/syncthing": 89771,
-    "tauri-apps/tauri": 112207,
-    "TeamNewPipe/NewPipe": 40305,
-    "thunderbird/thunderbird-android": 14139,
-    "ungoogled-software/ungoogled-chromium": 28103,
+    "tauri-apps/tauri": 112208,
+    "TeamNewPipe/NewPipe": 40307,
+    "thunderbird/thunderbird-android": 14140,
+    "ungoogled-software/ungoogled-chromium": 28104,
     "videolan/vlc": 20237,
-    "VSCodium/vscodium": 33809,
+    "VSCodium/vscodium": 33810,
     "wesnoth/wesnoth": 6957,
-    "zed-industries/zed": 92219
+    "zed-industries/zed": 92223
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -533,6 +534,125 @@
             "size": 104434277,
             "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-2026.10.1-x86_64.rpm",
             "sha256": "2aa3b7a675432bef75e73f513ba365b055a8c16ec2a42610f019f4b6f7d0a61b"
+          }
+        ]
+      }
+    },
+    "dbeaver/dbeaver": {
+      "mac": {
+        "tag": "26.2.3",
+        "date": "2026-10-18T17:33:40Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "dmg",
+            "name": "dbeaver-ce-26.2.3-macos-x86_64.dmg",
+            "size": 124866395,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-macos-x86_64.dmg",
+            "sha256": "6e36d64c4b347655110e7e368a2c78a1f663e7bf0373d6cb66198a5de069a508"
+          },
+          {
+            "arch": "arm64",
+            "kind": "dmg",
+            "name": "dbeaver-ce-26.2.3-macos-aarch64.dmg",
+            "size": 123509859,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-macos-aarch64.dmg",
+            "sha256": "1e512db149f3bd6d87fbfc47490741f9104bb391556bd128e9bc1a57d283780e"
+          }
+        ]
+      },
+      "win": {
+        "tag": "26.2.3",
+        "date": "2026-10-18T17:33:40Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "dbeaver-ce-26.2.3-windows-x86_64.exe",
+            "size": 113997952,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-x86_64.exe",
+            "sha256": "49d0c6d4ee0ba5acecfb48b9a4d2bd8d5734730154d5b974d8990205edb8e927"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "dbeaver-ce-26.2.3-windows-aarch64.exe",
+            "size": 111637968,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-aarch64.exe",
+            "sha256": "1c92c0f0caf046724570428a6362814c3f32efafed6833e41d0ff979ceaa943f"
+          },
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "dbeaver-ce-26.2.3-windows-x86_64.zip",
+            "size": 125320467,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-x86_64.zip",
+            "sha256": "0edfc68e1efe2cc364b48466d7d94a7e029bca067c4638282bbf104cab546547"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "dbeaver-ce-26.2.3-windows-aarch64.zip",
+            "size": 123007279,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-aarch64.zip",
+            "sha256": "d458948a06478cacddfb04f6dfff46e1e4d68830856e3a912ae82db4a905ac7c"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "26.2.3",
+        "date": "2026-10-18T17:33:40Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "dbeaver-ce-26.2.3-linux-x86_64.deb",
+            "size": 128128776,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-x86_64.deb",
+            "sha256": "66a9d989dc36bdaf71f95e4186efc022399c0dfcfb37e69034038502f2fb3d21"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "dbeaver-ce-26.2.3-linux-aarch64.deb",
+            "size": 127061220,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-aarch64.deb",
+            "sha256": "79daaeee8b64ade4a06505bcc5ea17f22e11bde6a4a366ef208f1c3d3e06b6e2"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "dbeaver-ce-26.2.3-linux-x86_64.rpm",
+            "size": 128213449,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-x86_64.rpm",
+            "sha256": "499f2b80a8fc5044e711116996a31c850236750ba32f99208c57526b3df61320"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "dbeaver-ce-26.2.3-linux-aarch64.rpm",
+            "size": 127151965,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-aarch64.rpm",
+            "sha256": "12bad1814132d5c31df5dce67e798a7cc9a4c0f49304f2b8b2fbdb5102763a67"
+          },
+          {
+            "arch": "x64",
+            "kind": "tar",
+            "name": "dbeaver-ce-26.2.3-linux-x86_64.tar.gz",
+            "size": 128090733,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-x86_64.tar.gz",
+            "sha256": "9322b9b2ccb28a7084ec4dffe991051c0b3e58e64a738cac5b1de02dd1f56641"
+          },
+          {
+            "arch": "arm64",
+            "kind": "tar",
+            "name": "dbeaver-ce-26.2.3-linux-aarch64.tar.gz",
+            "size": 127029189,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-aarch64.tar.gz",
+            "sha256": "e842efef59927986fc73f2964efe9d473c4e2c0fad5620014ec33936214bf11b"
           }
         ]
       }
@@ -4191,7 +4311,27 @@
     }
   },
   "sandbox": [],
-  "picks": [],
+  "picks": [
+    {
+      "id": "dbeaver",
+      "name": "DBeaver",
+      "cat": "dev",
+      "repo": "dbeaver/dbeaver",
+      "lic": "Apache-2.0",
+      "stars": 52214,
+      "glyph": "code",
+      "c": [
+        "#4AA8FF",
+        "#0A5BD6"
+      ],
+      "desc": "Free universal database tool and SQL client",
+      "about": "Free universal database tool and SQL client",
+      "os": "mwl",
+      "issue": 5,
+      "addedAt": "2026-10-26T15:15:07.055Z",
+      "checkedAt": "2026-10-26T15:15:07.055Z"
+    }
+  ],
   "candidates": [],
   "hidden": []
 }
