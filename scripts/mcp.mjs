@@ -268,7 +268,7 @@ const TOOLS = [
         b.downloadForThisComputer ? 'download_app can fetch the right file for this computer.' : '',
         ...agentLines(app),
       ].filter(Boolean).join('\n');
-      return reply(text, { ...b, about: app.about[lang], links: app.links, downloads: app.downloads });
+      return reply(text, { ...b, about: app.about[lang], links: app.links, downloads: app.downloads, screenshots: (app.screenshots || []).map(x => x.url) });
     },
   },
   {

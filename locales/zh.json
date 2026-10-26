@@ -252,6 +252,8 @@
     "detail.facts": "应用概览",
     "detail.shots": "截图",
     "detail.shotsSub": "{name} 界面示意图",
+    "detail.shotsReal": "截图来自 {repo} 仓库",
+    "detail.shotAlt": "{name}：截图 {n}",
     "detail.shotsSubThird": "作者提供的截图",
     "detail.shotsAria": "{name} 的截图",
     "detail.about": "介绍",

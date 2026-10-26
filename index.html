@@ -493,6 +493,18 @@ a.tile:hover .stack-item { background: var(--hover); }
     linear-gradient(160deg, color-mix(in srgb, var(--c1) 35%, #000), color-mix(in srgb, var(--c2) 45%, #000));
 }
 .shot.is-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* Настоящие снимки: одна высота на полку, ширина по пропорциям, на узком экране снимок не шире экрана */
+.track.is-real { --shot-h: 340px; grid-auto-columns: max-content; align-items: start; }
+.shot.is-real {
+  container-type: normal;
+  height: min(var(--shot-h), calc((100vw - 40px) * var(--h) / var(--w)));
+  aspect-ratio: var(--w) / var(--h);
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.shot.is-real img { object-fit: contain; }
+@media (min-width: 720px) { .track.is-real { --shot-h: 380px; } }
+@media (min-width: 1140px) { .track.is-real { --shot-h: 420px; } }
 .shot-cap {
   position: absolute; top: 5.5cqw; left: 6cqw; right: 6cqw; margin: 0;
   font: 700 max(14px, 3.6cqw)/1.15 var(--font-display); letter-spacing: -0.01em;
@@ -1536,6 +1548,8 @@ select.input option { background: var(--surface); color: var(--fg); }
  "detail.facts": "Коротко о приложении",
  "detail.shots": "Скриншоты",
  "detail.shotsSub": "Иллюстрации интерфейса {name}",
+ "detail.shotsReal": "Снимки экрана из репозитория {repo}",
+ "detail.shotAlt": "{name}: снимок экрана {n}",
  "detail.shotsSubThird": "Снимки экрана от автора",
  "detail.shotsAria": "Скриншоты {name}",
  "detail.about": "Описание",
@@ -1712,6 +1726,42 @@ select.input option { background: var(--surface); color: var(--fg); }
   // icon (путь к картинке иконки) и shots: [{ src: 'screens/имя.png', caption: 'Подпись' }].
   // Тексты экранируются при загрузке, а записи с ошибками пропускаются с предупреждением в консоли.
   const SANDBOX = [];
+
+  // Настоящие снимки экрана из репозиториев самих приложений (README и магазинные скриншоты fastlane),
+  // уменьшенные и пережатые в WebP: [файл в screens/, ширина, высота]. Источник — репозиторий приложения,
+  // он подписан над галереей. У приложений без записи остаются иллюстрации интерфейса из DETAILS.
+  const SCREENS = {
+    godot: [['godot-1.webp', 1600, 900]],
+    penpot: [['penpot-1.webp', 1600, 900]],
+    photocraft: [['photocraft-1.webp', 1600, 1000], ['photocraft-2.webp', 1600, 1000], ['photocraft-3.webp', 1600, 1000]],
+    lightcraft: [['lightcraft-1.webp', 1600, 1000], ['lightcraft-2.webp', 1600, 1000], ['lightcraft-3.webp', 1600, 1000]],
+    vectorcraft: [['vectorcraft-1.webp', 1600, 1000], ['vectorcraft-2.webp', 1600, 1000], ['vectorcraft-3.webp', 1600, 1000]],
+    designcraft: [['designcraft-1.webp', 1600, 1000]],
+    joplin: [['joplin-1.webp', 1205, 734], ['joplin-2.webp', 543, 960]],
+    logseq: [['logseq-1.webp', 1442, 818]],
+    appflowy: [['appflowy-1.webp', 1600, 1016], ['appflowy-2.webp', 1600, 1016]],
+    superprod: [['superprod-1.webp', 675, 1200], ['superprod-2.webp', 675, 1200], ['superprod-3.webp', 675, 1200]],
+    pdfcraft: [['pdfcraft-1.webp', 1600, 1000], ['pdfcraft-2.webp', 1600, 1000], ['pdfcraft-3.webp', 1600, 1000]],
+    organicmaps: [['organicmaps-1.webp', 569, 1200], ['organicmaps-2.webp', 569, 1200], ['organicmaps-3.webp', 569, 1200]],
+    jitsi: [['jitsi-1.webp', 592, 712]],
+    mattermost: [['mattermost-1.webp', 1600, 914]],
+    filmcraft: [['filmcraft-1.webp', 1600, 857], ['filmcraft-2.webp', 1600, 1000], ['filmcraft-3.webp', 1600, 1000]],
+    effectcraft: [['effectcraft-1.webp', 1600, 972], ['effectcraft-2.webp', 1600, 972], ['effectcraft-3.webp', 1600, 972]],
+    freetube: [['freetube-1.webp', 1600, 860], ['freetube-2.webp', 1600, 860], ['freetube-3.webp', 1600, 860]],
+    newpipe: [['newpipe-1.webp', 675, 1200], ['newpipe-2.webp', 675, 1200], ['newpipe-3.webp', 675, 1200]],
+    immich: [['immich-1.webp', 1600, 993]],
+    keepassxc: [['keepassxc-1.webp', 1600, 1165], ['keepassxc-2.webp', 1600, 1223], ['keepassxc-3.webp', 1212, 817]],
+    localsend: [['localsend-1.webp', 675, 1200], ['localsend-2.webp', 675, 1200], ['localsend-3.webp', 675, 1200]],
+    enteauth: [['enteauth-1.webp', 1600, 1182]],
+    obtainium: [['obtainium-1.webp', 540, 1200], ['obtainium-2.webp', 540, 1200], ['obtainium-3.webp', 540, 1200]],
+    heliboard: [['heliboard-1.webp', 540, 960], ['heliboard-2.webp', 540, 960], ['heliboard-3.webp', 540, 960]],
+    sdwebui: [['sdwebui-1.webp', 1236, 966]],
+    comfyui: [['comfyui-1.webp', 1590, 795]],
+    llamacpp: [['llamacpp-1.webp', 1600, 1102]],
+    luanti: [['luanti-1.webp', 1600, 940], ['luanti-2.webp', 1367, 832], ['luanti-3.webp', 1280, 653]],
+    shpd: [['shpd-1.webp', 1600, 900], ['shpd-2.webp', 1600, 900], ['shpd-3.webp', 1600, 900]],
+    wesnoth: [['wesnoth-1.webp', 1600, 720], ['wesnoth-2.webp', 1600, 900], ['wesnoth-3.webp', 1600, 900]]
+  };
 
   // Страница приложения. os: m macOS, w Windows, l Linux, a Android, i iOS, b веб.
   // shots: [макет, подпись]. Для настоящего снимка экрана укажите { src: 'screens/имя.png', caption: 'Подпись' }
@@ -2403,6 +2453,11 @@ select.input option { background: var(--surface); color: var(--fg); }
   };
   const shotHTML = (app, shot, i) => {
     if (shot.src) return `<figure class="shot is-image" role="listitem"><img src="${shot.src}" alt="${shot.caption}" loading="lazy" draggable="false"></figure>`;
+    // Настоящий снимок из SCREENS: рамка по пропорциям самого снимка, телефонные стоят вертикально
+    if (Array.isArray(shot) && typeof shot[1] === 'number') {
+      const [file, w, h] = shot;
+      return `<figure class="shot is-image is-real" role="listitem" style="--w:${w};--h:${h}"><img src="${siteURL(`screens/${file}`)}" width="${w}" height="${h}" alt="${esc(t('detail.shotAlt', { name: app.name, n: i + 1 }))}" loading="lazy" decoding="async" draggable="false"></figure>`;
+    }
     const [layout, caption] = shot;
     return `<figure class="shot" role="listitem" style="${appVars(app)}"><figcaption class="shot-cap">${caption}</figcaption>${winHTML(app, layout, `${app.id}:${i}`)}</figure>`;
   };
@@ -2976,6 +3031,8 @@ select.input option { background: var(--surface); color: var(--fg); }
     const ranked = (third ? SANDBOX_APPS.filter(a => a.thirdParty) : mainApps().filter(a => a.cat === app.cat)).filter(visible).sort((a, b) => b.stars - a.stars);
     const related = ranked.filter(a => a !== app);
     const captions = third ? [] : d.shots.map(s => s.caption || s[1]);
+    const screens = third ? [] : SCREENS[app.id] || [];
+    const gallery = screens.length ? screens : d.shots;
     const platforms = [...(d.os || '')].map(c => t(`os.${c}`)).join(', ') || t('info.platformsNone');
     detail.querySelectorAll('.track').forEach(t => tracks.delete(t));
     detail.innerHTML = `
@@ -3002,16 +3059,16 @@ select.input option { background: var(--surface); color: var(--fg); }
         ${fact(t('fact.developer'), owner, `<span class="fact-sub">${t('fact.developerSub')}</span>`, 'is-text')}
         ${fact(t('fact.price'), t('price.zero'), `<span class="fact-sub">${t(third ? 'fact.priceSubSandbox' : 'fact.priceSub')}</span>`)}
       </div>
-      ${d.shots.length ? `
+      ${gallery.length ? `
       <section class="shelf" aria-labelledby="shots-title">
         <div class="shelf-head wrap">
           <div class="shelf-heading">
             <h2 class="shelf-title" id="shots-title">${t('detail.shots')}</h2>
-            <p class="shelf-sub">${third ? t('detail.shotsSubThird') : t('detail.shotsSub', { name: app.name })}</p>
+            <p class="shelf-sub">${third ? t('detail.shotsSubThird') : screens.length ? t('detail.shotsReal', { repo: app.repo }) : t('detail.shotsSub', { name: app.name })}</p>
           </div>
           <div class="shelf-nav" data-nav="shots-track"></div>
         </div>
-        <div class="track is-shots" id="shots-track" role="list" tabindex="0" aria-label="${t('detail.shotsAria', { name: app.name })}">${d.shots.map((s, i) => shotHTML(app, s, i)).join('')}</div>
+        <div class="track is-shots${screens.length ? ' is-real' : ''}" id="shots-track" role="list" tabindex="0" aria-label="${t('detail.shotsAria', { name: app.name })}">${gallery.map((s, i) => shotHTML(app, s, i)).join('')}</div>
       </section>` : ''}
       <div class="d-grid wrap">
         <section class="d-block" aria-labelledby="about-title">

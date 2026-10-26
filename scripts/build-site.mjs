@@ -62,6 +62,9 @@ const DETAILS = literal('DETAILS');
 const LINKS = literal('LINKS');
 const REPLACES = literal('REPLACES');
 const AGENT = literal('AGENT');
+const SCREENS = literal('SCREENS');
+// Снимки экрана приложения абсолютными адресами: для og:image, schema.org, карты сайта и apps.json
+const screensOf = id => (SCREENS[id] || []).map(([file, width, height]) => ({ url: new URL(`screens/${file}`, SITE).href, width, height }));
 // Подборки «Вместо …»: const ADOBE_PICKS = ['photocraft', …]
 const COLLECTIONS = [...html.matchAll(/const ([A-Z]+)_PICKS = (\[[^\]]*\]);/g)].map(m => ({ id: m[1].toLowerCase(), apps: vm.runInNewContext(m[2]) }));
 // Полка «Работают с ИИ-агентом» собирается из списка AGENT
@@ -134,7 +137,7 @@ const translateMarkup = (page, lang) => {
   return markup + page.slice(cut);
 };
 
-const render = ({ lang, rel, url, title, description, alt, jsonLd, detail, noindex, verify }) => {
+const render = ({ lang, rel, url, title, description, alt, jsonLd, detail, noindex, verify, image }) => {
   let page = html.replace('<html lang="ru">', () => `<html lang="${lang || 'ru'}">`);
   page = page.replace(STYLE, () => `<link rel="stylesheet" href="${esc(rel + ASSETS.css.file)}">`);
   page = page.replace(SCRIPT, () => `<script src="${esc(rel + ASSETS.js.file)}"></script>`);
@@ -150,7 +153,12 @@ const render = ({ lang, rel, url, title, description, alt, jsonLd, detail, noind
     `<meta property="og:description" content="${esc(description)}">`,
     `<meta property="og:url" content="${esc(url)}">`,
     `<meta property="og:locale" content="${OG_LOCALE[lang || 'ru']}">`,
-    '<meta name="twitter:card" content="summary">',
+    ...(image ? [
+      `<meta property="og:image" content="${esc(image.url)}">`,
+      `<meta property="og:image:width" content="${image.width}">`,
+      `<meta property="og:image:height" content="${image.height}">`,
+    ] : []),
+    `<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}">`,
     '<meta name="vibemarket:pages" content="1">',
     `<meta name="vibemarket:root" content="${esc(rel)}">`,
     lang ? `<meta name="vibemarket:lang" content="${lang}">` : '',
@@ -245,6 +253,7 @@ for (const lang of LANGS) {
     const text = appText(lang, app);
     const url = pageURL(lang, app.id);
     const lic = /^[A-Za-z0-9.+-]+$/.test(app.lic || '') ? `https://spdx.org/licenses/${app.lic}.html` : undefined;
+    const screens = screensOf(app.id);
     await write(`${lang}/app/${app.id}/index.html`, render({
       lang,
       rel: '../../../',
@@ -253,6 +262,7 @@ for (const lang of LANGS) {
       title: t(lang, 'seo.appTitle', { name: app.name }),
       description: t(lang, 'seo.appDesc', { desc: text.desc, lic: app.lic }),
       detail: detailHTML(lang, app, '../../../'),
+      image: screens[0],
       jsonLd: {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
@@ -263,10 +273,11 @@ for (const lang of LANGS) {
         operatingSystem: text.os.map(c => OS_NAMES[c]).join(', ') || undefined,
         license: lic,
         sameAs: `https://github.com/${app.repo}`,
+        screenshot: screens.length ? screens.map(x => x.url) : undefined,
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       },
     }));
-    urls.push({ loc: url, alt: alternates(app.id) });
+    urls.push({ loc: url, alt: alternates(app.id), images: screens.map(x => x.url) });
   }
 }
 
@@ -304,16 +315,18 @@ await write('apps.json', `${JSON.stringify({
       claudeCode: AGENT[app.id].url ? `claude mcp add --transport http ${app.id} ${AGENT[app.id].url}` : AGENT[app.id].cli ? `claude mcp add ${app.id} -- ${AGENT[app.id].cli}` : undefined,
     } : null,
     downloads: catalog.downloads?.[app.repo] || {},
+    // Снимки экрана из репозитория приложения; пусто, если у приложения есть только иллюстрации
+    screenshots: screensOf(app.id),
   })),
 }, null, 1)}\n`);
 
 const lastmod = (catalog.updated || new Date().toISOString()).slice(0, 10);
 await write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.map(u => `  <url>
     <loc>${esc(u.loc)}</loc>
     <lastmod>${lastmod}</lastmod>
-${u.alt.map(([hl, href]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href="${esc(href)}"/>`).join('\n')}
+${u.alt.map(([hl, href]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href="${esc(href)}"/>`).join('\n')}${(u.images || []).map(src => `\n    <image:image><image:loc>${esc(src)}</image:loc></image:image>`).join('')}
   </url>`).join('\n')}
 </urlset>
 `);

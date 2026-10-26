@@ -270,6 +270,8 @@
     "detail.facts": "La app en resumen",
     "detail.shots": "Capturas de pantalla",
     "detail.shotsSub": "Ilustraciones de la interfaz de {name}",
+    "detail.shotsReal": "Capturas de pantalla del repositorio {repo}",
+    "detail.shotAlt": "{name}: captura de pantalla {n}",
     "detail.shotsSubThird": "Capturas del autor",
     "detail.shotsAria": "Capturas de {name}",
     "detail.about": "Descripción",

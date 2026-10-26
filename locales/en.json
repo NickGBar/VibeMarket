@@ -261,6 +261,8 @@
     "detail.facts": "App at a glance",
     "detail.shots": "Screenshots",
     "detail.shotsSub": "Illustrations of the {name} interface",
+    "detail.shotsReal": "Screenshots from the {repo} repository",
+    "detail.shotAlt": "{name}: screenshot {n}",
     "detail.shotsSubThird": "Screenshots from the author",
     "detail.shotsAria": "{name} screenshots",
     "detail.about": "Description",
