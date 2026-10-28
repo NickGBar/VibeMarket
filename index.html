@@ -125,6 +125,12 @@ button { font: inherit; color: inherit; }
   position: relative;
 }
 .chips::-webkit-scrollbar { display: none; }
+/* Где лента прокручивается, правый край тает: видно, что дальше есть ещё разделы */
+.chips.has-more { -webkit-mask-image: linear-gradient(to left, transparent, #000 56px); mask-image: linear-gradient(to left, transparent, #000 56px); }
+/* С мышью на широком экране все разделы видны сразу: чипы переносятся в пределах колонки, без скрытой прокрутки */
+@media (hover: hover) and (pointer: fine) and (min-width: 720px) {
+  .chips { flex-wrap: wrap; overflow-x: visible; }
+}
 .chip {
   flex: none; height: 32px; padding: 0 15px; border: 0; border-radius: 999px;
   background: var(--surface); color: var(--fg);
@@ -2849,6 +2855,17 @@ select.input option { background: var(--surface); color: var(--fg); }
   const chips = document.getElementById('chips');
   const root = document.documentElement;
   new ResizeObserver(() => root.style.setProperty('--header-h', bar.offsetHeight + 'px')).observe(bar);
+  // Лента чипов, если не помещается: тень у правого края и прокрутка колесом мыши
+  const chipsMore = () => chips.classList.toggle('has-more', chips.scrollLeft + chips.clientWidth < chips.scrollWidth - 4);
+  chips.addEventListener('scroll', chipsMore, { passive: true });
+  new ResizeObserver(chipsMore).observe(chips);
+  chips.addEventListener('wheel', e => {
+    if (chips.scrollWidth <= chips.clientWidth || Math.abs(e.deltaX) >= Math.abs(e.deltaY)) return;
+    // у края ленты колесо снова прокручивает страницу
+    if (e.deltaY < 0 ? chips.scrollLeft <= 0 : chips.scrollLeft + chips.clientWidth >= chips.scrollWidth - 1) return;
+    e.preventDefault();
+    chips.scrollLeft += e.deltaY;
+  }, { passive: false });
 
   const sectionIds = ['today', 'top', 'fresh', 'adobe', 'google', 'microsoft', 'subs', 'agents', 'mine', ...CATS.map(c => c.id), 'sandbox'];
   let lockUntil = 0;
