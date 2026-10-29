@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-29T11:03:18.589Z",
+  "updated": "2026-10-29T11:04:30.375Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -13,7 +13,7 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6731,
+    "00-Evan/shattered-pixel-dungeon": 6729,
     "ankitects/anki": 32377,
     "Anuken/Mindustry": 29514,
     "AppFlowy-IO/AppFlowy": 77919,
