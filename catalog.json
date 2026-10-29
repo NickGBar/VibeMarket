@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-29T11:05:24.595Z",
+  "updated": "2026-10-29T11:06:39.285Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -15,7 +15,7 @@
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6729,
     "ankitects/anki": 32377,
-    "Anuken/Mindustry": 29514,
+    "Anuken/Mindustry": 29515,
     "AppFlowy-IO/AppFlowy": 77919,
     "audacity/audacity": 18871,
     "AUTOMATIC1111/stable-diffusion-webui": 165175,
@@ -35,7 +35,7 @@
     "immich-app/immich": 117564,
     "ImranR98/Obtainium": 20998,
     "inkscape/inkscape": 4067,
-    "janhq/jan": 45133,
+    "janhq/jan": 45134,
     "jellyfin/jellyfin": 58772,
     "jesseduffield/lazygit": 83496,
     "jgraph/drawio-desktop": 63708,
@@ -57,7 +57,7 @@
     "obsproject/obs-studio": 78549,
     "ollama/ollama": 185194,
     "OpenTTD/OpenTTD": 8436,
-    "organicmaps/organicmaps": 15806,
+    "organicmaps/organicmaps": 15807,
     "penpot/penpot": 61824,
     "PintaProject/Pinta": 4114,
     "signalapp/Signal-Desktop": 16634,
@@ -66,7 +66,7 @@
     "storytold/filmcraft": 16785,
     "storytold/lightcraft": 15013,
     "storytold/pdfcraft": 18543,
-    "storytold/photocraft": 74613,
+    "storytold/photocraft": 74614,
     "storytold/vectorcraft": 10964,
     "super-productivity/super-productivity": 23246,
     "supertuxkart/stk-code": 5456,
