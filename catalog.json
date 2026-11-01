@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T18:46:34.317Z",
+  "updated": "2026-11-01T18:47:37.876Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -44,7 +44,7 @@
     "keepassxreboot/keepassxc": 29673,
     "laurent22/joplin": 56978,
     "LibreOffice/core": 4590,
-    "localsend/localsend": 96938,
+    "localsend/localsend": 96939,
     "logseq/logseq": 45444,
     "luanti-org/luanti": 13803,
     "mattermost/desktop": 2281,
@@ -63,7 +63,7 @@
     "signalapp/Signal-Desktop": 16643,
     "storytold/designcraft": 5005,
     "storytold/effectcraft": 8299,
-    "storytold/filmcraft": 17187,
+    "storytold/filmcraft": 17188,
     "storytold/lightcraft": 15241,
     "storytold/pdfcraft": 19049,
     "storytold/photocraft": 75813,
