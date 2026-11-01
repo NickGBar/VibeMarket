@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T02:17:25.426Z",
+  "updated": "2026-11-01T10:34:29.833Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 10,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6745,
-    "ankitects/anki": 32437,
-    "Anuken/Mindustry": 29556,
-    "AppFlowy-IO/AppFlowy": 78047,
-    "audacity/audacity": 18898,
-    "AUTOMATIC1111/stable-diffusion-webui": 165207,
-    "bitwarden/clients": 14122,
-    "blender/blender": 21485,
-    "Comfy-Org/ComfyUI": 144368,
-    "dbeaver/dbeaver": 52255,
-    "ente/ente": 29798,
-    "excalidraw/excalidraw": 134940,
-    "FreeTubeApp/FreeTube": 22278,
-    "ggml-org/llama.cpp": 132995,
-    "ggml-org/whisper.cpp": 54830,
-    "GNOME/gimp": 6559,
-    "godotengine/godot": 119360,
-    "HandBrake/HandBrake": 24838,
-    "HeliBorg/HeliBoard": 6468,
-    "immich-app/immich": 117834,
-    "ImranR98/Obtainium": 21092,
-    "inkscape/inkscape": 4075,
-    "janhq/jan": 45207,
-    "jellyfin/jellyfin": 58875,
-    "jesseduffield/lazygit": 83571,
-    "jgraph/drawio-desktop": 63732,
+    "00-Evan/shattered-pixel-dungeon": 6746,
+    "ankitects/anki": 32443,
+    "Anuken/Mindustry": 29557,
+    "AppFlowy-IO/AppFlowy": 78063,
+    "audacity/audacity": 18900,
+    "AUTOMATIC1111/stable-diffusion-webui": 165209,
+    "bitwarden/clients": 14124,
+    "blender/blender": 21491,
+    "Comfy-Org/ComfyUI": 144413,
+    "dbeaver/dbeaver": 52258,
+    "ente/ente": 29807,
+    "excalidraw/excalidraw": 134962,
+    "FreeTubeApp/FreeTube": 22283,
+    "ggml-org/llama.cpp": 133033,
+    "ggml-org/whisper.cpp": 54832,
+    "GNOME/gimp": 6558,
+    "godotengine/godot": 119376,
+    "HandBrake/HandBrake": 24841,
+    "HeliBorg/HeliBoard": 6470,
+    "immich-app/immich": 117854,
+    "ImranR98/Obtainium": 21106,
+    "inkscape/inkscape": 4074,
+    "janhq/jan": 45210,
+    "jellyfin/jellyfin": 58886,
+    "jesseduffield/lazygit": 83580,
+    "jgraph/drawio-desktop": 63740,
     "jitsi/jitsi-meet-electron": 1635,
-    "KDE/krita": 10671,
-    "keepassxreboot/keepassxc": 29648,
-    "laurent22/joplin": 56964,
-    "LibreOffice/core": 4584,
-    "localsend/localsend": 96837,
-    "logseq/logseq": 45437,
-    "luanti-org/luanti": 13803,
+    "KDE/krita": 10673,
+    "keepassxreboot/keepassxc": 29660,
+    "laurent22/joplin": 56969,
+    "LibreOffice/core": 4587,
+    "localsend/localsend": 96889,
+    "logseq/logseq": 45441,
+    "luanti-org/luanti": 13802,
     "mattermost/desktop": 2281,
-    "mltframework/shotcut": 15545,
-    "mpv-player/mpv": 37649,
-    "mullvad/mullvadvpn-app": 7729,
-    "neovim/neovim": 103271,
+    "mltframework/shotcut": 15553,
+    "mpv-player/mpv": 37653,
+    "mullvad/mullvadvpn-app": 7733,
+    "neovim/neovim": 103278,
     "nomic-ai/gpt4all": 77341,
-    "notepad-plus-plus/notepad-plus-plus": 29746,
-    "obsproject/obs-studio": 78713,
-    "ollama/ollama": 185486,
-    "OpenTTD/OpenTTD": 8445,
-    "organicmaps/organicmaps": 15836,
-    "penpot/penpot": 61934,
+    "notepad-plus-plus/notepad-plus-plus": 29750,
+    "obsproject/obs-studio": 78735,
+    "ollama/ollama": 185527,
+    "OpenTTD/OpenTTD": 8446,
+    "organicmaps/organicmaps": 15841,
+    "penpot/penpot": 61948,
     "PintaProject/Pinta": 4120,
-    "signalapp/Signal-Desktop": 16640,
-    "storytold/designcraft": 4987,
-    "storytold/effectcraft": 8277,
-    "storytold/filmcraft": 17090,
-    "storytold/lightcraft": 15190,
-    "storytold/pdfcraft": 18946,
-    "storytold/photocraft": 75582,
-    "storytold/vectorcraft": 11133,
-    "super-productivity/super-productivity": 23307,
+    "signalapp/Signal-Desktop": 16643,
+    "storytold/designcraft": 4992,
+    "storytold/effectcraft": 8284,
+    "storytold/filmcraft": 17125,
+    "storytold/lightcraft": 15208,
+    "storytold/pdfcraft": 18988,
+    "storytold/photocraft": 75671,
+    "storytold/vectorcraft": 11147,
+    "super-productivity/super-productivity": 23318,
     "supertuxkart/stk-code": 5461,
-    "syncthing/syncthing": 89952,
-    "tauri-apps/tauri": 112381,
-    "TeamNewPipe/NewPipe": 40384,
-    "thunderbird/thunderbird-android": 14168,
-    "ungoogled-software/ungoogled-chromium": 28153,
-    "videolan/vlc": 20282,
-    "VSCodium/vscodium": 33903,
-    "wesnoth/wesnoth": 6970,
-    "zed-industries/zed": 92466
+    "syncthing/syncthing": 89964,
+    "tauri-apps/tauri": 112396,
+    "TeamNewPipe/NewPipe": 40387,
+    "thunderbird/thunderbird-android": 14167,
+    "ungoogled-software/ungoogled-chromium": 28151,
+    "videolan/vlc": 20286,
+    "VSCodium/vscodium": 33910,
+    "wesnoth/wesnoth": 6968,
+    "zed-industries/zed": 92477
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -1103,57 +1103,57 @@
     },
     "ImranR98/Obtainium": {
       "android": {
-        "tag": "v1.7.3",
-        "date": "2026-10-25T02:16:13Z",
-        "page": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.3",
+        "tag": "v1.7.4",
+        "date": "2026-11-01T06:51:24Z",
+        "page": "https://github.com/ImranR98/Obtainium/releases/tag/v1.7.4",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
             "name": "app-release.apk",
-            "size": 93924789,
-            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-release.apk",
-            "sha256": "aa2c58d559d244a1c409c5624fc3703ef7f7fa44a83f5957ea1d7b4a1a691dcf"
+            "size": 94182837,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-release.apk",
+            "sha256": "7f6b01c55a9ae140c336200be4a8941e7c654d77f68cae5ff6937d49e1ec83a2"
           },
           {
             "arch": "x64",
             "kind": "apk",
             "name": "app-x86_64-release.apk",
-            "size": 36858527,
-            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-x86_64-release.apk",
-            "sha256": "678bb84c6019775e1b318cdef18e5e13764379b431e45f25fa2ffde5650e5f8e"
+            "size": 36936351,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-x86_64-release.apk",
+            "sha256": "f4e0ba24f2ba7b49d7268a8f7b47b9c233afd864d1e5214f709e6e2ae30a7580"
           },
           {
             "arch": "arm64",
             "kind": "apk",
             "name": "app-arm64-v8a-release.apk",
-            "size": 34532014,
-            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-arm64-v8a-release.apk",
-            "sha256": "3a3caf4611b32fa665cd5d19a4b593c6b8678a3ceb69981a0e5c2253b3dc8f30"
+            "size": 34609838,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-arm64-v8a-release.apk",
+            "sha256": "f9216f721a7713b75929e0806bc18586f8fcf7328fbbff99b6aef1debb9eef80"
           },
           {
             "arch": "any",
             "kind": "apk",
             "name": "app-fdroid-release.apk",
-            "size": 93924789,
-            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-fdroid-release.apk",
-            "sha256": "c6984c55b04be0d14132bc94c9354c644d2f4b7338afffc5c8792bbf97edf196"
+            "size": 94166453,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-fdroid-release.apk",
+            "sha256": "43cdf84e666e60e83b3378784fa808a53801d3f06d00ef569bfe864c37fb131d"
           },
           {
             "arch": "x64",
             "kind": "apk",
             "name": "app-x86_64-fdroid-release.apk",
-            "size": 36858527,
-            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-x86_64-fdroid-release.apk",
-            "sha256": "95e3894a345a4f9abaa7cec47e5df0f88e5f0c81e6027f8f2c6b4c92ccb39060"
+            "size": 36936351,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-x86_64-fdroid-release.apk",
+            "sha256": "31790e756ef1c30ddd8a816d87b3255e20e126fd0a32394ef6971b8730411fb5"
           },
           {
             "arch": "arm64",
             "kind": "apk",
             "name": "app-arm64-v8a-fdroid-release.apk",
-            "size": 34532014,
-            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.3/app-arm64-v8a-fdroid-release.apk",
-            "sha256": "afd28d1ecf7a5fa462517d22007f4b2a3be062bd80193dadfc1f93d2d8824b14"
+            "size": 34609838,
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.7.4/app-arm64-v8a-fdroid-release.apk",
+            "sha256": "fe6fdfec826f50cd565e5480ae051cc5883fc65ab2ec89f3b6fd949f2e8d6e1f"
           }
         ]
       }
@@ -1941,6 +1941,29 @@
       }
     },
     "luanti-org/luanti": {
+      "mac": {
+        "tag": "5.18.0",
+        "date": "2026-10-29T20:09:02Z",
+        "page": "https://github.com/luanti-org/luanti/releases/tag/5.18.0",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "zip",
+            "name": "luanti_5.18.0_macos12.3_x86_64.zip",
+            "size": 14346225,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.18.0/luanti_5.18.0_macos12.3_x86_64.zip",
+            "sha256": "e5aad530f69de1dfdb92c4bd236af297037425be26db6ebb4f76a89fcd3fa20f"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "luanti_5.18.0_macos12.3_arm64.zip",
+            "size": 13692857,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.18.0/luanti_5.18.0_macos12.3_arm64.zip",
+            "sha256": "789614c1f02d94ba0352b4ada54f38185aa0ea466f26d2266bc027e78c265c77"
+          }
+        ]
+      },
       "win": {
         "tag": "5.18.0",
         "date": "2026-10-29T20:09:02Z",
@@ -1969,29 +1992,6 @@
             "size": 17634089,
             "url": "https://github.com/luanti-org/luanti/releases/download/5.18.0/luanti-5.18.0-win64.zip",
             "sha256": "bebce52b58555d8208bf16767d0717788479fef23c35ec8d7bf287774d641835"
-          }
-        ]
-      },
-      "mac": {
-        "tag": "5.17.0",
-        "date": "2026-08-20T17:45:51Z",
-        "page": "https://github.com/luanti-org/luanti/releases/tag/5.17.0",
-        "files": [
-          {
-            "arch": "x64",
-            "kind": "zip",
-            "name": "luanti_5.17.0_macos12.3_x86_64.zip",
-            "size": 14265525,
-            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti_5.17.0_macos12.3_x86_64.zip",
-            "sha256": "deb7c09b4425a95203ed6729949ca3c35e565e7771be896f6bd2b9ad52241de7"
-          },
-          {
-            "arch": "arm64",
-            "kind": "zip",
-            "name": "luanti_5.17.0_macos12.3_arm64.zip",
-            "size": 13619805,
-            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti_5.17.0_macos12.3_arm64.zip",
-            "sha256": "0ba118b537d3cc6fd07cd2268fef25e515fc6d87c27ad69b476144a8e28dba3c"
           }
         ]
       },
@@ -4318,7 +4318,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52255,
+      "stars": 52258,
       "glyph": "code",
       "c": [
         "#4AA8FF",
@@ -4329,7 +4329,7 @@
       "os": "mwl",
       "issue": 5,
       "addedAt": "2026-10-26T15:15:07.055Z",
-      "checkedAt": "2026-10-31T07:02:16.187Z"
+      "checkedAt": "2026-11-01T10:34:29.833Z"
     }
   ],
   "candidates": [],
