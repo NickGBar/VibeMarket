@@ -207,7 +207,7 @@ function repoProblems(f) {
   if (f.missing) return out;
   if (f.fork && !rules.repo.allowForks) out.push(['fork']);
   if (rules.repo.requireTopic && !f.topics.includes(rules.repo.requireTopic)) out.push(['topic', { topic: rules.repo.requireTopic }]);
-  if (age(f.createdAt) < rules.repo.minAgeDays) out.push(['age', { days: rules.repo.minAgeDays }]);
+  if (age(f.createdAt) < rules.repo.minAgeDays) out.push(['age', { days: rules.repo.minAgeDays, from: new Date(f.createdAt).getTime() + rules.repo.minAgeDays * DAY }]);
   if (!f.release) out.push(['release']);
   return out;
 }
@@ -280,7 +280,9 @@ const problemList = (lang, problems) => [msg(lang, 'invalid'), '', ...render(lan
 async function review(issue, ctx) {
   const { comment, meta } = await robotComment(issue);
   const print = fingerprint(issue);
-  if (meta?.print === print) return meta;
+  const sameText = meta?.print === print;
+  // Отклонённую заявку проверяем каждый проход: тема, лицензия, релиз и возраст меняются в репозитории, а не в её тексте
+  if (sameText && meta.status !== 'invalid') return meta;
   const { problems, app, lang } = await checkSubmission(issue, ctx);
   if (problems.length) {
     const next = { status: 'invalid', print, lang };
@@ -292,6 +294,8 @@ async function review(issue, ctx) {
   const next = { status: 'candidate', print, lang, repo: app.repo, since: keep ? meta.since : NOW.toISOString() };
   await setLabels(issue, ['candidate'], ['invalid']);
   await writeComment(issue, comment, candidateText(next), next);
+  // Правка комментария не приходит автору уведомлением, а голосование уже идёт
+  if (sameText) await change(`#${issue.number}: уведомить автора`, () => gh(`/repos/${HOME}/issues/${issue.number}/comments`, { method: 'POST', body: { body: msg(lang, 'recheckPassed', { author: issue.user.login }) } }));
   return next;
 }
 

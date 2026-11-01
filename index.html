@@ -1383,7 +1383,7 @@ select.input option { background: var(--surface); color: var(--fg); }
  "sandbox.noticeText": "Их публикуют сами авторы, а не VibeMarket. Мы не проверяем приложения из песочницы и не несём ответственности за их работу, безопасность и содержание. Перед установкой посмотрите исходный код и автора. Устанавливайте на свой риск.",
  "sandbox.published": "Опубликованные",
  "rules.title": "Как попасть в песочницу",
- "rules.step1": "Приложение бесплатное, с открытой лицензией и хотя бы одним релизом на GitHub. Добавьте репозиторию тему «{topic}».",
+ "rules.step1": "Приложение бесплатное, с открытой лицензией и хотя бы одним релизом на GitHub, а репозиторию не меньше {age}. Добавьте ему тему «{topic}».",
  "rules.step2": "Заполните форму: заявка откроется на GitHub, робот проверит её за несколько минут.",
  "rules.step3": "Сообщество голосует 👍 под заявкой {days}. Учитываются аккаунты GitHub {older}.",
  "rules.step4": {
@@ -3385,12 +3385,12 @@ select.input option { background: var(--surface); color: var(--fg); }
   renderMcpTile();
   const issueTemplate = base => `${base}${lang === 'ru' ? '' : `-${lang}`}.yml`;
   const reportURL = app => `https://github.com/${HOME_REPO}/issues/new?${new URLSearchParams({ template: issueTemplate('report-app'), title: t('detail.reportTitle', { name: plainName(app) }), repo: app.repo })}`;
-  const RULES = { votesNeeded: 10, voteDays: 7, downvoteWeight: 2, voterMinAgeDays: 90, topic: 'vibemarket' };
+  const RULES = { minAgeDays: 7, votesNeeded: 3, voteDays: 14, downvoteWeight: 2, voterMinAgeDays: 90, topic: 'vibemarket' };
   let candidates = [];
 
   const renderRules = () => {
     document.getElementById('rules-steps').innerHTML = [
-      t('rules.step1', { topic: esc(RULES.topic) }),
+      t('rules.step1', { topic: esc(RULES.topic), age: t('unit.days', { n: RULES.minAgeDays }) }),
       t('rules.step2'),
       t('rules.step3', { days: t('unit.days', { n: RULES.voteDays }), older: t('unit.olderThan', { n: RULES.voterMinAgeDays }) }),
       t('rules.step4', { n: RULES.votesNeeded }),

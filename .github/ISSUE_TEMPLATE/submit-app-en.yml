@@ -8,7 +8,7 @@ body:
       value: |
         The robot checks the submission within a few minutes and replies with a comment. If everything is fine, voting starts: the community adds 👍 to this submission, and once it gets enough votes the app appears in the sandbox on its own. The thresholds are in [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json).
 
-        Before submitting, add the `vibemarket` topic to your repository and publish at least one release.
+        Before submitting, check your repository: it is at least 7 days old, has an open license, the `vibemarket` topic and at least one release.
   - type: input
     id: repo
     attributes:

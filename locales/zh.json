@@ -102,7 +102,7 @@
     "sandbox.noticeText": "它们由作者自行发布，而不是 VibeMarket。我们不审查沙盒中的应用，也不对其运行、安全和内容负责。安装前请查看源代码和作者。安装风险自负。",
     "sandbox.published": "已发布",
     "rules.title": "如何进入沙盒",
-    "rules.step1": "应用免费，采用开源许可证，并在 GitHub 上至少有一个版本发布。为仓库添加主题“{topic}”。",
+    "rules.step1": "应用免费，采用开源许可证，在 GitHub 上至少有一个版本发布，且仓库创建至少 {age}。为仓库添加主题“{topic}”。",
     "rules.step2": "填写表单：申请会在 GitHub 上打开，机器人会在几分钟内完成检查。",
     "rules.step3": "社区在申请下用 👍 投票，为期 {days}。只统计{older}的 GitHub 账号。",
     "rules.step4": {

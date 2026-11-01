@@ -8,7 +8,7 @@ body:
       value: |
         El robot revisará la solicitud en pocos minutos y responderá con un comentario. Si todo está bien, empieza la votación: la comunidad pone 👍 en esta solicitud y, con los votos necesarios, la app aparece sola en el sandbox. Los umbrales están en [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json).
 
-        Antes de enviar, añade el tema `vibemarket` a tu repositorio y publica al menos una release.
+        Antes de enviar, comprueba tu repositorio: tiene al menos 7 días, una licencia abierta, el tema `vibemarket` y al menos una release.
   - type: input
     id: repo
     attributes:

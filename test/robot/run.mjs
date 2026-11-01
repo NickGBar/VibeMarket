@@ -18,6 +18,12 @@ const T0 = Date.parse(process.env.T0);
 const SITE = mkdtempSync(join(tmpdir(), 'vibemarket-robot-'));
 for (const file of ['index.html', 'rules.json', 'scripts', 'locales']) cpSync(join(REPO, file), join(SITE, file), { recursive: true });
 writeFileSync(join(SITE, 'catalog.json'), '{ "version": 1, "sandbox": [] }\n');
+// Сценарий считает голоса и дни по своим порогам и не зависит от текущих значений в rules.json
+const realRules = JSON.parse(readFileSync(join(REPO, 'rules.json'), 'utf8'));
+const testRules = structuredClone(realRules);
+testRules.repo.minAgeDays = 30;
+Object.assign(testRules.voting, { days: 7, votesNeeded: 10 });
+writeFileSync(join(SITE, 'rules.json'), JSON.stringify(testRules));
 
 const mock = spawn('node', [`${DIR}mock.mjs`], { env: { ...process.env, MOCK_PORT: String(PORT) }, stdio: ['ignore', 'pipe', 'inherit'] });
 await new Promise((resolve, reject) => {
@@ -202,6 +208,35 @@ await post('/__label', { issue: notes.number, name: 'blocked' });
 tick(at(17 * 24 + 4));
 c = catalog();
 check('находка снята по метке blocked', !(c.picks || []).length, JSON.stringify(c.picks));
+
+console.log('== Проход 13: автор исправляет репозиторий, не трогая заявку');
+await post('/__issue', { number: 50, login: 'bob', title: 'Заявка: Bad', form: { repo: 'bob/bad', name: 'Bad App', category: 'work', desc: 'Приложение для проверки робота' } });
+tick(at(17 * 24 + 5));
+s = await state();
+check('#50 отклонена, названа дата и обещана перепроверка', labels(s, 50) === 'invalid,submission' && /Условие выполнится .*\d/.test(robotText(s, 50)) && robotText(s, 50).includes('закрывать заявку не нужно'), robotText(s, 50));
+const firstText = robotText(s, 50);
+tick(at(17 * 24 + 6));
+s = await state();
+check('без изменений комментарий не переписан', robotText(s, 50) === firstText && (s.comments[50] || []).length === 1);
+await post('/__repo', { repo: 'bob/bad', patch: { topics: ['vibemarket'], license: { spdx_id: 'MIT' }, release: true } });
+tick(at(17 * 24 + 7));
+s = await state();
+check('#50 исправленное убрано из отказа без правки заявки', labels(s, 50) === 'invalid,submission' && !robotText(s, 50).includes('тему (topic)') && robotText(s, 50).includes('Условие выполнится') && (s.comments[50] || []).length === 1, robotText(s, 50));
+await post('/__repo', { repo: 'bob/bad', patch: { created_at: new Date(T0 - 100 * 24 * 3600e3).toISOString() } });
+tick(at(17 * 24 + 8));
+s = await state();
+check('#50 стала кандидатом, автор получил уведомление', labels(s, 50) === 'candidate,submission' && (s.comments[50] || []).length === 2 && robotText(s, 50).includes('@bob'), robotText(s, 50));
+tick(at(17 * 24 + 9));
+s = await state();
+check('уведомление не повторяется', (s.comments[50] || []).length === 2);
+
+console.log('== Пороги на сайте и в формах совпадают с rules.json');
+const page = readFileSync(join(REPO, 'index.html'), 'utf8');
+const pageRules = /const RULES = \{([^}]*)\}/.exec(page)[1];
+check('RULES в index.html', pageRules.includes(`minAgeDays: ${realRules.repo.minAgeDays},`) && pageRules.includes(`votesNeeded: ${realRules.voting.votesNeeded},`) && pageRules.includes(`voteDays: ${realRules.voting.days},`), pageRules);
+for (const lang of ['', '-en', '-es', '-zh']) {
+  check(`форма submit-app${lang} называет возраст`, readFileSync(join(REPO, `.github/ISSUE_TEMPLATE/submit-app${lang}.yml`), 'utf8').includes(`${realRules.repo.minAgeDays} `));
+}
 
 console.log(failures ? `\nПровалено проверок: ${failures}` : '\nВсе проверки пройдены');
 finish(failures ? 1 : 0);

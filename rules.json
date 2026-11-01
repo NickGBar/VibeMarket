@@ -1,6 +1,6 @@
 {
   "repo": {
-    "minAgeDays": 30,
+    "minAgeDays": 7,
     "requireRelease": true,
     "requireTopic": "vibemarket",
     "allowForks": false,
@@ -10,8 +10,8 @@
     ]
   },
   "voting": {
-    "days": 7,
-    "votesNeeded": 10,
+    "days": 14,
+    "votesNeeded": 3,
     "downvoteWeight": 2,
     "voterMinAgeDays": 90
   },

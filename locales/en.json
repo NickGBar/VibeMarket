@@ -104,7 +104,7 @@
     "sandbox.noticeText": "Their authors publish them, not VibeMarket. We don't review sandbox apps and aren't responsible for how they work, their security or their content. Check the source code and the author before installing. Install at your own risk.",
     "sandbox.published": "Published",
     "rules.title": "How to get into the sandbox",
-    "rules.step1": "The app is free, has an open license and at least one release on GitHub. Add the «{topic}» topic to the repository.",
+    "rules.step1": "The app is free, has an open license and at least one release on GitHub, and the repository is at least {age} old. Add the «{topic}» topic to it.",
     "rules.step2": "Fill in the form: the submission opens on GitHub, and the robot checks it within a few minutes.",
     "rules.step3": "The community votes 👍 on the submission for {days}. Only GitHub accounts {older} count.",
     "rules.step4": {

@@ -8,7 +8,7 @@ body:
       value: |
         机器人会在几分钟内检查申请，并以评论回复。如果一切正常，投票就会开始：社区成员在这份申请下点 👍，票数足够后应用会自动出现在沙盒中。具体门槛见 [rules.json](https://github.com/NickGBar/VibeMarket/blob/main/rules.json)。
 
-        提交前，请为你的仓库添加主题 `vibemarket`，并至少发布一个版本。
+        提交前，请检查你的仓库：创建至少 7 天，采用开源许可证，带有主题 `vibemarket`，并至少发布一个版本。
   - type: input
     id: repo
     attributes:

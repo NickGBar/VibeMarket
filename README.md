@@ -35,8 +35,8 @@ The market runs without a server and without day-to-day moderators. The site is 
 
 1. The author adds the `vibemarket` topic to their repository and publishes a release. Only people with rights to a repository can set its topics, so nobody can submit someone else's project.
 2. In the Sandbox section the author clicks «Submit an app» and fills in the form. It opens an already filled-in submission on GitHub in the site's language; the author ticks three confirmations and submits it.
-3. The robot checks the submission within a few minutes and replies with a comment in the language of the form. If something is wrong, the author edits the submission and the robot checks it again.
-4. The community votes 👍 or 👎 on the submission. Voting lasts 7 days, and while it's open the submission is shown on the site's «Voting now» shelf.
+3. The robot checks the submission within a few minutes and replies with a comment in the language of the form. If something is wrong, the author fixes the submission or the repository. The robot rechecks open submissions about once an hour, and when a repository is too young it names the date the condition will be met.
+4. The community votes 👍 or 👎 on the submission. Voting lasts 14 days, and while it's open the submission is shown on the site's «Voting now» shelf.
 5. If there are enough votes, the robot adds the app to the sandbox, closes the submission and republishes the site.
 6. After 90 days, an app with 500 stars and no reports is moved to its regular category on the main page. It keeps its «Third-party» badge.
 
@@ -46,13 +46,13 @@ All numbers come from `rules.json`.
 
 | Key | Meaning | Current value |
 | --- | --- | --- |
-| `repo.minAgeDays` | Minimum repository age, days | 30 |
+| `repo.minAgeDays` | Minimum repository age, days | 7 |
 | `repo.requireRelease` | At least one release is required | yes |
 | `repo.requireTopic` | Topic that proves rights to the repository | `vibemarket` |
 | `repo.allowForks` | Accept forks | no |
 | `repo.licenses` | Allowed licenses (SPDX) | MIT, Apache-2.0, GPL and other open licenses |
-| `voting.days` | Voting period, days | 7 |
-| `voting.votesNeeded` | 👍 needed. 👍 − weight×👎 must also be at least this number | 10 |
+| `voting.days` | Voting period, days | 14 |
+| `voting.votesNeeded` | 👍 needed. 👍 − weight×👎 must also be at least this number | 3 |
 | `voting.downvoteWeight` | Weight of one 👎 | 2 |
 | `voting.voterMinAgeDays` | Minimum voter account age, days | 90 |
 | `promotion.minDays`, `promotion.minStars` | When to move an app to the main page | 90 days, 500 stars |
