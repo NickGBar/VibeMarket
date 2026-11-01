@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T18:47:37.876Z",
+  "updated": "2026-11-01T21:12:41.261Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -14,71 +14,71 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6746,
-    "ankitects/anki": 32456,
+    "ankitects/anki": 32458,
     "Anuken/Mindustry": 29562,
-    "AppFlowy-IO/AppFlowy": 78074,
-    "audacity/audacity": 18908,
-    "AUTOMATIC1111/stable-diffusion-webui": 165211,
-    "bitwarden/clients": 14127,
-    "blender/blender": 21497,
-    "Comfy-Org/ComfyUI": 144467,
+    "AppFlowy-IO/AppFlowy": 78075,
+    "audacity/audacity": 18910,
+    "AUTOMATIC1111/stable-diffusion-webui": 165212,
+    "bitwarden/clients": 14129,
+    "blender/blender": 21505,
+    "Comfy-Org/ComfyUI": 144480,
     "dbeaver/dbeaver": 52262,
-    "ente/ente": 29812,
-    "excalidraw/excalidraw": 134973,
+    "ente/ente": 29814,
+    "excalidraw/excalidraw": 134978,
     "FreeTubeApp/FreeTube": 22290,
-    "ggml-org/llama.cpp": 133062,
-    "ggml-org/whisper.cpp": 54842,
+    "ggml-org/llama.cpp": 133073,
+    "ggml-org/whisper.cpp": 54843,
     "GNOME/gimp": 6558,
-    "godotengine/godot": 119389,
-    "HandBrake/HandBrake": 24847,
+    "godotengine/godot": 119396,
+    "HandBrake/HandBrake": 24849,
     "HeliBorg/HeliBoard": 6473,
-    "immich-app/immich": 117884,
-    "ImranR98/Obtainium": 21122,
+    "immich-app/immich": 117896,
+    "ImranR98/Obtainium": 21126,
     "inkscape/inkscape": 4075,
-    "janhq/jan": 45220,
-    "jellyfin/jellyfin": 58898,
-    "jesseduffield/lazygit": 83581,
-    "jgraph/drawio-desktop": 63747,
+    "janhq/jan": 45224,
+    "jellyfin/jellyfin": 58897,
+    "jesseduffield/lazygit": 83584,
+    "jgraph/drawio-desktop": 63748,
     "jitsi/jitsi-meet-electron": 1635,
-    "KDE/krita": 10675,
-    "keepassxreboot/keepassxc": 29673,
-    "laurent22/joplin": 56978,
+    "KDE/krita": 10676,
+    "keepassxreboot/keepassxc": 29680,
+    "laurent22/joplin": 56979,
     "LibreOffice/core": 4590,
-    "localsend/localsend": 96939,
-    "logseq/logseq": 45444,
+    "localsend/localsend": 96943,
+    "logseq/logseq": 45445,
     "luanti-org/luanti": 13803,
     "mattermost/desktop": 2281,
-    "mltframework/shotcut": 15556,
+    "mltframework/shotcut": 15560,
     "mpv-player/mpv": 37662,
     "mullvad/mullvadvpn-app": 7735,
-    "neovim/neovim": 103285,
-    "nomic-ai/gpt4all": 77341,
+    "neovim/neovim": 103292,
+    "nomic-ai/gpt4all": 77342,
     "notepad-plus-plus/notepad-plus-plus": 29757,
-    "obsproject/obs-studio": 78769,
-    "ollama/ollama": 185573,
-    "OpenTTD/OpenTTD": 8446,
+    "obsproject/obs-studio": 78774,
+    "ollama/ollama": 185589,
+    "OpenTTD/OpenTTD": 8447,
     "organicmaps/organicmaps": 15845,
-    "penpot/penpot": 61960,
-    "PintaProject/Pinta": 4120,
-    "signalapp/Signal-Desktop": 16643,
-    "storytold/designcraft": 5005,
-    "storytold/effectcraft": 8299,
-    "storytold/filmcraft": 17188,
-    "storytold/lightcraft": 15241,
-    "storytold/pdfcraft": 19049,
-    "storytold/photocraft": 75813,
-    "storytold/vectorcraft": 11174,
-    "super-productivity/super-productivity": 23331,
-    "supertuxkart/stk-code": 5460,
-    "syncthing/syncthing": 89982,
-    "tauri-apps/tauri": 112405,
+    "penpot/penpot": 61963,
+    "PintaProject/Pinta": 4119,
+    "signalapp/Signal-Desktop": 16644,
+    "storytold/designcraft": 5009,
+    "storytold/effectcraft": 8300,
+    "storytold/filmcraft": 17201,
+    "storytold/lightcraft": 15249,
+    "storytold/pdfcraft": 19066,
+    "storytold/photocraft": 75852,
+    "storytold/vectorcraft": 11178,
+    "super-productivity/super-productivity": 23336,
+    "supertuxkart/stk-code": 5461,
+    "syncthing/syncthing": 89984,
+    "tauri-apps/tauri": 112410,
     "TeamNewPipe/NewPipe": 40394,
     "thunderbird/thunderbird-android": 14169,
     "ungoogled-software/ungoogled-chromium": 28153,
-    "videolan/vlc": 20292,
-    "VSCodium/vscodium": 33915,
+    "videolan/vlc": 20293,
+    "VSCodium/vscodium": 33916,
     "wesnoth/wesnoth": 6969,
-    "zed-industries/zed": 92491
+    "zed-industries/zed": 92500
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -2843,889 +2843,889 @@
     },
     "storytold/designcraft": {
       "mac": {
-        "tag": "v0.15.2",
-        "date": "2026-10-31T03:59:39Z",
-        "page": "https://github.com/storytold/designcraft/releases/tag/v0.15.2",
+        "tag": "v0.16.0",
+        "date": "2026-11-01T19:32:27Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.16.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "designcraft-0.15.2-macos-universal.dmg",
-            "size": 137343103,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-macos-universal.dmg",
-            "sha256": "efd30a64b36bf02cff8687aa234569217bf0936187dc81717e22f04ca5c24b9d"
+            "name": "designcraft-0.16.0-macos-universal.dmg",
+            "size": 137435293,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-macos-universal.dmg",
+            "sha256": "ee6dbd4991f6365e242c9eda4d5a388536702c7d90ea8e04687a77ca1d1e742b"
           }
         ]
       },
       "win": {
-        "tag": "v0.15.2",
-        "date": "2026-10-31T03:59:39Z",
-        "page": "https://github.com/storytold/designcraft/releases/tag/v0.15.2",
+        "tag": "v0.16.0",
+        "date": "2026-11-01T19:32:27Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.16.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "designcraft-0.15.2-windows-x64.msi",
-            "size": 98373632,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-windows-x64.msi",
-            "sha256": "05b56bd0fe0defb054b7c38f81b30ad90093c5d353435e54c567e99a6e326925"
+            "name": "designcraft-0.16.0-windows-x64.msi",
+            "size": 98426880,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-windows-x64.msi",
+            "sha256": "e569330cb54cb71298630e72f82ce39625bff5f9a6cf2c79e88440ab7bdd683a"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "designcraft-0.15.2-windows-x86.msi",
-            "size": 96182272,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-windows-x86.msi",
-            "sha256": "43cd3ae431afdc2c284600de54fd97a6ec83262911f3e52e3385b8c158a2533d"
+            "name": "designcraft-0.16.0-windows-x86.msi",
+            "size": 96354304,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-windows-x86.msi",
+            "sha256": "5fafc2f7a01f2f64fd1bc0e1923084de9424fe94a1f9ac0a67c9ff62f7d4aa02"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "designcraft-0.15.2-windows-arm64.msi",
-            "size": 93986816,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-windows-arm64.msi",
-            "sha256": "0ebd49015e4a8d3786abdef96390df2820e05a49abb91cec6d7461c00474fd84"
+            "name": "designcraft-0.16.0-windows-arm64.msi",
+            "size": 94072832,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-windows-arm64.msi",
+            "sha256": "56be6c48cbf75e109b0fa8fd437a4ec506cc0ac94e0aa5749375a9c9d74d1317"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "designcraft-0.15.2-windows-x64-portable.zip",
-            "size": 124031271,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-windows-x64-portable.zip",
-            "sha256": "5975d459e8ad973ec4147a7ff8ba90a5bc65de094468fcc74000e7e86c0179fd"
+            "name": "designcraft-0.16.0-windows-x64-portable.zip",
+            "size": 124094302,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-windows-x64-portable.zip",
+            "sha256": "15d6d17ed88d4ae1cf88eb99d3b6451d6f9c47a8a852bd3ec30e48901a546b4c"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "designcraft-0.15.2-windows-x86-portable.zip",
-            "size": 119583224,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-windows-x86-portable.zip",
-            "sha256": "98b954fbd8540cfe2ad337f00b3e51edaa5e7f26c565eb22f6d6fffbecf5d6aa"
+            "name": "designcraft-0.16.0-windows-x86-portable.zip",
+            "size": 119822580,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-windows-x86-portable.zip",
+            "sha256": "1e3d6c7b3fcbf6a85a208325ff097513481ef97d782916dc17b1bdb45d33b8fd"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "designcraft-0.15.2-windows-arm64-portable.zip",
-            "size": 119477659,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-windows-arm64-portable.zip",
-            "sha256": "d2fc0e974a621f4325b585b6ff3cedf46c165842dbcc3bfee4b8d59c3ac7c909"
+            "name": "designcraft-0.16.0-windows-arm64-portable.zip",
+            "size": 119575950,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-windows-arm64-portable.zip",
+            "sha256": "02dcc53f700a37e564fc3b7c4a68c8785dc5b6272e9008e80df124eaba487ee1"
           }
         ]
       },
       "linux": {
-        "tag": "v0.15.2",
-        "date": "2026-10-31T03:59:39Z",
-        "page": "https://github.com/storytold/designcraft/releases/tag/v0.15.2",
+        "tag": "v0.16.0",
+        "date": "2026-11-01T19:32:27Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.16.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "designcraft-0.15.2-linux-x86_64.AppImage",
-            "size": 116808184,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-linux-x86_64.AppImage",
-            "sha256": "6d46e10f8e7c2746b6daa4c565c6c6a85329c1e6192e0aa0bbf526ba91a3efa0"
+            "name": "designcraft-0.16.0-linux-x86_64.AppImage",
+            "size": 116947448,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-linux-x86_64.AppImage",
+            "sha256": "ecccda5dc38c6ca5de192e450f1bfa5393b43bd683868b0e5306ae2dc975c827"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "designcraft-0.15.2-linux-aarch64.AppImage",
-            "size": 112830984,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-linux-aarch64.AppImage",
-            "sha256": "eb5f12fc228d38c1aca7d2d579b715288509cf51e57d0ca88873ef1212a741e3"
+            "name": "designcraft-0.16.0-linux-aarch64.AppImage",
+            "size": 112994824,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-linux-aarch64.AppImage",
+            "sha256": "4401ebc210aeea81055c02afe529e032af296cfc53fd2e3d7e4499365cc156f7"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "designcraft-0.15.2-linux-x86_64.deb",
-            "size": 125288114,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-linux-x86_64.deb",
-            "sha256": "02dd8ff663be60deed416cbf9081ff21ef63f619256f68f0c147ecf7aa79a202"
+            "name": "designcraft-0.16.0-linux-x86_64.deb",
+            "size": 125420316,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-linux-x86_64.deb",
+            "sha256": "ca63189a80c4d2791272f0780b72fab901c0607c7740e642a5f6c2b08128cb25"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "designcraft-0.15.2-linux-aarch64.deb",
-            "size": 122027154,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-linux-aarch64.deb",
-            "sha256": "3b7c4dc5fcd6d87b7da500cdc4e6f1675f7fbd1f64128c0c3f3c6c562ac47ccb"
+            "name": "designcraft-0.16.0-linux-aarch64.deb",
+            "size": 122227190,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-linux-aarch64.deb",
+            "sha256": "8c6061c50d89ccd7f2814703c2b0ee896d44d2343ae004d25ad0c18996d3f13f"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "designcraft-0.15.2-linux-x86_64.rpm",
-            "size": 124660802,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-linux-x86_64.rpm",
-            "sha256": "89cbc206809f1b93533e4da81004c13f5dccf6a2e6c91e4acc93ba0b32653230"
+            "name": "designcraft-0.16.0-linux-x86_64.rpm",
+            "size": 124783747,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-linux-x86_64.rpm",
+            "sha256": "5968607ebeb05a0ef5585a3eb69d6081399257484c39f22d6b4813da70cf357c"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "designcraft-0.15.2-linux-aarch64.rpm",
-            "size": 121250464,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.15.2/designcraft-0.15.2-linux-aarch64.rpm",
-            "sha256": "9e33a3f406e29607c7f0a1e269d0ac464007b23a18e5362e91a4f6ef648f4d25"
+            "name": "designcraft-0.16.0-linux-aarch64.rpm",
+            "size": 121455078,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.16.0/designcraft-0.16.0-linux-aarch64.rpm",
+            "sha256": "8f5351beeb14a8d6fe425ffb18d17d24e59d1d344927e11e51039550c81b9e87"
           }
         ]
       }
     },
     "storytold/effectcraft": {
       "mac": {
-        "tag": "v0.19.0",
-        "date": "2026-10-31T04:06:11Z",
-        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.19.0",
+        "tag": "v0.20.0",
+        "date": "2026-11-01T19:33:24Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.20.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "effectcraft-0.19.0-macos-universal.dmg",
-            "size": 78402216,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-macos-universal.dmg",
-            "sha256": "2b75bca532a06f66b04150b835853f41028821d74b6bae357f2232535c0be450"
+            "name": "effectcraft-0.20.0-macos-universal.dmg",
+            "size": 78551864,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-macos-universal.dmg",
+            "sha256": "d603a803e3edc0a8b440c5fbcd2caf9b775f85305100090d3ad2e4c04a98bac1"
           }
         ]
       },
       "win": {
-        "tag": "v0.19.0",
-        "date": "2026-10-31T04:06:11Z",
-        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.19.0",
+        "tag": "v0.20.0",
+        "date": "2026-11-01T19:33:24Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.20.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "effectcraft-0.19.0-windows-x64.msi",
-            "size": 60928000,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-windows-x64.msi",
-            "sha256": "d6cff47ec0df9731343b9c749537e87425921034259fd91a74f3ad976b10c910"
+            "name": "effectcraft-0.20.0-windows-x64.msi",
+            "size": 61054976,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-windows-x64.msi",
+            "sha256": "2cc0791c253916fa6851903cf515468e7138df9331e2f5eb8244590d032f2897"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "effectcraft-0.19.0-windows-x86.msi",
-            "size": 59428864,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-windows-x86.msi",
-            "sha256": "0e08b5227a4d015fc4c2090b37c0045950ea1643c5307773c22db30e76a04fbc"
+            "name": "effectcraft-0.20.0-windows-x86.msi",
+            "size": 59498496,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-windows-x86.msi",
+            "sha256": "77bc4dfe527343ddf125a1a9d7547500b87b9392deef03d62c9fdeec5c0c4176"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "effectcraft-0.19.0-windows-arm64.msi",
-            "size": 54374400,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-windows-arm64.msi",
-            "sha256": "630b807a70b0dd128f0d6c822cd20464b4390a87fc2edf445c9ac30bc2e5195c"
+            "name": "effectcraft-0.20.0-windows-arm64.msi",
+            "size": 54493184,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-windows-arm64.msi",
+            "sha256": "ddfab330c02831bde753b4164b46b2c70f9f5cb3bd2a6a317fb5d35da55ac540"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "effectcraft-0.19.0-windows-x64-portable.zip",
-            "size": 80933138,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-windows-x64-portable.zip",
-            "sha256": "1322787050178a8c24e976eb77e5aa2e3a5271b27ba67f21ded557695da82fde"
+            "name": "effectcraft-0.20.0-windows-x64-portable.zip",
+            "size": 81124796,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-windows-x64-portable.zip",
+            "sha256": "90c01550cf3ba798af294d2913d6e757ba179013a1292c5d257a401341a0b680"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "effectcraft-0.19.0-windows-x86-portable.zip",
-            "size": 76285143,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-windows-x86-portable.zip",
-            "sha256": "6cfcaeafcba99fda9cc44eec2e57001a3554ea005a9eb3b3a1f0bf7110930fe0"
+            "name": "effectcraft-0.20.0-windows-x86-portable.zip",
+            "size": 76457074,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-windows-x86-portable.zip",
+            "sha256": "b73af71af0b5ae5d72e720832e7871ef27e3c4e8ef9e5ebb92014ce23d9b544e"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "effectcraft-0.19.0-windows-arm64-portable.zip",
-            "size": 74472636,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-windows-arm64-portable.zip",
-            "sha256": "e45b3d3c320225f4f026a769a36bed46a8dd505e7d52b5891c771079abc65b88"
+            "name": "effectcraft-0.20.0-windows-arm64-portable.zip",
+            "size": 74631418,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-windows-arm64-portable.zip",
+            "sha256": "21bf54f3a54bcc0d4d7c0611791b7650208b79c147633904010e1f7a717443b4"
           }
         ]
       },
       "linux": {
-        "tag": "v0.19.0",
-        "date": "2026-10-31T04:06:11Z",
-        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.19.0",
+        "tag": "v0.20.0",
+        "date": "2026-11-01T19:33:24Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.20.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "effectcraft-0.19.0-linux-x86_64.AppImage",
-            "size": 71502328,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-x86_64.AppImage",
-            "sha256": "9c8b8c5b33f1f04240deaebc854cc53b997cda48cf29ecd7173b43c98049f0c1"
+            "name": "effectcraft-0.20.0-linux-x86_64.AppImage",
+            "size": 71682552,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-x86_64.AppImage",
+            "sha256": "6ccada9ca8b54114b79f7b99c33a515a3e4b54a9baba43eb434e885e4db5a5f7"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "effectcraft-0.19.0-linux-aarch64.AppImage",
-            "size": 66615816,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-aarch64.AppImage",
-            "sha256": "45aca1be69c186447f53ab85a5d22507a36efee224edc944dd09f18056ee05eb"
+            "name": "effectcraft-0.20.0-linux-aarch64.AppImage",
+            "size": 66812424,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-aarch64.AppImage",
+            "sha256": "021946631486a7970db824b515a275ee95be3edb584f9aeef986e36171c29cdb"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "effectcraft-0.19.0-linux-x86_64.deb",
-            "size": 79317050,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-x86_64.deb",
-            "sha256": "4a9051d1aa001fcd74bffe41c096fe9f12256b049c4461b1ec9f3bb4f8dd5a9f"
+            "name": "effectcraft-0.20.0-linux-x86_64.deb",
+            "size": 79511420,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-x86_64.deb",
+            "sha256": "7ace3acb99d8f76dd548275ba55f0195ad6d4ef29fc5a40e660834df9f8ea29c"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "effectcraft-0.19.0-linux-aarch64.deb",
-            "size": 75552968,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-aarch64.deb",
-            "sha256": "b4ae8931f126e0b04308dcb343dd462528851fe42df7f9435dde4014c285ecd2"
+            "name": "effectcraft-0.20.0-linux-aarch64.deb",
+            "size": 75785558,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-aarch64.deb",
+            "sha256": "3d856b27eb7d76c4eedd510b168cff04259f2ba018bab9aec2d5234a20c22a63"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "effectcraft-0.19.0-linux-x86_64.rpm",
-            "size": 78809275,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-x86_64.rpm",
-            "sha256": "704e6682016573cc02796d9659e080272a77c74e854f4dc31965702e3d37b814"
+            "name": "effectcraft-0.20.0-linux-x86_64.rpm",
+            "size": 79007353,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-x86_64.rpm",
+            "sha256": "05faea18661a76783ae15bb385168b168441304d738dab90db415857ee33ff09"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "effectcraft-0.19.0-linux-aarch64.rpm",
-            "size": 74801818,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.19.0/effectcraft-0.19.0-linux-aarch64.rpm",
-            "sha256": "bf5df439034a676788f11e52859c587777189ee6ed8ee28465c5b1d6bee36916"
+            "name": "effectcraft-0.20.0-linux-aarch64.rpm",
+            "size": 75027111,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.20.0/effectcraft-0.20.0-linux-aarch64.rpm",
+            "sha256": "41746841271796002e1306289c3521af5f8721415ddbb0bd219075191e243bb4"
           }
         ]
       }
     },
     "storytold/filmcraft": {
       "mac": {
-        "tag": "v0.15.0",
-        "date": "2026-10-31T03:50:04Z",
-        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.15.0",
+        "tag": "v0.16.0",
+        "date": "2026-11-01T19:26:06Z",
+        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.16.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "filmcraft-0.15.0-macos-universal.dmg",
-            "size": 112584890,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-macos-universal.dmg",
-            "sha256": "a38a40516eb60d6a24741b09f1ec2c763bb40e01eca1af11fd6de0bc53a38bf4"
+            "name": "filmcraft-0.16.0-macos-universal.dmg",
+            "size": 114856689,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-macos-universal.dmg",
+            "sha256": "2d7aa2fbde8266e755b4e2573566738bcffba5c01d7d760045971f17d84b5ffc"
           }
         ]
       },
       "win": {
-        "tag": "v0.15.0",
-        "date": "2026-10-31T03:50:04Z",
-        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.15.0",
+        "tag": "v0.16.0",
+        "date": "2026-11-01T19:26:06Z",
+        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.16.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "filmcraft-0.15.0-windows-x64.msi",
-            "size": 88809472,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-windows-x64.msi",
-            "sha256": "0daa5a22815659380fb77e649c4a7a7c1311a13e196eef011a59dca3458b1afd"
+            "name": "filmcraft-0.16.0-windows-x64.msi",
+            "size": 89841664,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-windows-x64.msi",
+            "sha256": "5dd137a74867d795ebe3f71bda1e8b83055a28b99275306e6ec9a48e8291175f"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "filmcraft-0.15.0-windows-x86.msi",
-            "size": 88494080,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-windows-x86.msi",
-            "sha256": "0a427ca8867b9fc54f8bc574e534dbe4c16905e261dfed700d6e68ac679e6b22"
+            "name": "filmcraft-0.16.0-windows-x86.msi",
+            "size": 89772032,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-windows-x86.msi",
+            "sha256": "037597d0362c9870453dfa939e1bb79f190e0d81fb8836e7a1a0080ae26ee9ba"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "filmcraft-0.15.0-windows-arm64.msi",
-            "size": 84934656,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-windows-arm64.msi",
-            "sha256": "e510e67c9a27077056a3573c2614ad1c52b93bcea8cd1c6d58f94e4d23cad004"
+            "name": "filmcraft-0.16.0-windows-arm64.msi",
+            "size": 86085632,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-windows-arm64.msi",
+            "sha256": "7b4b1f4490389dab53e4d56c11c8e7c120c941a41b343a153f67ce6c88314f65"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "filmcraft-0.15.0-windows-x64-portable.zip",
-            "size": 107007332,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-windows-x64-portable.zip",
-            "sha256": "e0894f28b191ebb63bd7fe1cf1f4761508c45262ea8ba9fd561bc6e9c24d2cd1"
+            "name": "filmcraft-0.16.0-windows-x64-portable.zip",
+            "size": 108772564,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-windows-x64-portable.zip",
+            "sha256": "d924d8d8aa30996807eec99bfc221415f7aa63098cdfe7a1610ec91590f46dc8"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "filmcraft-0.15.0-windows-x86-portable.zip",
-            "size": 105343663,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-windows-x86-portable.zip",
-            "sha256": "4dd62f50f41df004ad03d3a2aacb7271c1981bf564e7ad2b32763b1dd6e421ac"
+            "name": "filmcraft-0.16.0-windows-x86-portable.zip",
+            "size": 106991862,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-windows-x86-portable.zip",
+            "sha256": "e7b17b7cb29a6821368dec1d8083e52610b523da8903671981be9254bfb7620d"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "filmcraft-0.15.0-windows-arm64-portable.zip",
-            "size": 103440439,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-windows-arm64-portable.zip",
-            "sha256": "67fe99b6c898016dede64e45ebf6303bdd9fdfaa35e05ca281f0144adca31356"
+            "name": "filmcraft-0.16.0-windows-arm64-portable.zip",
+            "size": 104978571,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-windows-arm64-portable.zip",
+            "sha256": "ca2d6ea4a5d9524b36247a80cc8b83c98930ad7d9495dfa2225ee2409d0b8e6d"
           }
         ]
       },
       "linux": {
-        "tag": "v0.15.0",
-        "date": "2026-10-31T03:50:04Z",
-        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.15.0",
+        "tag": "v0.16.0",
+        "date": "2026-11-01T19:26:06Z",
+        "page": "https://github.com/storytold/filmcraft/releases/tag/v0.16.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "filmcraft-0.15.0-linux-x86_64.AppImage",
-            "size": 100682232,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-x86_64.AppImage",
-            "sha256": "4bcb119c1aa60df54ce3338d7aa48e3f14d61569f7bc63851a00bdc89249647b"
+            "name": "filmcraft-0.16.0-linux-x86_64.AppImage",
+            "size": 102201848,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-x86_64.AppImage",
+            "sha256": "c2be1b654a6df980870213901785656075247e4e8e530545a97886dec4a2f050"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "filmcraft-0.15.0-linux-aarch64.AppImage",
-            "size": 97856008,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-aarch64.AppImage",
-            "sha256": "93beed6c51382180a0c4497be84a5249eb26efe9a3968df6919a0ebdd025d26c"
+            "name": "filmcraft-0.16.0-linux-aarch64.AppImage",
+            "size": 99219976,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-aarch64.AppImage",
+            "sha256": "c016e2e550dede376ca1d5f1520a7fd04de3fdfa88561e8502fb0118ccb2dd01"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "filmcraft-0.15.0-linux-x86_64.deb",
-            "size": 107248810,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-x86_64.deb",
-            "sha256": "18d8d40d080b0ff6264234d5d610d290bfa0fcfdc50f6e0cea59ae31ef81fc4b"
+            "name": "filmcraft-0.16.0-linux-x86_64.deb",
+            "size": 108946042,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-x86_64.deb",
+            "sha256": "848fc61bd8c5346aaf57188cc95631258e3387ff3d7ff5e4f55b70ba81918bc1"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "filmcraft-0.15.0-linux-aarch64.deb",
-            "size": 105127818,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-aarch64.deb",
-            "sha256": "f227aac558901da66b33957609d3ca8475a91f1f217f1bc7570fa7abccae6b74"
+            "name": "filmcraft-0.16.0-linux-aarch64.deb",
+            "size": 106667876,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-aarch64.deb",
+            "sha256": "92c8b4b50f21d3466d6184df19ddb383e792dfcae9c2a43f718d7aefa81bdfda"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "filmcraft-0.15.0-linux-x86_64.rpm",
-            "size": 106617320,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-x86_64.rpm",
-            "sha256": "f5b08905ee94bbcb0044c2da63ff8503fd3ebc22ecc83a37cb4b047a90b791aa"
+            "name": "filmcraft-0.16.0-linux-x86_64.rpm",
+            "size": 108285075,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-x86_64.rpm",
+            "sha256": "0381364b2a324d0c290b6ab332687bd38c1a52176d200ee413bc1c389d0dae95"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "filmcraft-0.15.0-linux-aarch64.rpm",
-            "size": 104339809,
-            "url": "https://github.com/storytold/filmcraft/releases/download/v0.15.0/filmcraft-0.15.0-linux-aarch64.rpm",
-            "sha256": "5301d45c1b34aa1976cbe3620eb30a0c97cf78c9d97cf42eaf272fb16bc69c6f"
+            "name": "filmcraft-0.16.0-linux-aarch64.rpm",
+            "size": 105861202,
+            "url": "https://github.com/storytold/filmcraft/releases/download/v0.16.0/filmcraft-0.16.0-linux-aarch64.rpm",
+            "sha256": "f6cc0b18529f7d47bda480de02b99961a67c9ec4493f3f0fc37c1404ca289ff4"
           }
         ]
       }
     },
     "storytold/lightcraft": {
       "mac": {
-        "tag": "v0.16.0",
-        "date": "2026-10-31T03:53:25Z",
-        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.16.0",
+        "tag": "v0.17.0",
+        "date": "2026-11-01T19:27:20Z",
+        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.17.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "lightcraft-0.16.0-macos-universal.dmg",
-            "size": 123538940,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-macos-universal.dmg",
-            "sha256": "8ff1a1c3d1a985955cbc6571d1fba88e3754bb0ccce883e832dc2cd3e73a5175"
+            "name": "lightcraft-0.17.0-macos-universal.dmg",
+            "size": 124374118,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-macos-universal.dmg",
+            "sha256": "656a4dbe34edabe478f6ba1c838f718ea67e5ca7c61c1591c7be08dc3621a14b"
           }
         ]
       },
       "win": {
-        "tag": "v0.16.0",
-        "date": "2026-10-31T03:53:25Z",
-        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.16.0",
+        "tag": "v0.17.0",
+        "date": "2026-11-01T19:27:20Z",
+        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.17.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "lightcraft-0.16.0-windows-x64.msi",
-            "size": 97587200,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-x64.msi",
-            "sha256": "6133f27569668fa473807b4db29ef6f02bba3730b0c5b4de6a059fcde14d7498"
+            "name": "lightcraft-0.17.0-windows-x64.msi",
+            "size": 98000896,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-windows-x64.msi",
+            "sha256": "82854257656928d83637119889f35cb769703230c93e86aa13e836927f863317"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "lightcraft-0.16.0-windows-x86.msi",
-            "size": 94834688,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-x86.msi",
-            "sha256": "22ad31cdca48546187a130e77cc84774b58d84495ba4959cc859895df9960fcf"
+            "name": "lightcraft-0.17.0-windows-x86.msi",
+            "size": 95637504,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-windows-x86.msi",
+            "sha256": "9651c1108beb04c25e154e553f127e7361b3574edba3dc155cbf33b089045896"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "lightcraft-0.16.0-windows-arm64.msi",
-            "size": 93405184,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-arm64.msi",
-            "sha256": "11a43aca22e00dceab0b6d94825c4ae7fa72ddc8c75a3b7c085d7d5649d30ad8"
+            "name": "lightcraft-0.17.0-windows-arm64.msi",
+            "size": 94027776,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-windows-arm64.msi",
+            "sha256": "e0db44a44c5c26c8ded05ffde5f183b5a07a8ef85e6d7b8b39845c8fe1903e28"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "lightcraft-0.16.0-windows-x64-portable.zip",
-            "size": 119420887,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-x64-portable.zip",
-            "sha256": "5c1f1329594f28f6a4dc44a404b065a4aac656b3b02219b69c740a23141a9403"
-          },
-          {
-            "arch": "arm64",
-            "kind": "zip",
-            "name": "lightcraft-0.16.0-windows-arm64-portable.zip",
-            "size": 114503358,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-arm64-portable.zip",
-            "sha256": "8cd5d9bcd203c75308b6fbd695406022bba7be640a4624cbb2fd9b398beaa54f"
+            "name": "lightcraft-0.17.0-windows-x64-portable.zip",
+            "size": 120383357,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-windows-x64-portable.zip",
+            "sha256": "32fa63f8f5f087299ff60cd47e45f81cf7f5c213a12df413a7103c0e86a75d92"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "lightcraft-0.16.0-windows-x86-portable.zip",
-            "size": 114340878,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-windows-x86-portable.zip",
-            "sha256": "bd9536508e963b055b404e4287d6d28121f67d688b5190006bc4b836982e2e9b"
+            "name": "lightcraft-0.17.0-windows-x86-portable.zip",
+            "size": 115543789,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-windows-x86-portable.zip",
+            "sha256": "7f9ec4854315866e5383a6ac845ac4ea8e17a74aa22f4516b093c380e9518bbe"
+          },
+          {
+            "arch": "arm64",
+            "kind": "zip",
+            "name": "lightcraft-0.17.0-windows-arm64-portable.zip",
+            "size": 115467025,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-windows-arm64-portable.zip",
+            "sha256": "fecec60196c424af4bde792cff8156b8f2543faf3b0f088b5d7dc7862e664fe1"
           }
         ]
       },
       "linux": {
-        "tag": "v0.16.0",
-        "date": "2026-10-31T03:53:25Z",
-        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.16.0",
+        "tag": "v0.17.0",
+        "date": "2026-11-01T19:27:20Z",
+        "page": "https://github.com/storytold/lightcraft/releases/tag/v0.17.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "lightcraft-0.16.0-linux-x86_64.AppImage",
-            "size": 112491000,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-linux-x86_64.AppImage",
-            "sha256": "0ca1e9e585008ca6c0027168abc6df26a1a0cae8b26d73181bb53e2ce32e5d77"
+            "name": "lightcraft-0.17.0-linux-x86_64.AppImage",
+            "size": 113359352,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-linux-x86_64.AppImage",
+            "sha256": "e592a27a94ad20a0a0baee7893e92d9079ec412495f987a9c0854b99ec00b21b"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "lightcraft-0.16.0-linux-aarch64.AppImage",
-            "size": 107588104,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-linux-aarch64.AppImage",
-            "sha256": "ae20d99b432a2623b5dcac0f17287fa230708f52ba78d51551d44a20e9ba1774"
+            "name": "lightcraft-0.17.0-linux-aarch64.AppImage",
+            "size": 108644872,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-linux-aarch64.AppImage",
+            "sha256": "c3f0aca29e12fc67be3c3fe222739a2514795db925bff95ebc5f450e3950aedf"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "lightcraft-0.16.0-linux-x86_64.deb",
-            "size": 120837496,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-linux-x86_64.deb",
-            "sha256": "76a94847aeb510c6453605dd37cf86cdaa89a4b3f207418bc9dcf57016d72dd0"
+            "name": "lightcraft-0.17.0-linux-x86_64.deb",
+            "size": 121759518,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-linux-x86_64.deb",
+            "sha256": "21b50bc27a06fd6fc66ce9a07b379c5018924096f50fa14d51cce32fbe0b353f"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "lightcraft-0.16.0-linux-aarch64.deb",
-            "size": 116448826,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-linux-aarch64.deb",
-            "sha256": "86d16bc8c013fb146311df19f5d0e27ea75ff95f6652778ffd1b21d4d5e6043a"
+            "name": "lightcraft-0.17.0-linux-aarch64.deb",
+            "size": 117695548,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-linux-aarch64.deb",
+            "sha256": "f00931b0a0f91ca250f27ff2c462c2e1e0b7ffdc3eacfd0f9e81a6429c941ca6"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "lightcraft-0.16.0-linux-x86_64.rpm",
-            "size": 120136258,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-linux-x86_64.rpm",
-            "sha256": "95478e75059728a072de512096b9d5d9d509f5bb175b6f5072777b41aacf3276"
+            "name": "lightcraft-0.17.0-linux-x86_64.rpm",
+            "size": 121052623,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-linux-x86_64.rpm",
+            "sha256": "fa4cb6a5a944db6a8fc8ed7a8828758b85e391fb0a0c1eba9c685869ae8fc13c"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "lightcraft-0.16.0-linux-aarch64.rpm",
-            "size": 115639594,
-            "url": "https://github.com/storytold/lightcraft/releases/download/v0.16.0/lightcraft-0.16.0-linux-aarch64.rpm",
-            "sha256": "70902b0a730851f872d020bff4879106ab51059ffc41552551d6d6aa55af6849"
+            "name": "lightcraft-0.17.0-linux-aarch64.rpm",
+            "size": 116863116,
+            "url": "https://github.com/storytold/lightcraft/releases/download/v0.17.0/lightcraft-0.17.0-linux-aarch64.rpm",
+            "sha256": "39d790dfdd1bedae43406f7931016189a00afd294ad0343b608b51eb83110625"
           }
         ]
       }
     },
     "storytold/pdfcraft": {
       "mac": {
-        "tag": "v0.16.1",
-        "date": "2026-10-31T03:59:54Z",
-        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.16.1",
+        "tag": "v0.17.0",
+        "date": "2026-11-01T19:33:10Z",
+        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.17.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "pdfcraft-0.16.1-macos-universal.dmg",
-            "size": 122883143,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-macos-universal.dmg",
-            "sha256": "1357e6f1cdc1d06ab4ecc253e9c7b31b71e401897b5c781583ccaefd1941642f"
+            "name": "pdfcraft-0.17.0-macos-universal.dmg",
+            "size": 123262359,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-macos-universal.dmg",
+            "sha256": "90aec2859024f27e1095ecf8bb250a9bc0251f900ba0ab5cd194d10557c8a712"
           }
         ]
       },
       "win": {
-        "tag": "v0.16.1",
-        "date": "2026-10-31T03:59:54Z",
-        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.16.1",
+        "tag": "v0.17.0",
+        "date": "2026-11-01T19:33:10Z",
+        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.17.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "pdfcraft-0.16.1-windows-x64.msi",
-            "size": 92033024,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-windows-x64.msi",
-            "sha256": "eaac4377df997a5448d98e4413da83886c2ef20e512ff57691893e1bda074a72"
+            "name": "pdfcraft-0.17.0-windows-x64.msi",
+            "size": 92295168,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-windows-x64.msi",
+            "sha256": "d90005503e00a74e40def82fa4544da311be1925e583799c0143d1c9666ecacb"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "pdfcraft-0.16.1-windows-x86.msi",
-            "size": 90050560,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-windows-x86.msi",
-            "sha256": "ebcaa3e530fa0733f6537ca30d52c941c38bfab831de4bf8f158bfe9de3f6445"
+            "name": "pdfcraft-0.17.0-windows-x86.msi",
+            "size": 90308608,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-windows-x86.msi",
+            "sha256": "df208ff1266f6a507e47651f3ecd93051bb7b26aec0b1322a58ff75299cbc546"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "pdfcraft-0.16.1-windows-arm64.msi",
-            "size": 87781376,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-windows-arm64.msi",
-            "sha256": "9b051d045de058900b4d9e03c8a8ac4135ef933aab643f005d07a882ab18073b"
+            "name": "pdfcraft-0.17.0-windows-arm64.msi",
+            "size": 87990272,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-windows-arm64.msi",
+            "sha256": "0895a0666be7c7361222d16bef8e0bd1754f6819364fcd0a282b061b57a53ef7"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "pdfcraft-0.16.1-windows-x64-portable.zip",
-            "size": 112319134,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-windows-x64-portable.zip",
-            "sha256": "5c9259edf66cf943ad4f537629873912a2af90c79ee9977a5d02d3ffc8120257"
+            "name": "pdfcraft-0.17.0-windows-x64-portable.zip",
+            "size": 112639042,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-windows-x64-portable.zip",
+            "sha256": "1ed71525de6c76cdb9629ad88c26e520448545e463db41d41ac97408e07fb214"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "pdfcraft-0.16.1-windows-arm64-portable.zip",
-            "size": 107693834,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-windows-arm64-portable.zip",
-            "sha256": "00440d7cc1d4dc085833d10ea73a4b3615e0fac8bb42b8df964f3413e0598f41"
+            "name": "pdfcraft-0.17.0-windows-arm64-portable.zip",
+            "size": 107987898,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-windows-arm64-portable.zip",
+            "sha256": "d488585dd12be68d36689a1d8801e429fe1bd1c611af9d38641248c4b733d089"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "pdfcraft-0.16.1-windows-x86-portable.zip",
-            "size": 107360298,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-windows-x86-portable.zip",
-            "sha256": "e5eeed3e7fea69b89daced7f4cf9ce6090e905084dcc32a0e50284ca90a3f22b"
+            "name": "pdfcraft-0.17.0-windows-x86-portable.zip",
+            "size": 107668516,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-windows-x86-portable.zip",
+            "sha256": "a0fdf6ee9d9c11de96065ccac55da3dfef33636f63741efb4b0d282603523c04"
           }
         ]
       },
       "linux": {
-        "tag": "v0.16.1",
-        "date": "2026-10-31T03:59:54Z",
-        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.16.1",
+        "tag": "v0.17.0",
+        "date": "2026-11-01T19:33:10Z",
+        "page": "https://github.com/storytold/pdfcraft/releases/tag/v0.17.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "pdfcraft-0.16.1-linux-x86_64.AppImage",
-            "size": 105572856,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-x86_64.AppImage",
-            "sha256": "2535a68a9c2156946cbc7cd3ffe4704a3d2c840a211ce6cc2d9cea62d36dca53"
+            "name": "pdfcraft-0.17.0-linux-x86_64.AppImage",
+            "size": 105798136,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-linux-x86_64.AppImage",
+            "sha256": "9337e5702ee6459d8bcda9876c3ae3c9725af38c744096dbc070d7cfae244586"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "pdfcraft-0.16.1-linux-aarch64.AppImage",
-            "size": 101878280,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-aarch64.AppImage",
-            "sha256": "547b89103c6770f2ebe4a52bd2a5aa1667d0724045b400dcd8a9bf0724f1cf4d"
+            "name": "pdfcraft-0.17.0-linux-aarch64.AppImage",
+            "size": 102099464,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-linux-aarch64.AppImage",
+            "sha256": "250c427d5f50321b8453df397bc76d4ecd53cdc03813f0268b6ce8f7b431a05f"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "pdfcraft-0.16.1-linux-x86_64.deb",
-            "size": 112137992,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-x86_64.deb",
-            "sha256": "fb71f9b366214c8b0dafe01afba80d5280d554a7683ab7756f601a170668823b"
+            "name": "pdfcraft-0.17.0-linux-x86_64.deb",
+            "size": 112416678,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-linux-x86_64.deb",
+            "sha256": "5500ec5693f2e2ec73cdc6e2b7c2b4aa897149c0b2d7465a4ce40e665b41db46"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "pdfcraft-0.16.1-linux-aarch64.deb",
-            "size": 109221366,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-aarch64.deb",
-            "sha256": "7c90af4c6af71da3efb017b697163267c5930e24e4d6b041edb8be0c1e23c31e"
+            "name": "pdfcraft-0.17.0-linux-aarch64.deb",
+            "size": 109466508,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-linux-aarch64.deb",
+            "sha256": "11f6da6e2db08a8a4b24b703877ece110f7433bb0b0263c625276d3d7155e098"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "pdfcraft-0.16.1-linux-x86_64.rpm",
-            "size": 111638587,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-x86_64.rpm",
-            "sha256": "b5d30dde0d5dea634af7a8f0a7bb1f81b75861ae7338c5b4c76a9b1da66ef2d3"
+            "name": "pdfcraft-0.17.0-linux-x86_64.rpm",
+            "size": 111891539,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-linux-x86_64.rpm",
+            "sha256": "46c9094a32065263ca5b4da6538d49c41508e55cde769ca88dfb00712212455c"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "pdfcraft-0.16.1-linux-aarch64.rpm",
-            "size": 108543068,
-            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.16.1/pdfcraft-0.16.1-linux-aarch64.rpm",
-            "sha256": "9034a6ff6e40443f700f869c357bc9a5dc4d859fe87fc4a5dcf3759d57750810"
+            "name": "pdfcraft-0.17.0-linux-aarch64.rpm",
+            "size": 108790480,
+            "url": "https://github.com/storytold/pdfcraft/releases/download/v0.17.0/pdfcraft-0.17.0-linux-aarch64.rpm",
+            "sha256": "6176a8f1cf85b65d66781d06a9c6a16ca46c1b8ed2f31c935ab02af51d96d403"
           }
         ]
       }
     },
     "storytold/photocraft": {
       "mac": {
-        "tag": "v0.18.0",
-        "date": "2026-10-31T04:02:59Z",
-        "page": "https://github.com/storytold/photocraft/releases/tag/v0.18.0",
+        "tag": "v0.19.0",
+        "date": "2026-11-01T19:36:04Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.19.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "photocraft-0.18.0-macos-universal.dmg",
-            "size": 244539770,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-macos-universal.dmg",
-            "sha256": "20335daabedacfed91fa579e77a2ac18d261a735057782b87492827876cb0f91"
+            "name": "photocraft-0.19.0-macos-universal.dmg",
+            "size": 245646104,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-macos-universal.dmg",
+            "sha256": "4024b531f14cc96c3d3e33dcc5e12c4b5114d219a01323d0173fd534459fd368"
           }
         ]
       },
       "win": {
-        "tag": "v0.18.0",
-        "date": "2026-10-31T04:02:59Z",
-        "page": "https://github.com/storytold/photocraft/releases/tag/v0.18.0",
+        "tag": "v0.19.0",
+        "date": "2026-11-01T19:36:04Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.19.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "photocraft-0.18.0-windows-x64.msi",
-            "size": 106577920,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-windows-x64.msi",
-            "sha256": "0be3669adfda7f4b505f2ecdd443b110ef056daa03f27a65eb1d35948f6a1529"
+            "name": "photocraft-0.19.0-windows-x64.msi",
+            "size": 107081728,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-x64.msi",
+            "sha256": "b351c9253275a928cc1bec1c4a3a551f4fe5b90d57f908b782f37af7970e7f05"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "photocraft-0.18.0-windows-x86.msi",
-            "size": 103124992,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-windows-x86.msi",
-            "sha256": "8e2cec488eee06da057192bce2c4512a69317ed96d7fb3009906eee96751b423"
+            "name": "photocraft-0.19.0-windows-x86.msi",
+            "size": 103636992,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-x86.msi",
+            "sha256": "36c0298515c2a20a9e79a002ec5fe6cdfc5a80a37701721b5a52297bf254d8b6"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "photocraft-0.18.0-windows-arm64.msi",
-            "size": 100851712,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-windows-arm64.msi",
-            "sha256": "7b920efb159d005104b278783ce113b355eba90220b857712368b75a5a1b7612"
+            "name": "photocraft-0.19.0-windows-arm64.msi",
+            "size": 101318656,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-arm64.msi",
+            "sha256": "ce325e4fdecece2289638cdecad378ddec633c968b8de8f0c7a49e5c56f80acc"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "photocraft-0.18.0-windows-x64-portable.zip",
-            "size": 127565286,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-windows-x64-portable.zip",
-            "sha256": "2b4ff065e718fc9b44d9aee77b8215f8200c8fa962e0d9555c07dd4e987e11e9"
+            "name": "photocraft-0.19.0-windows-x64-portable.zip",
+            "size": 128204896,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-x64-portable.zip",
+            "sha256": "b6ead3cbab9d5aee27d23cfe7903be1e820ca1e1b3f002b9970e996d9c3a38e1"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "photocraft-0.18.0-windows-x86-portable.zip",
-            "size": 121601238,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-windows-x86-portable.zip",
-            "sha256": "ab4075b42130f2d0c3ffcb56eb21dfddf8ca30e9294ecca7e6333046c4551aae"
+            "name": "photocraft-0.19.0-windows-x86-portable.zip",
+            "size": 122236182,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-x86-portable.zip",
+            "sha256": "414a28481ce9b2500fa6543c8ebf0d633701e79feec713a0a8f2a9f2ebffb54e"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "photocraft-0.18.0-windows-arm64-portable.zip",
-            "size": 121460353,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-windows-arm64-portable.zip",
-            "sha256": "0cd78026ab255d0212125153161d8bb28bfbe68e697cb00054bd50d93b8ea6e0"
+            "name": "photocraft-0.19.0-windows-arm64-portable.zip",
+            "size": 122098562,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-windows-arm64-portable.zip",
+            "sha256": "dd179619a4b552d7adced521bc5c69fa3ee0467aa17913f00137c40ba1995cd6"
           }
         ]
       },
       "linux": {
-        "tag": "v0.18.0",
-        "date": "2026-10-31T04:02:59Z",
-        "page": "https://github.com/storytold/photocraft/releases/tag/v0.18.0",
+        "tag": "v0.19.0",
+        "date": "2026-11-01T19:36:04Z",
+        "page": "https://github.com/storytold/photocraft/releases/tag/v0.19.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "photocraft-0.18.0-linux-x86_64.AppImage",
-            "size": 118393336,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-linux-x86_64.AppImage",
-            "sha256": "830757acae87b5dea20f25200392de118a143a35dc1b52041a3526120267e684"
+            "name": "photocraft-0.19.0-linux-x86_64.AppImage",
+            "size": 118979064,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-x86_64.AppImage",
+            "sha256": "0cd30b366d40090aba01b0a1fe021bdcfc02b11ff9151c7aaced5b663db9b856"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "photocraft-0.18.0-linux-aarch64.AppImage",
-            "size": 113687048,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-linux-aarch64.AppImage",
-            "sha256": "ce3002bb8c5e6b783ac6a2d9c1cd033e08fb9ad5e7d75cd3da4d0c9bedbdc5ff"
+            "name": "photocraft-0.19.0-linux-aarch64.AppImage",
+            "size": 114244104,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-aarch64.AppImage",
+            "sha256": "755d7aa07c966995caf154fedca5dee0c1cbc8f5c7c2679c67a8be6d6467322d"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "photocraft-0.18.0-linux-x86_64.deb",
-            "size": 126144548,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-linux-x86_64.deb",
-            "sha256": "8d8905f3cc516270b0c66481ef79ae6d7fa33947aae92402137be47834c33443"
+            "name": "photocraft-0.19.0-linux-x86_64.deb",
+            "size": 126761222,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-x86_64.deb",
+            "sha256": "80b77bc8cb2638bdcde80c8f410b1efccfef846a23529b089a818d128c2f6c53"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "photocraft-0.18.0-linux-aarch64.deb",
-            "size": 122276372,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-linux-aarch64.deb",
-            "sha256": "7c47c5aa193fd85f992d46b47e24b2c0e0dae5079ea4c3bde940b44a2f85e388"
+            "name": "photocraft-0.19.0-linux-aarch64.deb",
+            "size": 122904002,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-aarch64.deb",
+            "sha256": "fd0160a4ea4b1f433804eb8e02c3aa434ec42561531937633f02eee818a0f422"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "photocraft-0.18.0-linux-x86_64.rpm",
-            "size": 125330995,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-linux-x86_64.rpm",
-            "sha256": "275659683f2ee70cfa6c4d3d2d61acd86fa17da632b90db88e0b9e738bba5082"
+            "name": "photocraft-0.19.0-linux-x86_64.rpm",
+            "size": 125936833,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-x86_64.rpm",
+            "sha256": "c9894262b99d587f50546a8ff50b1db30271299f23ef3486b666e3ddb638c315"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "photocraft-0.18.0-linux-aarch64.rpm",
-            "size": 121256777,
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.18.0/photocraft-0.18.0-linux-aarch64.rpm",
-            "sha256": "e9967e94cdef995949f00e8f98ecc8012fcbe869cfc60918c37a130dd53d2e87"
+            "name": "photocraft-0.19.0-linux-aarch64.rpm",
+            "size": 121881451,
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.19.0/photocraft-0.19.0-linux-aarch64.rpm",
+            "sha256": "3628047381cfa02da350a5231359cbb74187bc63f9ca25c3a2c65b9cf2290ee9"
           }
         ]
       }
     },
     "storytold/vectorcraft": {
       "mac": {
-        "tag": "v0.19.0",
-        "date": "2026-10-31T04:08:53Z",
-        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.19.0",
+        "tag": "v0.20.0",
+        "date": "2026-11-01T19:43:26Z",
+        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.20.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "vectorcraft-0.19.0-macos-universal.dmg",
-            "size": 156717287,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-macos-universal.dmg",
-            "sha256": "60e03f845d305273f88fa31890a67763817c1b291c303ef0b5290184902fc77d"
+            "name": "vectorcraft-0.20.0-macos-universal.dmg",
+            "size": 158831963,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-macos-universal.dmg",
+            "sha256": "9061ff391df0d7e4a843f9fba6c2d3ff3a2cf118d3f4cdb72f240dbdbec38b18"
           }
         ]
       },
       "win": {
-        "tag": "v0.19.0",
-        "date": "2026-10-31T04:08:53Z",
-        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.19.0",
+        "tag": "v0.20.0",
+        "date": "2026-11-01T19:43:26Z",
+        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.20.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "vectorcraft-0.19.0-windows-x64.msi",
-            "size": 114475008,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-windows-x64.msi",
-            "sha256": "ee96823769c2363dcc05b2dcdf7b0e7935c355676d427a8a17f4e48dcd95c004"
+            "name": "vectorcraft-0.20.0-windows-x64.msi",
+            "size": 115916800,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-windows-x64.msi",
+            "sha256": "a9718a562ce49ad4eb0aa1aabb975d7cc343437c173808b75700a58bc7fa9aef"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "vectorcraft-0.19.0-windows-x86.msi",
-            "size": 111091712,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-windows-x86.msi",
-            "sha256": "596ef4c9782218a2c0fd8a3a4b73ac8a7fa959d2ee674b4c1ed51319413f8c80"
+            "name": "vectorcraft-0.20.0-windows-x86.msi",
+            "size": 112492544,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-windows-x86.msi",
+            "sha256": "1e83efcf261b78932a3d5b8d228aa1496f90ef0b25b35c4c2d002ba04b5aca3c"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "vectorcraft-0.19.0-windows-arm64.msi",
-            "size": 107544576,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-windows-arm64.msi",
-            "sha256": "fac2d4f345391ccf76bc2d9d796b41eb25e16e8a74acf5a080b528eabad67e40"
+            "name": "vectorcraft-0.20.0-windows-arm64.msi",
+            "size": 108826624,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-windows-arm64.msi",
+            "sha256": "4796c81ed9842334e1c021dfb218143fd7854c23585fc495bdf634f48c6250d7"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "vectorcraft-0.19.0-windows-x64-portable.zip",
-            "size": 142425722,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-windows-x64-portable.zip",
-            "sha256": "6880256703f2ca7d7b807141c976441af9fbda8645eaead209712b061649b82a"
+            "name": "vectorcraft-0.20.0-windows-x64-portable.zip",
+            "size": 144341418,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-windows-x64-portable.zip",
+            "sha256": "16bfb3552404234a94785ec8da13ce261712a10ec96f5b34e38fa680faf27361"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "vectorcraft-0.19.0-windows-x86-portable.zip",
-            "size": 136207808,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-windows-x86-portable.zip",
-            "sha256": "97cce1e8ba22269962ef2ec378ec760ae17a698e0c4fdc640b687542f9dcbead"
+            "name": "vectorcraft-0.20.0-windows-x86-portable.zip",
+            "size": 138046737,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-windows-x86-portable.zip",
+            "sha256": "472c27dc98753130e6404a7570d94fec0962ece8ee2e8ba6231b5c6b8e095368"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "vectorcraft-0.19.0-windows-arm64-portable.zip",
-            "size": 135534659,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-windows-arm64-portable.zip",
-            "sha256": "9dadc8cf1945bfc1b4e93a5003b6ce5a63685a4583e57e024dd9ac25f6457f13"
+            "name": "vectorcraft-0.20.0-windows-arm64-portable.zip",
+            "size": 137318892,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-windows-arm64-portable.zip",
+            "sha256": "064216ecc5232ac907aaa7f5eae43bd574153e525cf8dea23491bcdbdaaa4e5d"
           }
         ]
       },
       "linux": {
-        "tag": "v0.19.0",
-        "date": "2026-10-31T04:08:53Z",
-        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.19.0",
+        "tag": "v0.20.0",
+        "date": "2026-11-01T19:43:26Z",
+        "page": "https://github.com/storytold/vectorcraft/releases/tag/v0.20.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "vectorcraft-0.19.0-linux-x86_64.AppImage",
-            "size": 130566648,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-linux-x86_64.AppImage",
-            "sha256": "1869554bafd428db3b368fa405b8ab488b25d324d380e772bc0b118bbacb34c5"
+            "name": "vectorcraft-0.20.0-linux-x86_64.AppImage",
+            "size": 132172280,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-x86_64.AppImage",
+            "sha256": "b625bae80558f95d94b9cd0ce74224d2a83180106dab2619559551cab216ead4"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "vectorcraft-0.19.0-linux-aarch64.AppImage",
-            "size": 125319688,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-linux-aarch64.AppImage",
-            "sha256": "5b83593ac1fface961ddac6a858706882dbe96af78514f91c87a6a2ef907e327"
+            "name": "vectorcraft-0.20.0-linux-aarch64.AppImage",
+            "size": 126798344,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-aarch64.AppImage",
+            "sha256": "a27a0732705293f5092adbe4daea19a968c52d823f14dfe09909f5212aad9091"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "vectorcraft-0.19.0-linux-x86_64.deb",
-            "size": 140606758,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-linux-x86_64.deb",
-            "sha256": "cfd8ae77214029aae63d5a5fc9adb7d7628765de5faa37dddfb658bc5980bf11"
+            "name": "vectorcraft-0.20.0-linux-x86_64.deb",
+            "size": 142374568,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-x86_64.deb",
+            "sha256": "c67a7da1d7d07dff9db3b7a99c56af7c06ba6ce6a6af661c0a04f03f3b05a184"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "vectorcraft-0.19.0-linux-aarch64.deb",
-            "size": 136358770,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-linux-aarch64.deb",
-            "sha256": "2ab63c41506d95fb77ceecd8ead9c9fe8dffd58394f0930ecbb37abad7bd7f4b"
+            "name": "vectorcraft-0.20.0-linux-aarch64.deb",
+            "size": 138071292,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-aarch64.deb",
+            "sha256": "4069473b4cd0b217d68ae8754553128046e40c5570f62bc56c566332cb227ac8"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "vectorcraft-0.19.0-linux-x86_64.rpm",
-            "size": 139652058,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-linux-x86_64.rpm",
-            "sha256": "b507931d82471eef60b5f8f49de74d803c6c14e9e89f75324115ea0cf348445c"
+            "name": "vectorcraft-0.20.0-linux-x86_64.rpm",
+            "size": 141406934,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-x86_64.rpm",
+            "sha256": "c7d1f6b68dba6c7f9197e4000ff71a2ca3f45d85c814738e61771aac4250f7c9"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "vectorcraft-0.19.0-linux-aarch64.rpm",
-            "size": 135168810,
-            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.19.0/vectorcraft-0.19.0-linux-aarch64.rpm",
-            "sha256": "97094ea6d6d816211aa0b5b3d8799b2dacfdf0356adb598a2974a129e66d93bb"
+            "name": "vectorcraft-0.20.0-linux-aarch64.rpm",
+            "size": 136836833,
+            "url": "https://github.com/storytold/vectorcraft/releases/download/v0.20.0/vectorcraft-0.20.0-linux-aarch64.rpm",
+            "sha256": "5b758057a34f53211903736ab71825961f7afaa1cb6c7b645ee5b77c7551ced1"
           }
         ]
       }
