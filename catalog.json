@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-01T21:12:41.261Z",
+  "updated": "2026-11-02T00:49:50.703Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -15,70 +15,70 @@
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6746,
     "ankitects/anki": 32458,
-    "Anuken/Mindustry": 29562,
-    "AppFlowy-IO/AppFlowy": 78075,
-    "audacity/audacity": 18910,
-    "AUTOMATIC1111/stable-diffusion-webui": 165212,
-    "bitwarden/clients": 14129,
-    "blender/blender": 21505,
-    "Comfy-Org/ComfyUI": 144480,
-    "dbeaver/dbeaver": 52262,
-    "ente/ente": 29814,
-    "excalidraw/excalidraw": 134978,
-    "FreeTubeApp/FreeTube": 22290,
-    "ggml-org/llama.cpp": 133073,
-    "ggml-org/whisper.cpp": 54843,
+    "Anuken/Mindustry": 29564,
+    "AppFlowy-IO/AppFlowy": 78079,
+    "audacity/audacity": 18914,
+    "AUTOMATIC1111/stable-diffusion-webui": 165214,
+    "bitwarden/clients": 14128,
+    "blender/blender": 21509,
+    "Comfy-Org/ComfyUI": 144488,
+    "dbeaver/dbeaver": 52266,
+    "ente/ente": 29817,
+    "excalidraw/excalidraw": 134983,
+    "FreeTubeApp/FreeTube": 22291,
+    "ggml-org/llama.cpp": 133088,
+    "ggml-org/whisper.cpp": 54848,
     "GNOME/gimp": 6558,
-    "godotengine/godot": 119396,
-    "HandBrake/HandBrake": 24849,
+    "godotengine/godot": 119406,
+    "HandBrake/HandBrake": 24850,
     "HeliBorg/HeliBoard": 6473,
-    "immich-app/immich": 117896,
-    "ImranR98/Obtainium": 21126,
+    "immich-app/immich": 117907,
+    "ImranR98/Obtainium": 21129,
     "inkscape/inkscape": 4075,
-    "janhq/jan": 45224,
-    "jellyfin/jellyfin": 58897,
-    "jesseduffield/lazygit": 83584,
+    "janhq/jan": 45240,
+    "jellyfin/jellyfin": 58903,
+    "jesseduffield/lazygit": 83590,
     "jgraph/drawio-desktop": 63748,
-    "jitsi/jitsi-meet-electron": 1635,
+    "jitsi/jitsi-meet-electron": 1636,
     "KDE/krita": 10676,
     "keepassxreboot/keepassxc": 29680,
     "laurent22/joplin": 56979,
-    "LibreOffice/core": 4590,
-    "localsend/localsend": 96943,
-    "logseq/logseq": 45445,
-    "luanti-org/luanti": 13803,
+    "LibreOffice/core": 4589,
+    "localsend/localsend": 96948,
+    "logseq/logseq": 45449,
+    "luanti-org/luanti": 13805,
     "mattermost/desktop": 2281,
-    "mltframework/shotcut": 15560,
-    "mpv-player/mpv": 37662,
-    "mullvad/mullvadvpn-app": 7735,
-    "neovim/neovim": 103292,
+    "mltframework/shotcut": 15561,
+    "mpv-player/mpv": 37663,
+    "mullvad/mullvadvpn-app": 7736,
+    "neovim/neovim": 103298,
     "nomic-ai/gpt4all": 77342,
-    "notepad-plus-plus/notepad-plus-plus": 29757,
-    "obsproject/obs-studio": 78774,
-    "ollama/ollama": 185589,
+    "notepad-plus-plus/notepad-plus-plus": 29759,
+    "obsproject/obs-studio": 78776,
+    "ollama/ollama": 185599,
     "OpenTTD/OpenTTD": 8447,
-    "organicmaps/organicmaps": 15845,
-    "penpot/penpot": 61963,
+    "organicmaps/organicmaps": 15846,
+    "penpot/penpot": 61965,
     "PintaProject/Pinta": 4119,
-    "signalapp/Signal-Desktop": 16644,
-    "storytold/designcraft": 5009,
-    "storytold/effectcraft": 8300,
-    "storytold/filmcraft": 17201,
-    "storytold/lightcraft": 15249,
-    "storytold/pdfcraft": 19066,
-    "storytold/photocraft": 75852,
-    "storytold/vectorcraft": 11178,
-    "super-productivity/super-productivity": 23336,
+    "signalapp/Signal-Desktop": 16643,
+    "storytold/designcraft": 5016,
+    "storytold/effectcraft": 8305,
+    "storytold/filmcraft": 17218,
+    "storytold/lightcraft": 15262,
+    "storytold/pdfcraft": 19088,
+    "storytold/photocraft": 75894,
+    "storytold/vectorcraft": 11188,
+    "super-productivity/super-productivity": 23341,
     "supertuxkart/stk-code": 5461,
-    "syncthing/syncthing": 89984,
-    "tauri-apps/tauri": 112410,
-    "TeamNewPipe/NewPipe": 40394,
+    "syncthing/syncthing": 89990,
+    "tauri-apps/tauri": 112412,
+    "TeamNewPipe/NewPipe": 40398,
     "thunderbird/thunderbird-android": 14169,
     "ungoogled-software/ungoogled-chromium": 28153,
     "videolan/vlc": 20293,
     "VSCodium/vscodium": 33916,
     "wesnoth/wesnoth": 6969,
-    "zed-industries/zed": 92500
+    "zed-industries/zed": 92509
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -540,119 +540,119 @@
     },
     "dbeaver/dbeaver": {
       "mac": {
-        "tag": "26.2.3",
-        "date": "2026-10-18T17:33:40Z",
-        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+        "tag": "26.2.4",
+        "date": "2026-11-01T21:17:09Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.4",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "dbeaver-ce-26.2.3-macos-x86_64.dmg",
-            "size": 124866395,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-macos-x86_64.dmg",
-            "sha256": "6e36d64c4b347655110e7e368a2c78a1f663e7bf0373d6cb66198a5de069a508"
+            "name": "dbeaver-ce-26.2.4-macos-x86_64.dmg",
+            "size": 125941223,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-macos-x86_64.dmg",
+            "sha256": "f2480563fee951e57c492067f13ce674aa4ca246b0ceb07087836b545825eb6b"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "dbeaver-ce-26.2.3-macos-aarch64.dmg",
-            "size": 123509859,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-macos-aarch64.dmg",
-            "sha256": "1e512db149f3bd6d87fbfc47490741f9104bb391556bd128e9bc1a57d283780e"
+            "name": "dbeaver-ce-26.2.4-macos-aarch64.dmg",
+            "size": 124646758,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-macos-aarch64.dmg",
+            "sha256": "a1a10b2655d149f42a96874c7e769cec170fc92632d04dc793baa39825c0e8d3"
           }
         ]
       },
       "win": {
-        "tag": "26.2.3",
-        "date": "2026-10-18T17:33:40Z",
-        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+        "tag": "26.2.4",
+        "date": "2026-11-01T21:17:09Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.4",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "dbeaver-ce-26.2.3-windows-x86_64.exe",
-            "size": 113997952,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-x86_64.exe",
-            "sha256": "49d0c6d4ee0ba5acecfb48b9a4d2bd8d5734730154d5b974d8990205edb8e927"
+            "name": "dbeaver-ce-26.2.4-windows-x86_64.exe",
+            "size": 115077816,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-windows-x86_64.exe",
+            "sha256": "9f50ca4c9f84abfdc6a27636206183b252a296d31157009418ffd15db50353f9"
           },
           {
             "arch": "arm64",
             "kind": "exe",
-            "name": "dbeaver-ce-26.2.3-windows-aarch64.exe",
-            "size": 111637968,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-aarch64.exe",
-            "sha256": "1c92c0f0caf046724570428a6362814c3f32efafed6833e41d0ff979ceaa943f"
+            "name": "dbeaver-ce-26.2.4-windows-aarch64.exe",
+            "size": 112682720,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-windows-aarch64.exe",
+            "sha256": "6fb336edd8d9a26657c86ee2f48d0e9ba6943addca45a827fed03323f3931d6b"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "dbeaver-ce-26.2.3-windows-x86_64.zip",
-            "size": 125320467,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-x86_64.zip",
-            "sha256": "0edfc68e1efe2cc364b48466d7d94a7e029bca067c4638282bbf104cab546547"
+            "name": "dbeaver-ce-26.2.4-windows-x86_64.zip",
+            "size": 126433772,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-windows-x86_64.zip",
+            "sha256": "e667f516d64f29b87e3571203fc3eb02f0a419b9ff66865043bf9954ebc230c6"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "dbeaver-ce-26.2.3-windows-aarch64.zip",
-            "size": 123007279,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-windows-aarch64.zip",
-            "sha256": "d458948a06478cacddfb04f6dfff46e1e4d68830856e3a912ae82db4a905ac7c"
+            "name": "dbeaver-ce-26.2.4-windows-aarch64.zip",
+            "size": 124058605,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-windows-aarch64.zip",
+            "sha256": "15ac78b8533c4f83237c67cf458ac9966024c2c7e6a0f0aa281f62b4c8d62d75"
           }
         ]
       },
       "linux": {
-        "tag": "26.2.3",
-        "date": "2026-10-18T17:33:40Z",
-        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+        "tag": "26.2.4",
+        "date": "2026-11-01T21:17:09Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.4",
         "files": [
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "dbeaver-ce-26.2.3-linux-x86_64.deb",
-            "size": 128128776,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-x86_64.deb",
-            "sha256": "66a9d989dc36bdaf71f95e4186efc022399c0dfcfb37e69034038502f2fb3d21"
+            "name": "dbeaver-ce-26.2.4-linux-x86_64.deb",
+            "size": 129167416,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-x86_64.deb",
+            "sha256": "412f2c22047e16af204e76cc6c7d29d8011894af887c65a9c027e7ca4af21a67"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "dbeaver-ce-26.2.3-linux-aarch64.deb",
-            "size": 127061220,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-aarch64.deb",
-            "sha256": "79daaeee8b64ade4a06505bcc5ea17f22e11bde6a4a366ef208f1c3d3e06b6e2"
+            "name": "dbeaver-ce-26.2.4-linux-aarch64.deb",
+            "size": 128116762,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-aarch64.deb",
+            "sha256": "cebe77cec4ba5c4d9d8510a4a5c6f3644f2fd801462e44c83ba30ffac64c2e54"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "dbeaver-ce-26.2.3-linux-x86_64.rpm",
-            "size": 128213449,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-x86_64.rpm",
-            "sha256": "499f2b80a8fc5044e711116996a31c850236750ba32f99208c57526b3df61320"
+            "name": "dbeaver-ce-26.2.4-linux-x86_64.rpm",
+            "size": 129256084,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-x86_64.rpm",
+            "sha256": "d8ea7d5388dbaae63fd5630682a0effbcada327605a85dd7b3cfd6f717d078b4"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "dbeaver-ce-26.2.3-linux-aarch64.rpm",
-            "size": 127151965,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-aarch64.rpm",
-            "sha256": "12bad1814132d5c31df5dce67e798a7cc9a4c0f49304f2b8b2fbdb5102763a67"
+            "name": "dbeaver-ce-26.2.4-linux-aarch64.rpm",
+            "size": 128218756,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-aarch64.rpm",
+            "sha256": "1966c19f369d7f71dd325cd86c79b491354d621579a19d575689d29eaa2c23fc"
           },
           {
             "arch": "x64",
             "kind": "tar",
-            "name": "dbeaver-ce-26.2.3-linux-x86_64.tar.gz",
-            "size": 128090733,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-x86_64.tar.gz",
-            "sha256": "9322b9b2ccb28a7084ec4dffe991051c0b3e58e64a738cac5b1de02dd1f56641"
+            "name": "dbeaver-ce-26.2.4-linux-x86_64.tar.gz",
+            "size": 129127321,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-x86_64.tar.gz",
+            "sha256": "a0dce46bb01cd2447c2d51388a39d3cda7ac58930fc558ebf3945aca5b859360"
           },
           {
             "arch": "arm64",
             "kind": "tar",
-            "name": "dbeaver-ce-26.2.3-linux-aarch64.tar.gz",
-            "size": 127029189,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.3/dbeaver-ce-26.2.3-linux-aarch64.tar.gz",
-            "sha256": "e842efef59927986fc73f2964efe9d473c4e2c0fad5620014ec33936214bf11b"
+            "name": "dbeaver-ce-26.2.4-linux-aarch64.tar.gz",
+            "size": 128085287,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-aarch64.tar.gz",
+            "sha256": "e64f2b4265097c0501db9141234b62f979cb14eda993df3c592b70cc166f01c6"
           }
         ]
       }
@@ -1996,33 +1996,33 @@
         ]
       },
       "android": {
-        "tag": "5.17.0",
-        "date": "2026-08-20T17:45:51Z",
-        "page": "https://github.com/luanti-org/luanti/releases/tag/5.17.0",
+        "tag": "5.18.0",
+        "date": "2026-10-29T20:09:02Z",
+        "page": "https://github.com/luanti-org/luanti/releases/tag/5.18.0",
         "files": [
           {
             "arch": "x86",
             "kind": "apk",
-            "name": "luanti-5.17.0-x86.apk",
-            "size": 18281048,
-            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-x86.apk",
-            "sha256": "16d9d156e17d5959eccaecab9e95d81f6881bfcd20805c36ceb3e56ec1c5294c"
+            "name": "luanti-5.18.0-x86.apk",
+            "size": 18582777,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.18.0/luanti-5.18.0-x86.apk",
+            "sha256": "dcdef8ed66d7f8d742c48ad18aa02a51a96bea5fa51b8ef7cc62d8e3b9fcb975"
           },
           {
             "arch": "x64",
             "kind": "apk",
-            "name": "luanti-5.17.0-x86_64.apk",
-            "size": 17936990,
-            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-x86_64.apk",
-            "sha256": "d0e8bea52462d7e743d411e79c9eaa6b55f382f88ab1644d6ef727b320fae148"
+            "name": "luanti-5.18.0-x86_64.apk",
+            "size": 18246911,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.18.0/luanti-5.18.0-x86_64.apk",
+            "sha256": "3f7f28910092331aeed5ef90823fdc085a8077f457bbe6df7fae7d883d48c120"
           },
           {
             "arch": "arm64",
             "kind": "apk",
-            "name": "luanti-5.17.0-arm64-v8a.apk",
-            "size": 17515108,
-            "url": "https://github.com/luanti-org/luanti/releases/download/5.17.0/luanti-5.17.0-arm64-v8a.apk",
-            "sha256": "58d4b9090ca2c837625eafc5c62668224cf1051b35b943f994cad8d7705d1292"
+            "name": "luanti-5.18.0-arm64-v8a.apk",
+            "size": 17829125,
+            "url": "https://github.com/luanti-org/luanti/releases/download/5.18.0/luanti-5.18.0-arm64-v8a.apk",
+            "sha256": "d69b2337b68242572d04a3002be784cbfe8f62fb13124f1f7b96b2e5aa64c92f"
           }
         ]
       }
@@ -4318,7 +4318,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52262,
+      "stars": 52266,
       "glyph": "code",
       "c": [
         "#4AA8FF",
