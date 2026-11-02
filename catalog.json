@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-02T07:43:18.892Z",
+  "updated": "2026-11-02T18:28:18.119Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6747,
-    "ankitects/anki": 32476,
-    "Anuken/Mindustry": 29566,
-    "AppFlowy-IO/AppFlowy": 78085,
-    "audacity/audacity": 18919,
-    "AUTOMATIC1111/stable-diffusion-webui": 165217,
-    "bitwarden/clients": 14128,
-    "blender/blender": 21524,
-    "Comfy-Org/ComfyUI": 144550,
-    "dbeaver/dbeaver": 52269,
-    "ente/ente": 29825,
-    "excalidraw/excalidraw": 135003,
-    "FreeTubeApp/FreeTube": 22288,
-    "ggml-org/llama.cpp": 133115,
-    "ggml-org/whisper.cpp": 54854,
-    "GNOME/gimp": 6558,
-    "godotengine/godot": 119420,
-    "HandBrake/HandBrake": 24852,
-    "HeliBorg/HeliBoard": 6474,
-    "immich-app/immich": 117940,
-    "ImranR98/Obtainium": 21138,
-    "inkscape/inkscape": 4075,
-    "janhq/jan": 45292,
-    "jellyfin/jellyfin": 58913,
-    "jesseduffield/lazygit": 83592,
-    "jgraph/drawio-desktop": 63763,
+    "00-Evan/shattered-pixel-dungeon": 6750,
+    "ankitects/anki": 32488,
+    "Anuken/Mindustry": 29575,
+    "AppFlowy-IO/AppFlowy": 78111,
+    "audacity/audacity": 18927,
+    "AUTOMATIC1111/stable-diffusion-webui": 165227,
+    "bitwarden/clients": 14129,
+    "blender/blender": 21539,
+    "Comfy-Org/ComfyUI": 144644,
+    "dbeaver/dbeaver": 52273,
+    "ente/ente": 29840,
+    "excalidraw/excalidraw": 135046,
+    "FreeTubeApp/FreeTube": 22295,
+    "ggml-org/llama.cpp": 133174,
+    "ggml-org/whisper.cpp": 54868,
+    "GNOME/gimp": 6560,
+    "godotengine/godot": 119455,
+    "HandBrake/HandBrake": 24863,
+    "HeliBorg/HeliBoard": 6479,
+    "immich-app/immich": 117988,
+    "ImranR98/Obtainium": 21146,
+    "inkscape/inkscape": 4077,
+    "janhq/jan": 45330,
+    "jellyfin/jellyfin": 58939,
+    "jesseduffield/lazygit": 83611,
+    "jgraph/drawio-desktop": 63776,
     "jitsi/jitsi-meet-electron": 1636,
-    "KDE/krita": 10678,
-    "keepassxreboot/keepassxc": 29694,
-    "laurent22/joplin": 56980,
-    "LibreOffice/core": 4589,
-    "localsend/localsend": 96986,
-    "logseq/logseq": 45452,
-    "luanti-org/luanti": 13806,
+    "KDE/krita": 10680,
+    "keepassxreboot/keepassxc": 29709,
+    "laurent22/joplin": 56994,
+    "LibreOffice/core": 4590,
+    "localsend/localsend": 97052,
+    "logseq/logseq": 45459,
+    "luanti-org/luanti": 13809,
     "mattermost/desktop": 2281,
-    "mltframework/shotcut": 15565,
-    "mpv-player/mpv": 37664,
-    "mullvad/mullvadvpn-app": 7737,
-    "neovim/neovim": 103301,
-    "nomic-ai/gpt4all": 77345,
-    "notepad-plus-plus/notepad-plus-plus": 29762,
-    "obsproject/obs-studio": 78798,
-    "ollama/ollama": 185639,
+    "mltframework/shotcut": 15578,
+    "mpv-player/mpv": 37678,
+    "mullvad/mullvadvpn-app": 7739,
+    "neovim/neovim": 103308,
+    "nomic-ai/gpt4all": 77347,
+    "notepad-plus-plus/notepad-plus-plus": 29771,
+    "obsproject/obs-studio": 78840,
+    "ollama/ollama": 185691,
     "OpenTTD/OpenTTD": 8451,
-    "organicmaps/organicmaps": 15852,
-    "penpot/penpot": 61974,
-    "PintaProject/Pinta": 4121,
-    "signalapp/Signal-Desktop": 16643,
-    "storytold/designcraft": 5020,
-    "storytold/effectcraft": 8315,
-    "storytold/filmcraft": 17240,
-    "storytold/lightcraft": 15272,
-    "storytold/pdfcraft": 19122,
-    "storytold/photocraft": 75977,
-    "storytold/vectorcraft": 11200,
-    "super-productivity/super-productivity": 23346,
+    "organicmaps/organicmaps": 15859,
+    "penpot/penpot": 61995,
+    "PintaProject/Pinta": 4123,
+    "signalapp/Signal-Desktop": 16645,
+    "storytold/designcraft": 5031,
+    "storytold/effectcraft": 8338,
+    "storytold/filmcraft": 17296,
+    "storytold/lightcraft": 15314,
+    "storytold/pdfcraft": 19215,
+    "storytold/photocraft": 76153,
+    "storytold/vectorcraft": 11224,
+    "super-productivity/super-productivity": 23354,
     "supertuxkart/stk-code": 5461,
-    "syncthing/syncthing": 90005,
-    "tauri-apps/tauri": 112422,
-    "TeamNewPipe/NewPipe": 40398,
-    "thunderbird/thunderbird-android": 14169,
-    "ungoogled-software/ungoogled-chromium": 28153,
-    "videolan/vlc": 20298,
-    "VSCodium/vscodium": 33916,
+    "syncthing/syncthing": 90016,
+    "tauri-apps/tauri": 112437,
+    "TeamNewPipe/NewPipe": 40406,
+    "thunderbird/thunderbird-android": 14172,
+    "ungoogled-software/ungoogled-chromium": 28162,
+    "videolan/vlc": 20308,
+    "VSCodium/vscodium": 33917,
     "wesnoth/wesnoth": 6968,
-    "zed-industries/zed": 92531
+    "zed-industries/zed": 92564
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -334,206 +334,206 @@
     },
     "audacity/audacity": {
       "mac": {
-        "tag": "Audacity-4.0.1",
-        "date": "2026-09-30T11:59:48Z",
-        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1",
+        "tag": "Audacity-4.0.2",
+        "date": "2026-11-02T10:01:34Z",
+        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.2",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "audacity-macOS-4.0.1-universal.dmg",
-            "size": 92003045,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-macOS-4.0.1-universal.dmg",
-            "sha256": "473db7ce0d846d2d45df97e8e83ff4c70fc835eff6bcc9e119d8eac34f979794"
+            "name": "audacity-macOS-4.0.2-universal.dmg",
+            "size": 91997209,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-universal.dmg",
+            "sha256": "73f1090b7dde6ff181c994af50dd927ea118cf9525b129133a2ae82e79a506a3"
           },
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "audacity-macOS-4.0.1-x86_64.dmg",
-            "size": 54321871,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-macOS-4.0.1-x86_64.dmg",
-            "sha256": "9794b0b3a3a795bdc097b411a5776ba59dc451cb1524f58c9714c30cca2564be"
+            "name": "audacity-macOS-4.0.2-x86_64.dmg",
+            "size": 54394541,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-x86_64.dmg",
+            "sha256": "4bf24e9f68e4af31dc47a6b1d02a44a74b537bdb88298d3bc14be55fb1fe6e58"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "audacity-macOS-4.0.1-arm64.dmg",
-            "size": 50034126,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-macOS-4.0.1-arm64.dmg",
-            "sha256": "278c8647b78c77af7f07dbd5e7d9bfc950bc14168047b65738716b61d12055ec"
+            "name": "audacity-macOS-4.0.2-arm64.dmg",
+            "size": 50030766,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-arm64.dmg",
+            "sha256": "fd462da6204cbf9758b44c7ce1c29d5fe5cab4f31ba308d33c125f1b170401c3"
           }
         ]
       },
       "win": {
-        "tag": "Audacity-4.0.1",
-        "date": "2026-09-30T11:59:48Z",
-        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1",
+        "tag": "Audacity-4.0.2",
+        "date": "2026-11-02T10:01:34Z",
+        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.2",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "audacity-win-4.0.1-x86_64.msi",
-            "size": 49795072,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.msi",
-            "sha256": "efb652bf04168f5d4893f28b7cefaaf5ef385d9251544540ac774e3bf54793a3"
+            "name": "audacity-win-4.0.2-x86_64.msi",
+            "size": 49823744,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-x86_64.msi",
+            "sha256": "ff6cad670befee96fee563056965fa5e17bfa8c7ea3aba10c461c18799409e22"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "audacity-win-4.0.1-arm64.msi",
-            "size": 38264832,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-arm64.msi",
-            "sha256": "b6606d9bcb1a49254f1966c7edc68d78f7eadd04eebe7d4676350f32ca675f49"
+            "name": "audacity-win-4.0.2-arm64.msi",
+            "size": 38240256,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-arm64.msi",
+            "sha256": "78a11f84f3f28be7dee932f99a2da2f6a8ecb60ac1ee8fe2ff3c85f0f6a5a9d8"
           },
           {
             "arch": "x64",
             "kind": "7z",
-            "name": "audacity-win-4.0.1-x86_64.7z",
-            "size": 44322940,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.7z",
-            "sha256": "9c5e0379626dee8a573af91ba5355311b9001dcf310294dd4dc9aa6887593d03"
+            "name": "audacity-win-4.0.2-x86_64.7z",
+            "size": 44336109,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-x86_64.7z",
+            "sha256": "6f375602254672b4f0db959e8b1e6fd46a97462aeab85b7ff21e1e9d9a54c5b3"
           },
           {
             "arch": "arm64",
             "kind": "7z",
-            "name": "audacity-win-4.0.1-arm64.7z",
-            "size": 32798863,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-arm64.7z",
-            "sha256": "bafa562f9fc3960eae50ac64b656360b5bd2824af3396ed0809551a1f8eb716e"
+            "name": "audacity-win-4.0.2-arm64.7z",
+            "size": 32843241,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-arm64.7z",
+            "sha256": "2408c78a2784216af610afd3cd7ce70c6acc107ab08d2e7a5ab744ff4a4d40ae"
           }
         ]
       },
       "linux": {
-        "tag": "Audacity-4.0.1",
-        "date": "2026-09-30T11:59:48Z",
-        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.1",
+        "tag": "Audacity-4.0.2",
+        "date": "2026-11-02T10:01:34Z",
+        "page": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.2",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "audacity-linux-4.0.1-x86_64.AppImage",
-            "size": 73755128,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-linux-4.0.1-x86_64.AppImage",
-            "sha256": "ca2f04f172124d1f18ac608749854c5d31f04ab266a758c348190c05d9b2087c"
+            "name": "audacity-linux-4.0.2-x86_64.AppImage",
+            "size": 73726456,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-linux-4.0.2-x86_64.AppImage",
+            "sha256": "a5f8787aa13cdb500a60fc013403b986776876b960cca962bc6e7fff066172f3"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "audacity-linux-4.0.1-aarch64.AppImage",
-            "size": 70666760,
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-linux-4.0.1-aarch64.AppImage",
-            "sha256": "3abc517f26f00197eaac9c4e56b35dc53d8e933764b41077950e8526cd4aa075"
+            "name": "audacity-linux-4.0.2-aarch64.AppImage",
+            "size": 70670856,
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-linux-4.0.2-aarch64.AppImage",
+            "sha256": "88b1e16dd40a5b7d36bec5789b03f66bda34a7b964e19f338951bf6034d9db9c"
           }
         ]
       }
     },
     "bitwarden/clients": {
       "mac": {
-        "tag": "desktop-v2026.10.2",
-        "date": "2026-10-29T13:53:08Z",
-        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.2",
+        "tag": "desktop-v2026.10.3",
+        "date": "2026-11-02T16:19:31Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.3",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "Bitwarden-2026.10.2-universal.dmg",
-            "size": 350668585,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-universal.dmg",
-            "sha256": "f507ff8a5d9a65da787f0eec2a69443133485e951ea93909ce42aed6a2bb5f21"
+            "name": "Bitwarden-2026.10.3-universal.dmg",
+            "size": 350660841,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-universal.dmg",
+            "sha256": "eca6581226788c39eeff962b09dc64203a87068512bb2ab4f5050e45f6a75972"
           },
           {
             "arch": "universal",
             "kind": "zip",
-            "name": "Bitwarden-2026.10.2-universal-mac.zip",
-            "size": 336899758,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-universal-mac.zip",
-            "sha256": "b7f9db9afb0242579b8a6dea97835ffb9565b78385bd493aadeda59756fb4240"
+            "name": "Bitwarden-2026.10.3-universal-mac.zip",
+            "size": 336898807,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-universal-mac.zip",
+            "sha256": "d2a6f23ce05ca448d60c514bae3508085196634bbfb9d822814d72ad346011d8"
           }
         ]
       },
       "win": {
-        "tag": "desktop-v2026.10.2",
-        "date": "2026-10-29T13:53:08Z",
-        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.2",
+        "tag": "desktop-v2026.10.3",
+        "date": "2026-11-02T16:19:31Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.3",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "Bitwarden-Installer-2026.10.2.exe",
-            "size": 734248,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-Installer-2026.10.2.exe",
-            "sha256": "3316eb8516edae538de3ee529c1a6329676c1c7b354a5166894bb64d9ecc0e6f"
+            "name": "Bitwarden-Installer-2026.10.3.exe",
+            "size": 734240,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-Installer-2026.10.3.exe",
+            "sha256": "95fdabb86b73df3324710f1dea16eb52d92362ff1fee6ff04f390e173f7738d7"
           },
           {
             "arch": "x64",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.2-x64.appx",
-            "size": 259267320,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-x64.appx",
-            "sha256": "9fb209179e99bd3c56028e138b699f642ce254b4badf70dc09e1d7771860ed9a"
+            "name": "Bitwarden-2026.10.3-x64.appx",
+            "size": 259267198,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-x64.appx",
+            "sha256": "85b9c846a28e3accd2d0d2665f5ad4a24f65a78d42f0b076c7f597c404e5b7aa"
           },
           {
             "arch": "arm64",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.2-arm64.appx",
-            "size": 258025754,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-arm64.appx",
-            "sha256": "4c9bc950c7c33e4a8c97a526c0922e672d5f55bf9732c1cd0c500980e1e584ee"
+            "name": "Bitwarden-2026.10.3-arm64.appx",
+            "size": 258025614,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-arm64.appx",
+            "sha256": "85da3f3bac2457e5500015e7979880f588935241c291fc016daca6c6d2f5a17e"
           },
           {
             "arch": "x86",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.2-ia32.appx",
-            "size": 237638557,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-ia32.appx",
-            "sha256": "52fe9df6a523d0d3a52ea5269e4c6d7998a2ba18fe104531566072e521a40828"
+            "name": "Bitwarden-2026.10.3-ia32.appx",
+            "size": 237638355,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-ia32.appx",
+            "sha256": "5e968c443ed1bf4536466b249cc64b04df4022f4fccf836236d5366f95560209"
           },
           {
             "arch": "arm64",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.2-arm64-store.appx",
-            "size": 257944449,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-arm64-store.appx",
-            "sha256": "7213875ce67afb079ee403187163ebc3e09ed54fa19c41d66998afd03bd04418"
+            "name": "Bitwarden-2026.10.3-arm64-store.appx",
+            "size": 257944295,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-arm64-store.appx",
+            "sha256": "24de51a6ac35143db2837ffbc246cb6aee6076031ceab4190291f23f07f5af83"
           },
           {
             "arch": "x86",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.2-ia32-store.appx",
-            "size": 237557308,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-ia32-store.appx",
-            "sha256": "ff9486ee32204ed68f9588303a89f6573d1deb10cef93a834f5e76797afc8430"
+            "name": "Bitwarden-2026.10.3-ia32-store.appx",
+            "size": 237557113,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-ia32-store.appx",
+            "sha256": "9a45c7e1276f75ba22a1e165f6512401ad9768dd76dcc433d80fca3701da1c15"
           }
         ]
       },
       "linux": {
-        "tag": "desktop-v2026.10.2",
-        "date": "2026-10-29T13:53:08Z",
-        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.2",
+        "tag": "desktop-v2026.10.3",
+        "date": "2026-11-02T16:19:31Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.3",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "Bitwarden-2026.10.2-x86_64.AppImage",
-            "size": 215802891,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-x86_64.AppImage",
-            "sha256": "07ce693427984332832be0889e652a74a65c1f0b680cf9fc3684a6fb0458494c"
+            "name": "Bitwarden-2026.10.3-x86_64.AppImage",
+            "size": 215798512,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-x86_64.AppImage",
+            "sha256": "ffc0e0376cc80344b8e2cfc92cc3cf46ed1cf49ce0bfeb6783573000434d6562"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "Bitwarden-2026.10.2-amd64.deb",
-            "size": 163643432,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-amd64.deb",
-            "sha256": "72c9ff6c45b8c8d803a4e4102f2884d6f579f329801a8953921c118737d92bc0"
+            "name": "Bitwarden-2026.10.3-amd64.deb",
+            "size": 163692756,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-amd64.deb",
+            "sha256": "4b393534053de502b2a7b2e730a1774fa811352e10b5ecae67d1ba3a7301c89d"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "Bitwarden-2026.10.2-x86_64.rpm",
-            "size": 131178917,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-x86_64.rpm",
-            "sha256": "ebc7a09fc70c4bd99e3b360a0f167ef13f482468d96380c0d45cb8053d3ec9c0"
+            "name": "Bitwarden-2026.10.3-x86_64.rpm",
+            "size": 131176625,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.3/Bitwarden-2026.10.3-x86_64.rpm",
+            "sha256": "02dd9ab3a5be8cb16649b46ede0d7b2e70f6ea00f4c7c569f2501398e3690b23"
           }
         ]
       }
@@ -745,135 +745,135 @@
     },
     "FreeTubeApp/FreeTube": {
       "mac": {
-        "tag": "v0.25.3-beta",
-        "date": "2026-08-28T07:10:01Z",
-        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta",
+        "tag": "v0.26.0-beta",
+        "date": "2026-11-02T08:37:57Z",
+        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.26.0-beta",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "freetube-0.25.3-beta-mac-x64.dmg",
-            "size": 123725139,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-x64.dmg",
-            "sha256": "40fb6c671ec75905e035968ec0c14bfe717643730af80536e625d191455f49bf"
+            "name": "freetube-0.26.0-beta-mac-x64.dmg",
+            "size": 138116307,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-mac-x64.dmg",
+            "sha256": "2e9343898c6a33acf7e48f81c24d97c7fe45cb7c942ab6e27c509118a03b18cb"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "freetube-0.25.3-beta-mac-arm64.dmg",
-            "size": 118871768,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-arm64.dmg",
-            "sha256": "2b445d64f5e56a873debea50c785cd41400bdabc387f0d67fc7be745b2b9146e"
+            "name": "freetube-0.26.0-beta-mac-arm64.dmg",
+            "size": 131556841,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-mac-arm64.dmg",
+            "sha256": "16b49e40297e35806aec173d2f2a9f2bf85e1e377207d40ac365c59e7a73a8b2"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "freetube-0.25.3-beta-mac-x64.zip",
-            "size": 119632886,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-x64.zip",
-            "sha256": "68fae2a7e7007561bcc78f7c1b875cb700e767cda6a8b11c5574fdf396dd858b"
+            "name": "freetube-0.26.0-beta-mac-x64.zip",
+            "size": 133746266,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-mac-x64.zip",
+            "sha256": "102df0402393df90f20ce7532ca3fe24379250d91c727ece99a6b9e81266c469"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "freetube-0.25.3-beta-mac-arm64.zip",
-            "size": 114760361,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-mac-arm64.zip",
-            "sha256": "302a0993e49797f538f377b228edfcc4b4dba536ab6260d91c78cd45f0f73188"
+            "name": "freetube-0.26.0-beta-mac-arm64.zip",
+            "size": 127183281,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-mac-arm64.zip",
+            "sha256": "b1fc5dbe0baf37ee885e7fe8bfbce2c311512ea8465512d14a76b43b5d9d1adf"
           }
         ]
       },
       "win": {
-        "tag": "v0.25.3-beta",
-        "date": "2026-08-28T07:10:01Z",
-        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta",
+        "tag": "v0.26.0-beta",
+        "date": "2026-11-02T08:37:57Z",
+        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.26.0-beta",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "freetube-0.25.3-beta-setup-x64.exe",
-            "size": 112567913,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-setup-x64.exe",
-            "sha256": "38226aeace71e065bd1914e0fb486aad781d67e1e134d3ed6c21e8d67e104f3a"
+            "name": "freetube-0.26.0-beta-setup-x64.exe",
+            "size": 122447634,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-setup-x64.exe",
+            "sha256": "9a7c4525dd3d64b68a48f274dab27d629da0b590b6d2b1e497c5b38b1a741961"
           },
           {
             "arch": "arm64",
             "kind": "exe",
-            "name": "freetube-0.25.3-beta-setup-arm64.exe",
-            "size": 106116291,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-setup-arm64.exe",
-            "sha256": "e98b4e0131f2b84934595bad6fd0e88d1a8c250f2fd3e5688409935efd1e3a98"
+            "name": "freetube-0.26.0-beta-setup-arm64.exe",
+            "size": 117178405,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-setup-arm64.exe",
+            "sha256": "737cf67a30f312b95a23de69cabd12dd8f86a1bd53127c221ac795a7e71f5673"
           },
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "freetube-0.25.3-beta-win-x64-portable.exe",
-            "size": 112274225,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-win-x64-portable.exe",
-            "sha256": "cb1ed0b27f91b91ddbb1b665d93f6ef12842b143789677d66d88727ff5913f05"
+            "name": "freetube-0.26.0-beta-win-x64-portable.exe",
+            "size": 111264306,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-win-x64-portable.exe",
+            "sha256": "ea987e643211bd21473ecb7e55a23d0c316167c933216f2ce0c914269c820ab7"
           },
           {
             "arch": "arm64",
             "kind": "exe",
-            "name": "freetube-0.25.3-beta-win-arm64-portable.exe",
-            "size": 105823149,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-win-arm64-portable.exe",
-            "sha256": "edd88364fa39e2120be6fbff8d547f9d9878202fe32a9d198d863c7190b02274"
+            "name": "freetube-0.26.0-beta-win-arm64-portable.exe",
+            "size": 106592297,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-win-arm64-portable.exe",
+            "sha256": "2a279e637720f6946ba3abcc87129f88521262ab80356afb707fc860212361f5"
           }
         ]
       },
       "linux": {
-        "tag": "v0.25.3-beta",
-        "date": "2026-08-28T07:10:01Z",
-        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.25.3-beta",
+        "tag": "v0.26.0-beta",
+        "date": "2026-11-02T08:37:57Z",
+        "page": "https://github.com/FreeTubeApp/FreeTube/releases/tag/v0.26.0-beta",
         "files": [
           {
-            "arch": "x64",
-            "kind": "appimage",
-            "name": "freetube-0.25.3-beta-amd64.AppImage",
-            "size": 119178803,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-amd64.AppImage",
-            "sha256": "745d46bddb5a45e704fe2a75c31fb8fc23a71b5564a9fc3eb7acf9f8ddb85a30"
-          },
-          {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "freetube-0.25.3-beta-arm64.AppImage",
-            "size": 116911186,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta-arm64.AppImage",
-            "sha256": "607a4c1cb656087249e6650456e4d2b5f2917475640aa7ff7afd4c05a95a596e"
+            "name": "freetube-0.26.0-beta-arm64.AppImage",
+            "size": 119121840,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-arm64.AppImage",
+            "sha256": "0514d590061d3e44d96a88ad2a4b800421c4585bb10141be635bf9998a70e028"
+          },
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "freetube-0.26.0-beta-amd64.AppImage",
+            "size": 118979002,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta-amd64.AppImage",
+            "sha256": "ee61804606b0ed3bbbe9c23e8cd4981a63938901f9bb7f106ca6fac50c6a86b1"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "freetube_0.25.3_beta_amd64.deb",
-            "size": 99748088,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube_0.25.3_beta_amd64.deb",
-            "sha256": "3a75dc4ef65edf184222c3389855be4699d04cce321e9695bb2989a50db2ba5d"
+            "name": "freetube_0.26.0_beta_amd64.deb",
+            "size": 101570648,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube_0.26.0_beta_amd64.deb",
+            "sha256": "b8ae0441283843ada8b6506792cb2c872637a26cd73fffaa2ce19c42e617daa3"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "freetube_0.25.3_beta_arm64.deb",
-            "size": 93087744,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube_0.25.3_beta_arm64.deb",
-            "sha256": "59a39a54055f414c2ea9666c373c3a4970266d8d366d52a839278d20f5ee8bc8"
+            "name": "freetube_0.26.0_beta_arm64.deb",
+            "size": 96648788,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube_0.26.0_beta_arm64.deb",
+            "sha256": "a1e28c998b64fe682184a864610959425f63a0e8db87d4c290fb0c127aee5093"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "freetube-0.25.3-beta.amd64.rpm",
-            "size": 87997241,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta.amd64.rpm",
-            "sha256": "3b3ca085573ff21bfb6c58f73004232028b41d87f22e35ad5bd17c19344269fd"
+            "name": "freetube-0.26.0-beta.amd64.rpm",
+            "size": 90238092,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta.amd64.rpm",
+            "sha256": "12cffb3c4049cc4e467edde272c503e69e6a97cf3df459f38015b4b691cbc817"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "freetube-0.25.3-beta.arm64.rpm",
-            "size": 81613993,
-            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.3-beta/freetube-0.25.3-beta.arm64.rpm",
-            "sha256": "7d9b9588a1e479ac6a2850377d7a42fab61505cd1628bb7f22d3cb1f6b26e28e"
+            "name": "freetube-0.26.0-beta.arm64.rpm",
+            "size": 85448152,
+            "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.26.0-beta/freetube-0.26.0-beta.arm64.rpm",
+            "sha256": "a1132511dd04b0bf7d17b97cc1c6cfdbc66ffc9801e3e76c6a70f7cb7adcb9ad"
           }
         ]
       }
@@ -2029,151 +2029,151 @@
     },
     "mattermost/desktop": {
       "mac": {
-        "tag": "v6.3.1",
-        "date": "2026-10-15T06:39:50Z",
-        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.1",
+        "tag": "v6.3.2",
+        "date": "2026-11-02T08:33:27Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.2",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "mattermost-desktop-6.3.1-mac-universal.dmg",
-            "size": 226685876,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-universal.dmg",
-            "sha256": "5a0c2f202f56ef7d3a1d5a013aafce2f8728af42b08f62c5bd8ab080a94b1ab4"
+            "name": "mattermost-desktop-6.3.2-mac-universal.dmg",
+            "size": 231825868,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-universal.dmg",
+            "sha256": "9ac01689fd8c786f3d8268dbbc4e965edd37f61ef9a4b58766e71a86c483dcf7"
           },
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "mattermost-desktop-6.3.1-mac-x64.dmg",
-            "size": 131397642,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-x64.dmg",
-            "sha256": "f917447231bbee72508ab43192c77548ddd5ba2e20f850089211fc2585e07587"
+            "name": "mattermost-desktop-6.3.2-mac-x64.dmg",
+            "size": 135013476,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-x64.dmg",
+            "sha256": "557f6194100c2da1d0c5f8a34dd73dcfd69fc35edf2f88361935ae65d6d9b2c7"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "mattermost-desktop-6.3.1-mac-arm64.dmg",
-            "size": 127776601,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-arm64.dmg",
-            "sha256": "ae03f4bc7875a42705b1e7b797cb605ea4204d49c65f12f0b3b8821177852bf1"
+            "name": "mattermost-desktop-6.3.2-mac-arm64.dmg",
+            "size": 129408070,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-arm64.dmg",
+            "sha256": "16bdf2b9d7a17224b399f30a957db4046b3c00a9b01e6ade3507ef5c0b5a37d6"
           },
           {
             "arch": "universal",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.1-mac-universal.zip",
-            "size": 218660890,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-universal.zip",
-            "sha256": "2287cbfb4778d666caa3b3e591b1f80fa17f8112b0973eedc53db335f7922fd3"
+            "name": "mattermost-desktop-6.3.2-mac-universal.zip",
+            "size": 223687535,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-universal.zip",
+            "sha256": "9543f9884a0271046f1a507bcc296d7c87e47b6c4a08194d0c03f658ddf2a968"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.1-mac-x64.zip",
-            "size": 126405966,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-x64.zip",
-            "sha256": "6cb2c8c79894755ac2331572c520bcb37b574ad9ad8c7e0bcf9df80e57fd70ef"
+            "name": "mattermost-desktop-6.3.2-mac-x64.zip",
+            "size": 129934708,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-x64.zip",
+            "sha256": "c256f69c8d57c1e527bee27205015f0fcc22da2590d11e55afd8d73bce55c5e6"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.1-mac-arm64.zip",
-            "size": 122727717,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-mac-arm64.zip",
-            "sha256": "fcce75e6d28fc569689065d9739b7905119a4009b35e2586b01eea88ad7382f2"
+            "name": "mattermost-desktop-6.3.2-mac-arm64.zip",
+            "size": 124322364,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-arm64.zip",
+            "sha256": "7adb624266d125f9ac7d293cc742da52221f0e60991c0728de208c980da3ef33"
           }
         ]
       },
       "win": {
-        "tag": "v6.3.1",
-        "date": "2026-10-15T06:39:50Z",
-        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.1",
+        "tag": "v6.3.2",
+        "date": "2026-11-02T08:33:27Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.2",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "mattermost-desktop-6.3.1-win-x64.msi",
-            "size": 124289024,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-x64.msi",
-            "sha256": "5f47b75874680f944539f4c33be60de83a4572180fe0a40848669932db88d2b8"
+            "name": "mattermost-desktop-6.3.2-win-x64.msi",
+            "size": 125181952,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-x64.msi",
+            "sha256": "f468e53a41204dee816025772934b83416dee80077b3581daa81476d55efdad8"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "mattermost-desktop-6.3.1-win-arm64.msi",
-            "size": 118026240,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-arm64.msi",
-            "sha256": "d771ad11cbf9d1814465f2459a49962651e3ea5e88ed1b0619de08cb94119084"
+            "name": "mattermost-desktop-6.3.2-win-arm64.msi",
+            "size": 120225792,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-arm64.msi",
+            "sha256": "0de5374d3033c6b3a52c07a64afad528bc5c55b89777051f7883e9f120e33777"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.1-win-x64.zip",
-            "size": 151414592,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-x64.zip",
-            "sha256": "6fff38bd3981c7a9c65bec6e266b8d4209aef7abe35c691c901133a577557294"
+            "name": "mattermost-desktop-6.3.2-win-x64.zip",
+            "size": 152618348,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-x64.zip",
+            "sha256": "71742332c490901b772f67be16ce9dfc713d9ee3dde697aaa4fc9dc774080673"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.1-win-arm64.zip",
-            "size": 148212871,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-win-arm64.zip",
-            "sha256": "d4a9fabcd46d5d59600e9949a8f96dc86f75f49c2350229bb88153d93a25bf2c"
+            "name": "mattermost-desktop-6.3.2-win-arm64.zip",
+            "size": 151307710,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-arm64.zip",
+            "sha256": "32ba7d425e9c4d47ad560db4c3e69c6bc93e99a59e7bae3e3fcfa190ef0ff433"
           }
         ]
       },
       "linux": {
-        "tag": "v6.3.1",
-        "date": "2026-10-15T06:39:50Z",
-        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.1",
+        "tag": "v6.3.2",
+        "date": "2026-11-02T08:33:27Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.2",
         "files": [
           {
-            "arch": "x64",
-            "kind": "appimage",
-            "name": "mattermost-desktop-6.3.1-linux-x86_64.AppImage",
-            "size": 135170322,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-x86_64.AppImage",
-            "sha256": "3699630073712b4fb65522d05d00e1493c2727af2fae08607846c24942a826e1"
-          },
-          {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "mattermost-desktop-6.3.1-linux-arm64.AppImage",
-            "size": 134269081,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-arm64.AppImage",
-            "sha256": "acc1c60395d44e4f38c46672f25cfe8982cb2edbd565d71ee3f64e9143ad0d17"
+            "name": "mattermost-desktop-6.3.2-linux-arm64.AppImage",
+            "size": 137821819,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-arm64.AppImage",
+            "sha256": "cd34b52b729b34fb2f63df92b555db5c1bee03118b81bbdda1ff1aa3c3c77d7c"
+          },
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "mattermost-desktop-6.3.2-linux-x86_64.AppImage",
+            "size": 136666790,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-x86_64.AppImage",
+            "sha256": "acb445ae07e3dd45fd3cf90fd8036e1574180457d7e0c6c26711f45808721d8a"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "mattermost-desktop_6.3.1-1_amd64.deb",
-            "size": 106262180,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop_6.3.1-1_amd64.deb",
-            "sha256": "62ad18cf1b85023ce8992d83b207a74f17ac0d58281cf479db5b0aba4e088a3b"
+            "name": "mattermost-desktop_6.3.2-1_amd64.deb",
+            "size": 107284108,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop_6.3.2-1_amd64.deb",
+            "sha256": "86af3cf5e4e2a2a7147d0a3d8381eb6f2bfccea81a4f9a5801e17b9272c66feb"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "mattermost-desktop_6.3.1-1_arm64.deb",
-            "size": 99813368,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop_6.3.1-1_arm64.deb",
-            "sha256": "11716e990a627afc210df217e8ece7fd6a83ce04493c0fd780e0e8956f4160d1"
+            "name": "mattermost-desktop_6.3.2-1_arm64.deb",
+            "size": 102248468,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop_6.3.2-1_arm64.deb",
+            "sha256": "1f7922b9d16dc55c0397c30a89e5726348f6806c5724ccceb5f56e1687784131"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "mattermost-desktop-6.3.1-linux-x86_64.rpm",
-            "size": 92490557,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-x86_64.rpm",
-            "sha256": "f41f05f2cb59d8ce7d680e06992ecd63126d5395667bb6015ae266bdc53b6da1"
+            "name": "mattermost-desktop-6.3.2-linux-x86_64.rpm",
+            "size": 93076001,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-x86_64.rpm",
+            "sha256": "f045a2ce5021b01677c72f51cd3f8fa3cf4f0084e1c1b82030071e1a84be789b"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "mattermost-desktop-6.3.1-linux-aarch64.rpm",
-            "size": 86444337,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.1/mattermost-desktop-6.3.1-linux-aarch64.rpm",
-            "sha256": "9b6bdbf9630fd42f9c22f685db2df4f1de0a26734705e8e3b55667b0dfa59f76"
+            "name": "mattermost-desktop-6.3.2-linux-aarch64.rpm",
+            "size": 88292541,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-aarch64.rpm",
+            "sha256": "29f6f764027601d821a9f7387d1a8b1ba4c680b5eac3c4de75ce47a9dfa83ad5"
           }
         ]
       }
@@ -4318,7 +4318,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52269,
+      "stars": 52273,
       "glyph": "code",
       "c": [
         "#4AA8FF",
@@ -4329,7 +4329,7 @@
       "os": "mwl",
       "issue": 5,
       "addedAt": "2026-10-26T15:15:07.055Z",
-      "checkedAt": "2026-11-01T10:34:29.833Z"
+      "checkedAt": "2026-11-02T18:28:18.119Z"
     }
   ],
   "candidates": [
