@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-04T15:29:18.747Z",
+  "updated": "2026-11-04T21:55:49.051Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6758,
-    "ankitects/anki": 32540,
-    "Anuken/Mindustry": 29599,
-    "AppFlowy-IO/AppFlowy": 78184,
-    "audacity/audacity": 18954,
-    "AUTOMATIC1111/stable-diffusion-webui": 165238,
-    "bitwarden/clients": 14144,
-    "blender/blender": 21625,
-    "Comfy-Org/ComfyUI": 144995,
-    "dbeaver/dbeaver": 52298,
-    "ente/ente": 29887,
-    "excalidraw/excalidraw": 135155,
-    "FreeTubeApp/FreeTube": 22315,
-    "ggml-org/llama.cpp": 133357,
-    "ggml-org/whisper.cpp": 54919,
+    "00-Evan/shattered-pixel-dungeon": 6759,
+    "ankitects/anki": 32553,
+    "Anuken/Mindustry": 29600,
+    "AppFlowy-IO/AppFlowy": 78194,
+    "audacity/audacity": 18956,
+    "AUTOMATIC1111/stable-diffusion-webui": 165239,
+    "bitwarden/clients": 14146,
+    "blender/blender": 21640,
+    "Comfy-Org/ComfyUI": 145027,
+    "dbeaver/dbeaver": 52297,
+    "ente/ente": 29893,
+    "excalidraw/excalidraw": 135169,
+    "FreeTubeApp/FreeTube": 22316,
+    "ggml-org/llama.cpp": 133381,
+    "ggml-org/whisper.cpp": 54927,
     "GNOME/gimp": 6566,
-    "godotengine/godot": 119563,
-    "HandBrake/HandBrake": 24883,
-    "HeliBorg/HeliBoard": 6497,
-    "immich-app/immich": 118224,
-    "ImranR98/Obtainium": 21203,
-    "inkscape/inkscape": 4085,
-    "janhq/jan": 45430,
-    "jellyfin/jellyfin": 58997,
-    "jesseduffield/lazygit": 83645,
-    "jgraph/drawio-desktop": 63815,
+    "godotengine/godot": 119583,
+    "HandBrake/HandBrake": 24887,
+    "HeliBorg/HeliBoard": 6496,
+    "immich-app/immich": 118250,
+    "ImranR98/Obtainium": 21209,
+    "inkscape/inkscape": 4087,
+    "janhq/jan": 45448,
+    "jellyfin/jellyfin": 59013,
+    "jesseduffield/lazygit": 83651,
+    "jgraph/drawio-desktop": 63816,
     "jitsi/jitsi-meet-electron": 1636,
-    "KDE/krita": 10690,
-    "keepassxreboot/keepassxc": 29762,
-    "laurent22/joplin": 57024,
-    "LibreOffice/core": 4595,
-    "localsend/localsend": 97297,
-    "logseq/logseq": 45476,
-    "luanti-org/luanti": 13812,
+    "KDE/krita": 10694,
+    "keepassxreboot/keepassxc": 29768,
+    "laurent22/joplin": 57037,
+    "LibreOffice/core": 4596,
+    "localsend/localsend": 97323,
+    "logseq/logseq": 45478,
+    "luanti-org/luanti": 13816,
     "mattermost/desktop": 2281,
     "mltframework/shotcut": 15597,
-    "mpv-player/mpv": 37702,
+    "mpv-player/mpv": 37704,
     "mullvad/mullvadvpn-app": 7743,
-    "neovim/neovim": 103355,
-    "nomic-ai/gpt4all": 77344,
-    "notepad-plus-plus/notepad-plus-plus": 29786,
-    "obsproject/obs-studio": 78954,
-    "ollama/ollama": 185901,
-    "OpenTTD/OpenTTD": 8457,
-    "organicmaps/organicmaps": 15870,
-    "penpot/penpot": 62062,
+    "neovim/neovim": 103359,
+    "nomic-ai/gpt4all": 77341,
+    "notepad-plus-plus/notepad-plus-plus": 29787,
+    "obsproject/obs-studio": 78964,
+    "ollama/ollama": 185929,
+    "OpenTTD/OpenTTD": 8458,
+    "organicmaps/organicmaps": 15873,
+    "penpot/penpot": 62070,
     "PintaProject/Pinta": 4128,
-    "signalapp/Signal-Desktop": 16650,
-    "storytold/designcraft": 5093,
-    "storytold/effectcraft": 8431,
-    "storytold/filmcraft": 17500,
-    "storytold/lightcraft": 15474,
-    "storytold/pdfcraft": 19522,
-    "storytold/photocraft": 76826,
-    "storytold/vectorcraft": 11351,
-    "super-productivity/super-productivity": 23403,
-    "supertuxkart/stk-code": 5464,
-    "syncthing/syncthing": 90070,
-    "tauri-apps/tauri": 112493,
-    "TeamNewPipe/NewPipe": 40421,
-    "thunderbird/thunderbird-android": 14181,
-    "ungoogled-software/ungoogled-chromium": 28169,
-    "videolan/vlc": 20318,
-    "VSCodium/vscodium": 33942,
-    "wesnoth/wesnoth": 6970,
-    "zed-industries/zed": 92670
+    "signalapp/Signal-Desktop": 16651,
+    "storytold/designcraft": 5096,
+    "storytold/effectcraft": 8439,
+    "storytold/filmcraft": 17522,
+    "storytold/lightcraft": 15490,
+    "storytold/pdfcraft": 19547,
+    "storytold/photocraft": 76890,
+    "storytold/vectorcraft": 11367,
+    "super-productivity/super-productivity": 23410,
+    "supertuxkart/stk-code": 5465,
+    "syncthing/syncthing": 90081,
+    "tauri-apps/tauri": 112500,
+    "TeamNewPipe/NewPipe": 40426,
+    "thunderbird/thunderbird-android": 14183,
+    "ungoogled-software/ungoogled-chromium": 28171,
+    "videolan/vlc": 20326,
+    "VSCodium/vscodium": 33949,
+    "wesnoth/wesnoth": 6971,
+    "zed-industries/zed": 92691
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -1070,33 +1070,33 @@
     },
     "immich-app/immich": {
       "android": {
-        "tag": "v3.3.5",
-        "date": "2026-10-21T18:12:57Z",
-        "page": "https://github.com/immich-app/immich/releases/tag/v3.3.5",
+        "tag": "v3.3.6",
+        "date": "2026-11-04T17:24:55Z",
+        "page": "https://github.com/immich-app/immich/releases/tag/v3.3.6",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
             "name": "app-release.apk",
             "size": 179772021,
-            "url": "https://github.com/immich-app/immich/releases/download/v3.3.5/app-release.apk",
-            "sha256": "e12e4d40959f9731078f03cb880ed288256a3214f56f93ae667c1b4e43b10a28"
+            "url": "https://github.com/immich-app/immich/releases/download/v3.3.6/app-release.apk",
+            "sha256": "28a0e5add84325fefb615f8b5d6a5d145bbf4b06e6ed9a08ef37f5156c7bb79e"
           },
           {
             "arch": "x64",
             "kind": "apk",
             "name": "app-x86_64-release.apk",
             "size": 71980079,
-            "url": "https://github.com/immich-app/immich/releases/download/v3.3.5/app-x86_64-release.apk",
-            "sha256": "c00a63bc850b1b41755679b13db18072525456acac41e71f3d5c552c2de72677"
+            "url": "https://github.com/immich-app/immich/releases/download/v3.3.6/app-x86_64-release.apk",
+            "sha256": "e58b54d433e5132266b83d06e91c9191b9165296911d857ab71079d180ab3a49"
           },
           {
             "arch": "arm64",
             "kind": "apk",
             "name": "app-arm64-v8a-release.apk",
             "size": 69260133,
-            "url": "https://github.com/immich-app/immich/releases/download/v3.3.5/app-arm64-v8a-release.apk",
-            "sha256": "efea3a47ba3393a78882d07fa11b9ff0051fc6b7d9e0c92505f2912aafdc6695"
+            "url": "https://github.com/immich-app/immich/releases/download/v3.3.6/app-arm64-v8a-release.apk",
+            "sha256": "0c89f2af60d14aef178424f35f8c58e4313e2b8453647366eed6b3358f668482"
           }
         ]
       }
@@ -1318,127 +1318,127 @@
     },
     "jgraph/drawio-desktop": {
       "mac": {
-        "tag": "v32.6.1",
-        "date": "2026-10-23T20:03:20Z",
-        "page": "https://github.com/jgraph/drawio-desktop/releases/tag/v32.6.1",
+        "tag": "v32.6.10",
+        "date": "2026-11-04T20:40:55Z",
+        "page": "https://github.com/jgraph/drawio-desktop/releases/tag/v32.6.10",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "draw.io-universal-32.6.1.dmg",
-            "size": 258847284,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-universal-32.6.1.dmg",
-            "sha256": "6c891f5f6af1a057d4245b07c8a66772651ae63a7ede34deff137941ee954683"
+            "name": "draw.io-universal-32.6.10.dmg",
+            "size": 259134411,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-universal-32.6.10.dmg",
+            "sha256": "c6f582f06c91982594d554fe9ab8b3cb7f21c310843826688d73f736d0696aeb"
           },
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "draw.io-x64-32.6.1.dmg",
-            "size": 163953920,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-x64-32.6.1.dmg",
-            "sha256": "5014cfbfe318d344eadfcb5f039735478a28cbff21d442ce8c72c5f26c3ba6ce"
+            "name": "draw.io-x64-32.6.10.dmg",
+            "size": 164244762,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-x64-32.6.10.dmg",
+            "sha256": "b2e6be1e323177d40cc2bac4e0d2fcf436ece1f4dc6fe648d164679d4ac9c84b"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "draw.io-arm64-32.6.1.dmg",
-            "size": 157106313,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-arm64-32.6.1.dmg",
-            "sha256": "df4446319c206ce6fc56a9f35ed75722387dff13e4515a21c78641458e582ad2"
+            "name": "draw.io-arm64-32.6.10.dmg",
+            "size": 157367951,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-arm64-32.6.10.dmg",
+            "sha256": "83e4027837f89bfba9dafbcc5c0e4befa76e2ac7f4e37f7a7b40c817141a6727"
           }
         ]
       },
       "win": {
-        "tag": "v32.6.1",
-        "date": "2026-10-23T20:03:20Z",
-        "page": "https://github.com/jgraph/drawio-desktop/releases/tag/v32.6.1",
+        "tag": "v32.6.10",
+        "date": "2026-11-04T20:40:55Z",
+        "page": "https://github.com/jgraph/drawio-desktop/releases/tag/v32.6.10",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "draw.io-32.6.1-windows-installer.exe",
-            "size": 144094272,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-32.6.1-windows-installer.exe",
-            "sha256": "c6e11ca28b97946e8bbc797b0bf4635ca071c934f5d3727278b52075923733cb"
+            "name": "draw.io-32.6.10-windows-installer.exe",
+            "size": 144077080,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-32.6.10-windows-installer.exe",
+            "sha256": "e7ea99906304507ed0e2c14193f9aba578c47df38e93a5fe748b52a8b85aa88f"
           },
           {
             "arch": "arm64",
             "kind": "exe",
-            "name": "draw.io-arm64-32.6.1-windows-arm64-installer.exe",
-            "size": 138635656,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-arm64-32.6.1-windows-arm64-installer.exe",
-            "sha256": "af22a2f6159540e32c0681a1ae613ae45560ac0f10665b107c53e5cfee760875"
+            "name": "draw.io-arm64-32.6.10-windows-arm64-installer.exe",
+            "size": 138638392,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-arm64-32.6.10-windows-arm64-installer.exe",
+            "sha256": "03cb68788c668ef6b93d4cdeef7099987fde50607067e2846f6fcd7f62dc3d70"
           },
           {
             "arch": "arm64",
             "kind": "exe",
-            "name": "draw.io-arm64-32.6.1-windows-arm64-no-installer.exe",
-            "size": 126162256,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-arm64-32.6.1-windows-arm64-no-installer.exe",
-            "sha256": "62ea63725fdce468763f2b24b614f2308d378e23fea7ec9e514dbe7efd655536"
+            "name": "draw.io-arm64-32.6.10-windows-arm64-no-installer.exe",
+            "size": 126207280,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-arm64-32.6.10-windows-arm64-no-installer.exe",
+            "sha256": "46a7d1f7b6514a47a4e712cb821c7cbb5142c199306ede57834a3b7bd53ce6a7"
           },
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "draw.io-32.6.1.msi",
-            "size": 149159936,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-32.6.1.msi",
-            "sha256": "1b156b5073d91e4c4250aff5675da0999f295a9f0a6d8b76ad8b08aa1a1a20b6"
+            "name": "draw.io-32.6.10.msi",
+            "size": 149065728,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-32.6.10.msi",
+            "sha256": "d6781bce32c199b51f246deb2a816d6c5f07319b9c868ecd357b8c6c5e771ed0"
           }
         ]
       },
       "linux": {
-        "tag": "v32.6.1",
-        "date": "2026-10-23T20:03:20Z",
-        "page": "https://github.com/jgraph/drawio-desktop/releases/tag/v32.6.1",
+        "tag": "v32.6.10",
+        "date": "2026-11-04T20:40:55Z",
+        "page": "https://github.com/jgraph/drawio-desktop/releases/tag/v32.6.10",
         "files": [
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "drawio-arm64-32.6.1.AppImage",
-            "size": 153808224,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-arm64-32.6.1.AppImage",
-            "sha256": "c7f004c1bcd33852102fe4bdf4e00bbd58c02f50d5d136424b1753d6d5153af2"
+            "name": "drawio-arm64-32.6.10.AppImage",
+            "size": 153953511,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/drawio-arm64-32.6.10.AppImage",
+            "sha256": "2b3a66339d56a87a346df52b65fc39a342da1b12b5eed80a633c3bb6c031700e"
           },
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "drawio-x86_64-32.6.1.AppImage",
-            "size": 152526387,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-x86_64-32.6.1.AppImage",
-            "sha256": "b0b9f76756be5de5b93286e61713f6832956082ff22dd3ad59c2d62eb9eec932"
+            "name": "drawio-x86_64-32.6.10.AppImage",
+            "size": 152706651,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/drawio-x86_64-32.6.10.AppImage",
+            "sha256": "94158126a43016b4e6f24bbc2c840ab8b5a51c6bf2796e1b3dadc64390b2d256"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "drawio-amd64-32.6.1.deb",
-            "size": 122314596,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-amd64-32.6.1.deb",
-            "sha256": "515a975fbdb982e0d736b6f99248dbbb856a8b07bb72d6d3648a54b850fa33db"
+            "name": "drawio-amd64-32.6.10.deb",
+            "size": 122104752,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/drawio-amd64-32.6.10.deb",
+            "sha256": "fc96faafe68cb4e06c0b7116779891592b20fce2cde7907adec504f23c5af83c"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "drawio-arm64-32.6.1.deb",
-            "size": 117389248,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-arm64-32.6.1.deb",
-            "sha256": "eb3354233d55e27624c2e8361680572fdb9528cfc5728d1d44bb7764306b4f61"
+            "name": "drawio-arm64-32.6.10.deb",
+            "size": 117186256,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/drawio-arm64-32.6.10.deb",
+            "sha256": "3cd0b69b31f9113f09df43f47f149e78f1a109d628282ae713e13d0e5d320800"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "drawio-x86_64-32.6.1.rpm",
-            "size": 110099049,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-x86_64-32.6.1.rpm",
-            "sha256": "2948764f014dd9468cf1d1b97e08667b45c941376fd91e3b5b5b4de0012ca5dd"
+            "name": "drawio-x86_64-32.6.10.rpm",
+            "size": 110203233,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/drawio-x86_64-32.6.10.rpm",
+            "sha256": "e85d0672339d81d90a45864d929fd28fa6f8998cdafef4ff1663622ea394ac3e"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "drawio-aarch64-32.6.1.rpm",
-            "size": 105300713,
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-aarch64-32.6.1.rpm",
-            "sha256": "90136fd789956131ca180fbc993fff830c6e20fad5a69b8e8f6333e7a279b8e9"
+            "name": "drawio-aarch64-32.6.10.rpm",
+            "size": 105417933,
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/drawio-aarch64-32.6.10.rpm",
+            "sha256": "fc305426db579f71fb06b98ff1adfa22c8edd4600862d3260361e957dfc5a810"
           }
         ]
       }
@@ -2843,127 +2843,127 @@
     },
     "storytold/designcraft": {
       "mac": {
-        "tag": "v0.17.0",
-        "date": "2026-11-03T00:59:11Z",
-        "page": "https://github.com/storytold/designcraft/releases/tag/v0.17.0",
+        "tag": "v0.17.1",
+        "date": "2026-11-04T20:37:45Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.17.1",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "designcraft-0.17.0-macos-universal.dmg",
-            "size": 137411698,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-macos-universal.dmg",
-            "sha256": "d89d1bb101b477cb521fd13551f7bac2a90662ed83e5ccf45571e967834e4327"
+            "name": "designcraft-0.17.1-macos-universal.dmg",
+            "size": 247474456,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-macos-universal.dmg",
+            "sha256": "4e5f58cfbeed70e55cce0ec30f78106092f505d20ca7dc721a1caef819408c86"
           }
         ]
       },
       "win": {
-        "tag": "v0.17.0",
-        "date": "2026-11-03T00:59:11Z",
-        "page": "https://github.com/storytold/designcraft/releases/tag/v0.17.0",
+        "tag": "v0.17.1",
+        "date": "2026-11-04T20:37:45Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.17.1",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "designcraft-0.17.0-windows-x64.msi",
-            "size": 98615296,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-windows-x64.msi",
-            "sha256": "236719d6f4ab823f8b090257149af7369b948fce1769188f5617c6fc20877775"
+            "name": "designcraft-0.17.1-windows-x64.msi",
+            "size": 98988032,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-windows-x64.msi",
+            "sha256": "660271d09b47ff3bf19ff0676fc8d354be65ece8196f3a41c57f3a3fdc12ac52"
           },
           {
             "arch": "x86",
             "kind": "msi",
-            "name": "designcraft-0.17.0-windows-x86.msi",
-            "size": 96559104,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-windows-x86.msi",
-            "sha256": "ee2e3026fab96594ea6f03f6e17bad232fb53198e0c993381e2ed7d451863e75"
+            "name": "designcraft-0.17.1-windows-x86.msi",
+            "size": 96899072,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-windows-x86.msi",
+            "sha256": "b464aff2c6378e37ab5fe2ad1cf44cca7544490a9a7174f70f66d5cb71ead463"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "designcraft-0.17.0-windows-arm64.msi",
-            "size": 94199808,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-windows-arm64.msi",
-            "sha256": "d46abb22f2ec29b7a313bae7fb8afc57d0ca0d80c30c5824de931bedde62d22e"
+            "name": "designcraft-0.17.1-windows-arm64.msi",
+            "size": 94490624,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-windows-arm64.msi",
+            "sha256": "a199047a84ec91a7a2a30899cb7a5db8df5b5d4606f3ace1ff13586379f35a28"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "designcraft-0.17.0-windows-x64-portable.zip",
-            "size": 124340370,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-windows-x64-portable.zip",
-            "sha256": "37dd157b7af22864e4d2693e60411c5e5cce492d69042bf03af8728f8b7f8134"
+            "name": "designcraft-0.17.1-windows-x64-portable.zip",
+            "size": 124804607,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-windows-x64-portable.zip",
+            "sha256": "b40c91cabd93459a50a10cb1736ea1eacdc924c0fd12d2d690ca4c7868aa9c34"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "designcraft-0.17.0-windows-x86-portable.zip",
-            "size": 120041278,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-windows-x86-portable.zip",
-            "sha256": "bf3c95c922de4a07da115f6c1d11295443f7b892a8359b800956c09b1d36379a"
+            "name": "designcraft-0.17.1-windows-x86-portable.zip",
+            "size": 120492476,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-windows-x86-portable.zip",
+            "sha256": "42411a09dcd7c4ef3e54e9a00ffddd67154b13c77e189303c0d8766c78ebaf8e"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "designcraft-0.17.0-windows-arm64-portable.zip",
-            "size": 119713574,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-windows-arm64-portable.zip",
-            "sha256": "a86538828f06b88813c747da31a3afbc9355442336373c18b24ce6b8a749029b"
+            "name": "designcraft-0.17.1-windows-arm64-portable.zip",
+            "size": 120132898,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-windows-arm64-portable.zip",
+            "sha256": "a6d191c2ca5b5e37325a284d5cd1cdad0439b8ab62fdf4c5c503a78112a17258"
           }
         ]
       },
       "linux": {
-        "tag": "v0.17.0",
-        "date": "2026-11-03T00:59:11Z",
-        "page": "https://github.com/storytold/designcraft/releases/tag/v0.17.0",
+        "tag": "v0.17.1",
+        "date": "2026-11-04T20:37:45Z",
+        "page": "https://github.com/storytold/designcraft/releases/tag/v0.17.1",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "designcraft-0.17.0-linux-x86_64.AppImage",
-            "size": 117021176,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-linux-x86_64.AppImage",
-            "sha256": "4451904013117f7ff2060a9710b0ce397d1016451e4b984cc955dc0547eb5621"
+            "name": "designcraft-0.17.1-linux-x86_64.AppImage",
+            "size": 117438968,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-linux-x86_64.AppImage",
+            "sha256": "20f6aeaf0122da89613837eb52b82f16f727d2f6db7a506d71166d6115fa651d"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "designcraft-0.17.0-linux-aarch64.AppImage",
-            "size": 113220104,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-linux-aarch64.AppImage",
-            "sha256": "8d7f41d66ba0d17618e450e8b2580ede922cdfda4fa92f9d4239a57da5f561bc"
+            "name": "designcraft-0.17.1-linux-aarch64.AppImage",
+            "size": 113494536,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-linux-aarch64.AppImage",
+            "sha256": "da4d2fc0c49c76ba93c056a32706d9d9f4b8a274ba46728c100bf6f88b5e7980"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "designcraft-0.17.0-linux-x86_64.deb",
-            "size": 125470316,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-linux-x86_64.deb",
-            "sha256": "dc204ec4c93718a2b7ac3a6b69127b61f58f87d9f5947f64a1d40931e1407b5a"
+            "name": "designcraft-0.17.1-linux-x86_64.deb",
+            "size": 126009030,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-linux-x86_64.deb",
+            "sha256": "dca2d789090dcda62a2d404cd38b37430bec9771a6d0cc62f4856610e29408f9"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "designcraft-0.17.0-linux-aarch64.deb",
-            "size": 122386784,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-linux-aarch64.deb",
-            "sha256": "378b677e20cb78619ecc287af5d379b7bc43d39b2015f1d443540ac7e0328e7d"
+            "name": "designcraft-0.17.1-linux-aarch64.deb",
+            "size": 122843478,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-linux-aarch64.deb",
+            "sha256": "ed28f8013656783a1d6e050dc1635c5fc67931cd944a1d2494ccf61cc9342d2a"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "designcraft-0.17.0-linux-x86_64.rpm",
-            "size": 124829665,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-linux-x86_64.rpm",
-            "sha256": "41cf28a1da11e3d5bd917717c54a314c525aa31f2f06912d79ec98ec1b3e582b"
+            "name": "designcraft-0.17.1-linux-x86_64.rpm",
+            "size": 125356828,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-linux-x86_64.rpm",
+            "sha256": "14fbe4776ad005f258553df8852d6b43a0e56b704e346f14d29932df40736ff4"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "designcraft-0.17.0-linux-aarch64.rpm",
-            "size": 121622565,
-            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.0/designcraft-0.17.0-linux-aarch64.rpm",
-            "sha256": "e8a130d2e59bddc67531470cace83c3663b8bbbe9e4a23711a35dbb5920450ff"
+            "name": "designcraft-0.17.1-linux-aarch64.rpm",
+            "size": 122070572,
+            "url": "https://github.com/storytold/designcraft/releases/download/v0.17.1/designcraft-0.17.1-linux-aarch64.rpm",
+            "sha256": "220678b48dbbd284e477d03b68d4259a0166bdc77fae75cba98c48983105fe18"
           }
         ]
       }
@@ -4240,71 +4240,71 @@
     },
     "zed-industries/zed": {
       "mac": {
-        "tag": "v1.26.2",
-        "date": "2026-10-28T15:16:13Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.26.2",
+        "tag": "v1.27.0",
+        "date": "2026-11-04T17:04:23Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.27.0",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
             "name": "Zed-x86_64.dmg",
-            "size": 96287859,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.26.2/Zed-x86_64.dmg",
-            "sha256": "3a34904105cae732a7fa9a1c708b7994ad09f11b679ce20c585eca4a61cd5f53"
+            "size": 96381306,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-x86_64.dmg",
+            "sha256": "7a89a9d40401004329ec40ef0f188ee5536e638906b1ff6e5bfc79eda7c995b3"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
             "name": "Zed-aarch64.dmg",
-            "size": 88060147,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.26.2/Zed-aarch64.dmg",
-            "sha256": "4632b670da78371fef5a0e417918d7b42bfc333e291ae86ab6b758d635c6be81"
+            "size": 88169290,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-aarch64.dmg",
+            "sha256": "8dcfdfaa94917cece0ff52ab6e3f7117c6647b78f32d266684cf0c13462d76a8"
           }
         ]
       },
       "win": {
-        "tag": "v1.26.2",
-        "date": "2026-10-28T15:16:13Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.26.2",
+        "tag": "v1.27.0",
+        "date": "2026-11-04T17:04:23Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.27.0",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "Zed-x86_64.exe",
-            "size": 64763544,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.26.2/Zed-x86_64.exe",
-            "sha256": "22b20ef96ed7ce67cd4e869bc263b9ac345e3cffa86552330843c436da1bb17b"
+            "size": 64751256,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-x86_64.exe",
+            "sha256": "6a39f9a78a6aac805f5aedcf03384b4b49349e9282903f27ebafcb18dde538ca"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "Zed-aarch64.exe",
-            "size": 57856200,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.26.2/Zed-aarch64.exe",
-            "sha256": "e9f30fabcb7e0d118bec070640019c1811288440f05422ae39902f12e58845bf"
+            "size": 57935656,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-aarch64.exe",
+            "sha256": "2d0a4e690560f67bb86836f599a8bec5eefc7fc6e8741d89c23740344bda761a"
           }
         ]
       },
       "linux": {
-        "tag": "v1.26.2",
-        "date": "2026-10-28T15:16:13Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.26.2",
+        "tag": "v1.27.0",
+        "date": "2026-11-04T17:04:23Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.27.0",
         "files": [
           {
             "arch": "x64",
             "kind": "tar",
             "name": "zed-linux-x86_64.tar.gz",
-            "size": 90563772,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.26.2/zed-linux-x86_64.tar.gz",
-            "sha256": "4d7b972019f25bd0a8cc6f4c56c81ab7ad9205f3461d00ac79259b34a03856d2"
+            "size": 90705601,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/zed-linux-x86_64.tar.gz",
+            "sha256": "719f6bf649ea8d87961adbf728e178561bac3f598d72d7949558d1150cfc43dd"
           },
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "zed-linux-aarch64.tar.gz",
-            "size": 85552789,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.26.2/zed-linux-aarch64.tar.gz",
-            "sha256": "167c53a4b1ea13a788e6281269ccf0421b7fe77186267b4cd3d91e06a6fba928"
+            "size": 85696089,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/zed-linux-aarch64.tar.gz",
+            "sha256": "9e4f8b182f41d4cd434cbbc6d1562329a33ef048d65a39bae0665465d0a638bb"
           }
         ]
       }
@@ -4318,7 +4318,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52298,
+      "stars": 52297,
       "glyph": "code",
       "c": [
         "#4AA8FF",
@@ -4346,7 +4346,7 @@
       ],
       "lic": "MIT",
       "stars": 0,
-      "up": 0,
+      "up": 1,
       "down": 0,
       "closesAt": "2026-11-15T18:46:34.317Z"
     }
