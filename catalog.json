@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-06T00:21:41.585Z",
+  "updated": "2026-11-06T07:58:06.316Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6764,
-    "ankitects/anki": 32596,
-    "Anuken/Mindustry": 29674,
-    "AppFlowy-IO/AppFlowy": 78258,
-    "audacity/audacity": 18967,
-    "AUTOMATIC1111/stable-diffusion-webui": 165257,
-    "bitwarden/clients": 14153,
-    "blender/blender": 21671,
-    "Comfy-Org/ComfyUI": 145230,
-    "dbeaver/dbeaver": 52315,
-    "ente/ente": 29921,
-    "excalidraw/excalidraw": 135211,
-    "FreeTubeApp/FreeTube": 22324,
-    "ggml-org/llama.cpp": 133486,
-    "ggml-org/whisper.cpp": 54955,
+    "00-Evan/shattered-pixel-dungeon": 6766,
+    "ankitects/anki": 32607,
+    "Anuken/Mindustry": 29680,
+    "AppFlowy-IO/AppFlowy": 78276,
+    "audacity/audacity": 18970,
+    "AUTOMATIC1111/stable-diffusion-webui": 165264,
+    "bitwarden/clients": 14160,
+    "blender/blender": 21673,
+    "Comfy-Org/ComfyUI": 145304,
+    "dbeaver/dbeaver": 52320,
+    "ente/ente": 29927,
+    "excalidraw/excalidraw": 135227,
+    "FreeTubeApp/FreeTube": 22329,
+    "ggml-org/llama.cpp": 133527,
+    "ggml-org/whisper.cpp": 54962,
     "GNOME/gimp": 6567,
-    "godotengine/godot": 119636,
-    "HandBrake/HandBrake": 24890,
-    "HeliBorg/HeliBoard": 6506,
-    "immich-app/immich": 118342,
-    "ImranR98/Obtainium": 21246,
-    "inkscape/inkscape": 4096,
-    "janhq/jan": 45496,
-    "jellyfin/jellyfin": 59046,
-    "jesseduffield/lazygit": 83674,
-    "jgraph/drawio-desktop": 63831,
+    "godotengine/godot": 119647,
+    "HandBrake/HandBrake": 24895,
+    "HeliBorg/HeliBoard": 6507,
+    "immich-app/immich": 118367,
+    "ImranR98/Obtainium": 21255,
+    "inkscape/inkscape": 4098,
+    "janhq/jan": 45506,
+    "jellyfin/jellyfin": 59056,
+    "jesseduffield/lazygit": 83686,
+    "jgraph/drawio-desktop": 63838,
     "jitsi/jitsi-meet-electron": 1636,
-    "KDE/krita": 10699,
-    "keepassxreboot/keepassxc": 29797,
-    "laurent22/joplin": 57056,
-    "LibreOffice/core": 4603,
-    "localsend/localsend": 97441,
-    "logseq/logseq": 45487,
-    "luanti-org/luanti": 13819,
-    "mattermost/desktop": 2282,
-    "mltframework/shotcut": 15612,
-    "mpv-player/mpv": 37741,
+    "KDE/krita": 10701,
+    "keepassxreboot/keepassxc": 29805,
+    "laurent22/joplin": 57061,
+    "LibreOffice/core": 4607,
+    "localsend/localsend": 97485,
+    "logseq/logseq": 45493,
+    "luanti-org/luanti": 13823,
+    "mattermost/desktop": 2283,
+    "mltframework/shotcut": 15616,
+    "mpv-player/mpv": 37750,
     "mullvad/mullvadvpn-app": 7749,
-    "neovim/neovim": 103396,
-    "nomic-ai/gpt4all": 77339,
-    "notepad-plus-plus/notepad-plus-plus": 29792,
-    "obsproject/obs-studio": 79006,
-    "ollama/ollama": 186031,
-    "OpenTTD/OpenTTD": 8464,
+    "neovim/neovim": 103389,
+    "nomic-ai/gpt4all": 77335,
+    "notepad-plus-plus/notepad-plus-plus": 29798,
+    "obsproject/obs-studio": 79031,
+    "ollama/ollama": 186059,
+    "OpenTTD/OpenTTD": 8467,
     "organicmaps/organicmaps": 15889,
-    "penpot/penpot": 62113,
-    "PintaProject/Pinta": 4130,
-    "signalapp/Signal-Desktop": 16650,
-    "storytold/designcraft": 5117,
-    "storytold/effectcraft": 8480,
-    "storytold/filmcraft": 17609,
-    "storytold/lightcraft": 15547,
-    "storytold/pdfcraft": 19708,
-    "storytold/photocraft": 77201,
-    "storytold/vectorcraft": 11406,
-    "super-productivity/super-productivity": 23431,
+    "penpot/penpot": 62129,
+    "PintaProject/Pinta": 4132,
+    "signalapp/Signal-Desktop": 16652,
+    "storytold/designcraft": 5121,
+    "storytold/effectcraft": 8489,
+    "storytold/filmcraft": 17638,
+    "storytold/lightcraft": 15561,
+    "storytold/pdfcraft": 19737,
+    "storytold/photocraft": 77303,
+    "storytold/vectorcraft": 11418,
+    "super-productivity/super-productivity": 23435,
     "supertuxkart/stk-code": 5466,
-    "syncthing/syncthing": 90136,
-    "tauri-apps/tauri": 112535,
-    "TeamNewPipe/NewPipe": 40441,
+    "syncthing/syncthing": 90145,
+    "tauri-apps/tauri": 112556,
+    "TeamNewPipe/NewPipe": 40452,
     "thunderbird/thunderbird-android": 14186,
-    "ungoogled-software/ungoogled-chromium": 28173,
-    "videolan/vlc": 20337,
-    "VSCodium/vscodium": 33968,
+    "ungoogled-software/ungoogled-chromium": 28174,
+    "videolan/vlc": 20338,
+    "VSCodium/vscodium": 33974,
     "wesnoth/wesnoth": 6976,
-    "zed-industries/zed": 92870
+    "zed-industries/zed": 92923
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -2699,79 +2699,79 @@
     },
     "ollama/ollama": {
       "mac": {
-        "tag": "v0.40.14",
-        "date": "2026-11-03T01:40:40Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+        "tag": "v0.40.15",
+        "date": "2026-11-03T22:52:31Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
         "files": [
           {
             "arch": "any",
             "kind": "dmg",
             "name": "Ollama.dmg",
-            "size": 230541627,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/Ollama.dmg",
-            "sha256": "683ca9baf3d4257f31fdd0004193527797c861be9d6dfb8c4617ba0800c170f9"
+            "size": 229819232,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/Ollama.dmg",
+            "sha256": "46b2cd03d4f2b110a67207a9c411a2837134abb07a3e64584a1de317d4ca2383"
           },
           {
             "arch": "any",
             "kind": "zip",
             "name": "Ollama-darwin.zip",
-            "size": 229782554,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/Ollama-darwin.zip",
-            "sha256": "9047386fb6811f54fc98b12ce4fea42a6ee5ce9e1bbc0c8196499f347054bcb5"
+            "size": 229106611,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/Ollama-darwin.zip",
+            "sha256": "de3298b9897828480c361c101e3efd2d3c499d08882c8ee972df524064abc3db"
           }
         ]
       },
       "win": {
-        "tag": "v0.40.14",
-        "date": "2026-11-03T01:40:40Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+        "tag": "v0.40.15",
+        "date": "2026-11-03T22:52:31Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "OllamaSetup.exe",
-            "size": 1675999728,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/OllamaSetup.exe",
-            "sha256": "e069c7cc7d4808f77684e81efa0b1f853a5190b4b8f070bc8fd63041180e3eba"
+            "size": 1689667936,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/OllamaSetup.exe",
+            "sha256": "106ef3d2a02437810fba6f574914b1413c512ea84ddd4f184c8e7f434b6f5564"
           },
           {
             "arch": "x64",
             "kind": "zip",
             "name": "ollama-windows-amd64.zip",
-            "size": 1601954968,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/ollama-windows-amd64.zip",
-            "sha256": "65d68cade6cf6375f398b518224f8c8a15e062387f38cf477abfc848de7e7e29"
+            "size": 1614941966,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-windows-amd64.zip",
+            "sha256": "9ca74a7ab66ec86870b1eecac7df160df08dc4e3a291ab5d2d59bcf9310221c6"
           },
           {
             "arch": "arm64",
             "kind": "zip",
             "name": "ollama-windows-arm64.zip",
-            "size": 215932926,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/ollama-windows-arm64.zip",
-            "sha256": "df8a4e954587ac65ba52ec26b453490a21cd58f80b55f75cf0d706f1506764a8"
+            "size": 217149782,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-windows-arm64.zip",
+            "sha256": "35ce5195b57496dbc9ecbaa6593807e6ac26cbb53cf1f8bb57ac58daafa58574"
           }
         ]
       },
       "linux": {
-        "tag": "v0.40.14",
-        "date": "2026-11-03T01:40:40Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+        "tag": "v0.40.15",
+        "date": "2026-11-03T22:52:31Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
         "files": [
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "ollama-linux-arm64.tar.zst",
-            "size": 1581673422,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/ollama-linux-arm64.tar.zst",
-            "sha256": "39bb333b7b4c0bafcdd7fad35eab1ae9aaf4518ea0f2c731de4376e3a29c94d0"
+            "size": 1600157086,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-linux-arm64.tar.zst",
+            "sha256": "7f699ead5cdb4ae1ed89b888b148a238af188708800871e1889ab9dcee95f247"
           },
           {
             "arch": "x64",
             "kind": "tar",
             "name": "ollama-linux-amd64.tar.zst",
-            "size": 1525335029,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.14/ollama-linux-amd64.tar.zst",
-            "sha256": "993e83d08c3d13d17c55009a3e2664c8a25445e644aec3a68bef5abb6abce67d"
+            "size": 1543547172,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-linux-amd64.tar.zst",
+            "sha256": "628c018404a4206493efd38e46251c154ede5141b8b8dc85c659b3b027c47379"
           }
         ]
       }
@@ -4318,7 +4318,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52315,
+      "stars": 52320,
       "glyph": "code",
       "c": [
         "#4AA8FF",
@@ -4329,7 +4329,7 @@
       "os": "mwl",
       "issue": 5,
       "addedAt": "2026-10-26T15:15:07.055Z",
-      "checkedAt": "2026-11-05T02:30:53.256Z"
+      "checkedAt": "2026-11-06T07:58:06.316Z"
     }
   ],
   "candidates": [
