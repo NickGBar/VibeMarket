@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-07T20:15:52.526Z",
+  "updated": "2026-11-07T23:41:30.649Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6769,
-    "ankitects/anki": 32652,
+    "00-Evan/shattered-pixel-dungeon": 6770,
+    "ankitects/anki": 32656,
     "Anuken/Mindustry": 29703,
-    "AppFlowy-IO/AppFlowy": 78398,
-    "audacity/audacity": 18985,
-    "AUTOMATIC1111/stable-diffusion-webui": 165254,
-    "bitwarden/clients": 14171,
-    "blender/blender": 21726,
-    "Comfy-Org/ComfyUI": 145578,
+    "AppFlowy-IO/AppFlowy": 78406,
+    "audacity/audacity": 18987,
+    "AUTOMATIC1111/stable-diffusion-webui": 165251,
+    "bitwarden/clients": 14174,
+    "blender/blender": 21737,
+    "Comfy-Org/ComfyUI": 145598,
     "dbeaver/dbeaver": 52334,
-    "ente/ente": 29964,
-    "excalidraw/excalidraw": 135294,
-    "FreeTubeApp/FreeTube": 22358,
-    "ggml-org/llama.cpp": 133660,
-    "ggml-org/whisper.cpp": 55001,
+    "ente/ente": 29965,
+    "excalidraw/excalidraw": 135299,
+    "FreeTubeApp/FreeTube": 22364,
+    "ggml-org/llama.cpp": 133667,
+    "ggml-org/whisper.cpp": 55006,
     "GNOME/gimp": 6568,
-    "godotengine/godot": 119741,
-    "HandBrake/HandBrake": 24914,
-    "HeliBorg/HeliBoard": 6516,
-    "immich-app/immich": 118462,
-    "ImranR98/Obtainium": 21315,
+    "godotengine/godot": 119748,
+    "HandBrake/HandBrake": 24917,
+    "HeliBorg/HeliBoard": 6517,
+    "immich-app/immich": 118467,
+    "ImranR98/Obtainium": 21316,
     "inkscape/inkscape": 4101,
     "janhq/jan": 45561,
-    "jellyfin/jellyfin": 59103,
-    "jesseduffield/lazygit": 83712,
-    "jgraph/drawio-desktop": 63876,
+    "jellyfin/jellyfin": 59105,
+    "jesseduffield/lazygit": 83716,
+    "jgraph/drawio-desktop": 63877,
     "jitsi/jitsi-meet-electron": 1636,
-    "KDE/krita": 10709,
-    "keepassxreboot/keepassxc": 29839,
+    "KDE/krita": 10710,
+    "keepassxreboot/keepassxc": 29841,
     "laurent22/joplin": 57071,
-    "LibreOffice/core": 4616,
-    "localsend/localsend": 97742,
-    "logseq/logseq": 45509,
+    "LibreOffice/core": 4617,
+    "localsend/localsend": 97749,
+    "logseq/logseq": 45512,
     "luanti-org/luanti": 13828,
     "mattermost/desktop": 2284,
-    "mltframework/shotcut": 15631,
-    "mpv-player/mpv": 37983,
-    "mullvad/mullvadvpn-app": 7755,
-    "neovim/neovim": 103478,
+    "mltframework/shotcut": 15629,
+    "mpv-player/mpv": 37982,
+    "mullvad/mullvadvpn-app": 7756,
+    "neovim/neovim": 103483,
     "nomic-ai/gpt4all": 77343,
     "notepad-plus-plus/notepad-plus-plus": 29804,
-    "obsproject/obs-studio": 79121,
-    "ollama/ollama": 186272,
-    "OpenTTD/OpenTTD": 8476,
+    "obsproject/obs-studio": 79124,
+    "ollama/ollama": 186281,
+    "OpenTTD/OpenTTD": 8478,
     "organicmaps/organicmaps": 15900,
-    "penpot/penpot": 62165,
+    "penpot/penpot": 62170,
     "PintaProject/Pinta": 4133,
     "signalapp/Signal-Desktop": 16655,
-    "storytold/designcraft": 5157,
-    "storytold/effectcraft": 8536,
-    "storytold/filmcraft": 17751,
-    "storytold/lightcraft": 15647,
-    "storytold/pdfcraft": 19910,
-    "storytold/photocraft": 77706,
-    "storytold/vectorcraft": 11474,
-    "super-productivity/super-productivity": 23487,
+    "storytold/designcraft": 5159,
+    "storytold/effectcraft": 8541,
+    "storytold/filmcraft": 17764,
+    "storytold/lightcraft": 15655,
+    "storytold/pdfcraft": 19919,
+    "storytold/photocraft": 77724,
+    "storytold/vectorcraft": 11477,
+    "super-productivity/super-productivity": 23488,
     "supertuxkart/stk-code": 5469,
-    "syncthing/syncthing": 90194,
-    "tauri-apps/tauri": 112592,
+    "syncthing/syncthing": 90201,
+    "tauri-apps/tauri": 112595,
     "TeamNewPipe/NewPipe": 40495,
-    "thunderbird/thunderbird-android": 14190,
+    "thunderbird/thunderbird-android": 14189,
     "ungoogled-software/ungoogled-chromium": 28188,
     "videolan/vlc": 20353,
-    "VSCodium/vscodium": 34000,
-    "wesnoth/wesnoth": 6978,
-    "zed-industries/zed": 94211
+    "VSCodium/vscodium": 34002,
+    "wesnoth/wesnoth": 6980,
+    "zed-industries/zed": 94258
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -1231,87 +1231,87 @@
     },
     "jesseduffield/lazygit": {
       "mac": {
-        "tag": "v0.66.2",
-        "date": "2026-10-16T09:33:06Z",
-        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2",
+        "tag": "v0.66.3",
+        "date": "2026-11-07T23:26:48Z",
+        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.3",
         "files": [
           {
             "arch": "x64",
             "kind": "tar",
-            "name": "lazygit_0.66.2_darwin_x86_64.tar.gz",
-            "size": 7452605,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_darwin_x86_64.tar.gz",
-            "sha256": "de5d3771e4befa6fe17590e21445614998adc1ef34a71f4003df6764247517ab"
+            "name": "lazygit_0.66.3_darwin_x86_64.tar.gz",
+            "size": 7454863,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_darwin_x86_64.tar.gz",
+            "sha256": "f6c116c09b960842351e3e142cc8be1784de611f19d09920421bd7639cccd30b"
           },
           {
             "arch": "arm64",
             "kind": "tar",
-            "name": "lazygit_0.66.2_darwin_arm64.tar.gz",
-            "size": 6931517,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_darwin_arm64.tar.gz",
-            "sha256": "fadda59ae7665ba556fcbaa704c7eade6e40d016d3f3b25d6327dd1f3f906a0c"
+            "name": "lazygit_0.66.3_darwin_arm64.tar.gz",
+            "size": 6934054,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_darwin_arm64.tar.gz",
+            "sha256": "6873e6b7a538b521c4d7ff3f76ec49e6dcafa41e6053a6aae33c12f62663e163"
           }
         ]
       },
       "win": {
-        "tag": "v0.66.2",
-        "date": "2026-10-16T09:33:06Z",
-        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2",
+        "tag": "v0.66.3",
+        "date": "2026-11-07T23:26:48Z",
+        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.3",
         "files": [
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "lazygit_0.66.2_windows_x86_64.zip",
-            "size": 7574703,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_x86_64.zip",
-            "sha256": "8b1e2194c2d8ac660f0a132cb4384e9d2fe1405217a144e280df16383c18d45c"
+            "name": "lazygit_0.66.3_windows_x86_64.zip",
+            "size": 7576049,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_windows_x86_64.zip",
+            "sha256": "a76fe17339fd387c20addc09060f07c240e4b20a9f55fee4ad7c86a251c0741e"
           },
           {
             "arch": "x86",
             "kind": "zip",
-            "name": "lazygit_0.66.2_windows_32-bit.zip",
-            "size": 7271224,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_32-bit.zip",
-            "sha256": "d144ebd3cb0dded98870eaa233304e917788f4710ec89d4af1924fb3c189cc43"
+            "name": "lazygit_0.66.3_windows_32-bit.zip",
+            "size": 7274520,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_windows_32-bit.zip",
+            "sha256": "e6f8bd3a97c3d981ca9768da5729702e975397571482706d37a67263c9df182e"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "lazygit_0.66.2_windows_arm64.zip",
-            "size": 6757250,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_arm64.zip",
-            "sha256": "1da981a35ed26231d01c6cd8cccc016f365b78d6235a3d7906334719f580e851"
+            "name": "lazygit_0.66.3_windows_arm64.zip",
+            "size": 6762773,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_windows_arm64.zip",
+            "sha256": "c8b3b7141387f9c317b098147cf674166154a98dcad3fcd322b07c882ba1eed4"
           }
         ]
       },
       "linux": {
-        "tag": "v0.66.2",
-        "date": "2026-10-16T09:33:06Z",
-        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.2",
+        "tag": "v0.66.3",
+        "date": "2026-11-07T23:26:48Z",
+        "page": "https://github.com/jesseduffield/lazygit/releases/tag/v0.66.3",
         "files": [
           {
             "arch": "x64",
             "kind": "tar",
-            "name": "lazygit_0.66.2_linux_x86_64.tar.gz",
-            "size": 7332397,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_x86_64.tar.gz",
-            "sha256": "158efc9ddfa1241fab5fb3526bb442c8dc6c4b1904d73213b9e4e93e03c52034"
+            "name": "lazygit_0.66.3_linux_x86_64.tar.gz",
+            "size": 7337304,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_x86_64.tar.gz",
+            "sha256": "0a23f429a95f0d09db298b3c291536d818de066aa5a85c255806f0490ff6656b"
           },
           {
             "arch": "x86",
             "kind": "tar",
-            "name": "lazygit_0.66.2_linux_32-bit.tar.gz",
-            "size": 6974536,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_32-bit.tar.gz",
-            "sha256": "33bc3dba49eb8d78fcdb9e53d29827a0e5183a01715d4582d9998d24d133cdf6"
+            "name": "lazygit_0.66.3_linux_32-bit.tar.gz",
+            "size": 6977778,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_32-bit.tar.gz",
+            "sha256": "d5f90b0d065c534db2107dfac42915a06a68f66c7629e37a5af976fa21bed07e"
           },
           {
             "arch": "arm64",
             "kind": "tar",
-            "name": "lazygit_0.66.2_linux_arm64.tar.gz",
-            "size": 6654577,
-            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_arm64.tar.gz",
-            "sha256": "79a3161eeb642f0473e23db6341f7baabd4a5933e921a9c1167c5d5c765c41a4"
+            "name": "lazygit_0.66.3_linux_arm64.tar.gz",
+            "size": 6656897,
+            "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_arm64.tar.gz",
+            "sha256": "ac0b48237f3d0283813e7154ec063237e519532feb0470c0881a1793ee78fd42"
           }
         ]
       }
@@ -4079,17 +4079,17 @@
     },
     "TeamNewPipe/NewPipe": {
       "android": {
-        "tag": "v0.29.1",
-        "date": "2026-08-15T22:05:38Z",
-        "page": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+        "tag": "v0.29.2",
+        "date": "2026-11-07T21:14:05Z",
+        "page": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.2",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
-            "name": "NewPipe_v0.29.1.apk",
-            "size": 11507122,
-            "url": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
-            "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79"
+            "name": "NewPipe_v0.29.2.apk",
+            "size": 16980865,
+            "url": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.2/NewPipe_v0.29.2.apk",
+            "sha256": "318bd6a51f216027ba340f2934e59fa9c0d078d0f2f526a4af84354aee60651f"
           }
         ]
       }
