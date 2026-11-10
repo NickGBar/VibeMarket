@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-09T22:27:07.379Z",
+  "updated": "2026-11-10T04:39:26.290Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6780,
+    "00-Evan/shattered-pixel-dungeon": 6781,
     "ankitects/anki": 32699,
-    "Anuken/Mindustry": 29730,
-    "AppFlowy-IO/AppFlowy": 78584,
-    "audacity/audacity": 19004,
-    "AUTOMATIC1111/stable-diffusion-webui": 165270,
-    "bitwarden/clients": 14186,
-    "blender/blender": 21819,
-    "Comfy-Org/ComfyUI": 145990,
-    "dbeaver/dbeaver": 52372,
-    "ente/ente": 30023,
-    "excalidraw/excalidraw": 135402,
-    "FreeTubeApp/FreeTube": 22393,
-    "ggml-org/llama.cpp": 133846,
-    "ggml-org/whisper.cpp": 55050,
-    "GNOME/gimp": 6573,
-    "godotengine/godot": 119887,
-    "HandBrake/HandBrake": 24942,
-    "HeliBorg/HeliBoard": 6540,
-    "immich-app/immich": 118635,
-    "ImranR98/Obtainium": 21390,
-    "inkscape/inkscape": 4106,
-    "janhq/jan": 45637,
-    "jellyfin/jellyfin": 59164,
-    "jesseduffield/lazygit": 83771,
+    "Anuken/Mindustry": 29737,
+    "AppFlowy-IO/AppFlowy": 78600,
+    "audacity/audacity": 19005,
+    "AUTOMATIC1111/stable-diffusion-webui": 165274,
+    "bitwarden/clients": 14190,
+    "blender/blender": 21827,
+    "Comfy-Org/ComfyUI": 146025,
+    "dbeaver/dbeaver": 52377,
+    "ente/ente": 30025,
+    "excalidraw/excalidraw": 135424,
+    "FreeTubeApp/FreeTube": 22395,
+    "ggml-org/llama.cpp": 133865,
+    "ggml-org/whisper.cpp": 55054,
+    "GNOME/gimp": 6574,
+    "godotengine/godot": 119907,
+    "HandBrake/HandBrake": 24947,
+    "HeliBorg/HeliBoard": 6544,
+    "immich-app/immich": 118657,
+    "ImranR98/Obtainium": 21394,
+    "inkscape/inkscape": 4108,
+    "janhq/jan": 45642,
+    "jellyfin/jellyfin": 59169,
+    "jesseduffield/lazygit": 83777,
     "jgraph/drawio-desktop": 63912,
     "jitsi/jitsi-meet-electron": 1637,
     "KDE/krita": 10722,
-    "keepassxreboot/keepassxc": 29886,
-    "laurent22/joplin": 57113,
+    "keepassxreboot/keepassxc": 29889,
+    "laurent22/joplin": 57121,
     "LibreOffice/core": 4624,
-    "localsend/localsend": 98091,
-    "logseq/logseq": 45536,
-    "luanti-org/luanti": 13841,
+    "localsend/localsend": 98131,
+    "logseq/logseq": 45540,
+    "luanti-org/luanti": 13843,
     "mattermost/desktop": 2285,
     "mltframework/shotcut": 15642,
-    "mpv-player/mpv": 38023,
-    "mullvad/mullvadvpn-app": 7763,
-    "neovim/neovim": 103531,
+    "mpv-player/mpv": 38030,
+    "mullvad/mullvadvpn-app": 7765,
+    "neovim/neovim": 103536,
     "nomic-ai/gpt4all": 77353,
-    "notepad-plus-plus/notepad-plus-plus": 29828,
-    "obsproject/obs-studio": 79227,
-    "ollama/ollama": 186443,
-    "OpenTTD/OpenTTD": 8483,
-    "organicmaps/organicmaps": 15919,
-    "penpot/penpot": 62218,
+    "notepad-plus-plus/notepad-plus-plus": 29831,
+    "obsproject/obs-studio": 79235,
+    "ollama/ollama": 186471,
+    "OpenTTD/OpenTTD": 8484,
+    "organicmaps/organicmaps": 15924,
+    "penpot/penpot": 62229,
     "PintaProject/Pinta": 4136,
     "signalapp/Signal-Desktop": 16658,
-    "storytold/designcraft": 5211,
-    "storytold/effectcraft": 8599,
-    "storytold/filmcraft": 17921,
-    "storytold/lightcraft": 15766,
-    "storytold/pdfcraft": 20182,
-    "storytold/photocraft": 78232,
-    "storytold/vectorcraft": 11562,
-    "super-productivity/super-productivity": 23549,
+    "storytold/designcraft": 5217,
+    "storytold/effectcraft": 8613,
+    "storytold/filmcraft": 17941,
+    "storytold/lightcraft": 15778,
+    "storytold/pdfcraft": 20212,
+    "storytold/photocraft": 78297,
+    "storytold/vectorcraft": 11569,
+    "super-productivity/super-productivity": 23555,
     "supertuxkart/stk-code": 5470,
-    "syncthing/syncthing": 90286,
-    "tauri-apps/tauri": 112641,
-    "TeamNewPipe/NewPipe": 40546,
-    "thunderbird/thunderbird-android": 14197,
-    "ungoogled-software/ungoogled-chromium": 28207,
+    "syncthing/syncthing": 90295,
+    "tauri-apps/tauri": 112652,
+    "TeamNewPipe/NewPipe": 40550,
+    "thunderbird/thunderbird-android": 14199,
+    "ungoogled-software/ungoogled-chromium": 28209,
     "videolan/vlc": 20386,
-    "VSCodium/vscodium": 34032,
+    "VSCodium/vscodium": 34035,
     "wesnoth/wesnoth": 6989,
-    "zed-industries/zed": 94585
+    "zed-industries/zed": 94608
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -2699,79 +2699,79 @@
     },
     "ollama/ollama": {
       "mac": {
-        "tag": "v0.40.15",
-        "date": "2026-11-03T22:52:31Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+        "tag": "v0.40.16",
+        "date": "2026-11-09T18:21:19Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
         "files": [
           {
             "arch": "any",
             "kind": "dmg",
             "name": "Ollama.dmg",
-            "size": 229819232,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/Ollama.dmg",
-            "sha256": "46b2cd03d4f2b110a67207a9c411a2837134abb07a3e64584a1de317d4ca2383"
+            "size": 229996388,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/Ollama.dmg",
+            "sha256": "b48d74a2d8c6a0592c816a4f85643d8d8608ad592abafbe95c04128a73c398c6"
           },
           {
             "arch": "any",
             "kind": "zip",
             "name": "Ollama-darwin.zip",
-            "size": 229106611,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/Ollama-darwin.zip",
-            "sha256": "de3298b9897828480c361c101e3efd2d3c499d08882c8ee972df524064abc3db"
+            "size": 229245253,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/Ollama-darwin.zip",
+            "sha256": "4715531bc49d21337381b193765041e535a9fb4716f84e5d6eccc3a9af1b5303"
           }
         ]
       },
       "win": {
-        "tag": "v0.40.15",
-        "date": "2026-11-03T22:52:31Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+        "tag": "v0.40.16",
+        "date": "2026-11-09T18:21:19Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "OllamaSetup.exe",
-            "size": 1689667936,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/OllamaSetup.exe",
-            "sha256": "106ef3d2a02437810fba6f574914b1413c512ea84ddd4f184c8e7f434b6f5564"
+            "size": 1857663944,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/OllamaSetup.exe",
+            "sha256": "84db4f756ddc9e091142a85cdc0f7ae5db68bc9b3e075f114388b326f8ed912d"
           },
           {
             "arch": "x64",
             "kind": "zip",
             "name": "ollama-windows-amd64.zip",
-            "size": 1614941966,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-windows-amd64.zip",
-            "sha256": "9ca74a7ab66ec86870b1eecac7df160df08dc4e3a291ab5d2d59bcf9310221c6"
+            "size": 1618244995,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/ollama-windows-amd64.zip",
+            "sha256": "50fcf5ad54277f2fa5d173ebfc93bcb017adbc0c9ef2314daabc96ca9e6aa64e"
           },
           {
             "arch": "arm64",
             "kind": "zip",
             "name": "ollama-windows-arm64.zip",
-            "size": 217149782,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-windows-arm64.zip",
-            "sha256": "35ce5195b57496dbc9ecbaa6593807e6ac26cbb53cf1f8bb57ac58daafa58574"
+            "size": 386918926,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/ollama-windows-arm64.zip",
+            "sha256": "86d2b329cae3125684ff29b506623710b68e1393f679594f1c6aa267beac31c2"
           }
         ]
       },
       "linux": {
-        "tag": "v0.40.15",
-        "date": "2026-11-03T22:52:31Z",
-        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+        "tag": "v0.40.16",
+        "date": "2026-11-09T18:21:19Z",
+        "page": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
         "files": [
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "ollama-linux-arm64.tar.zst",
-            "size": 1600157086,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-linux-arm64.tar.zst",
-            "sha256": "7f699ead5cdb4ae1ed89b888b148a238af188708800871e1889ab9dcee95f247"
+            "size": 1600610073,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/ollama-linux-arm64.tar.zst",
+            "sha256": "e45b8e6dcb86cb9f3057396351655079c9a4879b4ced2678c9350d375dcbc224"
           },
           {
             "arch": "x64",
             "kind": "tar",
             "name": "ollama-linux-amd64.tar.zst",
-            "size": 1543547172,
-            "url": "https://github.com/ollama/ollama/releases/download/v0.40.15/ollama-linux-amd64.tar.zst",
-            "sha256": "628c018404a4206493efd38e46251c154ede5141b8b8dc85c659b3b027c47379"
+            "size": 1545767640,
+            "url": "https://github.com/ollama/ollama/releases/download/v0.40.16/ollama-linux-amd64.tar.zst",
+            "sha256": "87bfafb2acbc89b2e6a1be0a9043de6aa75fb450696f86bc426e65fc448f788d"
           }
         ]
       }
@@ -2954,111 +2954,111 @@
     },
     "storytold/effectcraft": {
       "mac": {
-        "tag": "v0.23.0",
-        "date": "2026-11-09T12:09:01Z",
-        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.23.0",
+        "tag": "v0.23.1",
+        "date": "2026-11-10T00:49:57Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.23.1",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "effectcraft-0.23.0-macos-universal.dmg",
-            "size": 81776223,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-macos-universal.dmg",
-            "sha256": "434b5d646d874f3743ebdd922cd3540ff6a758baf27ecc9e1ab3455d8f64768c"
+            "name": "effectcraft-0.23.1-macos-universal.dmg",
+            "size": 82074483,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-macos-universal.dmg",
+            "sha256": "10703ae0b8b279241e7a87b69bfa5ae0213cc21a67a04ea978e84309f6e8e2f8"
           }
         ]
       },
       "win": {
-        "tag": "v0.23.0",
-        "date": "2026-11-09T12:09:01Z",
-        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.23.0",
+        "tag": "v0.23.1",
+        "date": "2026-11-10T00:49:57Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.23.1",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "effectcraft-0.23.0-windows-x64.msi",
-            "size": 63619072,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-x64.msi",
-            "sha256": "17c45826a3cc4057f81d4d4c16fe2fc6767dfe0fb759a5d29852f1eb3588cefd"
+            "name": "effectcraft-0.23.1-windows-x64.msi",
+            "size": 63840256,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-windows-x64.msi",
+            "sha256": "4ccfc6efe361402e64fedaf9c00439b4651d44721b8409ced647a0adf72fe198"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "effectcraft-0.23.0-windows-arm64.msi",
-            "size": 56741888,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-arm64.msi",
-            "sha256": "0f2f117702a8978451fc4cfa2e96b7ac5a5b9836e7783fc3be76be4165305802"
+            "name": "effectcraft-0.23.1-windows-arm64.msi",
+            "size": 56901632,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-windows-arm64.msi",
+            "sha256": "f159e9daf6428d5fa50b42d8c8358710bd1005030cfd60c8fd1301a2adc9a34f"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "effectcraft-0.23.0-windows-x64-portable.zip",
-            "size": 84366292,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-x64-portable.zip",
-            "sha256": "421d0c1975488054de29f776bef1eb458a3359023f96f48110862833d6d05c3b"
+            "name": "effectcraft-0.23.1-windows-x64-portable.zip",
+            "size": 84658279,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-windows-x64-portable.zip",
+            "sha256": "9697f99ba8b8c2c36d791a19367ec39ffa0a6f71e849f716e07d1fc69b531310"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "effectcraft-0.23.0-windows-arm64-portable.zip",
-            "size": 77628668,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-windows-arm64-portable.zip",
-            "sha256": "0172a713d9011bb77c6067cae56f710c028dc40167d7c19275243d636c9bd800"
+            "name": "effectcraft-0.23.1-windows-arm64-portable.zip",
+            "size": 77850724,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-windows-arm64-portable.zip",
+            "sha256": "9612097232dfbdc95457e6f96706c14f056ac8182f818ece36c43c9665f14ca2"
           }
         ]
       },
       "linux": {
-        "tag": "v0.23.0",
-        "date": "2026-11-09T12:09:01Z",
-        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.23.0",
+        "tag": "v0.23.1",
+        "date": "2026-11-10T00:49:57Z",
+        "page": "https://github.com/storytold/effectcraft/releases/tag/v0.23.1",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "effectcraft-0.23.0-linux-x86_64.AppImage",
-            "size": 74856952,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-linux-x86_64.AppImage",
-            "sha256": "8168f27327f2edb051e268475c37631479aa08893f1e88b0add717d5f82a158f"
+            "name": "effectcraft-0.23.1-linux-x86_64.AppImage",
+            "size": 75024888,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-linux-x86_64.AppImage",
+            "sha256": "7905485d7e91999a0c19ecba447d0dfd11c13bddb132bdf9cca65cd8b60671fb"
           },
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "effectcraft-0.23.0-linux-aarch64.AppImage",
-            "size": 69757448,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-linux-aarch64.AppImage",
-            "sha256": "e6400652fdf1329eab5908e6921857ad8b3db793510cd96c291a9a05c2f3cc8c"
+            "name": "effectcraft-0.23.1-linux-aarch64.AppImage",
+            "size": 69831176,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-linux-aarch64.AppImage",
+            "sha256": "b1198a6f9d5ecd28a9f5bcf90ce3ee95448f0ea7eaac0792eeb3bcad9a05d6dc"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "effectcraft-0.23.0-linux-x86_64.deb",
-            "size": 82991038,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-linux-x86_64.deb",
-            "sha256": "16d726299605ca00b12587c7cd3bceca0fb5e4e0c5533670560a1eeb9de2ce91"
+            "name": "effectcraft-0.23.1-linux-x86_64.deb",
+            "size": 83263308,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-linux-x86_64.deb",
+            "sha256": "9cef6ac57ce3d34437762886696a031158f0a5f49120bd90f1ab9c5d4d91c2d2"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "effectcraft-0.23.0-linux-aarch64.deb",
-            "size": 79129990,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-linux-aarch64.deb",
-            "sha256": "da2799d24b22ee9ddfbb1542b7fdf2299802690e7be50760d8960fcd111393c5"
+            "name": "effectcraft-0.23.1-linux-aarch64.deb",
+            "size": 79344396,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-linux-aarch64.deb",
+            "sha256": "5922f3e252b63cb262cbb75e26e2ca83d3625223a80027696f1d3614fb622aab"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "effectcraft-0.23.0-linux-x86_64.rpm",
-            "size": 82459147,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-linux-x86_64.rpm",
-            "sha256": "f70591747e9a9e00c077227df9210aa801a69d357fc94547413d8b18e81c5b50"
+            "name": "effectcraft-0.23.1-linux-x86_64.rpm",
+            "size": 82732959,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-linux-x86_64.rpm",
+            "sha256": "7b29373910c98eb8cad576ba9308e587d0fa64a5ef3ee27c5f607c988fd0a8af"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "effectcraft-0.23.0-linux-aarch64.rpm",
-            "size": 78338114,
-            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.0/effectcraft-0.23.0-linux-aarch64.rpm",
-            "sha256": "2afa4bf32b7db825753687dedbe0e71cf9e11b7e053b605ce923bc004f6c299f"
+            "name": "effectcraft-0.23.1-linux-aarch64.rpm",
+            "size": 78537403,
+            "url": "https://github.com/storytold/effectcraft/releases/download/v0.23.1/effectcraft-0.23.1-linux-aarch64.rpm",
+            "sha256": "db4dcc7130fb99b381a1322b975c4d6680f5719b11f1943a200cddc56728f40a"
           }
         ]
       }
@@ -4214,7 +4214,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52372,
+      "stars": 52377,
       "glyph": "code",
       "c": [
         "#4AA8FF",
