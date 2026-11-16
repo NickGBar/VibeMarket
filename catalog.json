@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-16T02:47:57.059Z",
+  "updated": "2026-11-16T11:34:00.162Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6807,
-    "ankitects/anki": 32831,
-    "Anuken/Mindustry": 29863,
-    "AppFlowy-IO/AppFlowy": 78979,
-    "audacity/audacity": 19079,
-    "AUTOMATIC1111/stable-diffusion-webui": 165319,
-    "bitwarden/clients": 14237,
-    "blender/blender": 22065,
-    "Comfy-Org/ComfyUI": 147046,
-    "dbeaver/dbeaver": 52440,
-    "ente/ente": 30155,
-    "excalidraw/excalidraw": 135746,
-    "FreeTubeApp/FreeTube": 22467,
-    "ggml-org/llama.cpp": 135220,
-    "ggml-org/whisper.cpp": 55225,
-    "GNOME/gimp": 6589,
-    "godotengine/godot": 120241,
-    "HandBrake/HandBrake": 25016,
-    "HeliBorg/HeliBoard": 6585,
-    "immich-app/immich": 119311,
-    "ImranR98/Obtainium": 21567,
+    "00-Evan/shattered-pixel-dungeon": 6808,
+    "ankitects/anki": 32834,
+    "Anuken/Mindustry": 29872,
+    "AppFlowy-IO/AppFlowy": 79006,
+    "audacity/audacity": 19084,
+    "AUTOMATIC1111/stable-diffusion-webui": 165324,
+    "bitwarden/clients": 14240,
+    "blender/blender": 22090,
+    "Comfy-Org/ComfyUI": 147124,
+    "dbeaver/dbeaver": 52444,
+    "ente/ente": 30163,
+    "excalidraw/excalidraw": 135774,
+    "FreeTubeApp/FreeTube": 22468,
+    "ggml-org/llama.cpp": 135295,
+    "ggml-org/whisper.cpp": 55238,
+    "GNOME/gimp": 6590,
+    "godotengine/godot": 120261,
+    "HandBrake/HandBrake": 25019,
+    "HeliBorg/HeliBoard": 6587,
+    "immich-app/immich": 119344,
+    "ImranR98/Obtainium": 21576,
     "inkscape/inkscape": 4129,
-    "janhq/jan": 45734,
-    "jellyfin/jellyfin": 59413,
-    "jesseduffield/lazygit": 83915,
-    "jgraph/drawio-desktop": 64009,
+    "janhq/jan": 45739,
+    "jellyfin/jellyfin": 59417,
+    "jesseduffield/lazygit": 83921,
+    "jgraph/drawio-desktop": 64022,
     "jitsi/jitsi-meet-electron": 1635,
-    "KDE/krita": 10752,
-    "keepassxreboot/keepassxc": 30007,
-    "laurent22/joplin": 57197,
-    "LibreOffice/core": 4643,
-    "localsend/localsend": 99169,
-    "logseq/logseq": 45605,
-    "luanti-org/luanti": 13866,
-    "mattermost/desktop": 2288,
-    "mltframework/shotcut": 15695,
-    "mpv-player/mpv": 38138,
-    "mullvad/mullvadvpn-app": 7782,
-    "neovim/neovim": 103680,
+    "KDE/krita": 10753,
+    "keepassxreboot/keepassxc": 30016,
+    "laurent22/joplin": 57200,
+    "LibreOffice/core": 4645,
+    "localsend/localsend": 99235,
+    "logseq/logseq": 45612,
+    "luanti-org/luanti": 13868,
+    "mattermost/desktop": 2289,
+    "mltframework/shotcut": 15703,
+    "mpv-player/mpv": 38147,
+    "mullvad/mullvadvpn-app": 7783,
+    "neovim/neovim": 103686,
     "nomic-ai/gpt4all": 77345,
-    "notepad-plus-plus/notepad-plus-plus": 29903,
+    "notepad-plus-plus/notepad-plus-plus": 29905,
     "obsproject/obs-studio": 79614,
-    "ollama/ollama": 187119,
-    "OpenTTD/OpenTTD": 8506,
-    "organicmaps/organicmaps": 15987,
-    "penpot/penpot": 62396,
+    "ollama/ollama": 187186,
+    "OpenTTD/OpenTTD": 8507,
+    "organicmaps/organicmaps": 15995,
+    "penpot/penpot": 62415,
     "PintaProject/Pinta": 4137,
-    "signalapp/Signal-Desktop": 16712,
-    "storytold/designcraft": 5294,
-    "storytold/effectcraft": 8839,
-    "storytold/filmcraft": 18361,
-    "storytold/lightcraft": 16040,
-    "storytold/pdfcraft": 20818,
-    "storytold/photocraft": 79635,
-    "storytold/vectorcraft": 11789,
-    "super-productivity/super-productivity": 23703,
-    "supertuxkart/stk-code": 5480,
-    "syncthing/syncthing": 90472,
-    "tauri-apps/tauri": 112952,
-    "TeamNewPipe/NewPipe": 40743,
-    "thunderbird/thunderbird-android": 14226,
+    "signalapp/Signal-Desktop": 16713,
+    "storytold/designcraft": 5300,
+    "storytold/effectcraft": 8857,
+    "storytold/filmcraft": 18385,
+    "storytold/lightcraft": 16056,
+    "storytold/pdfcraft": 20864,
+    "storytold/photocraft": 79723,
+    "storytold/vectorcraft": 11803,
+    "super-productivity/super-productivity": 23726,
+    "supertuxkart/stk-code": 5482,
+    "syncthing/syncthing": 90482,
+    "tauri-apps/tauri": 112939,
+    "TeamNewPipe/NewPipe": 40753,
+    "thunderbird/thunderbird-android": 14229,
     "ungoogled-software/ungoogled-chromium": 28262,
-    "videolan/vlc": 20471,
-    "VSCodium/vscodium": 34137,
+    "videolan/vlc": 20470,
+    "VSCodium/vscodium": 34141,
     "wesnoth/wesnoth": 6998,
-    "zed-industries/zed": 95095
+    "zed-industries/zed": 95136
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -2029,151 +2029,151 @@
     },
     "mattermost/desktop": {
       "mac": {
-        "tag": "v6.3.2",
-        "date": "2026-11-02T08:33:27Z",
-        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.2",
+        "tag": "v6.4.0",
+        "date": "2026-11-16T06:38:09Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.4.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "mattermost-desktop-6.3.2-mac-universal.dmg",
-            "size": 231825868,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-universal.dmg",
-            "sha256": "9ac01689fd8c786f3d8268dbbc4e965edd37f61ef9a4b58766e71a86c483dcf7"
+            "name": "mattermost-desktop-6.4.0-mac-universal.dmg",
+            "size": 231787569,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-universal.dmg",
+            "sha256": "3ac73e8e9e0783594daebce56a0827f0aabc2ac71edddf2169d51112a4b06d9f"
           },
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "mattermost-desktop-6.3.2-mac-x64.dmg",
-            "size": 135013476,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-x64.dmg",
-            "sha256": "557f6194100c2da1d0c5f8a34dd73dcfd69fc35edf2f88361935ae65d6d9b2c7"
+            "name": "mattermost-desktop-6.4.0-mac-x64.dmg",
+            "size": 133823190,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-x64.dmg",
+            "sha256": "1e967a09d9f0361ea5c4c2b5641fa57a5308790cab4ae6944e4bff8421b7f070"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "mattermost-desktop-6.3.2-mac-arm64.dmg",
-            "size": 129408070,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-arm64.dmg",
-            "sha256": "16bdf2b9d7a17224b399f30a957db4046b3c00a9b01e6ade3507ef5c0b5a37d6"
+            "name": "mattermost-desktop-6.4.0-mac-arm64.dmg",
+            "size": 127900246,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-arm64.dmg",
+            "sha256": "7f28fce87c63ec869f7f5d0cf5da7a08acae17e079a878b75a1284ea92af2df0"
           },
           {
             "arch": "universal",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.2-mac-universal.zip",
-            "size": 223687535,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-universal.zip",
-            "sha256": "9543f9884a0271046f1a507bcc296d7c87e47b6c4a08194d0c03f658ddf2a968"
+            "name": "mattermost-desktop-6.4.0-mac-universal.zip",
+            "size": 224030250,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-universal.zip",
+            "sha256": "5be0a5170ac92a5233ec1dab2b0f572aad8b890db79b1148ce76ed8049866a4f"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.2-mac-x64.zip",
-            "size": 129934708,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-x64.zip",
-            "sha256": "c256f69c8d57c1e527bee27205015f0fcc22da2590d11e55afd8d73bce55c5e6"
+            "name": "mattermost-desktop-6.4.0-mac-x64.zip",
+            "size": 129160447,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-x64.zip",
+            "sha256": "9c47b7d314d3ab91cb550a49cde04e42f70c08047868203c87e88775b09a8c94"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.2-mac-arm64.zip",
-            "size": 124322364,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-mac-arm64.zip",
-            "sha256": "7adb624266d125f9ac7d293cc742da52221f0e60991c0728de208c980da3ef33"
+            "name": "mattermost-desktop-6.4.0-mac-arm64.zip",
+            "size": 123242627,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-mac-arm64.zip",
+            "sha256": "9f1f80fb4a4c5a2c6fdff4549bfbe906e6f6dba591fea5f09a62a2ea315791d5"
           }
         ]
       },
       "win": {
-        "tag": "v6.3.2",
-        "date": "2026-11-02T08:33:27Z",
-        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.2",
+        "tag": "v6.4.0",
+        "date": "2026-11-16T06:38:09Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.4.0",
         "files": [
           {
             "arch": "x64",
             "kind": "msi",
-            "name": "mattermost-desktop-6.3.2-win-x64.msi",
-            "size": 125181952,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-x64.msi",
-            "sha256": "f468e53a41204dee816025772934b83416dee80077b3581daa81476d55efdad8"
+            "name": "mattermost-desktop-6.4.0-win-x64.msi",
+            "size": 132722688,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-win-x64.msi",
+            "sha256": "6e08729149e88091fa79bf29b41ba550f2727e89d6d4e7bc99e2ddc275d9b98b"
           },
           {
             "arch": "arm64",
             "kind": "msi",
-            "name": "mattermost-desktop-6.3.2-win-arm64.msi",
-            "size": 120225792,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-arm64.msi",
-            "sha256": "0de5374d3033c6b3a52c07a64afad528bc5c55b89777051f7883e9f120e33777"
+            "name": "mattermost-desktop-6.4.0-win-arm64.msi",
+            "size": 127254528,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-win-arm64.msi",
+            "sha256": "9dfda9f7a1c8a91b29fb0d7996f55720d1f9b4344dbfcb92efc70aa4fde138da"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.2-win-x64.zip",
-            "size": 152618348,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-x64.zip",
-            "sha256": "71742332c490901b772f67be16ce9dfc713d9ee3dde697aaa4fc9dc774080673"
+            "name": "mattermost-desktop-6.4.0-win-x64.zip",
+            "size": 159402597,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-win-x64.zip",
+            "sha256": "78e023936580317b0f13548b1db626da2595b366258533224ce035fa8fb8df46"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "mattermost-desktop-6.3.2-win-arm64.zip",
-            "size": 151307710,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-win-arm64.zip",
-            "sha256": "32ba7d425e9c4d47ad560db4c3e69c6bc93e99a59e7bae3e3fcfa190ef0ff433"
+            "name": "mattermost-desktop-6.4.0-win-arm64.zip",
+            "size": 157359402,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-win-arm64.zip",
+            "sha256": "a55436d6f8fcaf61940840770a53949d003572c6207d11eb4239b94a0d0dca79"
           }
         ]
       },
       "linux": {
-        "tag": "v6.3.2",
-        "date": "2026-11-02T08:33:27Z",
-        "page": "https://github.com/mattermost/desktop/releases/tag/v6.3.2",
+        "tag": "v6.4.0",
+        "date": "2026-11-16T06:38:09Z",
+        "page": "https://github.com/mattermost/desktop/releases/tag/v6.4.0",
         "files": [
           {
             "arch": "arm64",
             "kind": "appimage",
-            "name": "mattermost-desktop-6.3.2-linux-arm64.AppImage",
-            "size": 137821819,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-arm64.AppImage",
-            "sha256": "cd34b52b729b34fb2f63df92b555db5c1bee03118b81bbdda1ff1aa3c3c77d7c"
+            "name": "mattermost-desktop-6.4.0-linux-arm64.AppImage",
+            "size": 133978540,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-linux-arm64.AppImage",
+            "sha256": "4e304dbd3c0297e225c95885241b5c1239eaaf5513c1067605ff3257ffff71f9"
           },
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "mattermost-desktop-6.3.2-linux-x86_64.AppImage",
-            "size": 136666790,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-x86_64.AppImage",
-            "sha256": "acb445ae07e3dd45fd3cf90fd8036e1574180457d7e0c6c26711f45808721d8a"
+            "name": "mattermost-desktop-6.4.0-linux-x86_64.AppImage",
+            "size": 132739769,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-linux-x86_64.AppImage",
+            "sha256": "398d98677b0f5d94c65394a07ea5c8f74436ce2058a97da6cdeb9a0b85ff882c"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "mattermost-desktop_6.3.2-1_amd64.deb",
-            "size": 107284108,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop_6.3.2-1_amd64.deb",
-            "sha256": "86af3cf5e4e2a2a7147d0a3d8381eb6f2bfccea81a4f9a5801e17b9272c66feb"
+            "name": "mattermost-desktop_6.4.0-1_amd64.deb",
+            "size": 106859748,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop_6.4.0-1_amd64.deb",
+            "sha256": "8724b25e13563bc6d952e125ded2a65d809818199627ebb5ef4b1daf83ab5b80"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "mattermost-desktop_6.3.2-1_arm64.deb",
-            "size": 102248468,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop_6.3.2-1_arm64.deb",
-            "sha256": "1f7922b9d16dc55c0397c30a89e5726348f6806c5724ccceb5f56e1687784131"
+            "name": "mattermost-desktop_6.4.0-1_arm64.deb",
+            "size": 101759348,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop_6.4.0-1_arm64.deb",
+            "sha256": "72bcade7e405848d5ca5ca29d6a77ed60ba4ff207e9447d14a48e4e3fa7a3c3f"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "mattermost-desktop-6.3.2-linux-x86_64.rpm",
-            "size": 93076001,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-x86_64.rpm",
-            "sha256": "f045a2ce5021b01677c72f51cd3f8fa3cf4f0084e1c1b82030071e1a84be789b"
+            "name": "mattermost-desktop-6.4.0-linux-x86_64.rpm",
+            "size": 94310501,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-linux-x86_64.rpm",
+            "sha256": "81a7a3908521bc0ddb3b946c4394b216c9fd6fbc7ead0a4e21c7a488ddfec2ea"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "mattermost-desktop-6.3.2-linux-aarch64.rpm",
-            "size": 88292541,
-            "url": "https://github.com/mattermost/desktop/releases/download/v6.3.2/mattermost-desktop-6.3.2-linux-aarch64.rpm",
-            "sha256": "29f6f764027601d821a9f7387d1a8b1ba4c680b5eac3c4de75ce47a9dfa83ad5"
+            "name": "mattermost-desktop-6.4.0-linux-aarch64.rpm",
+            "size": 89305701,
+            "url": "https://github.com/mattermost/desktop/releases/download/v6.4.0/mattermost-desktop-6.4.0-linux-aarch64.rpm",
+            "sha256": "66ab71f3e7975e3dec4e5e0573a2ebb9d5bda8351ccc1ea136f202fb345aad7c"
           }
         ]
       }
@@ -4222,7 +4222,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52440,
+      "stars": 52444,
       "glyph": "code",
       "c": [
         "#4AA8FF",
