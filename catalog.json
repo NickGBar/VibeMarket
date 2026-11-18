@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-18T14:08:04.892Z",
+  "updated": "2026-11-18T22:02:04.944Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6825,
-    "ankitects/anki": 32887,
-    "Anuken/Mindustry": 29900,
-    "AppFlowy-IO/AppFlowy": 79136,
-    "audacity/audacity": 19101,
-    "AUTOMATIC1111/stable-diffusion-webui": 165335,
-    "bitwarden/clients": 14261,
-    "blender/blender": 22184,
-    "Comfy-Org/ComfyUI": 147467,
-    "dbeaver/dbeaver": 52473,
-    "ente/ente": 30250,
-    "excalidraw/excalidraw": 135905,
+    "00-Evan/shattered-pixel-dungeon": 6827,
+    "ankitects/anki": 32893,
+    "Anuken/Mindustry": 29906,
+    "AppFlowy-IO/AppFlowy": 79166,
+    "audacity/audacity": 19099,
+    "AUTOMATIC1111/stable-diffusion-webui": 165336,
+    "bitwarden/clients": 14264,
+    "blender/blender": 22192,
+    "Comfy-Org/ComfyUI": 147510,
+    "dbeaver/dbeaver": 52477,
+    "ente/ente": 30258,
+    "excalidraw/excalidraw": 135920,
     "FreeTubeApp/FreeTube": 22487,
     "ggml-org/llama.cpp": 135640,
-    "ggml-org/whisper.cpp": 55290,
+    "ggml-org/whisper.cpp": 55300,
     "GNOME/gimp": 6598,
-    "godotengine/godot": 120359,
-    "HandBrake/HandBrake": 25046,
-    "HeliBorg/HeliBoard": 6603,
-    "immich-app/immich": 119543,
-    "ImranR98/Obtainium": 21658,
-    "inkscape/inkscape": 4132,
-    "janhq/jan": 45794,
-    "jellyfin/jellyfin": 59493,
-    "jesseduffield/lazygit": 83949,
-    "jgraph/drawio-desktop": 64062,
+    "godotengine/godot": 120379,
+    "HandBrake/HandBrake": 25051,
+    "HeliBorg/HeliBoard": 6608,
+    "immich-app/immich": 119567,
+    "ImranR98/Obtainium": 21672,
+    "inkscape/inkscape": 4131,
+    "janhq/jan": 45809,
+    "jellyfin/jellyfin": 59508,
+    "jesseduffield/lazygit": 83955,
+    "jgraph/drawio-desktop": 64063,
     "jitsi/jitsi-meet-electron": 1636,
     "KDE/krita": 10767,
-    "keepassxreboot/keepassxc": 30048,
-    "laurent22/joplin": 57232,
-    "LibreOffice/core": 4660,
-    "localsend/localsend": 99578,
-    "logseq/logseq": 45650,
+    "keepassxreboot/keepassxc": 30049,
+    "laurent22/joplin": 57234,
+    "LibreOffice/core": 4663,
+    "localsend/localsend": 99630,
+    "logseq/logseq": 45652,
     "luanti-org/luanti": 13873,
     "mattermost/desktop": 2290,
-    "mltframework/shotcut": 15721,
-    "mpv-player/mpv": 38179,
-    "mullvad/mullvadvpn-app": 7790,
-    "neovim/neovim": 103814,
-    "nomic-ai/gpt4all": 77345,
-    "notepad-plus-plus/notepad-plus-plus": 29916,
-    "obsproject/obs-studio": 79710,
-    "ollama/ollama": 187523,
-    "OpenTTD/OpenTTD": 8514,
-    "organicmaps/organicmaps": 16028,
-    "penpot/penpot": 62508,
+    "mltframework/shotcut": 15722,
+    "mpv-player/mpv": 38187,
+    "mullvad/mullvadvpn-app": 7788,
+    "neovim/neovim": 103795,
+    "nomic-ai/gpt4all": 77344,
+    "notepad-plus-plus/notepad-plus-plus": 29919,
+    "obsproject/obs-studio": 79698,
+    "ollama/ollama": 187562,
+    "OpenTTD/OpenTTD": 8516,
+    "organicmaps/organicmaps": 16031,
+    "penpot/penpot": 62528,
     "PintaProject/Pinta": 4138,
     "signalapp/Signal-Desktop": 16720,
-    "storytold/designcraft": 5319,
-    "storytold/effectcraft": 8939,
-    "storytold/filmcraft": 18533,
-    "storytold/lightcraft": 16146,
-    "storytold/pdfcraft": 21093,
-    "storytold/photocraft": 80230,
-    "storytold/vectorcraft": 11869,
-    "super-productivity/super-productivity": 23798,
+    "storytold/designcraft": 5322,
+    "storytold/effectcraft": 8951,
+    "storytold/filmcraft": 18550,
+    "storytold/lightcraft": 16164,
+    "storytold/pdfcraft": 21126,
+    "storytold/photocraft": 80286,
+    "storytold/vectorcraft": 11888,
+    "super-productivity/super-productivity": 23807,
     "supertuxkart/stk-code": 5487,
-    "syncthing/syncthing": 90558,
-    "tauri-apps/tauri": 112999,
-    "TeamNewPipe/NewPipe": 40797,
-    "thunderbird/thunderbird-android": 14242,
-    "ungoogled-software/ungoogled-chromium": 28291,
-    "videolan/vlc": 20500,
-    "VSCodium/vscodium": 34161,
-    "wesnoth/wesnoth": 6999,
-    "zed-industries/zed": 95274
+    "syncthing/syncthing": 90569,
+    "tauri-apps/tauri": 112989,
+    "TeamNewPipe/NewPipe": 40809,
+    "thunderbird/thunderbird-android": 14244,
+    "ungoogled-software/ungoogled-chromium": 28292,
+    "videolan/vlc": 20501,
+    "VSCodium/vscodium": 34164,
+    "wesnoth/wesnoth": 7000,
+    "zed-industries/zed": 95283
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -1070,33 +1070,33 @@
     },
     "immich-app/immich": {
       "android": {
-        "tag": "v3.4.1",
-        "date": "2026-11-11T18:27:16Z",
-        "page": "https://github.com/immich-app/immich/releases/tag/v3.4.1",
+        "tag": "v3.4.2",
+        "date": "2026-11-18T20:14:51Z",
+        "page": "https://github.com/immich-app/immich/releases/tag/v3.4.2",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
             "name": "app-release.apk",
             "size": 187294981,
-            "url": "https://github.com/immich-app/immich/releases/download/v3.4.1/app-release.apk",
-            "sha256": "b072fdb8c7df3ca7178544ea5d4bb7d41caee62e62ff8409d355dbbd66a59d27"
+            "url": "https://github.com/immich-app/immich/releases/download/v3.4.2/app-release.apk",
+            "sha256": "bd1078a1c92339f693bf0afc19669bc572bb96f646d9107e806c9d34f2df7017"
           },
           {
             "arch": "x64",
             "kind": "apk",
             "name": "app-x86_64-release.apk",
-            "size": 74997431,
-            "url": "https://github.com/immich-app/immich/releases/download/v3.4.1/app-x86_64-release.apk",
-            "sha256": "398f0be793dda8bc7f4223adb037ba9c5536d4d423958b1379612d31dfe8217a"
+            "size": 74997435,
+            "url": "https://github.com/immich-app/immich/releases/download/v3.4.2/app-x86_64-release.apk",
+            "sha256": "43618725bfe4a3c75baf8efc9bbbd2cf16c8c3a7bd605f01d9cfce6e4eba5212"
           },
           {
             "arch": "arm64",
             "kind": "apk",
             "name": "app-arm64-v8a-release.apk",
             "size": 71851873,
-            "url": "https://github.com/immich-app/immich/releases/download/v3.4.1/app-arm64-v8a-release.apk",
-            "sha256": "fae6c0f77a714b0c99ef6eb7e278ce9650b509ead00b9ecb15ffc2ae9f6c71a5"
+            "url": "https://github.com/immich-app/immich/releases/download/v3.4.2/app-arm64-v8a-release.apk",
+            "sha256": "bf8e9dd7248ffbdd3e063a9825720dccac6b2ed2a0fe34aeae2d019ba37d7667"
           }
         ]
       }
@@ -4136,71 +4136,71 @@
     },
     "zed-industries/zed": {
       "mac": {
-        "tag": "v1.28.1",
-        "date": "2026-11-11T19:08:27Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.28.1",
+        "tag": "v1.29.2",
+        "date": "2026-11-18T21:44:41Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
             "name": "Zed-x86_64.dmg",
-            "size": 96976291,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-x86_64.dmg",
-            "sha256": "e6e1a385f7289d667f730f11c948161ca462fe2679488b0d72848173638d6749"
+            "size": 97358031,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-x86_64.dmg",
+            "sha256": "a7d045966a34799fedd4b726ab41423b2fb39b76a305f45987679180aba07d21"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
             "name": "Zed-aarch64.dmg",
-            "size": 88653699,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-aarch64.dmg",
-            "sha256": "0ca1a4f1e89e3825f49af26fa31afcf0cc3e50da1f4ba9889f0735f5f0beffe4"
+            "size": 88766646,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-aarch64.dmg",
+            "sha256": "62fcf76dad0de21b69b5808f78576f9c0ca86d2319ace93616bd1af654fa136d"
           }
         ]
       },
       "win": {
-        "tag": "v1.28.1",
-        "date": "2026-11-11T19:08:27Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.28.1",
+        "tag": "v1.29.2",
+        "date": "2026-11-18T21:44:41Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "Zed-x86_64.exe",
-            "size": 65092416,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-x86_64.exe",
-            "sha256": "013ba129f675b2bb2a71f5b2fd2918915cf9ad90053eb49e2ba10b56aa2212d4"
+            "size": 65378040,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-x86_64.exe",
+            "sha256": "30cd0aef8a8d451f54613b3ee8d8321c06acb2ef2110b4debaa7931f245c8399"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "Zed-aarch64.exe",
-            "size": 58256952,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-aarch64.exe",
-            "sha256": "2ca5d428376260d65a2516eeb2c0599f69bf47769fdd8dd276b0667e343b652b"
+            "size": 58280624,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-aarch64.exe",
+            "sha256": "c8562209b90884e650899bb716286f49558781704034bf3ade1ff958133810c1"
           }
         ]
       },
       "linux": {
-        "tag": "v1.28.1",
-        "date": "2026-11-11T19:08:27Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.28.1",
+        "tag": "v1.29.2",
+        "date": "2026-11-18T21:44:41Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
         "files": [
           {
             "arch": "x64",
             "kind": "tar",
             "name": "zed-linux-x86_64.tar.gz",
-            "size": 91236005,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/zed-linux-x86_64.tar.gz",
-            "sha256": "9c3fc4cbe533e72c8d0e864a62be2b88d69cc44b9f52cd25d4c21d054dda3742"
+            "size": 91499242,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/zed-linux-x86_64.tar.gz",
+            "sha256": "3584ba728a182d0281ffd269361330d077ec9511c537432a7d9142bc76a7ffa2"
           },
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "zed-linux-aarch64.tar.gz",
-            "size": 86233602,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/zed-linux-aarch64.tar.gz",
-            "sha256": "fc75d18f98fe07c62c079e8745fd723cd4654860b5db170772855bc1b8d05b48"
+            "size": 86381247,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/zed-linux-aarch64.tar.gz",
+            "sha256": "c835844e7bc8587eb3a55eecb0666a85505c6740004b367e764358f3bbb20f98"
           }
         ]
       }
@@ -4214,7 +4214,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52473,
+      "stars": 52477,
       "glyph": "code",
       "c": [
         "#4AA8FF",
