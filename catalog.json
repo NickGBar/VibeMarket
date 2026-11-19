@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-19T13:20:40.957Z",
+  "updated": "2026-11-19T22:12:25.714Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -14,71 +14,71 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6831,
-    "ankitects/anki": 32907,
-    "Anuken/Mindustry": 29916,
-    "AppFlowy-IO/AppFlowy": 79196,
-    "audacity/audacity": 19106,
-    "AUTOMATIC1111/stable-diffusion-webui": 165344,
-    "bitwarden/clients": 14272,
-    "blender/blender": 22221,
-    "Comfy-Org/ComfyUI": 147620,
-    "dbeaver/dbeaver": 52481,
-    "ente/ente": 30285,
-    "excalidraw/excalidraw": 135949,
-    "FreeTubeApp/FreeTube": 22491,
-    "ggml-org/llama.cpp": 135686,
-    "ggml-org/whisper.cpp": 55317,
-    "GNOME/gimp": 6601,
-    "godotengine/godot": 120406,
-    "HandBrake/HandBrake": 25057,
-    "HeliBorg/HeliBoard": 6610,
-    "immich-app/immich": 119630,
-    "ImranR98/Obtainium": 21680,
+    "ankitects/anki": 32913,
+    "Anuken/Mindustry": 29917,
+    "AppFlowy-IO/AppFlowy": 79220,
+    "audacity/audacity": 19111,
+    "AUTOMATIC1111/stable-diffusion-webui": 165351,
+    "bitwarden/clients": 14275,
+    "blender/blender": 22234,
+    "Comfy-Org/ComfyUI": 147670,
+    "dbeaver/dbeaver": 52483,
+    "ente/ente": 30293,
+    "excalidraw/excalidraw": 135976,
+    "FreeTubeApp/FreeTube": 22502,
+    "ggml-org/llama.cpp": 135748,
+    "ggml-org/whisper.cpp": 55341,
+    "GNOME/gimp": 6604,
+    "godotengine/godot": 120430,
+    "HandBrake/HandBrake": 25062,
+    "HeliBorg/HeliBoard": 6616,
+    "immich-app/immich": 119664,
+    "ImranR98/Obtainium": 21691,
     "inkscape/inkscape": 4133,
-    "janhq/jan": 45842,
-    "jellyfin/jellyfin": 59538,
-    "jesseduffield/lazygit": 83960,
-    "jgraph/drawio-desktop": 64071,
+    "janhq/jan": 45866,
+    "jellyfin/jellyfin": 59552,
+    "jesseduffield/lazygit": 83966,
+    "jgraph/drawio-desktop": 64077,
     "jitsi/jitsi-meet-electron": 1636,
-    "KDE/krita": 10773,
-    "keepassxreboot/keepassxc": 30062,
-    "laurent22/joplin": 57246,
+    "KDE/krita": 10771,
+    "keepassxreboot/keepassxc": 30066,
+    "laurent22/joplin": 57257,
     "LibreOffice/core": 4664,
-    "localsend/localsend": 99729,
-    "logseq/logseq": 45661,
-    "luanti-org/luanti": 13877,
+    "localsend/localsend": 99784,
+    "logseq/logseq": 45667,
+    "luanti-org/luanti": 13878,
     "mattermost/desktop": 2290,
-    "mltframework/shotcut": 15728,
-    "mpv-player/mpv": 38198,
-    "mullvad/mullvadvpn-app": 7793,
-    "neovim/neovim": 103852,
-    "nomic-ai/gpt4all": 77338,
-    "notepad-plus-plus/notepad-plus-plus": 29924,
-    "obsproject/obs-studio": 79757,
-    "ollama/ollama": 187602,
+    "mltframework/shotcut": 15733,
+    "mpv-player/mpv": 38204,
+    "mullvad/mullvadvpn-app": 7791,
+    "neovim/neovim": 103893,
+    "nomic-ai/gpt4all": 77333,
+    "notepad-plus-plus/notepad-plus-plus": 29927,
+    "obsproject/obs-studio": 79775,
+    "ollama/ollama": 187662,
     "OpenTTD/OpenTTD": 8517,
-    "organicmaps/organicmaps": 16034,
-    "penpot/penpot": 62545,
-    "PintaProject/Pinta": 4140,
-    "signalapp/Signal-Desktop": 16723,
-    "storytold/designcraft": 5326,
-    "storytold/effectcraft": 8965,
-    "storytold/filmcraft": 18587,
-    "storytold/lightcraft": 16186,
-    "storytold/pdfcraft": 21198,
-    "storytold/photocraft": 80432,
-    "storytold/vectorcraft": 11908,
-    "super-productivity/super-productivity": 23833,
-    "supertuxkart/stk-code": 5488,
-    "syncthing/syncthing": 90591,
-    "tauri-apps/tauri": 112988,
-    "TeamNewPipe/NewPipe": 40820,
-    "thunderbird/thunderbird-android": 14245,
-    "ungoogled-software/ungoogled-chromium": 28295,
+    "organicmaps/organicmaps": 16041,
+    "penpot/penpot": 62556,
+    "PintaProject/Pinta": 4139,
+    "signalapp/Signal-Desktop": 16734,
+    "storytold/designcraft": 5335,
+    "storytold/effectcraft": 8992,
+    "storytold/filmcraft": 18639,
+    "storytold/lightcraft": 16204,
+    "storytold/pdfcraft": 21238,
+    "storytold/photocraft": 80509,
+    "storytold/vectorcraft": 11927,
+    "super-productivity/super-productivity": 23846,
+    "supertuxkart/stk-code": 5487,
+    "syncthing/syncthing": 90607,
+    "tauri-apps/tauri": 113006,
+    "TeamNewPipe/NewPipe": 40830,
+    "thunderbird/thunderbird-android": 14244,
+    "ungoogled-software/ungoogled-chromium": 28298,
     "videolan/vlc": 20505,
-    "VSCodium/vscodium": 34179,
-    "wesnoth/wesnoth": 7000,
-    "zed-industries/zed": 95316
+    "VSCodium/vscodium": 34182,
+    "wesnoth/wesnoth": 6999,
+    "zed-industries/zed": 95338
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -429,111 +429,111 @@
     },
     "bitwarden/clients": {
       "mac": {
-        "tag": "desktop-v2026.10.4",
-        "date": "2026-11-05T17:02:34Z",
-        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.4",
+        "tag": "desktop-v2026.11.0",
+        "date": "2026-11-19T20:49:07Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.11.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
-            "name": "Bitwarden-2026.10.4-universal.dmg",
-            "size": 350671685,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-universal.dmg",
-            "sha256": "76de728cb2f4cd9640c0384c1e45fec2c6d4536aa37c60de50391bcfe9ca1102"
+            "name": "bit-Bitwarden-2026.11.0-universal.dmg",
+            "size": 310104975,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-2026.11.0-universal.dmg",
+            "sha256": "c6d90fe5054874736fb0b59967340f3b911e60cfd502b82d9196c50568bf2bd3"
           },
           {
             "arch": "universal",
-            "kind": "zip",
-            "name": "Bitwarden-2026.10.4-universal-mac.zip",
-            "size": 336898248,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-universal-mac.zip",
-            "sha256": "61ebef7a7cb75ed4e8facbe185ea23f94cc17f8d850177099a693b1578112d0a"
+            "kind": "dmg",
+            "name": "oss-Bitwarden-2026.11.0-universal.dmg",
+            "size": 309204458,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/oss-Bitwarden-2026.11.0-universal.dmg",
+            "sha256": "25880613506deb2b3df4b1997746b687e9e826d0c6a8df4745429ab55f79b18e"
           }
         ]
       },
       "win": {
-        "tag": "desktop-v2026.10.4",
-        "date": "2026-11-05T17:02:34Z",
-        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.4",
+        "tag": "desktop-v2026.11.0",
+        "date": "2026-11-19T20:49:07Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.11.0",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "Bitwarden-Installer-2026.10.4.exe",
-            "size": 734224,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-Installer-2026.10.4.exe",
-            "sha256": "aaedfeaf73511b9095a5009454bb037a053c9a60e7c5ed23717b7b6047193a13"
+            "name": "oss-Bitwarden-Installer-2026.11.0.exe",
+            "size": 734272,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/oss-Bitwarden-Installer-2026.11.0.exe",
+            "sha256": "9e1413cc2f2b06bee519c4d6561c2ac6467c289c09094fe6e36d873904d96466"
           },
           {
             "arch": "x64",
-            "kind": "msix",
-            "name": "Bitwarden-2026.10.4-x64.appx",
-            "size": 259267331,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-x64.appx",
-            "sha256": "02de738633cf6dbd96a70cc95c2c834fb0a24d2306f154a8de00dc3190a9093f"
+            "kind": "exe",
+            "name": "bit-Bitwarden-Installer-2026.11.0.exe",
+            "size": 734264,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-Installer-2026.11.0.exe",
+            "sha256": "c8e7ee33b43b9fd6baada11b4355a684bb8944ea58173423fa108d244bcbdf0a"
           },
           {
             "arch": "arm64",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.4-arm64.appx",
-            "size": 258025831,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-arm64.appx",
-            "sha256": "61a21d1bd734e4270c765ba374802f65d1979cf035abb026cb918a2d970b2dbd"
-          },
-          {
-            "arch": "x86",
-            "kind": "msix",
-            "name": "Bitwarden-2026.10.4-ia32.appx",
-            "size": 237638544,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-ia32.appx",
-            "sha256": "43713b9e6bf2cf03e6203f1db8f7fa2c01338c5233a0d16ae133a0adb8dfbc5d"
+            "name": "bit-Bitwarden-2026.11.0-arm64.appx",
+            "size": 207573707,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-2026.11.0-arm64.appx",
+            "sha256": "f6da1c5f2a6f50d50b2784d374dd37e59b5510044dc7c268b6f543e220183b98"
           },
           {
             "arch": "arm64",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.4-arm64-store.appx",
-            "size": 257944527,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-arm64-store.appx",
-            "sha256": "211fe742ef9e19fd100d7154b452d6796b44add6ef213a7f8955223384522fdf"
+            "name": "oss-Bitwarden-2026.11.0-arm64.appx",
+            "size": 206965059,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/oss-Bitwarden-2026.11.0-arm64.appx",
+            "sha256": "18d38faa1301a1e63a83d195f0dabcebeb440951cb4520091e4b2137a68fbb56"
           },
           {
             "arch": "x86",
             "kind": "msix",
-            "name": "Bitwarden-2026.10.4-ia32-store.appx",
-            "size": 237557294,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-ia32-store.appx",
-            "sha256": "e0241a79ae5350e546f252ad6ba2d14991b9d721f788a0f8994105d08bbbd24f"
+            "name": "bit-Bitwarden-2026.11.0-ia32.appx",
+            "size": 187263208,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-2026.11.0-ia32.appx",
+            "sha256": "dedc55ff99865aad1da285e95b3a27d9a2503d6dee2b8e53ed49c6e36d4cfd7e"
+          },
+          {
+            "arch": "x86",
+            "kind": "msix",
+            "name": "oss-Bitwarden-2026.11.0-ia32.appx",
+            "size": 186654608,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/oss-Bitwarden-2026.11.0-ia32.appx",
+            "sha256": "c290e8b7ca0c327425308c7a63d27f54a83c71633a3d967a15a1d7605b20aa0c"
           }
         ]
       },
       "linux": {
-        "tag": "desktop-v2026.10.4",
-        "date": "2026-11-05T17:02:34Z",
-        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.10.4",
+        "tag": "desktop-v2026.11.0",
+        "date": "2026-11-19T20:49:07Z",
+        "page": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.11.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "Bitwarden-2026.10.4-x86_64.AppImage",
-            "size": 215802612,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-x86_64.AppImage",
-            "sha256": "f7ebebf69b6344812dc55d9536187585de7052da55f39c24374347d8887b4057"
+            "name": "bit-Bitwarden-2026.11.0-x86_64.AppImage",
+            "size": 167521841,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-2026.11.0-x86_64.AppImage",
+            "sha256": "0b885d6aed20cc2a3ea017d93e1a911f2ff9b42073e541009fd81cd6bb367c4b"
+          },
+          {
+            "arch": "x64",
+            "kind": "appimage",
+            "name": "oss-Bitwarden-2026.11.0-x86_64.AppImage",
+            "size": 166915052,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/oss-Bitwarden-2026.11.0-x86_64.AppImage",
+            "sha256": "a3a26a08d74577310d499c739026ebfb60864570d5be18d1aecdf43f4127bad2"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "Bitwarden-2026.10.4-amd64.deb",
-            "size": 163692848,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-amd64.deb",
-            "sha256": "a45a34a20a9d5becbb1c710851717583ad578597d10fbd2bd57fe597f7625f41"
-          },
-          {
-            "arch": "x64",
-            "kind": "rpm",
-            "name": "Bitwarden-2026.10.4-x86_64.rpm",
-            "size": 131215969,
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.4/Bitwarden-2026.10.4-x86_64.rpm",
-            "sha256": "09abe8983dc493e107e9ae6f7b3f164cf58141cf4e74456611d7200d514576fd"
+            "name": "bit-Bitwarden-2026.11.0-amd64.deb",
+            "size": 130010100,
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.11.0/bit-Bitwarden-2026.11.0-amd64.deb",
+            "sha256": "e8c95d91a96661ea827fbc0626d76a1ef7825ee54c8f46f23f218d7c1c88c95a"
           }
         ]
       }
@@ -1619,95 +1619,95 @@
     },
     "laurent22/joplin": {
       "mac": {
-        "tag": "v3.7.22",
-        "date": "2026-10-28T22:32:59Z",
-        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.22",
+        "tag": "v3.7.24",
+        "date": "2026-11-19T17:20:16Z",
+        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.24",
         "files": [
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "Joplin-3.7.22-arm64.DMG",
-            "size": 211992036,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22-arm64.DMG",
-            "sha256": "185395eba8d9dac2d8656884cbb0e5b96bcb40b41d80c67126ce5526cb5186c8"
+            "name": "Joplin-3.7.24-arm64.DMG",
+            "size": 212067439,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24-arm64.DMG",
+            "sha256": "d95c2376035c7630dfb94f6eecca2f6edb3a27531626553a344f2b2308a5830e"
           },
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "Joplin-3.7.22.dmg",
-            "size": 209038405,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22.dmg",
-            "sha256": "5718f0e30ca4bacebb5f03822f2963433d1120e3581258772f2d9eba1d53633f"
+            "name": "Joplin-3.7.24.dmg",
+            "size": 209105237,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24.dmg",
+            "sha256": "62a567c1101d0dc9db64625987265026f36217ae163e851bfe7b687dca314d02"
           },
           {
             "arch": "arm64",
             "kind": "pkg",
-            "name": "Joplin-3.7.22-arm64.pkg",
-            "size": 211672694,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22-arm64.pkg",
-            "sha256": "e88bb5d3023f0567f4e5456ddb1d8ade315293e44ea2a3a3ebd99a7d5d75542d"
+            "name": "Joplin-3.7.24-arm64.pkg",
+            "size": 211736094,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24-arm64.pkg",
+            "sha256": "97ec8638dcca903688623bf8919499c1543b5ba6b033a2827bc46b9a3d7d456e"
           },
           {
             "arch": "x64",
             "kind": "pkg",
-            "name": "Joplin-3.7.22.pkg",
-            "size": 208861777,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22.pkg",
-            "sha256": "cff85252d949d30943a97484f4ad9f208dc50b88c93fc2e3de237522ee00b954"
+            "name": "Joplin-3.7.24.pkg",
+            "size": 208920001,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24.pkg",
+            "sha256": "7424f311c05bd2d7958871223475ac1c56816396d3b3bc18ec287cc26965c0bc"
           },
           {
             "arch": "any",
             "kind": "zip",
-            "name": "Joplin-3.7.22-mac.zip",
-            "size": 200754957,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22-mac.zip",
-            "sha256": "00b1c5beeb47283935f742f907714e16d9b93e31271c50182f846742c2b6fe9f"
+            "name": "Joplin-3.7.24-mac.zip",
+            "size": 200831136,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24-mac.zip",
+            "sha256": "41438e7aec5e8e1f0d9f2e8f18b3766491c90af4223173460bef934ca4a94692"
           }
         ]
       },
       "win": {
-        "tag": "v3.7.22",
-        "date": "2026-10-28T22:32:59Z",
-        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.22",
+        "tag": "v3.7.24",
+        "date": "2026-11-19T17:20:16Z",
+        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.24",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "Joplin-Setup-3.7.22.exe",
-            "size": 368820432,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-Setup-3.7.22.exe",
-            "sha256": "ee11551239e7d680f76c6a4ddbc2362dda850981904fdb365298e4d43bf1df4d"
+            "name": "Joplin-Setup-3.7.24.exe",
+            "size": 368947560,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-Setup-3.7.24.exe",
+            "sha256": "9b528527bf24c4657c35052309437d2798c2ab38f80e32b66f0dedb8daeb3ec9"
           },
           {
             "arch": "x64",
             "kind": "exe",
             "name": "JoplinPortable.exe",
-            "size": 368591720,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/JoplinPortable.exe",
-            "sha256": "cb959b1af470395a28460f8d29a82c677fd84a09d08929c9a695054405e607b5"
+            "size": 368718896,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/JoplinPortable.exe",
+            "sha256": "e0c4e11a0c5ae00ff93dfa0ca6172bde49c739ed85fdd19a6cfbaad0fa247057"
           }
         ]
       },
       "linux": {
-        "tag": "v3.7.22",
-        "date": "2026-10-28T22:32:59Z",
-        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.22",
+        "tag": "v3.7.24",
+        "date": "2026-11-19T17:20:16Z",
+        "page": "https://github.com/laurent22/joplin/releases/tag/v3.7.24",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "Joplin-3.7.22.AppImage",
-            "size": 207329204,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22.AppImage",
-            "sha256": "2b0b1ee82999f00883d21d950c2fb5dff28ccc3d2f570248b3abd40e5100dfdc"
+            "name": "Joplin-3.7.24.AppImage",
+            "size": 207407075,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24.AppImage",
+            "sha256": "64d544b8c865b53d975d1cc9438300465be860dfd9b6c7d4bb6f66a9f3777584"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "Joplin-3.7.22.deb",
-            "size": 168656104,
-            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.22/Joplin-3.7.22.deb",
-            "sha256": "18dace7f4b63e0c57d565df22fde9d9e8da0fb0f684651972d8a2ebc265effab"
+            "name": "Joplin-3.7.24.deb",
+            "size": 168720160,
+            "url": "https://github.com/laurent22/joplin/releases/download/v3.7.24/Joplin-3.7.24.deb",
+            "sha256": "af9cfd13bff5fbec8f9d50482a0b03e461f8ac20f9a9ee846fe10a722bc35705"
           }
         ]
       }
@@ -4214,7 +4214,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52481,
+      "stars": 52483,
       "glyph": "code",
       "c": [
         "#4AA8FF",
