@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-20T13:01:22.663Z",
+  "updated": "2026-11-20T21:12:48.186Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6836,
-    "ankitects/anki": 32926,
-    "Anuken/Mindustry": 29921,
-    "AppFlowy-IO/AppFlowy": 79251,
-    "audacity/audacity": 19115,
+    "00-Evan/shattered-pixel-dungeon": 6837,
+    "ankitects/anki": 32934,
+    "Anuken/Mindustry": 29922,
+    "AppFlowy-IO/AppFlowy": 79271,
+    "audacity/audacity": 19121,
     "AUTOMATIC1111/stable-diffusion-webui": 165364,
-    "bitwarden/clients": 14283,
-    "blender/blender": 22258,
-    "Comfy-Org/ComfyUI": 147773,
-    "dbeaver/dbeaver": 52496,
-    "ente/ente": 30303,
-    "excalidraw/excalidraw": 136012,
-    "FreeTubeApp/FreeTube": 22512,
-    "ggml-org/llama.cpp": 135825,
-    "ggml-org/whisper.cpp": 55363,
-    "GNOME/gimp": 6603,
-    "godotengine/godot": 120462,
-    "HandBrake/HandBrake": 25069,
+    "bitwarden/clients": 14291,
+    "blender/blender": 22278,
+    "Comfy-Org/ComfyUI": 147824,
+    "dbeaver/dbeaver": 52497,
+    "ente/ente": 30306,
+    "excalidraw/excalidraw": 136026,
+    "FreeTubeApp/FreeTube": 22514,
+    "ggml-org/llama.cpp": 135850,
+    "ggml-org/whisper.cpp": 55373,
+    "GNOME/gimp": 6605,
+    "godotengine/godot": 120484,
+    "HandBrake/HandBrake": 25074,
     "HeliBorg/HeliBoard": 6621,
-    "immich-app/immich": 119711,
-    "ImranR98/Obtainium": 21718,
-    "inkscape/inkscape": 4135,
-    "janhq/jan": 45936,
-    "jellyfin/jellyfin": 59569,
-    "jesseduffield/lazygit": 83969,
-    "jgraph/drawio-desktop": 64086,
+    "immich-app/immich": 119729,
+    "ImranR98/Obtainium": 21730,
+    "inkscape/inkscape": 4137,
+    "janhq/jan": 45957,
+    "jellyfin/jellyfin": 59582,
+    "jesseduffield/lazygit": 83978,
+    "jgraph/drawio-desktop": 64088,
     "jitsi/jitsi-meet-electron": 1637,
-    "KDE/krita": 10774,
-    "keepassxreboot/keepassxc": 30072,
-    "laurent22/joplin": 57261,
-    "LibreOffice/core": 4665,
-    "localsend/localsend": 99910,
-    "logseq/logseq": 45676,
-    "luanti-org/luanti": 13879,
+    "KDE/krita": 10777,
+    "keepassxreboot/keepassxc": 30080,
+    "laurent22/joplin": 57264,
+    "LibreOffice/core": 4667,
+    "localsend/localsend": 99957,
+    "logseq/logseq": 45680,
+    "luanti-org/luanti": 13882,
     "mattermost/desktop": 2290,
-    "mltframework/shotcut": 15737,
-    "mpv-player/mpv": 38214,
-    "mullvad/mullvadvpn-app": 7798,
-    "neovim/neovim": 103926,
+    "mltframework/shotcut": 15743,
+    "mpv-player/mpv": 38224,
+    "mullvad/mullvadvpn-app": 7801,
+    "neovim/neovim": 103930,
     "nomic-ai/gpt4all": 77332,
-    "notepad-plus-plus/notepad-plus-plus": 29929,
-    "obsproject/obs-studio": 79802,
-    "ollama/ollama": 187732,
+    "notepad-plus-plus/notepad-plus-plus": 29932,
+    "obsproject/obs-studio": 79826,
+    "ollama/ollama": 187761,
     "OpenTTD/OpenTTD": 8520,
-    "organicmaps/organicmaps": 16054,
-    "penpot/penpot": 62570,
+    "organicmaps/organicmaps": 16058,
+    "penpot/penpot": 62580,
     "PintaProject/Pinta": 4140,
-    "signalapp/Signal-Desktop": 16735,
-    "storytold/designcraft": 5342,
-    "storytold/effectcraft": 9018,
-    "storytold/filmcraft": 18679,
-    "storytold/lightcraft": 16221,
-    "storytold/pdfcraft": 21305,
-    "storytold/photocraft": 80652,
-    "storytold/vectorcraft": 11946,
-    "super-productivity/super-productivity": 23873,
-    "supertuxkart/stk-code": 5489,
-    "syncthing/syncthing": 90627,
-    "tauri-apps/tauri": 113019,
-    "TeamNewPipe/NewPipe": 40839,
-    "thunderbird/thunderbird-android": 14253,
-    "ungoogled-software/ungoogled-chromium": 28299,
-    "videolan/vlc": 20514,
-    "VSCodium/vscodium": 34194,
-    "wesnoth/wesnoth": 6999,
-    "zed-industries/zed": 95394
+    "signalapp/Signal-Desktop": 16736,
+    "storytold/designcraft": 5345,
+    "storytold/effectcraft": 9042,
+    "storytold/filmcraft": 18708,
+    "storytold/lightcraft": 16235,
+    "storytold/pdfcraft": 21336,
+    "storytold/photocraft": 80719,
+    "storytold/vectorcraft": 11959,
+    "super-productivity/super-productivity": 23885,
+    "supertuxkart/stk-code": 5490,
+    "syncthing/syncthing": 90641,
+    "tauri-apps/tauri": 113029,
+    "TeamNewPipe/NewPipe": 40842,
+    "thunderbird/thunderbird-android": 14254,
+    "ungoogled-software/ungoogled-chromium": 28305,
+    "videolan/vlc": 20516,
+    "VSCodium/vscodium": 34195,
+    "wesnoth/wesnoth": 7000,
+    "zed-industries/zed": 95427
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -2620,71 +2620,71 @@
     },
     "obsproject/obs-studio": {
       "mac": {
-        "tag": "33.0.1",
-        "date": "2026-10-29T21:52:01Z",
-        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
+        "tag": "33.0.2",
+        "date": "2026-11-20T15:00:26Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "OBS-Studio-33.0.1-macOS-Intel.dmg",
-            "size": 221903179,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg",
-            "sha256": "745257d65e06eb0f784af229659223a863ad50d036464bb2b52f8a2d9278c2b1"
+            "name": "OBS-Studio-33.0.2-macOS-Intel.dmg",
+            "size": 221815559,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-macOS-Intel.dmg",
+            "sha256": "84eb584a89cdef83f3385655e348496dbb0715459be249afa1c6787d60d2cc33"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "OBS-Studio-33.0.1-macOS-Apple.dmg",
-            "size": 209628971,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg",
-            "sha256": "3d6b2eedeb56416602af635adaba32327fdf11ff9d2806a4ce7d5b608de73238"
+            "name": "OBS-Studio-33.0.2-macOS-Apple.dmg",
+            "size": 209592273,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-macOS-Apple.dmg",
+            "sha256": "f9cd96511c5efdd3ffd9a0068e3bbc276c61fc451d1004e3eea5658a9cb70488"
           }
         ]
       },
       "win": {
-        "tag": "33.0.1",
-        "date": "2026-10-29T21:52:01Z",
-        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
+        "tag": "33.0.2",
+        "date": "2026-11-20T15:00:26Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "OBS-Studio-33.0.1-Windows-x64-Installer.exe",
-            "size": 186662440,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe",
-            "sha256": "37ecde4d9a28e8aeeb07623c8469b5d558eb264e02ccf435bb859891c401758b"
+            "name": "OBS-Studio-33.0.2-Windows-x64-Installer.exe",
+            "size": 194122376,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Windows-x64-Installer.exe",
+            "sha256": "45bdacae241b3773bbf546cea11ebab219deb8c58f8b0ccd5b9fdae2e35966bc"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "OBS-Studio-33.0.1-Windows-x64.zip",
-            "size": 223786669,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64.zip",
-            "sha256": "0d9436451c2d772b33428e3fdae9776f071895c335de17283176306fb72651d3"
+            "name": "OBS-Studio-33.0.2-Windows-x64.zip",
+            "size": 236160842,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Windows-x64.zip",
+            "sha256": "fcfdb3e4568e45c519ac2171905f76edd0ce9777aea9d0b09dc33a1fc76948c5"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "OBS-Studio-33.0.1-Windows-arm64.zip",
-            "size": 200182561,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-arm64.zip",
-            "sha256": "5bee731f6a9ce843ac670b4ccf048a54cdccb8b06acb3fd1c7928b9705f11100"
+            "name": "OBS-Studio-33.0.2-Windows-arm64.zip",
+            "size": 210103375,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Windows-arm64.zip",
+            "sha256": "c78bf62681e2a46179b60f7a53c37273698ee546f3c9210fe25f14906b7d1ef8"
           }
         ]
       },
       "linux": {
-        "tag": "33.0.1",
-        "date": "2026-10-29T21:52:01Z",
-        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
+        "tag": "33.0.2",
+        "date": "2026-11-20T15:00:26Z",
+        "page": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2",
         "files": [
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "OBS-Studio-33.0.1-Ubuntu-26.04-x86_64.deb",
-            "size": 159354224,
-            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Ubuntu-26.04-x86_64.deb",
-            "sha256": "a9f062057576074439e6467f2716e3bbed6a0edab6ebf2c2f9595a3d2f1dc57f"
+            "name": "OBS-Studio-33.0.2-Ubuntu-26.04-x86_64.deb",
+            "size": 159285590,
+            "url": "https://github.com/obsproject/obs-studio/releases/download/33.0.2/OBS-Studio-33.0.2-Ubuntu-26.04-x86_64.deb",
+            "sha256": "ba2269e16c46c004eda8276bc7334f64fd462f29126dc2fd995f079e86093259"
           }
         ]
       }
@@ -4136,71 +4136,71 @@
     },
     "zed-industries/zed": {
       "mac": {
-        "tag": "v1.29.2",
-        "date": "2026-11-18T21:44:41Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
+        "tag": "v1.29.3",
+        "date": "2026-11-20T16:10:31Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.3",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
             "name": "Zed-x86_64.dmg",
-            "size": 97358031,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-x86_64.dmg",
-            "sha256": "a7d045966a34799fedd4b726ab41423b2fb39b76a305f45987679180aba07d21"
+            "size": 97366853,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.3/Zed-x86_64.dmg",
+            "sha256": "b4779577003b79cb05ab6be18205babdebf81b45d96acdf21fce43dd4a6d6083"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
             "name": "Zed-aarch64.dmg",
-            "size": 88766646,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-aarch64.dmg",
-            "sha256": "62fcf76dad0de21b69b5808f78576f9c0ca86d2319ace93616bd1af654fa136d"
+            "size": 88779557,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.3/Zed-aarch64.dmg",
+            "sha256": "b692c9effdfcec874c47f56c3b27df069a63c6b3d23ecd070ffec9238a708bb8"
           }
         ]
       },
       "win": {
-        "tag": "v1.29.2",
-        "date": "2026-11-18T21:44:41Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
+        "tag": "v1.29.3",
+        "date": "2026-11-20T16:10:31Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.3",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "Zed-x86_64.exe",
-            "size": 65378040,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-x86_64.exe",
-            "sha256": "30cd0aef8a8d451f54613b3ee8d8321c06acb2ef2110b4debaa7931f245c8399"
+            "size": 65418432,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.3/Zed-x86_64.exe",
+            "sha256": "f857495c6cdc4d74fb9bcda9ff5a23aebe1cc88e7aa10af13cfde5f45232b554"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "Zed-aarch64.exe",
-            "size": 58280624,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-aarch64.exe",
-            "sha256": "c8562209b90884e650899bb716286f49558781704034bf3ade1ff958133810c1"
+            "size": 58278984,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.3/Zed-aarch64.exe",
+            "sha256": "6b1d9953d73743562260e68127e154e1c77ad71d2f64bc8b3f883ff00309d67e"
           }
         ]
       },
       "linux": {
-        "tag": "v1.29.2",
-        "date": "2026-11-18T21:44:41Z",
-        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.2",
+        "tag": "v1.29.3",
+        "date": "2026-11-20T16:10:31Z",
+        "page": "https://github.com/zed-industries/zed/releases/tag/v1.29.3",
         "files": [
           {
             "arch": "x64",
             "kind": "tar",
             "name": "zed-linux-x86_64.tar.gz",
-            "size": 91499242,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/zed-linux-x86_64.tar.gz",
-            "sha256": "3584ba728a182d0281ffd269361330d077ec9511c537432a7d9142bc76a7ffa2"
+            "size": 91505000,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.3/zed-linux-x86_64.tar.gz",
+            "sha256": "44b0f350aa7bf4551d1b0aaa2d3b673a6de2c03bc5e979b3592fd2180b4f77c1"
           },
           {
             "arch": "arm64",
             "kind": "tar",
             "name": "zed-linux-aarch64.tar.gz",
-            "size": 86381247,
-            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/zed-linux-aarch64.tar.gz",
-            "sha256": "c835844e7bc8587eb3a55eecb0666a85505c6740004b367e764358f3bbb20f98"
+            "size": 86390607,
+            "url": "https://github.com/zed-industries/zed/releases/download/v1.29.3/zed-linux-aarch64.tar.gz",
+            "sha256": "5f1de233ac02d8c9eff68e9ab4207274df3ddbd2cf9fa6f8a80ef5487f03e8ee"
           }
         ]
       }
@@ -4214,7 +4214,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52496,
+      "stars": 52497,
       "glyph": "code",
       "c": [
         "#4AA8FF",
