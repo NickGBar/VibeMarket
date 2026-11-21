@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-21T11:15:19.046Z",
+  "updated": "2026-11-21T18:04:18.715Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6839,
-    "ankitects/anki": 32949,
-    "Anuken/Mindustry": 29925,
-    "AppFlowy-IO/AppFlowy": 79296,
-    "audacity/audacity": 19125,
-    "AUTOMATIC1111/stable-diffusion-webui": 165369,
-    "bitwarden/clients": 14295,
-    "blender/blender": 22292,
-    "Comfy-Org/ComfyUI": 147900,
-    "dbeaver/dbeaver": 52501,
-    "ente/ente": 30314,
-    "excalidraw/excalidraw": 136044,
-    "FreeTubeApp/FreeTube": 22517,
-    "ggml-org/llama.cpp": 135904,
-    "ggml-org/whisper.cpp": 55386,
-    "GNOME/gimp": 6607,
-    "godotengine/godot": 120508,
-    "HandBrake/HandBrake": 25080,
+    "00-Evan/shattered-pixel-dungeon": 6841,
+    "ankitects/anki": 32954,
+    "Anuken/Mindustry": 29930,
+    "AppFlowy-IO/AppFlowy": 79308,
+    "audacity/audacity": 19127,
+    "AUTOMATIC1111/stable-diffusion-webui": 165370,
+    "bitwarden/clients": 14296,
+    "blender/blender": 22300,
+    "Comfy-Org/ComfyUI": 147958,
+    "dbeaver/dbeaver": 52502,
+    "ente/ente": 30341,
+    "excalidraw/excalidraw": 136068,
+    "FreeTubeApp/FreeTube": 22518,
+    "ggml-org/llama.cpp": 135946,
+    "ggml-org/whisper.cpp": 55401,
+    "GNOME/gimp": 6611,
+    "godotengine/godot": 120528,
+    "HandBrake/HandBrake": 25083,
     "HeliBorg/HeliBoard": 6628,
-    "immich-app/immich": 119761,
-    "ImranR98/Obtainium": 21748,
-    "inkscape/inkscape": 4137,
-    "janhq/jan": 45979,
-    "jellyfin/jellyfin": 59599,
-    "jesseduffield/lazygit": 83986,
-    "jgraph/drawio-desktop": 64095,
+    "immich-app/immich": 119778,
+    "ImranR98/Obtainium": 21761,
+    "inkscape/inkscape": 4139,
+    "janhq/jan": 45990,
+    "jellyfin/jellyfin": 59607,
+    "jesseduffield/lazygit": 83998,
+    "jgraph/drawio-desktop": 64098,
     "jitsi/jitsi-meet-electron": 1637,
     "KDE/krita": 10777,
-    "keepassxreboot/keepassxc": 30083,
-    "laurent22/joplin": 57272,
+    "keepassxreboot/keepassxc": 30093,
+    "laurent22/joplin": 57281,
     "LibreOffice/core": 4670,
-    "localsend/localsend": 100049,
-    "logseq/logseq": 45681,
-    "luanti-org/luanti": 13884,
+    "localsend/localsend": 100112,
+    "logseq/logseq": 45683,
+    "luanti-org/luanti": 13885,
     "mattermost/desktop": 2290,
-    "mltframework/shotcut": 15746,
-    "mpv-player/mpv": 38233,
+    "mltframework/shotcut": 15750,
+    "mpv-player/mpv": 38236,
     "mullvad/mullvadvpn-app": 7805,
-    "neovim/neovim": 103936,
-    "nomic-ai/gpt4all": 77330,
-    "notepad-plus-plus/notepad-plus-plus": 29936,
-    "obsproject/obs-studio": 79856,
-    "ollama/ollama": 187808,
-    "OpenTTD/OpenTTD": 8522,
-    "organicmaps/organicmaps": 16061,
-    "penpot/penpot": 62596,
+    "neovim/neovim": 103937,
+    "nomic-ai/gpt4all": 77328,
+    "notepad-plus-plus/notepad-plus-plus": 29937,
+    "obsproject/obs-studio": 79867,
+    "ollama/ollama": 187830,
+    "OpenTTD/OpenTTD": 8523,
+    "organicmaps/organicmaps": 16066,
+    "penpot/penpot": 62612,
     "PintaProject/Pinta": 4141,
-    "signalapp/Signal-Desktop": 16737,
-    "storytold/designcraft": 5352,
-    "storytold/effectcraft": 9070,
-    "storytold/filmcraft": 18743,
-    "storytold/lightcraft": 16247,
-    "storytold/pdfcraft": 21369,
-    "storytold/photocraft": 80809,
-    "storytold/vectorcraft": 11975,
-    "super-productivity/super-productivity": 23905,
+    "signalapp/Signal-Desktop": 16739,
+    "storytold/designcraft": 5357,
+    "storytold/effectcraft": 9077,
+    "storytold/filmcraft": 18760,
+    "storytold/lightcraft": 16263,
+    "storytold/pdfcraft": 21394,
+    "storytold/photocraft": 80861,
+    "storytold/vectorcraft": 11987,
+    "super-productivity/super-productivity": 23913,
     "supertuxkart/stk-code": 5491,
-    "syncthing/syncthing": 90661,
-    "tauri-apps/tauri": 113035,
-    "TeamNewPipe/NewPipe": 40854,
-    "thunderbird/thunderbird-android": 14256,
-    "ungoogled-software/ungoogled-chromium": 28308,
-    "videolan/vlc": 20530,
-    "VSCodium/vscodium": 34202,
-    "wesnoth/wesnoth": 7001,
-    "zed-industries/zed": 95456
+    "syncthing/syncthing": 90671,
+    "tauri-apps/tauri": 113044,
+    "TeamNewPipe/NewPipe": 40858,
+    "thunderbird/thunderbird-android": 14257,
+    "ungoogled-software/ungoogled-chromium": 28311,
+    "videolan/vlc": 20537,
+    "VSCodium/vscodium": 34210,
+    "wesnoth/wesnoth": 7002,
+    "zed-industries/zed": 95473
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -3612,134 +3612,134 @@
     },
     "super-productivity/super-productivity": {
       "mac": {
-        "tag": "v20.0.0",
-        "date": "2026-11-06T21:02:15Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.0.0",
+        "tag": "v20.1.0",
+        "date": "2026-11-21T15:16:36Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.1.0",
         "files": [
           {
             "arch": "universal",
             "kind": "dmg",
             "name": "superProductivity-universal.dmg",
-            "size": 250321010,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-universal.dmg",
-            "sha256": "26c2448abe6f75b101ba240803044b6a51a88ea73b566a6c9121d2babef6b11e"
+            "size": 250660105,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-universal.dmg",
+            "sha256": "48abec764449b579d7ef9e86f53c87de792cf737c03e270dce7cfcd257d7000e"
           },
           {
             "arch": "x64",
             "kind": "dmg",
             "name": "superProductivity-x64.dmg",
-            "size": 153991347,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-x64.dmg",
-            "sha256": "8df6e960e2fa12bc041d6df89831dcde859fe2382b4451827af89c6563515db7"
+            "size": 154321457,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-x64.dmg",
+            "sha256": "12d97a4b9d283789ce5dc4a268d88737a7d41b973ffd557b9a5954f86ec22fb6"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
             "name": "superProductivity-arm64.dmg",
-            "size": 148678260,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-arm64.dmg",
-            "sha256": "63cd4b4dcb18420b21c61e0f68d1d792653511bccb1de26b5043844ba20be1c0"
+            "size": 148973846,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-arm64.dmg",
+            "sha256": "fdfb1625603537f0935209b609ba18fba587057ab01139dfe7098968c9a9748c"
           }
         ]
       },
       "win": {
-        "tag": "v20.0.0",
-        "date": "2026-11-06T21:02:15Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.0.0",
+        "tag": "v20.1.0",
+        "date": "2026-11-21T15:16:36Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.1.0",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
             "name": "Super-Productivity-Setup-x64.exe",
-            "size": 261421120,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/Super-Productivity-Setup-x64.exe",
-            "sha256": "246b5e0ab1b2aa495353e2bcbeadb763747ecec90ae007f6273d24a5f0346350"
+            "size": 261870992,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup-x64.exe",
+            "sha256": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd"
           },
           {
             "arch": "any",
             "kind": "exe",
             "name": "Super-Productivity-Setup.exe",
-            "size": 261421120,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/Super-Productivity-Setup.exe",
-            "sha256": "246b5e0ab1b2aa495353e2bcbeadb763747ecec90ae007f6273d24a5f0346350"
+            "size": 261870992,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup.exe",
+            "sha256": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "Super-Productivity-Setup-arm64.exe",
-            "size": 261421120,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/Super-Productivity-Setup-arm64.exe",
-            "sha256": "246b5e0ab1b2aa495353e2bcbeadb763747ecec90ae007f6273d24a5f0346350"
-          },
-          {
-            "arch": "any",
-            "kind": "exe",
-            "name": "superProductivity.exe",
-            "size": 261182400,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity.exe",
-            "sha256": "ee53b488383dfce9cffd35f3ccf29a49811dd8218d3ff84aa7ead908f56193bc"
+            "size": 261870992,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/Super-Productivity-Setup-arm64.exe",
+            "sha256": "0996fb9696c5180c6e48be422ebdd19431de5e8778a2a0e0888ec922eeec5bbd"
           },
           {
             "arch": "x64",
             "kind": "exe",
             "name": "superProductivity-x64.exe",
-            "size": 261182400,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-x64.exe",
-            "sha256": "ee53b488383dfce9cffd35f3ccf29a49811dd8218d3ff84aa7ead908f56193bc"
+            "size": 261632336,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-x64.exe",
+            "sha256": "92984173b5da6ec2f00f9726269670e2cf071e8239e0822577020d7357e0dbf8"
           },
           {
             "arch": "arm64",
             "kind": "exe",
             "name": "superProductivity-arm64.exe",
-            "size": 261182400,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-arm64.exe",
-            "sha256": "ee53b488383dfce9cffd35f3ccf29a49811dd8218d3ff84aa7ead908f56193bc"
+            "size": 261632336,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-arm64.exe",
+            "sha256": "92984173b5da6ec2f00f9726269670e2cf071e8239e0822577020d7357e0dbf8"
+          },
+          {
+            "arch": "any",
+            "kind": "exe",
+            "name": "superProductivity.exe",
+            "size": 261632336,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity.exe",
+            "sha256": "92984173b5da6ec2f00f9726269670e2cf071e8239e0822577020d7357e0dbf8"
           }
         ]
       },
       "linux": {
-        "tag": "v20.0.0",
-        "date": "2026-11-06T21:02:15Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.0.0",
+        "tag": "v20.1.0",
+        "date": "2026-11-21T15:16:36Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.1.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
             "name": "superProductivity-x86_64.AppImage",
-            "size": 142665166,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-x86_64.AppImage",
-            "sha256": "dfc921c7c709c0a608e9b0674e5a642dd7f62f80b5316f0b179d0653b4eab21b"
+            "size": 142976893,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-x86_64.AppImage",
+            "sha256": "bdb372be0ac0fe4b8822d6e4803473ab67677ace18674ae6c2e1e9223eecc3cb"
           },
           {
             "arch": "x64",
             "kind": "deb",
             "name": "superProductivity-amd64.deb",
-            "size": 114914352,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-amd64.deb",
-            "sha256": "5da4efdfa8b93672a3f56f5812bea17aa933373080244b6a083b5909ef3604e6"
+            "size": 114790464,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-amd64.deb",
+            "sha256": "37bd4c8ac1dc2e70a8bf2a72997bc552b1dbdf169e413ce582db366aacca89d7"
           },
           {
             "arch": "x64",
             "kind": "rpm",
             "name": "superProductivity-x86_64.rpm",
-            "size": 100992180,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/superProductivity-x86_64.rpm",
-            "sha256": "d30fdca75e5098b15d3a195597f79e456d09039420785617b94e7113eb02efa5"
+            "size": 101203312,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/superProductivity-x86_64.rpm",
+            "sha256": "0dd6d8bd7efa92bb75d6090da9ccdc445426e8a3818accefed6d9af7761f5ea3"
           }
         ]
       },
       "android": {
-        "tag": "v20.0.0",
-        "date": "2026-11-06T21:02:15Z",
-        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.0.0",
+        "tag": "v20.1.0",
+        "date": "2026-11-21T15:16:36Z",
+        "page": "https://github.com/super-productivity/super-productivity/releases/tag/v20.1.0",
         "files": [
           {
             "arch": "any",
             "kind": "apk",
             "name": "app-play-release.apk",
-            "size": 23990566,
-            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.0.0/app-play-release.apk",
-            "sha256": "f5b43b0c61784b0069c90f49ce4deb92988e8eaf78db0792de6796849d8b4d37"
+            "size": 24463831,
+            "url": "https://github.com/super-productivity/super-productivity/releases/download/v20.1.0/app-play-release.apk",
+            "sha256": "cc509b8d8db6587aa4f90bf9f293bdb7b9afeb4456a7865e4dff887ba5f496a3"
           }
         ]
       }
@@ -4214,7 +4214,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52501,
+      "stars": 52502,
       "glyph": "code",
       "c": [
         "#4AA8FF",
@@ -4225,7 +4225,7 @@
       "os": "mwl",
       "issue": 5,
       "addedAt": "2026-10-26T15:15:07.055Z",
-      "checkedAt": "2026-11-20T13:01:22.663Z"
+      "checkedAt": "2026-11-21T18:04:18.715Z"
     }
   ],
   "candidates": [],
