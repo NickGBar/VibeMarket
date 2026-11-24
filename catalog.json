@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-24T11:01:40.323Z",
+  "updated": "2026-11-24T21:18:49.668Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -14,71 +14,71 @@
   },
   "stars": {
     "00-Evan/shattered-pixel-dungeon": 6864,
-    "ankitects/anki": 33000,
-    "Anuken/Mindustry": 29957,
-    "AppFlowy-IO/AppFlowy": 79467,
-    "audacity/audacity": 19161,
-    "AUTOMATIC1111/stable-diffusion-webui": 165373,
-    "bitwarden/clients": 14309,
-    "blender/blender": 22406,
-    "Comfy-Org/ComfyUI": 148386,
-    "dbeaver/dbeaver": 52521,
-    "ente/ente": 30440,
-    "excalidraw/excalidraw": 136223,
-    "FreeTubeApp/FreeTube": 22538,
-    "ggml-org/llama.cpp": 136133,
-    "ggml-org/whisper.cpp": 55472,
+    "ankitects/anki": 33007,
+    "Anuken/Mindustry": 29961,
+    "AppFlowy-IO/AppFlowy": 79505,
+    "audacity/audacity": 19167,
+    "AUTOMATIC1111/stable-diffusion-webui": 165370,
+    "bitwarden/clients": 14312,
+    "blender/blender": 22465,
+    "Comfy-Org/ComfyUI": 148445,
+    "dbeaver/dbeaver": 52525,
+    "ente/ente": 30459,
+    "excalidraw/excalidraw": 136246,
+    "FreeTubeApp/FreeTube": 22543,
+    "ggml-org/llama.cpp": 136134,
+    "ggml-org/whisper.cpp": 55493,
     "GNOME/gimp": 6619,
-    "godotengine/godot": 120670,
-    "HandBrake/HandBrake": 25113,
-    "HeliBorg/HeliBoard": 6650,
-    "immich-app/immich": 120007,
-    "ImranR98/Obtainium": 21863,
-    "inkscape/inkscape": 4154,
-    "janhq/jan": 46071,
-    "jellyfin/jellyfin": 59705,
-    "jesseduffield/lazygit": 84051,
-    "jgraph/drawio-desktop": 64128,
+    "godotengine/godot": 120729,
+    "HandBrake/HandBrake": 25118,
+    "HeliBorg/HeliBoard": 6658,
+    "immich-app/immich": 120032,
+    "ImranR98/Obtainium": 21878,
+    "inkscape/inkscape": 4156,
+    "janhq/jan": 46079,
+    "jellyfin/jellyfin": 59719,
+    "jesseduffield/lazygit": 84059,
+    "jgraph/drawio-desktop": 64132,
     "jitsi/jitsi-meet-electron": 1638,
-    "KDE/krita": 10799,
-    "keepassxreboot/keepassxc": 30130,
-    "laurent22/joplin": 57336,
-    "LibreOffice/core": 4688,
-    "localsend/localsend": 100563,
-    "logseq/logseq": 45691,
-    "luanti-org/luanti": 13886,
-    "mattermost/desktop": 2290,
-    "mltframework/shotcut": 15780,
-    "mpv-player/mpv": 38276,
-    "mullvad/mullvadvpn-app": 7809,
-    "neovim/neovim": 103846,
-    "nomic-ai/gpt4all": 77329,
+    "KDE/krita": 10801,
+    "keepassxreboot/keepassxc": 30136,
+    "laurent22/joplin": 57343,
+    "LibreOffice/core": 4690,
+    "localsend/localsend": 100644,
+    "logseq/logseq": 45694,
+    "luanti-org/luanti": 13889,
+    "mattermost/desktop": 2289,
+    "mltframework/shotcut": 15781,
+    "mpv-player/mpv": 38284,
+    "mullvad/mullvadvpn-app": 7810,
+    "neovim/neovim": 103853,
+    "nomic-ai/gpt4all": 77330,
     "notepad-plus-plus/notepad-plus-plus": 29974,
-    "obsproject/obs-studio": 80006,
-    "ollama/ollama": 187977,
-    "OpenTTD/OpenTTD": 8530,
-    "organicmaps/organicmaps": 16114,
-    "penpot/penpot": 62689,
+    "obsproject/obs-studio": 80037,
+    "ollama/ollama": 187998,
+    "OpenTTD/OpenTTD": 8531,
+    "organicmaps/organicmaps": 16121,
+    "penpot/penpot": 62704,
     "PintaProject/Pinta": 4145,
     "signalapp/Signal-Desktop": 16734,
-    "storytold/designcraft": 5389,
-    "storytold/effectcraft": 9181,
-    "storytold/filmcraft": 18949,
-    "storytold/lightcraft": 16368,
-    "storytold/pdfcraft": 21641,
-    "storytold/photocraft": 81256,
-    "storytold/vectorcraft": 12054,
-    "super-productivity/super-productivity": 24022,
-    "supertuxkart/stk-code": 5494,
-    "syncthing/syncthing": 90779,
-    "tauri-apps/tauri": 113099,
-    "TeamNewPipe/NewPipe": 40904,
-    "thunderbird/thunderbird-android": 14276,
-    "ungoogled-software/ungoogled-chromium": 28333,
-    "videolan/vlc": 20570,
-    "VSCodium/vscodium": 34241,
-    "wesnoth/wesnoth": 7006,
-    "zed-industries/zed": 95615
+    "storytold/designcraft": 5393,
+    "storytold/effectcraft": 9197,
+    "storytold/filmcraft": 18975,
+    "storytold/lightcraft": 16379,
+    "storytold/pdfcraft": 21679,
+    "storytold/photocraft": 81322,
+    "storytold/vectorcraft": 12066,
+    "super-productivity/super-productivity": 24043,
+    "supertuxkart/stk-code": 5496,
+    "syncthing/syncthing": 90797,
+    "tauri-apps/tauri": 113108,
+    "TeamNewPipe/NewPipe": 40914,
+    "thunderbird/thunderbird-android": 14280,
+    "ungoogled-software/ungoogled-chromium": 28335,
+    "videolan/vlc": 20575,
+    "VSCodium/vscodium": 34243,
+    "wesnoth/wesnoth": 7007,
+    "zed-industries/zed": 95654
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -540,119 +540,119 @@
     },
     "dbeaver/dbeaver": {
       "mac": {
-        "tag": "26.2.5",
-        "date": "2026-11-15T18:39:18Z",
-        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5",
+        "tag": "26.2.5.2",
+        "date": "2026-11-24T15:37:31Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5.2",
         "files": [
           {
             "arch": "x64",
             "kind": "dmg",
-            "name": "dbeaver-ce-26.2.5-macos-x86_64.dmg",
-            "size": 125824381,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-macos-x86_64.dmg",
-            "sha256": "760cbc064685536e0249fb18bb7568be624b6a2737d394c2b3b8a6aacfd9464c"
+            "name": "dbeaver-ce-26.2.5.2-macos-x86_64.dmg",
+            "size": 125870007,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-macos-x86_64.dmg",
+            "sha256": "3cb503a14172e29916a6526fc472f75c5ee94603a8688fc9751d20de6416a08f"
           },
           {
             "arch": "arm64",
             "kind": "dmg",
-            "name": "dbeaver-ce-26.2.5-macos-aarch64.dmg",
-            "size": 124466382,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-macos-aarch64.dmg",
-            "sha256": "2d739a95bbc3bb2f9fada4863a9f11904b94ebb34673999915809f788e849d73"
+            "name": "dbeaver-ce-26.2.5.2-macos-aarch64.dmg",
+            "size": 124461569,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-macos-aarch64.dmg",
+            "sha256": "84aa5edce7f78aa7c9bac8204956968cbdc6e194208a5654134ccbc6e29af60e"
           }
         ]
       },
       "win": {
-        "tag": "26.2.5",
-        "date": "2026-11-15T18:39:18Z",
-        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5",
+        "tag": "26.2.5.2",
+        "date": "2026-11-24T15:37:31Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5.2",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "dbeaver-ce-26.2.5-windows-x86_64.exe",
-            "size": 114998288,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-x86_64.exe",
-            "sha256": "8cce0a921ef3e0f43dd13357304bd0c18eff1cfcbf52f848db8f854af469cce3"
+            "name": "dbeaver-ce-26.2.5.2-windows-x86_64.exe",
+            "size": 115006784,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-windows-x86_64.exe",
+            "sha256": "eee1ee7eded5aaca5a6cbf5593dbe360ec9b70ff012cd0185fb686a9f1cfe511"
           },
           {
             "arch": "arm64",
             "kind": "exe",
-            "name": "dbeaver-ce-26.2.5-windows-aarch64.exe",
-            "size": 112579568,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-aarch64.exe",
-            "sha256": "f3e428c7f32065bf4af277fc85b91664b77b6a6afe1df0d945a78453d2195fb2"
+            "name": "dbeaver-ce-26.2.5.2-windows-aarch64.exe",
+            "size": 112579384,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-windows-aarch64.exe",
+            "sha256": "42aa0949c03b04c4f7129e040247407b98a1f700f1164259f00b567a594848ef"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "dbeaver-ce-26.2.5-windows-x86_64.zip",
-            "size": 126280946,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-x86_64.zip",
-            "sha256": "6d137b716061ddd9d1b160ef47a23ab4755d0d393d427809e9a352a351abde4a"
+            "name": "dbeaver-ce-26.2.5.2-windows-x86_64.zip",
+            "size": 126292719,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-windows-x86_64.zip",
+            "sha256": "c18ce1f6b7bde503a4532eb7a4c5120a41d8546776d45303d7bd1dce806667ea"
           },
           {
             "arch": "arm64",
             "kind": "zip",
-            "name": "dbeaver-ce-26.2.5-windows-aarch64.zip",
-            "size": 123843034,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-aarch64.zip",
-            "sha256": "6d10529c7a84336e7781a284ed43050fedcbb989f711bd1814380d0d851ee7e9"
+            "name": "dbeaver-ce-26.2.5.2-windows-aarch64.zip",
+            "size": 123843707,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-windows-aarch64.zip",
+            "sha256": "f1ea0b4ba9588d9992c9056bd55af3a84c6aa0b17cf1ed431876aa0c9b573d64"
           }
         ]
       },
       "linux": {
-        "tag": "26.2.5",
-        "date": "2026-11-15T18:39:18Z",
-        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5",
+        "tag": "26.2.5.2",
+        "date": "2026-11-24T15:37:31Z",
+        "page": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.5.2",
         "files": [
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "dbeaver-ce-26.2.5-linux-x86_64.deb",
-            "size": 129011504,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-x86_64.deb",
-            "sha256": "6133f63f1140202aa9b8f83f6414b0d2c1919fea70a2048d4bc6d1b308228a60"
+            "name": "dbeaver-ce-26.2.5.2-linux-x86_64.deb",
+            "size": 129019774,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-linux-x86_64.deb",
+            "sha256": "dce178c94dc6f34adf226c708e4e612d5880f89c74b0c6e88c7ef63c979982ac"
           },
           {
             "arch": "arm64",
             "kind": "deb",
-            "name": "dbeaver-ce-26.2.5-linux-aarch64.deb",
-            "size": 127972610,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-aarch64.deb",
-            "sha256": "dc12304916b94b5bb733a71dd1099c8904c1b0b7d1167040d4f9f250fcc39bd6"
+            "name": "dbeaver-ce-26.2.5.2-linux-aarch64.deb",
+            "size": 127979268,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-linux-aarch64.deb",
+            "sha256": "332f9ed9f8d21b4ac778483fa687acc657699950c0b8c3ddc2ae579b0ad85d52"
           },
           {
             "arch": "x64",
             "kind": "rpm",
-            "name": "dbeaver-ce-26.2.5-linux-x86_64.rpm",
-            "size": 129098704,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-x86_64.rpm",
-            "sha256": "b3f1fd619f0e3cde44938c69af977902f806e6559e07f04565505a8d54a63f7b"
+            "name": "dbeaver-ce-26.2.5.2-linux-x86_64.rpm",
+            "size": 129103383,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-linux-x86_64.rpm",
+            "sha256": "81fad982fb25f28989c48d994bc6d3cbfa8d51a17df768b5f7f2164905937127"
           },
           {
             "arch": "arm64",
             "kind": "rpm",
-            "name": "dbeaver-ce-26.2.5-linux-aarch64.rpm",
-            "size": 128054839,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-aarch64.rpm",
-            "sha256": "257d5b385d469d9cf4178029b587dbc6b5a4ee62f3dc004758ca753b183a4196"
+            "name": "dbeaver-ce-26.2.5.2-linux-aarch64.rpm",
+            "size": 128069788,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-linux-aarch64.rpm",
+            "sha256": "6df77ecb7ad76900bac2060a237241889c18441dcc121a6faebb8c4b1effa892"
           },
           {
             "arch": "x64",
             "kind": "tar",
-            "name": "dbeaver-ce-26.2.5-linux-x86_64.tar.gz",
-            "size": 128976379,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-x86_64.tar.gz",
-            "sha256": "0d310629cecf6619966940844c629fa99f0391673655cc3124bb6a227ba92397"
+            "name": "dbeaver-ce-26.2.5.2-linux-x86_64.tar.gz",
+            "size": 128983218,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-linux-x86_64.tar.gz",
+            "sha256": "315ab02e6e4bb09d6fe43ab156ceb22def1d074d911558795bd2ee8fdc0f4b6b"
           },
           {
             "arch": "arm64",
             "kind": "tar",
-            "name": "dbeaver-ce-26.2.5-linux-aarch64.tar.gz",
-            "size": 127932836,
-            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-aarch64.tar.gz",
-            "sha256": "75b2fc11732ccb1a6cf8666e749567774df0b922f9c08b5a28313160280c715a"
+            "name": "dbeaver-ce-26.2.5.2-linux-aarch64.tar.gz",
+            "size": 127940479,
+            "url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.5.2/dbeaver-ce-26.2.5.2-linux-aarch64.tar.gz",
+            "sha256": "1cd92d8ccb7461fce787d35258bbf24104f5059871bef235c6445a5e3ea843aa"
           }
         ]
       }
@@ -1714,94 +1714,94 @@
     },
     "localsend/localsend": {
       "mac": {
-        "tag": "v1.18.2",
-        "date": "2026-08-21T14:02:01Z",
-        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "tag": "v1.19.0",
+        "date": "2026-11-24T15:18:46Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.19.0",
         "files": [
           {
             "arch": "any",
             "kind": "dmg",
-            "name": "LocalSend-1.18.2.dmg",
-            "size": 52700247,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2.dmg",
-            "sha256": "126860d56f6f49b11845f601aac51de27a49b16d2b48102415da91e0e37e5155"
+            "name": "LocalSend-1.19.0.dmg",
+            "size": 52878051,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0.dmg",
+            "sha256": "5645789cc976298b893267c025f0945d8673baed3bb302a201eb8b96991e43d4"
           }
         ]
       },
       "win": {
-        "tag": "v1.18.2",
-        "date": "2026-08-21T14:02:01Z",
-        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "tag": "v1.19.0",
+        "date": "2026-11-24T15:18:46Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.19.0",
         "files": [
           {
             "arch": "x64",
             "kind": "exe",
-            "name": "LocalSend-1.18.2-windows-x86-64.exe",
-            "size": 19901144,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.exe",
-            "sha256": "122783e6abb4b0a1f1603d896f46a03aeda3004479ebd3175cab4ddac6b60919"
+            "name": "LocalSend-1.19.0-windows-x86-64.exe",
+            "size": 19907936,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-windows-x86-64.exe",
+            "sha256": "0df76352124634c8d998867b813cb5ae96613f4a3b6e52d8d3e497dba63c01e0"
           },
           {
             "arch": "x64",
             "kind": "zip",
-            "name": "LocalSend-1.18.2-windows-x86-64.zip",
-            "size": 26113764,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-windows-x86-64.zip",
-            "sha256": "737aab1829d901e1d798cddd1e5fdc06ba9dfcc9ea50cfe3805e047005d5e71a"
+            "name": "LocalSend-1.19.0-windows-x86-64.zip",
+            "size": 26092132,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-windows-x86-64.zip",
+            "sha256": "1b131a225e30bb46c7b4ffee23577716b2d0605108aded27899375033ff69abc"
           }
         ]
       },
       "linux": {
-        "tag": "v1.18.2",
-        "date": "2026-08-21T14:02:01Z",
-        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "tag": "v1.19.0",
+        "date": "2026-11-24T15:18:46Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.19.0",
         "files": [
           {
             "arch": "x64",
             "kind": "appimage",
-            "name": "LocalSend-1.18.2-linux-x86-64.AppImage",
-            "size": 66471104,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.AppImage",
-            "sha256": "19f21613d1834f6caa69517113670461a3f10b80a2a315f86548c0663d9c0aaf"
+            "name": "LocalSend-1.19.0-linux-x86-64.AppImage",
+            "size": 61752512,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-linux-x86-64.AppImage",
+            "sha256": "e72ce88383a32beec9701583c22e298037f7683f9590cea7b3a281f58c2ec2b3"
           },
           {
             "arch": "x64",
             "kind": "deb",
-            "name": "LocalSend-1.18.2-linux-x86-64.deb",
-            "size": 24665458,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.deb",
-            "sha256": "cc42a4f3eacdcb25ec31f0016b1272acb003145ab30484db8965450e20c72cd2"
+            "name": "LocalSend-1.19.0-linux-x86-64.deb",
+            "size": 24632546,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-linux-x86-64.deb",
+            "sha256": "f2cc2d1f8a2542799576e4c1cc61ed1f35c6a7dba2f375870e8500eab6fbfe66"
           },
           {
             "arch": "x64",
-            "kind": "tar",
-            "name": "LocalSend-1.18.2-linux-x86-64.tar.gz",
-            "size": 32011656,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.tar.gz",
-            "sha256": "287690a9a8eb6da9c83cc97b3e3030ac67daf32a7331fcf307d0939300658d16"
+            "kind": "rpm",
+            "name": "LocalSend-1.19.0-linux-x86-64.rpm",
+            "size": 18170328,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-linux-x86-64.rpm",
+            "sha256": "06ff8b12d6edb8a361151d46c652bd465e6df88ee20aec25ec78e913eee1b135"
           }
         ]
       },
       "android": {
-        "tag": "v1.18.2",
-        "date": "2026-08-21T14:02:01Z",
-        "page": "https://github.com/localsend/localsend/releases/tag/v1.18.2",
+        "tag": "v1.19.0",
+        "date": "2026-11-24T15:18:46Z",
+        "page": "https://github.com/localsend/localsend/releases/tag/v1.19.0",
         "files": [
           {
             "arch": "x64",
             "kind": "apk",
-            "name": "LocalSend-1.18.2-android-x64.apk",
-            "size": 48939435,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-x64.apk",
-            "sha256": "93e30ddbf84121ad2048c5a61763f2b37738f593699a9f0cf39a8404177aa05b"
+            "name": "LocalSend-1.19.0-android-x64.apk",
+            "size": 49115738,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-android-x64.apk",
+            "sha256": "6eabd6a6074b2f03632cf521244d4d972bfdd4b9e9dfd201002cb9240930359b"
           },
           {
             "arch": "arm64",
             "kind": "apk",
-            "name": "LocalSend-1.18.2-android-arm64v8.apk",
-            "size": 46558706,
-            "url": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-android-arm64v8.apk",
-            "sha256": "82ec3568fba2aa5295b9aae8b76f701d7a4703d86b9f8bad749472038fbaeab3"
+            "name": "LocalSend-1.19.0-android-arm64v8.apk",
+            "size": 46760593,
+            "url": "https://github.com/localsend/localsend/releases/download/v1.19.0/LocalSend-1.19.0-android-arm64v8.apk",
+            "sha256": "bdc69f794ef493dbcf437f2ba8d959ece1712eff50f3f6274970f11c5bdb1bce"
           }
         ]
       }
@@ -4214,7 +4214,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52521,
+      "stars": 52525,
       "glyph": "code",
       "c": [
         "#4AA8FF",
