@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-25T04:55:17.294Z",
+  "updated": "2026-11-25T15:42:34.710Z",
   "home": "NickGBar/VibeMarket",
   "rules": {
     "votesNeeded": 3,
@@ -13,72 +13,72 @@
     "reportsToHide": 3
   },
   "stars": {
-    "00-Evan/shattered-pixel-dungeon": 6864,
-    "ankitects/anki": 33011,
-    "Anuken/Mindustry": 29962,
-    "AppFlowy-IO/AppFlowy": 79520,
-    "audacity/audacity": 19172,
-    "AUTOMATIC1111/stable-diffusion-webui": 165372,
-    "bitwarden/clients": 14313,
-    "blender/blender": 22480,
-    "Comfy-Org/ComfyUI": 148490,
-    "dbeaver/dbeaver": 52533,
-    "ente/ente": 30468,
-    "excalidraw/excalidraw": 136270,
-    "FreeTubeApp/FreeTube": 22549,
-    "ggml-org/llama.cpp": 136172,
-    "ggml-org/whisper.cpp": 55500,
-    "GNOME/gimp": 6622,
-    "godotengine/godot": 120746,
-    "HandBrake/HandBrake": 25120,
-    "HeliBorg/HeliBoard": 6663,
-    "immich-app/immich": 120046,
-    "ImranR98/Obtainium": 21890,
-    "inkscape/inkscape": 4158,
-    "janhq/jan": 46098,
-    "jellyfin/jellyfin": 59727,
-    "jesseduffield/lazygit": 84066,
-    "jgraph/drawio-desktop": 64139,
+    "00-Evan/shattered-pixel-dungeon": 6865,
+    "ankitects/anki": 33023,
+    "Anuken/Mindustry": 29971,
+    "AppFlowy-IO/AppFlowy": 79538,
+    "audacity/audacity": 19180,
+    "AUTOMATIC1111/stable-diffusion-webui": 165379,
+    "bitwarden/clients": 14317,
+    "blender/blender": 22532,
+    "Comfy-Org/ComfyUI": 148581,
+    "dbeaver/dbeaver": 52538,
+    "ente/ente": 30483,
+    "excalidraw/excalidraw": 136290,
+    "FreeTubeApp/FreeTube": 22557,
+    "ggml-org/llama.cpp": 136233,
+    "ggml-org/whisper.cpp": 55516,
+    "GNOME/gimp": 6623,
+    "godotengine/godot": 120802,
+    "HandBrake/HandBrake": 25131,
+    "HeliBorg/HeliBoard": 6664,
+    "immich-app/immich": 120087,
+    "ImranR98/Obtainium": 21897,
+    "inkscape/inkscape": 4162,
+    "janhq/jan": 46117,
+    "jellyfin/jellyfin": 59749,
+    "jesseduffield/lazygit": 84079,
+    "jgraph/drawio-desktop": 64154,
     "jitsi/jitsi-meet-electron": 1638,
-    "KDE/krita": 10805,
-    "keepassxreboot/keepassxc": 30138,
-    "laurent22/joplin": 57347,
-    "LibreOffice/core": 4692,
-    "localsend/localsend": 100692,
-    "logseq/logseq": 45694,
+    "KDE/krita": 10811,
+    "keepassxreboot/keepassxc": 30152,
+    "laurent22/joplin": 57352,
+    "LibreOffice/core": 4696,
+    "localsend/localsend": 100806,
+    "logseq/logseq": 45704,
     "luanti-org/luanti": 13892,
     "mattermost/desktop": 2290,
-    "mltframework/shotcut": 15787,
-    "mpv-player/mpv": 38289,
-    "mullvad/mullvadvpn-app": 7810,
-    "neovim/neovim": 103874,
-    "nomic-ai/gpt4all": 77332,
-    "notepad-plus-plus/notepad-plus-plus": 29976,
-    "obsproject/obs-studio": 80074,
-    "ollama/ollama": 188029,
+    "mltframework/shotcut": 15793,
+    "mpv-player/mpv": 38297,
+    "mullvad/mullvadvpn-app": 7812,
+    "neovim/neovim": 103918,
+    "nomic-ai/gpt4all": 77335,
+    "notepad-plus-plus/notepad-plus-plus": 29980,
+    "obsproject/obs-studio": 80114,
+    "ollama/ollama": 188103,
     "OpenTTD/OpenTTD": 8531,
-    "organicmaps/organicmaps": 16123,
-    "penpot/penpot": 62715,
-    "PintaProject/Pinta": 4145,
-    "signalapp/Signal-Desktop": 16735,
-    "storytold/designcraft": 5393,
-    "storytold/effectcraft": 9205,
-    "storytold/filmcraft": 18989,
-    "storytold/lightcraft": 16388,
-    "storytold/pdfcraft": 21705,
-    "storytold/photocraft": 81370,
-    "storytold/vectorcraft": 12079,
-    "super-productivity/super-productivity": 24052,
+    "organicmaps/organicmaps": 16128,
+    "penpot/penpot": 62734,
+    "PintaProject/Pinta": 4146,
+    "signalapp/Signal-Desktop": 16736,
+    "storytold/designcraft": 5395,
+    "storytold/effectcraft": 9222,
+    "storytold/filmcraft": 19021,
+    "storytold/lightcraft": 16409,
+    "storytold/pdfcraft": 21756,
+    "storytold/photocraft": 81457,
+    "storytold/vectorcraft": 12099,
+    "super-productivity/super-productivity": 24070,
     "supertuxkart/stk-code": 5496,
-    "syncthing/syncthing": 90802,
-    "tauri-apps/tauri": 113125,
-    "TeamNewPipe/NewPipe": 40922,
-    "thunderbird/thunderbird-android": 14281,
-    "ungoogled-software/ungoogled-chromium": 28339,
-    "videolan/vlc": 20578,
-    "VSCodium/vscodium": 34249,
-    "wesnoth/wesnoth": 7007,
-    "zed-industries/zed": 95682
+    "syncthing/syncthing": 90827,
+    "tauri-apps/tauri": 113150,
+    "TeamNewPipe/NewPipe": 40941,
+    "thunderbird/thunderbird-android": 14286,
+    "ungoogled-software/ungoogled-chromium": 28351,
+    "videolan/vlc": 20585,
+    "VSCodium/vscodium": 34258,
+    "wesnoth/wesnoth": 7008,
+    "zed-industries/zed": 95725
   },
   "downloads": {
     "00-Evan/shattered-pixel-dungeon": {
@@ -2306,6 +2306,155 @@
       }
     },
     "mullvad/mullvadvpn-app": {
+      "mac": {
+        "tag": "2026.6",
+        "date": "2026-11-25T08:55:08Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.6",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.6-beta1.pkg",
+            "size": 254053207,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1.pkg",
+            "sha256": "6bc710e6def1c9291e80447d213b239dbb4599088e9f7e800ec8b4b3fe061dc8"
+          },
+          {
+            "arch": "x64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.6.pkg",
+            "size": 254050413,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6.pkg",
+            "sha256": "c8c7dffed9d7f95d348dde3583d3264df683b22b7f3331d436a52a90807d93e6"
+          },
+          {
+            "arch": "arm64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.6-beta1_arm64.pkg",
+            "size": 141959813,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1_arm64.pkg",
+            "sha256": "ddec7a84058be4a44913109dc5a8fd93529fa0ef0ee8173fe299c0555ca83e73"
+          },
+          {
+            "arch": "arm64",
+            "kind": "pkg",
+            "name": "MullvadVPN-2026.6_arm64.pkg",
+            "size": 141959504,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_arm64.pkg",
+            "sha256": "0c4fe679035e730ce09bb3796571593a7250ef62d9906390ad55595de8d1da2f"
+          }
+        ]
+      },
+      "win": {
+        "tag": "2026.6",
+        "date": "2026-11-25T08:55:08Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.6",
+        "files": [
+          {
+            "arch": "any",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.6-beta1.exe",
+            "size": 261950424,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1.exe",
+            "sha256": "8d68392a33573db8324711fe568bb32616a7ece84346a8b36a4f2f1711523c24"
+          },
+          {
+            "arch": "any",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.6.exe",
+            "size": 261948376,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6.exe",
+            "sha256": "21baf206bc289a9448e2b288c1d1f1b37b9366ec7d2bd46e1c8ef6ea89f65086"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.6-beta1_x64.exe",
+            "size": 134627920,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1_x64.exe",
+            "sha256": "0dda2b8c17757c5b179a0d6be8d296b7a4f1d2db1852e1b668cd0548d56bb9ed"
+          },
+          {
+            "arch": "x64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.6_x64.exe",
+            "size": 134625328,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_x64.exe",
+            "sha256": "624d2b0577563f3a7733641514ae9ad94652767bed6f1079e7e94a915e77a46e"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.6_arm64.exe",
+            "size": 126769944,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_arm64.exe",
+            "sha256": "f1f5993595920a425f3f257d775388ee76ab595b12b2c16ef578d09fea975ebf"
+          },
+          {
+            "arch": "arm64",
+            "kind": "exe",
+            "name": "MullvadVPN-2026.6-beta1_arm64.exe",
+            "size": 126769208,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1_arm64.exe",
+            "sha256": "7274c92d33f532e4345b7b2b38eef72f19d9dc0cd211227104269b9d66cabc67"
+          }
+        ]
+      },
+      "linux": {
+        "tag": "2026.6",
+        "date": "2026-11-25T08:55:08Z",
+        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.6",
+        "files": [
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "MullvadVPN-2026.6_amd64.deb",
+            "size": 115239580,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_amd64.deb",
+            "sha256": "2fd44cb7c8f284ec03c98d0b8a519db49666f0a155c769792cce8c7ebf08174d"
+          },
+          {
+            "arch": "x64",
+            "kind": "deb",
+            "name": "MullvadVPN-2026.6-beta1_amd64.deb",
+            "size": 115238680,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1_amd64.deb",
+            "sha256": "07f4e7ebdc924f0faceea7fd52e61435128495ee9a6649286a5332ae7b98a6f1"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "MullvadVPN-2026.6_arm64.deb",
+            "size": 107311756,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_arm64.deb",
+            "sha256": "e6a1696272a08936f30a8f85b249af522bd2227b664fb0c177e5b0c7def02c74"
+          },
+          {
+            "arch": "arm64",
+            "kind": "deb",
+            "name": "MullvadVPN-2026.6-beta1_arm64.deb",
+            "size": 107311208,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6-beta1_arm64.deb",
+            "sha256": "3a7bee938c97c265f2868c1d1b7100f7c09591225d232074fb7ef8540bfb3a5d"
+          },
+          {
+            "arch": "x64",
+            "kind": "rpm",
+            "name": "MullvadVPN-2026.6_x86_64.rpm",
+            "size": 98846529,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_x86_64.rpm",
+            "sha256": "7cfdabafc557f155d4488703e242e53f74b91d9dbaacc9296c2cc2be5447bba0"
+          },
+          {
+            "arch": "arm64",
+            "kind": "rpm",
+            "name": "MullvadVPN-2026.6_aarch64.rpm",
+            "size": 91777989,
+            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.6/MullvadVPN-2026.6_aarch64.rpm",
+            "sha256": "60def0d49808baafcf62a7a177b8c6a9d00f6db15d7cdcd7a0d694df8e20fed6"
+          }
+        ]
+      },
       "android": {
         "tag": "android/2026.12",
         "date": "2026-09-30T14:32:59Z",
@@ -2318,107 +2467,6 @@
             "size": 39008494,
             "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/android/2026.12/MullvadVPN-2026.12.apk",
             "sha256": "0ad70b89b2b48bb0b1ae29115eee57d75277ffeccf95a0d3db98945d740a6d9e"
-          }
-        ]
-      },
-      "mac": {
-        "tag": "2026.5",
-        "date": "2026-09-14T06:02:38Z",
-        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.5",
-        "files": [
-          {
-            "arch": "x64",
-            "kind": "pkg",
-            "name": "MullvadVPN-2026.5.pkg",
-            "size": 254034014,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5.pkg",
-            "sha256": "7c68dd93ae01c1b56ce29c48b293a6ecb29ad61769ee90619887fa71a7dd867b"
-          },
-          {
-            "arch": "x64",
-            "kind": "pkg",
-            "name": "MullvadVPN-2026.5_x86_64.pkg",
-            "size": 146734703,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_x86_64.pkg",
-            "sha256": "23a7eaad3083e0dde2284148d769830abd154a77e205168f4103b213ff5579d1"
-          },
-          {
-            "arch": "arm64",
-            "kind": "pkg",
-            "name": "MullvadVPN-2026.5_arm64.pkg",
-            "size": 141951531,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_arm64.pkg",
-            "sha256": "afa1ee9ed5406b36b2ee77aaec41c0490cfb09fca6c719b5119f1322696d2d1d"
-          }
-        ]
-      },
-      "win": {
-        "tag": "2026.5",
-        "date": "2026-09-14T06:02:38Z",
-        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.5",
-        "files": [
-          {
-            "arch": "any",
-            "kind": "exe",
-            "name": "MullvadVPN-2026.5.exe",
-            "size": 261937624,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5.exe",
-            "sha256": "6b462684336bc0b9b7964846b2635af1723fa9d5817211117e1532ef86a2adc0"
-          },
-          {
-            "arch": "x64",
-            "kind": "exe",
-            "name": "MullvadVPN-2026.5_x64.exe",
-            "size": 134620152,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_x64.exe",
-            "sha256": "2a3efc4de6a97a2ea1c034ea617c699c5c94b8006d24beece7508d3443b760d5"
-          },
-          {
-            "arch": "arm64",
-            "kind": "exe",
-            "name": "MullvadVPN-2026.5_arm64.exe",
-            "size": 126764128,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_arm64.exe",
-            "sha256": "43d15a32dd7ce6feeb64aa573a4a76b41e818877e25533787e9be04c6b8a3f4a"
-          }
-        ]
-      },
-      "linux": {
-        "tag": "2026.5",
-        "date": "2026-09-14T06:02:38Z",
-        "page": "https://github.com/mullvad/mullvadvpn-app/releases/tag/2026.5",
-        "files": [
-          {
-            "arch": "x64",
-            "kind": "deb",
-            "name": "MullvadVPN-2026.5_amd64.deb",
-            "size": 115235148,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_amd64.deb",
-            "sha256": "aa6bd00452588597f50e8ca2f02bb91e9c295c4f01b0ae907354552e7428e7ab"
-          },
-          {
-            "arch": "arm64",
-            "kind": "deb",
-            "name": "MullvadVPN-2026.5_arm64.deb",
-            "size": 107305788,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_arm64.deb",
-            "sha256": "e62878f203ecd1037e45bf8158e6b40f5dc99547c714a426135c0be6f2379940"
-          },
-          {
-            "arch": "x64",
-            "kind": "rpm",
-            "name": "MullvadVPN-2026.5_x86_64.rpm",
-            "size": 98846345,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_x86_64.rpm",
-            "sha256": "6cd0de1c42527b67870e2991f9c0a0399ed6a565f866476536a4d240b289af74"
-          },
-          {
-            "arch": "arm64",
-            "kind": "rpm",
-            "name": "MullvadVPN-2026.5_aarch64.rpm",
-            "size": 91773957,
-            "url": "https://github.com/mullvad/mullvadvpn-app/releases/download/2026.5/MullvadVPN-2026.5_aarch64.rpm",
-            "sha256": "782abb4f64e31630d896c498de031c72abc4df56f9ecbd7951a407b9adbaf5bf"
           }
         ]
       }
@@ -4214,7 +4262,7 @@
       "cat": "dev",
       "repo": "dbeaver/dbeaver",
       "lic": "Apache-2.0",
-      "stars": 52533,
+      "stars": 52538,
       "glyph": "code",
       "c": [
         "#4AA8FF",
